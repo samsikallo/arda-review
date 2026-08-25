@@ -1,0 +1,172 @@
+{
+ "charsets": {
+  "cirth_ds.cst.js": {
+   "declarations": 121,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 121
+   }
+  },
+  "sarati_eldamar.cst.js": {
+   "declarations": 64,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 56
+   }
+  },
+  "tengwar_ds_annatar.cst.js": {
+   "declarations": 239,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 171
+   }
+  },
+  "tengwar_ds_eldamar.cst.js": {
+   "declarations": 237,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 171
+   }
+  },
+  "tengwar_ds_elfica.cst.js": {
+   "declarations": 232,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 164
+   }
+  },
+  "tengwar_ds_parmaite.cst.js": {
+   "declarations": 235,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 171
+   }
+  },
+  "tengwar_ds_sindarin.cst.js": {
+   "declarations": 230,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 171
+   }
+  },
+  "tengwar_freemono.cst.js": {
+   "declarations": 120,
+   "by_block": {
+    "tengwar": 106,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 3
+   }
+  },
+  "tengwar_guni_annatar.cst.js": {
+   "declarations": 238,
+   "by_block": {
+    "tengwar": 82,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 7
+   }
+  },
+  "tengwar_guni_eldamar.cst.js": {
+   "declarations": 238,
+   "by_block": {
+    "tengwar": 82,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 7
+   }
+  },
+  "tengwar_guni_elfica.cst.js": {
+   "declarations": 238,
+   "by_block": {
+    "tengwar": 82,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 7
+   }
+  },
+  "tengwar_guni_parmaite.cst.js": {
+   "declarations": 238,
+   "by_block": {
+    "tengwar": 82,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 7
+   }
+  },
+  "tengwar_guni_sindarin.cst.js": {
+   "declarations": 238,
+   "by_block": {
+    "tengwar": 82,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 7
+   }
+  },
+  "tengwar_telcontar.cst.js": {
+   "declarations": 120,
+   "by_block": {
+    "tengwar": 106,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 3
+   }
+  },
+  "unicode_gothic.cst.js": {
+   "declarations": 31,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 0,
+    "legacy_below_0x100": 5
+   }
+  },
+  "unicode_runes.cst.js": {
+   "declarations": 93,
+   "by_block": {
+    "tengwar": 0,
+    "cirth": 0,
+    "sarati": 0,
+    "runic": 89,
+    "legacy_below_0x100": 4
+   }
+  }
+ },
+ "n_charsets": 16,
+ "tengwar_cross_check": {
+  "shared_codepoints": 30,
+  "agreements": 30,
+  "verdict": "the archive's tengwar table, built from Appendix E's prose with every rule cited, agrees COMPLETELY with an independent implementation"
+ },
+ "sarati_verdict": "NOT CLOSED. sarati_eldamar declares its letters against a LEGACY 8-BIT layout and assigns ZERO codepoints in the CSUR Sarati block. The archive still holds sound-to-PICTURE and not sound-to-CODEPOINT.",
+ "licence_position": "Glaemscribe is AGPL-3.0 and the owner ruled 11 August that it may not be VENDORED. This reads the files and copies nothing: a codepoint assignment is an interface fact, and what is filed is a COMPARISON with the archive's own table, not any charset's content."
+}

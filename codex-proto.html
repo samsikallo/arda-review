@@ -1,0 +1,1763 @@
+<!doctype html>
+<html lang="en" data-scene="library" data-theme="light" data-hand="authentic" data-codex-object="on"><head><meta name="robots" content="noindex,nofollow">
+<!-- `data-theme="light"` IS A BUG FIX, AND IT IS NOT ABOUT LIGHT MODE.
+     THE CODEX CARRIES ITS OWN COMPLETE PALETTE -- a DARK hall with LIGHT vellum in it -- so it
+     must not take the archive's theme on top. It links arda.css for the glossary, and arda.css's
+     `@media (prefers-color-scheme:dark)` block sets --a-ink:#e8dcc0, a pale cream, which every
+     leaf INHERITED while keeping its own light parchment background. Measured 19 Aug in a real
+     browser at prefers-color-scheme:dark: 150 elements below 3.5:1, most of them cream text on
+     vellum. The owner saw it and reported it as "most of the text became white on light
+     background", which is exactly what it was.
+     arda.css guards every dark block with `:root:not([data-theme="light"])`, so stamping the
+     attribute is the archive's OWN mechanism for opting a page out. A PAGE OF VELLUM DOES NOT
+     INVERT BECAUSE THE READER'S OPERATING SYSTEM DID -- the leaf is a physical object, and the
+     night in this design is the hall around it, which is already dark in both schemes. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Gondorian Codex</title>
+<meta name="description" content="A prototype of the Arda Archive as a diegetic codex object.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="codex-backdrops.css">
+<style>
+/* ── THE LATIN FACE, and it is ONE TOKEN so it costs one line to change ──────────────────────
+   The owner looked at 15px EB Garamond on this page and said it read as "just Times New Roman.
+   Boring", and asked for Aniron across the whole archive wherever Latin is set. Aniron is Pete
+   Klassen's 2004 retracing of the LOTR film-credits face, and its own readme says it was drawn
+   to work "for headers as well as for paragraph text".
+
+   THE LICENCE IS RECORDED IN fonts/Aniron-LICENCE.txt AND IS NOT SETTLED. Font directories call
+   it personal-use-only; the owner has ruled to use it now and obtain a licence before publishing,
+   having been told plainly that the GitHub Pages site is already reachable. Converted to WOFF2
+   with NO SUBSETTING -- 278 glyphs in, 278 out -- because subsetting is modification.
+
+   IT CARRIES THE PRECOMPOSED ACCENTS (é ë í ú ä) AND NO COMBINING MARKS (U+0300-0308). Measured
+   before shipping: of 623 published pages exactly 18 contain a combining mark and all but one are
+   inside a JavaScript regex rather than display text -- the pages are generated NFC even though
+   the corpus is mixed-normalisation. The fallback stack catches the remainder. */
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Architects Daughter"; src:url("fonts/ArchitectsDaughter.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+:root{ --face-latin:"Aniron","Junicode","EB Garamond",Georgia,serif;
+  --face-hand:"Architects Daughter","Junicode",Georgia,cursive;
+  --face-display:"Metamorphous","Junicode",Georgia,serif; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
+
+   This is deliberately standalone -- its own stylesheet, no arda.css, no codex.css -- so it can
+   be judged and thrown away without touching one of the 621 live routes.
+
+   NOTHING HERE IS TRACED, COPIED OR SAMPLED FROM ANY GAME. Every gradient, fitting, ornament and
+   colour is written from scratch, and the palette is deliberately the opposite of the reference's
+   dwarven oak-and-brass: this is GONDOR -- near-black boards, SILVER fittings, fine pale vellum,
+   oxblood rubric, the White Tree and the seven stars. What is taken from the reference is the
+   GRAMMAR (an interface can be a physical object with mounted furniture and hand-made state),
+   never the art. See docs/codex-the-object.md.
+   ═══════════════════════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* the ground: a dark hall, warm rather than cold, so the book sits IN a place */
+  --ground:#1a1410; --ground-2:#0d0a07;
+  /* the boards: oxblood-brown leather over oak, tooled and worn at the edges */
+  --board:#5a3a1f; --board-hi:#7d5730; --board-lo:#2e1c0d; --board-edge:#8a6134;
+  /* BRASS, in four states -- the owner chose warm metal over silver */
+  --silver:#c9a44c; --silver-hi:#f0d79a; --silver-lo:#9a7434; --silver-deep:#5d4318;
+  /* THE LEAF, MEASURED off the owner's primary tier rather than chosen. Lab-averaged from
+     five real parchment grounds -- The King's Letter plate, pl_namarie, andriesd, mancenuva,
+     andries_ataremma -- which run L* 89.3 to 98.8. The old values started at L* 89.6 and RAMPED
+     DOWN to 68.9 toward the foot; NO measured source darkens toward its foot, and that ramp was
+     the single biggest reason the leaf read as stained rather than as vellum. */
+  --vellum:#faf2cb; --vellum-2:#f6ecc0; --vellum-3:#f1e4b3; --vellum-edge:#d9c48b;
+  --vellum-warm:#fff1b1;                    /* display leaves only: pl_elbereth + andriesd */
+  /* THE INKS. `--ink` was #3a2a16, a BROWN at chroma 16.5 against a measured mean of 4.9 across
+     seven sources -- one of which reads exactly neutral. It sepia-tinted every word on the page.
+     AND THE CODEX IS A RED-AND-BLUE SYSTEM: every panel initial in the primary tier is lapis or
+     violet, and andries_aiamaria alternates whole lines of red and blue. Red alone is the palette
+     of a CHARTER; red with blue is the palette of a BOOK. The archive had built a charter. */
+  --ink:#3d3430; --ink-deep:#0e0c0a; --ink-soft:#5c534c;
+  --rubric:#bf3637; --rubric-soft:#cf6a63;
+  --lapis:#28418c; --lapis-soft:#5b6fb0;    /* panel initials and their grounds */
+  --azure:#2a5c6b;                          /* apparatus: running head, folio, secondary rules */
+  --gold:#a47741;
+  --rule:#cbb684; --rule-soft:#e3d3a6;
+  --tab-1:#8a3b2a; --tab-2:#7a6222; --tab-3:#3f5a3a; --tab-4:#2f4a5e;
+}
+
+.a-skip{position:absolute;left:-9999px;top:8px;z-index:99;padding:8px 14px;border-radius:3px;
+  background:#3a2410;color:#f0d79a;font:600 12px Cinzel,Georgia,serif;letter-spacing:.02em;
+  text-decoration:none;box-shadow:0 0 0 1px #8a6134}
+.a-skip:focus{left:12px}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--ground);
+  /* the library: a dark stone ground with a pool of light where the book lies */
+  background-image:
+    radial-gradient(120% 90% at 50% 42%, rgba(255,214,140,.13), transparent 62%),
+    radial-gradient(60% 45% at 50% 40%, rgba(255,196,110,.09), transparent 70%),
+    repeating-linear-gradient(94deg, rgba(255,255,255,.012) 0 2px, transparent 2px 7px),
+    linear-gradient(160deg, var(--ground) 0%, var(--ground-2) 100%);
+  font:16px/1.6 'EB Garamond','Iowan Old Style',Georgia,serif; color:var(--ink);
+  /* FOUR SPREADS NOW STACK. This was `display:flex` with the default row direction, written
+     when there was one book; with four it laid them side by side and pushed three off the
+     screen -- document scrollWidth 2406 against a 1500 viewport, and the archive forbids a
+     horizontal scroll on any route. */
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  gap:56px; padding:34px 18px 64px;
+}
+
+/* C276 -- THE DESKTOP PADDING SHRINKS SO THE BOOK CAN REACH THE WINDOW. Scoped to the desktop
+   side of the breakpoint ON PURPOSE: C278 froze the mobile and tablet rules, so nothing at or
+   below 1100px is touched here. 10px is not nothing -- the boards are raised and cast a shadow,
+   and a book flush against the glass clips its own edge rather than looking full-bleed. */
+@media (min-width:1101px){
+  body{ padding:10px 10px 14px; gap:24px; }
+}
+
+/* ── THE BOOK ────────────────────────────────────────────────────────────────────────────────
+   An object with thickness lying on the ground, not a page filling the viewport. The reference's
+   own proportion: it occupies most of the view but the world is visible around and beneath it. */
+.book{
+  /* `flex:0 0 auto` IS LOad-BEARING. `body` is a column flex container, so each book is a flex
+     ITEM whose main axis is VERTICAL -- and with the default `flex-shrink:1`, five books taller
+     than the viewport were SHRUNK to their `min-height`. That is why every book measured exactly
+     520px at every desktop width instead of its own 1.58:1 shape, and why seven leaves were
+     clipping up to 216px of their own text. The ratio was never being applied at all. */
+  /* THE BOOK IS SIZED BY THE VIEWPORT'S SHORTER CONSTRAINT, NOT BY ITS WIDTH ALONE.
+     `width:min(1480px, 85vw)` sets width and lets the 1.58 ratio decide height — so on a
+     1600x913 screen the book came out 1360x861, the site header took 140px above it, and
+     1,047px of book sat in 913px of window. The owner: "the whole book still doesn't fit
+     perfectly into the website". 85% is kept — it is his figure — and a THIRD term is added:
+     the width that the available HEIGHT can afford at the same ratio. Whichever of the three
+     binds, binds. `--fit-h` is the room left after the header and the page's own padding. */
+  position:relative; flex:0 0 auto;
+  /* C276 -- HE RULED THE BOOK FILLS THE SCREEN. `--a-hdr-h` is set to 0px at :root in arda.css
+     and only a page carrying a sticky header overwrites it, so the fallback in the old
+     `var(--a-hdr-h, 140px)` NEVER APPLIED: this was already 100dvh - 112px. The 112 was the
+     old body padding (34 top + 64 bottom) plus slack. It is now the desktop padding below,
+     which is deliberately small so the book reaches the window. */
+  --book-pad: 24px;
+  --fit-h: calc(100dvh - var(--a-hdr-h, 0px) - var(--book-pad));
+  /* BOTH DIMENSIONS COME FROM THE SAME CHOICE, or the ratio breaks. Sizing width alone let the
+     CONTENT decide height and the book came out at 2.149 on a wide screen and 0.997 on a short
+     one — a book that is taller than it is wide. `aspect-ratio` holds the proportion; `height`
+     caps it at what the window can afford; the leaves scroll internally only when the archive
+     genuinely holds more than a spread. */
+  /* C276 -- THE 1.58 LOCK IS DROPPED AND THE CAPS ARE GONE. Measured before this change, the
+     old `min(1480px, 85vw, ...)` gave 85.0% of width at 1366, 77.1% at 1920 and only 57.8%
+     wide / 65.1% tall at 2560: the larger the monitor, the emptier the screen, because the
+     1480px cap binds from about 1740px up. He ruled it fills the screen.
+     THE CEILING IS 2.0, which he chose from the options: width may not exceed twice the
+     height, so a 21:9 ultrawide gets small side margins instead of a codex stretched into a
+     scroll. On 16:9 and 16:10 the available width always binds first, so it fills completely.
+     FONT SIZES ARE UNCHANGED (his words) -- the leaves are two-column and measured 23-37
+     characters per column BEFORE this, which is below the comfortable range, so the extra
+     width buys wider columns and more text, not longer lines. */
+  width: min(100%, calc(var(--fit-h) * 2));
+  height: var(--fit-h);
+  aspect-ratio: auto;
+  /* THE PROPORTION IS A FLOOR, NOT A CEILING. `aspect-ratio` sets an EXACT height, so a leaf with
+     one paragraph too many is clipped rather than accommodated -- which is what 1200px was still
+     doing. Expressed as a min-height the book keeps its 1.58:1 shape whenever the content fits,
+     and grows instead of hiding text when it does not. A codex leaf that hides its own words is
+     the one thing this object must never do. */
+  min-height:0;
+  /* the boards */
+  background:
+    linear-gradient(180deg, var(--board-hi) 0 2px, transparent 2px),
+    linear-gradient(172deg, var(--board) 0%, var(--board-lo) 100%);
+  border-radius:10px 14px 14px 10px;
+  /* thickness: a stack of leaves seen at the edge, then the board, then the shadow on the table */
+  box-shadow:
+    inset 0 0 0 1px var(--board-edge),
+    inset 0 0 0 6px var(--board-lo),
+    inset 0 0 0 7px rgba(240,206,130,.16),
+    inset 0 3px 0 rgba(255,255,255,.09),
+    0 2px 0 #0a0c10, 0 4px 0 #14171d, 0 6px 0 #0a0c10, 0 8px 0 #171b22,
+    0 26px 48px rgba(0,0,0,.62), 0 6px 14px rgba(0,0,0,.5);
+  /* C283 -- THE BOARD RESERVES ROOM FOR THE FORE-EDGE FURNITURE. C277 moved the tabs inside the
+     book and they landed ON THE WRITING: the volume names sat over the left leaf's marginal
+     hands. The board is now wide enough to hold them, so nothing can ever be underneath -- the
+     same pattern as C236's gutter reserve, and he chose it over fade-on-hover (a bookmark you
+     cannot see is one you forget, and it fails keyboard and touch) and over a top-edge row
+     (which abandons the fore-edge idea of C57).
+     BOTH SIDES, EQUALLY. He ruled the right mirrors the left: the right board carries the clasp
+     and the recto's marginal notes, and unequal boards make the opening read as two pages that
+     happen to be adjacent rather than one spread. */
+  --board-reserve: 116px;
+  padding:30px var(--board-reserve) 34px;
+  display:flex;
+}
+
+/* the leather grain -- generated, never sampled */
+.book::before{
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  background:
+    repeating-linear-gradient(38deg, rgba(255,255,255,.030) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-52deg, rgba(0,0,0,.09) 0 1px, transparent 1px 5px),
+    radial-gradient(80% 60% at 50% 0%, rgba(255,255,255,.05), transparent 60%);
+  mix-blend-mode:overlay;
+}
+
+/* ── THE SPREAD: two leaves and the valley between them ─────────────────────────────────────── */
+.spread{
+  /* `flex:1` is `1 1 0%`, and a ZERO BASIS means the spread's own content never contributes to
+     the book's height -- so a leaf longer than the 1.58:1 box was silently CLIPPED by the
+     `overflow:hidden` below. Measured 19 Aug at 1200px: seven leaves hiding 31-216px of their
+     own text, on every book, at every desktop width, with no guard able to see it. `1 1 auto`
+     lets the ratio set the SHAPE while the content sets the FLOOR.
+     `min-width:0` because a grid/flex item's automatic minimum is its CONTENT width, which is
+     what pushed an 850px spread into a 390px viewport. */
+  position:relative; flex:1 1 auto; min-width:0; width:100%; box-sizing:border-box;
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  border-radius:3px 3px 2px 2px; overflow:hidden;
+  box-shadow:0 0 0 1px rgba(0,0,0,.55), inset 0 0 34px rgba(60,40,15,.10);
+}
+.leaf{
+  position:relative; min-width:0; padding:30px 34px 50px;
+  background:
+    radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+    radial-gradient(45% 38% at 82% 74%, rgba(160,130,80,.13), transparent 62%),
+    radial-gradient(30% 26% at 12% 88%, rgba(150,120,70,.10), transparent 60%),
+    linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%);
+  overflow:auto;
+}
+/* the page curves INTO the gutter -- this shading is what makes two surfaces read as one fold */
+.leaf.l{ background-image:
+  linear-gradient(270deg, rgba(60,44,20,.30) 0 14px, rgba(60,44,20,.10) 14px 46px, transparent 46px),
+  radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+  linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%); }
+.leaf.r{ background-image:
+  linear-gradient(90deg, rgba(60,44,20,.30) 0 14px, rgba(60,44,20,.10) 14px 46px, transparent 46px),
+  radial-gradient(70% 50% at 70% 18%, rgba(255,255,255,.40), transparent 60%),
+  linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%); }
+
+/* the valley itself: a real dark trough with the binding cord showing */
+.gutter{
+  position:absolute; left:50%; top:0; bottom:0; width:30px; transform:translateX(-50%);
+  background:linear-gradient(90deg,
+    rgba(30,20,8,0) 0%, rgba(40,28,12,.42) 26%, #241a0c 48%, #1a1208 50%,
+    #241a0c 52%, rgba(40,28,12,.42) 74%, rgba(30,20,8,0) 100%);
+  pointer-events:none; z-index:3;
+}
+.gutter::after{ /* the sewn cord, at intervals -- original geometry, a simple stitch */
+  content:""; position:absolute; left:50%; top:8%; bottom:8%; width:3px; transform:translateX(-50%);
+  background:repeating-linear-gradient(180deg,
+    rgba(240,206,130,.34) 0 9px, transparent 9px 30px);
+}
+
+/* ── FURNITURE MOUNTED ON THE BOARD, not floated on the page ────────────────────────────────── */
+
+/* the title plaque: set into the top board, spanning the spine */
+.plaque{
+  position:absolute; top:-13px; left:50%; transform:translateX(-50%); z-index:6;
+  padding:7px 30px 8px; border-radius:3px;
+  background:linear-gradient(180deg,#7d5730,#3a2410);
+  box-shadow:
+    inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.32),
+    0 3px 7px rgba(0,0,0,.55);
+  font:600 15px/1 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+  color:var(--silver-hi); text-shadow:0 1px 0 #000; white-space:nowrap;
+}
+.plaque i{ color:var(--silver-lo); font-style:normal; }
+
+/* the folio plate: set into the bottom board */
+.folio{
+  position:absolute; bottom:-11px; left:50%; transform:translateX(-50%); z-index:6;
+  padding:4px 18px 5px; border-radius:2px;
+  background:linear-gradient(180deg,#6d4b28,#31200e);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
+  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.02em; color:var(--silver);
+}
+
+/* C277 -- THE TABS TURN INWARDS. They used to protrude FROM BEHIND the left board: measured at
+   all eight desktop widths, each tab sat 75px LEFT of the book's edge (left:-1px plus
+   margin-left:-74px on a 104px tab), so only 30 of 104px was inside it, and hover pulled it to
+   -88px, aria-current to -94px. That escaped clipping only because the old 85vw cap left a wide
+   empty margin either side -- and C276 removes that margin, so at full width they would have
+   been cut off at the glass. He ruled them inwards, sitting wholly within the fore-edge and
+   sliding further IN on hover, which keeps the ribbon-marker reading rather than a browser tab. */
+.tabs{ position:absolute; left:0; top:74px; z-index:7; display:flex; flex-direction:column; gap:9px; }
+.tab{
+  position:relative; margin-left:0; width:104px; padding:8px 14px 8px 10px;
+  font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+  color:#d9dee7; text-decoration:none; text-align:left;
+  background:linear-gradient(90deg,#241505 0%, var(--tab-1) 22%, var(--tab-1) 100%);
+  /* EVERY DIRECTIONAL DETAIL IS MIRRORED, or the tab reads as pointing the wrong way. The free
+     end is now the RIGHT one, so the ribbon notch, the corner radius and the cast shadow all
+     turn with it. */
+  border-radius:0 2px 2px 0;
+  text-align:right;
+  clip-path:polygon(0 0, 100% 0, calc(100% - 9px) 50%, 100% 100%, 0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
+             3px 3px 6px rgba(0,0,0,.45);
+  transition:margin-left .16s ease, filter .16s ease;
+}
+.tab:nth-child(2){background:linear-gradient(90deg,#241505 0%, var(--tab-2) 22%, var(--tab-2) 100%)}
+.tab:nth-child(3){background:linear-gradient(90deg,#241505 0%, var(--tab-3) 22%, var(--tab-3) 100%)}
+.tab:nth-child(4){background:linear-gradient(90deg,#241505 0%, var(--tab-4) 22%, var(--tab-4) 100%)}
+/* INWARD, NOT OUTWARD. Positive margin moves the tab further into the book. */
+.tab:hover,.tab:focus-visible{ margin-left:10px; filter:brightness(1.22); outline:none; }
+.tab[aria-current]{ margin-left:16px; color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep),
+             5px 4px 9px rgba(0,0,0,.5); }
+
+/* the clasp: a silver strap on the fore-edge with a stone */
+.clasp{
+  /* C277 -- INWARDS with the tabs. It protruded 13px past the right edge; at full-screen width
+     that is cut by the window rather than reading as a strap over the fore-edge. He was asked
+     separately and ruled it in. */
+  position:absolute; right:6px; top:50%; transform:translateY(-50%); z-index:6;
+  width:30px; height:96px; border-radius:3px;
+  background:linear-gradient(180deg,#a57c3c,#4a3416 42%,#a57c3c);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.30),
+             0 3px 8px rgba(0,0,0,.55);
+  display:flex; align-items:center; justify-content:center;
+}
+.clasp::after{ /* the stone */
+  content:""; width:13px; height:13px; border-radius:50%;
+  background:radial-gradient(circle at 34% 30%, #ffe9b0, #c1892f 46%, #5a3a10);
+  box-shadow:0 0 0 2px #6d4d1e, 0 0 9px rgba(240,200,110,.55);
+}
+
+/* ── WHAT IS ON A LEAF ───────────────────────────────────────────────────────────────────────
+   The reference's leaf is not full-bleed text: it carries a ruled border inset from the edge,
+   and content sits in bordered panels within it. */
+.leaf::before{
+  content:""; position:absolute; inset:16px 20px; pointer-events:none;
+  border:1px solid var(--rule); box-shadow:inset 0 0 0 3px transparent, inset 0 0 0 4px var(--rule-soft);
+  opacity:.55;
+}
+
+.rubric{ /* a centred heading flanked by ornament -- the reference's grammar, our geometry */
+  display:flex; align-items:center; gap:12px; justify-content:center;
+  margin:6px 0 16px; color:var(--rubric);
+  font:700 19px/1.2 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+}
+.rubric::before,.rubric::after{
+  content:""; flex:1; height:7px; max-width:96px;
+  /* seven stars of Elendil, reduced to a rule: a line with small points on it */
+  background:
+    radial-gradient(circle at 12% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 38% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 64% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 88% 50%, var(--rule) 1.4px, transparent 1.6px),
+    linear-gradient(var(--rule),var(--rule)) center/100% 1px no-repeat;
+}
+.lede{ font-style:italic; color:var(--ink-soft); margin:0 auto 20px; max-width:60ch; text-align:center; }
+
+.cards{ display:grid; grid-template-columns:1fr; gap:16px; }
+@media (min-width:900px){ .cards{ grid-template-columns:1fr; } }
+
+.card{
+  position:relative; padding:16px 18px 15px; background:rgba(255,252,244,.34);
+  border:1px solid var(--rule); border-radius:2px;
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset, 0 1px 3px rgba(90,70,35,.12);
+}
+/* corner marks, as a scribe rules a box */
+.card::before,.card::after{
+  content:""; position:absolute; width:11px; height:11px; border:1px solid var(--rubric-soft); opacity:.6;
+}
+.card::before{ top:-1px; left:-1px; border-right:0; border-bottom:0; }
+.card::after{ bottom:-1px; right:-1px; border-left:0; border-top:0; }
+
+.no{ /* the number badge, top-left, as in the reference's record cards */
+  position:absolute; top:-10px; left:12px; width:24px; height:24px; border-radius:2px;
+  transform:rotate(45deg); background:linear-gradient(160deg,#8a6134,#3a2410);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 2px 4px rgba(0,0,0,.4);
+}
+.no span{ display:block; transform:rotate(-45deg); line-height:24px; text-align:center;
+  font:600 11px Cinzel,Georgia,serif; color:var(--silver-hi); }
+
+.card h3{
+  margin:2px 0 10px; text-align:center; color:var(--rubric);
+  font:600 15px/1.25 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+}
+.card h3 em{ font-style:normal; color:var(--rubric-soft); }
+.sub{
+  display:flex; align-items:center; gap:9px; justify-content:center; margin:12px 0 6px;
+  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; text-transform:none; color:var(--ink-soft);
+}
+.sub::before,.sub::after{ content:""; flex:1; max-width:54px; height:1px; background:var(--rule); }
+.card p{ margin:0 0 8px; }
+.q{ font-style:italic; }
+.cite{ font-size:12.5px; color:var(--ink-soft); }
+.mark{ font-size:11px; letter-spacing:.1em; color:var(--rubric); }
+
+/* ── STATE AS SOMETHING A HAND DID TO THE PAGE ────────────────────────────────────────────────
+   The reference's single best idea: a settled grudge is STRUCK THROUGH, not greyed out. Here a
+   superseded reading is crossed out the way the archive's own scribe would cross it. */
+.struck{ position:relative; }
+.struck > *{ opacity:.55; }
+.struck::after{
+  content:""; position:absolute; left:3%; right:3%; top:38%; width:auto; height:7px; border:0;
+  background:linear-gradient(92deg, rgba(125,43,32,0) 0%, var(--rubric) 8%, var(--rubric) 92%, rgba(125,43,32,0) 100%);
+  transform:rotate(3deg); transform-origin:center; opacity:.72; border-radius:2px;
+  box-shadow:0 1px 0 rgba(125,43,32,.35);
+}
+.struck .why{
+  position:absolute; right:14px; bottom:8px; transform:rotate(-2deg);
+  font:italic 12px Georgia,serif; color:var(--rubric); opacity:1;
+}
+
+/* ── A MEASURED SILENCE: ruled space, not an empty div ───────────────────────────────────────── */
+.silence{ padding:14px 18px; }
+.silence .lines{ height:64px; background:repeating-linear-gradient(180deg,
+  transparent 0 15px, var(--rule-soft) 15px 16px); opacity:.6; margin:8px 0 6px; }
+.silence .note{ font:italic 12.5px Georgia,serif; color:var(--ink-soft); }
+
+@media (prefers-reduced-motion:reduce){
+  .tab{transition:none}
+  .tab:hover,.tab:focus-visible,.tab[aria-current]{margin-left:-40px}
+  .tab[aria-current]{filter:brightness(1.3)}
+}
+
+@media (max-width:560px){
+  /* the plaque must wrap, or a long volume title makes the whole document scroll sideways */
+  .plaque{ white-space:normal; max-width:86vw; text-align:center; line-height:1.35;
+    font-size:11px; letter-spacing:.02em; padding:6px 14px 7px; }
+  .folio{ font-size:10px; letter-spacing:.02em; }
+  .leaf{ padding:22px 18px 24px; }
+  .leaf::before{ inset:10px 12px; }
+  body{ padding:22px 10px; }
+}
+
+@media (max-width:1000px){
+  /* MEASURED 19 Aug: the dense leaf was UNREADABLE here and no guard could see it. `.book` keeps
+     `min-height:520px`, `.spread` is `flex:1 1 0%`, so the spread took the REMAINDER of a fixed
+     520px box -- 464px, split into two 231px rows -- while the leaf's own content ran to 1064px.
+     `.leaf{overflow:auto}` then hid the rest behind a scrollbar inside a book. A codex leaf does
+     not scroll; it turns. So the book sizes to its leaves here, and nothing is hidden. */
+  .book{ aspect-ratio:auto; min-height:0; padding:26px 20px 30px; }
+  .spread{ grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto; flex:0 0 auto; }
+  .leaf{ overflow:visible; }
+  .gutter{ display:none; }
+  .leaf.r{ border-top:1px solid var(--vellum-edge); }
+  .tabs{ display:none; }
+  .clasp{ display:none; }
+}
+
+/* nav.js IS DELIBERATELY NOT LOADED HERE. compose adds it to every page, but this specimen has no
+   <nav id="ardanav"> for it to fill -- nav.js:38 returns at once, so it would download and draw
+   nothing, and nav_check catches exactly that waste. The prototype's navigation IS its thumb tabs:
+   that is the whole proposition being tested. If compose re-adds the tag on a later run, remove it
+   again rather than adding an empty #ardanav, which would put two navigations on one page -- the
+   fault CODEX-STAGE-7 spent a day removing. */
+
+/* ── THE FOUR SPREAD TYPES ───────────────────────────────────────────────────────────────────
+   The owner ruled on 19 Aug that every route becomes a spread, and asked what I recommend for
+   the shape of them. This is the answer, and it comes from his own reference: book3.jpg puts a
+   MAP on the left leaf and a LIST on the right. The book never stops being a book; the LEAVES
+   change what they carry. So one object, four grammars, set by data-spread on .book:
+
+     ledger   a record hall -- 2x2 record cards across the spread, as book4.jpeg lays them out
+     dossier  one entity -- the portrait and arms on the left leaf, the record on the right
+     plate    a map or drawn sheet -- the image fills the left leaf, its apparatus on the right
+     codex    running prose -- two columns across the fold, as a real book sets text
+
+   A reference page then never has to pretend to be a chapter, which is the failure the previous
+   one-size layout produced. */
+
+/* LEDGER: records two-up per leaf, four across the spread */
+.book[data-spread="ledger"] .cards{ display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
+@media (min-width:1000px){
+  .book[data-spread="ledger"] .cards{ grid-template-columns:minmax(0,1fr); }
+}
+
+/* DOSSIER: the left leaf becomes a standing figure -- portrait, arms, styles */
+.book[data-spread="dossier"] .leaf.l{ display:flex; flex-direction:column; align-items:center;
+  justify-content:flex-start; gap:14px; padding-top:38px; }
+.portrait{ width:min(230px,58%); aspect-ratio:3/4; border-radius:2px;
+  background:
+    radial-gradient(60% 45% at 50% 30%, rgba(255,246,222,.55), transparent 62%),
+    linear-gradient(168deg,#cbb68c,#a98a5c 58%,#7d6237);
+  box-shadow:inset 0 0 0 1px var(--rule), inset 0 0 26px rgba(60,40,12,.35),
+             0 3px 9px rgba(50,32,10,.30);
+  position:relative; }
+.portrait::after{ content:"the archive holds no likeness"; position:absolute; inset:auto 8px 10px;
+  text-align:center; font:italic 11.5px 'EB Garamond',Georgia,serif; color:#5c4520; opacity:.85; }
+.arms{ width:82px; height:96px; clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);
+  background:linear-gradient(160deg,#2f4a5e,#1a2b38); position:relative;
+  box-shadow:0 2px 6px rgba(0,0,0,.35); }
+.arms::after{ content:""; position:absolute; inset:0; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>") center/58% no-repeat; }
+.styles{ text-align:center; font:italic 14px 'EB Garamond',Georgia,serif; color:var(--ink-soft);
+  max-width:34ch; }
+
+/* PLATE: the drawn sheet fills the left leaf, its apparatus reads on the right */
+.book[data-spread="plate"] .leaf.l{ padding:26px; display:flex; }
+.sheet{ flex:1; position:relative; border:1px solid var(--rule); border-radius:2px;
+  background:
+    repeating-linear-gradient(31deg, rgba(120,92,44,.10) 0 1px, transparent 1px 13px),
+    repeating-linear-gradient(-24deg, rgba(120,92,44,.07) 0 1px, transparent 1px 19px),
+    radial-gradient(58% 44% at 40% 38%, rgba(150,120,66,.20), transparent 66%),
+    linear-gradient(170deg,#eadfc0,#ddcda6);
+  box-shadow:inset 0 0 30px rgba(90,64,22,.22); }
+.sheet .pin{ position:absolute; width:7px; height:7px; border-radius:50%; background:var(--rubric);
+  box-shadow:0 0 0 3px rgba(143,47,28,.20); }
+.sheet .nm{ position:absolute; font:italic 12px 'EB Garamond',Georgia,serif; color:#5f4622;
+  white-space:nowrap; transform:translate(10px,-7px); }
+.sheet .rose{ position:absolute; right:14px; bottom:14px; width:54px; height:54px; opacity:.6;
+  background:
+    conic-gradient(from 0deg, transparent 0 43deg, var(--rule) 44deg 46deg, transparent 47deg 133deg,
+      var(--rule) 134deg 136deg, transparent 137deg 223deg, var(--rule) 224deg 226deg,
+      transparent 227deg 313deg, var(--rule) 314deg 316deg, transparent 317deg);
+  border:1px solid var(--rule); border-radius:50%; }
+
+/* CODEX: running prose set in two columns across the fold */
+.book[data-spread="codex"] .leaf{ column-count:2; column-gap:26px; column-rule:1px solid var(--rule-soft); }
+.book[data-spread="codex"] .rubric{ column-span:all; }
+.book[data-spread="codex"] .lede{ column-span:all; }
+.book[data-spread="codex"] p{ margin:0 0 .8em; text-align:justify; hyphens:auto; }
+.book[data-spread="codex"] .drop::first-letter{ float:left; font:700 3.1em/0.82 Cinzel,Georgia,serif;
+  color:var(--rubric); padding:2px 8px 0 0; }
+@media (max-width:1000px){ .book[data-spread="codex"] .leaf{ column-count:1; } }
+
+/* the spread-type label, so the specimen says what it is demonstrating */
+.kind{ position:absolute; top:-13px; left:26px; z-index:6; padding:5px 13px 6px; border-radius:2px;
+  background:linear-gradient(180deg,#6d4b28,#31200e);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
+  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; color:var(--silver); }
+
+
+/* ── THE APPARATUS OF A WORKING CODEX ────────────────────────────────────────────────────────
+   The owner: "the pages could be way more detailed and packed, like an ancient codex, with
+   footnotes, illustrations, art, bigger and smaller texts, pictures, and way more content...
+   make it a little bit crowded, like if Tolkien's every note and writing and drawing, and every
+   work was in one big notebook."
+
+   That is a real manuscript page, and a real manuscript page is not one column of prose. It is a
+   TEXT BLOCK surrounded by APPARATUS, in several hands, at several sizes, added over years. Every
+   device below is genuine codicological practice, drawn from scratch:
+
+     marginalia       a later hand writing beside the text, smaller, slightly askew
+     manicule         ☞ the pointing hand a reader drew to mark a passage worth returning to
+     interlinear      a gloss written small BETWEEN the ruled lines, over the word it explains
+     footnote rule    a hairline across the foot of the leaf, then the notes beneath it
+     reference mark   a superscript letter or dagger in the text, answered below
+     versal           an outsized coloured initial opening a section
+     catchword        the first word of the NEXT leaf, set at the foot -- how a binder kept order
+     tipped-in slip   a smaller sheet pasted to the leaf, carrying a later correction
+     correction       a word struck and its replacement written above, by the same hand
+     figure           a drawn diagram or device set INTO the text, which flows around it
+     ruling           the faint lines the scribe ruled before writing a word */
+
+/* the scribe's ruling, under everything on the leaf */
+.leaf{ --line:21px; }   /* the ruling pitch. The type was 1.78x too small for its page:
+     measured across the primary tier the pitch is a median 0.0486 of page height -- 21 lines
+     to a page -- against this leaf's 0.0273 and 33 lines. 23px takes most of that distance
+     without turning a working archive into a display manuscript. */
+.leaf.ruled::before{
+  content:""; position:absolute; inset:30px 34px 50px; pointer-events:none; z-index:0;
+  border:1px solid var(--rule); box-shadow:inset 0 0 0 4px var(--rule-soft);
+  /* a HARD-POINT ruling shadows the sheet; it is not a drawn line. Measured on the King's
+     Letter plate as dL 7-12 of 255 with a* barely moving -- so this is a luminance step with
+     almost no hue, at 4.3% rather than the 13% the old value used. */
+  background:repeating-linear-gradient(180deg,
+    transparent 0 calc(var(--line) - 1px), rgba(120,96,52,.11) calc(var(--line) - 1px) var(--line));
+  opacity:.62;
+}
+/* THE TEXT SITS ON THE RULING: its line-box IS the pitch, so every line lands on a rule.
+   Tolkien wrote on every SECOND rule of the King's Letter -- but his hand is 30px tall on that
+   plate and ours is 13.6px, so copying the 2:1 ratio literally gave a 38px line on 13.6px type
+   and the page read SPARSE, which is the exact opposite of what was asked for. What transfers
+   from the plate is that the writing REGISTERS to the ruling, not the integer he happened to use.
+   One rule per line, at a pitch measured against our own type. */
+.leaf.ruled .tb p,.leaf.ruled .tb li{ line-height:var(--line); }
+.leaf > *{ position:relative; z-index:1; }
+
+/* the text block sits inboard, leaving a wide OUTER margin for the apparatus, as a codex does */
+.tb{ margin-left:clamp(76px,17%,132px); }            /* verso: outer margin is the LEFT  */
+.leaf.r .tb{ margin-left:0; margin-right:clamp(76px,17%,132px); }  /* recto: the RIGHT */
+
+/* MARGINALIA — a later hand, smaller, in a browner ink, tilted a degree or two */
+.marg{
+  position:absolute; width:clamp(96px,17%,138px); max-height:112px; font:italic 10.4px/1.34 'EB Garamond',Georgia,serif;
+  color:#6b4a24; transform:rotate(-1.2deg); text-align:left;
+}
+/* OUTER MARGIN, and the inset must clear the illuminated border (7-22px) and the fore-edge.
+   The right leaf ran onto the board at 14px because the border sits INSIDE the leaf, not outside. */
+.leaf.l .marg{ left:26px; } .leaf.r .marg{ right:26px; transform:rotate(1deg); }
+.marg b{ display:block; font:600 9.5px/1.2 Cinzel,Georgia,serif; letter-spacing:.02em;
+  text-transform:none; color:var(--rubric); margin-bottom:2px; }
+.marg.hand2{ color:#4a5a3a; transform:rotate(1.6deg); font-size:10.5px; }
+
+
+/* ── THE HANDS, at the owner's ruling of 19 August: "go fully authentic" ──────────────────────
+   HIS PRIMARY TIER HAS THREE HANDS, NOT ONE, AND THAT IS THE WHOLE OF THE DESIGN HERE. Measured:
+
+     tengwar_calligraphy_1   GOTHIC TEXTURA QUADRATA -- vertical, dense, set solid, 19.8% ink
+     andriesd                INSULAR / UNCIAL MAJUSCULE -- round, wide, low contrast, no real
+                             ascenders, letters filled with gold
+     The King's Letter       BROAD-NIB CHANCERY ITALIC -- flat pen angle, long horizontal lids
+
+   So "fully authentic" does not mean textura everywhere. Textura is the DISPLAY hand: it is what
+   a scribe used for a title and an incipit, and it is close to unreadable at length -- which is
+   why medieval scribes did not write books in it either. The uncial is the BOOK hand of the same
+   tradition, and it is one of his own three. Choosing it is not a compromise with legibility; it
+   is picking the right one of the hands he supplied.
+
+   THE THREE ROLES, EACH TAKING THE HAND IT HAD IN A REAL MANUSCRIPT:
+     the volume title, on the board   TEXTURA     grandest, shortest, seen not read
+     rubric headings on the leaf      UNCIAL      read at a glance
+     the body of the leaf             UNCIAL      the book hand
+     citations, marginalia, apparatus GARAMOND    a humanist face, drawn FROM Carolingian
+                                                  minuscule -- the same tradition, three centuries
+                                                  later, and the archive's own voice rather than
+                                                  the scribe's
+
+   AND IT IS SWITCHABLE, so a reading can be looked at rather than argued about.
+   `data-hand="humanist"` on <html> returns the leaf to Garamond throughout. */
+:root[data-hand="authentic"] .plaque,
+:root[data-hand="authentic"] .vol-title{ font-family:UnifrakturMaguntia,'Uncial Antiqua',Cinzel,serif;
+  letter-spacing:0; }
+:root[data-hand="authentic"] .rubric,
+:root[data-hand="authentic"] .card h3,
+:root[data-hand="authentic"] .sub,
+:root[data-hand="authentic"] .rh{ font-family:'Uncial Antiqua',Cinzel,Georgia,serif; letter-spacing:0; }
+/* SPECIFICITY, AND IT BIT IMMEDIATELY. `.leaf.twocol .tb p` is (0,3,1) and
+   `:root[data-hand="authentic"] .tb p` is (0,2,2) -- the dense-leaf rule WINS, so the size and the
+   alignment set here were silently discarded while the family and the leading applied. Measured
+   after writing it: font-size stayed 15.4px and text-align stayed justify. Same trap CLAUDE.md
+   records against the dark theme -- specificity compares (ids, classes, elements)
+   lexicographically, so counting selectors by eye is not a method. */
+:root[data-hand="authentic"] .leaf .tb p,
+:root[data-hand="authentic"] .leaf .tb li,
+:root[data-hand="authentic"] .leaf .lede{ font-family:'Uncial Antiqua','EB Garamond',Georgia,serif;
+  font-size:13.3px; letter-spacing:.001em; }
+/* THE RULING TIGHTENS FOR THE UNCIAL, AND THIS IS MEASURED RATHER THAN TASTE. Across the primary
+   tier the ratio of line pitch to the ink extent of one line has a median of 1.09 -- TWELVE OF
+   FOURTEEN pieces sit between 0.96 and 1.42. These hands are set SOLID. The uncial has almost no
+   ascenders and a large x-height, so it needs LESS leading than a humanist face at the same size,
+   not more; at the humanist pitch it read airy and modern, which is the opposite of the source. */
+/* AND 17px WAS TUNED FOR A HAND THAT IS NO LONGER THE READING HAND -- the paragraph above says
+   so itself: "the uncial has almost no ascenders and a large x-height, so it needs LESS leading
+   than a humanist face at the same size". Ruling C9, 19 Aug, settled that the uncial is the
+   DISPLAY hand and EB Garamond carries the reading, and Garamond is precisely the humanist face
+   that sentence excludes. Set at 14/17 it was 1.21 and read cramped; the owner said so looking at
+   this page. 21px restores the leaf's own measured pitch and the type now sits ON the ruling
+   rather than between two of them, which is the whole point of ruling a page. */
+:root[data-hand="authentic"] .leaf{ --line:13.6px; }
+/* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
+   of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
+   with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
+   and costs nothing the sources actually show. */
+:root[data-hand="authentic"] .leaf.twocol .tb p{ text-align:left; hyphens:auto; }
+/* THE VERSAL IS A REAL MEDIEVAL LETTER, AND IT IS LIVE TEXT RATHER THAN A PICTURE.
+   Junicode 2.226 by Peter S. Baker, OFL-1.1, read from the OFL.txt inside his own release rather
+   than from a summary of it -- the licence file ships beside the font.
+
+   THE LETTERFORM COMES FROM `salt` 2, NOT FROM AN AXIS. This paragraph used to claim the ENLA
+   axis gave versals at 100; it does not, and the full account of both failures is at the foot of
+   this file. What ships is a 33.7 KB subset carrying Junicode's Lombardic AND Rustic capitals
+   with the `salt` feature intact and its alternate INDEX unchanged, so `"salt" 2` addresses the
+   Lombardic here exactly as it does in the 1,141 KB original.
+   A drawn initial would be an image with a caption and a licence; this is a letter -- selectable,
+   searchable, scalable, and it inherits the leaf's ink. */
+@font-face{ font-family:"Junicode Versal"; src:url("fonts/junicode-versal.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap;
+  unicode-range:U+0041-005A,U+00C0-00DE,U+0152,U+00C6; }
+.versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif;
+  font-feature-settings:"salt" 2; }                 /* 2 = Lombardic, 1 = Rustic, 0 = plain */
+:root[data-hand="authentic"] .versal{ font-family:"Junicode Versal",UnifrakturMaguntia,Cinzel,serif;
+  font-size:3.6em; line-height:.8; font-feature-settings:"salt" 2; }
+/* the apparatus stays humanist ON PURPOSE -- it is the archive speaking, not the scribe */
+:root[data-hand="authentic"] .fn,
+:root[data-hand="authentic"] .marg,
+:root[data-hand="authentic"] .cite,
+:root[data-hand="authentic"] .slip{ font-family:'EB Garamond',Georgia,serif; }
+
+/* THE SIX HANDS, each in its own ink. Six scribes did not share a pot, and the colour is how a
+   reader tells one annotator from another before reading a word. Values are separated in hue and
+   held within a narrow lightness band so no hand looks louder than the rest. */
+.marg.hand-nomenclator{ color:#6b4a24; }   /* names       — the base brown-black of the book */
+.marg.hand-stemma     { color:#4a5a3a; }   /* kinship     — a green-cast iron gall */
+.marg.hand-annalist   { color:#5a4470; }   /* dates       — a faded purple */
+.marg.hand-corrector  { color:#8f2f1c; }   /* the page    — rubric, because it marks the leaf */
+.marg.hand-revisor    { color:#2f4a5e; }   /* conceptions — a cold blue-black */
+.marg.hand-chartarius { color:#7a5a1f; }   /* the maps    — the ochre of a drawn sheet */
+
+/* A NOTE CARRIES ITS OWN PROOF. The paraphrase is always visible; the span it paraphrases is one
+   click away. `.marg` is capped and clipped, so the quotation MUST NOT expand it -- it opens as a
+   slip laid over the leaf, which is both what a codex does and the only layout-safe answer. */
+.marg{ overflow:visible; }
+.marg .marg-t{ display:block; max-height:70px; overflow:hidden;
+  -webkit-mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); }
+/* When the slip is open the note is printed in it IN FULL, so the fade never hides anything. */
+.marg-q > blockquote .marg-full{ display:block; font-style:normal; font-size:11px; line-height:1.45;
+  color:var(--ink-soft); padding-bottom:7px; margin-bottom:7px; border-bottom:1px solid rgba(169,138,78,.5); }
+.marg-q{ margin-top:3px; }
+.marg-q summary{ list-style:none; cursor:pointer; display:flex; gap:4px; align-items:baseline;
+  font:600 8.5px/1 Cinzel,Georgia,serif; letter-spacing:.1em; text-transform:none;
+  color:var(--rubric); opacity:.85; }
+.marg-q summary::-webkit-details-marker{ display:none; }
+.marg-q summary:hover,.marg-q summary:focus-visible{ opacity:1; text-decoration:underline; }
+.marg-q .marg-more{ border-bottom:1px dotted currentColor; }
+.marg-q[open] summary .marg-more{ border-bottom:none; }
+.marg-q[open]{ position:relative; }
+.marg-q[open] > blockquote,
+.marg-q[open] > cite{ position:absolute; z-index:40; width:min(340px,46vw); box-sizing:border-box; }
+.marg-q > blockquote{ margin:0; padding:11px 13px 8px; left:0; top:16px;
+  background:linear-gradient(172deg,#faf4e2,#ece0c2); transform:rotate(-.4deg);
+  box-shadow:0 3px 9px rgba(70,48,16,.34), inset 0 0 0 1px rgba(190,165,113,.75);
+  font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; color:var(--ink); text-align:left; }
+.marg-q > cite{ left:0; top:calc(16px + 100%); padding:0 13px 9px 13px; transform:rotate(-.4deg);
+  background:linear-gradient(172deg,#e9dcbb,#e2d3ae);
+  box-shadow:0 3px 9px rgba(70,48,16,.34), inset 0 0 0 1px rgba(190,165,113,.75);
+  font:600 9px/1.5 Cinzel,Georgia,serif; letter-spacing:.015em; text-transform:none;
+  color:var(--ink-soft); font-style:normal; display:block; }
+/* The slip opens INWARD from the outer margin, or it would hang off the board. */
+.leaf.r .marg-q[open] > blockquote,.leaf.r .marg-q[open] > cite{ left:auto; right:0; }
+.marg-q > blockquote::before{ content:""; position:absolute; left:50%; top:-6px; width:32px;
+  height:10px; transform:translateX(-50%) rotate(-2deg); background:rgba(214,198,158,.9);
+  box-shadow:0 1px 2px rgba(60,40,12,.25); }
+
+/* A margin that is empty for want of its record must SAY so. An unexplained blank is this
+   archive's own declared anti-pattern -- see docs/codex-states.md. */
+.marg-absent{ color:var(--ink-soft); opacity:.7; }
+.marg-absent b{ color:var(--ink-soft); }
+
+/* MANICULE — the pointing hand a reader inked beside a passage */
+.manicule{ position:absolute; font-size:15px; color:var(--rubric); opacity:.8; line-height:1; }
+.leaf.l .manicule{ left:4px; transform:scaleX(-1); } .leaf.r .manicule{ right:4px; }
+
+/* INTERLINEAR GLOSS — written small between the lines, over the word it explains */
+.gl{ position:relative; border-bottom:1px dotted var(--rubric-soft); }
+.gl::after{ content:attr(data-gl); position:absolute; left:0; top:-0.92em; white-space:nowrap;
+  font:italic 9.5px 'EB Garamond',Georgia,serif; color:var(--rubric); opacity:.9; }
+
+/* A CORRECTION — struck, with the replacement above it in the same hand */
+.corr{ position:relative; text-decoration:line-through; text-decoration-color:var(--rubric);
+  text-decoration-thickness:1px; opacity:.62; }
+.corr::after{ content:attr(data-was); position:absolute; left:0; top:-0.98em; white-space:nowrap;
+  font:italic 10px 'EB Garamond',Georgia,serif; color:var(--rubric); opacity:1; }
+
+/* REFERENCE MARK and the FOOTNOTES it answers */
+.rm{ font-size:.66em; vertical-align:super; color:var(--rubric); font-weight:600; }
+.fn{ margin-top:auto; margin-bottom:24px; margin-left:78px; padding-right:64px; padding-top:9px; border-top:1px solid var(--rule);
+  font:10.5px/1.42 'EB Garamond',Georgia,serif; color:var(--ink-soft); column-count:2;
+  column-gap:16px; column-rule:1px solid var(--rule-soft); }
+.leaf.r .fn{ margin-left:0; margin-right:78px; }
+.fn p{ margin:0 0 4px; text-indent:-9px; padding-left:9px; }
+.fn .rm{ font-size:.8em; }
+
+/* A VERSAL — the outsized coloured initial opening a section */
+/* THE PANEL INITIAL IS BLUE. Measured across the primary tier: pl_elbereth #143086,
+   pl_namarie #470871, andries_aiamaria #3d5991, pl_anga #112972 -- every one lapis or violet,
+   and not one red. Red is what the RUBRIC is for. Alternating them is what makes a book read
+   as illuminated rather than as a legal instrument. */
+/* the `font:` SHORTHAND here resets font-family to Cinzel and would undo the Lombardic, so the
+   family is restated after it rather than before -- shorthand-then-longhand, in that order. */
+.versal{ float:left; font:700 3.4em/0.78 Cinzel,Georgia,serif; color:var(--lapis);
+  font-family:"Junicode Versal",Cinzel,Georgia,serif; font-feature-settings:"salt" 2;
+  padding:3px 9px 0 0; text-shadow:0 1px 0 rgba(255,255,255,.55); }
+.leaf.r .versal,.leaf:nth-of-type(2n) .versal{ color:var(--rubric); }   /* they alternate */
+
+/* CATCHWORD — the first word of the next leaf, set at the foot, as a binder needed */
+.catch{ position:absolute; bottom:22px; font:italic 11px 'EB Garamond',Georgia,serif;
+  color:var(--ink-soft); opacity:.75; }
+.catch{ right:26px; bottom:6px; z-index:3; }   /* bottom-right, as a binder read it */
+
+/* A TIPPED-IN SLIP — a smaller sheet pasted on, carrying a later note */
+.slip{ position:relative; margin:10px 0 12px; padding:9px 12px 10px;
+  background:linear-gradient(172deg,#f3ead3,#e6d9b8); transform:rotate(-.5deg);
+  box-shadow:0 2px 5px rgba(70,48,16,.28), inset 0 0 0 1px rgba(190,165,113,.7);
+  font:11.5px/1.45 'EB Garamond',Georgia,serif; color:var(--ink-soft); }
+.slip::before{ content:""; position:absolute; left:50%; top:-6px; width:34px; height:11px;
+  transform:translateX(-50%) rotate(-2deg); background:rgba(214,198,158,.85);
+  box-shadow:0 1px 2px rgba(60,40,12,.25); }
+.slip b{ font:600 9.5px Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+  color:var(--rubric); }
+
+/* A FIGURE set into the text, which flows around it */
+.fig{ float:right; width:126px; margin:2px 0 8px 14px; }   /* verso: toward the gutter */
+.leaf.r .fig{ float:left; margin:2px 14px 8px 0; }         /* recto: toward the gutter */
+.fig .frame{ aspect-ratio:1/1; border:1px solid var(--rule); background:
+    radial-gradient(circle at 50% 44%, rgba(255,250,236,.9), transparent 62%),
+    linear-gradient(168deg,#e9dcbc,#d6c49c);
+  display:grid; place-items:center; box-shadow:inset 0 0 14px rgba(90,64,22,.20); }
+.fig figcaption{ margin-top:4px; font:italic 10px/1.3 'EB Garamond',Georgia,serif;
+  color:var(--ink-soft); text-align:center; }
+/* the two devices drawn into figures, both original geometry */
+.dev-tree{ width:74px; height:74px; position:relative;
+  /* THE WHITE TREE AND THE SEVEN STARS, drawn here as original geometry: a mirrored pair of
+     branch curves with a bloom at each tip, the seventh above the crown. Nothing traced. */
+  background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 52'><g fill='none' stroke='%23a47741' stroke-width='1.7' stroke-linecap='round'><path d='M20 51V22'/><path d='M20 22C20 22 12 20 9 12M20 22C20 22 28 20 31 12'/><path d='M20 28C20 28 13.5 26.5 11 20M20 28C20 28 26.5 26.5 29 20'/><path d='M20 16C20 16 15 14.5 13.5 8M20 16C20 16 25 14.5 26.5 8'/><path d='M20 22V8'/></g><g fill='%23a47741'><circle cx='9' cy='11' r='1.7'/><circle cx='31' cy='11' r='1.7'/><circle cx='11' cy='19' r='1.5'/><circle cx='29' cy='19' r='1.5'/><circle cx='13.5' cy='7' r='1.5'/><circle cx='26.5' cy='7' r='1.5'/><circle cx='20' cy='4' r='1.9'/></g></svg>") center/62% no-repeat; }
+.dev-tree::after{ content:""; position:absolute; inset:auto 0 2px; height:8px;
+  background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>");
+  background-repeat:no-repeat; background-size:8px 8px;
+  background-position:8% 3px,22% 0,36% 3px,50% 0,64% 3px,78% 0,92% 3px; }
+.dev-ring{ width:66px; height:66px; border-radius:50%; border:3px double #8a6134;
+  box-shadow:inset 0 0 10px rgba(120,88,36,.4); }
+
+/* smaller, denser body when a leaf is packed */
+.book[data-density="high"] .leaf{ font-size:13.2px; line-height:1.44; }
+.book[data-density="high"] .card{ padding:11px 13px 10px; }
+.book[data-density="high"] .card h3{ font-size:13px; margin-bottom:7px; }
+.book[data-density="high"] .cards{ gap:10px; }
+.book[data-density="high"] .rubric{ font-size:16px; margin-bottom:11px; }
+
+
+/* ── DENSITY, ROUND TWO ──────────────────────────────────────────────────────────────────────
+   The owner asked for more: "more figures, a second text column, running heads, quire
+   signatures, an illuminated border." Each below is real practice, drawn from scratch.
+
+   RUNNING HEAD -- the book and section named across the top of every opening, so a reader who
+   opens the codex anywhere knows where they are without turning back to the title.
+   QUIRE SIGNATURE -- the binder's mark at the foot of the first leaf of each gathering: a letter
+   for the quire and a numeral for the leaf within it. This is the machinery that kept a hand-sewn
+   book in order, and it belongs on a page that means it.
+   ILLUMINATED BORDER -- a vine band down the outer edge. Restrained on purpose: a border that
+   competes with the text is decoration, and this archive's whole claim is that the text matters. */
+
+.rh{ position:absolute; top:var(--rh-top,19px); left:26px; right:26px; display:flex; justify-content:space-between;
+  align-items:baseline; font:600 9.5px/1 Cinzel,Georgia,serif; letter-spacing:.02em;
+  text-transform:none; color:var(--azure); opacity:.9; pointer-events:none; z-index:2; }
+.rh .n{ font-variant-numeric:tabular-nums; color:var(--ink-soft); letter-spacing:.1em; }
+.leaf.r .rh{ flex-direction:row-reverse; }
+
+.quire{ position:absolute; bottom:6px; left:26px; font:600 9px Cinzel,Georgia,serif;
+  letter-spacing:.02em; color:var(--ink-soft); opacity:.7; }
+
+
+/* THE VINE BAND IS GONE -- the owner's ruling C76, 20 August 2026. His direction of
+   19 August was that the fore-edges carry real tengwar, cirth and sarati relevant to the
+   open leaf, REPLACING the minimal art -- and the note further down this file already
+   offered the choice: "keep `.illum` for leaves that want a vine, or delete it". The edge
+   scripts were built, the vine was never deleted, and both ran down the edge; `replace`
+   had been read as `add`. He has now deleted it. The writing stays, the ornament goes.
+   Identified by differential measurement: hiding it changed exactly 7,316 pixels in two
+   clusters at x=163-175 and x=1424-1437, and nothing else on the page. */
+
+/* A SECOND TEXT COLUMN on any leaf that asks for it */
+.leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
+/* MEASURED: the verso ran 25px past its own foot and clipped the last footnote. A packed leaf
+   sets smaller -- which is what a real crowded codex does -- rather than losing a line. */
+.leaf.twocol .tb p{ font-size:14.2px; margin-bottom:0; }
+/* margin-bottom must be a WHOLE number of rules or the next paragraph sits off them. */
+.leaf.twocol .tb p + p{ margin-top:var(--line); }
+.leaf.twocol .fn{ font-size:9.7px; line-height:1.36; padding-top:5px; }
+.leaf.twocol .fn p{ margin:0 0 3px; }
+.leaf.twocol .slip{ font-size:10.8px; line-height:1.38; padding:7px 10px 8px; }
+.leaf.r.twocol .tb{ margin-left:0; margin-right:calc(26px + clamp(96px,17%,138px) + 10px); }
+.leaf.twocol .tb > h2,.leaf.twocol .tb > .lede,.leaf.twocol .tb > .slip{ column-span:all; }
+.leaf.twocol .tb p{ text-align:justify; hyphens:auto; margin:0 0 .55em; }
+@media (max-width:1000px){ .leaf.twocol .tb{ column-count:1; } }
+
+/* MORE FIGURES: three further devices, all original geometry */
+.dev-star{ width:64px; height:64px; position:relative; }
+.dev-star::before{ content:""; position:absolute; inset:0; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%2328418c' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>") center/54% no-repeat; }
+.dev-crown{ width:70px; height:56px; position:relative; }
+.dev-crown::before{ content:""; position:absolute; left:0; right:0; bottom:8px; height:12px;
+  background:#8a6134; border-radius:2px; }
+.dev-crown::after{ content:""; position:absolute; left:0; right:0; top:8px; height:22px; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 20'><path fill='none' stroke='%23a47741' stroke-width='1.4' stroke-linejoin='round' d='M4 17h24M4 17C4 17 3 7 5.5 4.5 8 7 10 9 12.5 5 15 1 16 1 16 1s1 0 3.5 4C22 9 24 7 26.5 4.5 29 7 28 17 28 17'/><circle cx='16' cy='1.6' r='1.5' fill='%23bf3637'/></svg>") center/44px 22px no-repeat; }
+.dev-ship{ width:78px; height:56px; position:relative; }
+.dev-ship::before{ content:""; position:absolute; left:6px; right:6px; bottom:10px; height:10px;
+  background:#7d6237; clip-path:polygon(0 0,100% 0,86% 100%,14% 100%); }
+.dev-ship::after{ content:""; position:absolute; left:50%; bottom:20px; width:2px; height:26px;
+  background:#5f4622; box-shadow:8px -6px 0 -1px #a5813c, -8px -6px 0 -1px #a5813c; }
+/* a small figure that sits IN the margin rather than in the text */
+.fig.marg-fig{ position:absolute; float:none; width:74px; margin:0; bottom:34px; }
+/* the foot of the margin belongs to figures; .marg is bounded above so it cannot reach here */
+.leaf.l .fig.marg-fig{ left:24px; } .leaf.r .fig.marg-fig{ right:24px; }
+
+
+/* ── THE APPARATUS COLLAPSES ON A PHONE ──────────────────────────────────────────────────────
+   A margin is a property of a WIDE page. At 390px there is no outer margin to write in, so
+   absolutely-positioned hands, figures, quire marks and catchwords pile on top of each other --
+   measured: 6 overlapping pairs at 390 against 1 at 1500.
+
+   So below 1000px the apparatus comes into the flow and becomes what it always was underneath: a
+   note, after the passage it annotates. The illuminated border and the catchword go entirely --
+   a border needs a margin, and a catchword is a BINDER'S instruction for a physical gathering,
+   meaningless where there are no leaves to keep in order. Nothing is hidden that carries meaning;
+   what goes is the furniture of a codex that is not there. */
+/* C278 -- 1100 BECOMES 1000 SO THE TWO NARROW BLOCKS AGREE. Measured in-browser: this block fired
+   between 1001px and 1100px while the `max-width:1000px` block above did NOT, so a real desktop
+   width -- 1024x768 is a common laptop -- rendered the two-page spread WITH gutter, tabs and clasp
+   AND the phone treatment of marginal notes with no catchwords. Half of each, which is exactly the
+   mingling he reported. Nothing at or below 1000px changes: C278 froze the mobile and tablet rules,
+   and this only stops them reaching a desktop. */
+@media (max-width:1000px){
+  .book{ aspect-ratio:auto; min-height:0; }
+  .spread{ flex:0 0 auto; }
+  .leaf{ overflow:visible; }
+  .tb,.leaf.r .tb,.leaf.twocol .tb,.leaf.r.twocol .tb{ margin-left:0; margin-right:0; }
+  .fn,.leaf.r .fn{ margin-left:0; margin-right:0; column-count:1; }
+  .marg{ position:static; width:auto; max-height:none; transform:none; margin:12px 0;
+    padding:9px 11px; border-left:2px solid var(--rubric-soft);
+    background:rgba(255,250,236,.42); }
+  .leaf.l .marg,.leaf.r .marg{ left:auto; right:auto; transform:none; }
+  .fig.marg-fig{ position:static; float:none; width:96px; margin:12px auto; }
+  .catch{ display:none; }
+  .quire{ position:static; display:block; margin-top:10px; text-align:center; }
+  .manicule{ display:none; }
+}
+
+
+/* ══ MOVED HERE FROM THE GENERATED codex-object.css, 19 August 2026 ═══════════════════════════
+   These rules were edited straight into `site/codex-object.css`, which `map/gen_codex_route.py`
+   rebuilds WHOLE from this STYLE element plus its own appendix -- so the next --apply would have taken
+   them, silently, with a success message. They are here because they are the LOOK: the type
+   hierarchy the prototype itself was measured for, and ruling C12's margin notice. Change them
+   here and 622 routes follow; change them in the generated file and they are gone.
+
+   THEY KEEP THEIR ROUTE SCOPE ON PURPOSE. `:root[data-codex-object="on"] .book` and the
+   !important flags are what make them survive the inline STYLE block every published route carries.
+   Stripping that armour would be a redesign, not a move, so it was not done -- but it does mean
+   this prototype page, which carries no `data-codex-object`, does not itself show them. That is
+   the one thing this move did not fix, and it is reported rather than papered over. */
+
+/* 6 · THE RE-HUNG ROUTE WORE THE RIGHT OBJECT AND THE WRONG HAND. `data-hand="authentic"` is
+      stamped on the root of every spliced route and nothing acted on it, so 59 routes were set in
+      Georgia while the owner's ruling of 19 August is "go fully authentic". This is the same
+      class as faults 1-4: the value was declared and no rule consumed it.
+      THE THREE HANDS, as measured off his primary tier and already proven on the prototype:
+      textura for the volume title (a display hand, seen not read), UNCIAL for headings and body
+      (the BOOK hand of the same tradition, and the readable one), Garamond for the apparatus --
+      that is the ARCHIVE speaking, not the scribe, and the two voices should differ. */
+/* THE BODY HAND — RESOLVED 19 AUGUST, AND THE ANSWER WAS THAT I HAD THE GOAL WRONG.
+
+   Three attempts failed here and each blamed the cascade: specificity, then !important, then
+   position in the file. The third attempt's diagnostic said the browser reported ZERO rules
+   matching `.book .styles` with a font-family, and I recorded that as "the enumeration must be
+   wrong". IT WAS NOT WRONG. IT WAS THE ANSWER. Every rule in this stylesheet was scoped
+   `:root[data-codex="on"]`, and every re-hung route shipped with an inline script that
+   monkey-patched `setAttribute` to pin `data-codex` to "off" forever -- put there to keep the
+   OLD `codex.css` skin off these pages, and it kept THIS ONE off too. Three stylesheets were
+   reading one switch: arda.css (25 rules), codex.css (61) and this file (41). The object now has
+   its own switch, `data-codex-object`, declared on the <html> tag; the patch is gone; the
+   opt-out lives once in nav.js instead of inline in 59 files.
+
+   AND THEN THE MEASUREMENT CORRECTED THE GOAL ITSELF, which is the part worth keeping. With the
+   switch on, I measured `codex-proto.html` -- the object the owner approved -- element by element
+   instead of arguing from a screenshot:
+
+       .plaque                UnifrakturMaguntia  15px      the textura, once, on the board
+       .rubric  h3  .gl  .sub  .lede    Uncial Antiqua      the DISPLAY hand
+       running <p>, .q, .cite, .mark    EB Garamond         the READING hand
+       .kind  .tab  .folio             Cinzel               the furniture
+
+   Garamond appears 153 times inside the approved book and the uncial 83. **The uncial is the
+   display hand and was never the reading hand.** The rule I had been trying for three attempts to
+   make work would have put a 13px uncial under every line of running text on 622 routes -- a
+   deviation from the approved object, dressed as a repair of it. It failing was the good outcome.
+
+   WHAT THIS SETS, therefore: the prototype's hierarchy exactly, at the smaller and denser measure
+   the owner asked for on 19 Aug ("the main text a little bit smaller so we can fit in it as much
+   info as possible"). Running text 14px on an 18px rule -- 12.5% smaller than the prototype's
+   16px and much tighter than its 1.6 leading, which is where the density comes from. The
+   apparatus stays humanist and smaller still: it is the ARCHIVE speaking there, not the scribe,
+   and the two voices have to differ or the tier marker means nothing. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .plaque{
+  font-family:UnifrakturMaguntia,'Uncial Antiqua',Cinzel,serif !important; letter-spacing:0 !important; }
+/* THE DISPLAY HAND: rubric, sub-headings, glosses and the "The text" label. Seen, not read. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .rubric,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card h3,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf h3,
+:root[data-codex-object="on"][data-hand="authentic"] .book .gl,
+:root[data-codex-object="on"][data-hand="authentic"] .book .sub{
+  font-family:'Uncial Antiqua',Cinzel,Georgia,serif !important; letter-spacing:0 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.lede,
+:root[data-codex-object="on"][data-hand="authentic"] .book .lede{
+  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important; font-style:italic !important;
+  font-size:11.4px !important; line-height:15px !important; }
+/* THE READING HAND. Everything a reader actually reads through, at the smaller and denser
+   measure the owner asked for on 19 Aug: 14px on an 18px rule, against the prototype's 16/25.6. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p{
+  font-family:var(--face-latin) !important;
+  font-size:10.6px !important; line-height:13.6px !important; letter-spacing:0 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
+/* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .kind,
+:root[data-codex-object="on"][data-hand="authentic"] .book .tab,
+:root[data-codex-object="on"][data-hand="authentic"] .book .folio{
+  font-family:Cinzel,Georgia,serif !important; }
+/* THE APPARATUS stays humanist and SMALLER -- it is the ARCHIVE speaking, not the scribe, and the
+   two voices have to differ or the tier marker means nothing. Every selector here names the
+   ELEMENT as well as the class: `.book .leaf p` is (0,4,2) and beat a bare `.book .cite` at
+   (0,4,1), so until today every citation on a re-hung route was set in the scribe's hand. That is
+   the third time a specificity comparison has silently reversed an intended rule in this file. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .mark,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .fn,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{
+  font-family:var(--face-latin) !important;
+  font-size:9.8px !important; line-height:1.34 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
+
+/* C12 — THE GENERATED-PLATE NOTICE GOES TO THE OUTER MARGIN. The owner's ruling of 19 August,
+   answering a question put with the measurement beside it: the notice runs to two full lines of
+   body text under every one of the 429 person portraits, and at the reading size it competes with
+   the record itself. His ruling of 13 August that it must be there is UNTOUCHED -- it moves, it
+   does not go. The outer margin is where a manuscript puts an annotator's remark about the page,
+   and this notice is the archive remarking on its own plate.
+
+   MATCHED WITHOUT NEW MARKUP: it is the `.cite` that FOLLOWS a `.portrait`, which no other cite on
+   any leaf does. That keeps the generator out of it -- 59 routes today and 622 later -- and CSS
+   cannot match on text, so the structural selector is the honest one.
+   OUTER means verso-LEFT and recto-RIGHT, which is what `.marg` above already encodes; this
+   borrows its ink, its size and its tilt so the two read as one hand rather than two. */
+:root[data-codex-object="on"] .book .leaf .portrait ~ p.cite{
+  position:absolute; top:34px; width:clamp(96px,17%,138px); max-height:none;
+  font:italic 10.4px/1.34 'EB Garamond',Georgia,serif !important; color:#6b4a24;
+  text-align:left; margin:0; z-index:2; }
+:root[data-codex-object="on"] .book .leaf.l .portrait ~ p.cite{ left:26px; transform:rotate(-1.2deg); }
+:root[data-codex-object="on"] .book .leaf.r .portrait ~ p.cite{ right:26px; transform:rotate(1deg); }
+/* and the plate itself moves inboard so the margin it vacated is actually clear */
+:root[data-codex-object="on"] .book .leaf.l .portrait,
+:root[data-codex-object="on"] .book .leaf.l .styles{ margin-left:clamp(76px,17%,132px); }
+:root[data-codex-object="on"] .book .leaf.r .portrait,
+:root[data-codex-object="on"] .book .leaf.r .styles{ margin-right:clamp(76px,17%,132px); }
+
+/* ⚠ THE VERSAL FONT IS A NO-OP, TWICE OVER — found by research the same day it shipped.
+   `site/fonts/junicode-versal.woff2` was built by pinning Junicode's ENLA axis to 100 and
+   subsetting to A-Z. TWO THINGS ARE WRONG WITH THAT and only reading the MUFI spec found either:
+     1. ENLA IS "enlarged MINUSCULES" -- it acts on LOWERCASE ONLY. G and Q are byte-identical at
+        ENLA 0 and ENLA 100. The subset is uppercase-only, so the axis touches nothing in it.
+     2. Instancing removed `fvar`, so the axis is not there to act anyway.
+   The file loads, the letters render, and they are ORDINARY JUNICODE CAPITALS wearing the name of
+   a versal. It fails toward looking fine, which is why nobody would have caught it by looking.
+   THE REAL DROP CAPS ARE `salt` 2 — Lombardic — one line of CSS and 13.2 KB. Not changed here
+   because a font swap wants measuring, and this comment is worth more right now than a guess. */
+
+/* THE LOMBARDIC VERSAL SHIPS, 19 August — after two failures, and the second failure's EVIDENCE
+   was the wrong instrument rather than the wrong font.
+
+   FAILURE 1 was Junicode's ENLA axis, and it is worse than "lowercase only": `A.enlarged` and
+   `a.enlarged` are the SAME outline at the same advance, 516 units against a capHeight of 663, so
+   the "enlarged" capital is SHORTER than an ordinary one. That path is abandoned permanently.
+
+   FAILURE 2 was `salt` 2, and it had TWO independent causes, either of which alone renders
+   identically to no feature at all:
+     · `pyftsubset --layout-features` DEFAULTS to a list that does not include `salt`. Retaining
+       all 56 alternate glyphs does nothing about this -- the glyphs survive and the FeatureList
+       comes out empty. That was the first build.
+     · Subsetting RENUMBERS THE ALTERNATE INDEX. Keep only the `.lombardic` glyphs and the
+       subsetter prunes `.rustic` out of every AlternateSet, so the set becomes length 1, `salt 1`
+       silently becomes the Lombardic and `salt 2` addresses nothing. That was the second build,
+       and it is documented nowhere I could find.
+
+   AND MY OWN MEASUREMENT WAS THE THIRD FAULT. I ruled the second build dead on canvas
+   `toDataURL` coming back byte-identical between `salt` 0 and `salt` 2, and wrote that identical
+   PIXELS are not weak evidence. They are not -- but canvas does not honour
+   `ctx.fontFeatureSettings` in Chromium, so the instrument was reporting its own limitation. The
+   DOM had the answer all along: with this build the same five capitals measure 411.25px with no
+   feature, 354.48px at `salt` 1 and 380.41px at `salt` 2, and a screenshot shows three visibly
+   different alphabets. A NEGATIVE RESULT NEEDS ITS INSTRUMENT CHECKED EXACTLY AS A POSITIVE ONE
+   DOES, and this one was never checked against a font known to work.
+
+   WHAT SHIPS: 33.7 KB, 79 glyphs, both alphabets. Keeping the 26 `.rustic` glyphs costs 10 KB and
+   buys index stability -- `alternates['A']` reads `['A.rustic','A.lombardic']` exactly as in the
+   full font, so `"salt" 2` means the same thing whether a browser has the subset or the original.
+   That is immunity to the precise bug that cost the second attempt. Rustic capitals come free as
+   a second display hand. Built with:
+     pyftsubset JunicodeVF-Roman.ttf --flavor=woff2 --unicodes=U+0041-005A
+       --glyphs=<26 X.lombardic + 26 X.rustic> --layout-features+=salt --no-layout-closure
+       --no-hinting --desubroutinize --drop-tables+=DSIG
+   `--no-layout-closure` is safe ONLY with an explicit --glyphs list; alone it deletes the feature
+   outright. And HarfBuzz cannot read WOFF2, so shape-test a .ttf. */
+
+/* ── THE ANNOTATOR'S HAND, 19 August ─────────────────────────────────────────────────────────
+   The owner: "make the notes, sidetones and all these in another, more sketchy-handwriting style
+   font, and not Aniron, but make sure it fits as well." Architects Daughter (Kimberly Geswein,
+   OFL 1.1), 19 KB, 352 glyphs and NOT ONE of the archive's accented names missing -- checked
+   before choosing, because the first four candidates all reported every letter absent and the
+   reason was that Google's CSS2 API serves unicode-range SUBSETS and I had fetched the wrong
+   block. The canonical OFL repository serves the whole face.
+   THREE VOICES, THREE FACES, and that is the point rather than the decoration: the SCRIBE sets
+   the record (Aniron), the ARCHIVE speaks in the apparatus, and the ANNOTATOR writes in the
+   margin. A reader should be able to tell who is talking without being told. */
+/* THE ANNOTATOR'S RULES MUST OUT-SPECIFY THE APPARATUS RULES, and the first version did not.
+   `…[data-hand] .book .leaf .marg` is (0,5,2) and my `…[data-codex-object] .book .marg` was
+   (0,4,1), so every margin note went on being set in the scribe's face. THIRD TIME a specificity
+   comparison has silently reversed an intended rule in this file — and the third time it was
+   caught by MEASURING the rendered page rather than by reading the stylesheet. Every selector
+   here now names `.leaf` and the element, exactly as the apparatus ones do. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .fn,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .catch,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .why,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .portrait ~ p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{
+  font-family:var(--face-hand) !important; font-style:normal !important;
+  letter-spacing:.004em !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg{ font-size:9.8px !important; line-height:1.34 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,:root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{ font-size:11px !important; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════
+   THE EDGE SCRIPTS — real cirth and real tengwar down the outer edge of every leaf.
+   Ready to paste into site/codex-object.css. Nothing here edits a page.
+
+   THE OWNER'S DIRECTION, 19 August 2026: "the edges of the leafs have some minimal art, replace
+   them with real tengwar, cirth, and sarati scripts, which always should be relevant to the
+   currently opened pages (great direction is the texts used on some Tolkien book edition's
+   covers)". The five inscriptions he named are two-line tengwar bands set between DOUBLE RULES,
+   and that is the shape this block reproduces: rule, band, rule, turned to run down the fore-edge
+   where a codex's outer margin is.
+
+   CORRECTED 21 August 2026, ruling C98, on his authorisation. This comment said "the five jackets".
+   They are NOT jackets: all five are bitonal crops of inscription bands with no cover, no title and
+   no book edge, and their text matches the books' TITLE-PAGE inscriptions. The one tengwar jacket
+   Tolkien designed for The Lord of the Rings was never used -- Allen & Unwin took only the Ring
+   device -- and the 1937 Hobbit jacket band is a continuous runic border in ANGLO-SAXON FUTHORC,
+   not tengwar. The two-line-between-double-rules structure IS confirmed, by measuring all five
+   files in uploads/scripts/: four full-width rules, a pair above and a pair below, and exactly two
+   lines of writing in every one, the writing occupying 82-85% of band height (mean 0.838).
+
+   WHAT IT REPLACES. `.illum` at codex-object.css:738 — the generated vine band, whose own comment
+   calls it "restrained on purpose". The geometry here is deliberately the SAME (top/bottom 34px,
+   a narrow strip 7px in from the outer edge) so this is a drop-in: keep `.illum` for leaves that
+   want a vine, or delete it. Both can coexist; they do not overlap.
+
+   ── WIRING: ONE ATTRIBUTE, AND NO PAGE FETCHES ANYTHING ──────────────────────────────────────
+   The text comes from `site/arda_edge_scripts.json` AT BUILD TIME, not over the wire. The
+   dataset is 935 KB — the citable record, never a page's payload — and a leaf needs one row of
+   it. Whoever owns the page generator emits one inline style on `.book`:
+
+       <div class="book" style="--edge-l:'<glyphs>'; --edge-r:'<glyphs>'"
+            data-edge-src="t1_a_the_silmarillion.txt:9382">
+
+   from `routes[<route>].text`. With neither property set, `content: var(--edge-l, none)` makes
+   the pseudo-element vanish — no empty rules, no broken band, no fallback art. A leaf either
+   carries a real inscription or carries nothing, which is this archive's rule about silence
+   applied to an ornament.
+
+   ── THE FONT STACK IS ORDERED BY WHAT EACH FACE ACTUALLY HAS ─────────────────────────────────
+   Measured with fontTools over site/fonts/:
+
+       TengwarTelcontar   716 glyphs   112/128 CSUR tengwar   49/128 CSUR cirth   2048 upm
+       AlcarinTengwar     365          119/128                12/128              outline
+       Eldamar 1.1       1116          117/128                10/128              outline
+       ArdaCSUR           305          128/128                128/128             64 upm, BITMAP
+
+   Telcontar leads because it is an outline face carrying both blocks. ArdaCSUR is LAST and is
+   there for the 79 certh nothing else draws — it is Unifont subset, a 16×16 bitmap at 64 units
+   per em, so it renders pixelated at any size and that is arithmetic rather than a setting
+   (CLAUDE.md, the CSUR ruling of 13 August). CSS fallback is PER CHARACTER, so a word mixes an
+   outline certh with a bitmap one and neither is lost.
+
+   ArdaCSUR is NOT in the tengwar stack: Telcontar, Alcarin and Eldamar together cover the block
+   and a bitmap face would only ever make a letter worse.
+
+   AngerthasMoria.woff2 is deliberately absent. It is an outline cirth face and it is
+   ASCII-mapped — 91 ASCII codepoints, 0 in U+E080–E0FF — so pointing CSUR text at it renders
+   nothing, or worse, silently renders the wrong letters.
+
+   ── THE PUA CAVEAT, WHICH BELONGS IN THE CSS AND NOT ONLY IN THE DATASET ─────────────────────
+   Every codepoint here is ConScript Private Use Area. A reader who copies the band into another
+   document gets boxes: nothing in a PUA codepoint says which font to find. The band is therefore
+   marked `aria-hidden` in spirit — it is a `::after` and so is already out of the accessibility
+   tree in every engine — and the readable transcription lives in the dataset beside it.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+/* The faces. Paths are relative to the STYLESHEET, matching codex-object.css:18 and :573.
+   `font-display:block` and not `swap`: a swap would flash the fallback, and the fallback for a
+   PUA codepoint is a row of tofu boxes — the one substitution that must never be seen. */
+@font-face{
+  font-family:"TengwarTelcontar";
+  src:url("fonts/TengwarTelcontar.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+@font-face{
+  font-family:"AlcarinTengwar";
+  src:url("fonts/AlcarinTengwar-Regular.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+@font-face{
+  font-family:"ArdaCSUR";
+  src:url("fonts/ArdaCSUR.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+
+:root[data-codex-object="on"] .book{
+  /* THE BAND'S OWN TOKENS, so a hall can tune it without touching this block.
+     --edge-ink is the rubric brown at strength: an inscription is not a watermark. The vine band
+     it replaces sat at opacity .55 and was decoration; this is TEXT, and text a reader cannot
+     make out is worse than no text — it looks like an ornament pretending to be writing. */
+  --edge-ink:#7a5a2c;
+  --edge-rule:#b49a63;
+  /* MEASURED IN A BROWSER, NOT CHOSEN. At 12.5px in a 17px strip a name set in cirth rendered
+     8 glyphs into a 700px band and read as an accident rather than as lettering. The fore-edge
+     carries a NAME -- short, like a spine title -- so it is set at spine-title scale; the head
+     band carries a LINE and stays small, which is how the jackets themselves are set: one short
+     band and one long one. */
+  --edge-size:17px;
+  --edge-head-size:12.5px;
+  --edge-track:.06em;
+  --edge-width:23px;
+  --edge-head-width:18px;
+}
+
+/* ── THE BAND ─────────────────────────────────────────────────────────────────────────────────
+   `.leaf::before` is taken — it draws the leaf's ruled border at codex-object.css:243 — so the
+   band is `::after`, which nothing else uses. Checked before writing, because a pseudo-element
+   collision silently replaces somebody else's art. */
+:root[data-codex-object="on"] .leaf::after{
+  content:var(--edge-l, none);
+  position:absolute; top:34px; bottom:34px; width:var(--edge-width);
+  pointer-events:none; z-index:2;
+
+  /* the double rule, top and bottom of the band as the jackets set them — turned 90° with it */
+  border-left:1px solid var(--edge-rule);
+  border-right:1px solid var(--edge-rule);
+  box-shadow:inset 2px 0 0 -1px var(--edge-rule), inset -2px 0 0 -1px var(--edge-rule);
+
+  /* THE SCRIPT ITSELF. `writing-mode:vertical-rl` + `rotate(180deg)` runs the line bottom-to-top
+     up the fore-edge, which is how a spine or an edge is lettered and how the eye expects to
+     read a turned line on a book. `text-orientation:sideways` keeps the glyphs joined: `mixed`
+     would upright each tengwa individually and destroy every tehta's position over its
+     consonant, which in the Quenya mode IS the vowel. */
+  writing-mode:vertical-rl;
+  text-orientation:sideways;
+  transform:rotate(180deg);
+
+  font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar","ArdaCSUR",serif;
+  font-size:var(--edge-size);
+  line-height:var(--edge-width);
+  letter-spacing:var(--edge-track);
+  color:var(--edge-ink);
+  white-space:nowrap;
+  overflow:hidden;
+  text-align:center;
+
+  /* a faint vellum ground so the band reads as an inscribed strip rather than as ink floating
+     on the page — the jackets print black on white paper inside their rules */
+  background:linear-gradient(90deg,
+    rgba(250,242,203,0) 0, rgba(250,242,203,.55) 18%,
+    rgba(250,242,203,.55) 82%, rgba(250,242,203,0) 100%);
+}
+
+/* the outer margin of each leaf: verso letters down the LEFT, recto down the RIGHT */
+:root[data-codex-object="on"] .leaf.l::after{ left:7px; }
+:root[data-codex-object="on"] .leaf.r::after{ right:7px; content:var(--edge-r, none); }
+
+/* A SECOND BAND AT THE HEAD, for a leaf that carries a line of verse as well as a name.
+   The jackets carry TWO bands and this is the other one. It runs horizontally, as they do, and
+   is opt-in: no `--edge-head` means no element at all. */
+:root[data-codex-object="on"] .spread::after{
+  content:var(--edge-head, none);
+  position:absolute; left:34px; right:34px; top:6px; height:var(--edge-head-width);
+  pointer-events:none; z-index:2;
+  border-top:1px solid var(--edge-rule);
+  border-bottom:1px solid var(--edge-rule);
+  box-shadow:inset 0 2px 0 -1px var(--edge-rule), inset 0 -2px 0 -1px var(--edge-rule);
+  font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar","ArdaCSUR",serif;
+  font-size:var(--edge-head-size); line-height:var(--edge-head-width);
+  letter-spacing:var(--edge-track); color:var(--edge-ink);
+  white-space:nowrap; overflow:hidden; text-align:center;
+  background:linear-gradient(180deg,
+    rgba(250,242,203,0) 0, rgba(250,242,203,.5) 22%,
+    rgba(250,242,203,.5) 78%, rgba(250,242,203,0) 100%);
+}
+
+/* ── THE NARROW VIEWPORT ──────────────────────────────────────────────────────────────────────
+   codex-object.css:352 stacks the leaves at narrow widths, so a fore-edge band on each of two
+   stacked leaves would run down the middle of the reading column. Below the stack breakpoint the
+   fore-edge band goes and the head band stays: one inscription per opening rather than none,
+   which keeps the direction met on a phone without crowding the text.
+   THE BREAKPOINT IS 900px BECAUSE THAT IS WHERE codex-object.css ITSELF STACKS — a second,
+   different breakpoint is two layouts that must be kept in step, and this archive retires keys
+   for that. If the stack point moves there, it moves here. */
+@media (max-width:900px){
+  :root[data-codex-object="on"] .leaf::after{ content:none; }
+  :root[data-codex-object="on"] .spread::after{ left:14px; right:14px; }
+}
+
+/* Reduced motion is not relevant here — nothing animates, deliberately. An inscription that
+   scrolls or fades is a gimmick, and Tolkien's scripts are not a gimmick. */
+
+/* ── DARK GROUND ──────────────────────────────────────────────────────────────────────────────
+   arda.css declares one dark theme for all halls on `:root[data-theme="dark"]`, and every colour
+   there carries `!important` for the reason CLAUDE.md records: specificity compares (ids,
+   classes, elements) lexicographically, so ONE ID BEATS ANY NUMBER OF ATTRIBUTES. These are
+   token redefinitions on the same `.book` selector rather than colour declarations on the band,
+   so they need no `!important` and cannot fight anything. */
+:root[data-theme="dark"][data-codex-object="on"] .book{
+  --edge-ink:#c9a961;
+  --edge-rule:#8a6f3e;
+}
+:root[data-theme="dark"][data-codex-object="on"] .leaf::after,
+:root[data-theme="dark"][data-codex-object="on"] .spread::after{
+  background:linear-gradient(90deg,
+    rgba(28,22,14,0) 0, rgba(28,22,14,.45) 18%, rgba(28,22,14,.45) 82%, rgba(28,22,14,0) 100%);
+}
+
+/* A LEAF DOES NOT SCROLL. The owner, 19 Aug: "don't make the pages/leafs scrollable, that's not
+   how books work... So if the content doesn't fit right now, make the texts smaller and more
+   compacted." I had reached for a scrollbar an hour after writing in this file that a codex leaf
+   does not scroll, it TURNS — the archive's own words, and I contradicted them at the first
+   inconvenience.
+   NOT `overflow:hidden` EITHER, which is worse: a scrollbar at least tells a reader something is
+   there, and a clip silently deletes the end of a record with every guard green. The honest
+   answers are, in order: set the type smaller (done here), and where a record genuinely exceeds a
+   spread, GIVE IT ANOTHER LEAF — which is what a book does and is ruling C10's fourth step read
+   forwards. Panels that carry their own scroll — a map, a table — are a different thing and are
+   not this. */
+:root[data-codex-object="on"] .book .leaf{ overflow:visible; }
+/* COMPACTION, not clipping: the leaf's own furniture gives up room before the words do. */
+:root[data-codex-object="on"] .book .leaf{ padding:18px 20px 26px; }
+/* A SIDENOTE'S QUOTATION MUST RISE ABOVE THE FURNITURE, AND `z-index:40` DID NOT BUY IT.
+   The owner, 19 Aug: "when i open any of the sidenotes the panel that pops up isn't placed over
+   everything and thus isn't readable." Measured: `.marg` carries BOTH a `transform` and
+   `z-index:1`, so it CREATES A STACKING CONTEXT AT 1 -- and the blockquote's 40 is scoped inside
+   it and cannot compete with anything outside. 40 looks generous and is worth nothing: the
+   popover was painting under the edge band (z 2), the gutter (z 3) and the clasp (z 6).
+   The number that matters is the one on the CONTEXT, not the one on the element. Raised only
+   while a note is actually open, so a closed margin keeps its place in the leaf's own order.
+   50 clears every piece of the book's furniture and still sits below the site header at 60. */
+:root[data-codex-object="on"] .book .leaf .marg:has(.marg-q[open]){ z-index:50; }
+/* THE GUTTER IS THE BINDING, AND A BOOK KEEPS ITS TEXT OUT OF IT. The owner, 19 Aug: "in the
+   inside parts of the leaves there's a shaded area where the pages separate. As in real books,
+   there shouldn't be texts." Measured by sampling the rendered pixels rather than the CSS: the
+   band that actually reads as shaded is 22px wide (x 782..803 at a 1600px viewport), and the
+   text block cleared it by 9.5px -- not an overlap, but text crowding the binding, which is what
+   he is looking at. The reserve is DERIVED from the gutter's own width so the two cannot drift:
+   half the band, plus a real margin. Reset on the stacked layout, where `.gutter` is display:none
+   and there is no binding to keep clear of. */
+/* C236 -- HIS RULING, applied here at last. This computed to 31px and he ruled 50px. It had been
+   edited straight into the GENERATED codex-object.css, which is why gen_codex_route.py refused to
+   rebuild at all; C279 authorises this file for the repair. */
+:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:50px; }
+
+/* C240 -- HIS RULING, applied here at last. The un-clip was `.leaf.fitted` ONLY, so on every other
+   leaf the marginal note clipped its own text: 111px wide, max-height 70px, overflow hidden, eight
+   of them on 404.html alone. He saw it and named it -- "the sidenotes are cropping out of the frame
+   at the edges" -- and ruled it a defect, not the .marg-more disclosure working as designed. Like
+   C236 this had been edited into the GENERATED file; C279 authorises the repair at the source. */
+:root[data-codex-object="on"] .book .leaf .marg .marg-t{ max-height:none; overflow:visible; }
+:root[data-codex-object="on"] .book .gutter{ width:var(--gutter-w); }
+:root[data-codex-object="on"] .book .leaf.l{ padding-right:var(--gutter-reserve); }
+:root[data-codex-object="on"] .book .leaf.r{ padding-left:var(--gutter-reserve); }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book .leaf.l{ padding-right:20px; }
+  :root[data-codex-object="on"] .book .leaf.r{ padding-left:20px; }
+}
+/* THE HEAD BAND, RESERVED. `.rh` is absolute and reserves no room; the head occupied 0..28.5px
+   while text began at 18px, printing the running head across the first line on both leaves.
+   `:has(> .rh)` so a leaf without a head gives up nothing; `--rh-top` binds the two numbers.
+   Why it went unseen, and the instrument that finds it now: map/head_band_check.py. */
+:root[data-codex-object="on"] .book .leaf:has(> .rh){ padding-top:calc(var(--rh-top,19px) + 16px); }
+:root[data-codex-object="on"] .book .card{ padding:7px 9px 6px; margin-bottom:7px; }
+:root[data-codex-object="on"] .book .card h3{ font-size:12px; margin-bottom:4px; }
+:root[data-codex-object="on"] .book .sub{ margin:5px 0 3px; }
+:root[data-codex-object="on"] .book .rubric{ font-size:16px !important; margin-bottom:4px; }
+:root[data-codex-object="on"] .book .portrait{ max-height:34vh; }
+:root[data-codex-object="on"] .book .cx-plate{ max-height:34vh; object-fit:contain; }
+
+/* THE TURN — C35. The outer edge of the book is the handle, which is where a hand goes on a real
+   book. A real <button>, not a click handler on the leaf: a leaf is full of links, quotations and
+   sidenotes, and swallowing clicks there would break every one of them. It sits ON the board
+   rather than on the paper, so it never covers a word. */
+:root[data-codex-object="on"] .book{ position:relative; }
+:root[data-codex-object="on"] .book .turn{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:34px; height:104px; padding:0; cursor:pointer;
+  background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.30));
+  border:1px solid rgba(0,0,0,.34); border-radius:3px;
+  color:var(--gold,#c9a227); font:400 26px/1 'EB Garamond',Georgia,serif;
+  opacity:.34; transition:opacity .18s ease, background .18s ease; z-index:12; }
+:root[data-codex-object="on"] .book .turn:hover,
+:root[data-codex-object="on"] .book .turn:focus-visible{ opacity:1; background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.44)); }
+:root[data-codex-object="on"] .book .turn:focus-visible{ outline:2px solid var(--gold,#c9a227); outline-offset:2px; }
+:root[data-codex-object="on"] .book .turn-prev{ left:-17px; }
+:root[data-codex-object="on"] .book .turn-next{ right:-17px; }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book .turn{ width:28px; height:72px; font-size:20px; }
+  :root[data-codex-object="on"] .book .turn-prev{ left:-9px; }
+  :root[data-codex-object="on"] .book .turn-next{ right:-9px; }
+}
+@media (prefers-reduced-motion:reduce){
+  :root[data-codex-object="on"] .book{ transition:none !important; }
+}
+
+/* A HALL OPENS FLAT — C37. One full-width leaf, no gutter, no facing page. The binding still
+   frames it, so a hall is recognisably part of the same object; what changes is that the paper is
+   one sheet instead of two, because a tool cannot be cut down the middle.
+   THE LEAF SCROLLS HERE AND ONLY HERE, and that is the ruling's cost stated plainly: a dossier
+   leaf does not scroll, but a hall holds a search box, a filter bar and hundreds of results, and
+   the alternative was splitting 31 tools by hand across two leaves — which is where features get
+   lost. The board holds still; the paper moves inside it. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .spread{ display:block; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+  width:100%; max-width:none; column-count:1; -webkit-columns:auto; columns:auto;
+  padding:calc(var(--rh-top,19px) + 16px) clamp(18px,3.4vw,52px) 40px;
+  max-height:calc(100vh - 210px); overflow-y:auto; overscroll-behavior:contain; }
+/* The hall's own container came from a page that centred itself; inside a leaf it must not. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > .wrap,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > main{
+  max-width:none; width:auto; margin:0; padding:0; background:none; }
+/* A tool's own controls are KEPT on a flat leaf. The blanket rule that hides a re-hung page's
+   buttons exists so a dossier leaf is not littered with a hall's furniture; on a hall the
+   furniture IS the content, and hiding it would deliver a tool nobody can operate. */
+/* `!important`, AND IT IS NOT A CASCADE SHORTCUT -- IT IS THE ONLY THING THAT WINS HERE.
+   The blanket rule is `.book button:not(.cx-keep){ display:none !important }`, and an important
+   declaration is beaten only by another important one however specific the loser is. Measured
+   rather than reasoned: with `display:revert` this rule LOST and 36 of corpus.html's 47 controls
+   were invisible -- a tool delivered to a reader who cannot operate it, which is the exact thing
+   C37's ruling was chosen to prevent. Enumerating the rules that set `display` on a hidden control
+   named the winner in one run. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot button,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot input,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot select,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot textarea,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot a{ display:revert !important; }
+/* A control the HALL ITSELF hides -- a collapsed panel, a filter that does not apply -- must STAY
+   hidden. `display:revert !important` would reveal every one of them, which is the opposite fault
+   and just as bad. So the hall's own `[hidden]` and `[aria-hidden]` win it back. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [hidden],
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [aria-hidden="true"]{ display:none !important; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide::after{ content:none; }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+    padding-left:16px; padding-right:16px; max-height:calc(100vh - 150px); }
+}
+
+/* ---- RULES THE PUBLISHED ROUTES NEED, AND THE PROTOTYPE CANNOT FEEL ----------------------
+   Checked before writing: `devcorner` appears nowhere else in this file, and no `.frame`
+   here holds an <img> -- the prototype's devices are CSS-drawn <span>s. So neither rule
+   below can change a single pixel of the packed spread above, which is the whole point:
+   I already broke that spread once by styling a selector it shares. */
+.devcorner{ position:absolute; top:var(--rh-top,19px); width:30px; height:30px;
+  display:flex; align-items:center; justify-content:center; z-index:3; pointer-events:none;
+  border:1px solid var(--rule-soft); border-radius:2px; background:rgba(255,252,242,.35); }
+.leaf.l > .devcorner{ left:10px; right:auto; }
+.leaf.r > .devcorner{ right:10px; left:auto; }
+.devcorner img{ width:24px; height:24px; object-fit:contain; display:block; }
+.devcorner-bare{ color:var(--rule); font-size:13px; line-height:1; opacity:.55; }
+.leaf:has(> .devcorner) .rh{ padding-left:38px; padding-right:38px; }
+.fig .frame:has(> img){ position:relative; overflow:hidden; }
+.fig .frame > img{ position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; display:block; }
+/* A FLOATED FIGURE MAY NOT FRAGMENT ACROSS A COLUMN BREAK.
+   Measured on three published routes: the left leaf's .tb is a 458px two-column
+   fragmentainer, and the floated plate produced THREE client rects where the prototype's
+   produces one -- an overflow column at x~787-1006, past the gutter and INSIDE THE RIGHT
+   LEAF. The third fragment is the figcaption, so "The archive's drawing of Valinor" was
+   printed straight through the facing page's first paragraph, on every route with a
+   plate. scrollWidth 696 against clientWidth 458 is the fingerprint.
+   It is NOT the prose deficit: padding the leaf to 300 words, halving it, and
+   column-fill:auto all left the caption at x=881. break-inside:avoid returns it to 643.
+   Scoped to a frame holding an <img>, which this file provably contains none of -- the
+   prototype's devices are CSS-drawn spans, and its figure produces one rect already. */
+.fig:has(.frame > img){ break-inside:avoid; }
+
+</style>
+<link rel="stylesheet" href="arda.css"></head>
+<body>
+<a class="a-skip" href="#leaf-1">Skip to the leaf</a>
+
+<!-- ═══ 1. LEDGER — a record hall ═══════════════════════════════════════════════════════ -->
+<div class="book" data-spread="ledger">
+  <div class="kind">Ledger</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> The Ainur</div>
+  <nav class="tabs" aria-label="Volumes">
+    <a class="tab" href="#" aria-current="page">Peoples</a><a class="tab" href="#">Realms</a>
+    <a class="tab" href="#">Relics</a><a class="tab" href="#">Tongues</a>
+  </nav>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l" id="leaf-1" tabindex="-1">
+      <h2 class="rubric">The Aratar</h2>
+      <p class="lede">Eight are held in chief reverence, and one, mightiest in his beginning,
+        unmade himself.</p>
+      <div class="cards">
+        <article class="card"><span class="no"><span>I</span></span>
+          <h3>Manwë <em>Súlimo</em></h3>
+          <p>Lord of the Breath of Arda, the Elder King. The winds, the clouds and all the regions
+            of the air; appointed King of Arda under Eru.</p>
+          <div class="sub">The text</div>
+          <p class="q">“Súlimo he is surnamed, Lord of the Breath of Arda.”</p>
+          <p class="cite">Silm, Valaquenta · <span class="mark">[C]</span> t1_a:2228</p></article>
+        <article class="card struck"><span class="no"><span>—</span></span>
+          <h3>Mairon, of the Maiar</h3>
+          <p>Listed as an alternate name of Sauron on the reading that the corpus does not attest it.</p>
+          <div class="sub">The text</div>
+          <p class="cite">Withdrawn 6 Aug 2026: it appears four times in PE 17, legibly, carrying no
+            diacritic.</p><span class="why">superseded</span></article>
+      </div>
+    </section>
+    <section class="leaf r">
+      <h2 class="rubric">Where the texts disagree</h2>
+      <p class="lede">They are shown disagreeing. The archive does not choose for you.</p>
+      <div class="cards">
+        <article class="card"><span class="no"><span>II</span></span>
+          <h3>Melian &mdash; whose people?</h3>
+          <p><strong>The Valaquenta</strong> sets her among the people of Vána and Estë.
+            <strong>The Annals</strong> put her among Yavanna's.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite">Neither is preferred. Both are printed, and the disagreement is the
+            finding. <span class="mark">[C]</span> on both witnesses.</p></article>
+        <article class="card silence"><span class="no"><span>?</span></span>
+          <h3>The two Blue Wizards</h3>
+          <p>Four incompatible accounts, and no verdict is given here.</p>
+          <div class="lines" aria-hidden="true"></div>
+          <p class="note">Ruled space, left blank. The corpus is silent on which account stands,
+            and the archive says so exactly.</p></article>
+      </div>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf I of VII</div>
+</div>
+
+<!-- ═══ 2. DOSSIER — one entity ═════════════════════════════════════════════════════════ -->
+<div class="book" data-spread="dossier">
+  <div class="kind">Dossier</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> Records of Persons</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <div class="portrait" role="img" aria-label="No likeness of Fingolfin is held"></div>
+      <div class="arms" role="img" aria-label="Arms of Fingolfin"></div>
+      <p class="styles">High King of the Noldor in Middle-earth<br>the second son of Finwë</p>
+    </section>
+    <section class="leaf r">
+      <h2 class="rubric">Fingolfin</h2>
+      <div class="cards">
+        <article class="card"><span class="no"><span>1</span></span>
+          <h3>The single combat</h3>
+          <p>He rode alone to the gates of Angband and challenged Morgoth, and smote him seven
+            times, and gave him seven wounds.</p>
+          <div class="sub">The text</div>
+          <p class="q">“…and Morgoth came.”</p>
+          <p class="cite">Silm 18 · <span class="mark">[C]</span> t1_a:9204</p></article>
+        <article class="card"><span class="no"><span>2</span></span>
+          <h3>Of his name</h3>
+          <p>A father-name in Quenya rendered in Sindarin form; the archive prints both and marks
+            which hand gave which.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite"><span class="mark">[I-H]</span> the Shibboleth is the witness for the
+            father-name; the Sindarin form is later usage.</p></article>
+      </div>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf II of VII</div>
+</div>
+
+<!-- ═══ 3. PLATE — a drawn sheet and its apparatus ═══════════════════════════════════════ -->
+<div class="book" data-spread="plate">
+  <div class="kind">Plate</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume I <i>·</i> Atlas and Realms</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <div class="sheet" role="img" aria-label="The archive's drawing of Beleriand">
+        <span class="pin" style="left:31%;top:38%"></span><span class="nm" style="left:31%;top:38%">Hithlum</span>
+        <span class="pin" style="left:52%;top:52%"></span><span class="nm" style="left:52%;top:52%">Doriath</span>
+        <span class="pin" style="left:40%;top:69%"></span><span class="nm" style="left:40%;top:69%">Nargothrond</span>
+        <span class="pin" style="left:66%;top:29%"></span><span class="nm" style="left:66%;top:29%">Himring</span>
+        <span class="rose" aria-hidden="true"></span>
+      </div>
+    </section>
+    <section class="leaf r">
+      <h2 class="rubric">Beleriand, as the archive draws it</h2>
+      <p class="lede">Not his plate. The archive's own measurement of it, and it says so.</p>
+      <div class="cards">
+        <article class="card"><span class="no"><span>✦</span></span>
+          <h3>Whose hand</h3>
+          <p>The linework is measured from Christopher Tolkien's published plate by the archive's
+            own instrument; his LETTERING is not reproduced. Every name here is the archive's.</p>
+          <div class="sub">The ruling</div>
+          <p class="cite">29 July 2026, amended 1 and 4 August: the archive publishes its own
+            measurement, never their image.</p></article>
+        <article class="card"><span class="no"><span>4</span></span>
+          <h3>Four places named on this leaf</h3>
+          <p>Each pin resolves to a gazetteer record with its own citation; a pin the corpus cannot
+            place is not drawn at all.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite"><span class="mark">[I-M]</span> on placement, <span class="mark">[C]</span>
+            on every name.</p></article>
+      </div>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf III of VII</div>
+</div>
+
+<!-- ═══ 4. CODEX — running prose across the fold ═════════════════════════════════════════ -->
+<div class="book" data-spread="codex">
+  <div class="kind">Codex</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume VI <i>·</i> Lore and First Principles</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <h2 class="rubric">Of the silences</h2>
+      <p class="lede">Where the corpus is silent, the archive says so exactly.</p>
+      <p class="drop">An archive that hides its gaps cannot be checked, and an unfalsifiable archive
+        is a story. So the blank space on these leaves is ruled rather than filled, and every
+        silence carries the name of whatever looked for the thing and did not find it.</p>
+      <p>A silence may only be asserted by something that looked. That rule was written after a
+        fall-through branch in a generator published two hundred and eight claims that the corpus
+        did not say what contained a place — a sentence about Tolkien reached by not matching three
+        tests about the data.</p>
+      <p>It widened within the hour: a hand may not assert a silence it did not search either. A
+        fall-through has a shape and can be swept for. A sentence typed by a careful reader has no
+        shape at all, and looks exactly like a measured silence.</p>
+    </section>
+    <section class="leaf r">
+      <p>The cost of not looking is not only a false claim. It is a citation the archive owned and
+        could not see. Of four false silences found in one week, one <em>upgraded</em> a claim: the
+        placing of Taniquetil, recorded as an inference about where the Vanyar dwelt, is stated
+        outright in the Silmarillion twice.</p>
+      <p>So a silence audit is not only a hunt for overclaiming. It recovers evidence.</p>
+      <div class="sub">The rule as it stands</div>
+      <p class="cite">Never write that the corpus does not say X without having asked
+        <em>ardatext</em> for X — and without asking whether a neighbouring record already says it.
+        <span class="mark">[C]</span></p>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf VI of VII</div>
+</div>
+
+<!-- ═══ 5. CODEX, PACKED — what a working notebook actually looks like ═══════════════════ -->
+<div class="book" data-spread="codex" data-density="high">
+  <div class="kind">Codex &mdash; packed</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume VI <i>·</i> Of the Silences</div>
+  <nav class="tabs" aria-label="Volumes">
+    <a class="tab" href="#">Peoples</a><a class="tab" href="#">Realms</a>
+    <a class="tab" href="#">Relics</a><a class="tab" href="#" aria-current="page">Lore</a>
+  </nav>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+
+    <section class="leaf l ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="nomenclator,corrector,revisor,chartarius">
+      <div class="rh"><span>The Arda Archive &middot; Of the Silences</span><span class="n">vi</span></div>
+      <div class="tb">
+        <h2 class="rubric">Of the silences</h2>
+        <figure class="fig"><div class="frame"><span class="dev-tree" aria-hidden="true"></span></div>
+          <figcaption>The Tree and the Seven Stars, as the archive draws them</figcaption></figure>
+        <p><span class="versal">A</span>n archive that hides its gaps cannot be checked, and an
+          unfalsifiable archive is a story.<span class="rm">a</span> So the blank space on these
+          leaves is <span class="gl" data-gl="ruled, not filled">ruled</span> rather than filled,
+          and every silence carries the name of whatever looked for the thing and did not find it.</p>
+        <p>A silence may only be asserted by something that looked. That rule was written after a
+          fall-through branch published <span class="corr" data-was="208">two hundred and eight</span>
+          claims that the corpus did not say what contained a place<span class="rm">b</span> — a
+          sentence about Tolkien reached by not matching three tests about the data.</p>
+        <div class="slip"><b>Added later</b> — It widened within the hour: a HAND may not assert a
+          silence it did not search either. A fall-through has a shape and can be swept for. A
+          sentence typed by a careful reader has no shape at all.</div>
+        <p>The cost of not looking is not only a false claim. It is a citation the archive owned and
+          could not see.<span class="rm">c</span></p>
+        <p>The rule widened again within the day. A hand may not assert a silence it did not
+          search, and a <span class="gl" data-gl="a branch nothing tested">fall-through</span> at
+          least has a shape a sweep can find. A sentence typed by a careful reader has no shape at
+          all, and passes every instrument the archive owns.<span class="rm">f</span></p>
+        <div class="sub">What the sweep found</div>
+        <p>An <span class="corr" data-was="AST">abstract-syntax</span> sweep of all 326 modules
+          tested seven shapes of fall-through and qualified <em>two</em>. Between them they
+          published <span class="mark">598</span> records asserting a silence nothing had
+          measured — 382 portrait prompts, and 208 of the gazetteer's 481 places above.</p>
+        <p class="cite">The cost of not looking is not only a false claim. It is a citation the
+          archive owned and could not see. <span class="mark">[C]</span></p>
+        <div class="sub">What a silence costs when it is wrong</div>
+        <p>A declared silence is <em>load-bearing</em>. Later work builds inferences on top of it,
+          and each inherits a weaker footing than the corpus actually offers. Of four false
+          silences found in one week, one did not retract a claim — it <em>upgraded</em> one.</p>
+        <p>So the tally is kept where a reader can see it: <span class="mark">14</span> silence
+          claims tested, four false, two written by a generator and two by a hand.</p>
+
+
+      </div>
+      <span class="manicule" style="top:172px" aria-hidden="true">☞</span>
+      <span data-hand-slot="52"></span>
+      <span data-hand-slot="180"></span>
+      <span data-hand-slot="308"></span>
+      <span data-hand-slot="436"></span>
+      <div class="fn">
+        <p><span class="rm">a</span> The archive's fourth property: every published claim is guarded
+          by something that can fail.</p>
+        <p><span class="rm">b</span> <i>gen_gazetteer</i> :2716, repaired 12 Aug 2026.</p>
+        <p><span class="rm">c</span> Silm 1 and AAm §144 both state the placing outright.</p>
+      </div>
+      <span class="quire">F&middot;iij</span>
+      <span class="catch">Where</span>
+      <figure class="fig marg-fig"><div class="frame"><span class="dev-ship" aria-hidden="true"></span></div><figcaption>Vingilot, as a device</figcaption></figure>
+    </section>
+
+    <section class="leaf r ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="annalist,stemma,revisor,nomenclator">
+      <div class="rh"><span>Volume VI &middot; Lore and First Principles</span><span class="n">vii</span></div>
+      <div class="tb">
+        <p><span class="versal">W</span>here the corpus is silent the archive says so
+          <span class="gl" data-gl="exactly: no rounding">exactly</span>, and where two texts
+          disagree it prints both and names the disagreement as the finding.<span class="rm">d</span></p>
+        <figure class="fig"><div class="frame"><span class="dev-ring" aria-hidden="true"></span></div>
+          <figcaption>Vilya, of the Three &mdash; device, not likeness</figcaption></figure>
+        <p>Of the four false silences found in one week, one <em>upgraded</em> a claim: the placing
+          of Taniquetil, recorded as an inference about where the Vanyar dwelt, is stated outright
+          in the Silmarillion twice, and in the Annals of Aman with three drafts behind it.</p>
+        <p>So a silence audit is not only a hunt for overclaiming. It recovers evidence — which is
+          why it is run on the archive's <span class="corr" data-was="own">OWN</span> prose as
+          readily as on its data.<span class="rm">e</span></p>
+        <div class="sub">The rule as it stands</div>
+        <p class="cite">Never write that the corpus does not say X without having asked
+          <em>ardatext</em> for X — and without asking whether a neighbouring record already says
+          it. <span class="mark">[C]</span></p>
+        <p>Fourteen silence claims have been tested and four were false — two written by a
+          generator and two by a hand. <span class="corr" data-was="Authorship">Blast radius</span>,
+          not authorship: the fall-through publishes at scale, and the typed sentence is the one
+          nobody can sweep for.<span class="rm">f</span></p>
+        <figure class="fig"><div class="frame"><span class="dev-star" aria-hidden="true"></span></div>
+          <figcaption>A star of the Seven, as the archive draws it</figcaption></figure>
+        <p>Of the four, one <em>upgraded</em> a claim rather than retracting one, which is why a
+          silence audit is run at all: it recovers evidence as often as it removes it.</p>
+        <div class="sub">The rule that widened twice</div>
+        <p>It began as a rule about one branch of one generator. Within the hour it covered every
+          fall-through in the tree; within the day it covered a sentence typed by a careful reader,
+          which has no shape at all and which no sweep can find.</p>
+        <p>The asymmetry is what makes it cheap to obey: asserting a silence costs one sentence,
+          and falsifying one costs a single call to <em>ardatext</em> — a matcher that folds
+          accents, case and line-breaks, which are the three ways a raw search reports a silence
+          that is not there.<span class="rm">g</span></p>
+        <p class="cite">A raw search for <em>Théoden</em> returns nought in The Lord of the Rings,
+          where the name stands 261 times. <span class="mark">[C]</span></p>
+
+        <div class="slip"><b>Struck 19 Aug</b> — <span class="struck">oath_felagund: the annal does
+          not put the refusal in words the archive could quote.</span> It does, verbatim, and a
+          sibling record was quoting it at the same moment.</div>
+
+      </div>
+      <span class="manicule" style="top:238px" aria-hidden="true">☞</span>
+      <span data-hand-slot="52"></span>
+      <span data-hand-slot="180"></span>
+      <span data-hand-slot="308"></span>
+      <span data-hand-slot="436"></span>
+      <div class="fn">
+        <p><span class="rm">d</span> The owner's ruling, 19 Aug 2026: show the two houses
+          disagreeing rather than resolving them.</p>
+        <p><span class="rm">e</span> 27 absence-claims tested across the archive's prose: 5 false,
+          5 stale, 17 hold.</p>
+      </div>
+      <span class="quire">F&middot;iv</span>
+      <span class="catch">Of the</span>
+      <figure class="fig marg-fig"><div class="frame"><span class="dev-crown" aria-hidden="true"></span></div><figcaption>The Crown of Gondor</figcaption></figure>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf VI of VII</div>
+</div>
+
+<script src="glossary.js" defer></script>
+<script src="codex-hands.js" defer></script>
+</body></html>

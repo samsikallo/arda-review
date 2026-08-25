@@ -1,0 +1,472 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Reckonings of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Reckonings of Arda: every calendar and measure Tolkien made — Shire Reckoning to the yén — with a date-converter across them and into our own calendar."><meta property="og:title" content="The Reckonings of Arda — the Arda Archive"><meta property="og:description" content="The Reckonings of Arda: every calendar and measure Tolkien made — Shire Reckoning to the yén — with a date-converter across them and into our own calendar."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/reckoning.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/reckoning.html"><!--/ARDA:META--><!--/ARDA:META-->
+<link rel="stylesheet" href="arda.css">
+<!-- THE STALE TEMPLATE, AND CLAUDE.MD RULE 3 NAMES THIS EXACTLY. gen_reckoning.py
+     splices this file into site/reckoning.html, so anything added to the BUILT page by
+     hand or by another tool is reverted on the next run. Rebuilding it on 29 July
+     stripped four things at once -- the arda.css link, nav.js, the skip-to-content link
+     and role=main -- and my own new prefers-reduced-motion ratchet is what caught it:
+     the page stopped carrying the archive's stylesheet, so it stopped honouring the rule
+     the stylesheet holds, and budget_check went from 33 of 33 to 32. The ARDA:META
+     markers are here too so compose.py's description splice has somewhere to land.
+     Same fault as gen_seo.py's 404 template and gen_valinor.py's page, in a third
+     generator, in the same three elements. -->
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+.wrap{max-width:1240px;margin:0 auto;padding:18px 20px 60px}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+.tabs{margin:6px 0 14px;display:flex;flex-wrap:wrap;gap:6px}
+.tab{border:1px solid var(--line);border-radius:14px;padding:4px 14px;cursor:pointer;background:#fdfaf2;font-size:13px;box-shadow:0 1px 2px rgba(60,40,10,.12)}
+.tab.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+.pane{display:none}.pane.on{display:block}
+/* C59 AT 390px: minmax(Npx,1fr) CANNOT SHRINK BELOW N, and a hall inside the codex object gets 291px of a 390px phone once body padding, .book margin and .book padding are taken -- so a floor of 340 made .hall-slot a flex item 360px wide inside a 332px book and the DOCUMENT scrolled sideways, which C59 forbids at every width. min(Npx,100%) is the same N wherever the container is wider than N, so no layout above a phone changes at all. Measured 21 Aug with mobile_check's own 390px iframe. */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(350px,100%),1fr));gap:15px;margin-top:12px}
+.card{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;padding:14px 17px;box-shadow:0 3px 10px rgba(60,40,10,.14)}
+.card h3{margin:.1em 0 .2em;font-variant:small-caps;font-weight:normal;font-size:18.5px;color:#5a4626}
+.card.sel{outline:2px solid #a8853c}
+.fam{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:baseline}
+.badge{display:inline-block;font-size:10.5px;padding:1px 7px;border-radius:9px;border:1px solid;vertical-align:middle;margin-left:5px}
+.b-C{color:#3f6212;border-color:#87a05a;background:#eef3dd}
+.b-I{color:#7a4a12;border-color:#c09a5a;background:#f7ecd8}
+.b-X{color:#8a3a2a;border-color:#c58a76;background:#f9e6de}
+.prec{font-size:11.5px;color:var(--mut);font-style:italic}
+table.rk{border-collapse:collapse;font-size:12.5px;margin:.5em 0;width:100%}
+table.rk th{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px solid var(--line);text-align:left;padding:2px 8px 2px 0}
+table.rk td{padding:2px 8px 2px 0;border-bottom:1px dotted #d8cfb8;vertical-align:top}
+.sp{color:#7a5f14;font-style:italic}
+#detail{margin-top:16px}
+.note{margin:.35em 0;font-size:12.8px}
+.conf{margin-top:.5em;padding:6px 10px;background:#fbe9df;border-left:3px solid #c97a4a;font-size:12px}
+.law{margin-top:.6em;padding:6px 10px;background:#f3ecd8;border-left:3px solid #c9a227;font-size:12.3px;font-style:italic}
+select,input[type=number],input[type=date],input[type=text]{border:1px solid var(--line);border-radius:8px;padding:4px 8px;font:13px Georgia,serif;background:#fffdf6;color:var(--ink)}
+button{border:1px solid #a8853c;border-radius:10px;padding:4px 14px;font:13px Georgia,serif;background:#efe0bd;cursor:pointer}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.5em 0}
+.res{margin-top:10px}
+.res .card{margin-bottom:10px}
+.mgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;font-size:11px;max-width:340px}
+.mgrid .hd{font-variant:small-caps;color:#5a4626;text-align:center;padding:1px 0;border-bottom:1px solid var(--line)}
+.mgrid .dy{text-align:center;background:#fdfaf2;border:1px solid #e2d9c2;border-radius:4px;padding:2px 0}
+.mgrid .dy.fest{background:#f2e2b5;border-color:#c9a227;font-weight:bold}
+.strip{overflow-x:auto;background:#fdfaf2;border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:10px}
+.orn{text-align:center;color:#b0a58e;margin:.5em 0;font-size:12px;letter-spacing:.3em}
+.ft{margin-top:26px;border-top:1px solid var(--line);padding-top:10px;font-size:11.5px;color:var(--mut)}
+.ft a{color:#7a4a12}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:2px 11px;cursor:pointer;background:#fdfaf2;font-size:12.5px;margin:2px}
+.chip.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+.tt{position:fixed;display:none;background:#221c15;color:#e8dcb0;padding:6px 10px;border-radius:8px;font-size:12px;max-width:300px;z-index:50;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px solid var(--line);padding-bottom:2px;margin-top:1.3em}
+</style><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;&#39;;--edge-r:&#39;&#39;" data-edge-tr="reckonings" data-edge-en="Reckonings" data-edge-mode="Angerthas Daeron" data-edge-script="cirth" data-edge-src="" data-edge-conf="[NEO]" data-turn-prev="armies_dashboard.html" data-turn-next="volume-iii.html"><div class="plaque">The Arda Archive <i>·</i> Volume II <i>·</i> Reckonings</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html" aria-current="page">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="reckoning.html"><div class="rh"><span>The Arda Archive · The Reckonings of Arda</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Reckonings of Arda</h2><p class="lede">The Reckonings of Arda: every calendar and measure Tolkien made — Shire Reckoning to the yén — with a date-converter across them and into our own calendar.</p><p><span class="versal">T</span>he Reckonings of Arda opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="reckoning.html"><div class="rh"><span>Reckonings · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. A folio hall shows what the archive holds and no more.</p><div class="sub">Where this opening sits</div><p>Volume II of the Arda Archive, Annals, Wars and Reckonings, under Reckonings. when things happened</p><p>It is opening <span class="mark">4</span> of <span class="mark">4</span> in this volume, the Armies and Campaigns coming before it. It is the last opening of this volume.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch"></span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume II</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><span style="display:inline-flex;align-items:flex-end;filter:drop-shadow(0 0 6px rgba(201,162,39,.4))"><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="26" style="vertical-align:middle" x="0"><g > <path d="M 18.347813,29.448747 C 17.814475,29.896748 17.206475,30.355414 16.523813,30.824747 C 15.862477,31.29408 15.222477,31.64608 14.603813,31.880747 C 14.710478,31.39008 14.795811,30.952747 14.859813,30.568747 C 14.923811,30.163414 14.966477,29.747415 14.987813,29.320747 C 15.030477,28.872749 15.051811,28.39275 15.051813,27.880747 C 15.073144,27.347417 15.083811,26.718085 15.083813,25.992747 L 15.083813,22.344747 C 15.083811,21.704756 14.966477,21.15009 14.731813,20.680747 C 14.497145,20.211424 14.081145,19.859425 13.483813,19.624747 C 13.803812,19.347425 14.155812,19.048759 14.539813,18.728747 C 14.923811,18.40876 15.329144,18.12076 15.755813,17.864747 C 16.182476,17.587427 16.609143,17.352761 17.035813,17.160747 C 17.483808,16.947428 17.921141,16.808761 18.347813,16.744747 L 18.347813,29.448747" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="30" style="vertical-align:middle" x="0"><g > <path d="M 16.225063,18.736 C 16.13972,18.800011 16.033054,18.842678 15.905063,18.864 C 15.777054,18.885344 15.670387,18.874678 15.585063,18.832 C 15.521054,18.789345 15.499721,18.725345 15.521063,18.64 C 15.542387,18.533345 15.649054,18.394678 15.841063,18.224 C 16.865053,17.434679 17.921052,16.805347 19.009063,16.336 C 20.097049,15.845347 21.046382,15.600014 21.857063,15.6 C 22.305047,15.600014 22.74238,15.706681 23.169063,15.92 C 23.595713,16.133347 23.979712,16.453347 24.321063,16.88 C 24.662378,17.306679 24.929045,17.829346 25.121063,18.448 C 25.334378,19.066678 25.441044,19.79201 25.441063,20.624 C 25.441044,21.712008 25.217044,22.789341 24.769063,23.856 C 24.342379,24.922672 23.734379,26.064004 22.945063,27.28 C 22.177047,28.474668 21.238382,29.786667 20.129063,31.216 C 19.041051,32.645331 17.825052,34.266662 16.481063,36.08 C 15.862387,36.933326 15.361054,37.829326 14.977063,38.768 C 14.593055,39.72799 14.401055,40.762656 14.401063,41.872 C 14.401055,42.618654 14.582388,43.226653 14.945063,43.696 C 15.329054,44.165319 15.745054,44.549319 16.193063,44.848 C 16.726386,45.189318 17.334386,45.445318 18.017063,45.616 C 17.611719,46.021317 17.195719,46.373317 16.769063,46.672 C 16.406386,46.949316 15.990387,47.194649 15.521063,47.408 C 15.073054,47.621316 14.635722,47.727982 14.209063,47.728 C 14.081055,47.727982 13.899722,47.653316 13.665063,47.504 C 13.451723,47.375983 13.227723,47.151983 12.993063,46.832 C 12.75839,46.511983 12.555724,46.095984 12.385063,45.584 C 12.214391,45.093318 12.129057,44.474652 12.129063,43.728 C 12.129057,42.938654 12.214391,42.213321 12.385063,41.552 C 12.555724,40.911989 12.801057,40.282656 13.121063,39.664 C 13.441056,39.066658 13.835722,38.437325 14.305063,37.776 C 14.774388,37.135993 15.307721,36.421327 15.905063,35.632 L 18.081063,32.592 L 14.657063,27.024 L 11.137063,30.8 C 10.731726,31.226665 10.497059,31.642665 10.433063,32.048 C 10.390393,32.453331 10.411726,32.805331 10.497063,33.104 C 10.582392,33.466663 10.753059,33.807996 11.009063,34.128 L 7.4570629,36.304 C 7.3290622,35.813328 7.2970623,35.301328 7.3610629,34.768 C 7.4037288,34.319996 7.5317287,33.807996 7.7450629,33.232 C 7.9797283,32.677331 8.3743945,32.122665 8.9290629,31.568 L 14.209063,26.32 C 13.057057,24.464006 12.097057,22.938674 11.329063,21.744 C 10.561059,20.549343 9.942393,19.60001 9.4730629,18.896 C 9.0250605,18.192012 8.7050609,17.712012 8.5130629,17.456 C 8.3423946,17.178679 8.2570613,17.040013 8.2570629,17.04 C 8.4063945,16.912013 8.6623942,16.784013 9.0250629,16.656 C 9.3877268,16.50668 9.7823931,16.368014 10.209063,16.24 C 10.635726,16.090681 11.062392,15.962681 11.489063,15.856 C 11.937058,15.728014 12.321057,15.632014 12.641063,15.568 C 12.769057,16.18668 12.961057,16.837346 13.217063,17.52 C 13.494389,18.202678 13.910389,19.056011 14.465063,20.08 C 15.019721,21.104009 15.745054,22.373341 16.641063,23.888 C 17.558385,25.402671 18.710384,27.301336 20.097063,29.584 C 20.971715,28.240002 21.686381,27.00267 22.241063,25.872 C 22.817047,24.741339 23.105046,23.802673 23.105063,23.056 C 23.105046,22.352008 22.955713,21.690675 22.657063,21.072 C 22.358381,20.43201 21.974381,19.88801 21.505063,19.44 C 21.035715,18.970678 20.513049,18.608011 19.937063,18.352 C 19.382384,18.074679 18.849051,17.936012 18.337063,17.936 C 17.590385,17.936012 16.886386,18.202678 16.225063,18.736" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg></span><h1>The Reckonings of Arda</h1><span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav><span class="sub">Every calendar, time-reckoning and measure the corpus records — the Shire year and the yén, the Deficit and the ranga; a converter across the reckonings and into our own, exact where Tolkien is exact, and honest where he is not</span></div>
+<div class="wrap" role="main" id="main">
+<div class="law">The corpus is the law: canon <span class="badge b-C">C</span> is what the texts state; inferences <span class="badge b-I">I‑H/M/L</span> are labelled with their reasoning; where the corpus is silent, this hall says so. Nothing here is invented. Full derivations: <a href="RECKONING.md" style="color:#7a4a12">RECKONING.md</a>.</div>
+<div class="tabs" id="tabs">
+<span class="tab on" data-t="cal">The Calendars</span>
+<span class="tab" data-t="conv">The Converter</span>
+<span class="tab" data-t="side">Side by Side</span>
+<span class="tab" data-t="days">Days of Note</span>
+<span class="tab" data-t="meas">Weights &amp; Measures</span>
+<span class="tab" data-t="deep">The Deep of Time</span>
+</div>
+
+<div class="pane on" id="p-cal">
+ <div class="cite">Every reckoning the corpus records — its structure, names, leap-rules and history. Click a card for the full anatomy. Colour marks the family: <span class="fam" style="background:#4a7c59"></span>Elvish · <span class="fam" style="background:#4a6a8a"></span>Númenórean line · <span class="fam" style="background:#a2762a"></span>Hobbit · <span class="fam" style="background:#7a5a8a"></span>Valinórean · <span class="fam" style="background:#6a675f"></span>other</div>
+ <div class="grid" id="calgrid"></div>
+ <div id="detail"></div>
+</div>
+
+<div class="pane" id="p-conv">
+ <div class="cite">Choose a date in any reckoning; the engine carries it through every other where Tolkien's anchors allow, and says plainly how solid each crossing is.</div>
+ <div class="card" style="margin-top:10px">
+ <div class="row">
+  <select id="cv-cal"></select>
+  <select id="cv-era"></select>
+  <input type="number" id="cv-year" value="1419" style="width:84px">
+  <select id="cv-md"></select>
+  <input type="number" id="cv-day" value="25" min="1" max="72" style="width:64px">
+  <button id="cv-go">convert</button>
+ </div>
+ <div class="cite" id="cv-note"></div>
+ </div>
+ <div class="res" id="cv-out"></div>
+ <div class="card" style="margin-top:14px">
+  <h3>From our calendar</h3>
+  <div class="row"><input type="date" id="gv-date"><button id="gv-go">find the Shire date</button></div>
+  <div id="gv-out"></div>
+ </div>
+</div>
+
+<div class="pane" id="p-side">
+ <div class="cite">The year laid out as parallel bands, aligned day for day on the Shire year (the Red Book's own frame). Gold ticks are the days outside the months. Hover any band.</div>
+ <div id="side-chips"></div>
+ <div class="strip"><svg id="side-svg" width="1160" height="10"></svg></div>
+ <div class="cite" id="side-read" style="min-height:1.5em"></div>
+ <div class="note" id="side-era"></div>
+</div>
+
+<div class="pane" id="p-days">
+ <div class="cite">The feasts, holidays and appointed days of every people — and the remembered days of the Tale of Years.</div>
+ <div class="card" style="margin:10px 0">
+  <h3>On this day</h3>
+  <div class="row"><input type="date" id="od-date"><button id="od-go">look up</button></div>
+  <div id="od-out"></div>
+ </div>
+ <h2>Festivals &amp; observances</h2>
+ <div class="grid" id="festgrid"></div>
+ <h2>The remembered days <span class="cite">— calendar-dated anniversaries of the Tale of Years (Shire Reckoning)</span></h2>
+ <div class="card"><div id="annivlist" style="columns:2;column-gap:28px;font-size:12.6px"></div></div>
+</div>
+
+<div class="pane" id="p-meas">
+ <div class="cite">Every unit of length, height, coin and count the corpus provides — with Tolkien's own conversions where he gives them, and honest silence where he does not.</div>
+ <div class="card" style="margin-top:10px">
+  <h3>The measure-changer</h3>
+  <div class="row">
+   <input type="number" id="mc-val" value="1" step="any" style="width:90px">
+   <select id="mc-from"></select> <span>→</span> <div id="mc-out" style="font-size:13.5px"></div>
+  </div>
+  <div class="cite">ranga 38 in and lár = 5,000 rangar are canon [C]; the rest is arithmetic on those statements [I‑H].</div>
+ </div>
+ <div class="card" style="margin-top:12px"><h3>Statures, in rangar</h3><svg id="hsvg" width="100%" height="190" viewBox="0 0 760 190"></svg>
+ <div class="cite">Elendil ≈ 2½ rangar (computed from 'more than man-high by nearly half a ranga' [I‑H]) · man-high = 2 rangar = 6′4″ [C] · Galadriel man-high by the old measure [C] · Hobbits 3–4 ft [C]</div></div>
+ <div class="card" style="margin-top:12px"><h3>The coinage of Gondor</h3>
+  <div style="text-align:center;margin:8px 0" id="coins"></div>
+  <div class="cite">'In Gondor tharni was used for a silver coin, the fourth part of the castar (in Noldorin the canath or fourth part of the mirian).' — PM. Bree reckoned in silver pennies: a pony was worth ~4 (Bill Ferny demanded 12, 'at least three times the pony's value'). No exchange between castar and penny is given: <i>the attached documents do not provide enough information to answer this.</i></div></div>
+ <div id="unitgrids"></div>
+</div>
+
+<div class="pane" id="p-deep">
+ <div class="cite">Above the sun-year stand the long measures of the Elves and the Valar — where the drafts disagree, all three schemes stand side by side, unresolved, as the corpus leaves them.</div>
+ <div class="card" style="margin-top:10px">
+  <h3>The long-year changer</h3>
+  <div class="row"><input type="number" id="vy-val" value="1" step="any" style="width:100px"><select id="vy-unit"><option value="vy">Valian Years</option><option value="sy">sun-years</option><option value="yen">yéni</option></select><button id="vy-go">reckon</button></div>
+  <div id="vy-out"></div>
+ </div>
+ <div class="grid" style="margin-top:12px">
+ <div class="card"><h3>The Eldarin long count <span class="badge b-C">C</span></h3>
+ <table class="rk"><tr><th>unit</th><th>equals</th></tr>
+ <tr><td>ré (day)</td><td>sunset to sunset</td></tr>
+ <tr><td>enquië (week)</td><td>6 rér — 8,766 in a yén, unbroken</td></tr>
+ <tr><td>loa / coranar (sun-year)</td><td>365 days (+ leap enderi); 'growth' / 'sun-round'</td></tr>
+ <tr><td>yén (long-year)</td><td>144 loar = 52,596 days</td></tr></table>
+ <div class="cite">LotR App D</div></div>
+ <div class="card"><h3>The Valian Day of the Annals of Aman <span class="badge b-C">C</span></h3>
+ <table class="rk"><tr><th>unit</th><th>equals</th></tr>
+ <tr><td>Tree-hour</td><td>7 of our hours — Telperion and Laurelin each flowered for one</td></tr>
+ <tr><td>Valian Day</td><td>12 Tree-hours = 84 hours</td></tr>
+ <tr><td>Valian Year</td><td>1,000 Valian Days = 84,000 hours ≈ 9.582 sun-years — after a thousand days the Trees put out a new branch</td></tr></table>
+ <div class="cite">MR, Annals of Aman §29 and commentary</div></div>
+ <div class="card"><h3>The late scheme of NoME <span class="badge b-C">C</span></h3>
+ <table class="rk"><tr><th>unit</th><th>equals</th></tr>
+ <tr><td>Valian Day (Tree-day)</td><td>1 löa (sun-year)</td></tr>
+ <tr><td>Valian Month</td><td>12 Valian Days = 12 löar</td></tr>
+ <tr><td>Valian Year</td><td>12 Valian Months = 144 löar = 1 yén</td></tr></table>
+ <div class="cite">NoME, 'The Valian Year'; 'Valinorian Time-Divisions'</div></div>
+ <div class="card"><h3>Ages &amp; epochs <span class="badge b-C">C</span></h3>
+ <table class="rk"><tr><th>count</th><th>anchor</th></tr>
+ <tr><td>Second Age 1</td><td>Kings' Reckoning calculation begins</td></tr>
+ <tr><td>T.A. 1</td><td>= S.A. 3442</td></tr>
+ <tr><td>S.R. 1</td><td>= T.A. 1601 (Bree Year 1 = T.A. 1300)</td></tr>
+ <tr><td>Fourth Age 1</td><td>the year beginning (N.R.) March 25, T.A. 3021 — the Shire's 1422</td></tr></table>
+ <div class="cite">LotR App B, D</div></div>
+ </div>
+ <div class="conf">The three Valian ratios are a draft evolution Tolkien never closed — see <a href="CONTRADICTIONS.md" style="color:#7a4a12">the contradiction register, §1</a>. The Archive's timeline adopts ×9.582 for annals dated in the Annals of Aman, as an editorial default only.</div>
+</div>
+
+<div class="ft">Sources: LotR Appendix D (the calendars entire) · UT (Númenórean Linear Measures; A Description of Númenor) · PM (the coinage of Gondor; the Appendix-D drafts) · MR (Annals of Aman) · NoME Part One (Time and Ageing) · The Hobbit (Durin's Day) · BoLT2/FoG (the feasts of Gondolin) · Silm (Mereth Aderthad). Method &amp; every derivation: <a href="RECKONING.md">RECKONING.md</a> · anomalies: <a href="CONTRADICTIONS.md">CONTRADICTIONS.md</a></div>
+</div>
+<div class="tt" id="tt"></div>
+<script>
+const D={"calendars":[{"id":"shire","name":"Shire Reckoning","family":"hobbit","era":"T.A. 1601 (S.R. 1) → Fourth Age and beyond","users":"the Hobbits of the Shire (and, with other month-names, Bree)","week":{"names":["Sterday","Sunday","Monday","Trewsday","Hevensday","Mersday","Highday"],"archaic":["Sterrendei","Sunnendei","Monendei","Trewesdei","Hevenesdei","Meresdei","Hihdei"],"modern":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],"note":"Highday (Friday) was the chief day, of holiday after noon and evening feasts; 'Saturday thus corresponds more nearly to our Monday, and Thursday to our Saturday.' No month began on a Friday — hence the jest 'on Friday the first of Summerfilth' for a day that does not exist."},"months":[{"n":"Afteryule","mod":"January","bree":"Frery","len":30},{"n":"Solmath","mod":"February","bree":"Solmath","len":30},{"n":"Rethe","mod":"March","bree":"Rethe","len":30},{"n":"Astron","mod":"April","bree":"Chithing","len":30},{"n":"Thrimidge","mod":"May","bree":"Thrimidge","len":30},{"n":"Forelithe","mod":"June","bree":"Lithe","len":30},{"n":"Afterlithe","mod":"July","bree":"Mede","len":30},{"n":"Wedmath","mod":"August","bree":"Wedmath","len":30},{"n":"Halimath","mod":"September","bree":"Harvestmath","len":30},{"n":"Winterfilth","mod":"October","bree":"Wintring","len":30},{"n":"Blotmath","mod":"November","bree":"Blooting","len":30},{"n":"Foreyule","mod":"December","bree":"Yulemath","len":30}],"special":[{"n":"2 Yule","doy":1,"note":"first day of the year — a Sterday, always"},{"n":"1 Lithe","doy":182,"note":"first Litheday"},{"n":"Mid-year's Day","doy":183,"note":"no weekday name; intended to correspond as nearly as possible to the summer solstice"},{"n":"Overlithe","doy":184,"leap":true,"note":"leap-years only — the 184th day, a day of special merrymaking (occurred in 1420)"},{"n":"2 Lithe","doy":184,"note":"second Litheday (185th in leap-years)"},{"n":"1 Yule","doy":365,"note":"last day of the year — a Highday, always"}],"leap":"Every fourth year, except in the last year of the century (S.R. centuries: Year 1 = T.A. 1601), there were four Lithedays: the Overlithe follows Mid-year's Day. [C]","epoch":"Year 1 = the colonization of the Shire = T.A. 1601. Bree counted from T.A. 1300.","reform":"Shire-reform (time of Isengrim II): Mid-year's Day and the Overlithe belong to no week, so every year begins on Sterday and every date keeps the same weekday for ever.","precision":"richly documented","conf":"C","notes":["Yuletide in full was six days — the last three and first three days of each year.","The Yuledays and Lithedays remained outside the months: January 1 (Afteryule 1) is the SECOND day of the year.","Month-names descend from the Men of the vales of Anduin; 'similar names were found in Dale and Rohan.' Solmath was pronounced Somath; Thrimidge archaically Thrimilch; Blotmath as Blodmath or Blommath."],"cites":["LotR App D"]},{"id":"kings","name":"Kings' Reckoning","family":"numenorean","era":"Númenor from S.A. 1; Arnor & Gondor until T.A. 2059","users":"the Númenóreans and the Realms in Exile 'until the end of the kings'","week":{"names":["Elenya","Anarya","Isilya","Aldëa","Menelya","Eärenya","Valanya"],"sindarin":["Orgilion","Oranor","Orithil","Orgaladh","Ormenel","Oraearon","Orbelain"],"modern":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],"note":"Seven days: the Eldarin six retained in dedication and order, the Two Trees' day altered to Aldëa (the White Tree), and a Sea-day, Eärenya, inserted after the Heavens' day."},"months":[{"n":"Narvinyë","s":"Narwain","mod":"January","len":30},{"n":"Nénimë","s":"Nínui","mod":"February","len":30},{"n":"Súlimë","s":"Gwaeron","mod":"March","len":30},{"n":"Víressë","s":"Gwirith","mod":"April","len":30},{"n":"Lótessë","s":"Lothron","mod":"May","len":30},{"n":"Nárië","s":"Nórui","mod":"June","len":31},{"n":"Cermië","s":"Cerveth","mod":"July","len":31},{"n":"Úrimë","s":"Úrui","mod":"August","len":30},{"n":"Yavannië","s":"Ivanneth","mod":"September","len":30},{"n":"Narquelië","s":"Narbeleth","mod":"October","len":30},{"n":"Hísimë","s":"Hithui","mod":"November","len":30},{"n":"Ringarë","s":"Girithron","mod":"December","len":30}],"special":[{"n":"yestarë","doy":1,"note":"first day, belonging to no month; mid-winter"},{"n":"loëndë","doy":183,"note":"mid-year's day (the 183rd)"},{"n":"mettarë","doy":365,"note":"last day, belonging to no month"}],"leap":"In every fourth year, except the last of a century (haranyë), two enderi replaced the loëndë. Millennial Deficit (4 h 46 m 40 s) added back in S.A. 1000, 2000, 3000; in exile the additions came 441 years late (T.A. 1000, 2000). [C]","epoch":"Calculation began with S.A. 1. S.A. 3442 became T.A. 1; T.A. 4 was made a leap year instead of T.A. 3.","precision":"richly documented","conf":"C","notes":["The year had 365 days: ten months of 30 and two of 31 (Nárië and Cermië, either side of mid-year).","The day ran from sunrise (out of the eastern sea) to sunrise.","The year began in mid-winter, as among the Men of the North-west of the First Age."],"cites":["LotR App D"]},{"id":"stewards","name":"Stewards' Reckoning","family":"numenorean","era":"T.A. 2060 (Mardil) → 3019","users":"'most of the users of the Westron language, except the Hobbits'","week":{"names":["Elenya","Anarya","Isilya","Aldëa","Menelya","Eärenya","Valanya"],"sindarin":["Orgilion","Oranor","Orithil","Orgaladh","Ormenel","Oraearon","Orbelain"],"modern":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],"note":"As Kings' Reckoning."},"months":[{"n":"Narvinyë","s":"Narwain","mod":"January","len":30},{"n":"Nénimë","s":"Nínui","mod":"February","len":30},{"n":"Súlimë","s":"Gwaeron","mod":"March","len":30},{"n":"Víressë","s":"Gwirith","mod":"April","len":30},{"n":"Lótessë","s":"Lothron","mod":"May","len":30},{"n":"Nárië","s":"Nórui","mod":"June","len":30},{"n":"Cermië","s":"Cerveth","mod":"July","len":30},{"n":"Úrimë","s":"Úrui","mod":"August","len":30},{"n":"Yavannië","s":"Ivanneth","mod":"September","len":30},{"n":"Narquelië","s":"Narbeleth","mod":"October","len":30},{"n":"Hísimë","s":"Hithui","mod":"November","len":30},{"n":"Ringarë","s":"Girithron","mod":"December","len":30}],"special":[{"n":"yestarë","doy":1,"note":"New Year — holiday"},{"n":"tuilérë","doy":92,"note":"spring-day, between Súlimë and Víressë — holiday"},{"n":"loëndë","doy":183,"note":"mid-year's day — holiday"},{"n":"yáviérë","doy":274,"note":"autumn-day, between Yavannië and Narquelië — holiday"},{"n":"mettarë","doy":365,"note":"last day — holiday"}],"leap":"App D does not restate the leap rule; continuation of the Kings' rule (two enderi for loëndë every fourth year save the haranyë) is inferred. [I-H]","epoch":"Issued by Mardil to take effect in T.A. 2060, after a special addition of 2 days to 2059 (concluding 5½ millennia of the system). Hador added 1 day in T.A. 2360; after that no more adjustments. By the end of the Third Age the Deficit had not yet amounted to 1 day.","precision":"richly documented","conf":"C","notes":["All twelve months of 30 days; the five out-of-month days were holidays."],"cites":["LotR App D"]},{"id":"new","name":"New Reckoning","family":"numenorean","era":"T.A. 3019 → Fourth Age","users":"all the lands of King Elessar, except the Shire","week":{"names":["Elenya","Anarya","Isilya","Aldëa","Menelya","Eärenya","Valanya"],"sindarin":["Orgilion","Oranor","Orithil","Orgaladh","Ormenel","Oraearon","Orbelain"],"modern":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],"note":"As Kings' Reckoning."},"months":[{"n":"Víressë","s":"Gwirith","mod":"April","len":30},{"n":"Lótessë","s":"Lothron","mod":"May","len":30},{"n":"Nárië","s":"Nórui","mod":"June","len":30},{"n":"Cermië","s":"Cerveth","mod":"July","len":30},{"n":"Úrimë","s":"Úrui","mod":"August","len":30},{"n":"Yavannië","s":"Ivanneth","mod":"September","len":30},{"n":"Narquelië","s":"Narbeleth","mod":"October","len":30},{"n":"Hísimë","s":"Hithui","mod":"November","len":30},{"n":"Ringarë","s":"Girithron","mod":"December","len":30},{"n":"Narvinyë","s":"Narwain","mod":"January","len":30},{"n":"Nénimë","s":"Nínui","mod":"February","len":30},{"n":"Súlimë","s":"Gwaeron","mod":"March","len":30}],"special":[{"n":"yestarë","doy":1,"note":"= March 25 old style, in commemoration of the fall of Sauron and the deeds of the Ring-bearers"},{"n":"3 Enderi","doy":182,"note":"days 182–184, between Yavannië and Narquelië; the second was Loëndë; = September 23–25 old style"},{"n":"Cormarë (Ringday)","doy":181,"note":"Yavannië 30 = old September 22, Frodo's birthday, made a festival; doubled in leap-years"},{"n":"mettarë","doy":365,"note":"last day"}],"leap":"The leap-year was provided for by doubling the feast of Cormarë. [C]","epoch":"Began in the restored Kingdom in T.A. 3019: a return to Kings' Reckoning adapted to a spring-beginning as in the Eldarin loa. Fourth Age 1 = the year beginning March 25, 3021 old style (though the Age was held to begin with Elrond's departure, September 3021; the Shire called that year 1422).","precision":"richly documented","conf":"C","notes":["Months kept their Quenya names but now begin with Víressë (April), 'referred to periods beginning generally five days earlier than previously.'","The Imladris yestarë fell later: 'it corresponded more or less with Shire April 6.'"],"cites":["LotR App D"]},{"id":"imladris","name":"Calendar of Imladris (Reckoning of Rivendell)","family":"elvish","era":"recorded for the Third Age; Eldarin in origin","users":"the Elves of Rivendell; 'the Hobbits only provide information concerning the Calendar of Imladris'","week":{"names":["Elenya","Anarya","Isilya","Aldúya","Menelya","Valanya (Tárion)"],"sindarin":["Orgilion","Oranor","Orithil","Orgaladhad","Ormenel","Orbelain (Rodyn)"],"note":"A six-day week (enquië), 'for ritual rather than practical purposes', dedicated to the Stars, Sun, Moon, Two Trees, Heavens, and the Valar — the last the chief day. The yén contained 8,766 enquier, reckoned continuously."},"months":[{"n":"tuilë","s":"ethuil","mod":"spring","len":54},{"n":"lairë","s":"laer","mod":"summer","len":72},{"n":"yávië","s":"iavas","mod":"autumn","len":54},{"n":"quellë","s":"firith","mod":"fading (lasse-lanta, narbeleth)","len":54},{"n":"hrívë","s":"rhîw","mod":"winter","len":72},{"n":"coirë","s":"echuir","mod":"stirring","len":54}],"special":[{"n":"yestarë","doy":1,"note":"first day, immediately before tuilë; corresponded more or less with Shire April 6 ('the Elves' New Year')"},{"n":"3 enderi","doy":182,"note":"middle-days between yávië and quellë (days 182–184 of the loa). App D: “Lairë and hrívë each contained 72 days, and the remainder 54 each”, and the loa begins with yestarë — so 1+54+72+54 = 181, and the enderi are 182–184. This read doy 128, which is the FIRST DAY OF YÁVIË, not the enderi."},{"n":"mettarë","doy":365,"note":"last day, immediately after coirë"}],"leap":"The enderi were doubled (3 days added) every twelfth year. In the Reckoning of Rivendell the last year of every third yén was shortened by three days: the doubling due that year was omitted — 'but that has not happened in our time.' THE INACCURACY IS RECORDED AND ITS ADJUSTMENT IS NOT: App D says 'That there was an inaccuracy is shown by a note in the Calendars of the Red Book', and closes 'Of the ADJUSTMENT of any remaining inaccuracy there is no record.' [C]","epoch":"Long periods: the yén = 144 solar years = 52,596 days. The solar year: coranar ('sun-round') or loa ('growth'). A day, ré, ran from sunset to sunset.","precision":"richly documented (the one Elvish calendar the Red Book records)","conf":"C","notes":["Six long 'seasons' rather than months; lairë and hrívë had 72 days, the rest 54.","Season-schemes 'no doubt varied in different regions' — only Imladris is recorded. [C]","Twilights held special names: tindómë (near dawn) and undómë (evening); Sindarin uial, minuial/aduial; Shire morrowdim and evendim."],"cites":["LotR App D"]},{"id":"valian","name":"Valian Years (the Reckoning of the Trees)","family":"valinorean","era":"Years of the Trees, before the Sun and Moon","users":"the Valar and the Eldar of Aman; the Annals of Aman are dated in Valian Years","week":null,"months":[],"special":[],"leap":"—","epoch":"Three schemes across the corpus (displayed, not resolved — see the contradiction register): (1) the earliest Annals: 1 V.Y. = 10 sun-years; (2) the Annals of Aman: the Valian Day of 12 Tree-hours (each = 7 of our hours), the Valian Year of 1000 Valian Days, whence 1 V.Y. = 84,000 hours = 9.582 sun-years; (3) the late 'Time and Ageing' texts (c. 1957 on): 1 V.Y. = 144 sun-years = the Elvish yén, with 12 Valian Months of 12 Valian Days, each Valian Day = 1 löa.","precision":"fragmentary and self-contradictory by design of the drafts","conf":"I-M","conf_note":"C for each scheme; the CHOICE between them is the archive's, and an unresolved draft evolution -- so the selection is I-M even though each scheme is canon","notes":["AAm: after a thousand days the Trees put out a new branch — 'the Valian year of 1000 days was also due to the Trees' nature.'","AAm arithmetic: the Trees first flowered after 3500 V.Y.; the Moon first rose after 5000 V.Y.; the Trees shone 1495 V.Y.","NoME: 'There are twelve Tree-hours in each Valian Day, 144 Days in each Valian Year. But each Valian Year = 144 Mortal Years.'","The Archive's timeline uses the AAm ratio (×9.582) for Valian-dated annals — an adopted default, with the alternatives kept visible."],"cites":["MR, Annals of Aman & commentary","NoME I–IV ('The Valian Year', 'Valinorian Time-Divisions')","CONTRADICTIONS.md #1"]},{"id":"durin","name":"The Dwarves' Year (Durin's Day)","family":"other","era":"attested for the late Third Age","users":"Durin's Folk","week":null,"months":[],"special":[{"n":"Durin's Day","doy":null,"note":"'The first day of the dwarves' New Year is as all should know the first day of the last moon of Autumn on the threshold of Winter. We still call it Durin's Day when the last moon of Autumn and the sun are in the sky together.'"}],"leap":"—","epoch":"A Moon-governed New Year. Beyond Thorin's rule the corpus gives no month-scheme, no week, and no year-count for the Dwarves.","precision":"fragmentary — a single rule survives","conf":"C","conf_note":"C for the rule. Everything further: the attached documents do not provide enough information to answer this.","notes":["Thorin: 'it passes our skill in these days to guess when such a time will come again' — even the Dwarves could not always predict it."],"cites":["The Hobbit, ch. III 'A Short Rest'"]},{"id":"bree","name":"Bree Reckoning","family":"hobbit","era":"Year 1 = T.A. 1300","users":"the Men and Hobbits of Bree (month-names also in the Eastfarthing)","week":{"names":["Sterday","Sunday","Monday","Trewsday","Hevensday","Mersday","Highday"],"modern":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],"note":"As the Shire, whose reform Bree eventually adopted."},"months":[{"n":"Frery","mod":"January","sh":"Afteryule","len":30},{"n":"Solmath","mod":"February","sh":"Solmath","len":30},{"n":"Rethe","mod":"March","sh":"Rethe","len":30},{"n":"Chithing","mod":"April","sh":"Astron","len":30},{"n":"Thrimidge","mod":"May","sh":"Thrimidge","len":30},{"n":"Lithe","mod":"June","sh":"Forelithe","len":30},{"n":"Mede","mod":"July","sh":"Afterlithe","len":30},{"n":"Wedmath","mod":"August","sh":"Wedmath","len":30},{"n":"Harvestmath","mod":"September","sh":"Halimath","len":30},{"n":"Wintring","mod":"October","sh":"Winterfilth","len":30},{"n":"Blooting","mod":"November","sh":"Blotmath","len":30},{"n":"Yulemath","mod":"December","sh":"Foreyule","len":30}],"special":[{"n":"3 Summerdays","doy":182,"note":"Bree's name for the Lithedays. App D: “they had 3 Summerdays, called in the Shire the Lithe or the Lithedays, between June and July”. Counted in the name, as this dataset does for “3 Enderi”, so the year sums to 365."},{"n":"2 Yule","doy":1,"note":"Bree kept the Shire Reckoning under other names. App D: the Yule at the BEGINNING of the year is 2 Yule."},{"n":"1 Yule","doy":365,"note":"App D: the Yule at the END of the year is 1 Yule. Without the two Yuledays Bree's year summed to 363."}],"leap":"As the Shire — but T.A. 1300 'was the first year of the century' in Bree's count. [C]","epoch":"Year 1 = T.A. 1300.","precision":"documented as a named variant of Shire Reckoning","conf":"C","notes":["A Bree jest spoke of 'Winterfilth in the (muddy) Shire'; the Shire-folk answered that Wintring was the Bree alteration."],"cites":["LotR App D"]}],"units":[{"cat":"length","n":"ranga (full pace)","d":"The Númenórean pace, 'slightly longer than our yard, approximately thirty-eight inches, owing to their greater stature.' A full stride 'might be well nigh a ranga and a half.'","rel":"5,000 rangar = 1 lár","modern":"≈ 38 in ≈ 96.5 cm","conf":"C","cites":["UT, App: Númenórean Linear Measures"]},{"cat":"length","n":"lár (league; S. daur)","d":"'Five thousand rangar (full paces) made a lár, which was very nearly three of our miles' — 5,277 yards, 2 feet and 4 inches, 'supposing the equivalence to be exact.' Lár meant 'pause': a brief halt was usually made after this distance. Númenórean reckoning was decimal.","rel":"= 5,000 rangar","modern":"≈ 4,826 m ≈ 3 miles","conf":"C","cites":["UT, App: Númenórean Linear Measures"]},{"cat":"length","n":"league (in translation)","d":"The longest measure of distance used in the text; five thousand rangar made a lár, 'very nearly three of our miles', which UT equates with our league.","rel":"≈ 1 lár","modern":"≈ 3 miles ≈ 4.8 km","conf":"C","cites":["UT, App: Númenórean Linear Measures","LotR passim"]},{"cat":"length","n":"ell & fathom","d":"Sam's Lórien rope: ''twenty, thirty ells, more or less' … 'Thirty ells, or say, about eighteen fathom'' — the text's own conversion: 1 ell = 0.6 fathom = 3.6 ft. (The traditional English ell of 45 in differs — the hobbit ell here is the cloth-ell of 3½–3¾ ft range.)","rel":"30 ells ≈ 18 fathoms","modern":"1 ell ≈ 3.6 ft ≈ 110 cm; 1 fathom = 6 ft","conf":"I-H","conf_note":"C for the 30↔18 equation; I-H for the per-unit value","cites":["LotR IV.1 'The Taming of Sméagol'"]},{"cat":"length","n":"mile & furlong (in translation)","d":"Used throughout the narrative and on the maps as translations of Westron measures; the Companion notes league-scale distances against the maps ('Three hundred leagues is 900 miles').","rel":"8 furlongs = 1 mile; 3 miles ≈ 1 league","modern":"as modern imperial","conf":"C","conf_note":"usage in translation","cites":["LotR passim","Reader's Companion (secondary)"]},{"cat":"stature","n":"man-high","d":"'Two rangar was often called man-high, which at thirty-eight inches gives an average height of six feet four inches' — a conventional unit of the later Dúnedain, not an observed average.","rel":"= 2 rangar","modern":"≈ 6 ft 4 in ≈ 1.93 m","conf":"C","cites":["UT, App: Númenórean Linear Measures"]},{"cat":"stature","n":"Elendil's height","d":"'More than man-high by nearly half a ranga' — the tallest of all who escaped the Downfall, called Elendil the Tall.","rel":"≈ 2½ rangar","modern":"≈ 7 ft 11 in ≈ 2.41 m (computed)","conf":"I-H","conf_note":"arithmetic on C statements","cites":["UT, App: Númenórean Linear Measures"]},{"cat":"stature","n":"Galadriel's height","d":"'The tallest of all the women of the Eldar of whom tales tell', said to be man-high 'according to the measure of the Dúnedain and the men of old.'","rel":"= 2 rangar","modern":"≈ 6 ft 4 in ≈ 1.93 m","conf":"C","cites":["UT, App: Númenórean Linear Measures"]},{"cat":"stature","n":"Hobbit stature","d":"'The Hobbits of the Shire were in height between three and four feet, never less and seldom more' — the Númenórean name Halfling 'was approximately accurate when given.'","rel":"≈ 1–1¼ rangar","modern":"3–4 ft ≈ 91–122 cm","conf":"C","cites":["UT, App: Númenórean Linear Measures","LotR Prologue"]},{"cat":"money","n":"castar & tharni (Gondor)","d":"'In Gondor tharni was used for a silver coin, the fourth part of the castar (in Noldorin the canath or fourth part of the mirian).' Tharni was also the old word for 'quarter' rendered as farthing in the Shire's divisions.","rel":"4 tharni = 1 castar; 4 canath = 1 mirian","modern":"no real-world value stated — the attached documents do not provide enough information to answer this.","conf":"C","cites":["PM, 'The Appendix on Languages' §41"]},{"cat":"money","n":"silver pennies (Bree)","d":"'Bill Ferny's price was twelve silver pennies; and that was indeed at least three times the pony's value.' Barliman gave Merry 'eighteen pence as some compensation', and reckoned his whole loss at thirty silver pennies — 'a sore blow to him.'","rel":"a pony ≈ 4 silver pennies (fair price, computed from 12 = 3× value)","modern":"no conversion stated","conf":"I-H","conf_note":"C for the prices; I-H for the pony's fair price","cites":["LotR I.11 & VI.7"]},{"cat":"time","n":"ré (day)","d":"'A day of the sun they called ré and reckoned from sunset to sunset' — against the Númenórean day from sunrise to sunrise.","rel":"365 rér ≈ 1 loa; the yén contained 52,596 days","modern":"1 solar day","conf":"C","cites":["LotR App D"]},{"cat":"time","n":"enquië (Eldarin week)","d":"The ritual six-day week; 8,766 enquier in a yén, reckoned continuously — no intercalary day ever broke the sequence.","rel":"6 rér; 8,766 per yén","modern":"6 days","conf":"C","cites":["LotR App D"]},{"cat":"time","n":"loa / coranar (sun-year)","d":"The solar year: coranar 'sun-round' astronomically, loa 'growth' seasonally. Appendix D notes the year's true length: 365 days, 5 hours, 48 minutes, 46 seconds.","rel":"365(+leap) days","modern":"1 solar year","conf":"C","cites":["LotR App D"]},{"cat":"time","n":"yén (long-year)","d":"'The Quenya word yén, often translated ‘year’ (p. 377), really means 144 of our years. The Eldar preferred to reckon in sixes and twelves as far as possible.'","rel":"= 144 loar = 52,596 days = 8,766 enquier","modern":"144 years","conf":"C","cites":["LotR App D","NoME"]},{"cat":"time","n":"haranyë (century)","d":"The last year of a century of the Númenórean system, in which the leap-doubling was omitted.","rel":"100 years","modern":"100 years","conf":"C","cites":["LotR App D"]},{"cat":"time","n":"Tree-hour & Valian Day (Annals of Aman)","d":"'The Valian day had twelve hours', each Tree-hour = 7 of our hours, the day therefore 84 hours; 1000 Valian Days = 1 Valian Year = 84,000 hours = 9.582 sun-years. The day's length was 'of the Trees' nature': the period of mingled light was five times shorter than a Tree's full flowering.","rel":"12 Tree-hours = 1 Valian Day; 1000 V.D. = 1 V.Y.","modern":"Tree-hour = 7 h; Valian Day = 3.5 solar days","conf":"C","conf_note":"the AAm scheme","cites":["MR, Annals of Aman — for the reckoning: 'The Valian day had twelve hours'","NoME — for the TERM: 'There are twelve Tree-hours in each Valian Day'. The Annals say 'an hour of the Trees' and nowhere write 'Tree-hour', which occurs in one volume of this corpus and that volume is tier 2"]},{"cat":"time","n":"Valian Day, Month & Year (late scheme)","d":"NoME: '1 Valian Day (or Tree-day) = 1 Sun-year'; 12 Valian Days = 1 Valian Month; 12 Valian Months = 1 Valian Year = 144 sun-years = 1 yén.","rel":"144 loar = 1 V.Y.","modern":"V.Y. = 144 years","conf":"C","conf_note":"the late scheme","cites":["NoME I–II"]},{"cat":"time","n":"The hours of Gondor","d":"Minas Tirith rang its hours from sunrise: 'the third hour from the rising of the sun', 'ere the second hour from noon' — bell-marked day-hours in the Númenórean manner.","rel":"day reckoned from sunrise","modern":"—","conf":"C","conf_note":"usage","cites":["LotR V.1, V.4"]},{"cat":"other","n":"Entish time","d":"Old Entish was 'a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say.' Treebeard's unhastiness is a manner of time-keeping in itself: 'Do not be hasty, that is my motto.'","rel":"—","modern":"—","conf":"C","cites":["LotR III.4"]},{"cat":"other","n":"a fourteenth share","d":"Not a coin but a contract: Bilbo's 'one fourteenth of total profits (if any)' of the treasure of Erebor — hobbit-lawyerly precision applied to a dragon-hoard.","rel":"1/14 of the hoard 'in silver and gold, setting aside the gems'","modern":"—","conf":"C","cites":["The Hobbit, ch. II & XVIII"]},{"cat":"other","n":"the Deficit","d":"Appendix D's own metrology: the millennial deficit of the Kings' Reckoning was 4 hours, 46 minutes, 40 seconds; the exiles' dislocations left 'about 8 hours' for Mardil to mend; 'by the end of the Third Age, after 660 more years, the Deficit had not yet amounted to 1 day.'","rel":"—","modern":"—","conf":"C","cites":["LotR App D"]}],"festivals":[{"n":"Yuletide","cal":"shire","when":"the last three and first three days of each year","type":"cultural","recur":"yearly","note":"The Yuledays (1 Yule, 2 Yule) were chief holidays and times of feasting; Yuletide in full was six days.","cite":"LotR App D"},{"n":"The Lithedays","cal":"shire","when":"1 Lithe, Mid-year's Day, 2 Lithe (and the Overlithe in leap-years)","type":"cultural","recur":"yearly","note":"Midsummer feasting; the Overlithe 'a day of special merrymaking' — the great one fell in 1420.","cite":"LotR App D"},{"n":"The Free Fair","cal":"shire","when":"the White Downs at the Lithe","type":"political/cultural","recur":"yearly (Mayor elected every seventh year)","note":"'At the Free Fair on the White Downs at the Lithe, that is at Midsummer' the Mayor of Michel Delving was elected for seven years.","cite":"LotR Prologue; VI.9"},{"n":"April 6 in the Party Field","cal":"shire","when":"Astron 6","type":"cultural","recur":"yearly (Westfarthing custom)","note":"'A custom of making holiday and dancing in the Party Field, when weather permitted, on April 6' — Sam's birthday to some, the flowering of the Golden Tree in 1420 to others, the Elves' New Year to others still.","cite":"LotR App D"},{"n":"The Horn of the Mark","cal":"shire","when":"November 2 (Blotmath 2), at sundown","type":"cultural","recur":"yearly (Buckland)","note":"'The Horn of the Mark was blown at sundown every November 2 and bonfires and feastings followed' — anniversary of its first blowing in 3019.","cite":"LotR App D"},{"n":"Yestarë of the New Reckoning","cal":"new","when":"March 25 old style","type":"political/religious","recur":"yearly","note":"New Year 'in commemoration of the fall of Sauron and the deeds of the Ring-bearers.'","cite":"LotR App D"},{"n":"Cormarë — Ringday","cal":"new","when":"Yavannië 30 = old September 22","type":"political/cultural","recur":"yearly (doubled in leap-years)","note":"Frodo's birthday made a festival in his honour.","cite":"LotR App D"},{"n":"The five holidays of the Stewards","cal":"stewards","when":"yestarë, tuilérë, loëndë, yáviérë, mettarë","type":"cultural","recur":"yearly","note":"The days outside the months were holidays throughout the Westron lands.","cite":"LotR App D"},{"n":"Erukyermë","cal":"kings","when":"the first days of spring","type":"religious","recur":"yearly","note":"'Prayer for the coming year' — the King ascended the Meneltarma; the Three Prayers were the only appointed worship of Eru in Númenor.","cite":"UT, 'A Description of the Island of Númenor'"},{"n":"Erulaitalë","cal":"kings","when":"midsummer","type":"religious","recur":"yearly","note":"'Praise of Eru Ilúvatar' upon the Meneltarma.","cite":"UT, 'A Description of the Island of Númenor'"},{"n":"Eruhantalë","cal":"kings","when":"the end of autumn","type":"religious","recur":"yearly","note":"'Thanksgiving to Eru' — the autumn feast of Númenor.","cite":"UT, 'A Description of the Island of Númenor'"},{"n":"Nost-na-Lothion","cal":"other","when":"spring (Gondolin)","type":"cultural","recur":"yearly","note":"'The festival of Nost-na-Lothion or the Birth of Flowers', kept 'with revelry of children' in Gondolin.","cite":"BoLT2, 'The Fall of Gondolin'"},{"n":"Tarnin Austa — the Gates of Summer","cal":"other","when":"midsummer's eve (Gondolin)","type":"religious/cultural","recur":"yearly","note":"A solemn vigil from midnight to dawn, 'and no voice was uttered' until the dawn-song — but that year the red light rose in the north: the city fell at the feast.","cite":"BoLT2 / The Fall of Gondolin"},{"n":"Mereth Aderthad — the Feast of Reuniting","cal":"other","when":"F.A. 20, near the pools of Ivrin","type":"political","recur":"one-off","note":"Held by Fingolfin in the Year of the Sun 20; 'many counsels were taken in good will.'","cite":"Silm ch. 13; GA 20 §72 (HoME XI) [C] — 'In this year Fingolfin, King of the Noldor, called a great council and made a high feast, that was long after remembered as Mereth Aderthad, the Feast of Reuniting. And it was held nigh the fair pools of Ivrin'. Header verified at 20."},{"n":"Durin's Day","cal":"durin","when":"first day of the last moon of Autumn, sun and moon in the sky together","type":"cultural","recur":"yearly (movable; not always observable)","note":"The Dwarves' New Year. Its fall cannot be computed from the corpus: the attached documents do not provide enough information to answer this.","cite":"The Hobbit, ch. III"},{"n":"The Standing Silence","cal":"stewards","when":"before meat, facing West","type":"religious","recur":"daily custom","note":"'We look towards Númenor that was, and beyond to Elvenhome that is, and to that which is beyond Elvenhome and will ever be.'","cite":"LotR IV.5"}],"conv":{"anchors":[{"a":"Shire ↔ Kings'/Stewards'","rule":"Day-of-year identity: both begin at mid-winter, both hold 365 days, and “The date was, however, March 25 in both Kings' and Stewards' Reckoning” at the fall of Barad-dûr (= Shire Rethe 25, day 86).","conf":"I-H","conf_note":"C at the anchor; I-H generalized -- month-lengths differ within the year, and the two systems' leap-days and historical Deficit adjustments drifted by hours, not whole days, by the end of the Third Age"},{"a":"Shire ↔ New Reckoning","rule":"N.R. yestarë = March 25 old style (Shire day 86); the 3 Enderi = old September 23–25; Cormarë (Yavannië 30) = old September 22 — all three anchors are consistent with a constant offset of 85 days against the Shire year.","conf":"C"},{"a":"Shire ↔ Imladris","rule":"The Imladris yestarë 'corresponded more or less with Shire April 6' (day 97). The Imladris leap-cycle (12-year enderi-doubling) does not track the Shire's 4-year rule, so the alignment wanders by up to 3 days within a cycle.","conf":"I-M","conf_note":"Tolkien's own 'more or less'"},{"a":"Shire ↔ our calendar (structural)","rule":"'March 25… would correspond to our March 27, if our years began at the same seasonal point' — i.e. equal day-of-year: Shire day 86 = our 27 March (day 86). Differences arise only from month-shapes (Shire February has 30 days, October 30, etc.).","conf":"C"},{"a":"Shire ↔ our calendar (seasonal)","rule":"'Mid-year's Day was intended to correspond as nearly as possible to the summer solstice. In that case the Shire dates were actually in advance of ours by some ten days, and our New Year's Day corresponded more or less to the Shire January 9' — seasonally, our day-of-year ≈ Shire day-of-year − 9.","conf":"I-M","conf_note":"Tolkien's 'as nearly as possible' and 'more or less'"},{"a":"Years and epochs","rule":"S.R. year = T.A. − 1600 · Bree year = T.A. − 1299 · T.A. 1 = S.A. 3442 · Fourth Age 1 = T.A. 3021 (N.R.; the Shire called it 1422) · Kings' count began S.A. 1.","conf":"C"},{"a":"Valian Years ↔ sun-years","rule":"Three corpus schemes: ×10 (earliest Annals), ×9.582 (Annals of Aman), ×144 (late NoME texts, = yén). No single canonical ratio exists; the Archive defaults to ×9.582 for AAm-dated annals and shows all three.","conf":"I-M","conf_note":"C for each scheme; the SELECTION is an editorial default, so the published choice is I-M"}],"limits":["Exact day-alignment across millennia (through the Deficit corrections, the 441-year-late additions, Mardil's 2 days and Hador's 1) is stated by Tolkien only in summary; conversions here are exact within a year's structure and honest about drift across eras.","No mapping of any Middle-earth date to a real historical year exists in the corpus: Gregorian equivalences are seasonal/structural only."]},"epochs":{"SR_TA":1600,"BREE_TA":1299,"TA_SA":3441,"FA_TA":3020,"NR_OFF":85,"IML_OFF":96,"GREG_SEASONAL":-9},"note":"All five real calendars balance to 365 days and the conversion block satisfies three of Tolkien's independent equations simultaneously. New Reckoning leap-years double Cormarë, making mettarë day 366; the tables here show the common year."};
+const FAMC={elvish:"#4a7c59",numenorean:"#4a6a8a",hobbit:"#a2762a",valinorean:"#7a5a8a",other:"#6a675f"};
+const $=s=>document.querySelector(s);
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function badge(c){const k=c[0]==="C"?"C":(c[0]==="I"?"I":"X");return '<span class="badge b-'+k+'">'+esc(c)+'</span>'}
+
+/* ---------- calendar engines: segments over the 365-day year ---------- */
+function segsOf(id,leap){
+ const C=D.calendars.find(c=>c.id===id);
+ if(id==="shire"||id==="bree"){
+  const M=C.months,s=[{sp:"2 Yule"}];
+  for(let i=0;i<6;i++)s.push({m:i,len:30});
+  s.push({sp:id==="bree"?"1 Summerday (1 Lithe)":"1 Lithe"},{sp:"Mid-year's Day",nowk:1});
+  if(leap)s.push({sp:"Overlithe",nowk:1});
+  s.push({sp:id==="bree"?"3 Summerday (2 Lithe)":"2 Lithe"});
+  for(let i=6;i<12;i++)s.push({m:i,len:30});
+  s.push({sp:"1 Yule"});return s;
+ }
+ if(id==="kings"){
+  const s=[{sp:"yestarë"}];
+  for(let i=0;i<6;i++)s.push({m:i,len:i===5?31:30});
+  if(leap)s.push({sp:"enderë I"},{sp:"enderë II"});else s.push({sp:"loëndë"});
+  for(let i=6;i<12;i++)s.push({m:i,len:i===6?31:30});
+  s.push({sp:"mettarë"});return s;
+ }
+ if(id==="stewards"){
+  const s=[{sp:"yestarë"}];
+  for(let i=0;i<3;i++)s.push({m:i,len:30});
+  s.push({sp:"tuilérë"});
+  for(let i=3;i<6;i++)s.push({m:i,len:30});
+  if(leap)s.push({sp:"enderë I"},{sp:"enderë II"});else s.push({sp:"loëndë"});
+  for(let i=6;i<9;i++)s.push({m:i,len:30});
+  s.push({sp:"yáviérë"});
+  for(let i=9;i<12;i++)s.push({m:i,len:30});
+  s.push({sp:"mettarë"});return s;
+ }
+ if(id==="new"){
+  const s=[{sp:"yestarë"}];
+  for(let i=0;i<6;i++)s.push({m:i,len:30});
+  s.push({sp:"enderë I"},{sp:"Loëndë (enderë II)"},{sp:"enderë III"});
+  if(leap)s.push({sp:"Cormarë (doubled)"});
+  for(let i=6;i<12;i++)s.push({m:i,len:30});
+  s.push({sp:"mettarë"});return s;
+ }
+ if(id==="imladris"){
+  const s=[{sp:"yestarë"}],L=[54,72,54,54,72,54];
+  for(let i=0;i<3;i++)s.push({m:i,len:L[i]});
+  s.push({sp:"enderë I"},{sp:"enderë II"},{sp:"enderë III"});
+  if(leap)s.push({sp:"enderë IV"},{sp:"enderë V"},{sp:"enderë VI"});
+  for(let i=3;i<6;i++)s.push({m:i,len:L[i]});
+  s.push({sp:"mettarë"});return s;
+ }
+ if(id==="gregorian"){
+  const L=[31,leap?29:28,31,30,31,30,31,31,30,31,30,31],s=[];
+  for(let i=0;i<12;i++)s.push({m:i,len:L[i]});return s;
+ }
+ return [];
+}
+const GREG_M=["January","February","March","April","May","June","July","August","September","October","November","December"];
+function monthName(id,i){if(id==="gregorian")return GREG_M[i];const C=D.calendars.find(c=>c.id===id);const m=C.months[i];return m.n}
+function dateToDoy(id,mi,day,leap){ // mi: index into segs choices: {sp:name} or month index
+ let doy=0;for(const g of segsOf(id,leap)){
+  if(g.sp!==undefined){doy++;if(mi.sp===g.sp)return doy;}
+  else{if(mi.m===g.m)return doy+Math.min(day,g.len);doy+=g.len;}
+ }return null}
+function doyToDate(id,doy,leap){
+ let a=0;for(const g of segsOf(id,leap)){
+  if(g.sp!==undefined){a++;if(doy===a)return{sp:g.sp}}
+  else{if(doy<=a+g.len)return{m:g.m,d:doy-a};a+=g.len}
+ }return null}
+function yearLen(id,leap){return segsOf(id,leap).reduce((n,g)=>n+(g.sp!==undefined?1:g.len),0)}
+function shireWeekday(doy,leap){ // returns name or null (Mid-year's Day / Overlithe)
+ const MY=183,OL=leap?184:null;
+ if(doy===MY||(OL&&doy===OL))return null;
+ let n=doy;if(doy>MY)n--;if(OL&&doy>OL)n--;
+ return D.calendars[0].week.names[(n-1)%7];
+}
+function shireLeap(sry){return sry%4===0&&sry%100!==0}
+
+/* ---------- tabs & deep links ---------- */
+function showTab(t){document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.t===t));
+ document.querySelectorAll(".pane").forEach(x=>x.classList.toggle("on",x.id==="p-"+t));}
+document.querySelectorAll(".tab").forEach(x=>x.onclick=()=>{showTab(x.dataset.t);history.replaceState(null,"","#tab="+x.dataset.t)});
+
+/* ---------- Tab 1: calendars ---------- */
+function calCard(C){
+ return '<div class="card" id="cc-'+C.id+'" style="cursor:pointer" onclick="openCal(\''+C.id+'\')">'+
+ '<h3><span class="fam" style="background:'+FAMC[C.family]+'"></span>'+esc(C.name)+badge(C.conf.split(" ")[0])+'</h3>'+
+ '<div class="prec">'+esc(C.era)+' · '+esc(C.precision)+'</div>'+
+ '<div class="note">'+esc(C.users)+'</div>'+
+ '<div class="cite">'+C.cites.map(esc).join(" · ")+'</div></div>'}
+$("#calgrid").innerHTML=D.calendars.map(calCard).join("");
+window.openCal=function(id){
+ document.querySelectorAll("#calgrid .card").forEach(c=>c.classList.toggle("sel",c.id==="cc-"+id));
+ const C=D.calendars.find(c=>c.id===id);let h='<div class="card"><h3><span class="fam" style="background:'+FAMC[C.family]+'"></span>'+esc(C.name)+'</h3>';
+ h+='<div class="note"><b>Epoch &amp; era.</b> '+esc(C.epoch)+'</div>';
+ if(C.months.length){
+  h+='<table class="rk"><tr><th>#</th><th>'+(C.family==="hobbit"?"Shire":"Quenya")+'</th><th>'+(C.family==="hobbit"?(id==="bree"?"Shire form":"Bree"):"Sindarin")+'</th><th>our name</th><th>days</th></tr>';
+  C.months.forEach((m,i)=>{h+='<tr><td>'+(i+1)+'</td><td>'+esc(m.n)+'</td><td>'+esc(m.s||m.bree||m.sh||"—")+'</td><td>'+esc(m.mod)+'</td><td>'+m.len+'</td></tr>'});
+  h+='</table>'}
+ if(C.special&&C.special.length){h+='<div class="note"><b>Days outside the months:</b> '+C.special.map(s=>'<span class="sp">'+esc(s.n)+'</span> — '+esc(s.note)).join(' · ')+'</div>'}
+ if(C.week){h+='<table class="rk"><tr><th>week</th>'+C.week.names.map(n=>'<th>'+esc(n)+'</th>').join("")+'</tr>';
+  if(C.week.sindarin)h+='<tr><td class="cite">Sindarin</td>'+C.week.sindarin.map(n=>'<td>'+esc(n)+'</td>').join("")+'</tr>';
+  if(C.week.archaic)h+='<tr><td class="cite">archaic</td>'+C.week.archaic.map(n=>'<td>'+esc(n)+'</td>').join("")+'</tr>';
+  if(C.week.modern)h+='<tr><td class="cite">rendered</td>'+C.week.modern.map(n=>'<td>'+esc(n)+'</td>').join("")+'</tr>';
+  h+='</table><div class="cite">'+esc(C.week.note)+'</div>'}
+ h+='<div class="note"><b>Leap-rule.</b> '+esc(C.leap)+'</div>';
+ if(C.reform)h+='<div class="note"><b>Shire-reform.</b> '+esc(C.reform)+'</div>';
+ (C.notes||[]).forEach(n=>h+='<div class="note">• '+esc(n)+'</div>');
+ if(id==="shire"){h+='<h3 style="margin-top:.8em">A Shire month, perpetual</h3><div class="row"><select id="shm">'+C.months.map((m,i)=>'<option value="'+i+'">'+esc(m.n)+' ('+esc(m.mod)+')</option>').join("")+'</select></div><div class="mgrid" id="shmg"></div><div class="cite">After the Shire-reform every year is identical: the same date bears the same weekday for ever — and no month begins on a Friday.</div>'}
+ h+='<div class="cite" style="margin-top:.6em">'+C.cites.map(esc).join(" · ")+'</div></div>';
+ $("#detail").innerHTML=h;
+ if(id==="shire"){const draw=()=>{const mi=+$("#shm").value;let g=D.calendars[0].week.names.map(n=>'<div class="hd">'+n.slice(0,2)+'</div>');
+  for(let d=1;d<=30;d++){const doy=dateToDoy("shire",{m:mi},d,false);const wd=shireWeekday(doy,false);
+   const col=D.calendars[0].week.names.indexOf(wd);if(d===1)for(let i=0;i<col;i++)g.push('<div></div>');
+   g.push('<div class="dy'+((mi===2&&d===25)||(mi===8&&d===22)?' fest':'')+'" title="'+wd+'">'+d+'</div>')}
+  $("#shmg").innerHTML=g.join("")};$("#shm").onchange=draw;draw()}
+ $("#detail").scrollIntoView({behavior:"smooth",block:"nearest"});
+ history.replaceState(null,"","#cal="+id);
+}
+
+/* ---------- Tab 2: converter ---------- */
+const CV=[["shire","Shire Reckoning"],["bree","Bree Reckoning"],["kings","Kings' Reckoning"],["stewards","Stewards' Reckoning"],["new","New Reckoning"],["imladris","Calendar of Imladris"]];
+$("#cv-cal").innerHTML=CV.map(c=>'<option value="'+c[0]+'">'+c[1]+'</option>').join("");
+function eraOpts(id){
+ if(id==="shire")return[["SR","S.R."],["TA","T.A."]];
+ if(id==="bree")return[["BR","Bree Yr"],["TA","T.A."]];
+ if(id==="kings")return[["SA","S.A."],["TA","T.A."]];
+ if(id==="new")return[["TA","T.A."],["FA","Fo.A."]];
+ return[["TA","T.A."]];
+}
+function mdOpts(id){
+ const segs=segsOf(id,true),seen=new Set(),o=[];
+ segs.forEach(g=>{if(g.sp!==undefined){o.push('<option value="sp:'+esc(g.sp)+'">'+esc(g.sp)+'</option>')}
+  else if(!seen.has(g.m)){seen.add(g.m);o.push('<option value="m:'+g.m+'">'+esc(monthName(id,g.m))+'</option>')}});
+ return o.join("")}
+function cvSetup(){const id=$("#cv-cal").value;$("#cv-era").innerHTML=eraOpts(id).map(e=>'<option value="'+e[0]+'">'+e[1]+'</option>').join("");$("#cv-md").innerHTML=mdOpts(id);
+ $("#cv-note").textContent=id==="imladris"?"Imladris dates cross to the Shire only 'more or less' (yestarë ≈ Shire April 6) — results are approximate [I-M].":""}
+$("#cv-cal").onchange=cvSetup;cvSetup();
+$("#cv-md").value="m:2";
+function toTA(era,y){return era==="SR"?y+1600:era==="BR"?y+1299:era==="SA"?y-3441:era==="FA"?y+3020:y}
+function fromTA(era,ta){return era==="SR"?ta-1600:era==="BR"?ta-1299:era==="SA"?ta+3441:era==="FA"?ta-3020:ta}
+function convert(){
+ const id=$("#cv-cal").value,era=$("#cv-era").value,y=+$("#cv-year").value,md=$("#cv-md").value,day=+$("#cv-day").value;
+ const ta=toTA(era,y),sry=ta-1600,leap=shireLeap(id==="bree"?ta-1299:sry);
+ const mi=md.startsWith("sp:")?{sp:md.slice(3)}:{m:+md.slice(2)};
+ // native DOY
+ const doy=dateToDoy(id,mi,day,leap);
+ if(doy==null){$("#cv-out").innerHTML='<div class="card">That day does not exist in that reckoning.</div>';return}
+ // Shire DOY + Shire year
+ let sdoy,sy=sry;
+ if(id==="shire"||id==="bree"){sdoy=doy}
+ else if(id==="kings"||id==="stewards"){sdoy=doy}
+ else if(id==="new"){sdoy=doy+85;if(sdoy>yearLen("shire",leap)){sdoy-=yearLen("shire",leap);sy++}}
+ else if(id==="imladris"){sdoy=doy+96;if(sdoy>yearLen("shire",leap)){sdoy-=yearLen("shire",leap);sy++}}
+ const out=[];
+ const natName=mi.sp?mi.sp:(monthName(id,mi.m)+" "+day);
+ out.push({t:CV.find(c=>c[0]===id)[1]+" (as given)",v:natName+", "+era.replace("SR","S.R. ").replace("TA","T.A. ").replace("SA","S.A. ").replace("BR","Bree ").replace("FA","Fo.A. ")+y,c:"C",n:"the input date"});
+ // each target
+ function render(tid,tname,tdoy,tyearNote,conf,note){
+  const d2=doyToDate(tid,tdoy,leap);if(!d2)return;
+  const nm=d2.sp?d2.sp:(monthName(tid,d2.m)+" "+d2.d);
+  let wk="";if((tid==="shire"||tid==="bree")){const w=shireWeekday(tdoy,leap);wk=w?" — a "+w:" — a day of no weekday"}
+  out.push({t:tname,v:nm+(tyearNote?", "+tyearNote:"")+wk,c:conf,n:note})}
+ if(id!=="shire")render("shire","Shire Reckoning",sdoy,"S.R. "+sy+" (T.A. "+(sy+1600)+")",id==="new"?"C":(id==="imladris"?"I-M":"I-H"),
+   id==="new"?"anchored: N.R. yestarë = old March 25; the Enderi = old Sept 23–25":(id==="imladris"?"yestarë ≈ Shire April 6, 'more or less'; the 12-year leap-cycle drifts against the Shire's":"day-of-year identity, anchored at March 25 [C]"));
+ if(id!=="kings"&&id!=="stewards"){render("stewards","Stewards' Reckoning (and Kings', by month-shape)",sdoy,"T.A. "+(sy+1600),"I-H","day-of-year identity with the Shire year, anchored at March 25 [C]")}
+ else{render("stewards",id==="kings"?"Stewards' Reckoning":"Kings' Reckoning",sdoy,"","C","the two Númenórean systems share the year-frame; only month-shapes differ")}
+ if(id!=="new"){let nd=sdoy-85,ny=sy;if(nd<1){nd+=yearLen("shire",leap);ny--}
+  render("new","New Reckoning",nd,(ny+1600>=3021?"Fo.A. "+(ny+1600-3020):"T.A. "+(ny+1600)),"C","constant 85-day offset fixed by three App D anchors")}
+ if(id!=="imladris"){let idd=sdoy-96,iy="";if(idd<1)idd+=yearLen("shire",leap);
+  render("imladris","Calendar of Imladris",idd,"","I-M","yestarë ≈ Shire April 6 — Tolkien's 'more or less'; the Elvish leap-cycle wanders ±3 days against this")}
+ // Gregorian both ways
+ const g1=doyToDate("gregorian",Math.min(sdoy,365),false);
+ out.push({t:"Our calendar — structural",v:GREG_M[g1.m]+" "+g1.d,c:"C",n:"'March 25 would correspond to our March 27, if our years began at the same seasonal point' — equal day-of-year"});
+ let gs=sdoy-9;if(gs<1)gs+=365;const g2=doyToDate("gregorian",gs,false);
+ out.push({t:"Our calendar — seasonal",v:"≈ "+GREG_M[g2.m]+" "+g2.d,c:"I-M",n:"Mid-year's Day ≈ the summer solstice; 'our New Year's Day corresponded more or less to the Shire January 9'"});
+ $("#cv-out").innerHTML=out.map(o=>'<div class="card"><b>'+esc(o.t)+'</b>'+badge(o.c)+'<div style="font-size:16px;margin:.15em 0">'+esc(o.v)+'</div><div class="cite">'+esc(o.n)+'</div></div>').join("");
+}
+$("#cv-go").onclick=convert;convert();
+$("#gv-go").onclick=()=>{
+ const v=$("#gv-date").value;if(!v)return;
+ const dt=new Date(v+"T12:00:00");const doy=Math.floor((dt-new Date(dt.getFullYear(),0,0))/864e5);
+ const doyN=(dt.getFullYear()%4===0&&doy>59)?doy-1:doy; // fold our leap day out
+ const s1=doyToDate("shire",Math.min(doyN,365),false);
+ let s2doy=doyN+9;if(s2doy>365)s2doy-=365;const s2=doyToDate("shire",s2doy,false);
+ function nm(d){return d.sp?d.sp:(D.calendars[0].months[d.m].n+" "+d.d)}
+ $("#gv-out").innerHTML='<div class="note"><b>Structural</b> (same New Year): '+nm(s1)+badge("C")+' &nbsp; <b>Seasonal</b> (solstice-anchored): '+nm(s2)+badge("I-M")+'</div><div class="cite">Two honest answers: Appendix D gives a day-count identity AND a ten-day seasonal displacement — both are shown, neither is silently chosen.</div>'};
+
+/* ---------- Tab 3: side by side ---------- */
+const SIDE=["shire","stewards","kings","new","imladris","gregorian"];
+let sideOn={shire:1,stewards:1,new:1,imladris:1};
+$("#side-chips").innerHTML=SIDE.map(id=>{const C=D.calendars.find(c=>c.id===id);const n=C?C.name:"Our calendar (structural)";
+ return '<span class="chip'+(sideOn[id]?" on":"")+'" data-id="'+id+'">'+esc(n)+'</span>'}).join("");
+document.querySelectorAll("#side-chips .chip").forEach(ch=>ch.onclick=()=>{sideOn[ch.dataset.id]=!sideOn[ch.dataset.id];ch.classList.toggle("on");drawSide()});
+function drawSide(){
+ const ids=SIDE.filter(id=>sideOn[id]);const W=1160,LH=46,pad=150;const svg=$("#side-svg");
+ svg.setAttribute("height",ids.length*LH+30);let h="";
+ const sc=(W-pad-10)/365;
+ for(let m=0;m<=360;m+=30)h+='<line x1="'+(pad+m*sc)+'" y1="6" x2="'+(pad+m*sc)+'" y2="'+(ids.length*LH+8)+'" stroke="#e4dbc4"/>';
+ ids.forEach((id,r)=>{
+  const y=14+r*LH;const off=id==="new"?85:(id==="imladris"?96:0);
+  const C=D.calendars.find(c=>c.id===id);
+  h+='<text x="4" y="'+(y+17)+'" font-size="11.5" font-style="italic" fill="#5a4626">'+esc(C?C.name.split(" (")[0]:"Our calendar")+'</text>';
+  let doy=0;segsOf(id,false).forEach(g=>{
+   const len=g.sp!==undefined?1:g.len;const x=pad+(((doy+off)%365))*sc;const w=len*sc;
+   if(g.sp!==undefined){h+='<rect x="'+x+'" y="'+y+'" width="'+Math.max(w,2)+'" height="22" fill="#c9a227" data-t="'+esc(g.sp)+'"/>'}
+   else{const fill=(g.m%2?"#efe6cd":"#fdfaf2");const nm=monthName(id,g.m);
+    if(x+w<=pad+365*sc+1){h+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="22" fill="'+fill+'" stroke="#cfc4a8" data-t="'+esc(nm)+' ('+len+' days)"/>';
+     if(w>34)h+='<text x="'+(x+w/2)+'" y="'+(y+15)+'" font-size="9.5" text-anchor="middle" fill="#6a5a3a" pointer-events="none">'+esc(nm.slice(0,9))+'</text>'}
+    else{const w1=pad+365*sc-x,w2=w-w1;h+='<rect x="'+x+'" y="'+y+'" width="'+w1+'" height="22" fill="'+fill+'" stroke="#cfc4a8" data-t="'+esc(nm)+'"/><rect x="'+pad+'" y="'+y+'" width="'+w2+'" height="22" fill="'+fill+'" stroke="#cfc4a8" data-t="'+esc(nm)+'"/>'}}
+   doy+=len});
+ });
+ svg.innerHTML=h;
+ svg.onmousemove=e=>{const t=e.target.getAttribute&&e.target.getAttribute("data-t");
+  const x=e.clientX-svg.getBoundingClientRect().left;const doy=Math.round((x-pad)/sc);
+  $("#side-read").textContent=t?("‣ "+t+" — Shire day "+Math.max(1,Math.min(365,doy))+" of 365"):"";};
+ $("#side-era").innerHTML='<b>When they ran together:</b> Kings’ to T.A. 2059 → Stewards’ 2060–3019 → New Reckoning thereafter; the Shire kept its own count throughout, and Imladris kept the loa. Bands are aligned on the Shire year [C anchors: March 25; N.R. offset 85; Imladris ≈ April 6 <span class="badge b-I">I-M</span>].';
+}
+drawSide();
+
+/* ---------- Tab 4: days of note ---------- */
+$("#festgrid").innerHTML=D.festivals.map(f=>{
+ const C=D.calendars.find(c=>c.id===f.cal);
+ return '<div class="card"><h3><span class="fam" style="background:'+FAMC[C?C.family:"other"]+'"></span>'+esc(f.n)+'</h3>'+
+ '<div class="prec">'+esc(C?C.name:"")+' · '+esc(f.type)+' · '+esc(f.recur)+'</div>'+
+ '<div class="note"><b>When:</b> '+esc(f.when)+'</div><div class="note">'+esc(f.note)+'</div><div class="cite">'+esc(f.cite)+'</div></div>'}).join("");
+const ANNIV=[["01-08","3019","The Fellowship reaches Hollin","App B"],["01-13","3019","The Watcher in the Water; the West-gate of Moria closes behind the Fellowship","App B"],["01-15","3019","The Bridge of Khazad-dûm — the fall of Gandalf","App B"],["01-17","3019","The Company comes to Caras Galadhon at evening","App B"],["02-16","3019","Farewell to Lórien; the Great River bears the Fellowship south","App B"],["02-25","3019","First Battle of the Fords of Isen — Théodred falls","App B"],["02-26","3019","The Breaking of the Fellowship at Parth Galen; death of Boromir","App B"],["03-01","2931","Aragorn son of Arathorn is born","App A/B"],["03-01","3019","Aragorn meets the White Rider in Fangorn; Frodo enters the Dead Marshes","App B"],["03-01","F.o.A. 120","The Passing of King Elessar, on the day of his birth","App A/B"],["03-03","3019","The Battle of the Hornburg; the Ents drown Isengard","App B"],["03-05","3019","Frodo before the Black Gate; the palantír of Orthanc; Gandalf rides for Minas Tirith","App B"],["03-08","3019","Aragorn takes the Paths of the Dead and comes at midnight to Erech","App B"],["03-10","3019","The Dawnless Day; the Muster of Rohan; the Rammas is stormed","App B"],["03-13","3019","Frodo taken in Cirith Ungol; Aragorn takes the fleet at Pelargir","App B"],["03-15","3019","THE BATTLE OF THE PELENNOR FIELDS — Théoden falls; Éowyn and the Witch-king; the black sails unfurl the White Tree. The same day: battle under the trees in Mirkwood; Dol Guldur assails Lórien","App B"],["03-17","3019","The Battle of Dale begins — Brand and Dáin Ironfoot fall","App B"],["03-18","3019","The Host of the West marches from Minas Tirith","App B"],["03-25","3019","THE DOWNFALL OF SAURON — the Ring goes into the Fire; the Field of Cormallen; New Year of the New Age thereafter","App B/D"],["05-01","3019","The Crowning of King Elessar","App B"],["06-20","3018","Sauron attacks Osgiliath — the War of the Ring begins","App B"],["09-21","3019","Gandalf and the hobbits ride to Rivendell for a certain birthday","App B"],["09-22","2890/2968","The birthday of Bilbo (2890) and of Frodo (2968) Baggins","App B/C"],["09-22","3021","The Three Keepers ride to the Havens (set out from Rivendell Sept 21-22)","App B"],["09-23","3018","Frodo leaves Bag End; the Black Riders reach Hobbiton at nightfall","App B"],["09-29","3018","At the sign of the Prancing Pony, Bree — a letter, and a man called Strider","App B"],["09-29","3021","The Ring-bearers pass over Sea from the Grey Havens — the Third Age ends","App B"],["10-06","3018","The camp under Weathertop is attacked by night; the Morgul-knife","App B"],["10-20","3018","The Flight to the Ford — the Bruinen rises against the Nine","App B"],["10-25","3018","The Council of Elrond: 'the Ring must be destroyed'","App B"],["11-03","3019","The Battle of Bywater — the Shire is scoured; the War ends where it began","App B"],["12-25","3018","The Fellowship of the Ring leaves Rivendell at dusk, nine walkers against nine riders","App B"]];
+$("#annivlist").innerHTML=ANNIV.map(a=>'<div style="break-inside:avoid;margin:.3em 0"><b>'+esc(a[0].replace(/^(\d\d)-(\d\d)$/,(x,m,d)=>D.calendars[0].months[+m-1].n+" "+ +d))+'</b> · '+esc(a[1])+' — '+esc(a[2])+' <span class="cite">'+esc(a[3])+'</span></div>').join("");
+$("#od-go").onclick=()=>{
+ const v=$("#od-date").value;if(!v)return;const [yy,mm,dd]=v.split("-").map(Number);
+ const key=String(mm).padStart(2,"0")+"-"+String(dd).padStart(2,"0");
+ const hits=ANNIV.filter(a=>a[0]===key);
+ const sh=D.calendars[0].months[mm-1]?D.calendars[0].months[mm-1].n+" "+dd:"—";
+ let h='<div class="note">Structurally this is Shire <b>'+esc(sh)+'</b>'+badge("C")+' (seasonally ≈ '+(function(){let dt=new Date(yy,mm-1,dd);let doy=Math.floor((dt-new Date(yy,0,0))/864e5);let s=doy+9;if(s>365)s-=365;const d2=doyToDate("shire",s,false);return d2.sp?d2.sp:D.calendars[0].months[d2.m].n+" "+d2.d})()+' '+badge("I-M")+').</div>';
+ h+=hits.length?hits.map(a=>'<div class="note">• <b>'+esc(a[1])+'</b> — '+esc(a[2])+' <span class="cite">'+esc(a[3])+'</span></div>').join(""):'<div class="cite">The Tale of Years records nothing on this date.</div>';
+ $("#od-out").innerHTML=h};
+
+/* ---------- Tab 5: measures ---------- */
+const LEN={ranga:.9652,"lár":4826,league:4828.03,mile:1609.34,furlong:201.168,fathom:1.8288,ell:1.09728,yard:.9144,foot:.3048,metre:1,kilometre:1000};
+$("#mc-from").innerHTML=Object.keys(LEN).map(k=>'<option>'+k+'</option>').join("");
+function mcRun(){const v=+$("#mc-val").value,f=$("#mc-from").value;const m=v*LEN[f];
+ const parts=[["rangar",m/LEN.ranga],["lár",m/LEN["lár"]],["miles",m/LEN.mile],["fathoms",m/LEN.fathom],["ells",m/LEN.ell],["metres",m]];
+ const fmt=x=>x>=100?Math.round(x).toLocaleString():x>=0.01?+x.toFixed(3):+x.toPrecision(3);
+ $("#mc-out").innerHTML=parts.filter(p=>p[0]!==f+"s").map(p=>'<b>'+fmt(p[1])+'</b> '+p[0]).join(" · ")}
+$("#mc-val").oninput=mcRun;$("#mc-from").onchange=mcRun;mcRun();
+(function(){const H=[["Elendil","≈2.41 m",241,"I-H"],["man-high (2 rangar)","1.93 m",193,"C"],["Galadriel","1.93 m",193,"C"],["a tall Hobbit","1.22 m",122,"C"],["a small Hobbit","0.91 m",91,"C"]];
+ let h="";H.forEach((p,i)=>{const x=40+i*145,bh=p[2]*.62,y=170-bh;
+ h+='<rect x="'+x+'" y="'+y+'" width="52" height="'+bh+'" rx="4" fill="'+(p[3]==="C"?"#4a6a8a":"#7a5a8a")+'" opacity=".82"/>';
+ h+='<text x="'+(x+26)+'" y="'+(y-6)+'" text-anchor="middle" font-size="11" fill="#3a3226">'+p[1]+' ['+p[3]+']</text>';
+ h+='<text x="'+(x+26)+'" y="184" text-anchor="middle" font-size="11" font-style="italic" fill="#5a4626">'+p[0]+'</text>'});
+ h+='<line x1="20" y1="170" x2="745" y2="170" stroke="#8a7444"/>';
+ $("#hsvg").innerHTML=h})();
+(function(){let h='<svg width="330" height="120" viewBox="0 0 330 120">';
+ h+='<circle cx="70" cy="55" r="42" fill="#d8c78e" stroke="#8a7444" stroke-width="2"/><text x="70" y="52" text-anchor="middle" font-size="13" font-style="italic">1 castar</text><text x="70" y="68" text-anchor="middle" font-size="10">(Q. mirian)</text>';
+ h+='<text x="140" y="60" font-size="15">=</text>';
+ for(let i=0;i<4;i++){const x=185+(i%2)*62,y=32+Math.floor(i/2)*50;
+ h+='<circle cx="'+x+'" cy="'+y+'" r="21" fill="#e8e3da" stroke="#8a8a8a" stroke-width="1.5"/><text x="'+x+'" y="'+(y+4)+'" text-anchor="middle" font-size="10" font-style="italic">tharni</text>'}
+ h+='</svg>';$("#coins").innerHTML=h})();
+(function(){const cats=[["length","Length & distance"],["stature","Stature"],["money","Money"],["time","The divisions of time"],["other","Counting & curiosities"]];
+ let h="";cats.forEach(c=>{const us=D.units.filter(u=>u.cat===c[0]);if(!us.length)return;
+ h+='<h2>'+c[1]+'</h2><div class="grid">'+us.map(u=>'<div class="card" id="u-'+u.n.replace(/[^a-z]/gi,"").toLowerCase()+'"><h3>'+esc(u.n)+badge(u.conf.split(" ")[0].replace("(",""))+'</h3><div class="note">'+esc(u.d)+'</div><div class="note"><b>Relation:</b> '+esc(u.rel)+' · <b>In our measure:</b> '+esc(u.modern)+'</div><div class="cite">'+u.cites.map(esc).join(" · ")+'</div></div>').join("")+'</div>'});
+ $("#unitgrids").innerHTML=h})();
+
+/* ---------- Tab 6: deep of time ---------- */
+$("#vy-go").onclick=()=>{
+ const v=+$("#vy-val").value,u=$("#vy-unit").value;
+ const rows=[["earliest Annals (HoME IV–V)",10],["Annals of Aman (MR)",9.582],["late 'Time and Ageing' (NoME) — the yén itself",144]];
+ let h='<table class="rk"><tr><th>scheme</th><th>ratio</th><th>result</th></tr>';
+ rows.forEach(r=>{let res;
+  if(u==="vy")res=(v*r[1]).toLocaleString(undefined,{maximumFractionDigits:1})+" sun-years";
+  else if(u==="sy")res=(v/r[1]).toLocaleString(undefined,{maximumFractionDigits:3})+" Valian Years";
+  else res=(v*144/r[1]).toLocaleString(undefined,{maximumFractionDigits:2})+" Valian Years";
+  h+='<tr><td>'+r[0]+'</td><td>1 V.Y. = '+r[1]+' S.Y.</td><td><b>'+res+'</b></td></tr>'});
+ h+='</table><div class="cite">All three are canon of their layer [C]; Tolkien never chose finally between them — the register keeps the tension open.</div>';
+ $("#vy-out").innerHTML=h};
+$("#vy-go").click();
+
+/* ---------- deep links ---------- */
+(function(){const h=location.hash.slice(1);if(!h)return;const p=Object.fromEntries(h.split("&").map(x=>x.split("=").map(decodeURIComponent)));
+ if(p.tab)showTab(p.tab);
+ if(p.cal){showTab("cal");openCal(p.cal)}
+ if(p.unit){showTab("meas");const el=document.getElementById("u-"+p.unit);if(el){el.scrollIntoView();el.style.outline="2px solid #a8853c"}}})();
+</script>
+<script src="quotes.js"></script>
+<script src="touch.js"></script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
+<script src="nav.js"></script>
+<script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

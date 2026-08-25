@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" id="valinor">
+<!-- Aman, constructed from the corpus by the Arda Archive. No plate of Christopher Tolkien's hand exists for this land; this is our drawing, not his. -->
+<g class="sheet" fill="none" stroke="#141210" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path class="coast" d="M 300 96 L 176 150 L 132 330 L 120 620 L 112 900 L 124 1180 L 140 1430 L 178 1620 L 300 1706 L 560 1742 L 800 1716 L 918 1648 L 972 1500 L 1010 1310 L 1030 1150 L 1000 1064 L 962 990 L 946 918 L 964 848 L 1004 790 L 1042 724 L 1052 560 L 1036 380 L 996 220 L 940 132 Z"/>
+<path class="pelori" d="M 840 249 L 855 215 L 870 249" stroke-width="1.2"/>
+<path class="pelori" d="M 840 276 L 855 242 L 870 276" stroke-width="1.2"/>
+<path class="pelori" d="M 840 303 L 855 269 L 870 303" stroke-width="1.2"/>
+<path class="pelori" d="M 840 330 L 855 296 L 870 330" stroke-width="1.2"/>
+<path class="pelori" d="M 840 357 L 855 323 L 870 357" stroke-width="1.2"/>
+<path class="pelori" d="M 840 384 L 855 350 L 870 384" stroke-width="1.2"/>
+<path class="pelori" d="M 840 411 L 855 377 L 870 411" stroke-width="1.2"/>
+<path class="pelori" d="M 840 438 L 855 404 L 870 438" stroke-width="1.2"/>
+<path class="pelori" d="M 840 465 L 855 431 L 870 465" stroke-width="1.2"/>
+<path class="pelori" d="M 840 492 L 855 458 L 870 492" stroke-width="1.2"/>
+<path class="pelori" d="M 840 519 L 855 485 L 870 519" stroke-width="1.2"/>
+<path class="pelori" d="M 840 546 L 855 512 L 870 546" stroke-width="1.2"/>
+<path class="pelori" d="M 840 573 L 855 539 L 870 573" stroke-width="1.2"/>
+<path class="pelori" d="M 840 600 L 855 566 L 870 600" stroke-width="1.2"/>
+<path class="pelori" d="M 840 627 L 855 593 L 870 627" stroke-width="1.2"/>
+<path class="pelori" d="M 840 654 L 855 620 L 870 654" stroke-width="1.2"/>
+<path class="pelori" d="M 840 681 L 855 647 L 870 681" stroke-width="1.2"/>
+<path class="pelori" d="M 840 708 L 855 674 L 870 708" stroke-width="1.2"/>
+<path class="pelori" d="M 840 735 L 855 701 L 870 735" stroke-width="1.2"/>
+<path class="pelori" d="M 840 762 L 855 728 L 870 762" stroke-width="1.2"/>
+<path class="pelori" d="M 840 802 L 855 742 L 870 802" stroke-width="1.2"/>
+<path class="pelori" d="M 840 829 L 855 769 L 870 829" stroke-width="1.2"/>
+<path class="pelori" d="M 840 856 L 855 796 L 870 856" stroke-width="1.2"/>
+<path class="pelori" d="M 840 870 L 855 836 L 870 870" stroke-width="1.2"/>
+<path class="pelori" d="M 840 978 L 855 944 L 870 978" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1005 L 855 971 L 870 1005" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1032 L 855 998 L 870 1032" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1059 L 855 1025 L 870 1059" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1086 L 855 1052 L 870 1086" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1113 L 855 1079 L 870 1113" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1140 L 855 1106 L 870 1140" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1167 L 855 1133 L 870 1167" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1194 L 855 1160 L 870 1194" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1221 L 855 1187 L 870 1221" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1248 L 855 1214 L 870 1248" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1275 L 855 1241 L 870 1275" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1302 L 855 1268 L 870 1302" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1329 L 855 1295 L 870 1329" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1356 L 855 1322 L 870 1356" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1383 L 855 1349 L 870 1383" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1410 L 855 1376 L 870 1410" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1437 L 855 1403 L 870 1437" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1464 L 855 1430 L 870 1464" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1491 L 855 1457 L 870 1491" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1518 L 855 1484 L 870 1518" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1545 L 855 1511 L 870 1545" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1572 L 855 1538 L 870 1572" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1599 L 855 1565 L 870 1599" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1626 L 855 1592 L 870 1626" stroke-width="1.2"/>
+<path class="pelori" d="M 840 1653 L 855 1619 L 870 1653" stroke-width="1.2"/>
+<path class="pass" d="M 846 876 L 904 884 L 958 872" stroke-width="1.1"/>
+<path class="pass" d="M 846 960 L 904 954 L 960 966" stroke-width="1.1"/>
+<path class="hill" d="M 908 938 Q 934 892 960 938" stroke-width="1.4"/>
+</g>
+<g class="marks" fill="none" stroke="#141210" stroke-width="1.4">
+<g class="mk" data-n="Taniquetil"><path d="M 847 818 L 862 791 L 877 818"/></g>
+<g class="mk" data-n="Valmar"><rect x="515" y="895" width="10" height="10"/></g>
+<g class="mk" data-n="Ezellohar"><path d="M 438 906 Q 452 888 466 906"/></g>
+<g class="mk" data-n="the Máhanaxar"><circle cx="447" cy="946" r="10"/></g>
+<g class="mk" data-n="Tirion"><rect x="929" y="905" width="10" height="10"/></g>
+<g class="mk" data-n="Mindon Eldaliéva"><path d="M 930 909 L 930 891 L 938 891 L 938 909"/></g>
+<g class="mk" data-n="Tol Eressëa"><ellipse cx="1112" cy="952" rx="17" ry="10"/></g>
+<g class="mk" data-n="Alqualondë"><rect x="997" y="777" width="10" height="10"/></g>
+<g class="mk" data-n="Formenos"><rect x="554" y="464" width="12" height="12"/><path d="M 554 464 L 566 476"/></g>
+<g class="mk" data-n="Mandos"><path d="M 461 527 L 461 517 L 470 509 L 479 527 Z"/></g>
+<g class="mk" data-n="the halls of Nienna"><path d="M 141 1017 L 141 1007 L 150 999 L 159 1017 Z"/></g>
+<g class="mk" data-n="the mansions of Aulë"><path d="M 611 1011 L 611 1001 L 620 993 L 629 1011 Z"/></g>
+<g class="mk" data-n="Ilmarin"><path d="M 853 783 L 853 773 L 862 765 L 871 783 Z"/></g>
+<g class="mk" data-n="Lórellin"><ellipse cx="360" cy="1090" rx="27" ry="15"/><circle cx="360" cy="1090" r="4"/></g>
+</g>
+<g class="lbl" fill="#141210" stroke="none" font-family="Georgia,serif" font-size="19" font-style="italic">
+<text class="tx" data-n="Ekkaia" x="64" y="570" text-anchor="middle" font-size="25" transform="rotate(-90 64 570)">Ekkaia</text>
+<text class="tx" data-n="Belegaer" x="1150" y="1260" text-anchor="middle" font-size="25" transform="rotate(-90 1150 1260)">Belegaer</text>
+<text class="tx" data-n="the Pelóri" x="849" y="1200" text-anchor="middle" font-size="21" transform="rotate(-90 849 1200)">the Pelóri</text>
+<text class="tx" data-n="Taniquetil" x="842" y="776" text-anchor="end" font-size="19">Taniquetil</text>
+<text class="tx" data-n="Valinor" x="430" y="750" text-anchor="middle" font-size="25">Valinor</text>
+<text class="tx" data-n="Valmar" x="535" y="905" text-anchor="start" font-size="19">Valmar</text>
+<text class="tx" data-n="Ezellohar" x="436" y="884" text-anchor="end" font-size="19">Ezellohar</text>
+<text class="tx" data-n="the Máhanaxar" x="434" y="968" text-anchor="end" font-size="19">the Máhanaxar</text>
+<text class="tx" data-n="the Calacirya" x="830" y="886" text-anchor="end" font-size="19">the Calacirya</text>
+<text class="tx" data-n="Túna" x="934" y="960" text-anchor="middle" font-size="19">Túna</text>
+<text class="tx" data-n="Tirion" x="954" y="904" text-anchor="start" font-size="19">Tirion</text>
+<text class="tx" data-n="Mindon Eldaliéva" x="954" y="884" text-anchor="start" font-size="19">Mindon Eldaliéva</text>
+<text class="tx" data-n="the Bay of Eldamar" x="1099" y="1014" text-anchor="middle" font-size="21">the Bay of Eldamar</text>
+<text class="tx" data-n="Tol Eressëa" x="1112" y="978" text-anchor="middle" font-size="19">Tol Eressëa</text>
+<text class="tx" data-n="Alqualondë" x="1018" y="778" text-anchor="start" font-size="19">Alqualondë</text>
+<text class="tx" data-n="Araman" x="990" y="470" text-anchor="middle" font-size="21" transform="rotate(-90 990 470)">Araman</text>
+<text class="tx" data-n="Oiomúrë" x="996" y="252" text-anchor="start" font-size="19">Oiomúrë</text>
+<text class="tx" data-n="the Helcaraxë" x="944" y="116" text-anchor="middle" font-size="19">the Helcaraxë</text>
+<text class="tx" data-n="Avathar" x="980" y="1370" text-anchor="middle" font-size="21" transform="rotate(-90 980 1370)">Avathar</text>
+<text class="tx" data-n="Formenos" x="575" y="474" text-anchor="start" font-size="19">Formenos</text>
+<text class="tx" data-n="Mandos" x="485" y="524" text-anchor="start" font-size="19">Mandos</text>
+<text class="tx" data-n="the halls of Nienna" x="164" y="1014" text-anchor="start" font-size="19">the halls of Nienna</text>
+<text class="tx" data-n="the mansions of Aulë" x="635" y="1008" text-anchor="start" font-size="19">the mansions of Aulë</text>
+<text class="tx" data-n="Ilmarin" x="844" y="772" text-anchor="end" font-size="19">Ilmarin</text>
+<text class="tx" data-n="Ulmo in the Outer Ocean" x="70" y="1530" text-anchor="middle" font-size="25" transform="rotate(-90 70 1530)">Ulmo in the Outer Ocean</text>
+<text class="tx" data-n="Lórellin" x="360" y="1120" text-anchor="middle" font-size="19">Lórellin</text>
+</g>
+<g stroke="#141210" fill="none" stroke-width="1.4"><path d="M 1136 1596 L 1136 1672 M 1136 1596 L 1126 1616 M 1136 1596 L 1146 1616"/></g><text x="1136" y="1708" text-anchor="middle" fill="#141210" font-family="Georgia,serif" font-size="19">N</text>
+</svg>

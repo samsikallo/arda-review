@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="200"
+   height="220"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="Emblema Saruman.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:docbase="C:\Documents and Settings\Rondador Nocturno\Escritorio">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="971"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     width="200px"
+     height="220px"
+     inkscape:zoom="3.4636364"
+     inkscape:cx="100"
+     inkscape:cy="110"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <path
+     sodipodi:type="arc"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path2159"
+     sodipodi:cx="99.895012"
+     sodipodi:cy="110"
+     sodipodi:rx="100.18372"
+     sodipodi:ry="110"
+     d="M 200.07874 110 A 100.18372 110 0 1 1  -0.28871155,110 A 100.18372 110 0 1 1  200.07874 110 z"
+     transform="matrix(0.99,0,0,0.99,1.1039382,1.1)" />
+  <g
+     id="layer1"
+     transform="matrix(4.72392,0,0,4.72392,24.765954,-2.8568781)">
+    <path
+       d="M 24.266033,34.814342 L 25.195721,34.076061 L 26.508221,35.197155 L 23.117596,38.341686 L 5.3441582,24.615124 L 23.814861,9.4393425 L 26.508221,12.187389 L 23.541424,14.812389 L 21.805096,13.308483 L 9.73283,23.329967 L 24.266033,34.814342"
+       id="text2389"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Liberation Serif" />
+  </g>
+</svg>

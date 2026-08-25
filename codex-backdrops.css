@@ -1,0 +1,727 @@
+/* =====================================================================
+   THE ARDA ARCHIVE — BACKDROPS
+   Six worlds lying behind the open book.
+
+   The book covers the centre 85%. Everything here is built so that the
+   visible margin — a thin band at the edges and, above all, the four
+   corners — carries a slice of something larger, and the eye completes
+   the rest behind the pages.
+
+   Two rules of composition govern all six.
+
+   DEPTH INCREASES UPWARD. The far world sits along the top edge; the
+   surface the book rests on runs down the sides and darkens toward the
+   reader at the bottom. The forge alone inverts this, because a forge
+   is lit from its hearth and the hearth is on the floor.
+
+   TALL THINGS GO IN THE SIDE BANDS. The margin left and right of the
+   book is narrow and full height — the shape of a lancet window, of a
+   trunk, of a shelf. What is wide and shallow goes top and bottom.
+
+   Nothing here exceeds ~0.06 mean relative luminance. The leaves of the
+   book are the brightest thing on the screen, always.
+
+   Pure CSS. No images, no fetches, no scripts.
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   SCAFFOLDING
+   Two fixed layers per scene: ::before is the world, ::after is the
+   near air in front of it — dust, embers, mist, leaves out of focus.
+   `isolation` puts body's own fill underneath them whatever the host
+   page does with the <html> background.
+   --------------------------------------------------------------------- */
+
+:root:is([data-scene="library"],[data-scene="map"],[data-scene="cosmos"],
+         [data-scene="forest"],[data-scene="forge"],[data-scene="sea"]) body {
+  isolation: isolate;
+  background-color: #08090b;
+}
+
+:root:is([data-scene="library"],[data-scene="map"],[data-scene="cosmos"],
+         [data-scene="forest"],[data-scene="forge"],[data-scene="sea"]) body::before,
+:root:is([data-scene="library"],[data-scene="map"],[data-scene="cosmos"],
+         [data-scene="forest"],[data-scene="forge"],[data-scene="sea"]) body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+:root:is([data-scene="library"],[data-scene="map"],[data-scene="cosmos"],
+         [data-scene="forest"],[data-scene="forge"],[data-scene="sea"]) body::before {
+  z-index: -2;
+}
+
+
+/* =====================================================================
+   1 — LIBRARY OF MINAS TIRITH
+
+   A wall elevation, which is what the narrow side margins are shaped
+   for: lancet windows high, shelves below them, flagstones at the foot.
+   Cold daylight, from both walls, dying before it crosses the floor.
+   ===================================================================== */
+
+:root[data-scene="library"] body {
+  background-color: #090a0c;
+  --shelf-top: 48vh;      /* where the aisle shelving begins */
+  --shelf-h: 40vh;
+  --pool: 11vw;           /* spread of the light on the flagstones */
+}
+
+:root[data-scene="library"] body::before {
+  background:
+    /* the book's own shadow, thrown down onto the flags */
+    radial-gradient(ellipse 44% 42% at 50% 55%,
+      rgba(0,0,0,.60) 0%, rgba(0,0,0,.27) 58%, transparent 79%),
+
+    /* the hall gives out at the extremes */
+    radial-gradient(ellipse 126% 122% at 50% 30%,
+      transparent 52%, rgba(0,0,0,.26) 84%, rgba(0,0,0,.55) 100%),
+
+    /* flagstones catching what reaches the floor */
+    radial-gradient(ellipse var(--pool) 13vh at 5% 96%,
+      rgba(196,210,222,.15) 0%, rgba(150,168,184,.04) 46%, transparent 78%),
+    radial-gradient(ellipse calc(var(--pool) * 1.1) 14vh at 95.5% 94%,
+      rgba(198,212,224,.17) 0%, rgba(150,168,184,.045) 46%, transparent 78%),
+    repeating-linear-gradient(to bottom,
+      rgba(214,226,236,.05) 0 1px, transparent 1px 26px)
+      0 100% / 100% 15vh no-repeat,
+    repeating-linear-gradient(90deg,
+      rgba(214,226,236,.035) 0 1px, transparent 1px 74px)
+      0 100% / 100% 15vh no-repeat,
+
+    /* the light, foreshortened, spreading inward off each wall */
+    radial-gradient(ellipse 15vw 34vh at -1% 30%, rgba(190,206,220,.075) 0%, transparent 80%),
+    radial-gradient(ellipse 16vw 36vh at 101% 28%, rgba(192,208,222,.085) 0%, transparent 80%),
+
+    /* light on the sills, where each opening ends */
+    radial-gradient(ellipse 2.4vw .45vh at 3.1% 45.4%, rgba(202,216,228,.17), transparent 80%),
+    radial-gradient(ellipse 2.5vw .45vh at 96.9% 44.4%, rgba(204,218,230,.19), transparent 80%),
+
+    /* lancets: two in each wall, the inner one all but hidden.
+       A slot of light with a shoulder on it, not a bloom. */
+    radial-gradient(ellipse 1.7vw 19.5vh at 3.1% 25%,
+      rgba(224,235,244,.25) 0 54%, rgba(184,200,214,.12) 74%,
+      rgba(138,154,170,.035) 89%, transparent 99%),
+    radial-gradient(ellipse 1.4vw 16.5vh at 9.4% 27%,
+      rgba(218,230,240,.15) 0 54%, rgba(178,194,208,.075) 74%,
+      rgba(132,148,164,.022) 89%, transparent 99%),
+    radial-gradient(ellipse 1.8vw 20.5vh at 96.9% 23%,
+      rgba(226,237,245,.27) 0 54%, rgba(186,202,216,.13) 74%,
+      rgba(140,156,172,.04) 89%, transparent 99%),
+    radial-gradient(ellipse 1.5vw 17.5vh at 90.4% 26%,
+      rgba(220,232,241,.16) 0 54%, rgba(180,196,210,.08) 74%,
+      rgba(134,150,166,.025) 89%, transparent 99%),
+
+    /* a string course under the windows */
+    linear-gradient(to bottom,
+      transparent 0 46.2%, rgba(206,216,226,.055) 46.4% 46.8%,
+      rgba(0,0,0,.5) 46.9% 47.9%, transparent 48.1%),
+
+    /* the middle of the hall is only darkness */
+    linear-gradient(90deg,
+      transparent 0 1.2%, rgba(9,10,12,.92) 12.5%, rgba(9,10,12,.94) 87.5%, transparent 98.8%),
+
+    /* shelves in the aisles, from the string course to the floor */
+    linear-gradient(to bottom, transparent 0 62%, rgba(9,10,12,.6) 88%, #090a0c 100%)
+      0 var(--shelf-top) / 100% var(--shelf-h) no-repeat,
+    repeating-linear-gradient(to bottom,
+      rgba(0,0,0,.92) 0 6px, rgba(154,130,96,.15) 6px 7px, transparent 7px 108px)
+      0 var(--shelf-top) / 100% var(--shelf-h) no-repeat,
+    repeating-linear-gradient(90deg,
+      rgba(0,0,0,.5) 0 3px,
+      rgba(132,106,68,.36) 3px 11px,
+      rgba(0,0,0,.45) 11px 13px,
+      rgba(94,82,64,.26) 13px 19px,
+      rgba(0,0,0,.5) 19px 22px,
+      rgba(146,114,76,.32) 22px 33px,
+      rgba(0,0,0,.45) 33px 35px,
+      rgba(78,72,62,.24) 35px 42px,
+      rgba(0,0,0,.5) 42px 45px,
+      rgba(114,96,70,.29) 45px 53px,
+      rgba(0,0,0,.45) 53px 58px)
+      0 var(--shelf-top) / 100% var(--shelf-h) no-repeat,
+
+    /* dressed stone, barely there */
+    repeating-linear-gradient(to bottom,
+      rgba(224,232,238,.018) 0 1px, transparent 1px 78px),
+
+    /* the air of the hall */
+    linear-gradient(to bottom, #0f1219 0%, #0c0e14 30%, #08090d 70%, #060709 100%),
+    #090a0c;
+}
+
+/* dust, hanging in the light off both walls */
+:root[data-scene="library"] body::after {
+  background-image:
+    radial-gradient(circle, rgba(228,236,242,.6) 0 .85px, transparent 1.8px),
+    radial-gradient(circle, rgba(224,232,240,.4) 0 .75px, transparent 1.6px),
+    radial-gradient(circle, rgba(220,230,238,.24) 0 .6px, transparent 1.3px);
+  background-size: 131px 97px, 89px 73px, 61px 113px;
+  background-position: 0 0, 37px 51px, 63px 19px;
+  -webkit-mask-image:
+    radial-gradient(ellipse 13vw 44vh at 5% 22%, #000 0%, rgba(0,0,0,.4) 54%, transparent 86%),
+    radial-gradient(ellipse 14vw 46vh at 95% 20%, #000 0%, rgba(0,0,0,.45) 54%, transparent 86%);
+  mask-image:
+    radial-gradient(ellipse 13vw 44vh at 5% 22%, #000 0%, rgba(0,0,0,.4) 54%, transparent 86%),
+    radial-gradient(ellipse 14vw 46vh at 95% 20%, #000 0%, rgba(0,0,0,.45) 54%, transparent 86%);
+}
+
+
+/* =====================================================================
+   2 — A MAP OF ARDA
+
+   A portolan on a table, lit by a lamp off the upper left. Rhumb lines
+   run out of a rose in the lower right corner and cross the whole
+   sheet; coasts are built as unions of opaque landforms so their
+   outlines come out ragged rather than drawn with a compass.
+   ===================================================================== */
+
+:root[data-scene="map"] body { background-color: #150f09; }
+
+:root[data-scene="map"] body::before {
+  background:
+    /* the book lying on the chart */
+    radial-gradient(ellipse 45% 43% at 50% 54%,
+      rgba(0,0,0,.58) 0%, rgba(0,0,0,.26) 58%, transparent 79%),
+
+    /* the table edge, nearest the reader */
+    linear-gradient(to bottom, transparent 0 58%, rgba(0,0,0,.42) 90%, rgba(0,0,0,.68) 100%)
+      0 100% / 100% 8vh no-repeat,
+
+    /* falling away from the lamp */
+    linear-gradient(133deg, transparent 20%, rgba(0,0,0,.26) 62%, rgba(0,0,0,.5) 100%),
+    radial-gradient(ellipse 120% 114% at 32% 18%, transparent 54%, rgba(0,0,0,.4) 100%),
+
+    /* the lamp */
+    radial-gradient(ellipse 60vw 54vh at 16% 2%,
+      rgba(255,214,148,.15) 0%, rgba(214,158,84,.055) 44%, transparent 76%),
+
+    /* two old fold-creases */
+    linear-gradient(90deg, transparent 24.5%, rgba(0,0,0,.24) 24.9%,
+      rgba(240,208,150,.07) 25.3%, transparent 25.8%),
+    linear-gradient(90deg, transparent 74.2%, rgba(0,0,0,.22) 74.6%,
+      rgba(240,208,150,.06) 75%, transparent 75.5%),
+
+    /* --- the land, painted opaque so the outlines come out ragged --- */
+    radial-gradient(ellipse 15vw 20vh at 3% 56%,
+      #241708 0 62%, rgba(240,208,152,.30) 62.4% 63.5%, transparent 64.1%),
+    radial-gradient(ellipse 24vw 29vh at -7% 30%,
+      #241708 0 66%, rgba(240,208,152,.30) 66.4% 67.4%, transparent 68%),
+    radial-gradient(ellipse 13vw 24vh at -3% 8%,
+      #241708 0 64%, rgba(240,208,152,.27) 64.4% 65.5%, transparent 66.1%),
+
+    radial-gradient(ellipse 20vw 15vh at 33% -12%,
+      #241708 0 66%, rgba(240,208,152,.27) 66.4% 67.4%, transparent 68%),
+    radial-gradient(ellipse 25vw 17vh at 57% -16%,
+      #241708 0 64%, rgba(240,208,152,.25) 64.4% 65.4%, transparent 66%),
+
+    radial-gradient(ellipse 16vw 22vh at 104% 82%,
+      #241708 0 62%, rgba(240,208,152,.27) 62.4% 63.5%, transparent 64.1%),
+    radial-gradient(ellipse 22vw 30vh at 112% 52%,
+      #241708 0 64%, rgba(240,208,152,.28) 64.4% 65.4%, transparent 66%),
+
+    radial-gradient(ellipse 5vw 3.6vh at 80% 9%,
+      #241708 0 60%, rgba(238,204,146,.26) 60.5% 63%, transparent 64%),
+    radial-gradient(ellipse 3.4vw 2.6vh at 86.5% 15%,
+      #241708 0 58%, rgba(238,204,146,.22) 58.5% 62%, transparent 63%),
+    radial-gradient(ellipse 4.5vw 3vh at 30% 99.5%,
+      #241708 0 58%, rgba(238,204,146,.22) 58.5% 61%, transparent 62%),
+    radial-gradient(ellipse 8vw 5vh at 24% 97%,
+      #241708 0 60%, rgba(238,204,146,.24) 60.5% 62.5%, transparent 63.5%),
+
+    /* --- soundings; the opaque land above clips them to the sea --- */
+    radial-gradient(ellipse 24vw 29vh at -7% 30%, transparent 0 76%,
+      rgba(226,186,124,.085) 76.4% 77.1%, transparent 77.6%),
+    radial-gradient(ellipse 24vw 29vh at -7% 30%, transparent 0 88%,
+      rgba(226,186,124,.055) 88.4% 89%, transparent 89.5%),
+    radial-gradient(ellipse 22vw 30vh at 112% 52%, transparent 0 76%,
+      rgba(226,186,124,.075) 76.4% 77.1%, transparent 77.6%),
+    radial-gradient(ellipse 25vw 17vh at 57% -16%, transparent 0 78%,
+      rgba(226,186,124,.06) 78.4% 79.1%, transparent 79.6%),
+
+    /* graticule */
+    repeating-linear-gradient(to bottom,
+      rgba(226,186,124,.075) 0 1px, transparent 1px 11.5vmin),
+    repeating-linear-gradient(90deg,
+      rgba(226,186,124,.075) 0 1px, transparent 1px 11.5vmin),
+
+    /* rhumb lines, thirty-two of them, out of the rose */
+    repeating-conic-gradient(from 45deg at 94% 106%,
+      rgba(228,190,128,.075) 0deg .13deg, transparent .13deg 11.25deg),
+
+    /* engraver's tooth over the whole sheet */
+    repeating-linear-gradient(41deg,
+      rgba(216,176,114,.03) 0 1px, transparent 1px 7px),
+
+    /* foxing and stain */
+    radial-gradient(ellipse 30vw 24vh at 88% 84%, rgba(122,72,26,.15), transparent 72%),
+    radial-gradient(ellipse 26vw 20vh at 6% 66%, rgba(96,56,20,.12), transparent 70%),
+    radial-gradient(ellipse 40vw 30vh at 62% 8%, rgba(140,92,38,.11), transparent 74%),
+
+    /* the paper */
+    linear-gradient(146deg, #241708 0%, #1b1209 40%, #150e08 74%, #110b07 100%),
+    #150f09;
+}
+
+/* the rose, its centre off the lower right corner of the sheet */
+:root[data-scene="map"] body::after {
+  background:
+    /* the four cardinal points */
+    repeating-conic-gradient(from 44deg at 94% 106%,
+      rgba(244,212,156,.24) 0deg 2deg, transparent 2deg 90deg),
+    /* the eight winds */
+    repeating-conic-gradient(from 44.5deg at 94% 106%,
+      rgba(240,204,146,.15) 0deg 1deg, transparent 1deg 45deg),
+    /* thirty-two points */
+    repeating-conic-gradient(from 44.75deg at 94% 106%,
+      rgba(232,192,130,.10) 0deg .5deg, transparent .5deg 11.25deg),
+    /* rings */
+    radial-gradient(circle at 94% 106%, transparent 0 33.6vmin,
+      rgba(236,198,138,.22) 33.6vmin 34vmin, transparent 34.4vmin),
+    radial-gradient(circle at 94% 106%, transparent 0 32.1vmin,
+      rgba(236,198,138,.13) 32.1vmin 32.4vmin, transparent 32.8vmin),
+    radial-gradient(circle at 94% 106%, transparent 0 22.5vmin,
+      rgba(236,198,138,.16) 22.5vmin 22.85vmin, transparent 23.2vmin),
+    radial-gradient(circle at 94% 106%, transparent 0 8vmin,
+      rgba(236,198,138,.18) 8vmin 8.35vmin, transparent 8.7vmin),
+    radial-gradient(circle at 94% 106%, rgba(236,198,138,.14) 0 1vmin, transparent 1.6vmin);
+  -webkit-mask-image: radial-gradient(circle at 94% 106%,
+      #000 0 26vmin, rgba(0,0,0,.8) 33vmin, rgba(0,0,0,.3) 35.5vmin, transparent 37vmin);
+  mask-image: radial-gradient(circle at 94% 106%,
+      #000 0 26vmin, rgba(0,0,0,.8) 33vmin, rgba(0,0,0,.3) 35.5vmin, transparent 37vmin);
+}
+
+
+/* =====================================================================
+   3 — THE STARFIELD
+
+   Deep sky, a lane of the galaxy running corner to corner, and the
+   Valacirca laid out along the top edge — seven stars in their true
+   proportions, with Alcor beside Mizar for anyone who looks twice.
+   ===================================================================== */
+
+:root[data-scene="cosmos"] body { background-color: #03050a; }
+
+:root[data-scene="cosmos"] body::before {
+  background:
+    /* the void closes in at the corners */
+    radial-gradient(ellipse 130% 122% at 50% 42%, transparent 62%, rgba(0,0,0,.5) 100%),
+
+    /* bright field stars, placed by hand */
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.9) 0 1px,
+      rgba(198,216,255,.34) 2.2px, transparent 6px) 4.5% 12% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(255,246,232,.85) 0 1px,
+      rgba(255,214,170,.3) 2.2px, transparent 6px) 96% 74% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.8) 0 .9px,
+      rgba(198,216,255,.3) 2px, transparent 5.5px) 2.5% 63% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(226,238,255,.8) 0 .9px,
+      rgba(180,204,255,.28) 2px, transparent 5.5px) 68% 4% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.72) 0 .8px,
+      rgba(198,216,255,.24) 1.8px, transparent 5px) 30% 96.5% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(255,236,214,.7) 0 .8px,
+      rgba(255,206,158,.24) 1.8px, transparent 5px) 91.5% 30% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,.68) 0 .8px,
+      rgba(198,216,255,.22) 1.8px, transparent 5px) 6.5% 88% / 16px 16px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(236,244,255,.66) 0 .75px,
+      rgba(190,210,255,.2) 1.7px, transparent 4.6px) 55% 97.5% / 16px 16px no-repeat,
+
+    /* the mass of faint stars: overlapping fields, none of them alike */
+    radial-gradient(circle, rgba(255,255,255,.62) 0 .85px, transparent 1.9px) 0 0 / 211px 157px,
+    radial-gradient(circle, rgba(226,236,255,.5) 0 .8px, transparent 1.8px) 61px 29px / 173px 131px,
+    radial-gradient(circle, rgba(255,247,236,.42) 0 .75px, transparent 1.7px) 113px 79px / 149px 113px,
+    radial-gradient(circle, rgba(214,228,255,.34) 0 .7px, transparent 1.5px) 23px 97px / 127px 97px,
+    radial-gradient(circle, rgba(255,255,255,.26) 0 .6px, transparent 1.3px) 89px 13px / 101px 83px,
+    radial-gradient(circle, rgba(206,220,255,.2) 0 .55px, transparent 1.2px) 47px 61px / 79px 67px,
+    radial-gradient(circle, rgba(255,255,255,.15) 0 .5px, transparent 1.1px) 7px 41px / 59px 53px,
+
+    /* dust lane splitting the galaxy */
+    linear-gradient(325deg, transparent 43%, rgba(2,3,7,.7) 48.4%,
+      rgba(2,3,7,.7) 50.6%, transparent 56%),
+
+    /* the river of stars */
+    linear-gradient(325deg, transparent 26%, rgba(122,136,188,.06) 36%,
+      rgba(172,176,216,.115) 46%, rgba(184,180,218,.13) 52%,
+      rgba(142,148,194,.075) 62%, transparent 73%),
+
+    /* nebular blooms along it */
+    radial-gradient(ellipse 34vw 18vh at 10% 84%, rgba(146,150,208,.10), transparent 72%),
+    radial-gradient(ellipse 28vw 15vh at 88% 18%, rgba(168,142,192,.085), transparent 72%),
+    radial-gradient(ellipse 20vw 12vh at 46% 52%, rgba(130,148,196,.055), transparent 74%),
+
+    /* the deep */
+    radial-gradient(ellipse 130% 110% at 24% -8%, #0a1024 0%, #05070f 52%, #020307 100%),
+    #03050a;
+}
+
+/* Valacirca, the Sickle of the Valar — and Alcor, the rider */
+:root[data-scene="cosmos"] body::after {
+  --vu: .185vmin;                       /* one unit of the asterism      */
+  --vx: calc(7vw - 11px);               /* x origin, less half a tile    */
+  --vy: calc(1.1vh - 11px);             /* y origin, less half a tile    */
+  --star: radial-gradient(circle at 50% 50%,
+            rgba(255,255,255,.98) 0 1.15px, rgba(222,234,255,.5) 2.2px,
+            rgba(158,186,255,.14) 4.6px, transparent 10px);
+  --alcor: radial-gradient(circle at 50% 50%,
+            rgba(240,246,255,.6) 0 .7px, rgba(190,212,255,.18) 1.7px, transparent 5px);
+  background-image:
+    var(--star),   /* Alkaid  */
+    var(--star),   /* Mizar   */
+    var(--alcor),  /* Alcor   */
+    var(--star),   /* Alioth  */
+    var(--star),   /* Megrez  */
+    var(--star),   /* Phecda  */
+    var(--star),   /* Merak   */
+    var(--star);   /* Dubhe   */
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position:
+    calc(var(--vx) + var(--vu) *   0) calc(var(--vy) + var(--vu) * 34.8),
+    calc(var(--vx) + var(--vu) * 25.3) calc(var(--vy) + var(--vu) * 19.7),
+    calc(var(--vx) + var(--vu) * 27.9) calc(var(--vy) + var(--vu) * 16.6),
+    calc(var(--vx) + var(--vu) * 44.6) calc(var(--vy) + var(--vu) * 14.6),
+    calc(var(--vx) + var(--vu) * 69.1) calc(var(--vy) + var(--vu) * 10.3),
+    calc(var(--vx) + var(--vu) * 65.2) calc(var(--vy) + var(--vu) * 28.7),
+    calc(var(--vx) + var(--vu) * 93.5) calc(var(--vy) + var(--vu) * 22.3),
+    calc(var(--vx) + var(--vu) * 100) calc(var(--vy) + var(--vu) *  0);
+}
+
+
+/* =====================================================================
+   4 — DEEP WOODLAND AT NIGHT
+
+   The moon is high off the left, and everything is read against it: a
+   ragged band of lit sky along the top with the canopy eating into it,
+   trunks standing in the side margins with their left edges silvered,
+   two shafts coming down to the leaf-mould.
+   ===================================================================== */
+
+:root[data-scene="forest"] body { background-color: #050807; }
+
+:root[data-scene="forest"] body::before {
+  background:
+    /* the book on the forest floor */
+    radial-gradient(ellipse 45% 43% at 50% 55%,
+      rgba(0,0,0,.62) 0%, rgba(0,0,0,.28) 58%, transparent 79%),
+
+    /* the wood closes */
+    radial-gradient(ellipse 122% 120% at 40% 14%, transparent 48%, rgba(0,0,0,.5) 100%),
+
+    /* where the shafts strike the leaf-mould */
+    radial-gradient(ellipse 5vw 6vh at 7.6% 99%, rgba(178,212,196,.30), transparent 80%),
+    radial-gradient(ellipse 4vw 5vh at 92% 97%, rgba(170,204,190,.22), transparent 82%),
+
+    /* two shafts, falling near-vertically down the aisles from the moon */
+    radial-gradient(ellipse 1.5vw 15vh at 6.6% 9%, rgba(206,234,220,.30), transparent 84%),
+    radial-gradient(ellipse 2.8vw 40vh at 7% 44%, rgba(176,210,196,.10), transparent 86%),
+    radial-gradient(ellipse 4.6vw 28vh at 7.5% 86%, rgba(166,200,186,.06), transparent 88%),
+    radial-gradient(ellipse 1.2vw 13vh at 92.6% 8%, rgba(200,230,216,.23), transparent 84%),
+    radial-gradient(ellipse 2.4vw 36vh at 92.3% 42%, rgba(172,206,192,.075), transparent 86%),
+    radial-gradient(ellipse 4vw 26vh at 92% 84%, rgba(162,196,182,.045), transparent 88%),
+
+    /* trunks in the right margin, silvered down their moonward edge */
+    linear-gradient(90deg, transparent 0 86.8%,
+      rgba(172,194,174,.44) 86.8% 87.5%, rgba(28,34,30,.9) 87.5% 88.4%,
+      rgba(9,13,11,.97) 88.4% 91%, transparent 91% 94.6%,
+      rgba(152,174,154,.32) 94.6% 95.1%, rgba(24,30,26,.85) 95.1% 95.7%,
+      rgba(8,12,10,.95) 95.7% 97.4%, transparent 97.4%),
+    /* trunks in the left margin */
+    linear-gradient(90deg,
+      rgba(120,142,124,.2) 0 .5%, rgba(7,11,9,.95) .5% 2%, transparent 2% 3.1%,
+      rgba(184,206,186,.5) 3.1% 3.8%, rgba(30,36,32,.9) 3.8% 4.7%,
+      rgba(9,13,11,.97) 4.7% 7.2%, transparent 7.2% 10.4%,
+      rgba(158,180,160,.36) 10.4% 10.9%, rgba(24,30,26,.85) 10.9% 11.5%,
+      rgba(8,12,10,.95) 11.5% 13.4%, transparent 13.4%),
+
+    /* leaf-mould, and the dark that lies on it */
+    linear-gradient(to bottom, transparent 0 54%, rgba(16,14,9,.5) 86%, rgba(9,8,5,.78) 100%)
+      0 100% / 100% 26vh no-repeat,
+
+    /* chinks — all the canopy lets through, and where the shafts start */
+    radial-gradient(ellipse 1.1vw .9vh at 6.4% 1.6%,
+      rgba(214,238,226,.85) 0 14%, rgba(152,186,174,.15) 54%, transparent 92%),
+    radial-gradient(ellipse .7vw .6vh at 8.2% 3.4%,
+      rgba(206,232,220,.58) 0 14%, rgba(146,180,168,.10) 54%, transparent 92%),
+    radial-gradient(ellipse .85vw .7vh at 92.4% 1.3%,
+      rgba(210,234,222,.7) 0 14%, rgba(148,182,170,.12) 54%, transparent 92%),
+    radial-gradient(ellipse .6vw .5vh at 90.8% 3.6%,
+      rgba(200,228,216,.46) 0 14%, rgba(140,174,162,.08) 54%, transparent 92%),
+    radial-gradient(ellipse .9vw .7vh at 27% 2.2%,
+      rgba(204,230,218,.5) 0 14%, rgba(142,176,164,.09) 54%, transparent 92%),
+    radial-gradient(ellipse .55vw .45vh at 30.5% 4.6%,
+      rgba(196,224,212,.36) 0 14%, rgba(136,170,158,.06) 54%, transparent 92%),
+    radial-gradient(ellipse .8vw .6vh at 52% 1.4%,
+      rgba(202,230,218,.46) 0 14%, rgba(140,174,162,.08) 54%, transparent 92%),
+    radial-gradient(ellipse .5vw .4vh at 68.5% 3.2%,
+      rgba(194,222,210,.32) 0 14%, rgba(136,170,158,.055) 54%, transparent 92%),
+    radial-gradient(ellipse .45vw .4vh at 76% 1.8%,
+      rgba(192,220,208,.27) 0 14%, rgba(134,168,156,.045) 54%, transparent 92%),
+
+    /* the moon somewhere beyond the leaves */
+    radial-gradient(ellipse 24vw 9vh at 23% -3%, rgba(134,168,156,.26), transparent 78%),
+
+    /* the least light there is, lying on the tops of the leaves */
+    radial-gradient(ellipse 12vw 3.4vh at 14% 1%, rgba(96,124,114,.26), transparent 80%),
+    radial-gradient(ellipse 9vw 2.6vh at 34% 2.5%, rgba(78,104,96,.20), transparent 82%),
+    radial-gradient(ellipse 11vw 3vh at 55% .5%, rgba(84,110,102,.19), transparent 82%),
+    radial-gradient(ellipse 8vw 2.4vh at 73% 2%, rgba(70,94,88,.16), transparent 84%),
+    radial-gradient(ellipse 10vw 3vh at 93% 1%, rgba(76,100,92,.17), transparent 82%),
+    linear-gradient(to bottom, rgba(110,140,130,.13) 0%, rgba(64,86,80,.04) 7vh, transparent 15vh),
+
+    /* the canopy: a ragged ceiling, and mostly closed */
+    radial-gradient(ellipse 17vw 6.5vh at 3% 1%,   rgba(3,6,4,.88) 0 38%, transparent 94%),
+    radial-gradient(ellipse 14vw 5vh at 17% -1%,   rgba(4,7,5,.86) 0 36%, transparent 94%),
+    radial-gradient(ellipse 15vw 7vh at 31% 2%,    rgba(3,6,4,.87) 0 36%, transparent 94%),
+    radial-gradient(ellipse 13vw 5.5vh at 44% -2%, rgba(4,7,5,.86) 0 38%, transparent 94%),
+    radial-gradient(ellipse 16vw 6vh at 57% 1%,    rgba(3,6,4,.87) 0 36%, transparent 94%),
+    radial-gradient(ellipse 14vw 7vh at 72% -1%,   rgba(4,7,5,.86) 0 36%, transparent 94%),
+    radial-gradient(ellipse 15vw 5.5vh at 86% 2%,  rgba(3,6,4,.87) 0 38%, transparent 94%),
+    radial-gradient(ellipse 17vw 6.5vh at 100% 0%, rgba(4,7,5,.87) 0 36%, transparent 94%),
+    linear-gradient(to bottom,
+      rgba(3,6,4,.9) 0 2.2vh, rgba(3,6,4,.7) 5vh, rgba(4,7,5,.34) 9.5vh, transparent 16vh),
+
+    /* the wood's own colour */
+    linear-gradient(to bottom, #070d0b 0%, #050908 44%, #040706 76%, #030504 100%),
+    #050807;
+}
+
+/* the near air: leaves out of focus in the corners, mist on the ground */
+:root[data-scene="forest"] body::after {
+  background:
+    radial-gradient(ellipse 13vw 9vh at -4% -4%,
+      rgba(1,3,2,.6) 0 36%, rgba(1,3,2,.24) 64%, transparent 88%),
+    radial-gradient(ellipse 11vw 8vh at 105% -3%,
+      rgba(1,3,2,.55) 0 34%, rgba(1,3,2,.2) 62%, transparent 88%),
+    radial-gradient(ellipse 18vw 11vh at -7% 106%,
+      rgba(1,3,2,.6) 0 36%, rgba(1,3,2,.22) 64%, transparent 88%),
+    radial-gradient(ellipse 14vw 12vh at 108% 104%,
+      rgba(1,3,2,.6) 0 34%, rgba(1,3,2,.22) 62%, transparent 88%),
+    linear-gradient(to bottom, transparent 0 4%,
+      rgba(140,170,158,.06) 34%, rgba(140,170,158,.025) 62%, transparent 88%)
+      0 100% / 100% 22vh no-repeat;
+}
+
+
+/* =====================================================================
+   5 — THE SMITHY
+
+   One light in the world and it is on the floor to the left: the mouth
+   of the hearth, an arch of it showing above the bottom edge. The light
+   rakes right along the floor and dies; everything above is soot. Iron
+   stands black in front of the fire. Embers ride the draught upward.
+   ===================================================================== */
+
+:root[data-scene="forge"] body { background-color: #08070a; }
+
+:root[data-scene="forge"] body::before {
+  background:
+    /* the book on the bench, its shadow thrown away from the fire */
+    radial-gradient(ellipse 45% 43% at 52% 54%,
+      rgba(0,0,0,.6) 0%, rgba(0,0,0,.27) 58%, transparent 80%),
+
+    /* everything far from the hearth goes out */
+    radial-gradient(ellipse 132% 124% at 10% 98%, transparent 30%, rgba(0,0,0,.74) 100%),
+
+    /* the hearth's own lip, black in front of its fire */
+    radial-gradient(ellipse 15vw 3.4vh at 15% 107%, rgba(3,2,6,.96) 0 46%, transparent 90%),
+
+    /* the jamb of the hearth */
+    radial-gradient(ellipse 4.5vw 9vh at 23% 110%, rgba(5,3,7,.9) 0 44%, transparent 88%),
+
+    /* the mouth: an arch of firelight coming over the bottom edge */
+    radial-gradient(ellipse 17vw 20vh at 5% 110%,
+      rgba(255,204,120,.56) 0 18%, rgba(248,142,44,.38) 40%,
+      rgba(186,64,12,.17) 64%, rgba(96,26,6,.05) 82%, transparent 96%),
+
+    /* firelight raking right along the floor, and dying */
+    radial-gradient(ellipse 30vw 8vh at 0% 101%,
+      rgba(242,140,52,.30) 0 12%, rgba(196,92,30,.15) 42%, transparent 82%),
+    radial-gradient(ellipse 62vw 11vh at 4% 103%,
+      rgba(190,88,28,.16) 0 16%, rgba(130,52,16,.05) 52%, transparent 86%),
+    radial-gradient(ellipse 96vw 9vh at 10% 105%,
+      rgba(146,62,20,.09) 0 20%, rgba(96,38,12,.025) 56%, transparent 88%),
+
+    /* the fire on the left wall, and on the floor beyond the anvil */
+    radial-gradient(ellipse 30vw 14vh at 32% 104%, rgba(216,112,38,.16), transparent 76%),
+    radial-gradient(ellipse 30vw 46vh at -2% 56%, rgba(184,86,28,.10), transparent 78%),
+    radial-gradient(ellipse 7vw 62vh at -1% 86%, rgba(200,96,32,.15), transparent 80%),
+    radial-gradient(ellipse 62vw 48vh at 6% 100%,
+      rgba(198,92,28,.15) 0%, rgba(132,50,14,.05) 46%, transparent 78%),
+
+    /* smoke, leaning off the fire and lit from beneath */
+    linear-gradient(56deg, transparent 24%, rgba(150,102,72,.06) 38%, transparent 53%),
+    linear-gradient(63deg, transparent 46%, rgba(122,88,68,.035) 59%, transparent 72%),
+    radial-gradient(ellipse 26vw 18vh at 8% 2%, rgba(126,84,58,.075), transparent 78%),
+
+    /* soot on the far wall */
+    radial-gradient(ellipse 50vw 38vh at 86% 4%, rgba(0,0,0,.55), transparent 78%),
+    linear-gradient(38deg, #0e090b 0%, #09070b 42%, #060509 72%, #040408 100%),
+    #08070a;
+}
+
+/* embers on the draught */
+:root[data-scene="forge"] body::after {
+  background-image:
+    radial-gradient(circle, rgba(255,206,140,.9) 0 .95px, transparent 2px),
+    radial-gradient(circle, rgba(255,158,68,.75) 0 .85px, transparent 1.8px),
+    radial-gradient(circle, rgba(255,124,42,.55) 0 .7px, transparent 1.5px);
+  background-size: 97px 149px, 131px 103px, 73px 89px;
+  background-position: 0 0, 41px 67px, 19px 23px;
+  -webkit-mask-image: radial-gradient(ellipse 58vw 66vh at 6% 102%,
+      #000 0%, rgba(0,0,0,.45) 40%, rgba(0,0,0,.12) 64%, transparent 84%);
+  mask-image: radial-gradient(ellipse 58vw 66vh at 6% 102%,
+      #000 0%, rgba(0,0,0,.45) 40%, rgba(0,0,0,.12) 64%, transparent 84%);
+}
+
+
+/* =====================================================================
+   6 — THE GREAT SEA
+
+   Grey weather. The horizon is the only pale thing, and it runs out
+   from behind the book on both sides. The swell lengthens toward the
+   reader: four bands, each with a longer period than the one beyond it,
+   each fading in at its head so the joins do not show.
+   ===================================================================== */
+
+:root[data-scene="sea"] body {
+  background-color: #0a0d11;
+  --hz: 26vh;                    /* the horizon */
+}
+
+:root[data-scene="sea"] body::before {
+  background:
+    /* the book, hanging over the water */
+    radial-gradient(ellipse 45% 43% at 50% 55%,
+      rgba(0,0,0,.48) 0%, rgba(0,0,0,.21) 58%, transparent 80%),
+
+    /* weather closing in at the edges */
+    radial-gradient(ellipse 124% 120% at 50% 30%, transparent 52%, rgba(0,0,0,.48) 100%),
+
+    /* the sea is never evenly lit */
+    radial-gradient(ellipse 40vw 30vh at 18% 88%, rgba(0,0,0,.34), transparent 76%),
+    radial-gradient(ellipse 34vw 26vh at 92% 68%, rgba(0,0,0,.28), transparent 76%),
+
+    /* nearest swell — long, slow, dark */
+    linear-gradient(to bottom, rgba(9,12,16,.95) 0 3%, transparent 24%)
+      0 calc(var(--hz) + 50vh) / 100% 52vh no-repeat,
+    repeating-linear-gradient(177deg,
+      transparent 0 1px, rgba(160,180,196,.05) 3px, transparent 6px,
+      rgba(0,0,0,.3) 15px, rgba(0,0,0,.1) 27px, transparent 43px)
+      0 calc(var(--hz) + 50vh) / 100% 52vh no-repeat,
+
+    /* third band */
+    linear-gradient(to bottom, rgba(11,14,19,.95) 0 4%, transparent 30%)
+      0 calc(var(--hz) + 28vh) / 100% 23vh no-repeat,
+    repeating-linear-gradient(178deg,
+      transparent 0 .8px, rgba(156,176,192,.042) 2.4px, transparent 4.6px,
+      rgba(0,0,0,.26) 9px, rgba(0,0,0,.07) 14px, transparent 20px)
+      0 calc(var(--hz) + 28vh) / 100% 23vh no-repeat,
+
+    /* second band */
+    linear-gradient(to bottom, rgba(13,17,22,.95) 0 5%, transparent 34%)
+      0 calc(var(--hz) + 12vh) / 100% 17vh no-repeat,
+    repeating-linear-gradient(178.6deg,
+      transparent 0 .6px, rgba(152,172,188,.036) 1.6px, transparent 2.8px,
+      rgba(0,0,0,.2) 5px, transparent 9.5px)
+      0 calc(var(--hz) + 12vh) / 100% 17vh no-repeat,
+
+    /* the swell nearest the horizon, almost a texture */
+    linear-gradient(to bottom, rgba(16,20,26,.95) 0 5%, transparent 40%)
+      0 var(--hz) / 100% 13vh no-repeat,
+    repeating-linear-gradient(179deg,
+      transparent 0 .5px, rgba(150,170,186,.03) 1.1px, transparent 1.8px,
+      rgba(0,0,0,.16) 2.8px, transparent 4.4px)
+      0 var(--hz) / 100% 13vh no-repeat,
+
+    /* light lying along the horizon, and a break in the cloud */
+    radial-gradient(ellipse 56vw 7vh at 44% var(--hz),
+      rgba(198,214,226,.10) 0%, transparent 72%),
+    radial-gradient(ellipse 15vw 9vh at 84% calc(var(--hz) * .46),
+      rgba(190,206,220,.075), transparent 76%),
+
+    /* stratus, flat and heavy */
+    radial-gradient(ellipse 40vw 4vh at 16% calc(var(--hz) * .52),
+      rgba(0,0,0,.42), transparent 76%),
+    radial-gradient(ellipse 52vw 5vh at 74% calc(var(--hz) * .28),
+      rgba(0,0,0,.36), transparent 78%),
+    radial-gradient(ellipse 34vw 3.5vh at 38% calc(var(--hz) * .78),
+      rgba(184,200,214,.06), transparent 76%),
+
+    /* sky, horizon line, and the water darkening toward the reader */
+    linear-gradient(to bottom,
+      #090c10 0%,
+      #10141a calc(var(--hz) * .34),
+      #1c222a calc(var(--hz) * .74),
+      #353d47 calc(var(--hz) - 2.5px),
+      #616c79 calc(var(--hz) - 1px),
+      #616c79 calc(var(--hz) + .5px),
+      #171d24 calc(var(--hz) + 3px),
+      #12171e calc(var(--hz) + 10vh),
+      #0b0e13 calc(var(--hz) + 40vh),
+      #070a0d 100%),
+    #0a0d11;
+}
+
+/* glints where the far swell turns over */
+:root[data-scene="sea"] body::after {
+  background-image:
+    radial-gradient(circle, rgba(206,220,232,.38) 0 .7px, transparent 1.5px),
+    radial-gradient(circle, rgba(196,212,226,.24) 0 .6px, transparent 1.3px);
+  background-size: 137px 23px, 89px 17px;
+  background-position: 0 0, 43px 9px;
+  -webkit-mask-image: linear-gradient(to bottom,
+      transparent 0 calc(var(--hz) + 1px), rgba(0,0,0,.8) calc(var(--hz) + 4vh),
+      rgba(0,0,0,.18) calc(var(--hz) + 16vh), transparent calc(var(--hz) + 30vh));
+  mask-image: linear-gradient(to bottom,
+      transparent 0 calc(var(--hz) + 1px), rgba(0,0,0,.8) calc(var(--hz) + 4vh),
+      rgba(0,0,0,.18) calc(var(--hz) + 16vh), transparent calc(var(--hz) + 30vh));
+}
+
+
+/* =====================================================================
+   NARROW VIEWPORTS
+   Under 640px the side margins all but vanish, so the top and bottom
+   bands have to carry the scene: the asterism grows, the horizon rises
+   to meet the top edge, and the sea's swell bands close up behind it.
+   ===================================================================== */
+
+@media (max-width: 640px) {
+  :root[data-scene="sea"] body { --hz: 7.5vh; }
+
+  /* the aisles are gone; the shelving comes up into the head of the page
+     and the light on the floor spreads to fill the foot of it */
+  :root[data-scene="library"] body {
+    --shelf-top: 0vh;
+    --shelf-h: 13vh;
+    --pool: 30vw;
+  }
+
+  :root[data-scene="cosmos"] body::after {
+    --vu: .30vmin;
+    --vx: calc(6vw - 11px);
+    --vy: calc(1.4vh - 11px);
+  }
+}
+
+
+/* =====================================================================
+   MOTION
+   Two scenes breathe: dust in the library, embers in the forge. Both
+   are transform-only, both are slower than a minute, and neither runs
+   unless the reader has said nothing against it.
+   ===================================================================== */
+
+@keyframes arda-drift-dust  { to { transform: translate3d(-14px, 30px, 0); } }
+@keyframes arda-drift-ember { to { transform: translate3d(16px, -34px, 0); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-scene="library"] body::after {
+    animation: arda-drift-dust 96s ease-in-out infinite alternate;
+  }
+  :root[data-scene="forge"] body::after {
+    animation: arda-drift-ember 72s ease-in-out infinite alternate;
+  }
+}

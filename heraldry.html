@@ -1,0 +1,622 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hall of Heraldry — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Hall of Heraldry: the devices of Arda, each marked for whether Tolkien designed it, drew it himself, or left the field bare."><meta property="og:title" content="The Hall of Heraldry — the Arda Archive"><meta property="og:description" content="The Hall of Heraldry: the devices of Arda, each marked for whether Tolkien designed it, drew it himself, or left the field bare."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/heraldry.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/heraldry.html"><!--/ARDA:META-->
+<meta name="description" content="The heraldic devices of Arda: Tolkien's own designs, the archive's reconstructions to his rules, and a forge for making new ones.">
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+.wrap{max-width:1200px;margin:0 auto;padding:18px 20px 60px}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+.tabs{display:flex;gap:6px;margin:6px 0 14px;flex-wrap:wrap}
+.tab{padding:7px 18px;border:1px solid var(--line);border-radius:20px;cursor:pointer;background:#fdfaf2;font-variant:small-caps;font-size:14px;box-shadow:0 1px 3px rgba(60,40,10,.12)}
+.tab.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+.pane{display:none}.pane.on{display:block}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;padding:14px 20px;box-shadow:0 2px 8px rgba(60,40,10,.12);margin-bottom:14px}
+h2{font-variant:small-caps;font-weight:normal;letter-spacing:.06em;color:#5a4626;border-bottom:1px solid rgba(176,165,142,.5);padding-bottom:3px;margin-top:22px}
+h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;margin:.8em 0 .2em;letter-spacing:.05em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:8px}
+.dcard{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 2px 6px rgba(60,40,10,.12);text-align:center}
+.dcard img,.dcard svg{width:74px;height:88px;object-fit:contain}
+/* A DEVICE THAT IS WIDER THAN IT IS TALL gets the card's width instead of the portrait
+   box. The Flying Corps of Mordor is a pair of outspread wings two and a half times as
+   wide as tall; contained in a 74-by-88 box it came out about 29 pixels tall where every
+   other device came out 84, and it read as a small mark among big ones. Given the full
+   width of the card it comes out about 76 -- the same visual weight as the rest. The
+   class is set from the image's own natural proportions when it loads, so nothing has to
+   be recorded about it and a plate that changes shape is handled by itself. */
+.dcard img.wide{width:100%;max-width:190px;height:auto}
+.dcard .n{font-variant:small-caps;color:#5a4626;font-size:13.5px;margin-top:3px}
+.dcard .bz{font-size:10.5px;color:var(--mut);font-style:italic;margin-top:2px;line-height:1.35}
+.dcard .tk{font-size:10.5px;color:#3a3226;margin-top:5px;line-height:1.4;text-align:left;padding:5px 8px;background:#f5edd8;border-left:3px solid #c9a227;border-radius:0 6px 6px 0}
+.dcard .fdm{font-size:10px;color:var(--mut);margin-top:5px;line-height:1.4;text-align:left;padding:5px 8px;background:#fdfaf2;border-left:3px solid #b0a58e;border-radius:0 6px 6px 0}
+.dcard .src{color:#9a8560;font-style:italic}
+.dcard.rrow{text-align:left;padding:6px 9px;display:flex;flex-direction:column;gap:1px}
+.dcard.rrow .s{font-variant:small-caps;color:#5a4626;font-size:12px;line-height:1.25}
+.dcard.rrow .d{color:var(--mut);font-style:italic;font-size:10px;line-height:1.35}
+.dcard.rrow .badge{align-self:flex-start;margin-top:2px}
+.dcard.rrow .why{font-size:9px;color:#7a6a52;font-style:italic;margin-top:2px;line-height:1.25}
+.dcard.rrow.bare{background:linear-gradient(#faf6ea,#f2ecdc);box-shadow:0 1px 3px rgba(60,40,10,.08)}
+.dcard.rrow.bare .d{color:#8d8069}
+#roster .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+#rchips{margin-top:10px}
+#rchips .chip{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:2px 11px;cursor:pointer;font-size:11px;margin:0 5px 5px 0;background:#f7f0de;color:#5a4626}
+#rchips .chip.on{background:#e9dcb8;border-color:#c9a227}
+#roster h3.sub .n{color:#9a8560;font-weight:400;margin-left:6px}
+.badge.bs{background:#efe8d6;border-color:#a89b80;color:#5a5348}
+h2 .n,h3.sub .n{font-size:11px;font-variant:normal;letter-spacing:0;color:var(--mut);font-style:italic;margin-left:8px}
+#hchips{margin:2px 0 6px}
+#hchips .chip{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:2px 11px;cursor:pointer;
+ background:#fdfaf2;font-size:12.5px;margin:2px;box-shadow:0 1px 2px rgba(60,40,10,.12);color:var(--ink)}
+#hchips .chip.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+#hchips .chip.canon.on{background:#e2eddc;border-color:#6f8c5e}
+#hq{border:1px solid var(--line);border-radius:12px;padding:3px 11px;font:13px Georgia,serif;
+ background:#fdfaf2;color:var(--ink);min-width:200px;margin:2px 2px 2px 8px}
+#hnone{color:var(--mut);font-style:italic;margin:20px 2px}
+.badge{display:inline-block;border-radius:8px;padding:0 6px;font-size:9px;margin-top:3px}
+.bc{background:#e9f3e4;border:1px solid #7aa86a}.bi{background:#fdf3df;border:1px solid #d0a53c}
+.bd{background:#e6eef7;border:1px solid #6f8cae}.bt{background:#f2ecf7;border:1px solid #9a7ab5}
+.orn{text-align:center;color:#b0a58e;margin:.5em 0;font-size:12px;letter-spacing:.3em}
+/* forge */
+.forge{display:grid;grid-template-columns:300px 1fr;gap:20px}
+@media(max-width:760px){.forge{grid-template-columns:1fr}}
+.ctl{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 2px 8px rgba(60,40,10,.12)}
+.ctl label{display:block;font-size:12px;color:#5a4626;margin:10px 0 3px;font-variant:small-caps;letter-spacing:.04em}
+.ctl select,.ctl input[type=range]{width:100%;font:13px Georgia,serif}
+.ctl .swatches{display:flex;gap:5px;flex-wrap:wrap;margin-top:3px}
+.sw{width:22px;height:22px;border-radius:4px;cursor:pointer;border:2px solid transparent}
+.sw.on{border-color:#3a3226}
+.forgeout{text-align:center}
+#forgeSvg{width:300px;height:340px;background:#fffdf6;border:1px solid var(--line);border-radius:12px;box-shadow:0 3px 10px rgba(60,40,10,.14)}
+.fbtn{font:13px Georgia;padding:6px 16px;border-radius:8px;border:1px solid #a8853c;background:#efe0bd;cursor:pointer;margin:6px 4px}
+#blazon{font-style:italic;color:#5a4626;margin-top:10px;font-size:14px;max-width:420px;margin-left:auto;margin-right:auto}
+#credits{margin-top:18px;font-size:10.5px}
+.lrow{display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding:5px 6px;margin:4px 0;
+ background:rgba(0,0,0,.035);border-radius:5px;font-size:.78rem}
+.lsel{font:inherit;font-size:.76rem;padding:2px 3px;max-width:112px}
+.lnum{display:inline-flex;align-items:center;gap:2px}
+.lnum i{font-style:normal;opacity:.6;font-size:.68rem}
+.lnum input{width:52px;font:inherit;font-size:.74rem;padding:1px 2px}
+.lchk{display:inline-flex;align-items:center;gap:3px;opacity:.75;font-size:.7rem}
+.lbtn{border:0;background:rgba(0,0,0,.08);border-radius:4px;cursor:pointer;
+ font:inherit;font-size:.78rem;line-height:1;padding:3px 6px}
+.lbtn:hover{background:rgba(0,0,0,.16)}
+.lmeas{font-style:normal;font-size:.68rem;opacity:.7;padding:1px 5px;border-radius:4px;
+ background:rgba(0,0,0,.06);cursor:help}
+</style><link rel="stylesheet" href="arda.css"><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;  &#39;;--edge-r:&#39;  &#39;" data-edge-tr="hall of heraldry" data-edge-en="Hall of Heraldry" data-edge-mode="Angerthas Moria" data-edge-script="cirth" data-edge-src="" data-edge-conf="[I-M]" data-turn-prev="gallery.html" data-turn-next="living.html"><div class="plaque">The Arda Archive <i>·</i> Volume IV <i>·</i> Hall of Heraldry</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html" aria-current="page">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="heraldry.html"><div class="rh"><span>The Arda Archive · The Hall of Heraldry</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Hall of Heraldry</h2><p class="lede">The Hall of Heraldry: the devices of Arda, each marked for whether Tolkien designed it, drew it himself, or left the field bare.</p><p><span class="versal">T</span>he Hall of Heraldry opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="heraldry.html"><div class="rh"><span>Hall of Heraldry · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. A plates hall is a catalogue, and each drawing names its hand.</p><div class="sub">Where this opening sits</div><p>Volume IV of the Arda Archive, Living World, Relics and Devices, under Hall of Heraldry. what was made and what grows</p><p>It is opening <span class="mark">4</span> of <span class="mark">5</span> in this volume, the The Plate Book coming before it. The reader who turns on from here reaches Living Things.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch">Living Things</span></section></div><div class="hall-slot" data-hall-slot="" data-hall-matter="runtime" data-hall-matter-why="#catalog is a tab-switched pane: 7,350 characters over two panes one control bar switches between, which a build-time split would separate"></div><div class="clasp" role="presentation"></div><div class="folio">Volume IV</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><span style="display:inline-flex;align-items:flex-end;filter:drop-shadow(0 0 6px rgba(201,162,39,.4))"><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="26" style="vertical-align:middle" x="0"><g > <path d="M 18.347813,29.448747 C 17.814475,29.896748 17.206475,30.355414 16.523813,30.824747 C 15.862477,31.29408 15.222477,31.64608 14.603813,31.880747 C 14.710478,31.39008 14.795811,30.952747 14.859813,30.568747 C 14.923811,30.163414 14.966477,29.747415 14.987813,29.320747 C 15.030477,28.872749 15.051811,28.39275 15.051813,27.880747 C 15.073144,27.347417 15.083811,26.718085 15.083813,25.992747 L 15.083813,22.344747 C 15.083811,21.704756 14.966477,21.15009 14.731813,20.680747 C 14.497145,20.211424 14.081145,19.859425 13.483813,19.624747 C 13.803812,19.347425 14.155812,19.048759 14.539813,18.728747 C 14.923811,18.40876 15.329144,18.12076 15.755813,17.864747 C 16.182476,17.587427 16.609143,17.352761 17.035813,17.160747 C 17.483808,16.947428 17.921141,16.808761 18.347813,16.744747 L 18.347813,29.448747" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="30" style="vertical-align:middle" x="0"><g > <path d="M 16.225063,18.736 C 16.13972,18.800011 16.033054,18.842678 15.905063,18.864 C 15.777054,18.885344 15.670387,18.874678 15.585063,18.832 C 15.521054,18.789345 15.499721,18.725345 15.521063,18.64 C 15.542387,18.533345 15.649054,18.394678 15.841063,18.224 C 16.865053,17.434679 17.921052,16.805347 19.009063,16.336 C 20.097049,15.845347 21.046382,15.600014 21.857063,15.6 C 22.305047,15.600014 22.74238,15.706681 23.169063,15.92 C 23.595713,16.133347 23.979712,16.453347 24.321063,16.88 C 24.662378,17.306679 24.929045,17.829346 25.121063,18.448 C 25.334378,19.066678 25.441044,19.79201 25.441063,20.624 C 25.441044,21.712008 25.217044,22.789341 24.769063,23.856 C 24.342379,24.922672 23.734379,26.064004 22.945063,27.28 C 22.177047,28.474668 21.238382,29.786667 20.129063,31.216 C 19.041051,32.645331 17.825052,34.266662 16.481063,36.08 C 15.862387,36.933326 15.361054,37.829326 14.977063,38.768 C 14.593055,39.72799 14.401055,40.762656 14.401063,41.872 C 14.401055,42.618654 14.582388,43.226653 14.945063,43.696 C 15.329054,44.165319 15.745054,44.549319 16.193063,44.848 C 16.726386,45.189318 17.334386,45.445318 18.017063,45.616 C 17.611719,46.021317 17.195719,46.373317 16.769063,46.672 C 16.406386,46.949316 15.990387,47.194649 15.521063,47.408 C 15.073054,47.621316 14.635722,47.727982 14.209063,47.728 C 14.081055,47.727982 13.899722,47.653316 13.665063,47.504 C 13.451723,47.375983 13.227723,47.151983 12.993063,46.832 C 12.75839,46.511983 12.555724,46.095984 12.385063,45.584 C 12.214391,45.093318 12.129057,44.474652 12.129063,43.728 C 12.129057,42.938654 12.214391,42.213321 12.385063,41.552 C 12.555724,40.911989 12.801057,40.282656 13.121063,39.664 C 13.441056,39.066658 13.835722,38.437325 14.305063,37.776 C 14.774388,37.135993 15.307721,36.421327 15.905063,35.632 L 18.081063,32.592 L 14.657063,27.024 L 11.137063,30.8 C 10.731726,31.226665 10.497059,31.642665 10.433063,32.048 C 10.390393,32.453331 10.411726,32.805331 10.497063,33.104 C 10.582392,33.466663 10.753059,33.807996 11.009063,34.128 L 7.4570629,36.304 C 7.3290622,35.813328 7.2970623,35.301328 7.3610629,34.768 C 7.4037288,34.319996 7.5317287,33.807996 7.7450629,33.232 C 7.9797283,32.677331 8.3743945,32.122665 8.9290629,31.568 L 14.209063,26.32 C 13.057057,24.464006 12.097057,22.938674 11.329063,21.744 C 10.561059,20.549343 9.942393,19.60001 9.4730629,18.896 C 9.0250605,18.192012 8.7050609,17.712012 8.5130629,17.456 C 8.3423946,17.178679 8.2570613,17.040013 8.2570629,17.04 C 8.4063945,16.912013 8.6623942,16.784013 9.0250629,16.656 C 9.3877268,16.50668 9.7823931,16.368014 10.209063,16.24 C 10.635726,16.090681 11.062392,15.962681 11.489063,15.856 C 11.937058,15.728014 12.321057,15.632014 12.641063,15.568 C 12.769057,16.18668 12.961057,16.837346 13.217063,17.52 C 13.494389,18.202678 13.910389,19.056011 14.465063,20.08 C 15.019721,21.104009 15.745054,22.373341 16.641063,23.888 C 17.558385,25.402671 18.710384,27.301336 20.097063,29.584 C 20.971715,28.240002 21.686381,27.00267 22.241063,25.872 C 22.817047,24.741339 23.105046,23.802673 23.105063,23.056 C 23.105046,22.352008 22.955713,21.690675 22.657063,21.072 C 22.358381,20.43201 21.974381,19.88801 21.505063,19.44 C 21.035715,18.970678 20.513049,18.608011 19.937063,18.352 C 19.382384,18.074679 18.849051,17.936012 18.337063,17.936 C 17.590385,17.936012 16.886386,18.202678 16.225063,18.736" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg></span><h1>The Hall of Heraldry</h1><span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav></div>
+<div class="wrap" role="main" id="main">
+<div class="tabs"><span class="tab on" data-p="catalog">The Devices</span><span class="tab" data-p="forge">⚒ The Forge</span></div>
+
+<div class="pane on" id="pane-catalog">
+<div class="intro"><p>Tolkien devised a true heraldic grammar for the Elves, distinct from the arms of Men and Dwarves. Its rules — set out in his own notes and drawings (<span class="cite">Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>; Heraldry of Middle-earth</span>):</p>
+<ul style="font-size:13px;margin:.3em 0 .6em 1.1em">
+<li><b>Shape tells kind.</b> A <b>circle</b> bears a woman's device; a <b>lozenge</b> a man's; a <b>square</b> a house or an impersonal thing.</li>
+<li><b>Points tell rank.</b> The number of points about the rim rises with dignity — about <b>four</b> for a prince, <b>six to eight</b> for a king, and as many as <b>sixteen</b> for a great ancestor of a house.</li>
+<li><b>Symmetry and jewelled colour.</b> Elvish devices are radially symmetric, wrought like enamel or gem-work, each charge repeated in rotation about a centre.</li>
+<li><b>Men and Dwarves differ.</b> The Númenórean-descended realms bear pictorial charges on a field (Gondor's White Tree, Rohan's horse); the Enemy's marks are stark and singular (the Red Eye, the White Hand).</li>
+</ul>
+<p style="font-size:13px;margin:.5em 0 .2em"><b>The rule in Tolkien's own hand.</b> Set down beside the devices he drew in 1960:</p>
+<blockquote style="margin:.2em 0 .6em 1em;padding:.5em .9em;border-left:3px solid var(--gold);background:#fffdf6;font-size:12.5px;font-style:italic;color:#5a4626">
+Women within a circle personal / Men within a lozenge / general (impersonal) designs or emblems of a family square (or&nbsp;[?] once, circular). The rank was usually held to be shown by number of ‘points’ which reached the outer rim — four was prince) 6–8 kings / the great ancestors sometimes had as many [as] 16 as in House of Finwë.
+<span class="cite" style="display:block;font-style:normal;margin-top:4px">— quoted in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>, p.&nbsp;191</span></blockquote>
+<p style="font-size:12.5px;margin:.3em 0"><b>What Tolkien actually drew.</b> Twenty-eight finished devices survive from 1960–61: five of Idril, three of Eärendil, two of Finwë, and one each for Finarfin, Gil-galad, Lúthien, Fëanor, Fingolfin, Finrod, Elwë, Melian, Bëor, Hador, Beren, Haleth and the Silmarils. They are not shields but kaleidoscopic mandalas — geometric for the men, floral for the women — closer to Japanese <i>mon</i> than to European arms.</p>
+<div class="orn">❦ ✦ ❦</div>
+<span class="cite"><b>✔</b> a device Tolkien designed, shown as a recreation — 17 of the 78 shown here are freely licensed (Wikimedia Commons, CC BY-SA / Public Domain, attributed below), 42 are from a set supplied to this archive and published on the owner's confirmation of rights, all unattributed; Durin's is its own case — a named hand, published at the owner's direction of 26 July 2026, not by a grant from the rightsholder, and 17 more were supplied to the workshop on 19 August 2026 under the owner's standing confirmation of rights · <b>✦</b> a device Tolkien himself drew, which cannot be reproduced here — drawn by this site's forge from his recorded description, and from the arrangement and inks measured off the plates · <b>✧</b> a device blazoned in the texts but never drawn · <b>◆</b> the archive's own interpretation, where Tolkien left no device at all · <b>◌</b> a house or person for whom <b>no device is recorded anywhere</b> — the field is left bare rather than filled in.</span>
+<div class="cite" style="margin-top:6px;font-size:11px"><b>Sources for the reconstructions:</b> Tolkien's manuscript notes and the 1960 devices as described in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>; A.&nbsp;Żurek, ‘Heraldry in J.R.R. Tolkien's Legendarium’, <i>The Coat of Arms</i> 4th ser. 5 (2022), 145–182; <a href="https://tolkiengateway.net/wiki/Heraldry" target="_blank" rel="noopener" style="color:#7a4a12">Tolkien Gateway, ‘Heraldry’</a> (CC BY-SA 4.0); Måns Björkman, <a href="https://forodrim.org/gobennas/heraldry/heraldry.htm" target="_blank" rel="noopener" style="color:#7a4a12">‘Emblems and Heraldry’</a> (Forodrim, Gobennas — held on the shelf at tier 3, and checked against Tolkien's own text wherever it reports him); and the texts themselves. <b>What you are looking at, and where it came from.</b> <b>CORRECTED 19 AUGUST 2026, and the correction ran the other way.</b> This paragraph read “Most devices here are shown as freely-licensed recreations from Wikimedia Commons… Sixteen more are shown from an illustrated set supplied to this archive”. Counted against the register rather than from memory, the proportions are <b>inverted</b>: of 77 publishable devices carrying a file, <b>17 are freely licensed</b> (CC BY-SA or public domain, each credited below) and <b>42 come from the supplied set</b>, published on the owner’s confirmation of rights — all 42 unattributed. Durin’s is the 78th: a named hand, published at the owner’s direction of 26 July 2026 and <b>not by a grant from the rightsholder</b>. Not “most” and not “sixteen”. <b>RECOUNTED 21 AUGUST 2026, and the register had grown again.</b> The sentence said 60 while the register held 78: <b>17 further devices were supplied to the workshop on 19 August 2026 and published under the owner’s standing confirmation of rights</b> — a third provenance, neither freely licensed nor part of the earlier unattributed set, and the legend did not mention it at all. 17 + 42 + 17 + 1 = 77, the one being Durin, which is now the whole of what is shown. This is the second time this paragraph has been true when written and false three weeks later, so the count is a guard’s subject rather than a memory: <code>map/heraldry_legend_check.py</code> refuses the push when any integer here disagrees with <code>arda_heraldry_assets.json</code>. An archive whose whole discipline is recording whose hand a thing is cannot afford a provenance sentence that flatters its own position, and this one did, for as long as nobody counted; where one of those is nearer Tolkien’s own drawing than the Commons recreation, it is the one shown — Finwë is the case in point, the Commons version setting his sun on a green field he never used. The remainder, marked ◆, are computed by this site’s forge.<br><br><b>Two things are reference only and are not reproduced here.</b> Tolkien’s own drawings remain © the Tolkien Estate. Björkman’s plates are his own work and carry no licence. From both, what this archive takes is <i>measurement</i> and not image — tinctures sampled, arrangements read off, radii counted — so that a forged device is right about its construction instead of drawn to a guess. Worth recording plainly: measured against each other, <b>Björkman’s plates are 70% more saturated and 28% darker than Tolkien’s own hand</b>, so they are a reinterpretation of his colouring and not a reproduction of it. The journal’s images are reserved by their originators.</div></div>
+<div id="hchips"></div>
+<div id="catalog"></div>
+<div class="orn">&#10086; &#10022; &#10086;</div>
+<h2 id="rosterhead">The roster of subjects<span class="n" id="rostn"></span></h2>
+<p class="lede" id="rostlede">Every house, realm and place the archive routes a device for &mdash; and every one it does not.</p>
+<div class="cite" id="rostnote"></div>
+<div id="rchips"></div>
+<div id="roster"></div>
+<div id="credits" class="cite"></div>
+</div>
+
+<div class="pane" id="pane-forge">
+<div class="intro"><b>The Forge of Devices.</b> Wright a device by the rules above: the <b>shape</b> tells the bearer's kind, the <b>rim-points</b> tell rank, and within the field you may set a central <b>charge</b>, an attendant charge turning about it, concentric <b>rings</b>, a <b>petal-ring</b> of petals, lens-petals or rays, <b>jewels</b> set about, and — for the houses of Gondolin — a long tapering <b>shield</b> — the encrusted, mandala-like manner of the devices Tolkien drew. Eighty-three tinctures — among them the seven gems of the Heavenly Arch, and every ink measured off the devices themselves — and forty-six charges.
+
+<b>And beneath all that, the courses.</b> A painted device is not one thing but a stack: eight petals under a disc under a broken ring of white. The <b>layer bench</b> at the foot of the controls edits that stack directly — petals with a bow, a lean and an outline, rays, darts, roundels, strewn charges, bands of colour, veins, arcs — each course with its own count, its own inner and outer radius, its own tincture, and each able to reach the true edge of the field rather than the circle around it. Load any device above and its own courses appear, to be reordered, retinctured or taken apart.
+
+Begin from any of the reconstructed devices and alter it, or take a device at random. The forge reads back a blazon and warns when the points fall outside the ranks Tolkien names. <span class="cite">Everything the forge draws is new and original — computed here, copied from nothing.</span></div>
+<div class="forge">
+<div class="ctl">
+<label>Begin from a device <span class="cite">— grouped by what you actually get, since for most of the hall the card shows a licensed drawing and the forge holds only the archive's reading of it</span></label>
+<select id="f_preset"><option value="">— a blank field —</option></select>
+<label>Shape — the bearer's kind</label>
+<select id="f_shape"><option value="circle">Circle — a woman's device</option><option value="lozenge" selected>Lozenge — a man's device</option><option value="square">Square — a house or realm</option><option value="shield">Shield, long and tapering — the manner of Gondolin</option></select>
+<label>Rim-points — rank <span class="cite" id="f_rankn"></span></label>
+<input type="range" id="f_points" min="0" max="16" step="1" value="8">
+<label>Symmetry — the bearer's kindred</label>
+<select id="f_sym"><option value="radial">Elvish — turning full circle</option><option value="mirror">Mannish — mirrored, thrusting upward</option></select>
+<label>Turn the rim-points <span class="cite">— set to the quarters, as Lúthien's</span></label><select id="f_poff"><option value="0">upright</option><option value="0.7854">turned to the quarters</option><option value="0.3927">turned by half a point</option></select>
+<label>Within the field <span class="cite">— Melian alone bears a lozenge inside her circle</span></label><select id="f_inner"><option value="">nothing</option><option value="lozenge">a lozenge within</option></select>
+<label>Letters <span class="cite">— for a device of letters, as Elendil's L·ND·L</span></label><input type="text" id="f_text" maxlength="12" placeholder="L·ND·L" style="width:120px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:#fffdf6;font:13px Georgia,serif">
+<label>Rim-point form</label>
+<select id="f_pstyle"><option value="ray">Rays</option><option value="leaf">Leaves</option><option value="pin">Points</option></select>
+<label>Central charge</label>
+<select id="f_charge"></select>
+<label>Charge size</label>
+<input type="range" id="f_csize" min="20" max="70" step="2" value="46">
+<label>Attendant charge, turning about the centre</label>
+<select id="f_charge2"></select>
+<label>How many times it turns</label>
+<input type="range" id="f_repeat" min="1" max="16" step="1" value="1">
+<label>Rings within the field</label>
+<input type="range" id="f_rings" min="0" max="3" step="1" value="1">
+<label>Petal-ring — how many</label>
+<input type="range" id="f_mandala" min="0" max="16" step="1" value="8">
+<label>Petal form</label>
+<select id="f_mstyle"><option value="petal">Petals</option><option value="lens">Lens</option><option value="ray">Rays</option><option value="flame">Flame-tongues</option></select>
+<label>Jewels set about the field</label>
+<input type="range" id="f_gems" min="0" max="16" step="1" value="0">
+<label>Field tincture</label><div class="swatches" id="f_field"></div>
+<label>Charge tincture</label><div class="swatches" id="f_charge_c"></div>
+<label>Accent — flames, hearts, eyes</label><div class="swatches" id="f_accent"></div>
+<label>Petal tincture</label><div class="swatches" id="f_mc"></div>
+<hr style="border:0;border-top:1px solid rgba(0,0,0,.12);margin:14px 0 10px">
+<label style="font-weight:600">Layers <span class="cite">— the painted devices are built in courses, one over another: rays under a disc, petals under a rim of jewels. Load a device above and its own courses appear here to be altered.</span></label>
+<div id="f_layers"></div>
+<button class="fbtn" id="f_addlayer" style="margin-top:6px">+ add a course</button>
+</div>
+<div class="forgeout">
+<svg id="forgeSvg" viewBox="0 0 200 226"></svg>
+<div><button class="fbtn" id="f_rand">↻ another</button><button class="fbtn" id="f_dl">⬇ download SVG</button></div>
+<div id="blazon"></div>
+</div></div></div>
+
+<div class="orn" style="margin-top:16px">❦</div>
+</div>
+<script src="heraldry.js"></script>
+<script>
+// ===== catalog =====
+(function(){
+var H=window.ARDA_HERALD;
+// category/subcategory order comes from the data (map/gen_heraldry_taxonomy.py)
+var TAX=window.ARDA_HERALD_TAX||[];
+var keys=Object.keys(H);
+var byCat={};keys.forEach(function(k){var h=H[k];(byCat[h.cat]=byCat[h.cat]||{});(byCat[h.cat][h.sub]=byCat[h.cat][h.sub]||[]).push(k);});
+function dev(k){var h=H[k];var img=h.file?'<img src="'+h.file+'" alt="'+h.blazon.replace(/"/g,"")+'">':(h.forge&&window.ardaForgeDevice?window.ardaForgeDevice(h.forge,74):'');
+ var B={artwork:['bc',"✔ Tolkien's device"],design:['bd',"✦ Tolkien's design, drawn here"],
+         text:['bt',"✧ blazoned in the texts"],inferred:['bi',"◆ interpretive"],
+         silent:['bs',"◌ no device recorded"]};
+ var bb=B[h.basis||(h.canon?'artwork':'inferred')];
+ var badge='<span class="badge '+bb[0]+'">'+bb[1]+'</span>';
+ var tk=h.tolkien?'<div class="tk">\u201c'+h.tolkien+'\u201d<span class="src"> — Tolkien</span></div>':'';
+ var fd=h.fdm?'<div class="fdm">'+h.fdm+'<span class="src"> — Björkman, <i>Emblems and Heraldry</i> (Forodrim) · tier 3</span></div>':'';
+ return '<div class="dcard">'+img+'<div class="n">'+h.label.replace(/ —.*$/,"")+'</div><div class="bz">'+h.blazon+'</div>'+tk+fd+badge+'</div>';}
+var nrm=function(s){return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase()};
+var on={},canonOnly=false;TAX.forEach(function(t){on[t[0]]=true});
+var cw=document.getElementById("hchips");
+TAX.forEach(function(t){var cat=t[0],n=keys.filter(function(k){return H[k].cat===cat}).length;
+ var c=document.createElement("span");c.className="chip on";c.textContent=cat+" ("+n+")";
+ c.onclick=function(){on[cat]=!on[cat];c.classList.toggle("on",on[cat]);draw()};cw.appendChild(c);});
+var cb=document.createElement("span");cb.className="chip canon";
+cb.textContent="Tolkien's own only";cb.title="show only devices Tolkien drew or blazoned himself \u2014 hiding the archive's interpretive reconstructions";
+cb.onclick=function(){canonOnly=!canonOnly;cb.classList.toggle("on",canonOnly);draw()};cw.appendChild(cb);
+var qi=document.createElement("input");qi.id="hq";qi.type="search";
+qi.placeholder="search devices & blazons…";qi.setAttribute("aria-label","search devices and blazons");
+cw.appendChild(qi);qi.addEventListener("input",draw);
+function draw(){
+ var q=nrm(qi.value);
+ function hit(k){var h=H[k];
+  if(!on[h.cat])return false; if(canonOnly&&(h.basis||"inferred")==="inferred")return false;
+  return !q||nrm(h.label+" "+h.blazon+" "+h.sub+" "+h.cat).indexOf(q)>=0;}
+ var html="",shown=0;
+ TAX.forEach(function(t){var cat=t[0],subs=t[1];if(!byCat[cat])return;
+  var inCat=[];subs.forEach(function(sub){(byCat[cat][sub]||[]).forEach(function(k){if(hit(k))inCat.push(k)})});
+  if(!inCat.length)return; shown+=inCat.length;
+  html+='<h2>'+cat+'<span class="n">'+inCat.length+'</span></h2>';
+  subs.forEach(function(sub){var g=(byCat[cat][sub]||[]).filter(hit);if(!g.length)return;
+   html+='<h3 class="sub">'+sub+(sub==="The Houses of Gondolin"?' <a href="gondolin.html" style="color:#7a4a12;font-size:11px">— the full hall ⧉</a>':'')
+     +'<span class="n">'+g.length+'</span></h3><div class="grid">'+g.map(dev).join("")+'</div>';});});
+ document.getElementById("catalog").innerHTML=html||'<div id="hnone">No device answers to that name. '+keys.length+' in all.</div>';
+ // A DEVICE WIDER THAN IT IS TALL takes the card's width instead of the portrait box.
+ // The Flying Corps of Mordor is a pair of outspread wings two and a half times as wide
+ // as tall; contained in a 74-by-88 box its ink came out about 29 pixels tall where every
+ // other device came out 84, and it read as a small mark among big ones. Given the card's
+ // width it comes out about 76 -- the same weight as the rest. Read off the image's own
+ // proportions rather than recorded anywhere, so a plate that changes shape needs no
+ // change here, and set after the grid is written because naturalWidth is 0 until then.
+ Array.prototype.forEach.call(document.querySelectorAll("#catalog .dcard img"),function(im){
+  var f=function(){if(im.naturalWidth>im.naturalHeight*1.5)im.classList.add("wide")};
+  if(im.complete&&im.naturalWidth)f(); else im.addEventListener("load",f);
+ });
+}
+draw();
+// swap symbol-based (interpretive) devices to their drawn form: they use <use>, defs come from... none here.
+// For interpretive durin/fingolfin without a file, we need their symbol defs. Inject minimal defs:
+})();
+// ===== the forge =====
+(function(){
+var NS="http://www.w3.org/2000/svg";
+var PAL=window.ARDA_PAL;
+var st={shape:"lozenge",points:8,pstyle:"ray",sym:"radial",charge:"star",csize:0.46,charge2:"none",repeat:1,
+        rings:1,mandala:8,mstyle:"petal",gems:0,field:2,cc:0,ac:1,mc:1};
+function rankWord(n){if(!n)return"(a plain device)";if(n<16&&n>=16)return"";
+ if(n>=16)return"— a great ancestor of a house";if(n>=6)return"— a king's rank";
+ if(n>=4)return"— a prince's rank";return"— below the ranks Tolkien names";}
+var SWTARGET={f_field:"field",f_charge_c:"cc",f_accent:"ac",f_mc:"mc"};
+function mkSwatches(id,sel){var box=document.getElementById(id);if(!box)return;box.innerHTML="";
+ PAL.forEach(function(p,i){var w=document.createElement("span");w.className="sw"+(i===sel?" on":"");
+  w.style.background=p[1];w.title=p[0];
+  w.onclick=function(){st[SWTARGET[id]]=i;mkSwatches(id,i);draw();};box.appendChild(w);});}
+// fill the charge menus from the engine's own list
+function fillCharges(id,sel){var el=document.getElementById(id);el.innerHTML="";
+ window.ARDA_CHARGES.forEach(function(c){var o=document.createElement("option");o.value=c;
+  o.textContent=(c==="none"?"— none —":window.ARDA_CHARGE_LABEL[c].replace(/^an? /,""));
+  if(c===sel)o.selected=true;el.appendChild(o);});}
+fillCharges("f_charge","star");fillCharges("f_charge2","none");
+// presets: every device in the hall that the forge can draw -- IN THREE GROUPS, because
+// they are three different things and one flat list said they were one.
+//
+// The old label read "Tolkien's own, where he left one", and thirty-seven of the fifty
+// entries beneath it are not that at all: their cards show licensed artwork, and the spec
+// the menu loads is the archive's own reading of the same device, drawn nowhere else on
+// the site. Five more load a plain field -- rightly, since Morgoth is sable unblazoned and
+// Penlod's two houses have no recorded device -- but a visitor who picks one and gets an
+// empty shield has no way to tell an honest blank from a broken entry.
+//
+//   drawn here   the card itself is this drawing; loading it gives back exactly what
+//                you see above
+//   after the drawing   the card shows a licensed rendering; this is the archive reading
+//                the same blazon in courses
+//   a plain field   the record gives no device, and the blank IS the answer
+(function(){var sel=document.getElementById("f_preset"),H=window.ARDA_HERALD;
+ function bare(f){if(f.layers&&f.layers.length)return false;
+  return !f.points&&!f.rings&&!f.mandala&&!f.gems&&!f.text&&!f.inner&&
+         (!f.charge||f.charge==="none")&&(!f.charge2||f.charge2==="none");}
+ var GROUP=[["Drawn here in the forge — the card is this very drawing",
+             function(h){return !h.file&&!bare(h.forge);}],
+            ["After the drawing — the card shows a licensed rendering of it",
+             function(h){return !!h.file&&!bare(h.forge);}],
+            ["A plain field — the record leaves no device, and the blank is the answer",
+             function(h){return bare(h.forge);}]];
+ GROUP.forEach(function(g){
+  var ks=Object.keys(H).filter(function(k){return H[k].forge&&g[1](H[k]);});
+  if(!ks.length)return;
+  var og=document.createElement("optgroup");og.label=g[0];
+  ks.forEach(function(k){var h=H[k];
+   var o=document.createElement("option");o.value=k;
+   o.textContent=h.label.replace(/ —.*$/,"")+(h.canon?"":" ◆");og.appendChild(o);});
+  sel.appendChild(og);});
+ sel.onchange=function(){var h=H[this.value];if(!h||!h.forge)return;
+  // clear first: merging alone left the last device's petals, jewels and rings behind,
+  // so a preset drew things its own spec never asked for
+  Object.keys(st).forEach(function(kk){delete st[kk];});
+  var base={shape:"lozenge",points:0,pstyle:"ray",field:0,cc:4,ac:1,rings:0,mandala:0,
+            mstyle:"petal",gems:0,charge:"none",charge2:"none",repeat:1,csize:0.46,sym:"radial",
+            inner:"",poff:0,text:"",layers:[]};
+  Object.keys(base).forEach(function(kk){st[kk]=base[kk];});
+  Object.keys(h.forge).forEach(function(kk){st[kk]=h.forge[kk];});
+  syncControls();draw();};})();
+function syncControls(){
+ document.getElementById("f_shape").value=st.shape;
+ document.getElementById("f_points").value=st.points||0;
+ document.getElementById("f_pstyle").value=st.pstyle||"ray";
+ document.getElementById("f_sym").value=st.sym||"radial";
+ document.getElementById("f_poff").value=String(st.poff||0);
+ document.getElementById("f_inner").value=st.inner||"";
+ document.getElementById("f_text").value=st.text||"";
+ document.getElementById("f_charge").value=st.charge||"none";
+ document.getElementById("f_csize").value=Math.round((st.csize||0.46)*100);
+ document.getElementById("f_charge2").value=st.charge2||"none";
+ document.getElementById("f_repeat").value=st.repeat||1;
+ document.getElementById("f_rings").value=st.rings||0;
+ document.getElementById("f_mandala").value=st.mandala||0;
+ document.getElementById("f_mstyle").value=st.mstyle||"petal";
+ document.getElementById("f_gems").value=st.gems||0;
+ mkSwatches("f_field",st.field);mkSwatches("f_charge_c",st.cc);
+ mkSwatches("f_accent",st.ac===undefined?1:st.ac);mkSwatches("f_mc",st.mc===undefined?1:st.mc);
+ renderLayers();}
+// ===== the layer bench =====
+// The slot controls above set one device of the ordinary kind. The plates, though, are
+// built in courses -- eight petals under a disc under a broken ring of white -- and the
+// engine draws those from a list. This bench edits that list, so a visitor can take
+// Luthien's own construction apart and put it back differently.
+var LTYPES=[["petals","petals"],["wedges","rays"],["darts","darts"],["discs","roundels"],
+            ["scatter","strewn charges"],["ring","a ring"],["disc","a disc"],["bands","bands of colour"],
+            ["arcs","arcs"],["corners","corner pieces"],["dashes","a broken ring"],
+            ["segments","a ring in pieces"],["pinwheel","a pinwheel"],["veins","veins"],
+            ["star","a star"],["poly","a polygon"],["outline","an outline"],["square","a square"],
+            ["charge","a charge"],
+            // lobes and glyph were in use on four devices and missing from this list, so a
+            // visitor who loaded Galadriel and touched the bench turned her garland-leaves
+            // into petals and the Steward's letters into roundels. It is the same fault the
+            // three field-dividing kinds below were added for, found again by page_smoke.
+            ["lobes","lobes"],["glyph","a letter"],
+            // the courses that divide the field instead of turning about its centre --
+            // the manner of the devices of Men. Without these in the list, loading
+            // Beren's device showed his ground and his hills as "petals", and touching
+            // the menu turned them into petals in earnest.
+            ["half","half the field"],["stripe","a band across"],["hills","a ridge of hills"]];
+try{window.LTYPES=LTYPES}catch(e){}   // so map/page_smoke.js can check the bench offers every kind in use
+// which dials each course actually uses, so the bench shows only what applies
+var LFIELDS={petals:["n","r0","r1","w","bow","swirl","round","rot"],wedges:["n","r0","r1","w","taper","rot"],
+ darts:["n","r0","r1","w","barb","rot"],discs:["n","r","size","rot"],scatter:["n","r","size","rot"],
+ ring:["r","w"],disc:["r"],bands:[],arcs:["n","r","w","gap","rot"],corners:["n","r","size","rot"],
+ dashes:["n","r","len","w"],segments:["n","r0","r1","rot"],pinwheel:["n","r"],
+ veins:["n","r0","r1","w","side","rot"],star:["n","r"],poly:["n","r"],outline:["n","r","w","rot"],
+ square:["s"],charge:["r","a","size"],lobes:["n","r","len","wid","rot"],glyph:["size","ox","oy"],
+ half:["at"],stripe:["from","to"],hills:["n","base","peak"]};
+var LSTEP={n:[1,1,48],r:[0.01,0,1.1],r0:[0.01,0,1.1],r1:[0.01,0,1.1],w:[0.005,0,0.6],
+ size:[0.005,0.005,0.5],bow:[0.02,0.1,0.95],swirl:[0.01,-0.3,0.3],round:[0.05,0,1],
+ at:[0.02,-1,1],from:[0.02,-1.2,1.2],to:[0.02,-1.2,1.2],base:[0.02,-1.2,1.2],peak:[0.02,-1.2,1.2],
+ taper:[0.05,0,1.2],barb:[0.05,0.1,0.95],rot:[0.0125,0,1],len:[0.05,0,1],gap:[0.05,0,0.8],
+ side:[1,0,6],a:[0.0625,-0.5,0.5],s:[0.01,0.02,0.9],wid:[0.005,0.005,0.4],
+ ox:[0.01,-1,1],oy:[0.01,-1,1]};
+function palSelect(v,on){
+ var s=document.createElement("select");s.className="lsel";
+ PAL.forEach(function(p,i){var o=document.createElement("option");o.value=i;o.textContent=p[0];
+  o.style.background=p[1];if(i===v)o.selected=true;s.appendChild(o);});
+ s.onchange=function(){on(+this.value)};return s;}
+function renderLayers(){
+ var box=document.getElementById("f_layers");if(!box)return;box.innerHTML="";
+ var L=st.layers||(st.layers=[]);
+ L.forEach(function(lay,ix){
+  var row=document.createElement("div");row.className="lrow";
+  var ty=document.createElement("select");ty.className="lsel";
+  LTYPES.forEach(function(t){var o=document.createElement("option");o.value=t[0];o.textContent=t[1];
+   if(t[0]===lay.t)o.selected=true;ty.appendChild(o);});
+  ty.onchange=function(){lay.t=this.value;renderLayers();draw();};
+  row.appendChild(ty);
+  (LFIELDS[lay.t]||[]).forEach(function(f){
+   var st_=LSTEP[f]||[0.01,0,1];
+   var w=document.createElement("span");w.className="lnum";
+   w.innerHTML='<i>'+f+'</i>';
+   // A value may be a LIST -- one for each repeat of the course, measured off the
+   // plate item by item. A number box would turn fourteen measurements into one
+   // number at the first click, so those are shown and not offered for editing.
+   if(Object.prototype.toString.call(lay[f])==="[object Array]"){
+    var tag=document.createElement("i");tag.className="lmeas";
+    tag.textContent=lay[f].length+" measured";
+    tag.title=lay[f].join(", ");
+    w.appendChild(tag);row.appendChild(w);return;
+   }
+   var inp=document.createElement("input");inp.type="number";
+   inp.step=st_[0];inp.min=st_[1];inp.max=st_[2];
+   inp.value=(lay[f]!==undefined?lay[f]:(f==="n"?8:f==="r1"?1:0));
+   inp.oninput=function(){lay[f]=+this.value;draw();};
+   w.appendChild(inp);row.appendChild(w);});
+  if(lay.t!=="bands"){
+   if(Object.prototype.toString.call(lay.c)==="[object Array]"){
+    var ct=document.createElement("i");ct.className="lmeas";
+    ct.textContent=lay.c.length+" tinctures measured";ct.title=lay.c.join(", ");
+    row.appendChild(ct);
+   } else row.appendChild(palSelect(lay.c===undefined?0:lay.c,function(v){lay.c=v;draw();}));
+  }
+  if(lay.t==="petals")row.appendChild(palSelect(lay.stroke===undefined?0:lay.stroke,
+    function(v){lay.stroke=v;lay.sw=lay.sw||0.014;draw();}));
+  if(lay.t==="scatter"||lay.t==="charge"){
+   var ck=document.createElement("select");ck.className="lsel";
+   window.ARDA_CHARGES.forEach(function(c){var o=document.createElement("option");o.value=c;
+    o.textContent=window.ARDA_CHARGE_LABEL[c].replace(/^an? /,"");
+    if(c===(lay.k||"star"))o.selected=true;ck.appendChild(o);});
+   ck.onchange=function(){lay.k=this.value;draw();};row.appendChild(ck);}
+  ["fit"].forEach(function(f){
+   var lb=document.createElement("label");lb.className="lchk";
+   var cb=document.createElement("input");cb.type="checkbox";cb.checked=!!lay[f];
+   cb.onchange=function(){lay[f]=this.checked;draw();};
+   lb.appendChild(cb);lb.appendChild(document.createTextNode("to the edge"));row.appendChild(lb);});
+  ["↑","↓","✕"].forEach(function(sym,k){
+   var b=document.createElement("button");b.className="lbtn";b.textContent=sym;
+   b.onclick=function(){
+    if(k===0&&ix>0){L.splice(ix-1,0,L.splice(ix,1)[0]);}
+    else if(k===1&&ix<L.length-1){L.splice(ix+1,0,L.splice(ix,1)[0]);}
+    else if(k===2){L.splice(ix,1);}
+    renderLayers();draw();};
+   row.appendChild(b);});
+  box.appendChild(row);});
+ if(!L.length){var e=document.createElement("div");e.className="cite";
+  e.textContent="No courses. A device may be built of slots alone — or load one of Tolkien's above.";
+  box.appendChild(e);}
+}
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+function draw(){
+ document.getElementById("forgeSvg").innerHTML=window.ardaForgeInner(st);
+ var tinct=PAL[st.field][0],ct=PAL[st.cc][0];
+ var kindWord=st.shape==="circle"?"a woman":st.shape==="lozenge"?"a man":st.shape==="shield"?"a house of Gondolin":"a house or an impersonal thing";
+ var L=window.ARDA_CHARGE_LABEL;
+ var parts=[];
+ if(st.charge==="letters"&&st.text)parts.push("the letters "+st.text+" "+ct);
+ else if(st.charge&&st.charge!=="none")parts.push(L[st.charge]+" "+ct);
+ if(st.inner==="lozenge")parts.push("a lozenge within the circle");
+ if(st.charge2&&st.charge2!=="none"&&st.repeat>1)parts.push(st.repeat+" "+L[st.charge2].replace(/^an? /,"")+"s in orbit");
+ else if(st.charge&&st.charge!=="none"&&st.repeat>1)parts.push("repeated "+st.repeat+" times about the centre");
+ if(st.mandala>1)parts.push("within "+st.mandala+" "+(st.mstyle==="ray"?"rays":st.mstyle==="lens"?"lens-petals":"petals")+" "+PAL[st.mc===undefined?1:st.mc][0]);
+ if(st.gems>0)parts.push(st.gems+" jewels set about");
+ if(st.layers&&st.layers.length){
+  var seen={};st.layers.forEach(function(l){seen[l.t]=(seen[l.t]||0)+1;});
+  var names={petals:"petals",wedges:"rays",darts:"darts",discs:"roundels",scatter:"strewn charges",
+             ring:"a ring",disc:"a disc",bands:"bands",arcs:"arcs",corners:"corner pieces",
+             dashes:"a broken ring",segments:"a ring in pieces",pinwheel:"a pinwheel",veins:"veins",
+             star:"a star",poly:"a polygon",outline:"an outline",square:"a square",charge:"a charge",
+             lobes:"lobes",glyph:"a letter"};
+  parts.push("built in "+st.layers.length+" courses ("+Object.keys(seen).map(function(k){
+   return (seen[k]>1?seen[k]+" of ":"")+(names[k]||k);}).join(", ")+")");}
+ var b=cap(tinct)+(parts.length?", "+parts.join(", "):"")+(st.points?", within "+st.points+" points reaching the rim":"")+".";
+ b+=" <span class='cite'>Borne on a "+st.shape+" — the device of "+kindWord+" "+rankWord(st.points)+"."
+  +(st.sym==="mirror"?" Mirrored left to right and pressing upward, after the manner of Men.":" Turning full circle, after the manner of the Eldar.")+"</span>";
+ if(st.points&&[4,6,7,8,16].indexOf(st.points)<0)
+  b+=" <span class='cite' style=\"color:#8a5a12\">⚠ Tolkien names four, six to eight, and sixteen; "+st.points+" is outside his scheme.</span>";
+ document.getElementById("blazon").innerHTML=b;
+ document.getElementById("f_rankn").textContent=rankWord(st.points);}
+[["f_shape","shape",0],["f_pstyle","pstyle",0],["f_sym","sym",0],["f_charge","charge",0],["f_charge2","charge2",0],
+ ["f_mstyle","mstyle",0],["f_points","points",1],["f_repeat","repeat",1],["f_rings","rings",1],
+ ["f_mandala","mandala",1],["f_gems","gems",1],["f_inner","inner",0],["f_poff","poff",2]].forEach(function(r){
+ var el=document.getElementById(r[0]);if(!el)return;
+ el[r[2]===1?"oninput":"onchange"]=function(){st[r[1]]=r[2]?+this.value:this.value;draw();};});
+document.getElementById("f_text").oninput=function(){st.text=this.value;draw();};
+document.getElementById("f_csize").oninput=function(){st.csize=(+this.value)/100;draw();};
+syncControls();
+document.getElementById("f_rand").onclick=function(){
+ var R=function(a){return a[(Math.random()*a.length)|0]};
+ st.shape=R(["circle","lozenge","square"]);
+ st.points=R([0,4,6,8,16]);st.pstyle=R(["ray","ray","leaf","pin"]);
+ st.charge=R(window.ARDA_CHARGES.filter(function(c){return c!=="none"}));
+ st.csize=0.34+Math.random()*0.22;
+ st.charge2=R(["none","none","star","gem","leaf","flower"]);
+ st.repeat=st.charge2==="none"?1:R([4,6,8,12]);
+ st.rings=R([0,1,1,2]);st.mandala=R([0,6,8,8,12,16]);st.mstyle=R(["petal","lens","ray","flame"]);
+ st.sym=R(["radial","radial","radial","mirror"]);
+ st.gems=R([0,0,6,8,12]);
+ st.field=(Math.random()*PAL.length)|0;st.cc=(Math.random()*PAL.length)|0;
+ st.ac=(Math.random()*PAL.length)|0;st.mc=(Math.random()*PAL.length)|0;
+ st.layers=[];               // a random device starts from bare ground
+ document.getElementById("f_preset").value="";
+ syncControls();draw();};
+document.getElementById("f_addlayer").onclick=function(){
+ st.layers=st.layers||[];
+ st.layers.push({t:"petals",n:8,r0:0.1,r1:0.9,w:0.15,bow:0.5,c:1});
+ renderLayers();draw();};
+document.getElementById("f_dl").onclick=function(){
+ var s='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 226">'+document.getElementById("forgeSvg").innerHTML+'</svg>';
+ var a=document.createElement("a");a.href="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(s);
+ a.download="arda-device.svg";a.click();};
+draw();
+})();
+// ===== tabs + credits =====
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){
+ document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on");});t.classList.add("on");
+ document.querySelectorAll(".pane").forEach(function(p){p.classList.remove("on");});
+ document.getElementById("pane-"+t.dataset.p).classList.add("on");if(history.replaceState)history.replaceState(null,"","#"+t.dataset.p);};});
+if(location.hash==="#forge")document.querySelectorAll(".tab")[1].click();
+addEventListener("load",function(){var c=document.getElementById("credits");if(c&&window.ardaHeraldCredits)c.innerHTML=window.ardaHeraldCredits();});
+</script>
+
+<!-- THE STATES HELPER, and it is here because the roster below fetches a dataset. Spec 9 calls
+     a blank leaf an anti-pattern: a hall whose fetch fails and says nothing loses its records
+     SILENTLY. aJ().catch(()=>{}) publishes `data-loading` while a fetch is in flight, records the failure in
+     __aF and rethrows, which is what the shared loading, error and offline states are built on
+     -- see docs/codex-states.md. It is BYTE-IDENTICAL to the helper in character.html,
+     gazetteer.html, living.html, oaths.html and gallery.html; states_check cuts this
+     definition out before counting, so its own fetch( is not read as a raw one. -->
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
+<script>
+// ===== C93: THE HALL HOLDS ALL 218 SUBJECTS, SO THE SILENCE IS COUNTABLE =====
+// The catalogue above is the DEVICE table: 58 drawings, each with its own provenance. This is
+// the SUBJECT table: 218 houses, realms and places, of which 62 carry a device and 156 do not.
+// Showing only the 62 made the hall look like a complete heraldry of Arda with some gaps in it.
+// It is the other way round: Tolkien blazoned very few houses, and the Silmarillion's own
+// editorial note says so -- "references to Elvish heraldic devices are rare and brief". A
+// reader who cannot see the 156 cannot see that fact, and a bare corner with no row behind it
+// looks exactly like a corner nobody checked.
+//
+// WHY THIS IS NOT PUT THROUGH THE CATEGORY CHIPS ABOVE. Those five chips are Eldar, the
+// Kingdoms of Men, the Khazad, the Enemy and the Istari, and they are properties of a DEVICE.
+// 156 of these subjects have no device and therefore no category; filing Cair Andros under
+// "the Kingdoms of Men" would be the archive inventing an attribution in the one table whose
+// entire job is to refuse to. So the roster groups by what every subject does have -- whether
+// it is a house, a realm or a place -- and filters on the one axis that is always known:
+// whether a device was found for it.
+//
+// IT USES THE CATALOGUE'S OWN MARKUP, AND THAT IS NOT A STYLE CHOICE. This first shipped with
+// its own container class and its own row class, and codex-hall.js -- which reflows the hall's
+// runtime matter into codex leaves by walking .pane > #catalog > .grid > .dcard -- kept the
+// containers and lost every row inside them. Measured in chromium: three empty containers,
+// zero rows, headings gone. So the roster is h2 / h3.sub / .grid / .dcard like everything
+// else in this hall, and `.rrow` is a compact skin on .dcard rather than a second structure.
+//
+// AND IT RENDERS NO DEVICE. Every drawing is already above; re-forging 62 of them here would
+// double the page's work to show the same ink twice. A row carries the glyph and the device's
+// name, and the name is the one in the catalogue.
+(function(){
+ var box=document.getElementById("roster"); if(!box) return;
+ aJ("arda_heraldry_roster.json").then(function(J){
+  var rows=J.subjects||[], m=J.measured||{};
+  var G={artwork:["bc","✔"],design:["bd","✦"],text:["bt","✧"],
+         inferred:["bi","◆"],silent:["bs","◌"]};
+  var KIND=[["house","Houses","a house"],["realm","Realms","a realm"],["place","Places","a place"]];
+  var mode="all";
+  document.getElementById("rostn").textContent=rows.length;
+  document.getElementById("rostnote").innerHTML=
+   "<b>"+m.with_device+" of "+m.subjects+" subjects carry a device, and "+m.bare+" do not.</b> "+
+   "The "+m.with_device+" share <b>"+m.distinct_devices_used+" distinct drawings</b>, because the corpus gives "+
+   "one running horse to six bearers and one white tree to nine; a subject here points at a device in the "+
+   "catalogue above rather than holding a copy of it, so a correction to the drawing reaches every bearer at once. "+
+   "The "+m.bare+" bare rows are not a backlog: each is a single-member artefact of the genealogy’s own "+
+   "bookkeeping that points at something already a subject here, and each says so. "+
+   "<b>AND THE SILENCE DID NOT GO AWAY WHEN THE PICTURES ARRIVED — IT IS THE NUMBER "+
+   "<span class=\"mark\">"+m.rests_on_nothing+"</span>.</b> Ruling C130, 21 August 2026: the owner ruled that "+
+   "the "+m.routed_by_c130+" devices the archive’s own forge drew be routed to their subjects. "+
+   "Routing a device to a subject says <i>this subject bears this</i>, which is a claim about Arda — and for "+
+   "<b>"+m.rests_on_nothing+" of them no passage in the corpus grounds it.</b> Those rows are marked "+
+   "<span class=\"mark\">[I-L]</span>, the lowest confidence this archive holds; each keeps the corpus’s own "+
+   "answer — the sentence that stood before any device was drawn — verbatim beside the picture, and each "+
+   "carries NO citation, because a citation that does not survive being read is worse than none. "+
+   "<b>Three do rest on a passage</b> and are marked <span class=\"mark\">[I-M]</span> with it cited. "+
+   "Count them with the chip below; the archive’s own answer to “which of these rest on nothing?” is "+
+   "a number and not an impression. The Silmarillion’s own editorial note is that “references to Elvish "+
+   "heraldic devices are rare and brief in Tolkien’s works”, and that has not changed. "+
+   "<b>Two axes are recorded and they are not one axis.</b> The glyph is <i>basis</i> and answers how the archive "+
+   "came to have the picture; the bracketed mark is <i>confidence</i> and answers how strong the evidence is that "+
+   "this subject bears it. A device Tolkien drew himself (✔) can be attached to a subject on a chain the "+
+   "archive rates [I-H], and a subject the corpus names outright [C] can bear a picture the archive had to "+
+   "interpret (◆). Neither is derived from the other.";
+  var cw=document.getElementById("rchips");
+  [["all","every subject ("+m.subjects+")"],["dev","bearing a device ("+m.with_device+")"],
+   ["il","resting on nothing textual, [I-L] ("+m.rests_on_nothing+")"],
+   ["bare","the field left bare ("+m.bare+")"]].forEach(function(t){
+   var c=document.createElement("span");c.className="chip"+(t[0]==="all"?" on":"");c.textContent=t[1];
+   c.onclick=function(){mode=t[0];
+    Array.prototype.forEach.call(cw.children,function(x){x.classList.remove("on")});
+    c.classList.add("on");draw()};cw.appendChild(c);});
+  function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;
+   if(txt!=null)e.textContent=txt;return e;}
+  function draw(){
+   while(box.firstChild)box.removeChild(box.firstChild);
+   KIND.forEach(function(kd){
+    var g=rows.filter(function(r){return r.kind===kd[0] &&
+      (mode==="all"||(mode==="dev"?!!r.device:
+                      mode==="il"?!!r.rests_on_nothing:!r.device))});
+    if(!g.length)return;
+    var h=el("h3","sub",kd[1]); h.appendChild(el("span","n",String(g.length))); box.appendChild(h);
+    var grid=el("div","grid");
+    g.forEach(function(r){
+     var q=G[r.basis]||G.silent;
+     var card=el("div","dcard rrow"+(r.device?"":" bare"));
+     card.title=r.basis;
+     card.appendChild(el("div","s",r.subject));
+     if(r.device){
+      var d=el("div","d",String(r.device_label||"").replace(/ —.*$/,""));
+      if(r.conf){d.appendChild(document.createTextNode(" "));
+       d.appendChild(el("span","mark",r.conf));}
+      card.appendChild(d);
+     } else {
+      card.appendChild(el("div","d",r.reason||"no device is recorded for this subject"));
+     }
+     // C130: THE SILENCE TRAVELS WITH THE PICTURE. A row that rests on nothing textual says so
+     // ON THE CARD, in the archive's own words, so a reader is never shown a drawing where a
+     // measured absence used to be without also being shown the absence.
+     if(r.rests_on_nothing){
+      card.appendChild(el("div","why",r.grounds||"no passage grounds this"));
+     } else if(r.grounds){
+      card.appendChild(el("div","why","attested: "+(r.cite||r.grounds)));
+     }
+     var b=el("span","badge "+q[0],q[1]);
+     b.appendChild(document.createTextNode(" · "+kd[2]));
+     card.appendChild(b);
+     grid.appendChild(card);
+    });
+    box.appendChild(grid);
+   });
+  }
+  draw();
+ }).catch(function(e){box.textContent="The roster could not be read: "+e});
+})();
+</script>
+<script src="quotes.js"></script><script src="touch.js"></script><script src="nav.js"></script><script src="glossary.js" defer></script>
+<!-- C57's RAILS, CARRIED IN THE TEMPLATE BECAUSE THE REBUILD DROPS THEM OTHERWISE. Measured
+     21 August: build_heraldry_hall.py replaces this page from this file, and the published
+     page carried the ARDA:THUMBS rail and its codex-thumbs.js tag, which the
+     template did not -- so a run of the builder took the thumbnail rail off the hall and
+     thumbs_check would have met a page with no rail and no reason. codex_carry.write_page
+     carries the CODEX-BODY region across the rebuild; it did not carry this one. The region
+     is OWNED by map/gen_codex_thumbs.py, which rewrites whatever lies between the two
+     markers, so holding the pair here is idempotent and never a second opinion. -->
+<!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

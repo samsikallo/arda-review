@@ -1,0 +1,130 @@
+<!doctype html><html lang="en" data-hand="authentic" data-codex="off" data-codex-object="on" data-theme="light" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512">
+<title>The Ainur — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Ainur: the Valar and the Maiar, and those of them that fell — every entry anchored to the text that attests it."><meta property="og:title" content="The Ainur — the Arda Archive"><meta property="og:description" content="The Ainur: the Valar and the Maiar, and those of them that fell — every entry anchored to the text that attests it."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/ainur.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/ainur.html"><!--/ARDA:META-->
+<meta name="description" content="The Valar and Maiar of Arda: their domains, their spouses, their dwellings, and what the texts actually say of each.">
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+.wrap{max-width:1220px;margin:0 auto;padding:16px 20px 60px}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;padding:13px 18px;box-shadow:0 2px 8px rgba(60,40,10,.12);margin-bottom:12px}
+.bar{display:flex;gap:6px;margin:8px 0 10px;flex-wrap:wrap;align-items:center}
+.chip{padding:4px 13px;border:1px solid var(--line);border-radius:18px;cursor:pointer;background:#fdfaf2;font-size:12.5px;box-shadow:0 1px 3px rgba(60,40,10,.12)}
+.chip.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+#q{border:1px solid var(--line);border-radius:12px;padding:4px 12px;font:13px Georgia,serif;background:#fdfaf2;color:var(--ink);min-width:220px}
+.sec{font-variant:small-caps;font-size:17px;color:#5a4626;border-bottom:2px solid var(--line);padding-bottom:3px;margin:20px 0 8px;display:flex;align-items:baseline;gap:9px}
+.sec .n{font-size:11px;font-variant:normal;color:var(--mut);font-style:italic}
+/* C59 AT 390px: minmax(Npx,1fr) CANNOT SHRINK BELOW N, and a hall inside the codex object gets 291px of a 390px phone once body padding, .book margin and .book padding are taken -- so a floor of 340 made .hall-slot a flex item 360px wide inside a 332px book and the DOCUMENT scrolled sideways, which C59 forbids at every width. min(Npx,100%) is the same N wherever the container is wider than N, so no layout above a phone changes at all. Measured 21 Aug with mobile_check's own 390px iframe. */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:12px}
+.card{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:10px;padding:11px 14px;box-shadow:0 2px 6px rgba(60,40,10,.12)}
+.card h3{margin:.1em 0 .15em;font-variant:small-caps;font-weight:normal;font-size:16.5px;color:#5a4626}
+.card .meta{font-size:11px;color:var(--mut);margin-bottom:5px}
+.card blockquote{margin:.4em 0;padding:.35em .7em;border-left:3px solid var(--gold);background:#fffdf6;font-style:italic;font-size:12.7px;color:#4a3f2c}
+.card img{width:100%;height:auto;border-radius:7px;border:1px solid var(--line);background:#fdfcf8;display:block;margin-bottom:6px;cursor:zoom-in}
+.tag{display:inline-block;border-radius:8px;padding:0 6px;font-size:9.5px;border:1px solid #7aa86a;background:#e9f3e4;margin-right:4px}
+.tag.t2{border-color:#6f8cae;background:#e6eef7}
+.warn{display:block;margin-top:5px;font-size:11px;color:#8a5a12;background:#fdf3df;border:1px solid #d0a53c;border-radius:7px;padding:3px 7px}
+.orn{text-align:center;color:#b0a58e;margin:.6em 0;font-size:12px;letter-spacing:.3em}
+#none{color:var(--mut);font-style:italic;margin:20px 2px}
+#lb{display:none;position:fixed;inset:0;background:rgba(20,16,10,.9);z-index:99;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:20px;cursor:zoom-out}
+#lb img{max-width:min(92vw,700px);max-height:82vh;border:2px solid #8a7444;border-radius:10px;background:#fdfcf8}
+#lb .c{color:#e8dcc0;font-size:13px;font-style:italic;text-align:center;max-width:640px}
+
+</style><link rel="stylesheet" href="arda.css"><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39; &#39;;--edge-r:&#39; &#39;" data-edge-tr="the ainur" data-edge-en="The Ainur" data-edge-mode="Angerthas Daeron" data-edge-script="cirth" data-edge-src="" data-edge-conf="[NEO]" data-turn-prev="volume-iii.html" data-turn-next="character.html"><div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> The Ainur</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html" aria-current="page">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="ainur.html"><div class="rh"><span>The Arda Archive · The Ainur</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Ainur</h2><p class="lede">The Ainur: the Valar and the Maiar, and those of them that fell — every entry anchored to the text that attests it.</p><p><span class="versal">T</span>he Ainur opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="ainur.html"><div class="rh"><span>The Ainur · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. A folio hall shows what the archive holds and no more.</p><div class="sub">Where this opening sits</div><p>Volume III of the Arda Archive, Peoples and Houses, under The Ainur. who they were</p><p>It is opening <span class="mark">2</span> of <span class="mark">436</span> in this volume, the Volume III — the contents coming before it. The reader who turns on from here reaches Records of Persons.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch">Records of</span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume III</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><h1>The Ainur</h1><span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav>
+<div class="sub">The Valar and the Maiar, and those of them that fell — every entry anchored to the text</div></div>
+<div class="wrap" role="main" id="main">
+<div class="intro"><p style="margin:.2em 0">Before Arda was made there were the Ainur, the Holy Ones, the offspring of Ilúvatar's thought. Fourteen of them entered the World as the Valar and were bound to it until its end; with them came the Maiar, of whom Tolkien names comparatively few. Eight are held in chief reverence — the <b>Aratar</b> — and one, mightiest in his beginning, unmade himself.</p><p class="cite" style="margin:.4em 0 0">Where the texts disagree they are shown disagreeing. Melian is of Vána and Estë in one place and of Yavanna's people in another; Estë and Nessa were once not Valier at all but "the highest among the Maiar"; the Blue Wizards have four incompatible accounts and no verdict is given here. Two glosses long quoted as Tolkien's are Christopher's editorial additions, and say so.</p></div>
+<div class="bar" id="bar"></div>
+<div id="out"></div>
+<div class="orn">❦ ✦ ❦</div>
+<div class="cite" style="text-align:center;max-width:900px;margin:0 auto">Every quotation was located in the text before it was written down. Where a name is commonly given that the corpus does not contain — <b>Mairon</b> for Sauron is the clearest case — it is omitted and the absence noted.</div>
+</div>
+<div id="lb"></div>
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
+<script>
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const nrm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+function tierTag(t){return '<span class="tag'+(t==2?" t2":"")+'">tier '+(t||1)+'</span>'}
+function quoteBlock(q,c,src){if(!q)return"";
+ return '<blockquote>&ldquo;'+esc(q)+'&rdquo;</blockquote><div class="cite">'+esc(c||"")
+ +(src?' &middot; <span style="opacity:.65">'+esc(src)+'</span>':'')+'</div>'}
+function lightbox(){document.getElementById("out").querySelectorAll("img").forEach(im=>{
+ im.onclick=()=>{const L=document.getElementById("lb");
+  L.innerHTML='<img src="'+im.getAttribute("src")+'" alt="'+im.getAttribute("alt")+'"><div class="c">'+esc(im.dataset.cap||"")+'</div>';
+  L.style.display="flex";L.onclick=()=>L.style.display="none";}});}
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.getElementById("lb");if(L)L.style.display="none"}});
+
+let A=[],mode="all";
+/* THE ISTARI ARE A SECTION OF THEIR OWN BENEATH THE MAIAR, at the owner's instruction.
+   THE MEMBERSHIP IS A FIELD, NOT A STRING MATCH, and that is the whole reason this works.
+   Four of the five say "Istari" somewhere in `dom` or `note`; AIWENDIL DOES NOT -- his reads
+   "beasts and birds; chosen by Yavanna" -- so a grep for the word would have quietly built an
+   Order of four wizards and looked right. arda_ainur.json now carries `istar`: 1-5, in the
+   corpus's own sequence: "Of these Curunír was the eldest and came first, and after him came
+   Mithrandir and Radagast, and others of the Istari who went into the east of Middle-earth"
+   (The Silmarillion, Of the Rings of Power and the Third Age).
+   CURUMO IS RANKED `corrupted` AND STILL BELONGS HERE. Grouping on rank alone would have put
+   Saruman under "Those that fell" and left an Order of four -- wrong about the Order and no more
+   right about him. He appears among the Istari and his card still prints his rank, so the fall
+   is not hidden; and the "those that fell" filter still finds him, because that filter reads
+   rank. Nothing is lost by his being in one place.
+   Keys are decades so a group can be inserted between two others without renumbering, and the
+   sort below is NUMERIC for the same reason: a string sort puts "10" before "2". */
+const ORDER={"Aratar":0,"Vala":1,"Valië":2,"Maia":3,"corrupted":4};
+const ISTARI_G=35;
+const GROUP={0:"The Aratar — the eight of chief reverence",10:"The Valar",
+ 20:"The Valier — the Queens of the Valar",30:"The Maiar",
+ 35:"The Istari — the Order of Wizards, reckoned among the Maiar",40:"Those that fell"};
+/* The heading above is a name; this is the passage that licenses it. */
+const ISTARI_CITE='&ldquo;there appeared in the west of Middle-earth the Istari, whom Men '
+ +'called the Wizards &hellip; it was said among the Elves that they were messengers sent by '
+ +'the Lords of the West to contest the power of Sauron&rdquo; &mdash; <i>The Silmarillion</i>, '
+ +'Of the Rings of Power and the Third Age';
+const groupOf=x=>x.istar?ISTARI_G:(ORDER[x.rank]==null?30:ORDER[x.rank]*10);
+aJ("arda_ainur.json").then(j=>{A=j;build();}).catch(()=>{});
+function build(){
+ const bar=document.getElementById("bar");
+ [["all","all thirty"],["Aratar","the Aratar"],["Maia","the Maiar"],["Istari","the Istari"],
+  ["corrupted","those that fell"]]
+  .forEach(([k,l])=>{const c=document.createElement("span");c.className="chip"+(k===mode?" on":"");
+   c.textContent=l;c.onclick=()=>{mode=k;[...bar.querySelectorAll(".chip")].forEach(x=>x.classList.remove("on"));
+    c.classList.add("on");draw()};bar.appendChild(c)});
+ const qi=document.createElement("input");qi.id="q";qi.type="search";
+ qi.placeholder="search the Ainur…";qi.setAttribute("aria-label","search the Ainur");
+ bar.appendChild(qi);qi.addEventListener("input",draw);draw();
+}
+function draw(){
+ const q=nrm((document.getElementById("q")||{}).value||"");
+ const rows=A.filter(x=>(mode==="all"||(mode==="Istari"?!!x.istar:x.rank===mode))
+   &&(!q||nrm(JSON.stringify(x)).includes(q)));
+ const by={};rows.forEach(x=>{(by[groupOf(x)]=by[groupOf(x)]||[]).push(x)});
+ let h="";
+ Object.keys(by).map(Number).sort((a,b)=>a-b).forEach(g=>{
+  // Within the Order, the corpus's sequence rather than the file's.
+  if(g===ISTARI_G)by[g].sort((a,b)=>a.istar-b.istar);
+  h+='<div class="sec">'+GROUP[g]+'<span class="n">'+by[g].length+'</span></div>'
+    +(g===ISTARI_G?'<div class="cite" style="margin:-2px 0 8px">'+ISTARI_CITE+'</div>':'')
+    +'<div class="grid">';
+  h+=by[g].map(x=>{
+   const spouse=x.sp?A.find(y=>y.id===x.sp):null;
+   return '<div class="card"><h3>'+esc(x.n)+'</h3>'
+    +((x.alt||[]).length?'<div class="cite">'+x.alt.map(esc).join(" · ")+'</div>':'')
+    +'<div class="meta">'+tierTag(x.tier)+[x.rank,x.dom].filter(Boolean).map(esc).join(" &middot; ")+'</div>'
+    +(spouse?'<div class="cite">espoused to '+esc(spouse.n)+'</div>':'')
+    +(x.dwell?'<div class="cite">dwells: '+esc(x.dwell)+'</div>':'')
+    +quoteBlock(x.q,x.c,x.src)
+    +(x.note?'<span class="warn">'+esc(x.note)+'</span>':'')+'</div>'}).join("");
+  h+='</div>';});
+ document.getElementById("out").innerHTML=h||'<div id="none">None of the Ainur answer to that name.</div>';
+}
+
+</script>
+<script src="quotes.js"></script><script src="touch.js"></script>
+<script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
+<script src="nav.js"></script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

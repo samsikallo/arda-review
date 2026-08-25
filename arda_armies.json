@@ -1,0 +1,7234 @@
+{
+ "meta": {
+  "note": "Army strengths per campaign; corpus-only (ARMIES.md). conf H=Tolkien's figure, M=anchored inference, L=order-of-magnitude. Female share ~0 with cited exceptions (see panel).",
+  "groups": {
+   "elves": {
+    "label": "Elves",
+    "slot": 1
+   },
+   "dwarves": {
+    "label": "Dwarves",
+    "slot": 2
+   },
+   "darkmen": {
+    "label": "Men of Darkness",
+    "slot": 3
+   },
+   "hobbits": {
+    "label": "Hobbits",
+    "slot": 4
+   },
+   "middlemen": {
+    "label": "Rohirrim & Northmen",
+    "slot": 5
+   },
+   "dunedain": {
+    "label": "Gondor / Arnor / Edain",
+    "slot": 6
+   },
+   "numenor": {
+    "label": "Númenor",
+    "slot": 7
+   },
+   "orcs": {
+    "label": "Orcs & creatures",
+    "slot": 8
+   },
+   "other": {
+    "label": "Others (Ents, Eagles...)",
+    "slot": 0
+   }
+  }
+ },
+ "eras": [
+  {
+   "id": "FA",
+   "label": "First Age",
+   "w": 0.3
+  },
+  {
+   "id": "SA",
+   "label": "Second Age",
+   "w": 0.3
+  },
+  {
+   "id": "TA",
+   "label": "Third Age",
+   "w": 0.4
+  }
+ ],
+ "campaigns": [
+  {
+   "id": "firstbattle",
+   "label": "First Battle of Beleriand (before the Sun)",
+   "era": "FA",
+   "t": 0.01,
+   "insuf": "Denethor's Green-elves and Thingol's host against Morgoth's orcs; Denethor slain on Amon Ereb; the Girdle raised. The attached documents do not provide enough information for numbers. — Silm 10"
+  },
+  {
+   "id": "dagornuin",
+   "label": "Dagor-nuin-Giliath (FA 1-2)",
+   "era": "FA",
+   "t": 0.03,
+   "insuf": "The Noldor 'though outnumbered' routed Morgoth's assault under the new stars; Feanor fell to Balrogs. No figures given. — Silm 13"
+  },
+  {
+   "id": "aglareb",
+   "label": "Dagor Aglareb (FA 60)",
+   "era": "FA",
+   "t": 0.12,
+   "insuf": "The Glorious Battle: an orc-host destroyed between Dorthonion and the coasts; the Siege of Angband begun. No figures given. — Silm 13"
+  },
+  {
+   "id": "bragollach",
+   "label": "Dagor Bragollach (FA 455)",
+   "era": "FA",
+   "t": 0.72,
+   "sides": [
+    {
+     "name": "The Siege-ring of the Noldor",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "Hithlum, Dorthonion & the March garrisons",
+       "n": 55000,
+       "lo": 40000,
+       "hi": 70000,
+       "conf": "L",
+       "cite": "the leaguer from Eithel Sirion to Maglor's Gap - Silm 18"
+      },
+      {
+       "g": "dunedain",
+       "name": "Edain federate companies",
+       "n": 8000,
+       "lo": 5000,
+       "hi": 12000,
+       "conf": "L",
+       "cite": "Beor's & Hador's houses in the lines - Silm 18"
+      }
+     ]
+    },
+    {
+     "name": "Angband",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "orc assault-waves behind the fire",
+       "n": 150000,
+       "lo": 100000,
+       "hi": 200000,
+       "conf": "L",
+       "cite": "'multitudes such as the Noldor had never before seen or imagined' - Silm 18"
+      },
+      {
+       "g": "creatures",
+       "name": "Glaurung, Balrogs, the rivers of flame",
+       "n": 4,
+       "lo": 3,
+       "hi": 8,
+       "conf": "L",
+       "cite": "Silm 18: Glaurung came 'in his full might' and 'in his train were Balrogs' — plural, never numbered. The HoME X note's '3 or at most 7' bounds how many Balrogs EVER existed, not how many fought here."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nirnaeth",
+   "label": "Nirnaeth Arnoediad (FA 472)",
+   "era": "FA",
+   "t": 0.8,
+   "sides": [
+    {
+     "name": "Union of Maedhros",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "Fingon's host of Hithlum (with Hador's Men)",
+       "n": 24000,
+       "lo": 18000,
+       "hi": 30000,
+       "conf": "M",
+       "cite": "West-host arrayed Eithel Sirion to Serech - Silm 20"
+      },
+      {
+       "g": "elves",
+       "name": "Turgon's army of Gondolin",
+       "n": 10000,
+       "lo": 10000,
+       "hi": 10000,
+       "conf": "H",
+       "cite": "'an army ten thousand strong' - Silm 20 ★"
+      },
+      {
+       "g": "elves",
+       "name": "Falas & Nargothrond companies",
+       "n": 2000,
+       "lo": 1000,
+       "hi": 3000,
+       "conf": "L",
+       "cite": "Gwindor's company; Cirdan's aid - Silm 20"
+      },
+      {
+       "g": "dunedain",
+       "name": "Haladin of Brethil",
+       "n": 500,
+       "lo": 300,
+       "hi": 800,
+       "conf": "L",
+       "cite": "Haldir's company perished - Silm 20"
+      },
+      {
+       "g": "dwarves",
+       "name": "Dwarves of Belegost (Azaghal)",
+       "n": 3000,
+       "lo": 2000,
+       "hi": 4000,
+       "conf": "L",
+       "cite": "iron-masked; withstood dragon-fire - Silm 20"
+      },
+      {
+       "g": "elves",
+       "name": "Maedhros' eastern host (+ Borrim)",
+       "n": 18000,
+       "lo": 12000,
+       "hi": 25000,
+       "conf": "L",
+       "cite": "the Union's east arm - Silm 20"
+      }
+     ]
+    },
+    {
+     "name": "Angband",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Orc hosts (waves)",
+       "n": 170000,
+       "lo": 120000,
+       "hi": 250000,
+       "conf": "L",
+       "cite": "Angband's host outnumbered the Union; no figure given - Silm 20"
+      },
+      {
+       "g": "darkmen",
+       "name": "Ulfang's Easterlings (traitors)",
+       "n": 8000,
+       "lo": 4000,
+       "hi": 15000,
+       "conf": "L",
+       "cite": "treason at the crisis - Silm 20"
+      },
+      {
+       "g": "orcs",
+       "name": "Glaurung, Balrogs, wolves",
+       "n": 500,
+       "lo": 100,
+       "hi": 1000,
+       "conf": "L",
+       "cite": "Glaurung, Balrogs and wolves together; the corpus numbers none of them - Silm 20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tumhalad",
+   "label": "Tumhalad & the Sack of Nargothrond (FA 495)",
+   "era": "FA",
+   "t": 0.86,
+   "sides": [
+    {
+     "name": "Nargothrond",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "the host of Orodreth (open war at last)",
+       "n": 6000,
+       "lo": 4000,
+       "hi": 8000,
+       "conf": "L",
+       "cite": "Turin's counsel abandoned stealth - Silm 21; CoH"
+      }
+     ]
+    },
+    {
+     "name": "Angband",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Glaurung's orc-host",
+       "n": 22000,
+       "lo": 15000,
+       "hi": 30000,
+       "conf": "L",
+       "cite": "field between Ginglith and Narog - CoH; LoN"
+      },
+      {
+       "g": "creatures",
+       "name": "Glaurung",
+       "n": 1,
+       "lo": 1,
+       "hi": 1,
+       "conf": "H",
+       "cite": "the Great Worm led - CoH XI"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gondolin",
+   "label": "Fall of Gondolin (FA 510)",
+   "era": "FA",
+   "t": 0.865,
+   "sides": [
+    {
+     "name": "Gondolindrim",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "The Houses of Gondolin",
+       "n": 10000,
+       "lo": 8000,
+       "hi": 12000,
+       "conf": "M",
+       "cite": "city army as at 472, rebuilt - Silm 20/23"
+      }
+     ]
+    },
+    {
+     "name": "Angband",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Orcs, Balrogs, dragons, engines",
+       "n": 60000,
+       "lo": 40000,
+       "hi": 80000,
+       "conf": "L",
+       "cite": "host over the northern heights - Silm 23 / FoG"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "doriath",
+   "label": "The Sacks of Doriath (FA c.502 & 506)",
+   "era": "FA",
+   "t": 0.885,
+   "sides": [
+    {
+     "name": "Doriath (Iathrim)",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "march-wards & household of Menegroth",
+       "n": 8000,
+       "lo": 5000,
+       "hi": 12000,
+       "conf": "L",
+       "cite": "the Girdle gone with Melian - Silm 22"
+      }
+     ]
+    },
+    {
+     "name": "Nogrod; then the Feanorians",
+     "free": false,
+     "contingents": [
+      {
+       "g": "dwarves",
+       "name": "the host of Nogrod (first sack)",
+       "n": 6000,
+       "lo": 4000,
+       "hi": 9000,
+       "conf": "L",
+       "cite": "'a great host'; ambushed at Sarn Athrad returning - Silm 22"
+      },
+      {
+       "g": "elves",
+       "name": "the sons of Feanor (second sack)",
+       "n": 3000,
+       "lo": 1500,
+       "hi": 5000,
+       "conf": "L",
+       "cite": "Celegorm, Curufin, Caranthir fell - Silm 22"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sirion",
+   "label": "The Third Kinslaying — the Havens of Sirion (FA c.538)",
+   "era": "FA",
+   "t": 0.95,
+   "sides": [
+    {
+     "name": "The Havens",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "survivors of Gondolin & Doriath",
+       "n": 3000,
+       "lo": 1500,
+       "hi": 5000,
+       "conf": "L",
+       "cite": "'the remnant'; some fought for Elwing - Silm 23"
+      }
+     ]
+    },
+    {
+     "name": "The Feanorians",
+     "free": false,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "Maedhros' & Maglor's following",
+       "n": 1500,
+       "lo": 800,
+       "hi": 2500,
+       "conf": "L",
+       "cite": "'some of their people stood aside, and some few rebelled and were slain upon the other part aiding Elwing against their own lords' - Silm 23"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wow",
+   "label": "War of Wrath (FA c.545-587)",
+   "era": "FA",
+   "t": 0.96,
+   "insuf": "The Host of the Valar against the whole power of Angband, which 'had become great beyond count, so that Anfauglith could not contain it'. Tolkien gives no number and says the host could not be counted. Numbers are nowhere given. — Silm 24"
+  },
+  {
+   "id": "gwathlo",
+   "label": "War of the Elves & Sauron (SA 1693-1701)",
+   "era": "SA",
+   "t": 0.49,
+   "sides": [
+    {
+     "name": "Elves & Númenor",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "Gil-galad's Lindon host",
+       "n": 30000,
+       "lo": 20000,
+       "hi": 40000,
+       "conf": "L",
+       "cite": "held the Lhun line - UT G&C"
+      },
+      {
+       "g": "numenor",
+       "name": "Tar-Minastir's expedition (Ciryatur)",
+       "n": 35000,
+       "lo": 25000,
+       "hi": 50000,
+       "conf": "L",
+       "cite": "'great navy'; Gwathlo pincer - UT ★ops"
+      }
+     ]
+    },
+    {
+     "name": "Sauron",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Sauron's host in Eriador",
+       "n": 150000,
+       "lo": 100000,
+       "hi": 250000,
+       "conf": "L",
+       "cite": "overran Eriador; 'routed utterly' - UT"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armament",
+   "label": "The Great Armament (SA 3310-19)",
+   "era": "SA",
+   "t": 0.965,
+   "insuf": "Ar-Pharazôn's fleets 'darkened the sea upon the west of the land, and they were like an archipelago of a thousand isles; their masts were as a forest upon the mountains'. Nine years in the building, and the corpus gives an image where a count would be. Numbers are nowhere given. — Akallabêth"
+  },
+  {
+   "id": "lastalliance",
+   "label": "Last Alliance: Dagorlad & the Siege (SA 3434-41)",
+   "era": "SA",
+   "t": 1.0,
+   "sides": [
+    {
+     "name": "The Last Alliance",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "Gil-galad's host",
+       "n": 30000,
+       "lo": 20000,
+       "hi": 40000,
+       "conf": "L",
+       "cite": "'It recalled to me the glory of the Elder Days and the hosts of Beleriand' - LotR II.2"
+      },
+      {
+       "g": "elves",
+       "name": "Silvan host (Oropher, Amdir)",
+       "n": 27000,
+       "lo": 20000,
+       "hi": 35000,
+       "conf": "M",
+       "cite": "'great army'; barely a third came home - UT ★fraction"
+      },
+      {
+       "g": "dunedain",
+       "name": "Elendil's Arnor + Gondor levies",
+       "n": 35000,
+       "lo": 25000,
+       "hi": 50000,
+       "conf": "L",
+       "cite": "realms in exile at full stretch - RoP/App A"
+      },
+      {
+       "g": "dwarves",
+       "name": "Durin's Folk contingent",
+       "n": 2000,
+       "lo": 1000,
+       "hi": 3000,
+       "conf": "L",
+       "cite": "Moria marched - App A III"
+      }
+     ]
+    },
+    {
+     "name": "Mordor",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Orc legions (7-year rotation)",
+       "n": 130000,
+       "lo": 100000,
+       "hi": 200000,
+       "conf": "L",
+       "cite": "Dagorlad + siege of Barad-dur - RoP"
+      },
+      {
+       "g": "darkmen",
+       "name": "Easterling & Haradrim clients",
+       "n": 30000,
+       "lo": 15000,
+       "hi": 50000,
+       "conf": "L",
+       "cite": "most Men fought for Sauron - RoP"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gladden",
+   "label": "The Gladden Fields (TA 2)",
+   "era": "TA",
+   "t": 0.002,
+   "sides": [
+    {
+     "name": "Isildur's company",
+     "free": true,
+     "contingents": [
+      {
+       "g": "dunedain",
+       "name": "knights & soldiers of the escort",
+       "n": 200,
+       "lo": 200,
+       "hi": 230,
+       "conf": "H",
+       "cite": "'two hundred knights and soldiers' + his sons - UT ★"
+      }
+     ]
+    },
+    {
+     "name": "Orcs of the Mountains",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "the ambush out of the hills",
+       "n": 2000,
+       "lo": 1500,
+       "hi": 3000,
+       "conf": "M",
+       "cite": "outnumbered ten to one - UT, Disaster of the Gladden Fields"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "erui",
+   "label": "Kin-strife: the Crossings of Erui (TA 1447)",
+   "era": "TA",
+   "t": 0.478,
+   "sides": [
+    {
+     "name": "Eldacar's host",
+     "free": true,
+     "contingents": [
+      {
+       "g": "gondor",
+       "name": "Northmen kin & loyal fiefs",
+       "n": 15000,
+       "lo": 10000,
+       "hi": 20000,
+       "conf": "L",
+       "cite": "Eldacar returned with 'great strength' - App A I(iv)"
+      }
+     ]
+    },
+    {
+     "name": "Castamir's usurper-host",
+     "free": false,
+     "contingents": [
+      {
+       "g": "gondor",
+       "name": "the fleet-party and Pelargir levies",
+       "n": 15000,
+       "lo": 10000,
+       "hi": 20000,
+       "conf": "L",
+       "cite": "'much of the best blood in Gondor was shed' - App A"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "camp1944",
+   "label": "Battle of the Camp (TA 1944)",
+   "era": "TA",
+   "t": 0.643,
+   "sides": [
+    {
+     "name": "Gondor — the Southern Army",
+     "free": true,
+     "contingents": [
+      {
+       "g": "gondor",
+       "name": "Earnil's army + Ithilien retreat-remnant",
+       "n": 15000,
+       "lo": 10000,
+       "hi": 20000,
+       "conf": "L",
+       "cite": "victory at Poros then north by forced march - App A; UT Cirion notes"
+      }
+     ]
+    },
+    {
+     "name": "The Wainriders",
+     "free": false,
+     "contingents": [
+      {
+       "g": "darkmen",
+       "name": "the victorious host, feasting in camp",
+       "n": 20000,
+       "lo": 15000,
+       "hi": 30000,
+       "conf": "L",
+       "cite": "'driven into the Dead Marshes' - App A I(iv)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fornost",
+   "label": "Battle of Fornost (TA 1975)",
+   "era": "TA",
+   "t": 0.654,
+   "sides": [
+    {
+     "name": "Gondor, Lindon & the North",
+     "free": true,
+     "contingents": [
+      {
+       "g": "dunedain",
+       "name": "Earnur's army of Gondor",
+       "n": 15000,
+       "lo": 10000,
+       "hi": 20000,
+       "conf": "L",
+       "cite": "fleet filled Forlond and Harlond - App A"
+      },
+      {
+       "g": "elves",
+       "name": "Cirdan's elves + Rivendell",
+       "n": 4000,
+       "lo": 2000,
+       "hi": 7000,
+       "conf": "L",
+       "cite": "Glorfindel's pursuit - App A"
+      }
+     ]
+    },
+    {
+     "name": "Angmar",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Witch-king's orcs and hillmen",
+       "n": 22000,
+       "lo": 15000,
+       "hi": 30000,
+       "conf": "L",
+       "cite": "Angmar broken; pursued to the Ettenmoors - App A"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "celebrant",
+   "label": "Field of Celebrant (TA 2510)",
+   "era": "TA",
+   "t": 0.831,
+   "sides": [
+    {
+     "name": "Gondor & the Eotheod",
+     "free": true,
+     "contingents": [
+      {
+       "g": "middlemen",
+       "name": "Eorl's riders",
+       "n": 7300,
+       "lo": 7000,
+       "hi": 7600,
+       "conf": "M",
+       "cite": "UT: 'some seven thousand fully-armed riders and some hundreds of horsed archers'. The 7,000 is Tolkien's; the 300 resolves 'some hundreds' and is ours, so this is M and not H ★"
+      },
+      {
+       "g": "dunedain",
+       "name": "Cirion's trapped northern army",
+       "n": 10000,
+       "lo": 8000,
+       "hi": 15000,
+       "conf": "L",
+       "cite": "driven over Limlight - UT"
+      }
+     ]
+    },
+    {
+     "name": "Balchoth & Orcs",
+     "free": false,
+     "contingents": [
+      {
+       "g": "darkmen",
+       "name": "Balchoth host",
+       "n": 30000,
+       "lo": 22000,
+       "hi": 45000,
+       "conf": "L",
+       "cite": "had overrun the Wold - UT/App A"
+      },
+      {
+       "g": "orcs",
+       "name": "Orc allies",
+       "n": 6000,
+       "lo": 3000,
+       "hi": 10000,
+       "conf": "L",
+       "cite": "orcs pressed them toward Anduin - UT"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "greenfields",
+   "label": "Battle of Greenfields (TA 2747)",
+   "era": "TA",
+   "t": 0.909,
+   "sides": [
+    {
+     "name": "The Shire",
+     "free": true,
+     "contingents": [
+      {
+       "g": "hobbits",
+       "name": "Bandobras 'Bullroarer' Took's muster",
+       "n": 300,
+       "lo": 150,
+       "hi": 500,
+       "conf": "L",
+       "cite": "the only battle within the Shire before Bywater - Prologue; Hobbit i"
+      }
+     ]
+    },
+    {
+     "name": "Orcs of Mount Gram",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Golfimbul's raiding band",
+       "n": 200,
+       "lo": 100,
+       "hi": 400,
+       "conf": "L",
+       "cite": "the goblin-king's head and the golf-hole - Hobbit i"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "azanulbizar",
+   "label": "Azanulbizar (TA 2799)",
+   "era": "TA",
+   "t": 0.927,
+   "sides": [
+    {
+     "name": "The Dwarf-houses",
+     "free": true,
+     "contingents": [
+      {
+       "g": "dwarves",
+       "name": "Host of Durin's Folk + all Houses",
+       "n": 18000,
+       "lo": 12000,
+       "hi": 25000,
+       "conf": "M",
+       "cite": "'barely half... could still stand' - App A ★fraction"
+      }
+     ]
+    },
+    {
+     "name": "Orcs of the Misty Mountains",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Gundabad-to-Moria chain",
+       "n": 30000,
+       "lo": 20000,
+       "hi": 40000,
+       "conf": "L",
+       "cite": "every orc-hold from Gundabad to the Gladden - App A"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fivearmies",
+   "label": "Battle of Five Armies (TA 2941)",
+   "era": "TA",
+   "t": 0.974,
+   "sides": [
+    {
+     "name": "Elves, Men & Dwarves",
+     "free": true,
+     "contingents": [
+      {
+       "g": "elves",
+       "name": "The Elvenking's host",
+       "n": 3000,
+       "lo": 1500,
+       "hi": 5000,
+       "conf": "L",
+       "cite": "'many spearmen and bowmen' - Hobbit XIV"
+      },
+      {
+       "g": "middlemen",
+       "name": "Bard's Lake-men",
+       "n": 700,
+       "lo": 400,
+       "hi": 1000,
+       "conf": "L",
+       "cite": "grim-armed survivors - Hobbit XIV/XVII"
+      },
+      {
+       "g": "dwarves",
+       "name": "Dain's Iron Hills veterans",
+       "n": 500,
+       "lo": 500,
+       "hi": 600,
+       "conf": "H",
+       "cite": "'Dain and more than five hundred dwarves' - Hobbit XV ★"
+      },
+      {
+       "g": "other",
+       "name": "Eagles & Beorn",
+       "n": 100,
+       "lo": 50,
+       "hi": 200,
+       "conf": "L",
+       "cite": "the Eagles' descent - Hobbit XVII"
+      }
+     ]
+    },
+    {
+     "name": "Goblins & Wargs",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Bolg's host of the North",
+       "n": 18000,
+       "lo": 10000,
+       "hi": 25000,
+       "conf": "L",
+       "cite": "'three parts of the goblin warriors... perished' - Hobbit XVIII ★fraction"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "osgiliath",
+   "label": "The Assault on Osgiliath (June TA 3018)",
+   "era": "TA",
+   "t": 0.9975,
+   "sides": [
+    {
+     "name": "Gondor",
+     "free": true,
+     "contingents": [
+      {
+       "g": "gondor",
+       "name": "Boromir & Faramir's bridge-guard",
+       "n": 2000,
+       "lo": 1200,
+       "hi": 3000,
+       "conf": "L",
+       "cite": "the last bridge cast down; four swam - LotR II.2"
+      }
+     ]
+    },
+    {
+     "name": "Minas Morgul",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "the Morgul-host (the war's first stroke)",
+       "n": 8000,
+       "lo": 5000,
+       "hi": 12000,
+       "conf": "L",
+       "cite": "a dark shape of malice; the Black Captain led - II.2; App B"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "isen",
+   "label": "Battles of the Fords of Isen (TA 3019, Feb-Mar)",
+   "era": "TA",
+   "t": 0.9985,
+   "sides": [
+    {
+     "name": "Rohan (west muster)",
+     "free": true,
+     "contingents": [
+      {
+       "g": "middlemen",
+       "name": "Theodred's & Grimbold's companies",
+       "n": 3500,
+       "lo": 3000,
+       "hi": 4500,
+       "conf": "M",
+       "cite": "8 companies + Elfhelm's riders - UT Fords ★detail"
+      }
+     ]
+    },
+    {
+     "name": "Isengard",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Uruk-hai & wolfriders (waves)",
+       "n": 9000,
+       "lo": 7000,
+       "hi": 11000,
+       "conf": "M",
+       "cite": "part of the single attested ~10,000 that left Isengard — shared with the Hornburg figure, not additional to it [I-M]. Original: part of the 10,000+ total - UT/III.9"
+      },
+      {
+       "g": "darkmen",
+       "name": "Dunlending levies",
+       "n": 2500,
+       "lo": 1500,
+       "hi": 4000,
+       "conf": "L",
+       "cite": "'wild hillmen and herd-folk' armed - III.7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hornburg",
+   "label": "The Hornburg (TA 3019, Mar 3-4)",
+   "era": "TA",
+   "t": 0.999,
+   "sides": [
+    {
+     "name": "Rohan",
+     "free": true,
+     "contingents": [
+      {
+       "g": "middlemen",
+       "name": "Theoden's riding + Westfold levy",
+       "n": 3000,
+       "lo": 2500,
+       "hi": 3500,
+       "conf": "M",
+       "cite": "1,000+ riders; Gamling's 1,000; Erkenbrand's 1,000 - III.7-8 ★components"
+      },
+      {
+       "g": "other",
+       "name": "Huorns (the wood)",
+       "n": 0,
+       "lo": 0,
+       "hi": 0,
+       "conf": "H",
+       "cite": "uncountable; annihilated the rout - III.7/8"
+      }
+     ]
+    },
+    {
+     "name": "Isengard",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Saruman's Uruks and orcs",
+       "n": 7500,
+       "lo": 6000,
+       "hi": 9000,
+       "conf": "M",
+       "cite": "part of Merry's 'ten thousand at the very least' for the WHOLE force leaving Isengard — Hornburg and Isen must share that ceiling, not each claim it [I-M]. Original: of 'ten thousand at the very least' - III.9 ★"
+      },
+      {
+       "g": "darkmen",
+       "name": "Dunlendings",
+       "n": 2500,
+       "lo": 1500,
+       "hi": 4000,
+       "conf": "M",
+       "cite": "spared after surrender - III.8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pelennor",
+   "label": "Battle of the Pelennor Fields (TA 3019, Mar 15)",
+   "era": "TA",
+   "t": 0.9993,
+   "sides": [
+    {
+     "name": "Gondor & Rohan",
+     "free": true,
+     "contingents": [
+      {
+       "g": "dunedain",
+       "name": "Minas Tirith garrison & Rammas forces",
+       "n": 6500,
+       "lo": 5000,
+       "hi": 8000,
+       "conf": "M",
+       "cite": "INFERRED — no garrison figure exists; the line 'it lacked half the men' describes the city's empty houses, not its soldiers [I-M]; Causeway forts - V.1/4"
+      },
+      {
+       "g": "dunedain",
+       "name": "The outland fiefs",
+       "n": 2900,
+       "lo": 2800,
+       "hi": 3000,
+       "conf": "H",
+       "cite": "'less than three thousands full told' - V.1 ★list"
+      },
+      {
+       "g": "middlemen",
+       "name": "The Rohirrim",
+       "n": 6000,
+       "lo": 5500,
+       "hi": 6000,
+       "conf": "H",
+       "cite": "'six thousands at the least' - V.3 ★"
+      },
+      {
+       "g": "dunedain",
+       "name": "Aragorn's southern relief (fleet)",
+       "n": 5000,
+       "lo": 4000,
+       "hi": 7000,
+       "conf": "M",
+       "cite": "INFERRED — the corpus gives no number for the Harlond landing; the 4,000 under Angbor belong to the later Morannon council, not Pelennor [I-M]"
+      }
+     ]
+    },
+    {
+     "name": "Mordor & allies",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Morgul & Barad-dur hosts",
+       "n": 40000,
+       "lo": 30000,
+       "hi": 55000,
+       "conf": "L",
+       "cite": "greater than any yet; Grond; trolls - V.4"
+      },
+      {
+       "g": "darkmen",
+       "name": "Haradrim",
+       "n": 18000,
+       "lo": 18000,
+       "hi": 25000,
+       "conf": "M",
+       "cite": "Rohirrim 'thrice outnumbered by the Haradrim alone' - V.6 ★ratio"
+      },
+      {
+       "g": "darkmen",
+       "name": "Easterlings & Variags",
+       "n": 10000,
+       "lo": 6000,
+       "hi": 15000,
+       "conf": "L",
+       "cite": "Rhun and Khand at the Harlond - V.6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lorien",
+   "label": "The Assaults on Lorien (TA 3019, Jan-Mar ×3)",
+   "era": "TA",
+   "t": 0.99934,
+   "insuf": "Dol Guldur assailed Lorien thrice; 'the power that dwelt there was too great for any to overcome' save Sauron came himself. Numbers are nowhere given. — App B"
+  },
+  {
+   "id": "mirkwood",
+   "label": "The Battle under the Trees (TA 3019, Mar 15)",
+   "era": "TA",
+   "t": 0.99936,
+   "insuf": "Thranduil repelled the forces of Dol Guldur 'long battle under the trees'; the forest burned. Numbers are nowhere given. — App B"
+  },
+  {
+   "id": "dale",
+   "label": "Battle of Dale & Siege of Erebor (TA 3019, Mar 17-27)",
+   "era": "TA",
+   "t": 0.9994,
+   "sides": [
+    {
+     "name": "Dale & Erebor",
+     "free": true,
+     "contingents": [
+      {
+       "g": "middlemen",
+       "name": "Men of Dale (King Brand)",
+       "n": 5000,
+       "lo": 3000,
+       "hi": 8000,
+       "conf": "L",
+       "cite": "three days' battle; Brand falls - App A/B"
+      },
+      {
+       "g": "dwarves",
+       "name": "Durin's Folk (Dain falls)",
+       "n": 3500,
+       "lo": 2000,
+       "hi": 5000,
+       "conf": "L",
+       "cite": "siege withstood; sortie victorious - App A/B"
+      }
+     ]
+    },
+    {
+     "name": "Sauron's northern army",
+     "free": false,
+     "contingents": [
+      {
+       "g": "darkmen",
+       "name": "Easterling host",
+       "n": 28000,
+       "lo": 20000,
+       "hi": 40000,
+       "conf": "L",
+       "cite": "'great force'; two-front northern war - App B"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "morannon",
+   "label": "The Morannon (TA 3019, Mar 25)",
+   "era": "TA",
+   "t": 0.9996,
+   "sides": [
+    {
+     "name": "Host of the West",
+     "free": true,
+     "contingents": [
+      {
+       "g": "dunedain",
+       "name": "Gondor foot & horse",
+       "n": 4000,
+       "lo": 3500,
+       "hi": 4500,
+       "conf": "H",
+       "cite": "of the 7,000 mustered; <6,000 at the Gate - V.9/10 ★"
+      },
+      {
+       "g": "middlemen",
+       "name": "Rohirrim (Eomer's 500 + horse)",
+       "n": 1500,
+       "lo": 1200,
+       "hi": 1800,
+       "conf": "H",
+       "cite": "composition listed - V.9 ★"
+      },
+      {
+       "g": "other",
+       "name": "Eagles at the crisis",
+       "n": 50,
+       "lo": 20,
+       "hi": 100,
+       "conf": "L",
+       "cite": "'the Eagles are coming!' - V.10"
+      }
+     ]
+    },
+    {
+     "name": "Mordor",
+     "free": false,
+     "contingents": [
+      {
+       "g": "orcs",
+       "name": "Orc legions & Olog-hai",
+       "n": 55000,
+       "lo": 45000,
+       "hi": 80000,
+       "conf": "M",
+       "cite": "'ten times and more than ten times' 6,000 - V.10 ★ratio"
+      },
+      {
+       "g": "darkmen",
+       "name": "Easterlings held in reserve",
+       "n": 15000,
+       "lo": 10000,
+       "hi": 25000,
+       "conf": "L",
+       "cite": "host hidden by Ered Lithui - V.10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bywater",
+   "label": "Battle of Bywater (TA 3019, Nov 3)",
+   "era": "TA",
+   "t": 0.99995,
+   "sides": [
+    {
+     "name": "The Shire",
+     "free": true,
+     "contingents": [
+      {
+       "g": "hobbits",
+       "name": "Bywater & Tookland muster",
+       "n": 300,
+       "lo": 280,
+       "hi": 400,
+       "conf": "M",
+       "cite": "~200 + 100 Tooks; 19 fell - VI.8 ★detail"
+      }
+     ]
+    },
+    {
+     "name": "Sharkey's ruffians",
+     "free": false,
+     "contingents": [
+      {
+       "g": "darkmen",
+       "name": "Ruffian brigands",
+       "n": 100,
+       "lo": 80,
+       "hi": 120,
+       "conf": "H",
+       "cite": "'close on a hundred'; ~70 slain - VI.8 ★"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "maps": {
+  "nirnaeth": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       10,
+       40
+      ],
+      [
+       80,
+       20
+      ],
+      [
+       150,
+       35
+      ],
+      [
+       110,
+       60
+      ]
+     ],
+     "n": "Ered Engrin / Angband"
+    },
+    {
+     "t": "town",
+     "x": 95,
+     "y": 42,
+     "n": "Angband"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       5,
+       90
+      ],
+      [
+       40,
+       70
+      ],
+      [
+       60,
+       110
+      ],
+      [
+       20,
+       140
+      ]
+     ],
+     "n": "Ered Wethrin"
+    },
+    {
+     "t": "town",
+     "x": 52,
+     "y": 120,
+     "n": "Eithel Sirion"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       330,
+       60
+      ],
+      [
+       395,
+       50
+      ],
+      [
+       390,
+       90
+      ],
+      [
+       340,
+       95
+      ]
+     ],
+     "n": "Himring"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 150,
+     "n": "ANFAUGLITH"
+    },
+    {
+     "t": "water",
+     "pts": [
+      [
+       60,
+       240
+      ],
+      [
+       90,
+       220
+      ],
+      [
+       110,
+       260
+      ],
+      [
+       70,
+       275
+      ]
+     ],
+     "n": "Fen of Serech"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Fingon's West-host",
+     "n": 24000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       60,
+       140
+      ],
+      [
+       60,
+       140
+      ],
+      [
+       120,
+       110
+      ],
+      [
+       95,
+       70
+      ],
+      [
+       80,
+       180
+      ],
+      [
+       75,
+       235
+      ]
+     ],
+     "ne": 2400,
+     "lc": "the western host annihilated; Fingon slain — Silm 20 [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Turgon (from the south)",
+     "n": 10000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       150,
+       290
+      ],
+      [
+       150,
+       290
+      ],
+      [
+       150,
+       290
+      ],
+      [
+       140,
+       220
+      ],
+      [
+       110,
+       200
+      ],
+      [
+       95,
+       240
+      ]
+     ],
+     "ne": 7000,
+     "lc": "Gondolin's phalanx withdraws in order — Silm 20 [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Maedhros' East-host",
+     "n": 15000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       360,
+       80
+      ],
+      [
+       360,
+       80
+      ],
+      [
+       360,
+       80
+      ],
+      [
+       300,
+       100
+      ],
+      [
+       330,
+       90
+      ],
+      [
+       360,
+       80
+      ]
+     ],
+     "ne": 3750,
+     "lc": "the eastern host scattered — Silm 20 [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Belegost Dwarves",
+     "n": 3000,
+     "c": "#eb6834",
+     "p": [
+      [
+       350,
+       110
+      ],
+      [
+       350,
+       110
+      ],
+      [
+       350,
+       110
+      ],
+      [
+       300,
+       120
+      ],
+      [
+       280,
+       130
+      ],
+      [
+       300,
+       140
+      ]
+     ],
+     "ne": 2100,
+     "lc": "they withdrew in order, bearing Azaghâl — Silm 20 [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the bait-host",
+     "n": 30000,
+     "c": "#e34948",
+     "p": [
+      [
+       150,
+       80
+      ],
+      [
+       150,
+       90
+      ],
+      [
+       130,
+       120
+      ],
+      [
+       110,
+       90
+      ],
+      [
+       130,
+       140
+      ],
+      [
+       150,
+       120
+      ]
+     ],
+     "ne": 3000,
+     "lc": "the feint destroyed by the western charge [I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Angband main host",
+     "n": 150000,
+     "c": "#e34948",
+     "p": [
+      [
+       100,
+       55
+      ],
+      [
+       100,
+       55
+      ],
+      [
+       100,
+       55
+      ],
+      [
+       130,
+       80
+      ],
+      [
+       160,
+       120
+      ],
+      [
+       140,
+       170
+      ]
+     ],
+     "ne": 105000,
+     "lc": "[I-L]"
+    },
+    {
+     "s": 1,
+     "l": "Glaurung & Balrogs",
+     "n": 7,
+     "c": "#898781",
+     "p": [
+      [
+       100,
+       50
+      ],
+      [
+       100,
+       50
+      ],
+      [
+       100,
+       50
+      ],
+      [
+       100,
+       50
+      ],
+      [
+       250,
+       110
+      ],
+      [
+       300,
+       120
+      ]
+     ],
+     "ne": 5,
+     "lc": "[I-L]"
+    },
+    {
+     "s": 1,
+     "l": "Ulfang's treason",
+     "n": 8000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       330,
+       100
+      ],
+      [
+       330,
+       100
+      ],
+      [
+       330,
+       100
+      ],
+      [
+       330,
+       100
+      ],
+      [
+       310,
+       105
+      ],
+      [
+       290,
+       95
+      ]
+     ],
+     "ne": 4800,
+     "lc": "[I-L]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "the hosts array — west & east"
+    },
+    {
+     "t": 0.2,
+     "l": "the bait; Gwindor's charge to the very gates"
+    },
+    {
+     "t": 0.4,
+     "l": "the trap springs; Turgon comes up from the south"
+    },
+    {
+     "t": 0.7,
+     "l": "Glaurung sunders the hosts; Ulfang turns his coat"
+    },
+    {
+     "t": 1,
+     "l": "Hurin's stand at Serech; Turgon escapes south"
+    }
+   ],
+   "scale": 20000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "west host",
+     "sh": "line",
+     "x": 48,
+     "y": 135,
+     "w": 40,
+     "h": 12,
+     "rot": 75,
+     "l": "Fingon's array",
+     "note": "The host of Hithlum — Noldor, Sindar of Mithrim and the Edain of Dor-lómin — arrayed under Ered Wethrin's eaves; Húrin counselled the defensive.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      0
+     ],
+     "s": 0,
+     "k": "vanguard",
+     "sh": "wedge",
+     "x": 75,
+     "y": 110,
+     "w": 18,
+     "h": 12,
+     "rot": -45,
+     "l": "Gwindor's van",
+     "note": "Gwindor of Nargothrond at the front — grief-mad for his brother; his charge will carry to Angband's very gate.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      0,
+      1,
+      2
+     ],
+     "s": 0,
+     "k": "east host",
+     "sh": "line",
+     "x": 345,
+     "y": 95,
+     "w": 44,
+     "h": 13,
+     "rot": 115,
+     "l": "Maedhros's array (delayed)",
+     "note": "The eastern host — Fëanorians, Naugrim of Belegost, the Easterling levies — held back by Uldor's false warnings.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 1,
+     "k": "bait",
+     "sh": "column",
+     "x": 88,
+     "y": 70,
+     "w": 22,
+     "h": 8,
+     "rot": 100,
+     "l": "the bait from the Gate",
+     "note": "Morgoth's feint host with the herald and the prisoners — the provocation that breaks the western patience.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "phalanx",
+     "sh": "shieldwall",
+     "x": 62,
+     "y": 210,
+     "w": 30,
+     "h": 11,
+     "rot": -60,
+     "l": "Turgon's phalanx",
+     "note": "The host of Gondolin, ten thousand strong, mail-clad and long-sworded, breaks up from the Pass of Sirion — 'the phalanx of the King'.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 1,
+     "k": "dragon",
+     "sh": "wedge",
+     "x": 200,
+     "y": 130,
+     "w": 30,
+     "h": 18,
+     "rot": 90,
+     "l": "Glaurung sunders the hosts",
+     "note": "The Father of Dragons drives between Fingon and Maedhros; only the Dwarves of Belegost withstand his fire — Azaghâl's ring about him.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 1,
+     "k": "treason",
+     "sh": "line",
+     "x": 330,
+     "y": 115,
+     "w": 26,
+     "h": 9,
+     "rot": 295,
+     "l": "Ulfang turns",
+     "note": "The sons of Ulfang go over to Morgoth and fall on the Fëanorian rear — 'the treachery of Men'.",
+     "cite": "Silm 20 [C]"
+    },
+    {
+     "ph": [
+      4
+     ],
+     "s": 0,
+     "k": "rearguard",
+     "sh": "ring",
+     "x": 82,
+     "y": 244,
+     "w": 15,
+     "h": 15,
+     "l": "the stand at Serech",
+     "note": "Húrin and Huor with the men of Dor-lómin hold the Fen: Huor falls; Húrin last of all — 'Aurë entuluva!' seventy times.",
+     "cite": "Silm 20 [C]"
+    }
+   ]
+  },
+  "gondolin": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       30,
+       30
+      ],
+      [
+       200,
+       10
+      ],
+      [
+       370,
+       30
+      ],
+      [
+       390,
+       150
+      ],
+      [
+       350,
+       270
+      ],
+      [
+       60,
+       270
+      ],
+      [
+       10,
+       150
+      ]
+     ],
+     "n": "Echoriath"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 250,
+     "n": "TUMLADEN"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 150,
+     "n": "Gondolin (Amon Gwareth)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Houses of Gondolin",
+     "n": 10000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       160
+      ]
+     ],
+     "ne": 1500,
+     "lc": "the city fell; the remnant fled by Idril's way — FoG/Silm 23 [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "the escape (Idril's way)",
+     "n": 800,
+     "c": "#2a78d6",
+     "p": [
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       150,
+       60
+      ],
+      [
+       110,
+       40
+      ]
+     ],
+     "ne": 680,
+     "lc": "Glorfindel's ransom in the Cirith Thoronath — Silm 23 [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "orc & wolf host",
+     "n": 50000,
+     "c": "#e34948",
+     "p": [
+      [
+       210,
+       20
+      ],
+      [
+       210,
+       40
+      ],
+      [
+       205,
+       90
+      ],
+      [
+       200,
+       120
+      ],
+      [
+       200,
+       140
+      ]
+     ],
+     "ne": 37500,
+     "lc": "[I-L]"
+    },
+    {
+     "s": 1,
+     "l": "dragons & Balrogs",
+     "n": 10,
+     "c": "#898781",
+     "p": [
+      [
+       230,
+       25
+      ],
+      [
+       230,
+       45
+      ],
+      [
+       220,
+       95
+      ],
+      [
+       210,
+       125
+      ],
+      [
+       205,
+       145
+      ]
+     ],
+     "ne": 9,
+     "lc": "[I-L]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "the host crosses the northern heights at the Gates of Summer"
+    },
+    {
+     "t": 0.35,
+     "l": "the plain is taken; siege of the hill"
+    },
+    {
+     "t": 0.7,
+     "l": "the city burns; Ecthelion & Gothmog at the fountain"
+    },
+    {
+     "t": 1,
+     "l": "the secret way north; Glorfindel at Cirith Thoronath"
+    }
+   ],
+   "scale": 20000
+  },
+  "gwathlo": {
+   "bg": [
+    {
+     "t": "water",
+     "pts": [
+      [
+       0,
+       0
+      ],
+      [
+       60,
+       0
+      ],
+      [
+       40,
+       300
+      ],
+      [
+       0,
+       300
+      ]
+     ],
+     "n": "the Sea"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       60,
+       60
+      ],
+      [
+       150,
+       80
+      ],
+      [
+       260,
+       70
+      ],
+      [
+       395,
+       60
+      ]
+     ],
+     "n": "R. Lhun"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       55,
+       200
+      ],
+      [
+       160,
+       190
+      ],
+      [
+       240,
+       210
+      ],
+      [
+       395,
+       230
+      ]
+     ],
+     "n": "R. Gwathlo"
+    },
+    {
+     "t": "town",
+     "x": 70,
+     "y": 205,
+     "n": "Vinyalonde"
+    },
+    {
+     "t": "town",
+     "x": 80,
+     "y": 65,
+     "n": "Grey Havens"
+    },
+    {
+     "t": "town",
+     "x": 250,
+     "y": 140,
+     "n": "(Eregion, destroyed)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Gil-galad's line at the Lhun",
+     "n": 30000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       100,
+       75
+      ],
+      [
+       100,
+       75
+      ],
+      [
+       110,
+       78
+      ],
+      [
+       130,
+       80
+      ],
+      [
+       150,
+       85
+      ]
+     ],
+     "ne": 25500,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Ciryatur's main landing",
+     "n": 25000,
+     "c": "#4a3aa7",
+     "p": [
+      [
+       30,
+       90
+      ],
+      [
+       30,
+       90
+      ],
+      [
+       75,
+       80
+      ],
+      [
+       120,
+       90
+      ],
+      [
+       170,
+       120
+      ],
+      [
+       210,
+       170
+      ]
+     ],
+     "ne": 23000,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "the Vinyalonde pincer",
+     "n": 12000,
+     "c": "#4a3aa7",
+     "p": [
+      [
+       30,
+       220
+      ],
+      [
+       30,
+       220
+      ],
+      [
+       30,
+       220
+      ],
+      [
+       70,
+       205
+      ],
+      [
+       130,
+       200
+      ],
+      [
+       190,
+       205
+      ]
+     ],
+     "ne": 11400,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Sauron's host in Eriador",
+     "n": 180000,
+     "c": "#e34948",
+     "p": [
+      [
+       330,
+       140
+      ],
+      [
+       300,
+       130
+      ],
+      [
+       250,
+       120
+      ],
+      [
+       200,
+       110
+      ],
+      [
+       190,
+       160
+      ],
+      [
+       200,
+       195
+      ]
+     ],
+     "ne": 14400,
+     "lc": "'routed utterly'... 'barely escaped' — UT [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "S.A. 1695-99: Eriador overrun; Eregion destroyed"
+    },
+    {
+     "t": 0.3,
+     "l": "1700: the Numenorean navy lands at the Lhun"
+    },
+    {
+     "t": 0.6,
+     "l": "the line holds; the second force lands at Vinyalonde"
+    },
+    {
+     "t": 1,
+     "l": "taken front and rear at the Gwathlo — 'routed utterly'"
+    }
+   ],
+   "scale": 30000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "Sauron's host",
+     "sh": "line",
+     "x": 215,
+     "y": 180,
+     "w": 46,
+     "h": 14,
+     "rot": -15,
+     "l": "the conqueror of Eriador",
+     "note": "Eregion destroyed, Eriador overrun; Sauron's main strength between the two rivers.",
+     "cite": "UT, Galadriel & Celeborn [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 0,
+     "k": "first landing",
+     "sh": "ships",
+     "x": 95,
+     "y": 70,
+     "w": 36,
+     "h": 12,
+     "l": "the navy at the Lhûn",
+     "note": "Tar-Minastir's admiral Ciryatur lands the great armament; Lindon's siege is broken.",
+     "cite": "UT [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "second landing",
+     "sh": "ships",
+     "x": 75,
+     "y": 200,
+     "w": 32,
+     "h": 12,
+     "l": "the descent at Vinyalondë",
+     "note": "A second force put ashore at the old haven takes the enemy in the rear — the hammer of the pincer.",
+     "cite": "UT [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 0,
+     "k": "pincer",
+     "sh": "wedge",
+     "x": 170,
+     "y": 195,
+     "w": 24,
+     "h": 15,
+     "rot": 65,
+     "l": "taken front and rear",
+     "note": "At the Gwathló crossing Sauron is 'routed utterly' and barely escapes east with his bodyguard.",
+     "cite": "UT [C]"
+    }
+   ]
+  },
+  "lastalliance": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       200,
+       140
+      ],
+      [
+       380,
+       150
+      ],
+      [
+       380,
+       175
+      ],
+      [
+       40,
+       175
+      ]
+     ],
+     "n": "Ephel Duath"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       180,
+       150
+      ],
+      [
+       220,
+       150
+      ]
+     ],
+     "n": "the Morannon"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 80,
+     "n": "DAGORLAD"
+    },
+    {
+     "t": "town",
+     "x": 300,
+     "y": 230,
+     "n": "Barad-dur"
+    },
+    {
+     "t": "water",
+     "pts": [
+      [
+       30,
+       30
+      ],
+      [
+       90,
+       20
+      ],
+      [
+       110,
+       60
+      ],
+      [
+       50,
+       70
+      ]
+     ],
+     "n": "Dead Marshes (after)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Gil-galad & Elendil",
+     "n": 65000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       190,
+       20
+      ],
+      [
+       190,
+       40
+      ],
+      [
+       195,
+       70
+      ],
+      [
+       200,
+       110
+      ],
+      [
+       200,
+       145
+      ],
+      [
+       240,
+       200
+      ],
+      [
+       285,
+       225
+      ]
+     ],
+     "ne": 39000,
+     "lc": "'great was the loss': Dagorlad, the seven-year siege, the deaths of the kings — Silm/App B [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Silvan host (Oropher, Amdir)",
+     "n": 28000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       150,
+       25
+      ],
+      [
+       150,
+       45
+      ],
+      [
+       160,
+       75
+      ],
+      [
+       170,
+       115
+      ],
+      [
+       180,
+       148
+      ],
+      [
+       220,
+       205
+      ],
+      [
+       270,
+       232
+      ]
+     ],
+     "ne": 9800,
+     "lc": "'two thirds of his following' fell with Oropher — UT [C]"
+    },
+    {
+     "s": 0,
+     "l": "Khazad-dum & Men of the North",
+     "n": 15000,
+     "c": "#eb6834",
+     "p": [
+      [
+       240,
+       25
+      ],
+      [
+       240,
+       45
+      ],
+      [
+       235,
+       75
+      ],
+      [
+       230,
+       115
+      ],
+      [
+       225,
+       148
+      ],
+      [
+       260,
+       205
+      ],
+      [
+       300,
+       240
+      ]
+     ],
+     "ne": 9000,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the host of Mordor",
+     "n": 150000,
+     "c": "#e34948",
+     "p": [
+      [
+       200,
+       160
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       120
+      ],
+      [
+       205,
+       95
+      ],
+      [
+       210,
+       150
+      ],
+      [
+       280,
+       215
+      ],
+      [
+       300,
+       232
+      ]
+     ],
+     "ne": 22500,
+     "lc": "the host broken; Sauron overthrown [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "S.A. 3434: the Alliance comes down from the north"
+    },
+    {
+     "t": 0.35,
+     "l": "Dagorlad: 'all living things were divided in that day'"
+    },
+    {
+     "t": 0.6,
+     "l": "the Black Gate is forced; Oropher falls charging unbidden"
+    },
+    {
+     "t": 1,
+     "l": "the seven-year siege; Sauron overthrown on Orodruin's slope"
+    }
+   ],
+   "scale": 30000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "the Alliance",
+     "sh": "line",
+     "x": 195,
+     "y": 58,
+     "w": 72,
+     "h": 15,
+     "rot": 0,
+     "l": "the host of Gil-galad and Elendil",
+     "note": "The greatest array since the War of Wrath on the plain of Dagorlad: the Elven spear-hosts with the mail of Númenor's exiles.",
+     "cite": "Silm, Of the Rings; App B [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 0,
+     "k": "Silvan charge",
+     "sh": "wedge",
+     "x": 165,
+     "y": 95,
+     "w": 20,
+     "h": 13,
+     "rot": 90,
+     "l": "Oropher's charge",
+     "note": "The Silvan king charges before Gil-galad gives the sign, and falls with two thirds of his following — valour ill-armoured.",
+     "cite": "UT [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "Mordor host",
+     "sh": "line",
+     "x": 200,
+     "y": 135,
+     "w": 60,
+     "h": 14,
+     "rot": 0,
+     "l": "Sauron's array before the Gate",
+     "note": "Orcs beyond count with Easterling allegiances; the battle 'went on above the Dead Marshes' — where the faces lie yet.",
+     "cite": "App B; LotR IV.2 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "siege",
+     "sh": "arc",
+     "x": 300,
+     "y": 228,
+     "w": 40,
+     "h": 36,
+     "l": "the leaguer of Barad-dûr",
+     "note": "Seven years about the Tower; Anárion slain by a cast stone; at the last Sauron comes forth himself.",
+     "cite": "Silm; App B [C]"
+    }
+   ]
+  },
+  "fornost": {
+   "bg": [
+    {
+     "t": "water",
+     "pts": [
+      [
+       0,
+       0
+      ],
+      [
+       45,
+       0
+      ],
+      [
+       30,
+       300
+      ],
+      [
+       0,
+       300
+      ]
+     ],
+     "n": "Lune / the Sea"
+    },
+    {
+     "t": "town",
+     "x": 60,
+     "y": 80,
+     "n": "Mithlond"
+    },
+    {
+     "t": "town",
+     "x": 300,
+     "y": 90,
+     "n": "Fornost"
+    },
+    {
+     "t": "lab",
+     "x": 230,
+     "y": 60,
+     "n": "the North Downs"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       120,
+       200
+      ],
+      [
+       190,
+       190
+      ],
+      [
+       230,
+       230
+      ],
+      [
+       140,
+       245
+      ]
+     ],
+     "n": "(Evendim)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Earnur's army of Gondor",
+     "n": 15000,
+     "c": "#008300",
+     "p": [
+      [
+       55,
+       85
+      ],
+      [
+       80,
+       85
+      ],
+      [
+       130,
+       90
+      ],
+      [
+       190,
+       95
+      ],
+      [
+       250,
+       95
+      ],
+      [
+       290,
+       92
+      ]
+     ],
+     "ne": 13500,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Cirdan & the Dunedain remnant",
+     "n": 6000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       65,
+       95
+      ],
+      [
+       90,
+       100
+      ],
+      [
+       140,
+       105
+      ],
+      [
+       200,
+       108
+      ],
+      [
+       255,
+       103
+      ],
+      [
+       295,
+       98
+      ]
+     ],
+     "ne": 5100,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Glorfindel's riders (the pursuit)",
+     "n": 2000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       70,
+       90
+      ],
+      [
+       70,
+       90
+      ],
+      [
+       70,
+       90
+      ],
+      [
+       210,
+       100
+      ],
+      [
+       320,
+       85
+      ],
+      [
+       370,
+       60
+      ]
+     ],
+     "ne": 1900,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the host of Angmar",
+     "n": 22000,
+     "c": "#e34948",
+     "p": [
+      [
+       350,
+       70
+      ],
+      [
+       340,
+       75
+      ],
+      [
+       320,
+       82
+      ],
+      [
+       300,
+       88
+      ],
+      [
+       330,
+       75
+      ],
+      [
+       385,
+       55
+      ]
+     ],
+     "ne": 440,
+     "lc": "'not a man nor an orc of that realm remained west of the Mountains' — App A [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "1975: the fleet fills the Havens; the army marches east"
+    },
+    {
+     "t": 0.45,
+     "l": "battle on the plain west of Fornost"
+    },
+    {
+     "t": 0.75,
+     "l": "the Witch-king breaks north — the cavalry ride him down"
+    },
+    {
+     "t": 1,
+     "l": "'not a man nor an orc of that realm remained west of the Mountains'"
+    }
+   ],
+   "scale": 15000
+  },
+  "celebrant": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       0,
+       120
+      ],
+      [
+       120,
+       130
+      ],
+      [
+       260,
+       125
+      ],
+      [
+       395,
+       135
+      ]
+     ],
+     "n": "R. Limlight"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       0,
+       200
+      ],
+      [
+       150,
+       195
+      ],
+      [
+       300,
+       205
+      ],
+      [
+       395,
+       200
+      ]
+     ],
+     "n": "R. Celebrant"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 165,
+     "n": "the Field of Celebrant"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       0,
+       240
+      ],
+      [
+       60,
+       230
+      ],
+      [
+       80,
+       290
+      ],
+      [
+       10,
+       295
+      ]
+     ],
+     "n": "(Misty Mts)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Gondor's trapped northern army",
+     "n": 10000,
+     "c": "#008300",
+     "p": [
+      [
+       220,
+       170
+      ],
+      [
+       220,
+       170
+      ],
+      [
+       200,
+       175
+      ],
+      [
+       180,
+       178
+      ],
+      [
+       185,
+       170
+      ]
+     ],
+     "ne": 6000,
+     "lc": "driven over the Limlight, saved by the charge — App A/UT [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Eorl's riders",
+     "n": 7000,
+     "c": "#e87ba4",
+     "p": [
+      [
+       200,
+       20
+      ],
+      [
+       200,
+       45
+      ],
+      [
+       195,
+       80
+      ],
+      [
+       190,
+       115
+      ],
+      [
+       195,
+       150
+      ],
+      [
+       210,
+       168
+      ]
+     ],
+     "ne": 6510,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the Balchoth host",
+     "n": 35000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       330,
+       150
+      ],
+      [
+       320,
+       155
+      ],
+      [
+       290,
+       160
+      ],
+      [
+       250,
+       168
+      ],
+      [
+       230,
+       175
+      ],
+      [
+       210,
+       185
+      ]
+     ],
+     "ne": 1750,
+     "lc": "the host destroyed — App A [C]"
+    },
+    {
+     "s": 1,
+     "l": "orcs out of the mountains",
+     "n": 8000,
+     "c": "#e34948",
+     "p": [
+      [
+       60,
+       250
+      ],
+      [
+       70,
+       240
+      ],
+      [
+       95,
+       225
+      ],
+      [
+       130,
+       205
+      ],
+      [
+       160,
+       190
+      ],
+      [
+       175,
+       180
+      ]
+     ],
+     "ne": 800,
+     "lc": "[C-anchored; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "2510: the army of Gondor is pressed between the rivers"
+    },
+    {
+     "t": 0.4,
+     "l": "orcs strike the flank; the field is near lost"
+    },
+    {
+     "t": 0.7,
+     "l": "unlooked-for: Eorl crosses the Undeeps"
+    },
+    {
+     "t": 1,
+     "l": "the charge sweeps the field; Cirion cedes Calenardhon"
+    }
+   ],
+   "scale": 15000
+  },
+  "azanulbizar": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       0,
+       30
+      ],
+      [
+       400,
+       20
+      ],
+      [
+       400,
+       90
+      ],
+      [
+       0,
+       100
+      ]
+     ],
+     "n": "Misty Mountains"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       180,
+       95
+      ],
+      [
+       220,
+       95
+      ]
+     ],
+     "n": "East-gate of Moria"
+    },
+    {
+     "t": "water",
+     "pts": [
+      [
+       240,
+       200
+      ],
+      [
+       300,
+       190
+      ],
+      [
+       310,
+       240
+      ],
+      [
+       250,
+       250
+      ]
+     ],
+     "n": "Kheled-zaram"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       60,
+       220
+      ],
+      [
+       130,
+       210
+      ],
+      [
+       150,
+       270
+      ],
+      [
+       70,
+       280
+      ]
+     ],
+     "n": "the wood"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the host of the Dwarves",
+     "n": 18000,
+     "c": "#eb6834",
+     "p": [
+      [
+       200,
+       270
+      ],
+      [
+       200,
+       250
+      ],
+      [
+       200,
+       220
+      ],
+      [
+       200,
+       180
+      ],
+      [
+       200,
+       140
+      ],
+      [
+       200,
+       110
+      ]
+     ],
+     "ne": 9000,
+     "lc": "'barely half could still stand' — App A III [C, of the Dwarves]; the orc-holds gutted [C]"
+    },
+    {
+     "s": 0,
+     "l": "Nain's Iron Hills company",
+     "n": 4000,
+     "c": "#eb6834",
+     "p": [
+      [
+       360,
+       240
+      ],
+      [
+       360,
+       240
+      ],
+      [
+       360,
+       240
+      ],
+      [
+       320,
+       180
+      ],
+      [
+       260,
+       130
+      ],
+      [
+       210,
+       105
+      ]
+     ],
+     "ne": 2000,
+     "lc": "'barely half could still stand' — App A III [C, of the Dwarves]; the orc-holds gutted [C]"
+    },
+    {
+     "s": 1,
+     "l": "the orcs of Azog",
+     "n": 30000,
+     "c": "#e34948",
+     "p": [
+      [
+       200,
+       100
+      ],
+      [
+       200,
+       105
+      ],
+      [
+       205,
+       120
+      ],
+      [
+       210,
+       150
+      ],
+      [
+       205,
+       120
+      ],
+      [
+       200,
+       100
+      ]
+     ],
+     "ne": 15000,
+     "lc": "'barely half could still stand' — App A III [C, of the Dwarves]; the orc-holds gutted [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "2799: the Dwarves come up the valley beneath the gate"
+    },
+    {
+     "t": 0.4,
+     "l": "the slopes are taken and retaken; Thror avenged in blood"
+    },
+    {
+     "t": 0.7,
+     "l": "Nain's fresh mattock-companies; Dain slays Azog on the steps"
+    },
+    {
+     "t": 1,
+     "l": "'Barely half of their number, it is said, could still stand'; no pursuit into Moria"
+    }
+   ],
+   "scale": 15000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "Dwarf host",
+     "sh": "line",
+     "x": 200,
+     "y": 225,
+     "w": 56,
+     "h": 13,
+     "rot": 0,
+     "l": "the Folk come up the vale",
+     "note": "The mustered kindreds of Durin's Folk beneath Kheled-zâram; the slopes above held against them.",
+     "cite": "App A III [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "orc host",
+     "sh": "line",
+     "x": 200,
+     "y": 140,
+     "w": 52,
+     "h": 13,
+     "rot": 0,
+     "l": "Azog's lines on the slopes",
+     "note": "The orc-holds' gathered strength on the high ground before the East-gate; 'the slopes were taken and retaken'.",
+     "cite": "App A III [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "mattock-phalanx",
+     "sh": "shieldwall",
+     "x": 268,
+     "y": 190,
+     "w": 30,
+     "h": 12,
+     "rot": -35,
+     "l": "Náin's Iron Hills companies",
+     "note": "Fresh and mailed to the knee, the mattock-bearers force the gate-approach — Náin falls to Azog on the stair, and Dáin above him slays the orc.",
+     "cite": "App A III [C]"
+    },
+    {
+     "ph": [
+      1,
+      2
+     ],
+     "s": 1,
+     "k": "gate guard",
+     "sh": "ring",
+     "x": 200,
+     "y": 100,
+     "w": 13,
+     "h": 13,
+     "l": "the guard of the Gate",
+     "note": "Azog's chosen at the East-gate — the last stand of the war, and its ending.",
+     "cite": "App A III [C]"
+    }
+   ]
+  },
+  "fivearmies": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       150,
+       40
+      ],
+      [
+       250,
+       30
+      ],
+      [
+       290,
+       120
+      ],
+      [
+       200,
+       160
+      ],
+      [
+       110,
+       120
+      ]
+     ],
+     "n": "Erebor"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 95,
+     "n": "the Gate"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       90,
+       140
+      ],
+      [
+       140,
+       150
+      ],
+      [
+       120,
+       200
+      ]
+     ],
+     "n": "Ravenhill"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       210,
+       160
+      ],
+      [
+       230,
+       220
+      ],
+      [
+       260,
+       290
+      ]
+     ],
+     "n": "R. Running"
+    },
+    {
+     "t": "town",
+     "x": 290,
+     "y": 230,
+     "n": "Dale (ruins)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Elvenking's host",
+     "n": 3500,
+     "c": "#2a78d6",
+     "p": [
+      [
+       260,
+       250
+      ],
+      [
+       250,
+       230
+      ],
+      [
+       230,
+       200
+      ],
+      [
+       210,
+       180
+      ],
+      [
+       190,
+       170
+      ],
+      [
+       180,
+       160
+      ]
+     ],
+     "ne": 2625,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Men of the Lake (Bard)",
+     "n": 800,
+     "c": "#1baf7a",
+     "p": [
+      [
+       290,
+       245
+      ],
+      [
+       275,
+       230
+      ],
+      [
+       255,
+       205
+      ],
+      [
+       235,
+       185
+      ],
+      [
+       215,
+       172
+      ],
+      [
+       205,
+       165
+      ]
+     ],
+     "ne": 600,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Dain's 500 (+ the Company)",
+     "n": 500,
+     "c": "#eb6834",
+     "p": [
+      [
+       340,
+       160
+      ],
+      [
+       320,
+       160
+      ],
+      [
+       290,
+       155
+      ],
+      [
+       255,
+       150
+      ],
+      [
+       225,
+       140
+      ],
+      [
+       205,
+       120
+      ]
+     ],
+     "ne": 350,
+     "lc": "Thorin, Fili and Kili fall with many of the Company's kin — Hobbit 18 [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Bolg's goblins & wargs",
+     "n": 18000,
+     "c": "#e34948",
+     "p": [
+      [
+       60,
+       40
+      ],
+      [
+       80,
+       60
+      ],
+      [
+       110,
+       90
+      ],
+      [
+       140,
+       120
+      ],
+      [
+       170,
+       150
+      ],
+      [
+       190,
+       165
+      ]
+     ],
+     "ne": 4500,
+     "lc": "'three parts of the goblin warriors of the North perished' — Hobbit 17 [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "2941: besiegers about the Gate — then the north darkens"
+    },
+    {
+     "t": 0.35,
+     "l": "the alliance turns as one against the goblin-host"
+    },
+    {
+     "t": 0.65,
+     "l": "both spurs held; Bolg's bodyguard breaks the line"
+    },
+    {
+     "t": 1,
+     "l": "Beorn & the Eagles; 'three parts of the goblin warriors of the North perished'"
+    }
+   ],
+   "scale": 8000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "Elves",
+     "sh": "line",
+     "x": 135,
+     "y": 150,
+     "w": 34,
+     "h": 11,
+     "rot": -40,
+     "l": "the Elvenking on the southern spur",
+     "note": "Thranduil's spears and bows hold the southern spur of Ravenhill — first to charge when the alliance turns as one.",
+     "cite": "Hobbit 17 [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "Men & Dwarves",
+     "sh": "line",
+     "x": 255,
+     "y": 160,
+     "w": 34,
+     "h": 11,
+     "rot": 40,
+     "l": "Bard and Dáin on the eastern spur",
+     "note": "The Lake-men under Bard and the Iron Hills mattock-companies on the eastern arm; the valley's mouth between.",
+     "cite": "Hobbit 17 [C]"
+    },
+    {
+     "ph": [
+      1,
+      2
+     ],
+     "s": 1,
+     "k": "goblin host",
+     "sh": "wedge",
+     "x": 200,
+     "y": 60,
+     "w": 40,
+     "h": 22,
+     "rot": 180,
+     "l": "Bolg's vanguard",
+     "note": "The goblins pour over Ravenhill and into the valley from the north, wolf-riders on the flanks — 'the first onslaught'.",
+     "cite": "Hobbit 17 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "sortie",
+     "sh": "wedge",
+     "x": 200,
+     "y": 110,
+     "w": 18,
+     "h": 13,
+     "rot": 180,
+     "l": "Thorin's sortie",
+     "note": "The Gate's wall is cast down and the King under the Mountain leaps out — 'To me! O my kinsfolk!'",
+     "cite": "Hobbit 17 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 1,
+     "k": "bodyguard",
+     "sh": "ring",
+     "x": 205,
+     "y": 85,
+     "w": 14,
+     "h": 14,
+     "l": "Bolg's bodyguard",
+     "note": "The great goblins' ring that Thorin's charge cannot break — where the wounds of Fili, Kili and Thorin are taken.",
+     "cite": "Hobbit 17-18 [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 0,
+     "k": "Beorn & Eagles",
+     "sh": "wedge",
+     "x": 160,
+     "y": 55,
+     "w": 22,
+     "h": 14,
+     "rot": 140,
+     "l": "Beorn in bear's shape",
+     "note": "The Eagles clear the slopes; Beorn breaks the bodyguard, bears Thorin out, and crushes Bolg — 'three parts of the goblin warriors of the North perished'.",
+     "cite": "Hobbit 17-18 [C]"
+    }
+   ]
+  },
+  "isen": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       200,
+       0
+      ],
+      [
+       195,
+       80
+      ],
+      [
+       200,
+       160
+      ],
+      [
+       190,
+       300
+      ]
+     ],
+     "n": "R. Isen"
+    },
+    {
+     "t": "town",
+     "x": 198,
+     "y": 150,
+     "n": "the Fords"
+    },
+    {
+     "t": "lab",
+     "x": 80,
+     "y": 40,
+     "n": "to Isengard"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       0,
+       20
+      ],
+      [
+       70,
+       10
+      ],
+      [
+       90,
+       60
+      ],
+      [
+       10,
+       70
+      ]
+     ],
+     "n": "(Nan Curunir)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Theodred's eight companies",
+     "n": 2500,
+     "c": "#e87ba4",
+     "p": [
+      [
+       210,
+       200
+      ],
+      [
+       205,
+       180
+      ],
+      [
+       200,
+       165
+      ],
+      [
+       195,
+       150
+      ],
+      [
+       200,
+       165
+      ],
+      [
+       205,
+       175
+      ]
+     ],
+     "ne": 1625,
+     "lc": "the king's son and his guard fell at the eyot — UT [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Grimbold & Elfhelm (2nd battle)",
+     "n": 1500,
+     "c": "#e87ba4",
+     "p": [
+      [
+       260,
+       220
+      ],
+      [
+       260,
+       220
+      ],
+      [
+       260,
+       220
+      ],
+      [
+       240,
+       190
+      ],
+      [
+       215,
+       165
+      ],
+      [
+       230,
+       180
+      ]
+     ],
+     "ne": 1050,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Saruman's assault columns",
+     "n": 10000,
+     "c": "#e34948",
+     "p": [
+      [
+       150,
+       30
+      ],
+      [
+       160,
+       60
+      ],
+      [
+       175,
+       100
+      ],
+      [
+       190,
+       140
+      ],
+      [
+       200,
+       158
+      ],
+      [
+       210,
+       175
+      ]
+     ],
+     "ne": 8000,
+     "lc": "the first stroke withdrew when its errand — Théodred's death — was done — UT [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Feb 25: Saruman strikes down both banks"
+    },
+    {
+     "t": 0.4,
+     "l": "Theodred falls on the eyot — 'let me lie here'"
+    },
+    {
+     "t": 0.7,
+     "l": "Mar 2: the second battle; Grimbold's shield-wall"
+    },
+    {
+     "t": 1,
+     "l": "the Fords lost; the way to the Hornburg open"
+    }
+   ],
+   "scale": 8000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "eyot guard",
+     "sh": "ring",
+     "x": 198,
+     "y": 150,
+     "w": 11,
+     "h": 11,
+     "l": "Théodred on the eyot",
+     "note": "The First Battle: the king's son holds the islet mid-ford — 'Let me lie here, to keep the Fords till Éomer comes.'",
+     "cite": "UT, Battles of the Fords of Isen [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "west bank",
+     "sh": "line",
+     "x": 160,
+     "y": 165,
+     "w": 26,
+     "h": 9,
+     "rot": 25,
+     "l": "Grimbold's companies",
+     "note": "Westfold men on the west bank; Elfhelm's riders on the east — the two wings of the Fords' defence.",
+     "cite": "UT [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "pincer",
+     "sh": "column",
+     "x": 150,
+     "y": 80,
+     "w": 30,
+     "h": 10,
+     "rot": 65,
+     "l": "Saruman strikes both banks",
+     "note": "Uruk pike-columns and Dunlending levies down both sides of Isen at once — the stroke aimed at Théodred's life.",
+     "cite": "UT [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "shield-wall",
+     "sh": "shieldwall",
+     "x": 168,
+     "y": 150,
+     "w": 24,
+     "h": 10,
+     "rot": 0,
+     "l": "Grimbold's shield-wall",
+     "note": "The Second Battle: a shield-burg of dismounted men about the camp; Elfhelm's riders driven wide — the wall holds till night, then breaks free.",
+     "cite": "UT [C]"
+    }
+   ]
+  },
+  "hornburg": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       0,
+       180
+      ],
+      [
+       80,
+       150
+      ],
+      [
+       160,
+       190
+      ],
+      [
+       120,
+       290
+      ],
+      [
+       0,
+       290
+      ]
+     ],
+     "n": "the White Mountains"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       110,
+       200
+      ],
+      [
+       170,
+       190
+      ]
+     ],
+     "n": "Deeping Wall"
+    },
+    {
+     "t": "town",
+     "x": 100,
+     "y": 210,
+     "n": "the Hornburg"
+    },
+    {
+     "t": "lab",
+     "x": 250,
+     "y": 80,
+     "n": "Deeping-coomb"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       280,
+       180
+      ],
+      [
+       380,
+       160
+      ],
+      [
+       395,
+       260
+      ],
+      [
+       300,
+       270
+      ]
+     ],
+     "n": "(the Huorn wood — dawn)"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Theoden's riders & the garrison",
+     "n": 3000,
+     "c": "#e87ba4",
+     "p": [
+      [
+       105,
+       215
+      ],
+      [
+       105,
+       215
+      ],
+      [
+       105,
+       215
+      ],
+      [
+       105,
+       215
+      ],
+      [
+       130,
+       195
+      ],
+      [
+       180,
+       150
+      ]
+     ],
+     "ne": 2400,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Erkenbrand & Gandalf",
+     "n": 1000,
+     "c": "#e87ba4",
+     "p": [
+      [
+       20,
+       60
+      ],
+      [
+       20,
+       60
+      ],
+      [
+       20,
+       60
+      ],
+      [
+       20,
+       60
+      ],
+      [
+       90,
+       90
+      ],
+      [
+       160,
+       120
+      ]
+     ],
+     "ne": 950,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Saruman's ten thousand",
+     "n": 10000,
+     "c": "#e34948",
+     "p": [
+      [
+       300,
+       40
+      ],
+      [
+       270,
+       70
+      ],
+      [
+       230,
+       110
+      ],
+      [
+       190,
+       160
+      ],
+      [
+       210,
+       190
+      ],
+      [
+       300,
+       215
+      ]
+     ],
+     "ne": 600,
+     "lc": "LotR III.8 [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Mar 3, night: the coomb fills black like a sea"
+    },
+    {
+     "t": 0.3,
+     "l": "the Wall is blown — blasting-fire in the culvert"
+    },
+    {
+     "t": 0.6,
+     "l": "the king rides out at dawn; the horn of Helm"
+    },
+    {
+     "t": 1,
+     "l": "Erkenbrand & the White Rider; the host driven into the trees"
+    }
+   ],
+   "scale": 8000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "infantry",
+     "sh": "line",
+     "x": 140,
+     "y": 193,
+     "w": 56,
+     "h": 8,
+     "rot": -9,
+     "l": "the Wall manned",
+     "note": "The Deeping Wall's parapet lined by the garrison; Gimli, Legolas and the men of Westfold at the breastwork; the culvert its weak point.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 0,
+     "k": "garrison",
+     "sh": "ring",
+     "x": 100,
+     "y": 210,
+     "w": 13,
+     "h": 13,
+     "l": "the Hornburg keep",
+     "note": "Théoden, his guard and Aragorn within the fortress; the causeway gate barred.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "assault host",
+     "sh": "line",
+     "x": 215,
+     "y": 150,
+     "w": 110,
+     "h": 26,
+     "rot": 20,
+     "l": "the coomb 'black like a sea'",
+     "note": "Ten thousand and more: Uruk-hai ranks with ladders, Dunlending levies behind; arrows 'thick as rain'.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 1,
+     "k": "ram & blasting-fire",
+     "sh": "column",
+     "x": 150,
+     "y": 215,
+     "w": 34,
+     "h": 9,
+     "rot": -35,
+     "l": "the culvert charge",
+     "note": "The blasting-fire of Orthanc blows the Wall's culvert; a ram-column drives at the gates up the causeway.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "cavalry",
+     "sh": "wedge",
+     "x": 118,
+     "y": 200,
+     "w": 22,
+     "h": 14,
+     "rot": 25,
+     "l": "the King's charge",
+     "note": "At dawn Théoden rides out over the causeway with his knights, Aragorn beside him — 'the horn of Helm rang'.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "relief",
+     "sh": "line",
+     "x": 40,
+     "y": 90,
+     "w": 36,
+     "h": 10,
+     "rot": 35,
+     "l": "Erkenbrand & the White Rider",
+     "note": "A thousand men on foot with Erkenbrand; Gandalf on Shadowfax upon the ridge.",
+     "cite": "LotR III.7 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "Huorns",
+     "sh": "line",
+     "x": 338,
+     "y": 215,
+     "w": 80,
+     "h": 40,
+     "rot": 0,
+     "l": "the wood that walked",
+     "note": "The Huorn forest stands where no forest was; the fleeing host passes under it and 'none came ever out again'.",
+     "cite": "LotR III.7-8 [C]"
+    }
+   ]
+  },
+  "pelennor": {
+   "bg": [
+    {
+     "t": "town",
+     "x": 70,
+     "y": 150,
+     "n": "Minas Tirith"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       40,
+       60
+      ],
+      [
+       160,
+       40
+      ],
+      [
+       280,
+       80
+      ],
+      [
+       300,
+       180
+      ],
+      [
+       240,
+       260
+      ],
+      [
+       90,
+       270
+      ]
+     ],
+     "n": "the Rammas"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       330,
+       0
+      ],
+      [
+       340,
+       120
+      ],
+      [
+       320,
+       220
+      ],
+      [
+       350,
+       300
+      ]
+     ],
+     "n": "Anduin"
+    },
+    {
+     "t": "town",
+     "x": 330,
+     "y": 110,
+     "n": "Osgiliath"
+    },
+    {
+     "t": "town",
+     "x": 345,
+     "y": 275,
+     "n": "Harlond"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Garrison & outland companies",
+     "n": 9000,
+     "c": "#008300",
+     "p": [
+      [
+       75,
+       150
+      ],
+      [
+       75,
+       150
+      ],
+      [
+       75,
+       150
+      ],
+      [
+       75,
+       150
+      ],
+      [
+       95,
+       160
+      ],
+      [
+       130,
+       170
+      ]
+     ],
+     "ne": 6300,
+     "lc": "the out-companies mauled at the Rammas and the Gate — V.4 [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "the Rohirrim (~6,000)",
+     "n": 6000,
+     "c": "#e87ba4",
+     "p": [
+      [
+       60,
+       20
+      ],
+      [
+       60,
+       20
+      ],
+      [
+       60,
+       20
+      ],
+      [
+       110,
+       60
+      ],
+      [
+       170,
+       120
+      ],
+      [
+       230,
+       190
+      ]
+     ],
+     "ne": 4500,
+     "lc": "the Mounds of Mundburg — V.6/VI [C: heavy loss, king and marshals among them; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Aragorn — the black fleet",
+     "n": 5000,
+     "c": "#008300",
+     "p": [
+      [
+       380,
+       290
+      ],
+      [
+       380,
+       290
+      ],
+      [
+       380,
+       290
+      ],
+      [
+       380,
+       290
+      ],
+      [
+       345,
+       270
+      ],
+      [
+       290,
+       230
+      ]
+     ],
+     "ne": 4250,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the Morgul-host & Barad-dur legions",
+     "n": 45000,
+     "c": "#e34948",
+     "p": [
+      [
+       330,
+       105
+      ],
+      [
+       300,
+       110
+      ],
+      [
+       240,
+       120
+      ],
+      [
+       160,
+       130
+      ],
+      [
+       120,
+       150
+      ],
+      [
+       180,
+       190
+      ]
+     ],
+     "ne": 2250,
+     "lc": "'no living foe within the Rammas' — V.6-8 [C]"
+    },
+    {
+     "s": 1,
+     "l": "Haradrim & mumakil",
+     "n": 18000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       300,
+       290
+      ],
+      [
+       290,
+       270
+      ],
+      [
+       260,
+       240
+      ],
+      [
+       230,
+       210
+      ],
+      [
+       210,
+       200
+      ],
+      [
+       220,
+       210
+      ]
+     ],
+     "ne": 1800,
+     "lc": "the Southrons broken — V.6 [C]"
+    },
+    {
+     "s": 1,
+     "l": "Easterlings & Variags",
+     "n": 8000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       340,
+       150
+      ],
+      [
+       320,
+       150
+      ],
+      [
+       280,
+       160
+      ],
+      [
+       240,
+       180
+      ],
+      [
+       220,
+       195
+      ],
+      [
+       230,
+       205
+      ]
+     ],
+     "ne": 800,
+     "lc": "'no living foe within the Rammas' — V.8 [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Mar 12-14: the Rammas is breached; the city invested"
+    },
+    {
+     "t": 0.25,
+     "l": "Mar 15, dawn: the Gate is broken — the horns of Rohan"
+    },
+    {
+     "t": 0.5,
+     "l": "Theoden falls; Eowyn & Merry before the Black Serpent... the fleet"
+    },
+    {
+     "t": 0.8,
+     "l": "'the Corsairs of Umbar!' — Aragorn unfurls the standard"
+    },
+    {
+     "t": 1,
+     "l": "the field is won and none were left living"
+    }
+   ],
+   "scale": 20000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "siege lines",
+     "sh": "arc",
+     "x": 110,
+     "y": 150,
+     "w": 58,
+     "h": 70,
+     "l": "the leaguer of the City",
+     "note": "Trenches of fire ring the walls out of bowshot; siege-towers and catapults behind; 'the City was besieged, enclosed in a ring of foes'.",
+     "cite": "LotR V.4 [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 1,
+     "k": "Grond",
+     "sh": "column",
+     "x": 86,
+     "y": 152,
+     "w": 26,
+     "h": 8,
+     "l": "Grond at the Gate",
+     "note": "The great ram, a hundred feet, wolf-headed; hill-trolls to wield it; the Witch-king at its head — the Gate breaks at the third blow.",
+     "cite": "LotR V.4 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "cavalry",
+     "sh": "wedge",
+     "x": 150,
+     "y": 95,
+     "w": 34,
+     "h": 20,
+     "rot": 135,
+     "l": "the King's éored",
+     "note": "Théoden 'like a god of old' with his knights of the House of Eorl, first through the north wall of the Rammas; Éomer's éoreds in line behind; Elfhelm toward the siege-engines.",
+     "cite": "LotR V.5 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 1,
+     "k": "Haradrim",
+     "sh": "line",
+     "x": 210,
+     "y": 225,
+     "w": 56,
+     "h": 14,
+     "rot": 0,
+     "l": "the Southrons' array",
+     "note": "The Haradrim with the Black Serpent standard south of the road; scarlet and gold, scimitar-armed.",
+     "cite": "LotR V.6 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 1,
+     "k": "mûmakil",
+     "sh": "mumakil",
+     "x": 225,
+     "y": 245,
+     "w": 60,
+     "h": 14,
+     "l": "the mûmakil wall",
+     "note": "War-towers on the great beasts; horses will not face them — they stand 'like towers of defence' and the Rohirrim flow round them.",
+     "cite": "LotR V.6 [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 0,
+     "k": "fleet",
+     "sh": "ships",
+     "x": 345,
+     "y": 268,
+     "w": 40,
+     "h": 12,
+     "l": "the black sails at Harlond",
+     "note": "Fifty great ships: Aragorn with the Grey Company, Lebennin and Lamedon's levies — the standard of the King unfurled.",
+     "cite": "LotR V.6 [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 0,
+     "k": "sortie",
+     "sh": "column",
+     "x": 85,
+     "y": 140,
+     "w": 24,
+     "h": 9,
+     "rot": 30,
+     "l": "Imrahil's sortie",
+     "note": "The Prince of Dol Amroth leads out all the strength left in the City as the tide turns.",
+     "cite": "LotR V.6 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 1,
+     "k": "reserves",
+     "sh": "column",
+     "x": 300,
+     "y": 125,
+     "w": 32,
+     "h": 10,
+     "rot": 190,
+     "l": "Gothmog's reserves",
+     "note": "'Easterlings with axes, and Variags of Khand' — fresh strength flung in from Osgiliath by the lieutenant of Morgul.",
+     "cite": "LotR V.6 [C]"
+    }
+   ]
+  },
+  "morannon": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       0,
+       80
+      ],
+      [
+       400,
+       60
+      ],
+      [
+       400,
+       110
+      ],
+      [
+       0,
+       130
+      ]
+     ],
+     "n": "Ered Lithui"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       180,
+       105
+      ],
+      [
+       230,
+       105
+      ]
+     ],
+     "n": "the Morannon"
+    },
+    {
+     "t": "lab",
+     "x": 205,
+     "y": 190,
+     "n": "the slag-hills"
+    },
+    {
+     "t": "town",
+     "x": 205,
+     "y": 220,
+     "n": "two hills of the West"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Host of the West (<6,000)",
+     "n": 6000,
+     "c": "#008300",
+     "p": [
+      [
+       205,
+       290
+      ],
+      [
+       205,
+       260
+      ],
+      [
+       205,
+       235
+      ],
+      [
+       205,
+       222
+      ],
+      [
+       205,
+       222
+      ],
+      [
+       205,
+       222
+      ]
+     ],
+     "ne": 4800,
+     "lc": "[I-M — the host endured to the Eagles' coming]"
+    },
+    {
+     "s": 1,
+     "l": "Mordor unnumbered",
+     "n": 70000,
+     "c": "#e34948",
+     "p": [
+      [
+       205,
+       110
+      ],
+      [
+       205,
+       115
+      ],
+      [
+       205,
+       130
+      ],
+      [
+       160,
+       180
+      ],
+      [
+       205,
+       205
+      ],
+      [
+       250,
+       195
+      ]
+     ],
+     "ne": 10500,
+     "lc": "the host 'scattered as dust' at the Fall — VI.4 [C]"
+    },
+    {
+     "s": 1,
+     "l": "Easterlings & trolls",
+     "n": 15000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       260,
+       120
+      ],
+      [
+       255,
+       130
+      ],
+      [
+       250,
+       150
+      ],
+      [
+       255,
+       185
+      ],
+      [
+       235,
+       205
+      ],
+      [
+       215,
+       215
+      ]
+     ],
+     "ne": 4500,
+     "lc": "at the Fall some fled, some fought on and were ended — VI.4 [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Mar 25: the last army comes to the closed Gate"
+    },
+    {
+     "t": 0.3,
+     "l": "the Mouth of Sauron; parley refused"
+    },
+    {
+     "t": 0.6,
+     "l": "'ten times and more' — the hills are ringed"
+    },
+    {
+     "t": 1,
+     "l": "the Eagles; the Ring goes into the Fire; the earth swallows them"
+    }
+   ],
+   "scale": 20000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "the array",
+     "sh": "ring",
+     "x": 193,
+     "y": 220,
+     "w": 16,
+     "h": 16,
+     "l": "the west hill",
+     "note": "Aragorn with Gandalf and the banner of the Tree; the ranks faced 'all about' — a shield-ring on the slag-hill.",
+     "cite": "LotR V.10 [C]"
+    },
+    {
+     "ph": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "s": 0,
+     "k": "the array",
+     "sh": "ring",
+     "x": 217,
+     "y": 220,
+     "w": 16,
+     "h": 16,
+     "l": "the east hill",
+     "note": "Éomer and Imrahil hold the second hill: six thousand all told against 'ten times and more' their match.",
+     "cite": "LotR V.10 [C]"
+    },
+    {
+     "ph": [
+      2,
+      3
+     ],
+     "s": 1,
+     "k": "encirclement",
+     "sh": "arc",
+     "x": 205,
+     "y": 218,
+     "w": 52,
+     "h": 40,
+     "l": "the sea of enemies",
+     "note": "The Morannon opens: orc-legions and hill-trolls of Gorgoroth ring both hills 'like a sea'; Easterlings held in reserve.",
+     "cite": "LotR V.10 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 1,
+     "k": "trolls",
+     "sh": "column",
+     "x": 205,
+     "y": 195,
+     "w": 22,
+     "h": 9,
+     "rot": 90,
+     "l": "the hill-troll assault",
+     "note": "Hill-trolls break on the front rank — Beregond down, Pippin's stroke under the hide.",
+     "cite": "LotR V.10 [C]"
+    }
+   ]
+  },
+  "dale": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       130,
+       30
+      ],
+      [
+       270,
+       20
+      ],
+      [
+       300,
+       120
+      ],
+      [
+       200,
+       170
+      ],
+      [
+       100,
+       120
+      ]
+     ],
+     "n": "Erebor"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 100,
+     "n": "the Gate"
+    },
+    {
+     "t": "town",
+     "x": 260,
+     "y": 200,
+     "n": "Dale"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       210,
+       170
+      ],
+      [
+       240,
+       230
+      ],
+      [
+       270,
+       300
+      ]
+     ],
+     "n": "R. Running"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Men of Dale (King Brand)",
+     "n": 5000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       265,
+       210
+      ],
+      [
+       260,
+       200
+      ],
+      [
+       250,
+       185
+      ],
+      [
+       235,
+       165
+      ],
+      [
+       215,
+       140
+      ],
+      [
+       205,
+       115
+      ]
+     ],
+     "ne": 3250,
+     "lc": "King Brand falls; three days' battle, then siege — App A III [C; fraction I-M]"
+    },
+    {
+     "s": 0,
+     "l": "Durin's Folk (Dain Ironfoot)",
+     "n": 4000,
+     "c": "#eb6834",
+     "p": [
+      [
+       205,
+       105
+      ],
+      [
+       205,
+       105
+      ],
+      [
+       205,
+       108
+      ],
+      [
+       205,
+       110
+      ],
+      [
+       205,
+       108
+      ],
+      [
+       205,
+       105
+      ]
+     ],
+     "ne": 2600,
+     "lc": "Dáin Ironfoot falls before the Gate — App A III [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the Easterling army",
+     "n": 30000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       380,
+       260
+      ],
+      [
+       350,
+       245
+      ],
+      [
+       310,
+       225
+      ],
+      [
+       280,
+       210
+      ],
+      [
+       250,
+       180
+      ],
+      [
+       230,
+       150
+      ]
+     ],
+     "ne": 9000,
+     "lc": "the sortie breaks the siege; the East flees — App B [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Mar 17: battle before Dale; three days' fighting"
+    },
+    {
+     "t": 0.4,
+     "l": "Brand and Dain Ironfoot fall before the Gate"
+    },
+    {
+     "t": 0.7,
+     "l": "Men & Dwarves besieged in the Mountain"
+    },
+    {
+     "t": 1,
+     "l": "Mar 27: the Shadow passes — the sortie breaks the siege"
+    }
+   ],
+   "scale": 15000,
+   "form": [
+    {
+     "ph": [
+      0
+     ],
+     "s": 0,
+     "k": "allied line",
+     "sh": "line",
+     "x": 262,
+     "y": 185,
+     "w": 34,
+     "h": 11,
+     "rot": -15,
+     "l": "Brand before Dale",
+     "note": "Three days' battle in the town's vale: Bardings and Dwarves side by side against the Easterling host.",
+     "cite": "App A III / App B [C]"
+    },
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "Easterlings",
+     "sh": "line",
+     "x": 320,
+     "y": 150,
+     "w": 44,
+     "h": 13,
+     "rot": 35,
+     "l": "the host out of Rhûn",
+     "note": "Sauron's northern army — the corpus gives its kind (Easterlings) and its weight, not its numbers.",
+     "cite": "App B [C]"
+    },
+    {
+     "ph": [
+      1,
+      2
+     ],
+     "s": 0,
+     "k": "the Gate",
+     "sh": "ring",
+     "x": 200,
+     "y": 103,
+     "w": 13,
+     "h": 13,
+     "l": "the siege in Erebor",
+     "note": "King Brand falls before the Gate; Dáin Ironfoot stands over his body, axe in hand, and falls beside him; the survivors hold the Mountain.",
+     "cite": "App A III [C]"
+    },
+    {
+     "ph": [
+      3
+     ],
+     "s": 0,
+     "k": "sortie",
+     "sh": "wedge",
+     "x": 210,
+     "y": 120,
+     "w": 18,
+     "h": 12,
+     "rot": 135,
+     "l": "the sortie of Thorin III and Bard II",
+     "note": "Word of the Shadow's passing comes; besieged become victors — the host of Rhûn is broken and flees east.",
+     "cite": "App B [C]"
+    }
+   ]
+  },
+  "bywater": {
+   "bg": [
+    {
+     "t": "road",
+     "pts": [
+      [
+       0,
+       150
+      ],
+      [
+       180,
+       150
+      ],
+      [
+       400,
+       150
+      ]
+     ],
+     "n": "Bywater Road"
+    },
+    {
+     "t": "town",
+     "x": 330,
+     "y": 140,
+     "n": "Bywater"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       140,
+       100
+      ],
+      [
+       260,
+       95
+      ],
+      [
+       270,
+       130
+      ],
+      [
+       150,
+       135
+      ]
+     ],
+     "n": "the hedges (carts behind)"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       140,
+       165
+      ],
+      [
+       260,
+       170
+      ],
+      [
+       255,
+       205
+      ],
+      [
+       145,
+       200
+      ]
+     ],
+     "n": "the deep lane banks"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Merry's ambush companies",
+     "n": 200,
+     "c": "#eda100",
+     "p": [
+      [
+       180,
+       110
+      ],
+      [
+       180,
+       110
+      ],
+      [
+       180,
+       120
+      ],
+      [
+       190,
+       135
+      ],
+      [
+       200,
+       145
+      ],
+      [
+       210,
+       150
+      ]
+     ],
+     "ne": 194,
+     "lc": "nineteen hobbits fell in all — VI.8 [C]"
+    },
+    {
+     "s": 0,
+     "l": "Pippin's Tookland reinforcements",
+     "n": 100,
+     "c": "#eda100",
+     "p": [
+      [
+       30,
+       220
+      ],
+      [
+       30,
+       220
+      ],
+      [
+       30,
+       220
+      ],
+      [
+       90,
+       190
+      ],
+      [
+       150,
+       170
+      ],
+      [
+       190,
+       158
+      ]
+     ],
+     "ne": 98,
+     "lc": "[C-anchored]"
+    },
+    {
+     "s": 1,
+     "l": "the ruffians' column",
+     "n": 100,
+     "c": "#e34948",
+     "p": [
+      [
+       30,
+       150
+      ],
+      [
+       80,
+       150
+      ],
+      [
+       140,
+       150
+      ],
+      [
+       190,
+       150
+      ],
+      [
+       200,
+       152
+      ],
+      [
+       205,
+       152
+      ]
+     ],
+     "ne": 30,
+     "lc": "'seventy of the ruffians lay dead' — VI.8 [C]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "Nov 3: the ruffians march up from Hobbiton"
+    },
+    {
+     "t": 0.35,
+     "l": "the cart-barricade closes behind them"
+    },
+    {
+     "t": 0.7,
+     "l": "volleys from bank and hedge; the break-out fails"
+    },
+    {
+     "t": 1,
+     "l": "~70 ruffians and 19 hobbits dead — the Shire is scoured"
+    }
+   ],
+   "scale": 500,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "ruffians",
+     "sh": "column",
+     "x": 200,
+     "y": 168,
+     "w": 40,
+     "h": 11,
+     "rot": 90,
+     "l": "the ruffian company",
+     "note": "A hundred or so of Sharkey's Men march up from Hobbiton into the deep lane between high banks — 'they walked into a trap'.",
+     "cite": "LotR VI.8 [C]"
+    },
+    {
+     "ph": [
+      1,
+      2
+     ],
+     "s": 0,
+     "k": "barricade",
+     "sh": "shieldwall",
+     "x": 205,
+     "y": 120,
+     "w": 26,
+     "h": 7,
+     "rot": 0,
+     "l": "the cart-wall ahead",
+     "note": "Old farm-carts overturned across the lane's head; more run out behind to close the door — Merry's design.",
+     "cite": "LotR VI.8 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "archers",
+     "sh": "arc",
+     "x": 178,
+     "y": 150,
+     "w": 26,
+     "h": 34,
+     "l": "bowmen on the west bank",
+     "note": "Hobbit archers lining the banks and hedgerows on both sides — 'it was rather a grim affair'.",
+     "cite": "LotR VI.8 [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 0,
+     "k": "archers",
+     "sh": "arc",
+     "x": 228,
+     "y": 150,
+     "w": 26,
+     "h": 34,
+     "rot": 180,
+     "l": "bowmen on the east hedge",
+     "note": "The other jaw of the ambush; Merry and Pippin command; the break-out is met at the barricade.",
+     "cite": "LotR VI.8 [C]"
+    }
+   ]
+  },
+  "bragollach": {
+   "bg": [
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       10,
+       30
+      ],
+      [
+       390,
+       20
+      ],
+      [
+       390,
+       60
+      ],
+      [
+       10,
+       70
+      ]
+     ],
+     "n": "Ered Engrin"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 45,
+     "n": "Angband"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 120,
+     "n": "ARD-GALEN → ANFAUGLITH"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       5,
+       150
+      ],
+      [
+       60,
+       130
+      ],
+      [
+       80,
+       190
+      ],
+      [
+       20,
+       210
+      ]
+     ],
+     "n": "Ered Wethrin"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       140,
+       180
+      ],
+      [
+       240,
+       170
+      ],
+      [
+       260,
+       220
+      ],
+      [
+       150,
+       230
+      ]
+     ],
+     "n": "Dorthonion"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       320,
+       150
+      ],
+      [
+       395,
+       140
+      ],
+      [
+       390,
+       190
+      ],
+      [
+       330,
+       195
+      ]
+     ],
+     "n": "the March"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Siege-ring (west to east)",
+     "n": 55000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       40,
+       170
+      ],
+      [
+       40,
+       170
+      ],
+      [
+       45,
+       175
+      ],
+      [
+       50,
+       180
+      ],
+      [
+       55,
+       185
+      ],
+      [
+       60,
+       190
+      ]
+     ],
+     "ne": 27500,
+     "lc": "the Siege broken; Angrod and Aegnor slain, Dorthonion lost — Silm 18 [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the rivers of fire",
+     "n": 1,
+     "c": "#898781",
+     "p": [
+      [
+       200,
+       70
+      ],
+      [
+       200,
+       85
+      ],
+      [
+       200,
+       105
+      ],
+      [
+       200,
+       130
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       160
+      ]
+     ],
+     "ne": 1,
+     "lc": "[I-L]"
+    },
+    {
+     "s": 1,
+     "l": "Glaurung, Balrogs, the orc-flood",
+     "n": 150000,
+     "c": "#e34948",
+     "p": [
+      [
+       200,
+       60
+      ],
+      [
+       200,
+       75
+      ],
+      [
+       200,
+       100
+      ],
+      [
+       190,
+       140
+      ],
+      [
+       180,
+       175
+      ],
+      [
+       170,
+       200
+      ]
+     ],
+     "ne": 90000,
+     "lc": "[I-L]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "FA 455, winter: Angband opens with fire"
+    },
+    {
+     "t": 0.35,
+     "l": "Ard-galen burns — the Siege-camps are caught"
+    },
+    {
+     "t": 0.7,
+     "l": "Dorthonion falls; Fingolfin rides to the gate alone"
+    },
+    {
+     "t": 1,
+     "l": "the Siege is broken forever; the plain is Anfauglith"
+    }
+   ],
+   "scale": 30000
+  },
+  "tumhalad": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       120,
+       0
+      ],
+      [
+       130,
+       120
+      ],
+      [
+       150,
+       300
+      ]
+     ],
+     "n": "R. Ginglith"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       280,
+       0
+      ],
+      [
+       260,
+       150
+      ],
+      [
+       240,
+       300
+      ]
+     ],
+     "n": "R. Narog"
+    },
+    {
+     "t": "lab",
+     "x": 195,
+     "y": 90,
+     "n": "TUMHALAD"
+    },
+    {
+     "t": "town",
+     "x": 235,
+     "y": 260,
+     "n": "Nargothrond"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the host of Nargothrond",
+     "n": 6000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       230,
+       250
+      ],
+      [
+       225,
+       220
+      ],
+      [
+       215,
+       180
+      ],
+      [
+       200,
+       140
+      ],
+      [
+       195,
+       110
+      ],
+      [
+       190,
+       120
+      ]
+     ],
+     "ne": 300,
+     "lc": "the host of Nargothrond destroyed; Orodreth slain — Silm 21 [C]"
+    },
+    {
+     "s": 1,
+     "l": "Glaurung's host",
+     "n": 22000,
+     "c": "#e34948",
+     "p": [
+      [
+       200,
+       20
+      ],
+      [
+       200,
+       40
+      ],
+      [
+       200,
+       70
+      ],
+      [
+       198,
+       100
+      ],
+      [
+       196,
+       115
+      ],
+      [
+       210,
+       170
+      ]
+     ],
+     "ne": 18700,
+     "lc": "[I-L]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "FA 495: the host marches out — open war against counsel"
+    },
+    {
+     "t": 0.4,
+     "l": "caught between the rivers"
+    },
+    {
+     "t": 0.7,
+     "l": "Glaurung's fire; Orodreth falls, Gwindor dies"
+    },
+    {
+     "t": 1,
+     "l": "the sack: the Doors broken, the bridge their undoing"
+    }
+   ],
+   "scale": 15000
+  },
+  "gladden": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       100,
+       0
+      ],
+      [
+       110,
+       150
+      ],
+      [
+       100,
+       300
+      ]
+     ],
+     "n": "Anduin"
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       110,
+       120
+      ],
+      [
+       200,
+       110
+      ],
+      [
+       210,
+       160
+      ],
+      [
+       120,
+       170
+      ]
+     ],
+     "n": "Gladden Fields (reeds)"
+    },
+    {
+     "t": "mtn",
+     "pts": [
+      [
+       280,
+       60
+      ],
+      [
+       395,
+       50
+      ],
+      [
+       390,
+       110
+      ],
+      [
+       290,
+       115
+      ]
+     ],
+     "n": "the mountains"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Isildur's company (thangail)",
+     "n": 200,
+     "c": "#008300",
+     "p": [
+      [
+       130,
+       260
+      ],
+      [
+       130,
+       230
+      ],
+      [
+       135,
+       200
+      ],
+      [
+       140,
+       170
+      ],
+      [
+       145,
+       150
+      ],
+      [
+       150,
+       140
+      ]
+     ],
+     "ne": 4,
+     "lc": "'three men only came ever back over the mountains' — UT, The Disaster [C]"
+    },
+    {
+     "s": 1,
+     "l": "the orc ambush",
+     "n": 2000,
+     "c": "#e34948",
+     "p": [
+      [
+       320,
+       90
+      ],
+      [
+       300,
+       100
+      ],
+      [
+       260,
+       115
+      ],
+      [
+       210,
+       130
+      ],
+      [
+       175,
+       140
+      ],
+      [
+       155,
+       142
+      ]
+     ],
+     "ne": 1600,
+     "lc": "[I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "TA 2: the company marches north along the river"
+    },
+    {
+     "t": 0.4,
+     "l": "arrows at dusk; the shield-fence is formed"
+    },
+    {
+     "t": 0.7,
+     "l": "the second assault overwhelms the thangail"
+    },
+    {
+     "t": 1,
+     "l": "Isildur takes to the water; the Ring betrays him"
+    }
+   ],
+   "scale": 2000
+  },
+  "erui": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       0,
+       160
+      ],
+      [
+       150,
+       150
+      ],
+      [
+       280,
+       170
+      ],
+      [
+       400,
+       160
+      ]
+     ],
+     "n": "R. Erui"
+    },
+    {
+     "t": "town",
+     "x": 330,
+     "y": 250,
+     "n": "to Pelargir"
+    },
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 60,
+     "n": "LEBENNIN"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Eldacar's host",
+     "n": 15000,
+     "c": "#008300",
+     "p": [
+      [
+       180,
+       20
+      ],
+      [
+       185,
+       50
+      ],
+      [
+       190,
+       90
+      ],
+      [
+       195,
+       130
+      ],
+      [
+       200,
+       155
+      ],
+      [
+       205,
+       175
+      ]
+     ],
+     "ne": 11250,
+     "lc": "the Kin-strife's bloodiest field — App A [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Castamir's host",
+     "n": 15000,
+     "c": "#008300",
+     "p": [
+      [
+       220,
+       280
+      ],
+      [
+       215,
+       250
+      ],
+      [
+       210,
+       215
+      ],
+      [
+       205,
+       185
+      ],
+      [
+       203,
+       168
+      ],
+      [
+       200,
+       158
+      ]
+     ],
+     "ne": 9000,
+     "lc": "Castamir slain by Eldacar's own hand — App A [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "TA 1447: the rightful king comes south"
+    },
+    {
+     "t": 0.5,
+     "l": "battle at the Crossings; Eldacar slays Castamir"
+    },
+    {
+     "t": 1,
+     "l": "the usurper's sons flee to Pelargir, thence Umbar"
+    }
+   ],
+   "scale": 15000
+  },
+  "camp1944": {
+   "bg": [
+    {
+     "t": "road",
+     "pts": [
+      [
+       50,
+       0
+      ],
+      [
+       60,
+       150
+      ],
+      [
+       70,
+       300
+      ]
+     ],
+     "n": "Harad Road"
+    },
+    {
+     "t": "lab",
+     "x": 230,
+     "y": 80,
+     "n": "South Ithilien"
+    },
+    {
+     "t": "town",
+     "x": 250,
+     "y": 140,
+     "n": "the Wainrider camp"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       0,
+       260
+      ],
+      [
+       200,
+       250
+      ],
+      [
+       400,
+       270
+      ]
+     ],
+     "n": "R. Poros"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Earnil's Southern Army",
+     "n": 15000,
+     "c": "#008300",
+     "p": [
+      [
+       80,
+       270
+      ],
+      [
+       85,
+       240
+      ],
+      [
+       100,
+       200
+      ],
+      [
+       140,
+       170
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       240,
+       145
+      ]
+     ],
+     "ne": 13500,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the Wainriders (feasting)",
+     "n": 20000,
+     "c": "#1baf7a",
+     "p": [
+      [
+       250,
+       140
+      ],
+      [
+       250,
+       140
+      ],
+      [
+       250,
+       140
+      ],
+      [
+       250,
+       142
+      ],
+      [
+       255,
+       150
+      ],
+      [
+       280,
+       110
+      ]
+     ],
+     "ne": 2000,
+     "lc": "the camp stormed, the rout driven to the Marshes — App A [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "TA 1944: victory at Poros; forced march north"
+    },
+    {
+     "t": 0.5,
+     "l": "the camp is stormed — 'wains burned'"
+    },
+    {
+     "t": 1,
+     "l": "the rout driven into the Dead Marshes"
+    }
+   ],
+   "scale": 15000,
+   "form": [
+    {
+     "ph": [
+      0,
+      1
+     ],
+     "s": 1,
+     "k": "laager",
+     "sh": "camp",
+     "x": 250,
+     "y": 140,
+     "w": 42,
+     "h": 26,
+     "l": "the Wainrider camp",
+     "note": "The wagon-fortress at feast, 'thinking that their victory was complete' — wains, herds and spoils within.",
+     "cite": "App A [C]"
+    },
+    {
+     "ph": [
+      1
+     ],
+     "s": 0,
+     "k": "storm columns",
+     "sh": "column",
+     "x": 215,
+     "y": 215,
+     "w": 30,
+     "h": 10,
+     "rot": -55,
+     "l": "Eärnil up from the Poros",
+     "note": "The victor of south Ithilien force-marches north and storms the camp; 'the wains were burned'.",
+     "cite": "App A [C]"
+    },
+    {
+     "ph": [
+      2
+     ],
+     "s": 1,
+     "k": "rout",
+     "sh": "column",
+     "x": 170,
+     "y": 95,
+     "w": 30,
+     "h": 9,
+     "rot": 230,
+     "l": "the rout into the Marshes",
+     "note": "The Wainriders' broken power driven north out of Ithilien to perish in the Dead Marshes.",
+     "cite": "App A [C]"
+    }
+   ]
+  },
+  "greenfields": {
+   "bg": [
+    {
+     "t": "lab",
+     "x": 200,
+     "y": 60,
+     "n": "NORTHFARTHING"
+    },
+    {
+     "t": "road",
+     "pts": [
+      [
+       0,
+       200
+      ],
+      [
+       200,
+       190
+      ],
+      [
+       400,
+       195
+      ]
+     ],
+     "n": ""
+    },
+    {
+     "t": "forest",
+     "pts": [
+      [
+       60,
+       120
+      ],
+      [
+       140,
+       115
+      ],
+      [
+       150,
+       155
+      ],
+      [
+       70,
+       160
+      ]
+     ],
+     "n": ""
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "Bandobras Took's hobbitry",
+     "n": 300,
+     "c": "#eda100",
+     "p": [
+      [
+       320,
+       240
+      ],
+      [
+       300,
+       225
+      ],
+      [
+       270,
+       210
+      ],
+      [
+       240,
+       200
+      ],
+      [
+       220,
+       196
+      ],
+      [
+       205,
+       193
+      ]
+     ],
+     "ne": 291,
+     "lc": "[I-M]"
+    },
+    {
+     "s": 1,
+     "l": "Golfimbul's orcs",
+     "n": 200,
+     "c": "#e34948",
+     "p": [
+      [
+       80,
+       60
+      ],
+      [
+       100,
+       90
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       160,
+       165
+      ],
+      [
+       185,
+       185
+      ],
+      [
+       200,
+       192
+      ]
+     ],
+     "ne": 30,
+     "lc": "the rout — and the invention of golf — Hobbit 1 [C-anchored; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "TA 2747: an orc-band out of Mount Gram"
+    },
+    {
+     "t": 0.6,
+     "l": "the Bullroarer's charge"
+    },
+    {
+     "t": 1,
+     "l": "Golfimbul's head, a club's length — and golf invented"
+    }
+   ],
+   "scale": 500
+  },
+  "osgiliath": {
+   "bg": [
+    {
+     "t": "river",
+     "pts": [
+      [
+       200,
+       0
+      ],
+      [
+       195,
+       150
+      ],
+      [
+       200,
+       300
+      ]
+     ],
+     "n": "Anduin"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 150,
+     "n": "Osgiliath"
+    },
+    {
+     "t": "wall",
+     "pts": [
+      [
+       185,
+       150
+      ],
+      [
+       215,
+       150
+      ]
+     ],
+     "n": "the last bridge"
+    },
+    {
+     "t": "lab",
+     "x": 320,
+     "y": 60,
+     "n": "to Minas Morgul"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the bridge-guard (Boromir & Faramir)",
+     "n": 2000,
+     "c": "#008300",
+     "p": [
+      [
+       170,
+       160
+      ],
+      [
+       175,
+       155
+      ],
+      [
+       185,
+       152
+      ],
+      [
+       195,
+       150
+      ],
+      [
+       180,
+       155
+      ],
+      [
+       160,
+       160
+      ]
+     ],
+     "ne": 1200,
+     "lc": "the last bridge cast down; of the rearguard 'only four were saved by swimming' — App A [C; whole-guard fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the Morgul-host",
+     "n": 8000,
+     "c": "#e34948",
+     "p": [
+      [
+       330,
+       80
+      ],
+      [
+       300,
+       100
+      ],
+      [
+       260,
+       125
+      ],
+      [
+       225,
+       140
+      ],
+      [
+       210,
+       148
+      ],
+      [
+       220,
+       160
+      ]
+     ],
+     "ne": 7200,
+     "lc": "[I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "June 3018: the war's first stroke, under a starless dread"
+    },
+    {
+     "t": 0.5,
+     "l": "East Osgiliath falls; the bridge is held"
+    },
+    {
+     "t": 1,
+     "l": "the bridge is cast down behind them — four swim"
+    }
+   ],
+   "scale": 8000
+  },
+  "doriath": {
+   "bg": [
+    {
+     "t": "forest",
+     "pts": [
+      [
+       20,
+       40
+      ],
+      [
+       380,
+       30
+      ],
+      [
+       390,
+       270
+      ],
+      [
+       30,
+       280
+      ]
+     ],
+     "n": "Region (the Girdle, failed)"
+    },
+    {
+     "t": "town",
+     "x": 200,
+     "y": 150,
+     "n": "Menegroth"
+    },
+    {
+     "t": "river",
+     "pts": [
+      [
+       0,
+       220
+      ],
+      [
+       120,
+       210
+      ],
+      [
+       240,
+       215
+      ],
+      [
+       400,
+       225
+      ]
+     ],
+     "n": "Esgalduin/Ascar"
+    },
+    {
+     "t": "town",
+     "x": 350,
+     "y": 222,
+     "n": "Sarn Athrad"
+    }
+   ],
+   "units": [
+    {
+     "s": 0,
+     "l": "the Iathrim",
+     "n": 8000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       150
+      ],
+      [
+       200,
+       152
+      ],
+      [
+       205,
+       155
+      ],
+      [
+       240,
+       190
+      ],
+      [
+       300,
+       215
+      ]
+     ],
+     "ne": 4000,
+     "lc": "Menegroth twice sacked — Silm 22 [C; fraction I-M]"
+    },
+    {
+     "s": 1,
+     "l": "the host of Nogrod",
+     "n": 6000,
+     "c": "#eb6834",
+     "p": [
+      [
+       390,
+       240
+      ],
+      [
+       350,
+       225
+      ],
+      [
+       290,
+       190
+      ],
+      [
+       230,
+       160
+      ],
+      [
+       280,
+       195
+      ],
+      [
+       345,
+       220
+      ]
+     ],
+     "ne": 300,
+     "lc": "ambushed at Sarn Athrad; the king slain, few escaped — Silm 22 [C]"
+    },
+    {
+     "s": 1,
+     "l": "(506) the sons of Feanor",
+     "n": 3000,
+     "c": "#2a78d6",
+     "p": [
+      [
+       60,
+       60
+      ],
+      [
+       60,
+       60
+      ],
+      [
+       60,
+       60
+      ],
+      [
+       60,
+       60
+      ],
+      [
+       130,
+       110
+      ],
+      [
+       190,
+       148
+      ]
+     ],
+     "ne": 2100,
+     "lc": "Celegorm, Curufin and Caranthir fall — Silm 22 [C; fraction I-M]"
+    }
+   ],
+   "ph": [
+    {
+     "t": 0,
+     "l": "c.502: the Dwarves come over Sarn Athrad; Thingol is slain"
+    },
+    {
+     "t": 0.4,
+     "l": "Menegroth sacked; the Nauglamir taken"
+    },
+    {
+     "t": 0.7,
+     "l": "the ford-ambush: Beren & the Green-elves; Doriath restored a while"
+    },
+    {
+     "t": 1,
+     "l": "c.506: the second sack — the sons of Feanor"
+    }
+   ],
+   "scale": 8000
+  }
+ },
+ "panels": [
+  {
+   "age": "First Age",
+   "id": "noldor",
+   "n": "The Noldor in Exile",
+   "em": "fingolfin",
+   "org": "Princely hosts by realm — Hithlum, Dorthonion, the March of Maedhros, Nargothrond, Gondolin; the Siege of Angband held 400 years; cavalry patrols on Ard-galen.",
+   "gear": [
+    [
+     "sword",
+     "long-swords of Elven-smithcraft — Glamdring & Orcrist class, that shine at orcs' approach"
+    ],
+    [
+     "spear",
+     "great spears of the arrayed hosts"
+    ],
+    [
+     "tallshield",
+     "tall shields; mail of Noldorin steel"
+    ],
+    [
+     "bow",
+     "bows of the march-wardens"
+    ],
+    [
+     "helm",
+     "high helms; Fingolfin's blue-and-silver banners"
+    ]
+   ],
+   "style": "Line-of-battle with lordly retinues; veterans of centuries (Gondolin drilled 350+ years for one battle). 'Their swords were long and terrible.'",
+   "arms": "Ringil (Fingolfin) · Glamdring & Orcrist (Gondolin) · Anglachel/Gurthang (Eol's meteoric steel) · Angrist (Telchar's knife) · Aeglos comes later of this line",
+   "cite": "Silm 13-20; Hobbit iii; CoH"
+  },
+  {
+   "age": "First Age",
+   "id": "sindar",
+   "n": "Doriath & the Grey-elves",
+   "em": "plate:thingol",
+   "org": "Thingol's march-wardens under Beleg; the Girdle of Melian in place of walls; the host marches beyond it only twice.",
+   "gear": [
+    [
+     "bow",
+     "Belthronding, Beleg's black yew bow, and the arrow Dailir"
+    ],
+    [
+     "sword",
+     "Aranruth, Thingol's sword; Anglachel given from Nan Elmoth"
+    ],
+    [
+     "helm",
+     "the Dragon-helm of Dor-lomin (Telchar's work, borne by Turin)"
+    ],
+    [
+     "spear",
+     "hunting-spears of the wood"
+    ]
+   ],
+   "style": "Wood-war: archery, stealth, the long patrol. Into battle beyond her borders Doriath would not march.",
+   "arms": "Belthronding · Aranruth · Anglachel · the Dragon-helm",
+   "cite": "Silm 10, 21; CoH VI-IX"
+  },
+  {
+   "age": "First Age",
+   "id": "edain",
+   "n": "The Edain of the Three Houses",
+   "em": "plate:beor",
+   "org": "Tribal levies federate to the Elf-kings: Beor's ~2,000 grown men at most; Hador's greater host in Hithlum; the Haladin's stockade-companies in Brethil — with Haleth's picked bodyguard of women, the corpus's one female unit.",
+   "gear": [
+    [
+     "sword",
+     "elf-supplied blades and mail (Hador's house bore the Dragon-helm)"
+    ],
+    [
+     "spear",
+     "spear and shield-line of Hurin's rearguard"
+    ],
+    [
+     "axe",
+     "Dramborleg, Tuor's great axe"
+    ],
+    [
+     "bow",
+     "Haladin wood-bows; Beorian hill-craft"
+    ]
+   ],
+   "style": "Steadfast infantry beside the Eldar — the Nirnaeth rearguard died to the last man about Hurin ('Aure entuluva!' seventy times).",
+   "arms": "Dramborleg · the Dragon-helm (loaned) · Hurin's shield",
+   "cite": "Silm 17-20; HoME XII; UT Druedain"
+  },
+  {
+   "age": "First Age",
+   "id": "dwarves_fa",
+   "n": "Belegost & Nogrod",
+   "em": "bare",
+   "org": "Mansion-hosts of the Ered Luin; the only troops who could withstand dragon-fire — 'it was their custom moreover to wear great masks in battle hideous to look upon'.",
+   "gear": [
+    [
+     "mattock",
+     "mattocks and great axes of the mansion-forges"
+    ],
+    [
+     "mask",
+     "iron battle-masks proof against flame"
+    ],
+    [
+     "mail",
+     "mail of their own steel; Azaghal's stand before Glaurung"
+    ],
+    [
+     "sword",
+     "Angrist and the craft of Telchar of Nogrod"
+    ]
+   ],
+   "style": "Masked heavy infantry in deep files; grudge-war discipline (they avenged their own and left).",
+   "arms": "Telchar's works: Angrist, the Dragon-helm, Narsil itself in after-days",
+   "cite": "Silm 20, 22; App A III"
+  },
+  {
+   "age": "First Age",
+   "id": "angband",
+   "n": "Angband",
+   "em": "bare",
+   "org": "Morgoth's bred mass-levies: orc hordes in 'multitudes such as the Noldor had never before seen or imagined' (Silm 18), wolves and wolf-riders, Balrogs (never numbered in any host; the HoME X note bounds how many ever existed at three, or at most seven), the dragon-arm from Glaurung on, thrall-Easterling auxiliaries, siege-engines and fire.",
+   "gear": [
+    [
+     "scimitar",
+     "orc scimitars, broad spears, poisoned darts"
+    ],
+    [
+     "whip",
+     "whips of flame and maces of the Balrogs"
+    ],
+    [
+     "dragon",
+     "Glaurung, Ancalagon: fire as strategic arm"
+    ],
+    [
+     "ram",
+     "Grond, the Hammer of the Underworld — Morgoth's own mace"
+    ]
+   ],
+   "style": "Attrition by expendable mass; fire to break sieges; treachery as a weapon (Ulfang); annihilation follows victory.",
+   "arms": "Grond (the mace) · the iron crown held the Silmarils",
+   "cite": "Silm 3, 13, 18, 20"
+  },
+  {
+   "age": "Second Age",
+   "id": "numenor",
+   "n": "Númenor",
+   "em": "bare",
+   "org": "The only blue-water military state of Arda: royal navies, expeditionary corps, coastal fortresses (Vinyalonde/Lond Daer); Tar-Minastir's navy took Sauron front and rear at the Gwathlo.",
+   "gear": [
+    [
+     "ship",
+     "great ships — to the dromunds' ancestors of Umbar"
+    ],
+    [
+     "bow",
+     "the Kings' Archers: hollow-steel bows"
+    ],
+    [
+     "sword",
+     "Aranruth kept by the Kings; Narsil forged by Telchar came to the Lords of Andunie"
+    ],
+    [
+     "mail",
+     "panoply of the Sea-kings; Ar-Pharazon's armament emptied the coasts by terror alone"
+    ]
+   ],
+   "style": "Amphibious pincers and overawing scale; in the end the fleet sailed against Heaven itself and the world was bent.",
+   "arms": "Aranruth · Narsil · the Bow of Bregor",
+   "cite": "UT (Gwathlo, Aldarion); Akallabeth; App A"
+  },
+  {
+   "age": "Second Age",
+   "id": "lindon",
+   "n": "Lindon & the Last Alliance",
+   "em": "plate:gilgalad",
+   "org": "Gil-galad's kingdom kept the last classic Elf-host; with Elendil's Arnor and Gondor levies, the Silvan kings' 'numerous people', and Durin's folk, it made the Last Alliance — 'all living things were divided in that day'.",
+   "gear": [
+    [
+     "spear",
+     "Aeglos, the spear of Gil-galad, 'none could withstand'"
+    ],
+    [
+     "sword",
+     "Narsil, that broke beneath Elendil"
+    ],
+    [
+     "tallshield",
+     "the arrayed hosts of Dagorlad"
+    ],
+    [
+     "bow",
+     "Silvan archers 'ill-equipped with armour'"
+    ]
+   ],
+   "style": "The set-piece host of the Elder style — and its price: Oropher's unbidden charge, 'barely a third' of the Silvan host came home.",
+   "arms": "Aeglos · Narsil/Anduril",
+   "cite": "Silm, Of the Rings; LotR II.2; UT"
+  },
+  {
+   "age": "Third Age",
+   "id": "gondor_ta",
+   "n": "Gondor",
+   "em": "gondor",
+   "org": "The best-documented army of the corpus: fief-levies mustered by the red arrow and the beacons; the Citadel Guard in black and silver; ranger companies in Ithilien (Henneth Annun's 200-300); river-fleet at Pelargir; the Rammas and the seven-walled city.",
+   "gear": [
+    [
+     "helm",
+     "winged helms of the Guard of the Fountain; black surcoats, the White Tree in silver"
+    ],
+    [
+     "sword",
+     "swords of the line; Boromir's horn-and-sword panoply"
+    ],
+    [
+     "bow",
+     "the great bows of Morthond — 500 bowmen came"
+    ],
+    [
+     "wall",
+     "concentric fortress doctrine; the causeway-forts"
+    ]
+   ],
+   "style": "Defense in depth behind rivers and walls; the thangail shield-fence and dirnaith wedge inherited from Numenor (the corpus's only named drills).",
+   "arms": "Anduril reforged · the Horn of Gondor · Herugrim's peer-blades among allies",
+   "cite": "LotR V.1-6; UT Gladden appendix"
+  },
+  {
+   "age": "Third Age",
+   "id": "rohan",
+   "n": "Rohan",
+   "em": "rohan",
+   "org": "The eored system: 'not less than 120 men', one-hundredth of the Full Muster of 12,000+ Riders; a herdsman-people converted near-wholly to disciplined cavalry; Theoden's 6,000 spears the greatest riding since Eorl.",
+   "gear": [
+    [
+     "spear",
+     "ash-spears of the Riders; the charge in wedge"
+    ],
+    [
+     "sword",
+     "Herugrim (Theoden) and Guthwine (Eomer)"
+    ],
+    [
+     "roundshield",
+     "painted shields; mail-shirts; horse-tail crests"
+    ],
+    [
+     "horn",
+     "the great horn of Helm; the horns of the North at dawn"
+    ]
+   ],
+   "style": "Massed cavalry shock — 'spear shall be shaken, shield be splintered'; shield-wall on foot in extremity (Grimbold at the Fords, Helm's Dike).",
+   "arms": "Herugrim · Guthwine · Helm's horn",
+   "cite": "UT n.36, Fords of Isen; LotR III, V"
+  },
+  {
+   "age": "Third Age",
+   "id": "elves_ta",
+   "n": "The Elven Realms (Third Age)",
+   "em": "bare",
+   "org": "Thranduil's Woodland host (spears and bows, 'many'), Lorien's Galadhrim border-wards who repelled three assaults, Elrond's household, Cirdan's Havens: hosts of quality without number, fading.",
+   "gear": [
+    [
+     "bow",
+     "the great bows of Lorien (Galadriel's gift to Legolas)"
+    ],
+    [
+     "knife",
+     "long white knives of the Galadhrim"
+    ],
+    [
+     "spear",
+     "the Elvenking's spearmen at the Five Armies"
+    ],
+    [
+     "cloak",
+     "grey cloaks — concealment as armour"
+    ]
+   ],
+   "style": "Forest denial and archery; river-lines; no field-marches far from home ('the power that dwelt there was too great for any to overcome').",
+   "arms": "Glamdring & Orcrist borne again · Sting · the bow of the Galadhrim",
+   "cite": "Hobbit XVII; LotR II, App B; UT"
+  },
+  {
+   "age": "Third Age",
+   "id": "durin_ta",
+   "n": "Durin's Folk & the North",
+   "em": "durin",
+   "org": "Mansion-hosts of Erebor and the Iron Hills: Dain's 500 came in mail-hauberks to the knee, bearing mattocks and round shields; beside them Dale's town-levy and the great-bow tradition of Bard.",
+   "gear": [
+    [
+     "mattock",
+     "the Iron Hills mattock-companies ('Moria! Moria!')"
+    ],
+    [
+     "axe",
+     "axes of Durin's line — 'Baruk Khazad!'"
+    ],
+    [
+     "mail",
+     "hauberks of fine ring-mail to the knee"
+    ],
+    [
+     "bow",
+     "the Black Arrow of Dale; windlance-craft"
+    ]
+   ],
+   "style": "Siege-endurance and the wedge; vendetta-war fought to the last grudge (Azanulbizar), never conquest.",
+   "arms": "Durin's Axe (lost in Moria) · the Black Arrow",
+   "cite": "Hobbit XVII; App A III; LotR App B"
+  },
+  {
+   "age": "Third Age",
+   "id": "mordor_ta",
+   "n": "Mordor, Isengard & the Clients",
+   "em": "mordor",
+   "org": "Sauron's tribute-empire in arms: Morgul- and Barad-dur hosts, Olog-hai, the Nazgul as terror-command; Saruman's manufactured 10,000 (Uruk pike-phalanxes, wolf-riders, Dunlending levies, blasting-fire); Harad's mumakil-towers, Easterling axe-hosts, Khand's Variags, Umbar's fifty dromunds.",
+   "gear": [
+    [
+     "scimitar",
+     "orc scimitars; Uruk short broad blades and yew bows"
+    ],
+    [
+     "hand",
+     "the White Hand and the S-rune on shield and helm"
+    ],
+    [
+     "eye",
+     "the Red Eye branded on the legions"
+    ],
+    [
+     "mumak",
+     "war-towers on the mumakil of Harad"
+    ],
+    [
+     "serpent",
+     "the Black Serpent on scarlet of the Southrons"
+    ],
+    [
+     "ram",
+     "Grond come again — the wolf-headed ram, a hundred feet"
+    ]
+   ],
+   "style": "Mass, terror and engines: multi-front grand strategy; hosts that break at command-decapitation (Morannon, as Dagorlad before).",
+   "arms": "Grond the ram · the morgul-knife · scimitars beyond count",
+   "cite": "LotR III.7-9, V.4-6, V.10; App F"
+  },
+  {
+   "age": "Third Age",
+   "id": "shire",
+   "n": "The Shire & the Wild Allies",
+   "em": "hobbits",
+   "org": "A demilitarized gentry with a memory of bows: 12 Shirriffs, the Bounders, the hue-and-cry; one battle in living memory before Bywater. Beside them the un-mustered: Beornings, Woodmen, the Druedain's poisoned darts, the Ents.",
+   "gear": [
+    [
+     "bow",
+     "hobbit archery — 'keen-eyed and sure at the mark'"
+    ],
+    [
+     "stone",
+     "the thrown stone; Bywater's banked lanes"
+    ],
+    [
+     "dart",
+     "Druadan poisoned darts; terrain denial"
+    ],
+    [
+     "tree",
+     "Ents & Huorns: fortress-demolition beyond mortal means"
+    ]
+   ],
+   "style": "Ambush, barricade and the land itself; the Ents tore Isengard's gates 'like bread-crust'.",
+   "arms": "the Bullroarer's club · Sting (on loan to legend)",
+   "cite": "Prologue; VI.8; III.4/9; UT Druedain"
+  }
+ ],
+ "blades": [
+  [
+   "Ringil",
+   "sword",
+   "Fingolfin's — it 'glittered like ice'; seven wounds it gave Morgoth",
+   "Silm 18"
+  ],
+  [
+   "Glamdring",
+   "sword",
+   "Foe-hammer, Turgon's blade — borne by Gandalf out of the troll-hoard",
+   "Hobbit iii; LotR"
+  ],
+  [
+   "Orcrist",
+   "sword",
+   "Goblin-cleaver, its mate — laid on Thorin's tomb, it warns of foes",
+   "Hobbit; App A"
+  ],
+  [
+   "Sting",
+   "knife",
+   "the Gondolin long-knife that named itself in Mirkwood",
+   "Hobbit viii"
+  ],
+  [
+   "Anglachel / Gurthang",
+   "sword",
+   "Eol's meteoric steel; it 'spoke' to Turin at the last",
+   "Silm 21; CoH"
+  ],
+  [
+   "Angrist",
+   "knife",
+   "Telchar's — it cut a Silmaril from the Iron Crown, and snapped",
+   "Silm 19"
+  ],
+  [
+   "Aranruth",
+   "sword",
+   "King's-ire, Thingol's sword, kept by the Kings of Numenor",
+   "Silm; UT"
+  ],
+  [
+   "Dramborleg",
+   "axe",
+   "Thudder-Sharp, Tuor's axe",
+   "FoG; UT index"
+  ],
+  [
+   "Aeglos",
+   "spear",
+   "Icicle, Gil-galad's spear — 'none could withstand'",
+   "Silm, Of the Rings"
+  ],
+  [
+   "Narsil / Anduril",
+   "sword",
+   "Telchar's greatest work; broken under Elendil, reforged the Flame of the West",
+   "LotR II.2; App A"
+  ],
+  [
+   "Herugrim",
+   "sword",
+   "Theoden's, of the house of Eorl",
+   "LotR III.6"
+  ],
+  [
+   "Guthwine",
+   "sword",
+   "Eomer's, drawn with 'Death!' at the Pelennor",
+   "LotR III.7; V.6"
+  ],
+  [
+   "Belthronding",
+   "bow",
+   "Beleg's black yew bow, buried with him",
+   "Silm 21"
+  ],
+  [
+   "The Dragon-helm",
+   "helm",
+   "of Dor-lomin, Telchar's work — its wearer feared no stroke",
+   "CoH VI"
+  ],
+  [
+   "Grond (the mace)",
+   "ram",
+   "the Hammer of the Underworld, Morgoth's; its name given again to the wolf-ram at the Gate",
+   "Silm 18; LotR V.4"
+  ],
+  [
+   "The Black Arrow",
+   "bow",
+   "Bard's heirloom 'from the forges of the true king under the Mountain'",
+   "Hobbit XIV"
+  ]
+ ]
+}

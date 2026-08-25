@@ -1,0 +1,70 @@
+{
+ "what": "Quotations bound from The Nature of Middle-earth, the one volume of Tolkien's own that no published claim in this archive rested on.",
+ "volume": "The Nature of Middle-earth, ed. Carl F. Hostetter (2021)",
+ "corpus_file": "corpus/t2_i_the_nature_of_middle_earth.txt",
+ "voice_rule": "NoME prints Tolkien's text and Hostetter's editorial apparatus together and an extracted text cannot tell them apart typographically. Rows carry `voice`: only Tolkien's own words are [C]; an editorial note is [EXT] however true, because its authority is the editor's.",
+ "verified": "every quotation is matched verbatim against the corpus with ardatext's folding matcher before writing, and one failure refuses the whole run.",
+ "n_passages": 6,
+ "passages": [
+  {
+   "id": "lembas-origin",
+   "chapter": "Part Three, IV — The Making of Lembas",
+   "subject": "lembas",
+   "voice": "Tolkien",
+   "quote": "In Elvish legend the secret of the making [of] “waybread” – an essential preparation for the Great Journey to the Western Shore – was taught them by Oromë. He brought as a gift from Manwë and Varda the seed of wheat, and instructed the Quendi in the manner of growing, harvesting, and storing it",
+   "why_it_matters": "The archive's Living Things and artefact halls describe lembas without an origin. This gives it one in Tolkien's own words: a gift of Manwë and Varda, carried by Oromë, taught before the Great Journey.",
+   "conf": "[C]",
+   "cite": "The Nature of Middle-earth, Part Three, IV — The Making of Lembas"
+  },
+  {
+   "id": "lembas-loss",
+   "chapter": "Part Three, IV — The Making of Lembas",
+   "subject": "lembas",
+   "voice": "Tolkien",
+   "quote": "With Galadriel’s departure and the death of Arwen, the Western Corn and Waybread were lost forever in Middle- earth.",
+   "why_it_matters": "A dated, terminal fact the archive can place on its own timeline: waybread does not merely fade, it ENDS, and the ending is tied to two departures it already records. The line-break inside 'Middle- earth' is the extraction's, and is preserved rather than tidied, because a quotation is the bytes that are there.",
+   "conf": "[C]",
+   "cite": "The Nature of Middle-earth, Part Three, IV — The Making of Lembas"
+  },
+  {
+   "id": "lembas-lineage",
+   "chapter": "Part Three, IV — The Making of Lembas",
+   "subject": "lembas",
+   "voice": "Tolkien",
+   "quote": "But at the time of L.R. only in Lórien did the Western Corn survive, and the art was known only to herself and her daughter Celebrían (wife of Elrond) and her daughter Arwen.",
+   "why_it_matters": "A three-generation transmission — Galadriel, Celebrían, Arwen — which the genealogy hall already draws as kinship and can now also draw as an inheritance of craft.",
+   "conf": "[C]",
+   "cite": "The Nature of Middle-earth, Part Three, IV — The Making of Lembas"
+  },
+  {
+   "id": "rehousing",
+   "chapter": "Part Two, XV — Elvish Reincarnation",
+   "subject": "reincarnation",
+   "voice": "Tolkien",
+   "quote": "Let the body that was destroyed be re-made. Or let the naked fëa be re-born as a child.",
+   "why_it_matters": "Eru's own answer on how the houseless are re-housed. The archive's cosmology and silences halls discuss Elvish death; this is the mechanism stated rather than inferred, and it names BOTH routes — remaking and rebirth.",
+   "conf": "[C]",
+   "cite": "The Nature of Middle-earth, Part Two, XV — Elvish Reincarnation"
+  },
+  {
+   "id": "valar-rule",
+   "chapter": "Part Two, XV — Elvish Reincarnation",
+   "subject": "the authority of the Valar",
+   "voice": "Tolkien",
+   "quote": "Have I not given to the Valar the rule of Arda, and power over all the substance thereof, to shape it at their will under My will?",
+   "why_it_matters": "The limit of the Valar's authority, from Eru: rule over the substance of Arda, but UNDER his will. The archive asserts the Valar's powers in several places without a statement of what bounds them.",
+   "conf": "[C]",
+   "cite": "The Nature of Middle-earth, Part Two, XV — Elvish Reincarnation"
+  },
+  {
+   "id": "beards-third-cycle",
+   "chapter": "Part Two, V — Beards (editorial note)",
+   "subject": "beards",
+   "voice": "editor",
+   "quote": "Elves did not have beards until they entered their third cycle of life. Nerdanel’s father [cf. XII:365–6 n.61] was exceptional, being only early in his second.",
+   "why_it_matters": "The most-asked question this volume settles — and it is HOSTETTER quoting Tolkien's VT41 note, not NoME's own text, so it is marked `editor` and [EXT] here. Whoever wants it at [C] must cite Vinyar Tengwar 41 directly, which this archive holds.",
+   "conf": "[EXT]",
+   "cite": "The Nature of Middle-earth, Part Two, V — Beards (editorial note)"
+  }
+ ]
+}

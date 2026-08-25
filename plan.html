@@ -1,0 +1,282 @@
+<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Codex Transformation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{
+  --paper:#EAEBE5; --paper-2:#E1E3DB; --ink:#1A1A17; --ink-2:#5E5F57; --ink-3:#87887E;
+  --rule:#C6C7BE; --rule-hair:#D5D6CD; --rubric:#9E2B1F; --rubric-tint:#9E2B1F26;
+  --fill:#3B4A40; --ring:#3B4A40;
+  --ff-d:"Cinzel",Georgia,serif; --ff-b:"EB Garamond",Georgia,serif;
+  --ff-m:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --paper:#15161A; --paper-2:#1C1E22; --ink:#E6E6DE; --ink-2:#A2A399; --ink-3:#75766D;
+  --rule:#33352F; --rule-hair:#282A26; --rubric:#E4715C; --rubric-tint:#E4715C2E;
+  --fill:#8FA697; --ring:#8FA697;
+}}
+:root[data-theme="dark"]{
+  --paper:#15161A; --paper-2:#1C1E22; --ink:#E6E6DE; --ink-2:#A2A399; --ink-3:#75766D;
+  --rule:#33352F; --rule-hair:#282A26; --rubric:#E4715C; --rubric-tint:#E4715C2E;
+  --fill:#8FA697; --ring:#8FA697;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); font-family:var(--ff-b);
+  font-size:18px; line-height:1.55; margin:0; padding:0 clamp(16px,4vw,40px) 96px;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px; margin:0 auto}
+.prose{max-width:65ch}
+h1,h2,h3{font-family:var(--ff-d); font-weight:600; text-wrap:balance; margin:0}
+a{color:inherit}
+code{font-family:var(--ff-m); font-size:.82em; letter-spacing:-.01em}
+.n{font-variant-numeric:tabular-nums}
+
+/* masthead */
+header.mast{padding:clamp(48px,9vw,104px) 0 0}
+.eyebrow{font-family:var(--ff-d); font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--ink-3); margin:0 0 22px}
+h1{font-size:clamp(34px,6.2vw,60px); line-height:1.02; letter-spacing:-.005em}
+.thesis{font-size:clamp(19px,2.4vw,24px); line-height:1.45; margin:26px 0 0; max-width:44ch;
+  color:var(--ink-2)}
+.thesis b{color:var(--ink); font-weight:500}
+.byline{margin:34px 0 0; padding-top:16px; border-top:1px solid var(--rule);
+  font-size:13px; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:8px 26px}
+
+/* stat strip */
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(132px,1fr)); gap:1px;
+  background:var(--rule-hair); border:1px solid var(--rule); margin:52px 0 0}
+.stat{background:var(--paper); padding:18px 16px}
+.stat .v{font-family:var(--ff-d); font-size:clamp(26px,4vw,38px); line-height:1;
+  font-variant-numeric:tabular-nums; display:block}
+.stat .k{font-size:12.5px; color:var(--ink-3); margin-top:8px; display:block; line-height:1.35}
+.stat.warn .v{color:var(--rubric)}
+
+section.blk{margin:clamp(56px,8vw,88px) 0 0}
+h2{font-size:clamp(22px,3.2vw,29px); letter-spacing:-.003em}
+.lede{margin:14px 0 0; color:var(--ink-2)}
+.rulehead{display:flex; align-items:baseline; gap:14px; border-bottom:2px solid var(--ink);
+  padding-bottom:10px}
+.rulehead .num{font-family:var(--ff-d); font-size:13px; color:var(--ink-3);
+  letter-spacing:.14em}
+
+/* the grid */
+.legend{display:flex; flex-wrap:wrap; gap:10px 26px; margin:22px 0 0; font-size:13.5px;
+  color:var(--ink-2); align-items:center}
+.legend i{display:inline-block; vertical-align:-1px; margin-right:7px}
+.sw-s{width:11px;height:11px;border-radius:50%;background:var(--fill)}
+.sw-v{width:11px;height:11px;border-radius:50%;border:2px solid var(--ring)}
+.sw-g{width:22px;height:9px;background:var(--rubric-tint);border-top:1px solid var(--rubric);
+  border-bottom:1px solid var(--rubric)}
+
+.bandwrap{margin-top:26px; overflow-x:auto}
+.band{border-top:1px solid var(--rule); padding:26px 0 4px}
+.band:first-child{border-top:2px solid var(--ink)}
+.bh{display:grid; grid-template-columns:1fr auto; gap:4px 18px; align-items:baseline;
+  margin-bottom:14px}
+.bh h3{font-size:15px; letter-spacing:.16em}
+.bh .bd{grid-column:1; margin:0; font-size:14px; color:var(--ink-2); font-style:italic}
+.bh .br{grid-column:2; grid-row:1/3; font-family:var(--ff-d); font-size:19px;
+  font-variant-numeric:tabular-nums; color:var(--ink-3); white-space:nowrap}
+.band.absent .bh h3, .band.absent .bh .br{color:var(--rubric)}
+
+table.grid{width:100%; border-collapse:collapse; min-width:520px}
+table.grid thead th{font-family:var(--ff-d); font-size:10.5px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:400; text-align:left;
+  padding:0 10px 9px 0; border-bottom:1px solid var(--rule-hair)}
+table.grid thead th.n{text-align:right}
+table.grid th[scope=row]{font-weight:400; text-align:left; padding:5px 14px 5px 0;
+  white-space:nowrap; vertical-align:middle}
+table.grid td{padding:5px 0; vertical-align:middle}
+table.grid td.n{text-align:right; padding-left:14px; width:44px; font-variant-numeric:tabular-nums;
+  color:var(--ink-3); font-size:15px}
+table.grid td.n.vv{color:var(--ink); width:52px}
+.drift{display:block; font-family:var(--ff-b); font-style:italic; font-size:12px;
+  color:var(--rubric); letter-spacing:0; margin-top:-2px}
+
+.track{position:relative; display:block; height:13px; min-width:180px;
+  border-bottom:1px solid var(--rule-hair)}
+.fill{position:absolute; left:0; top:5px; height:3px; background:var(--fill)}
+.gap{position:absolute; top:1px; height:11px; background:var(--rubric-tint);
+  border-top:1px solid var(--rubric); border-bottom:1px solid var(--rubric)}
+.dot{position:absolute; top:2px; width:9px; height:9px; border-radius:50%; margin-left:-4.5px}
+.dot.s{background:var(--fill)}
+.dot.v{border:2px solid var(--ring); background:var(--paper)}
+
+/* passes */
+.passes{margin-top:30px; border-top:2px solid var(--ink)}
+.pass{border-bottom:1px solid var(--rule); padding:24px 0; display:grid;
+  grid-template-columns:112px 1fr; gap:8px 26px}
+.pass .pn{font-family:var(--ff-d); font-size:12px; letter-spacing:.16em; color:var(--ink-3);
+  text-transform:uppercase; padding-top:5px}
+.pass h3{font-size:20px}
+.pass p{margin:9px 0 0; color:var(--ink-2)}
+.pass .moves{margin:13px 0 0; font-family:var(--ff-m); font-size:12.5px; color:var(--ink);
+  background:var(--paper-2); border-left:2px solid var(--rubric); padding:9px 13px;
+  display:inline-block}
+@media (max-width:640px){ .pass{grid-template-columns:1fr; gap:4px} .pass .pn{padding-top:0} }
+
+/* refusals */
+.refuse{margin-top:26px; border:1px solid var(--rubric); padding:clamp(20px,3.5vw,32px);
+  background:var(--rubric-tint)}
+.refuse h2{color:var(--rubric)}
+.refuse ul{margin:18px 0 0; padding-left:0; list-style:none}
+.refuse li{padding:11px 0; border-top:1px solid var(--rubric); max-width:70ch}
+.refuse li:first-child{border-top:0; padding-top:0}
+.refuse .big{font-family:var(--ff-d); font-variant-numeric:tabular-nums}
+
+footer{margin-top:clamp(56px,8vw,88px); padding-top:18px; border-top:1px solid var(--rule);
+  font-size:13px; color:var(--ink-3); max-width:70ch}
+</style></head><body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">The Arda Archive &middot; ruling C52</p>
+  <h1>The Codex&nbsp;Transformation</h1>
+  <p class="thesis">Forty&#8209;five features of the approved spread, measured against forty&#8209;six halls.
+  <b>Thirteen of them read as present in a browser and are absent from the files in git</b> &mdash; the
+  skeleton of the book is assembled in the reader&rsquo;s browser, differently on every load.</p>
+  <p class="byline"><span>Measured 20 August 2026</span><span>Every number from
+  <code>map/codex_coverage.py</code></span><span>Nothing here is estimated</span></p>
+</header>
+
+<div class="stats">
+  <div class="stat"><span class="v">582</span><span class="k">entity routes, already converted</span></div>
+  <div class="stat"><span class="v">40</span><span class="k">live halls</span></div>
+  <div class="stat warn"><span class="v">24</span><span class="k">halls whose file and page differ</span></div>
+  <div class="stat warn"><span class="v">5</span><span class="k">features at 0/46</span></div>
+  <div class="stat"><span class="v">1</span><span class="k">hall holding all the apparatus</span></div>
+</div>
+
+<section class="blk">
+  <div class="rulehead"><span class="num">I</span><h2>What the archive actually is</h2></div>
+  <div class="prose">
+    <p class="lede">Coverage separates into four bands, and the bands are the plan. The chart shows
+    two numbers per feature: what stands in the committed files, and what a reader sees on screen.
+    <b>Where they diverge, the difference is drawn in red</b> &mdash; that gap is
+    <code>codex-hall.js</code> building the spread at load time. It is also non&#8209;deterministic:
+    <code>corpus.html</code> produced 188 leaves on one run and 42 on the next.</p>
+  </div>
+
+  <div class="legend">
+    <span><i class="sw-s"></i>in the committed file</span>
+    <span><i class="sw-v"></i>on the reader&rsquo;s screen</span>
+    <span><i class="sw-g"></i>exists only in the browser</span>
+  </div>
+
+  <div class="bandwrap">
+<section class="band absent">
+  <div class="bh"><h3>THE ABSENT</h3><p class="bd">never built for any hall</p><p class="br">0/46</p></div>
+  <table class="grid"><thead><tr><th scope="col">feature</th><th scope="col">coverage of 46 halls</th>
+  <th scope="col" class="n">in git</th><th scope="col" class="n">on screen</th></tr></thead>
+  <tbody><tr><th scope="row"><code>codex_hands_js</code></th><td class="b"><span class="track"><span class="fill" style="width:0.00%"></span><span class="dot v" style="left:0.00%"></span><span class="dot s" style="left:0.00%"></span></span></td><td class="n">0</td><td class="n vv">0</td></tr><tr><th scope="row"><code>hand_slot</code></th><td class="b"><span class="track"><span class="fill" style="width:0.00%"></span><span class="dot v" style="left:0.00%"></span><span class="dot s" style="left:0.00%"></span></span></td><td class="n">0</td><td class="n vv">0</td></tr><tr><th scope="row"><code>hands_hand</code></th><td class="b"><span class="track"><span class="fill" style="width:0.00%"></span><span class="dot v" style="left:0.00%"></span><span class="dot s" style="left:0.00%"></span></span></td><td class="n">0</td><td class="n vv">0</td></tr><tr><th scope="row"><code>manicule</code></th><td class="b"><span class="track"><span class="fill" style="width:0.00%"></span><span class="dot v" style="left:0.00%"></span><span class="dot s" style="left:0.00%"></span></span></td><td class="n">0</td><td class="n vv">0</td></tr><tr><th scope="row"><code>struck</code></th><td class="b"><span class="track"><span class="fill" style="width:0.00%"></span><span class="dot v" style="left:0.00%"></span><span class="dot s" style="left:0.00%"></span></span></td><td class="n">0</td><td class="n vv">0</td></tr></tbody></table></section>
+<section class="band app">
+  <div class="bh"><h3>THE APPARATUS</h3><p class="bd">one page holds all of it</p><p class="br">1–7/46</p></div>
+  <table class="grid"><thead><tr><th scope="col">feature</th><th scope="col">coverage of 46 halls</th>
+  <th scope="col" class="n">in git</th><th scope="col" class="n">on screen</th></tr></thead>
+  <tbody><tr><th scope="row"><code>corr</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>device</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>fig</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>fig_frame</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>figcaption</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>footnote_band</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>footnote_entry</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>gloss</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>marg_fig</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>mark</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>ref_mark</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>slip</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="dot v" style="left:2.17%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">1</td></tr><tr><th scope="row"><code>cite</code></th><td class="b"><span class="track"><span class="fill" style="width:2.17%"></span><span class="gap" style="left:2.17%;width:13.04%"></span><span class="dot v" style="left:15.22%"></span><span class="dot s" style="left:2.17%"></span></span></td><td class="n">1</td><td class="n vv">7</td></tr></tbody></table></section>
+<section class="band mid">
+  <div class="bh"><h3>THE MIDDLE</h3><p class="bd">the illuminated opening matter</p><p class="br">8–10/46</p></div>
+  <table class="grid"><thead><tr><th scope="col">feature</th><th scope="col">coverage of 46 halls</th>
+  <th scope="col" class="n">in git</th><th scope="col" class="n">on screen</th></tr></thead>
+  <tbody><tr><th scope="row"><code>illum</code></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="dot v" style="left:17.39%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">8</td></tr><tr><th scope="row"><code>rubric</code></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="dot v" style="left:17.39%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">8</td></tr><tr><th scope="row"><code>versal</code></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="dot v" style="left:17.39%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">8</td></tr><tr><th scope="row"><code>sub</code></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:4.35%"></span><span class="dot v" style="left:21.74%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">10</td></tr></tbody></table></section>
+<section class="band skel">
+  <div class="bh"><h3>THE SKELETON</h3><p class="bd">a lie in 24 halls — it exists only in the browser</p><p class="br">24–33/46</p></div>
+  <table class="grid"><thead><tr><th scope="col">feature</th><th scope="col">coverage of 46 halls</th>
+  <th scope="col" class="n">in git</th><th scope="col" class="n">on screen</th></tr></thead>
+  <tbody><tr><th scope="row"><code>catch</code><span class="drift">+16 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:34.78%"></span><span class="dot v" style="left:52.17%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">24</td></tr><tr><th scope="row"><code>textblock</code><span class="drift">+18 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:39.13%"></span><span class="dot v" style="left:56.52%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">26</td></tr><tr><th scope="row"><code>running_head</code><span class="drift">+21 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:45.65%"></span><span class="dot v" style="left:65.22%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">30</td></tr><tr><th scope="row"><code>density_high</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:52.17%"></span><span class="dot v" style="left:69.57%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">32</td></tr><tr><th scope="row"><code>quire</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:52.17%"></span><span class="dot v" style="left:69.57%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">32</td></tr><tr><th scope="row"><code>ruled</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:52.17%"></span><span class="dot v" style="left:69.57%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">32</td></tr><tr><th scope="row"><code>spread_codex</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:52.17%"></span><span class="dot v" style="left:69.57%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">32</td></tr><tr><th scope="row"><code>twocol</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:17.39%"></span><span class="gap" style="left:17.39%;width:52.17%"></span><span class="dot v" style="left:69.57%"></span><span class="dot s" style="left:17.39%"></span></span></td><td class="n">8</td><td class="n vv">32</td></tr><tr><th scope="row"><code>gutter</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:52.17%"></span><span class="dot v" style="left:71.74%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">33</td></tr><tr><th scope="row"><code>leaf_recto</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:52.17%"></span><span class="dot v" style="left:71.74%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">33</td></tr><tr><th scope="row"><code>leaf_verso</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:52.17%"></span><span class="dot v" style="left:71.74%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">33</td></tr><tr><th scope="row"><code>rh_numeral</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:52.17%"></span><span class="dot v" style="left:71.74%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">33</td></tr><tr><th scope="row"><code>two_leaves</code><span class="drift">+24 runtime only</span></th><td class="b"><span class="track"><span class="fill" style="width:19.57%"></span><span class="gap" style="left:19.57%;width:52.17%"></span><span class="dot v" style="left:71.74%"></span><span class="dot s" style="left:19.57%"></span></span></td><td class="n">9</td><td class="n vv">33</td></tr></tbody></table></section>
+<section class="band shell">
+  <div class="bh"><h3>THE SHELL</h3><p class="bd">done, everywhere</p><p class="br">37–40/46</p></div>
+  <table class="grid"><thead><tr><th scope="col">feature</th><th scope="col">coverage of 46 halls</th>
+  <th scope="col" class="n">in git</th><th scope="col" class="n">on screen</th></tr></thead>
+  <tbody><tr><th scope="row"><code>tab_current</code></th><td class="b"><span class="track"><span class="fill" style="width:80.43%"></span><span class="dot v" style="left:80.43%"></span><span class="dot s" style="left:80.43%"></span></span></td><td class="n">37</td><td class="n vv">37</td></tr><tr><th scope="row"><code>kind</code></th><td class="b"><span class="track"><span class="fill" style="width:84.78%"></span><span class="dot v" style="left:84.78%"></span><span class="dot s" style="left:84.78%"></span></span></td><td class="n">39</td><td class="n vv">39</td></tr><tr><th scope="row"><code>book</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>clasp</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>folio</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>glossary_js</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>nav_tabs</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>plaque</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>spread</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr><tr><th scope="row"><code>tab</code></th><td class="b"><span class="track"><span class="fill" style="width:86.96%"></span><span class="dot v" style="left:86.96%"></span><span class="dot s" style="left:86.96%"></span></span></td><td class="n">40</td><td class="n vv">40</td></tr></tbody></table></section>  </div>
+</section>
+
+<section class="blk">
+  <div class="rulehead"><span class="num">II</span><h2>The order of the work</h2></div>
+  <div class="prose"><p class="lede">Ruling C65 chose breadth over depth. Forty&#8209;six halls at the
+  same honest level looks like a book; one magnificent hall among forty&#8209;five plain ones looks
+  broken. The risk is stated rather than hidden &mdash; <b>nothing is finished until pass three.</b></p></div>
+
+  <div class="passes">
+    <div class="pass">
+      <div class="pn">Pass one</div>
+      <div>
+        <h3>Make the skeleton real</h3>
+        <p>Generate hall spreads when the site is built, as the 582 entity routes already are. Reuse
+        the emitter that works; do not fork it. <code>404.html</code> proved the method today &mdash;
+        it went from 8/34 to 33/34 by importing that emitter rather than copying it.</p>
+        <p>Four things stop being faults at once: the page a reader gets is the page in git, a guard
+        can check it, it works with JavaScript off, and the leaf count stops changing between loads.</p>
+        <p class="moves">skeleton band &nbsp;8/46 in git &nbsp;&rarr;&nbsp; 40/40 in git</p>
+      </div>
+    </div>
+    <div class="pass">
+      <div class="pn">Pass two</div>
+      <div>
+        <h3>The apparatus, where a record exists</h3>
+        <p>The apparatus band sits at 1/46 and rises only as far as real records reach. Each feature
+        needs its dataset, its register row and its declaration first, or it is invented scholarship.
+        Two records are already built: <b>1,212 errata</b> and the device dossiers.</p>
+        <p>One feature may never be built at all. No per&#8209;entity gloss record exists, and the
+        prototype&rsquo;s own corrections turned out to be cosmetic pairs, inconsistent about which
+        reading is older. They are not evidence of anything.</p>
+      </div>
+    </div>
+    <div class="pass">
+      <div class="pn">Pass three</div>
+      <div>
+        <h3>The five at zero, and the declared ceilings</h3>
+        <p>Two of the five already work on the entity side &mdash; 670 manicules stand on the 335
+        routes with an unresolved reading, and the struck reading now carries the whole errata
+        register. A hall gets them only where a hall has the same kind of claim. Where it does not,
+        <b>the ceiling is declared and counted, not quietly skipped.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="rulehead"><span class="num">III</span><h2>What had to be fixed first</h2></div>
+  <div class="prose">
+    <p class="lede">Four agents working independently found the same root cause on the same day.
+    One CSS property &mdash; <code>height</code> &mdash; was never reset in the narrow&#8209;screen
+    block, so the board stayed <b>231&nbsp;pixels tall on a phone</b> and a whole record was asked to
+    fit inside it.</p>
+    <p>Measured across 340 validated cells at four widths: <b>83 of 85 pages scrolled sideways</b> at
+    768px and below, and not one of the 582 entity routes was correct below 1024px. The proof was
+    sitting in the file the whole time &mdash; the volume contents pages were the only ones granted
+    that reset, and the only ones that survived a phone.</p>
+    <p>Measured separately, and just as invisible to every visual review: the page&#8209;turn
+    control &mdash; the archive&rsquo;s primary navigation &mdash; is <b>28&nbsp;pixels wide</b> and
+    fails the minimum touch target on every page at every width.</p>
+  </div>
+</section>
+
+<section class="blk refuse">
+  <h2>What this plan refuses to promise</h2>
+  <ul>
+    <li><span class="big">105</span> device corners stay blank, and that is the correct outcome.
+    A device the lore cannot support is worse than a blank corner. The ceiling is
+    <span class="big">113 of 218</span> subjects &mdash; 51.8% &mdash; because 43 are landforms that
+    cannot bear arms, 27 are hobbit, and 26 are real bearers the corpus simply never describes.</li>
+    <li><span class="big">6,800</span> real changes stand in git with no stated reason &mdash;
+    <b>85% of everything that ever changed.</b> No reason will be inferred for them, because a
+    recovered reason is a guess about why, and a wrong one produces an erratum that is verbatim and
+    false. The register publishes its own denominator instead.</li>
+    <li>The apparatus will <b>not</b> reach 46/46. It reaches as far as the records reach. The
+    ceilings above are measured limits, not targets to be beaten.</li>
+    <li>There is <b>no differencing anywhere in Tolkien</b> &mdash; no cadency, no brisures, no
+    abatements across 33 of his own files. Devices pass down unchanged. Any scheme that assumed
+    otherwise was building heraldry he never wrote.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>The working document this page summarises is <code>CODEX_TRANSFORMATION.md</code>, which the
+  agents execute from. Where a number here will rot, that file gives the command that reproduces it
+  instead. The reference object is the last spread in <code>codex-proto.html</code>, which is never
+  edited.</p>
+</footer>
+
+</div>
+</body></html>

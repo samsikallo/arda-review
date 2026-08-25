@@ -1,0 +1,63 @@
+{
+ "what": "The public-domain texts Tolkien worked FROM. Not the corpus, and not tiered.",
+ "why_not_corpus": "corpus/ is the population a claim about Arda may be cited to; these make no claim about Arda. They are evidence about Tolkien and about the tradition he wrote inside. See map/gen_analogues.py.",
+ "why_not_tiered": "the tiers rank claims about Arda. These make none, so they carry a hand and a provenance instead, as fonts and map data do under section 8 ruling 3. There is no fifth tier.",
+ "n_analogues": 5,
+ "analogues": [
+  {
+   "title": "Beowulf",
+   "language": "Old English",
+   "hand": "anonymous, c. 8th-11th century; this edition ed. James A. Harrison & Robert Sharp",
+   "licence": "public domain",
+   "source": "https://www.gutenberg.org/ebooks/16328",
+   "why_here": "Held because this archive already holds Tolkien's lecture 'Beowulf: The Monsters and the Critics', and a reader of the lecture had no way to reach the poem it is about.",
+   "file": "beowulf_old_english_gutenberg16328.txt",
+   "bytes": 300462,
+   "words": 42224
+  },
+  {
+   "title": "Kalevala, volume I",
+   "language": "Finnish, in W. F. Kirby's English verse translation",
+   "hand": "compiled Elias Lönnrot; trans. W. F. Kirby",
+   "licence": "public domain",
+   "source": "https://www.gutenberg.org/ebooks/25953",
+   "why_here": "Tolkien wrote a 'Story of Kullervo', which this archive does NOT hold; this is the Kalevala that story is drawn from. Whether and how it shaped Turin is a claim this register does not make. VOLUME I ONLY.",
+   "file": "kalevala_kirby_vol1_gutenberg25953.txt",
+   "bytes": 571769,
+   "words": 85772
+  },
+  {
+   "title": "Pearl",
+   "language": "Middle English, in Sophie Jewett's verse translation",
+   "hand": "anonymous, late 14th century (the Gawain-poet); trans. Sophie Jewett",
+   "licence": "public domain",
+   "source": "https://www.gutenberg.org/ebooks/13211",
+   "why_here": "Tolkien published a translation of Pearl in 1975. THIS IS JEWETT'S TRANSLATION, not his and not the Middle English -- recorded so nobody quotes it as either.",
+   "file": "pearl_jewett_gutenberg13211.txt",
+   "bytes": 72845,
+   "words": 12357
+  },
+  {
+   "title": "Sir Gawain and the Green Knight",
+   "language": "Middle English",
+   "hand": "anonymous, late 14th century; this edition ed. Richard Morris (EETS)",
+   "licence": "public domain",
+   "source": "https://www.gutenberg.org/ebooks/14568",
+   "why_here": "Tolkien and E. V. Gordon published an edition of this poem in 1925 -- bibliography, not interpretation. This is the Middle English, thorns and yoghs intact, and NOT their edition, which the archive does not hold.",
+   "file": "sir_gawain_middle_english_morris_gutenberg14568.html",
+   "bytes": 830313,
+   "words": 93501
+  },
+  {
+   "title": "The Volsunga Saga",
+   "language": "Old Norse, in William Morris & Eirikr Magnusson's prose",
+   "hand": "anonymous, 13th century; trans. Morris & Magnusson",
+   "licence": "public domain",
+   "source": "https://www.gutenberg.org/ebooks/1152",
+   "why_here": "The Sigurd matter. Tolkien's own 'Legend of Sigurd and Gudrun' is a DECLARED ABSENCE in this archive, so the source is held while the retelling is not.",
+   "file": "volsunga_saga_morris_gutenberg1152.txt",
+   "bytes": 350775,
+   "words": 60259
+  }
+ ]
+}

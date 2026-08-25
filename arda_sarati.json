@@ -1,0 +1,903 @@
+{
+ "script": "Sarati",
+ "built_from": "map/gen_sarati.py",
+ "reads": "site/sarati/ — the plates themselves; the FILENAMES carry the labelling",
+ "encoding": "NONE. This maps a sound to a PICTURE, never to a codepoint — see `unresolved`.",
+ "credit": {
+  "plates": "Hëernamae Pëen Ionoëryn, uploaded by JanezPavelZebovec, via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "scholarship": "Måns Björkman Berg, Amanyë Tenceli — FACTS ONLY; no prose or figure of his is republished here"
+ },
+ "forms": {
+  "Quenya": "the Quenya usage (R15, R17). Vowel-sign always on TOP in R17, of the consonant it FOLLOWS; R15 allows top or bottom, top meaning before and bottom after. R17 has an INHERENT `a`: every sarat is read as followed by a, and a single dot below means no vowel follows.",
+  "Late": "the Late Form. Vowel-sign always TOP and read BEFORE; the schwa always BOTTOM.",
+  "Phonetic": "the Phonetic Form. Vowel-sign on top of the FOLLOWING consonant in the majority of samples; preceding in R19/RV1; bottom in R20.",
+  "Early": "the Early Form. Vowel-sign top OR bottom — top read before, bottom after."
+ },
+ "direction": "A PROPERTY OF THE DOCUMENT, NOT THE SCRIPT. R17 says Sarati was 'originally written from right to left, or boustrophedon ... but in books and cursive form it was usually written from top to bottom beginning at the top right-hand corner.' Five directions are attested, and the MAJORITY of samples run top-to-bottom from the LEFT — against R17's own description. A transcriber must be told which.",
+ "alignment": "R17: the letters are 'hangers to a bar', consonants to the right (or below), vowels to the left (or above). Many samples omit the bar and two mirror it, so Björkman uses FRONT · BACK · TOP · BOTTOM rather than left/right — a description that survives a change of direction, which left/right does not.",
+ "reads_also": [
+  "uploads/sarati_values.md",
+  "uploads/sarati_findings.json"
+ ],
+ "legend": {
+  "every value": "read off the plate labelling — Hëernamae Pëen Ionoëryn, via Wikimedia Commons, CC BY-SA 4.0. The shape is Tolkien's; the reading is the Commons contributor's, and taking it is ours. That is why every value is [I-H] and none is [C].",
+  "corroborated": "TWO UNRELATED THIRD PARTIES, INDEPENDENTLY — the Commons plate label and Glaemscribe's semantic charset name (`VELAR_LATERAL_APPROXIMANT`, `UVULAR_TRILL`). The plate reading is still ours, so the marker STAYS [I-H]: what a second witness removes is the possibility that one contributor's labelling is the whole evidence. Corroboration is not promotion.",
+  "not_graded": "uploads/sarati_values.md grades no row naming this sound, so the row carries the plate-label marker and nothing more. THAT IS A STATEMENT ABOUT THE RECORD, NOT ABOUT THE SARAT.",
+  "vowel-sign": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and WHERE it goes is the usage rule this file records per form (R15/R17 for Quenya). Cropped by map/gen_sarati_vowels.py from the owner's chart, 16 Aug 2026.",
+  "cite": "each row's `cite` is the research record's own citation for that sound; `evidence` is its P (plate) and G (charset) column verbatim; `graded` is the record's own mark cell, ✓✓ meaning both witnesses.",
+  "why_one_legend": "these four sentences were repeated on every one of the 57 rows until 21 August 2026, which cost a reader 4.4 KB gzipped to learn four things. A budget must not be paid in features — and boilerplate is not a feature."
+ },
+ "facts": [
+  {
+   "fact": "Rumil of Tirion devised the first writing of Arda; his are the oldest Eldarin letters, and they were not used in Middle-earth.",
+   "cite": "The Lord of the Rings, Appendix E II (Writing): 'The oldest Eldarin letters, the Tengwar of Rumil, were not used in Middle-earth.' Corpus t1_c_the_lord_of_the_rings.txt line 50026. Also The Silmarillion ch. 6: Rumil 'first achieved fitting signs for the recording of speech and song' (t1_a_the_silmarillion.txt line 3713).",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "The letters are called sarati (sing. sarat), from *SAR 'score, incise' > 'write'; sarati remained the Quenya name for the Rumilian letters after tengwar was fixed on Feanor's.",
+   "cite": "The War of the Jewels, Quendi and Eldar, corpus t1_11_the_war_of_the_jewels.txt line 14452.",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "In the commonly used mode of spelling, the full signs were consonantal -- vowels were not full letters. This is the one STRUCTURAL fact about Sarati stated in a primary text rather than read off a chart.",
+   "cite": "The War of the Jewels, Quendi and Eldar, corpus t1_11_the_war_of_the_jewels.txt line 14453.",
+   "mark": "[EXT]",
+   "of": "Sarati",
+   "withdrawn_as": "[C]",
+   "withdrawal": "WITHDRAWN AS [C], 13 Aug 2026, by uploads/sarati_values.md and by CLAUDE.md. Read at 3,000 characters of context that sentence in Quendi and Eldar is about the FEANORIAN TENGWAR -- it explains why `tengwar` came to mean 'consonants' and the vowel-signs `omatehtar`. It cannot be cited for Sarati, and it was the only [C] in the list about Sarati's STRUCTURE. The true equivalent is [EXT]: Bjorkman, citing FQD, that under the Quenya phonematic analysis vowels were not full phonemes, so only consonants are true sarati and vowels are diacritics. The two supplied research files DISAGREE here and the later one corrects the earlier; that is a finding, not a quiet choice."
+  },
+  {
+   "fact": "A specimen exists and is published: part of the 'Tale of Turin' written in the Rumilian alphabet.",
+   "cite": "The Silmarillion, plates/list of illustrations, corpus t1_a_the_silmarillion.txt lines 173 and 9621.",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "The Sarati corpus is 26 documents (R1-R26), edited and published as Parma Eldalamberon 13, 'The Alphabet of Rumil'.",
+   "cite": "corpus/t2_parma_eldalamberon_13.txt line 192 ('twenty-six documents') and the editorial apparatus at lines 156-330.",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "Sarati usages divide into five valuations, four of them distinguished by the shape of the k-type sarat: 'Early Form' (samples R1-R2), 'Diary Form' (R7-R8), the Phonetic Form (R9-R21, RV1; three varieties), the Quenya Usage (R15, R17a, R17c; an adapted subset of the Phonetic Form), and the 'Late Form' (R22-R23). 'Valuation' is Tolkien's own term, from R12; 'mode' is never used of the Sarati. Names in inverted commas are Bjorkman's coinages.",
+   "cite": "Amanye Tenceli, Sarati Valuations, https://at.boktypografen.se/sarati_valuations.htm (local mirror ~/.cache/arda_at/at.boktypografen.se/sarati_valuations.htm). FACTS ONLY -- his prose and his k-type figures are not reproduced.",
+   "mark": "[I-H]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "Diacritics, not letters, carry the vowels; they are turned with the same side toward their sarat and mirrored when set on the other side. A vowel with no adjacent consonant sits on a carrier. Further diacritics mark long/doubled consonant, a preceding homorganic nasal, and adjacent [s] or [z]. In the Quenya Usage each sarat is assumed to be followed by 'a' unless marked otherwise.",
+   "cite": "Amanye Tenceli, sarati.htm, sarati_quenya.htm, sarati_late.htm, sarati_phonetic.htm. Corroborated for the carrier and the doubling/nasal marks by PE13's own editorial conventions, corpus t2_parma_eldalamberon_13.txt lines 428-433 and 768.",
+   "mark": "[I-H]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "The Sarati were 'originally written from right to left, or boustrophedon beginning at the right', but in books and cursive usually top to bottom beginning at the top right-hand corner.",
+   "cite": "Tolkien, document R17, quoted verbatim on Amanye Tenceli sarati.htm; R17 is published in Parma Eldalamberon 13. The quoted sentence is Tolkien's, not Bjorkman's.",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "A letter or any individual significant mark was called a sarat, from *sar 'score, incise' > 'write'; sarati remained the name for the Rúmilian letters",
+   "cite": "Quendi and Eldar, WJ (HoME XI) — verified via ardatext.fold()",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "Rúmil of Túna first achieved fitting signs for the recording of speech and song, some for graving in metal or stone, others for brush or pen",
+   "cite": "AAm, Morgoth's Ring",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "Part of the 'Tale of Túrin' was written in the Rúmilian alphabet, invented and used by the Elves only in Valinor",
+   "cite": "The Silmarillion",
+   "mark": "[C]",
+   "of": "Sarati"
+  },
+  {
+   "fact": "PE 13's Rúmilian characters are \"scanned directly from photocopies or photographs\"",
+   "cite": "PE 13, Symbols and Conventions — held, citable",
+   "mark": "[C]",
+   "of": "Sarati"
+  }
+ ],
+ "refused_sounds": [
+  {
+   "mark": "[EXT]",
+   "corroborated": false,
+   "evidence": "G _VOICED_VELAR_FRICATIVE 71, _VOICELESS_VELAR_FRICATIVE 6e · AT overview, citing FQD: the short carrier derives from a sarat that had been [ɣ]; true [ɣ] uses a markedly different sarat",
+   "cite": "AT overview, citing FQD: the short carrier derives from a sarat that had been [ɣ]; true [ɣ] uses a markedly different sarat",
+   "section": "Phonetic Form, and the untagged plates",
+   "graded": "[EXT], no plate",
+   "why_refused": "the charset names this sound and the archive holds NO PLATE for it, so there is nothing here to draw. Named rather than skipped: a transcriber that says nothing tells the reader the sound is unattested, and it is attested.",
+   "value": "ɣ"
+  },
+  {
+   "mark": "[EXT]",
+   "corroborated": false,
+   "evidence": "G _VOICED_VELAR_FRICATIVE 71, _VOICELESS_VELAR_FRICATIVE 6e · AT overview, citing FQD: the short carrier derives from a sarat that had been [ɣ]; true [ɣ] uses a markedly different sarat",
+   "cite": "AT overview, citing FQD: the short carrier derives from a sarat that had been [ɣ]; true [ɣ] uses a markedly different sarat",
+   "section": "Phonetic Form, and the untagged plates",
+   "graded": "[EXT], no plate",
+   "why_refused": "the charset names this sound and the archive holds NO PLATE for it, so there is nothing here to draw. Named rather than skipped: a transcriber that says nothing tells the reader the sound is unattested, and it is attested.",
+   "value": "x"
+  },
+  {
+   "mark": "[EXT]",
+   "corroborated": false,
+   "evidence": "G SARATI_PHONETIC_GW 27 · AT: varieties 1 & 3 have distinct sarati for [kw],[gw],[φ],[β]",
+   "cite": "AT: varieties 1 & 3 have distinct sarati for [kw],[gw],[φ],[β]",
+   "section": "Phonetic Form, and the untagged plates",
+   "graded": "[EXT], no plate",
+   "why_refused": "the charset names this sound and the archive holds NO PLATE for it, so there is nothing here to draw. Named rather than skipped: a transcriber that says nothing tells the reader the sound is unattested, and it is attested.",
+   "value": "gw"
+  },
+  {
+   "mark": "[EXT]",
+   "corroborated": false,
+   "evidence": "G SARATI_PHONETIC_GW 27 · AT: varieties 1 & 3 have distinct sarati for [kw],[gw],[φ],[β]",
+   "cite": "AT: varieties 1 & 3 have distinct sarati for [kw],[gw],[φ],[β]",
+   "section": "Phonetic Form, and the untagged plates",
+   "graded": "[EXT], no plate",
+   "why_refused": "the charset names this sound and the archive holds NO PLATE for it, so there is nothing here to draw. Named rather than skipped: a transcriber that says nothing tells the reader the sound is unattested, and it is attested.",
+   "value": "kw"
+  }
+ ],
+ "disagreements": [
+  {
+   "what": "the shared charset slots",
+   "readings": "Shared slots unresolved: _QUENYA_QU_ALT shares 64 with _QUENYA_MP; _QUENYA_X shares 79 with _VELAR_LATERAL_APPROXIMANT. Either a deliberate homograph (as B/QUENYA_MB demonstrably is, per R15) or a font economy. Unestablished per pair.",
+   "mark": "[EXT]",
+   "adopted": null,
+   "why_not_adopted": "unestablished per pair. A homograph is attested elsewhere in this charset (SARATI_B / _QUENYA_MB share slot 5f, and R15 gives the reason), so a shared slot is not by itself evidence of a font economy -- which is exactly why neither reading is taken.",
+   "source": "uploads/sarati_values.md §3.7"
+  },
+  {
+   "what": "the sign transcribed h, against R17's hw",
+   "readings": "h (as transcribed) · hw (as R17 gives it)",
+   "mark": "[I-H]",
+   "adopted": null,
+   "why_not_adopted": "Amanye Tenceli calls R17's hw an EDITORIAL ERROR on the PE errata's authority. That is a third party correcting a primary publication, so both readings stand here and the correction is named rather than applied.",
+   "source": "uploads/sarati_values.md, Quenya Usage — consonants, the h row"
+  },
+  {
+   "what": "the [s] sign, Phonetic Form against Late Form",
+   "readings": "two different plates: letter_s_(Fonetic_form) · letter_s_(Late_Form)",
+   "mark": "[I-H]",
+   "adopted": null,
+   "why_not_adopted": "the sign differs BY VALUATION, so `s` alone is not a value in this script. The form must be chosen before anything is written, which is why this file publishes four forms and one transcriber cannot serve them all.",
+   "source": "uploads/sarati_values.md, Phonetic Form and the untagged plates"
+  }
+ ],
+ "correction_the_archive_owes_itself": "CLAUDE.md lists \"[C] the full signs were consonantal\" as its one Sarati fact from a primary text. Read at 3,000 characters of context, that sentence is about the Fëanorian tengwar — it explains why tengwar came to mean 'consonants' and the vowel-signs ómatehtar. It must not be cited for Sarati. The true equivalent is [EXT]: Björkman from FQD — under the Quenya phonematic analysis vowels were not full phonemes, so only consonants are true sarati and vowels are diacritics.",
+ "n_letters": 57,
+ "n_sheets": 15,
+ "letters": [
+  {
+   "value": "a",
+   "plate": "sarati_vowel_a.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "Quenya · G _QUENYA_A d6 (+_A_REVERSED d8), _E e8, _I d2, _O dc, _U de · mode {TEHTAS_}",
+   "graded": "[EXT]",
+   "section": "Vowels and diacritics"
+  },
+  {
+   "value": "b",
+   "plate": "Sarati_-_letter_b_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "d",
+   "plate": "Sarati_-_letter_d_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "dʒ",
+   "plate": "Sarati_-_letter_dʒ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "e",
+   "plate": "sarati_vowel_e.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "Quenya · G _QUENYA_A d6 (+_A_REVERSED d8), _E e8, _I d2, _O dc, _U de · mode {TEHTAS_}",
+   "graded": "[EXT]",
+   "section": "Vowels and diacritics"
+  },
+  {
+   "value": "f",
+   "plate": "Sarati_-_letter_f_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT fig.1",
+   "evidence": "P letter_f; G _F 5b, _QUENYA_F_ALT 5c · AT fig.1",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "g",
+   "plate": "Sarati_-_letter_g.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "h",
+   "plate": "Sarati_-_letter_h_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "evidence": "P letter_h, letter_hty; G _H cb, _HW ba, _HY bd, _HL 41, _HR 4a, _HT_ALT_1 b2 · AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "i",
+   "plate": "sarati_vowel_i.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "Quenya · G _QUENYA_A d6 (+_A_REVERSED d8), _E e8, _I d2, _O dc, _U de · mode {TEHTAS_}",
+   "graded": "[EXT]",
+   "section": "Vowels and diacritics"
+  },
+  {
+   "value": "j",
+   "plate": "Sarati_-_letter_j_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "",
+   "evidence": "",
+   "graded": "",
+   "not_graded": true
+  },
+  {
+   "value": "j̊, ç",
+   "plate": "Sarati_-_letter_j̊,_ç_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic 1.5–1.6",
+   "evidence": "P four plates; G _UVULAR_TRILL 7a, _VELAR_LATERAL_APPROXIMANT 79, _VOICELESS_LABIOVELAR_APPROXIMANT ba, _VOICELESS_PALATAL_APPROXIMANT bd · AT Phonetic 1.5–1.6",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "k",
+   "plate": "Sarati_-_letter_k.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Quenya Usage fig.1; mode {L1_KER}",
+   "evidence": "P letter_t/k/p; G _T 22, _P 5a, _QUENYA_C 23, _QUENYA_QU 70 · AT Quenya Usage fig.1; mode {L1_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "l",
+   "plate": "Sarati_-_letter_l_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_L_KER} = l·ll·d",
+   "evidence": "P letter_l; G _L 3f, _D 25 · mode {LINE_L_KER} = l·ll·d",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "m",
+   "plate": "Sarati_-_letter_m_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "n",
+   "plate": "Sarati_-_letter_n_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "o",
+   "plate": "sarati_vowel_o.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "Quenya · G _QUENYA_A d6 (+_A_REVERSED d8), _E e8, _I d2, _O dc, _U de · mode {TEHTAS_}",
+   "graded": "[EXT]",
+   "section": "Vowels and diacritics"
+  },
+  {
+   "value": "p",
+   "plate": "Sarati_-_letter_p_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Quenya Usage fig.1; mode {L1_KER}",
+   "evidence": "P letter_t/k/p; G _T 22, _P 5a, _QUENYA_C 23, _QUENYA_QU 70 · AT Quenya Usage fig.1; mode {L1_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "r",
+   "plate": "Sarati_-_letter_r_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_6TH_KER}",
+   "evidence": "P letter_r/v/w/j_(vertical); G _R 46, _V_ALT 61, _QUENYA_Y/_J bb, _W b9 · mode {LINE_6TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "t",
+   "plate": "Sarati_-_letter_t_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Quenya Usage fig.1; mode {L1_KER}",
+   "evidence": "P letter_t/k/p; G _T 22, _P 5a, _QUENYA_C 23, _QUENYA_QU 70 · AT Quenya Usage fig.1; mode {L1_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "tʃ",
+   "plate": "Sarati_-_letter_tʃ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "u",
+   "plate": "sarati_vowel_u.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "Quenya · G _QUENYA_A d6 (+_A_REVERSED d8), _E e8, _I d2, _O dc, _U de · mode {TEHTAS_}",
+   "graded": "[EXT]",
+   "section": "Vowels and diacritics"
+  },
+  {
+   "value": "v",
+   "plate": "Sarati_-_letter_v_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_6TH_KER}",
+   "evidence": "P letter_r/v/w/j_(vertical); G _R 46, _V_ALT 61, _QUENYA_Y/_J bb, _W b9 · mode {LINE_6TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "w",
+   "plate": "Sarati_-_letter_w_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_6TH_KER}",
+   "evidence": "P letter_r/v/w/j_(vertical); G _R 46, _V_ALT 61, _QUENYA_Y/_J bb, _W b9 · mode {LINE_6TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "z",
+   "plate": "Sarati_-_letter_z.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "æ",
+   "plate": "sarati_vowel_ae.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "",
+   "graded": "",
+   "not_graded": true
+  },
+  {
+   "value": "ð",
+   "plate": "Sarati_-_letter_ð.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ŋ",
+   "plate": "Sarati_-_letter_ŋ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ə",
+   "plate": "sarati_vowel_schwa.png",
+   "form": null,
+   "kind": "vowel-sign",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "note": "vowel-sign",
+   "mark": "[I-H]",
+   "evidence": "",
+   "graded": "",
+   "not_graded": true
+  },
+  {
+   "value": "ʀ",
+   "plate": "Sarati_-_letter_ʀ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic 1.5–1.6",
+   "evidence": "P four plates; G _UVULAR_TRILL 7a, _VELAR_LATERAL_APPROXIMANT 79, _VOICELESS_LABIOVELAR_APPROXIMANT ba, _VOICELESS_PALATAL_APPROXIMANT bd · AT Phonetic 1.5–1.6",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ʃ",
+   "plate": "Sarati_-_letter_ʃ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ʍ",
+   "plate": "Sarati_-_letter_ʍ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic 1.5–1.6",
+   "evidence": "P four plates; G _UVULAR_TRILL 7a, _VELAR_LATERAL_APPROXIMANT 79, _VOICELESS_LABIOVELAR_APPROXIMANT ba, _VOICELESS_PALATAL_APPROXIMANT bd · AT Phonetic 1.5–1.6",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ʒ",
+   "plate": "Sarati_-_letter_ʒ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ʟ",
+   "plate": "Sarati_-_letter_ʟ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic 1.5–1.6",
+   "evidence": "P four plates; G _UVULAR_TRILL 7a, _VELAR_LATERAL_APPROXIMANT 79, _VOICELESS_LABIOVELAR_APPROXIMANT ba, _VOICELESS_PALATAL_APPROXIMANT bd · AT Phonetic 1.5–1.6",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "θ",
+   "plate": "Sarati_-_letter_θ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ð",
+   "plate": "Sarati_-_letter_ð_(2nd_variant).png",
+   "form": "2nd variant",
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "z",
+   "plate": "Sarati_letter_z_(2nd_variation).png",
+   "form": "2nd variation",
+   "mark": "[I-H]",
+   "cite": "AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "evidence": "P, ten IPA-named plates; G _VOICED_DENTAL_FRICATIVE ab, _VOICELESS_PALATO_ALVEOLAR… a2 · AT Phonetic figs. 1.1–1.7, from R17b/R18",
+   "graded": "✓✓ [I-H]",
+   "section": "Phonetic Form, and the untagged plates",
+   "corroborated": true
+  },
+  {
+   "value": "ss",
+   "plate": "Sarati_-_letter_ss_(3rd_variation,_Quenya).png",
+   "form": "3rd variation, Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_8TH/8PTH_KER}",
+   "evidence": "P letter_ht,_s, letter_ss_(3rd_variation), letter_st, letter_sty; G _SS_ALT_1 a6, _ST 76 · mode {LINE_8TH/8PTH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "s",
+   "plate": "Sarati_-_letter_s_(Fonetic_form).png",
+   "form": "Fonetic form",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_8TH/8PTH_KER}",
+   "evidence": "P letter_ht,_s, letter_ss_(3rd_variation), letter_st, letter_sty; G _SS_ALT_1 a6, _ST 76 · mode {LINE_8TH/8PTH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "s",
+   "plate": "Sarati_-_letter_s_(Late_Form).png",
+   "form": "Late Form",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_8TH/8PTH_KER}",
+   "evidence": "P letter_ht,_s, letter_ss_(3rd_variation), letter_st, letter_sty; G _SS_ALT_1 a6, _ST 76 · mode {LINE_8TH/8PTH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "h",
+   "plate": "Sarati_-_letter_h_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "evidence": "P letter_h, letter_hty; G _H cb, _HW ba, _HY bd, _HL 41, _HR 4a, _HT_ALT_1 b2 · AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ht, s",
+   "plate": "Sarati_-_letter_ht,_s_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "evidence": "P letter_h, letter_hty; G _H cb, _HW ba, _HY bd, _HL 41, _HR 4a, _HT_ALT_1 b2 · AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "hty",
+   "plate": "Sarati_-_letter_hty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "evidence": "P letter_h, letter_hty; G _H cb, _HW ba, _HY bd, _HL 41, _HR 4a, _HT_ALT_1 b2 · AT: the sign transcribed h is given hw in R17 — an editorial error, per the PE errata",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nc",
+   "plate": "Sarati_-_letter_nc_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT fig.1; mode {LINE_4TH_KER}",
+   "evidence": "P five _(Quenya) plates; G _NDY b3, _NT aa, _MP 64 · AT fig.1; mode {LINE_4TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nd, d",
+   "plate": "Sarati_-_letter_nd,_d_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ndy",
+   "plate": "Sarati_-_letter_ndy_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT fig.1; mode {LINE_4TH_KER}",
+   "evidence": "P five _(Quenya) plates; G _NDY b3, _NT aa, _MP 64 · AT fig.1; mode {LINE_4TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ng",
+   "plate": "Sarati_-_letter_ng_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ngw",
+   "plate": "Sarati_-_letter_ngw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ngw, gw",
+   "plate": "Sarati_-_letter_ngw,_gw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "evidence": "P letter_nd,_d, letter_ngw,_gw, letter_ng; G SARATI_B + _QUENYA_MB share slot 5f · AT, citing R15: cluster value only \"written alone\"; inside a cluster → b, d, dy, g, gw",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nqu",
+   "plate": "Sarati_-_letter_nqu_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT fig.1; mode {LINE_4TH_KER}",
+   "evidence": "P five _(Quenya) plates; G _NDY b3, _NT aa, _MP 64 · AT fig.1; mode {LINE_4TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nt",
+   "plate": "Sarati_-_letter_nt_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT fig.1; mode {LINE_4TH_KER}",
+   "evidence": "P five _(Quenya) plates; G _NDY b3, _NT aa, _MP 64 · AT fig.1; mode {LINE_4TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nty",
+   "plate": "Sarati_-_letter_nty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "AT fig.1; mode {LINE_4TH_KER}",
+   "evidence": "P five _(Quenya) plates; G _NDY b3, _NT aa, _MP 64 · AT fig.1; mode {LINE_4TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "nw",
+   "plate": "Sarati_-_letter_nw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ny",
+   "plate": "Sarati_-_letter_ny_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "st",
+   "plate": "Sarati_-_letter_st_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_8TH/8PTH_KER}",
+   "evidence": "P letter_ht,_s, letter_ss_(3rd_variation), letter_st, letter_sty; G _SS_ALT_1 a6, _ST 76 · mode {LINE_8TH/8PTH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "sty",
+   "plate": "Sarati_-_letter_sty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_8TH/8PTH_KER}",
+   "evidence": "P letter_ht,_s, letter_ss_(3rd_variation), letter_st, letter_sty; G _SS_ALT_1 a6, _ST 76 · mode {LINE_8TH/8PTH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ty",
+   "plate": "Sarati_-_letter_ty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode, explicit rules",
+   "evidence": "P letter_ty; G _TY b1, _TS 67, _X 79 · mode, explicit rules",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  },
+  {
+   "value": "ñ",
+   "plate": "Sarati_-_letter_ñ_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "mode {LINE_5TH_KER}",
+   "evidence": "P letter_ñ/nw/ny_(Quenya); G _N c0, _M 50, _VELAR_NASAL 2b, _NW 2c · mode {LINE_5TH_KER}",
+   "graded": "✓✓",
+   "section": "Quenya Usage — consonants",
+   "corroborated": true
+  }
+ ],
+ "sheets": [
+  {
+   "plate": "Sarati,_Phonetic_Form_-_long_vowels.png",
+   "what": "Phonetic Form - long vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_(Early_Form)_-_vowels.gif",
+   "what": "vowels",
+   "form": "Early_Form"
+  },
+  {
+   "plate": "Sarati_(Late_Form)_-_vowels.png",
+   "what": "vowels",
+   "form": "Late_Form"
+  },
+  {
+   "plate": "Sarati_(Quenya)_-_long_vowels.png",
+   "what": "long vowels",
+   "form": "Quenya"
+  },
+  {
+   "plate": "Sarati_(Quenya)_-_vowels.png",
+   "what": "vowels",
+   "form": "Quenya"
+  },
+  {
+   "plate": "Sarati_-_Alignment.png",
+   "what": "Alignment",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_Fonetic_form_-_semivowels_or_glides_(consonants).png",
+   "what": "Fonetic form - semivowels or glides (consonants)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_cupshaped_diatric_(for_preceding_homorganic_nasal).png",
+   "what": "cupshaped diatric (for preceding homorganic nasal)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_diatric_i_(single_dot).png",
+   "what": "diatric i (single dot)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_example_of_long_vowels.png",
+   "what": "example of long vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowel_short_carrier_(horizontal).png",
+   "what": "vowel short carrier (horizontal)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowel_short_carrier_(vertical).png",
+   "what": "vowel short carrier (vertical)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowels_of_Fonetic_Form.png",
+   "what": "vowels of Fonetic Form",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_basic_vowels.gif",
+   "what": "basic vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_vowels.png",
+   "what": "vowels",
+   "form": ""
+  }
+ ],
+ "excluded": [
+  {
+   "plate": "Sarati_-_specimen_the_Two_Trees",
+   "why": "no recorded licence and not on Commons — ruling 3 settles it before quality is reached"
+  }
+ ],
+ "unresolved": {
+  "sound → codepoint": "REFUSED. ArdaCSUR carries all 48 of U+E390-E3BF and names them `cid00904`-`cid00951` — bare CIDs that say nothing. Glaemscribe's charset names its letters and assigns ZERO codepoints in that block. Nothing in the archive binds a shape to a slot, and `sarat N = U+E390+N` is a guess that would render confidently.",
+  "the Diary Form": "NOT OFFERED. Björkman records five valuations; the archive holds no Diary plate at all. Settled by PE 13's R7-R8 tables, which the archive lacks.",
+  "individual vowel shapes": "The vowels are held as four whole SHEETS plus two isolated diacritics, not as one plate per vowel. Settled by segmenting the sheets — a measurement this archive may make and publish.",
+  "the 18 plates marked `(vertical)`": "That names an ORIENTATION, not a valuation. Björkman's own point is that appearance changes with direction while identity does not, so these are filed without a form rather than assigned to one."
+ },
+ "note": "NO LETTER VALUE here is [C] -- Sarati is not described letter by letter in any primary text, so every value rests on the plate labelling [I-H] and on Bjorkman's scholarship [EXT]. `facts` is a different population and DOES carry [C]: what Tolkien and Christopher Tolkien wrote ABOUT the script -- who devised it, what it is called, that a specimen exists, how it was written -- each cited to a corpus locus. A value and a fact about the script are not the same kind of claim and are no longer marked as though they were. Every value rests on the plate labelling [I-H] and on Björkman's scholarship [EXT], and the two are corroborated by a third party: Glaemscribe's charset names the same unusual inventory independently. ONE TRANSCRIBER CANNOT SERVE ALL FOUR FORMS -- the same mark means different things in different valuations -- so a form must be chosen before anything is written."
+}

@@ -1,0 +1,422 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Gazetteer of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:title" content="The Gazetteer of Arda — the Arda Archive"><meta property="og:description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/gazetteer.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/gazetteer.html"><!--/ARDA:META-->
+<!-- THE STALE TEMPLATE, sixth and last of the six BLIND page writers I measured.
+     CLAUDE.md rule 3: this file is written whole on every run, so anything the built page
+     gained from another tool is reverted. MEASURED with gate_check --measure, not
+     suspected: a rebuild dropped the skip-to-content link, the ARDA:META markers and the
+     description behind them. It already carried arda.css and nav.js, which is why the loss
+     here is three and not five -- the six writers lost between 0 and 5 elements each and
+     no two lost the same set, which is the reason each had to be measured rather than
+     assumed from the pattern. -->
+
+<!-- THE SHARED SHEET FIRST, and it was missing. nav.js builds the same grouped menu for
+     every hall, but arda.css is what makes it a menu; without it the whole navigation
+     rendered as three hundred and fifty pixels of run-together link text above the page,
+     on the one hall the smoke test cannot see. The page's own rules follow, and win. -->
+<link rel="stylesheet" href="arda.css">
+<style>
+:root{--line:#b0a58e;--mut:#7a6f5c}
+body{margin:0;background:#f4efe2;color:#3a3226;font:16px/1.55 Georgia,'Times New Roman',serif}
+#hdr{display:flex;align-items:center;gap:14px;padding:10px 18px;background:#2c2418;color:#d8c78e}
+#hdr h1{font-size:19px;font-weight:normal;font-variant:small-caps;letter-spacing:.06em;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:16px 18px 60px}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;
+ padding:14px 20px;box-shadow:0 2px 8px rgba(60,40,10,.12);margin-bottom:14px}
+.cite{color:var(--mut);font-style:italic;font-size:12.5px}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.ctl label{font-variant:small-caps;color:#5a4626;font-size:13px}
+select,input[type=search]{padding:5px 9px;border:1px solid var(--line);border-radius:7px;
+ background:#fffdf6;font:14px Georgia,serif;color:#3a3226}
+button.q{border:1px solid var(--line);border-radius:14px;background:#fffdf6;padding:4px 12px;
+ font:13.5px Georgia,serif;color:#5a4626;cursor:pointer}
+button.q:hover{background:#f7f0de}
+.grp{margin-top:18px}
+.grp>h2{font-variant:small-caps;font-weight:normal;letter-spacing:.05em;color:#5a4626;
+ border-bottom:1px solid rgba(176,165,142,.5);padding-bottom:3px;margin:0 0 6px;font-size:17px}
+.pl{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:9px;
+ padding:8px 12px;margin:6px 0}
+.pl h3{margin:0;font-size:15px;font-weight:normal}
+.pl .kind{font-size:12px;color:var(--mut);font-variant:small-caps;letter-spacing:.04em}
+.pl .tl{margin-top:5px;font-size:13px}
+.ev{margin:.25em 0;padding-left:9px;border-left:3px solid #c9a227}
+.nat{border-left:4px solid #4a7a3a}.made{border-left:4px solid #8a6a3a}.pol{border-left:4px solid #7a4a12}
+/* SIDEWAYS, ONE COLUMN PER LEVEL. The owner: "the gazetteer of Arda is difficult to handle in
+   this format, make them expandable hierarchical trees instead, sideways, horizontally." A
+   vertical list of four hundred and eighty-one cards is a scroll, not a hierarchy. */
+.cols{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;
+ border:1px solid var(--line);border-radius:10px;background:#fdfaf2;
+ box-shadow:0 2px 8px rgba(60,40,10,.10);margin-top:10px}
+.col{flex:0 0 auto;width:250px;max-height:66vh;overflow-y:auto;border-right:1px solid rgba(176,165,142,.55)}
+.col:last-child{border-right:0}
+/* BELOW THE HEADER, NOT AT ITS OFFSET. arda.css makes `#hdr,.hdr` sticky at top:0, so a second
+   sticky at top:0 slides up underneath the menu on every scroll and the two fight over one line.
+   Found by map/houseground_check.py on the day that fault was reported against three OTHER halls --
+   this one nobody had noticed, on the page with 481 places and the most scrolling in the archive.
+   nav.js measures the header and publishes --a-hdr-h; the 0px fallback matters only if nav.js
+   failed, in which case there is no menu to collide with. */
+.colh{position:sticky;top:var(--a-hdr-h,0px);background:#f2e9d4;border-bottom:1px solid rgba(176,165,142,.55);
+ padding:5px 10px;font-variant:small-caps;letter-spacing:.05em;font-size:12.5px;color:#5a4626}
+.row{display:flex;align-items:center;gap:6px;width:100%;box-sizing:border-box;text-align:left;
+ border:0;background:none;font:14px Georgia,serif;color:#3a3226;padding:5px 10px;cursor:pointer;
+ border-bottom:1px solid rgba(176,165,142,.22)}
+.row:hover{background:#f7f0de}
+.row[aria-current=true]{background:#efe2c4;font-weight:bold}
+.row:focus-visible{outline:2px solid #7a4a12;outline-offset:-2px}
+.row .lbl{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .arw{color:var(--mut);font-size:12px}
+.detail{flex:0 0 auto;width:330px;max-height:66vh;overflow-y:auto;padding:10px 12px;
+ background:linear-gradient(#fdfaf2,#f7f0de)}
+.silent{color:var(--mut);font-style:italic}
+@media (max-width:640px){.col{width:200px}.detail{width:260px}}
+.n{font-size:11.5px;color:var(--mut);font-style:italic;margin-left:6px}
+a{color:#7a4a12}
+</style><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;&#39;;--edge-r:&#39;&#39;" data-edge-tr="gazetteer" data-edge-en="Gazetteer" data-edge-mode="Angerthas Daeron" data-edge-script="cirth" data-edge-src="" data-edge-conf="[NEO]" data-turn-prev="baynes.html" data-turn-next="gondolin.html"><div class="plaque">The Arda Archive <i>·</i> Volume I <i>·</i> Gazetteer</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html" aria-current="page">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="gazetteer.html"><div class="rh"><span>The Arda Archive · The Gazetteer of Arda</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Gazetteer of Arda</h2><p class="lede">The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited.</p><p><span class="versal">T</span>he Gazetteer of Arda opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="gazetteer.html"><div class="rh"><span>Gazetteer · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. An index hall is read by looking; the filters above are the way in.</p><div class="sub">Where this opening sits</div><p>Volume I of the Arda Archive, Atlas and Realms, under Gazetteer. where things are</p><p>It is opening <span class="mark">3</span> of <span class="mark">158</span> in this volume, the The Marked Sheet coming before it. The reader who turns on from here reaches Houses of Gondolin.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch">Houses of</span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume I</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><h1>The Gazetteer of Arda</h1><span style="flex:1"></span>
+<nav id="ardanav" aria-label="Archive halls"></nav></div>
+<div role="main" class="wrap" id="main">
+<div class="intro"><b>Every named place the archive holds</b>, with what kind of thing it is,
+which realms contain it, which Ages it belongs to, and what befell it — each with the
+citation it came from.
+<span class="cite">Natural and made are kept apart at the root of the taxonomy. Two
+confidences are shown, never averaged: whether the <b>name</b> is Tolkien's, and whether a
+<b>text</b> places it where the map does. Framsburg is high on the first and middling on the
+second — he supplied the name for the Pauline Baynes map, and no narrative text puts it
+anywhere.</span></div>
+<div class="ctl">
+ <label for="q">find</label><input type="search" id="q" placeholder="a name…" style="min-width:180px">
+ <label for="age">age</label><select id="age"><option value="">any</option></select>
+ <label for="kind">kind</label><select id="kind"><option value="">any</option>
+   <option value="NATURAL">natural</option><option value="MAN_MADE">made</option>
+   <option value="POLITY">polity</option></select>
+ <label for="realm">within</label><select id="realm"><option value="">anywhere</option></select>
+ <label for="ch"><input type="checkbox" id="ch"> that changed</label>
+</div>
+<div class="ctl"><span class="cite">the brief's own questions:</span>
+ <button class="q" data-q="fa">the First Age only</button>
+ <button class="q" data-q="gondor">Gondor in the Third Age</button>
+ <button class="q" data-q="changed">natural landmarks that changed</button>
+ <button class="q" data-q="clear">clear</button>
+</div>
+<div id="count" class="cite"></div>
+<div id="list"></div>
+</div>
+<script src="nav.js"></script>
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
+<script>
+
+aJ("arda_gazetteer.json").then(d=>{
+ const G=d.places, K=Object.keys(G).sort((a,b)=>G[a].n.localeCompare(G[b].n));
+ const ages={},realms={};
+ K.forEach(k=>{(G[k].ages||[]).forEach(a=>ages[a]=1);(G[k].parents||[]).forEach(p=>realms[p]=1)});
+ const AGEORD=["YT","FA","SA","TA","FoA"];
+ const REALMN={"valinor": "Valinor — the Realm of the Valar", "tirion": "Tirion upon Túna", "alqualonde": "Alqualondë — the Haven of the Swans", "doriath": "Doriath", "gondolin": "Gondolin", "nargothrond": "Nargothrond", "hithlum": "Hithlum", "dorlomin": "Dor-lómin (House of Hador)", "ladros": "Ladros & the Bëorian lands", "brethil": "Brethil", "falas": "The Falas", "himring": "The March of Maedhros", "thargelion": "Thargelion", "dorthonion": "Dorthonion", "ossiriand": "Ossiriand", "balar": "The Isle of Balar & the Havens of Sirion", "easterlingsfa": "The Easterlings of the First Age", "khazaddum": "Khazad-dûm", "belegost": "Belegost", "nogrod": "Nogrod", "utumno": "Utumno", "angband": "Angband", "numenor": "Númenor", "lindon": "Lindon", "eregion": "Eregion", "lorien": "Lothlórien", "greenwood": "The Woodland Realm", "rivendell": "Imladris (Rivendell)", "mordor": "Mordor", "umbar": "Umbar", "arnor": "Arnor", "gondor": "Gondor", "arthedain": "Arthedain", "cardolan": "Cardolan", "rhudaur": "Rhudaur", "angmar": "Angmar", "shire": "The Shire", "bree": "Bree-land", "rohan": "Rohan", "eotheod": "The Éothéod", "dale": "Dale", "esgaroth": "Esgaroth", "erebor": "Erebor & Durin's Folk in exile", "ironhills": "The Iron Hills", "dolguldur": "Dol Guldur", "isengard": "Isengard", "dunland": "Dunland", "harad": "Harad", "rhun": "Rhûn & the Easterling powers", "khand": "Khand", "dorwinion": "Dorwinion", "lossoth": "The Lossoth of Forochel", "druadan": "The Drúedain", "fangorn": "Fangorn", "beornings": "The Beornings", "woodmen": "The Woodmen of Mirkwood", "bombadil": "The house of Tom Bombadil", "mistyorcs": "The Orc-holds of the Misty Mountains", "morgul": "Minas Morgul", "reunited": "The Reunited Kingdom"};
+ /* CONSTITUENT REALMS, baked in from arda_realms.json beside the names. The owner found that the
+    Reunited Kingdom held ONE place in the gazetteer -- Annúminas -- while Gondor held 18 and Arnor
+    3, and its realm record had said the truth in prose all along: "High Kingship over BOTH REALMS",
+    `aka` "Arnor & Gondor rejoined". A fact recorded in a form nothing could read.
+    `parts` is CONTAINMENT and `fed` is NOT. Rohan is a sworn free ally and the Shire a chartered
+    autonomy; both are federated to the High Kingship and neither is inside it, so they are a
+    separate key and are rendered as a separate line. Collapsing the two would be the `region` fault
+    again -- a relation flattened until it says something false. */
+ const REALMPARTS={"arnor": ["arthedain", "rhudaur", "cardolan"], "reunited": ["arnor", "gondor"]};
+ const REALMFED={"reunited": ["rohan", "shire"]};
+ const asel=document.getElementById("age");
+ Object.keys(ages).sort((a,b)=>AGEORD.indexOf(a)-AGEORD.indexOf(b)).forEach(a=>{
+   const o=document.createElement("option");o.value=a;o.textContent=a;asel.appendChild(o)});
+ const rsel=document.getElementById("realm");
+ Object.keys(realms).sort().forEach(r=>{
+   const o=document.createElement("option");o.value=r;o.textContent=r;rsel.appendChild(o)});
+ const nrm=s=>(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+ const root=t=>t.startsWith("NATURAL_")?"NATURAL":t.startsWith("MAN_MADE_")?"MAN_MADE":
+   t.startsWith("POLITY_")?"POLITY":"OTHER";
+ const cls=t=>({NATURAL:"nat",MAN_MADE:"made",POLITY:"pol"})[root(t)]||"";
+ // THE ROOT IS SAID ONCE. Each type printed its own root, so Tol Sirion read
+ // "made · tower · natural · pass · made · fortress" -- the word "made" twice, and the
+ // reader left to work out which leaf belonged to which. Grouped, it reads
+ // "made — tower, fortress · natural — pass", which is what the taxonomy actually says.
+ const ROOTNAME={NATURAL:"natural",MAN_MADE:"made",POLITY:"polity"};
+ const kinds=ts=>{
+  const by={};
+  (ts||[]).forEach(t=>{const r=root(t);
+    (by[r]=by[r]||[]).push(t.replace(/^(NATURAL|MAN_MADE|POLITY)_/,"").replace(/_/g," ").toLowerCase())});
+  return Object.keys(by).map(r=>(ROOTNAME[r]||r.toLowerCase())+" — "+by[r].join(", ")).join(" · ");
+ };
+ // "changed" means the record carries an event that ENDED or REMADE the place -- not merely
+ // that something happened near it. The statuses are the gazetteer's own.
+ const CHANGED=["destroyed","drowned","abandoned","ruined","rebuilt","renamed","sacked","burned"];
+ function draw(){
+  const q=nrm(document.getElementById("q").value.trim());
+  const age=document.getElementById("age").value;
+  const kind=document.getElementById("kind").value;
+  const realm=document.getElementById("realm").value;
+  const changed=document.getElementById("ch").checked;
+  const rows=K.filter(k=>{
+   const e=G[k];
+   if(q && nrm(e.n).indexOf(q)<0 && k.indexOf(q)<0) return false;
+   if(age && (e.ages||[]).indexOf(age)<0) return false;
+   if(kind && !(e.types||[]).some(t=>root(t)===kind)) return false;
+   if(realm && (e.parents||[]).indexOf(realm)<0) return false;
+   if(changed && !(e.timeline||[]).some(t=>CHANGED.indexOf(t.status)>=0)) return false;
+   return true;
+  });
+  TREE=buildTree(rows);
+  // A path that no longer exists after a filter change is TRUNCATED, not cleared: narrowing to
+  // the First Age while standing inside Gondor should leave you in Gondor if Gondor survives.
+  PATH=PATH.filter((seg,i)=>{const lvl=levelAt(i);return lvl&&lvl.some(n=>n.key===seg)});
+  renderCols();
+  document.getElementById("count").textContent=rows.length+" of "+K.length+" places";
+ }
+
+ // ===== THE CARD, UNCHANGED, now the last column instead of one of four hundred rows =====
+ function card(k){
+  const e=G[k];
+  const c=cls((e.types||["x"])[0]);
+  let tl="";
+  (e.timeline||[]).forEach(t=>{tl+='<div class="ev"><b>'+(t.when||"")+'</b> — '+
+    (t.status||"")+'. '+(t.what||"")+(t.cite?' <span class="cite">'+t.cite+'</span>':'')+'</div>'});
+  const cf=[];
+  if(e.name_conf)cf.push("name "+e.name_conf);
+  if(e.place_conf)cf.push("placed "+e.place_conf);
+  return '<div class="pl '+c+'" style="margin:0"><h3><a href="place.html#'+k.replace(/ /g,"_")+'">'+e.n+'</a>'+
+    '<span class="n">'+(e.ages||[]).join(", ")+'</span></h3>'+
+    '<div class="kind">'+kinds(e.types)+
+    (cf.length?' <span class="n">'+cf.join(" · ")+'</span>':'')+'</div>'+
+    (tl?'<div class="tl">'+tl+'</div>':'')+'</div>';
+ }
+
+ /* ===== THE TREE =====
+    WHAT THE CORPUS ACTUALLY GIVES, measured before any of this was drawn: of 481 places,
+    358 HAVE NO RECORDED PARENT, 111 have one, 9 have two, 3 have three, and the deepest
+    containment chain is TWO levels. There are 39 distinct containers.
+    SO A PURE CONTAINMENT TREE WOULD HAVE BEEN 358 TWIGS AND 39 BRANCHES, which is the flat
+    list again with extra clicks. And inventing containment to fill it in is the one thing this
+    archive must not do -- the `region` homograph already put Dunland, Khand, Minhiriath and
+    Rhûn inside a Doriath forest once, because a common noun in a draughtsman's instruction was
+    read as a place.
+    THE ANSWER IS TO SAY SO AND STILL MAKE IT NAVIGABLE. Level one is the 39 containers the
+    corpus records, plus ONE branch for everything it does not place, and that branch is
+    arranged by the taxonomy the records already carry: natural / made / polity, then the kind.
+    The silence is a labelled branch of the tree rather than a heap at the bottom.
+    A PLACE APPEARS UNDER ITS FIRST TYPE ONLY, so Tol Sirion is filed once (made — tower) and
+    not once per kind; its card still prints every kind it has. Duplicating it across branches
+    would make the counts sum to more than the archive holds. */
+ let TREE=[],PATH=[];
+ const node=(key,label,kids,extra)=>Object.assign({key:key,label:label,kids:kids||[]},extra||{});
+ function buildTree(rows){
+  const set=new Set(rows);
+  const kidsOf=p=>K.filter(k=>set.has(k)&&(G[k].parents||[]).indexOf(p)>=0);
+  // Depth is capped because a cycle in `parents` would otherwise recurse for ever, and this
+  // data has had a homograph put a land inside a wood before.
+  const placeNode=(k,depth,up)=>{
+   const kk=depth<4?kidsOf(k).filter(c=>c!==k&&up.indexOf(c)<0):[];
+   return node(k,G[k].n,kk.map(c=>placeNode(c,depth+1,up.concat([k]))),{place:k});
+  };
+  const conts=[...new Set(rows.reduce((a,k)=>a.concat(G[k].parents||[]),[]))].sort();
+  const isCont={};
+  const top=[];
+  // A REALM WITH CONSTITUENTS IS A CONTAINER EVEN IF NO PLACE NAMES IT AS A PARENT. The Reunited
+  // Kingdom had one child place and would have stayed a one-line branch on the containment graph
+  // alone; its constituents are a realm-level fact and they earn it a branch of its own.
+  const partsOf=p=>(REALMPARTS[p]||[]).filter(x=>kidsOf(x).length||(REALMPARTS[x]||[]).length);
+  const realmBranch=(x,up)=>{
+   const own=kidsOf(x).map(c=>placeNode(c,1,up.concat([x])));
+   const sub=up.indexOf(x)>=0?[]:partsOf(x).map(y=>realmBranch(y,up.concat([x])));
+   return node("c:"+x,((G[x]&&G[x].n)||REALMN[x]||x),own.concat(sub),
+     {place:G[x]?x:null,cont:true});
+  };
+  conts.concat(Object.keys(REALMPARTS)).filter((v,i,a)=>a.indexOf(v)===i).sort().forEach(p=>{
+   const kk=kidsOf(p);
+   const pts=partsOf(p);
+   if(!kk.length&&!pts.length)return;
+   isCont[p]=1;
+   /* THE BRANCH IS LABELLED WITH A NAME, NOT AN INDEX KEY. It read "gondor" beside a child
+      reading "Anfalas", because containers printed the raw parents key and children printed
+      the record's own `n`. FOUR OF THE 39 CONTAINERS ARE NOT PLACES AT ALL -- beornings,
+      ironhills, mistyorcs, reunited -- and they are not dangling references either: all four
+      are in the gazetteer's own realm_ids, realms with no place record. REALMN is baked in
+      from arda_realms.json at build time so they read "The Iron Hills" and "The Reunited
+      Kingdom" rather than an id, and without the page fetching a second dataset to find out. */
+   const own=kk.map(c=>placeNode(c,1,[p]));
+   const sub=pts.map(x=>realmBranch(x,[p]));
+   // FEDERATED IS SHOWN AND IS NOT A BRANCH, because Rohan is not inside Gondor and the Shire is
+   // not inside Arnor. A leaf row that states the relation is honest; a sub-branch would not be.
+   const fed=(REALMFED[p]||[]).map(x=>(G[x]&&G[x].n)||REALMN[x]||x);
+   const extra=fed.length?[node("fed:"+p,"federated, not contained — "+fed.join(" · "),[],
+     {silent:true})]:[];
+   top.push(node("c:"+p,(G[p]&&G[p].n)||REALMN[p]||p,own.concat(sub,extra),
+     {place:G[p]?p:null,cont:true}));
+  });
+  /* A CONTAINER IS NOT ALSO A LEFTOVER. This branch was every place with no recorded parent,
+     and 33 of the 39 containers have no parent themselves -- so Gondor headed its own branch
+     AND sat inside "no container recorded", and the badge read 489 for a set of 358. Counting
+     descendants of those duplicates is where the extra 131 came from. Containers are excluded
+     here; they are one line above, with their contents under them. */
+  const un=rows.filter(k=>!(G[k].parents||[]).length&&!isCont[k]);
+  if(un.length){
+   const byRoot={};
+   un.forEach(k=>{
+    const t=(G[k].types||["OTHER"])[0];
+    const r=root(t), leaf=t.replace(/^(NATURAL|MAN_MADE|POLITY)_/,"").replace(/_/g," ").toLowerCase();
+    ((byRoot[r]=byRoot[r]||{})[leaf]=byRoot[r][leaf]||[]).push(k);
+   });
+   const rootKids=Object.keys(byRoot).sort().map(r=>
+    node("r:"+r,ROOTNAME[r]||r.toLowerCase(),
+     Object.keys(byRoot[r]).sort().map(leaf=>
+      node("k:"+r+":"+leaf,leaf,byRoot[r][leaf].map(k=>placeNode(k,3,[])))
+     )));
+   top.push(node("unplaced","— no container established",rootKids,{silent:true}));
+  }
+  return top;
+ }
+ function levelAt(i){
+  let lvl=TREE;
+  for(let j=0;j<i;j++){
+   const n=(lvl||[]).find(x=>x.key===PATH[j]);
+   if(!n)return null;
+   lvl=n.kids;
+  }
+  return lvl;
+ }
+ function nodeAt(i){const lvl=levelAt(i);return lvl?lvl.find(x=>x.key===PATH[i]):null}
+ function countLeaves(n){return n.kids.length?n.kids.reduce((a,c)=>a+countLeaves(c),0)+(n.place?1:0)
+   :(n.place?1:0)}
+ const HEADS=["the places of Arda","within","and within that","and within that","and deeper"];
+ const headOf=i=>HEADS[Math.min(i,4)];
+
+ /* COLUMNS ARE KEPT, NOT REBUILT, AND TWO SEPARATE THINGS BROKE WHEN THEY WERE NOT.
+    The first version wrote the whole browser with one innerHTML on every click. That
+    (a) DESTROYED KEYBOARD FOCUS -- open a branch with Enter and focus fell to the body, which
+    makes the arrow-key support below decorative for the reader who most needs it; and
+    (b) replaced every button with a NEW ELEMENT, so traverse_check, which remembers what it has
+    pressed BY ELEMENT IDENTITY, saw an endlessly renewing supply of unpressed controls and
+    could never report full coverage. It refused, correctly, and that refusal is what found (a).
+    Only the columns from the changed level onward are rebuilt now. */
+ function colEl(i,lvl){
+  const col=document.createElement("div");
+  col.className="col";col.setAttribute("role","group");col.setAttribute("aria-label",headOf(i));
+  let h='<div class="colh">'+esc(headOf(i))+'</div>';
+  lvl.forEach(n=>{
+   const nleaf=countLeaves(n);
+   h+='<button class="row'+(n.silent?" silent":"")+'" data-lvl="'+i+'" data-key="'+
+     esc(n.key).replace(/"/g,"&quot;")+'" aria-current="false"'+
+     (n.kids.length?' aria-expanded="false"':"")+'>'+
+     '<span class="lbl">'+esc(n.label)+'</span>'+
+     (nleaf?'<span class="n">'+nleaf+'</span>':'')+
+     (n.kids.length?'<span class="arw">&rsaquo;</span>':'')+'</button>';
+  });
+  col.innerHTML=h;
+  col.querySelectorAll(".row").forEach(b=>{
+   b.addEventListener("click",()=>{
+    const lv=+b.dataset.lvl;
+    const was=b.getAttribute("aria-current")==="true";
+    PATH=PATH.slice(0,lv);
+    if(!was)PATH[lv]=b.dataset.key;
+    writeHash();renderCols(lv+1);
+   });
+   // ARROW KEYS, because a column browser that only takes a mouse is a list again for anyone
+   // who cannot use one. Up/down within a column, right to open, left to go back.
+   b.addEventListener("keydown",ev=>{
+    const sibs=[...b.parentNode.querySelectorAll(".row")];
+    const ix=sibs.indexOf(b);
+    if(ev.key==="ArrowDown"&&ix<sibs.length-1){sibs[ix+1].focus();ev.preventDefault()}
+    else if(ev.key==="ArrowUp"&&ix>0){sibs[ix-1].focus();ev.preventDefault()}
+    else if(ev.key==="ArrowRight"){
+     if(b.getAttribute("aria-current")!=="true")b.click();
+     const nx=document.querySelectorAll("#cols .col")[+b.dataset.lvl+1];
+     if(nx){const f=nx.querySelector(".row");if(f)f.focus()}
+     ev.preventDefault()}
+    else if(ev.key==="ArrowLeft"){
+     const lv=+b.dataset.lvl;
+     if(lv>0){
+      const pv=document.querySelectorAll("#cols .col")[lv-1];
+      PATH=PATH.slice(0,lv-1);writeHash();renderCols(lv);
+      if(pv){const f=pv.querySelector('.row[aria-current="true"]')||pv.querySelector(".row");
+             if(f)f.focus()}
+     }
+     ev.preventDefault()}
+   });
+  });
+  return col;
+ }
+ function renderCols(keep){
+  const host=document.getElementById("list");
+  if(!TREE.length){
+   host.innerHTML='<div class="cite" style="padding:30px 0">The attached documents do not '+
+     'provide enough information to answer this.</div>';
+   return;
+  }
+  let box=document.getElementById("cols");
+  if(!box||!keep||keep<0){
+   host.innerHTML='<div class="cols" id="cols"></div>';
+   box=document.getElementById("cols");keep=0;
+  }
+  [...box.children].slice(keep).forEach(el=>el.remove());
+  for(let i=keep;;i++){
+   const lvl=levelAt(i);
+   if(!lvl||!lvl.length)break;
+   box.appendChild(colEl(i,lvl));
+   if(!PATH[i])break;
+  }
+  // The kept columns still have to agree with PATH about what is open.
+  [...box.querySelectorAll(".col")].forEach((c,i)=>{
+   c.querySelectorAll(".row").forEach(b=>{
+    const on=PATH[i]===b.dataset.key;
+    b.setAttribute("aria-current",on?"true":"false");
+    if(b.hasAttribute("aria-expanded"))b.setAttribute("aria-expanded",on?"true":"false");
+   });
+  });
+  // The record itself, at the end of whatever path the reader has opened.
+  for(let i=PATH.length-1;i>=0;i--){
+   const n=nodeAt(i);
+   if(n&&n.place){
+    const d=document.createElement("div");d.className="detail";d.innerHTML=card(n.place);
+    box.appendChild(d);break;
+   }
+  }
+ }
+ const esc=s=>String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+ // THE QUESTIONS ARE ADDRESSES. The brief's three questions were buttons and nothing
+ // else: a reader could not link to an answer, could not come back to one, and — this is
+ // how the fault was found — nobody could drive them from outside the browser to check
+ // that they answer anything. The state now lives in the hash, so
+ // gazetteer.html#kind=NATURAL&changed=1 IS "natural landmarks that changed".
+ const FIELDS=["q","age","kind","realm"];
+ function readHash(){
+  const h=new URLSearchParams((location.hash||"").replace(/^#/,""));
+  if(!h.toString())return false;
+  FIELDS.forEach(f=>{if(h.has(f))document.getElementById(f).value=h.get(f)});
+  document.getElementById("ch").checked=h.get("changed")==="1";
+  // AN OPENED BRANCH IS AN ADDRESS TOO. This block's own comment says the fault was that "a
+  // reader could not link to an answer, could not come back to one" -- a tree whose open path
+  // lives only in memory has exactly that fault one level down, so
+  // gazetteer.html#p=c:gondor|minas_tirith IS the walk to Minas Tirith through Gondor.
+  PATH=h.has("p")?h.get("p").split("|").filter(Boolean):[];
+  return true;
+ }
+ function writeHash(){
+  const h=new URLSearchParams();
+  FIELDS.forEach(f=>{const v=document.getElementById(f).value;if(v)h.set(f,v)});
+  if(document.getElementById("ch").checked)h.set("changed","1");
+  if(PATH.length)h.set("p",PATH.join("|"));
+  const s=h.toString();
+  history.replaceState(null,"",s?("#"+s):location.pathname);
+ }
+ ["q","age","kind","realm","ch"].forEach(id=>{
+   const el=document.getElementById(id);
+   const go=()=>{writeHash();draw()};
+   el.addEventListener("input",go);el.addEventListener("change",go)});
+ const ASK={fa:"age=FA",gondor:"realm=gondor&age=TA",
+            changed:"kind=NATURAL&changed=1",clear:""};
+ document.querySelectorAll("button.q").forEach(b=>b.addEventListener("click",()=>{
+   FIELDS.forEach(f=>{document.getElementById(f).value=""});
+   document.getElementById("ch").checked=false;
+   location.hash=ASK[b.dataset.q]||"";
+   readHash();draw();
+ }));
+ window.addEventListener("hashchange",()=>{readHash();draw()});
+ readHash();
+ draw();
+}).catch(()=>{});
+
+</script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

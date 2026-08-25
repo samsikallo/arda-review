@@ -1,0 +1,131 @@
+{
+ "mode": "Quenya, classical",
+ "built_from": "map/gen_tengwar.py",
+ "reads": "site/arda_scripts.json -- the inventory is read, never restated",
+ "encoding": "ConScript Unicode Registry tengwar, U+E000 onward",
+ "rule": "In Quenya the vowel-sign sits over the PRECEDING consonant (Appendix E, The Tengwar). A vowel with no preceding consonant rides a carrier.",
+ "tehtar": {
+  "a": {
+   "cp": "U+E040",
+   "sign": "three dots above",
+   "cite": "Appendix E, The Tengwar: the a-tehta is the three-dot sign. [I-H] -- read off the plate, since Appendix E's tables are images in the edition this archive holds."
+  },
+  "e": {
+   "cp": "U+E046",
+   "sign": "acute",
+   "cite": "Appendix E, The Tengwar: the e-tehta is the acute. [I-H] -- read off the plate."
+  },
+  "i": {
+   "cp": "U+E044",
+   "sign": "single dot above (amatixë)",
+   "cite": "Amanyë Tenceli, The Classical Mode, citing Appendix E: long í 'is indicated by a doubled dot', so short i is the SINGLE dot. Confirmed against the font's own geometry -- see the note below."
+  },
+  "o": {
+   "cp": "U+E048",
+   "sign": "right curl",
+   "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
+  },
+  "u": {
+   "cp": "U+E04A",
+   "sign": "left curl",
+   "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
+  }
+ },
+ "unresolved": {},
+ "letters": {
+  "c": "U+E002",
+  "ch": "U+E00A",
+  "f": "U+E009",
+  "hw": "U+E00B",
+  "hy": "U+E020",
+  "k": "U+E002",
+  "l": "U+E01A",
+  "ld": "U+E01B",
+  "m": "U+E011",
+  "mb": "U+E005",
+  "mp": "U+E00D",
+  "n": "U+E010",
+  "nc": "U+E00E",
+  "nd": "U+E004",
+  "ng": "U+E006",
+  "ngw": "U+E007",
+  "nqu": "U+E00F",
+  "nt": "U+E00C",
+  "p": "U+E001",
+  "qu": "U+E003",
+  "r": "U+E014",
+  "rd": "U+E019",
+  "s": "U+E01C",
+  "ss": "U+E01E",
+  "t": "U+E000",
+  "v": "U+E015",
+  "w": "U+E017",
+  "y": "U+E016",
+  "ñ": "U+E012",
+  "ñw": "U+E013",
+  "þ": "U+E008"
+ },
+ "digraphs": [
+  "ngw",
+  "nqu",
+  "nd",
+  "mb",
+  "ng",
+  "mp",
+  "nt",
+  "nc",
+  "qu",
+  "hw",
+  "hy",
+  "ht",
+  "th",
+  "ss",
+  "ld",
+  "rd"
+ ],
+ "carriers": {
+  "short": "U+E025",
+  "long": "U+E026"
+ },
+ "doubled": {
+  "e": "U+E047",
+  "i": "U+E042",
+  "o": "U+E049",
+  "u": "U+E04B"
+ },
+ "equivalent": {
+  "ë": "e",
+  "ä": "a",
+  "ö": "o",
+  "ï": "i",
+  "ü": "u"
+ },
+ "modes": {
+  "quenya-classical": {
+   "language": "Quenya",
+   "built": true,
+   "vowels": "tehtar on the PRECEDING consonant",
+   "cite": "Appendix E, The Tengwar; Amanyë Tenceli, The Classical Mode"
+  },
+  "beleriand": {
+   "language": "Sindarin",
+   "built": false,
+   "vowels": "FULL TENGWAR -- quanta sarmë, 'full writing'",
+   "cite": "Amanyë Tenceli, The Mode of Beleriand, citing DTS 58",
+   "known": [
+    "the mode is quanta sarmë: consonants AND vowels are written with tengwar",
+    "either the long or the short carrier may be used to represent i"
+   ],
+   "unresolved": "which tengwa carries a, e, o and u. Amanyë Tenceli gives them in a FIGURE -- an image -- and this archive holds the page, not the plate. The same wall Appendix E puts in front of the Quenya values, which arda_scripts records with [I-H] on every row.",
+   "refuses": "transcription, until those four values are read off a plate. A transcriber that invented them would produce fluent Sindarin-looking nonsense, which is this module's worst available failure: wrong and confident."
+  }
+ },
+ "positional": {
+  "r": {
+   "before_vowel": "U+E018",
+   "otherwise": "U+E014",
+   "cite": "Appendix E, The Tengwar: rómen is the full trilled r used before a vowel; óre the weak r used finally and before a consonant."
+  }
+ },
+ "owed": "Correctness is NOT established until this is proven against Glaemscribe's published output. Until then this is a careful reading of Appendix E."
+}

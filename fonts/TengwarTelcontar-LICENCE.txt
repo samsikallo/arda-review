@@ -1,0 +1,32 @@
+TENGWAR TELCONTAR — licence, read from the font's own name table
+
+  name[0]  Copyright (c) 2005-2010 by Johan Winge, 2009-2010 J. 'Mach' Wust.
+  name[13] Tengwar Telcontar is distributed under the terms of the GNU General Public License.
+  name[14] http://www.gnu.org/copyleft/gpl.html
+  version  0.09
+
+READ FROM THE FILE, NOT FROM A THIRD PARTY. A second witness agrees: the Arch User Repository
+PKGBUILD for this font declares license=('GPL3').
+
+WHAT IS UNUSUAL ABOUT IT, STATED PLAINLY BECAUSE IT MATTERS.
+
+This is the BARE GPL with NO FONT EXCEPTION. Most freely-licensed fonts carry one — FreeMonoTengwar,
+sitting in the same mirror, spells out the GNU Font Embedding Exception in full, and the OFL faces
+this archive already publishes have no such question at all. The exception is what ordinarily
+prevents a document's use of a font from affecting the document's own licence.
+
+The archive's owner ruled on 12 August 2026 that this font MAY BE SERVED. That is his decision to
+make and it is recorded here rather than re-litigated.
+
+WHAT GPL COMPLIANCE ASKS OF US, so that serving it is done properly:
+  * this notice travels with the font
+  * the licence is named and linked, not merely implied
+  * the SOURCE must remain obtainable. The upstream project is the source of record; this archive
+    publishes the compiled webfont only and does not hold the FontForge sources.
+
+WHAT THE FONT ACTUALLY COVERS, measured with fontTools:
+  424 glyphs · 112 in the ConScript tengwar block (U+E000-E07F) · 49 in the Cirth block
+  (U+E080-E0FF) · 0 in the Sarati block
+
+The Cirth coverage was not expected and is worth naming: this is the second font in the archive
+with real Cirth codepoints, after Arda CSUR.

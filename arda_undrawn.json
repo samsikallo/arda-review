@@ -1,0 +1,2114 @@
+{
+ "n_off_sheet": 6,
+ "n_points": 130,
+ "n_records": 139,
+ "note": "Places the archive holds with a point and does not draw on its sheet. Shown as a layer above the map and never drawn into it, because the base sheet's restraint is deliberate. ONE MARK PER POINT: seven points carry more than one record, and every one of those is a borrowed placing -- Khazad-dûm, its Bridge and its West-gate all sit at Caradhras' point because that is the only point any text gives them. A hollow mark is a point that was borrowed or measured rather than the place's own.",
+ "off_sheet": [
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "bay of eldamar",
+     "kind": "NATURAL_SEA",
+     "name": "Bay of Eldamar"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -1125.0,
+   "y": 2200.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "shadowy seas",
+     "kind": "NATURAL_SEA",
+     "name": "the Shadowy Seas"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -750.0,
+   "y": 1925.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "belegaer",
+     "kind": "NATURAL_SEA",
+     "name": "Belegaer"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -350.0,
+   "y": 2325.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "great sea",
+     "kind": "NATURAL_SEA",
+     "name": "The Great Sea"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -300.0,
+   "y": 2575.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "helcaraxe",
+     "kind": "NATURAL_SEA",
+     "name": "Helcaraxe"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -300.0,
+   "y": 150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "near harad",
+     "kind": "POLITY_REGION",
+     "name": "Near Harad"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6000.0,
+   "y": 4625.0
+  }
+ ],
+ "off_sheet_note": "These lie beyond the edge of the sheet the archive draws, which runs from x=-350 to x=1005 and stops. They are recorded here rather than drawn at a coordinate no reader could ever reach, and rather than dropped in silence.",
+ "points": [
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "lammoth",
+     "kind": "POLITY_REGION",
+     "name": "Lammoth"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 367.5,
+   "y": 1375.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "cirith ninniach",
+     "kind": "NATURAL_PASS",
+     "name": "Cirith Ninniach"
+    },
+    {
+     "ages": "",
+     "how": "own",
+     "key": "nevrast",
+     "kind": "POLITY_REGION",
+     "name": "Nevrast"
+    }
+   ],
+   "frame": "FA",
+   "how": "borrowed",
+   "x": 435.0,
+   "y": 1845.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA,YT",
+     "how": "own",
+     "key": "falas",
+     "kind": "POLITY_REALM",
+     "name": "The Falas"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 647.5,
+   "y": 2217.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "dorlomin",
+     "kind": "POLITY_REALM,POLITY_REGION",
+     "name": "Dor-lómin (House of Hador)"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 682.5,
+   "y": 1632.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "west beleriand",
+     "kind": "POLITY_REGION",
+     "name": "West Beleriand"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 805.0,
+   "y": 2122.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "mithrim",
+     "kind": "POLITY_REGION",
+     "name": "Mithrim"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 847.5,
+   "y": 1525.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "hithlum",
+     "kind": "POLITY_REALM",
+     "name": "Hithlum"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 847.5,
+   "y": 1437.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "woods of nuath",
+     "kind": "NATURAL_FOREST",
+     "name": "Woods of Nuath"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1015.0,
+   "y": 1722.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "talath dirnen",
+     "kind": "POLITY_REGION",
+     "name": "Talath Dirnen"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1077.5,
+   "y": 1915.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "bar en danwedh",
+     "kind": "MAN_MADE_DWELLING",
+     "name": "Bar-en-Danwedh"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1095.0,
+   "y": 1855.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "beleriand",
+     "kind": "POLITY_REGION",
+     "name": "Beleriand"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1180.0,
+   "y": 2285.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "arvernien",
+     "kind": "POLITY_REGION",
+     "name": "Arvernien"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1225.0,
+   "y": 2680.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "pass of sirion",
+     "kind": "POLITY_REGION",
+     "name": "Pass of Sirion"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1240.0,
+   "y": 1465.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "brethil",
+     "kind": "NATURAL_FOREST",
+     "name": "Brethil"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1257.5,
+   "y": 1812.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "nivrim",
+     "kind": "NATURAL_FOREST",
+     "name": "Nivrim"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1275.0,
+   "y": 1945.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "nan tathren",
+     "kind": "NATURAL_FOREST",
+     "name": "Nan-tathren"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1277.5,
+   "y": 2495.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "dimbar",
+     "kind": "POLITY_REGION",
+     "name": "Dimbar"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1317.5,
+   "y": 1692.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "tumladen",
+     "kind": "POLITY_REGION",
+     "name": "Tumladen"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1342.5,
+   "y": 1590.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "orfalch echor",
+     "kind": "NATURAL_RAVINE,MAN_MADE_GATE",
+     "name": "Orfalch Echor"
+    }
+   ],
+   "frame": "FA",
+   "how": "borrowed",
+   "x": 1342.5,
+   "y": 1560.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "anfauglith",
+     "kind": "NATURAL_PLAIN",
+     "name": "Anfauglith"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1425.0,
+   "y": 1117.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "ard galen",
+     "kind": "POLITY_REGION",
+     "name": "Ard-Galen"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1425.0,
+   "y": 1060.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA,YT",
+     "how": "own",
+     "key": "neldoreth",
+     "kind": "NATURAL_FOREST",
+     "name": "Neldoreth"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1455.0,
+   "y": 1615.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "pass of anach",
+     "kind": "POLITY_REGION",
+     "name": "Pass of Anach"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1455.0,
+   "y": 1497.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA,YT",
+     "how": "own",
+     "key": "doriath",
+     "kind": "POLITY_REALM",
+     "name": "Doriath"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1490.0,
+   "y": 1755.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "dorthonion",
+     "kind": "POLITY_REALM",
+     "name": "Dorthonion"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1572.5,
+   "y": 1355.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "nan dungortheb",
+     "kind": "NATURAL_VALLEY",
+     "name": "Nan Dungortheb"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1590.0,
+   "y": 1495.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "taur im duinath",
+     "kind": "NATURAL_FOREST",
+     "name": "Taur-im-Duinath"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1625.0,
+   "y": 2402.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "estolad",
+     "kind": "UNCLASSIFIED",
+     "name": "Estolad"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1787.5,
+   "y": 1720.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "himlad",
+     "kind": "POLITY_REGION",
+     "name": "Himlad"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1787.5,
+   "y": 1560.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "east beleriand",
+     "kind": "POLITY_REGION",
+     "name": "East Beleriand"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1830.0,
+   "y": 1897.5
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "lothlann",
+     "kind": "NATURAL_PLAIN",
+     "name": "Lothlann"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1852.5,
+   "y": 1117.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "nan elmoth",
+     "kind": "NATURAL_FOREST",
+     "name": "Nan Elmoth"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1865.0,
+   "y": 1667.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "pass of aglon",
+     "kind": "POLITY_REGION",
+     "name": "Pass of Aglon"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 1885.0,
+   "y": 1425.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "maglor s gap",
+     "kind": "POLITY_REGION",
+     "name": "Maglor'S Gap"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 2067.5,
+   "y": 1490.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "ossiriand",
+     "kind": "POLITY_REGION",
+     "name": "Ossiriand"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 2132.5,
+   "y": 2340.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "thargelion",
+     "kind": "POLITY_REGION",
+     "name": "Thargelion"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 2135.0,
+   "y": 1697.5
+  },
+  {
+   "at": [
+    {
+     "ages": "FA",
+     "how": "own",
+     "key": "dor firn i guinar",
+     "kind": "POLITY_REGION",
+     "name": "Dor Firn-i-Guinar"
+    }
+   ],
+   "frame": "FA",
+   "how": "own",
+   "x": 2142.5,
+   "y": 2565.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "firth of drengist",
+     "kind": "NATURAL_SEA",
+     "name": "Firth of Drengist"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 290.0,
+   "y": 1475.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "bay of balar",
+     "kind": "NATURAL_SEA",
+     "name": "Bay of Balar"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 1225.0,
+   "y": 2850.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "mouths of sirion",
+     "kind": "NATURAL_SEA",
+     "name": "Mouths of Sirion"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 1275.0,
+   "y": 2735.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FA,YT",
+     "how": "measured",
+     "key": "angband",
+     "kind": "MAN_MADE_FORTRESS",
+     "name": "Angband"
+    }
+   ],
+   "frame": "TA",
+   "how": "measured",
+   "x": 1480.0,
+   "y": 185.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "gulf of lhun",
+     "kind": "NATURAL_SEA",
+     "name": "Gulf of Lhun"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 1840.0,
+   "y": 1615.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "harlond lindon",
+     "kind": "MAN_MADE_HAVEN",
+     "name": "Harlond (Lindon)"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 1975.0,
+   "y": 1685.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "forlindon",
+     "kind": "POLITY_REGION",
+     "name": "Forlindon"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2100.0,
+   "y": 1395.0
+  },
+  {
+   "at": [
+    {
+     "ages": "SA,TA",
+     "how": "own",
+     "key": "lindon",
+     "kind": "POLITY_REALM",
+     "name": "Lindon"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2125.0,
+   "y": 1685.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "harlindon",
+     "kind": "NATURAL_GULF",
+     "name": "Harlindon"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2150.0,
+   "y": 1850.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "blue mtn dwarf halls",
+     "kind": "MAN_MADE_MANSION,MAN_MADE_HALL,NATURAL_PEAK",
+     "name": "Blue Mtn dwarf-halls"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2275.0,
+   "y": 1150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "elostirion tower",
+     "kind": "MAN_MADE_TOWER",
+     "name": "Elostirion tower"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2485.0,
+   "y": 1595.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "the shire",
+     "kind": "POLITY_REALM",
+     "name": "The Shire"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2775.0,
+   "y": 1565.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "bag end",
+     "kind": "MAN_MADE_DWELLING",
+     "name": "Bag End"
+    },
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "hobbiton bag end",
+     "kind": "MAN_MADE_TOWN,NATURAL_HILL",
+     "name": "Hobbiton + Bag End"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 2840.0,
+   "y": 1585.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "tuckborough great smials",
+     "kind": "MAN_MADE_TOWN",
+     "name": "Tuckborough/Great Smials"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2860.0,
+   "y": 1650.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "woodhall woody end",
+     "kind": "POLITY_SUBREGION",
+     "name": "Woodhall/Woody End"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2935.0,
+   "y": 1665.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "bucklebury ferry",
+     "kind": "MAN_MADE_TOWN",
+     "name": "Bucklebury + Ferry"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 2985.0,
+   "y": 1645.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "buckland",
+     "kind": "POLITY_REGION",
+     "name": "Buckland"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3005.0,
+   "y": 1665.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "minhiriath",
+     "kind": "POLITY_REGION",
+     "name": "Minhiriath"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3025.0,
+   "y": 2150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "tom bombadil s house",
+     "kind": "MAN_MADE_DWELLING",
+     "name": "Tom Bombadil's house"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3065.0,
+   "y": 1670.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "arthedain",
+     "kind": "POLITY_REALM",
+     "name": "Arthedain"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3150.0,
+   "y": 1315.0
+  },
+  {
+   "at": [
+    {
+     "ages": "SA,TA",
+     "how": "own",
+     "key": "arnor",
+     "kind": "POLITY_REALM",
+     "name": "Arnor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3250.0,
+   "y": 1135.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "cardolan",
+     "kind": "POLITY_REALM",
+     "name": "Cardolan"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3275.0,
+   "y": 1925.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "enedwaith",
+     "kind": "POLITY_REGION",
+     "name": "Enedwaith"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3400.0,
+   "y": 2775.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "eriador",
+     "kind": "POLITY_REGION",
+     "name": "Eriador"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3500.0,
+   "y": 1785.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "angle",
+     "kind": "NATURAL_RIVER",
+     "name": "Angle"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3740.0,
+   "y": 1755.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "forodwaith",
+     "kind": "POLITY_REGION",
+     "name": "Forodwaith"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3750.0,
+   "y": 150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "trolls clearing",
+     "kind": "MAN_MADE_LANDMARK",
+     "name": "Trolls' clearing (Hobbit)"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3810.0,
+   "y": 1565.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "rhudaur",
+     "kind": "POLITY_REALM",
+     "name": "Rhudaur"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3850.0,
+   "y": 1475.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "druwaith iaur",
+     "kind": "POLITY_REGION",
+     "name": "Druwaith Iaur"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3900.0,
+   "y": 3665.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "dunland",
+     "kind": "NATURAL_MOUNTAIN_RANGE",
+     "name": "Dunland"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 3910.0,
+   "y": 2575.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "isengard orthanc",
+     "kind": "MAN_MADE_FORTRESS",
+     "name": "Isengard/Orthanc"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4050.0,
+   "y": 3000.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "angmar",
+     "kind": "POLITY_REALM",
+     "name": "Angmar"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4090.0,
+   "y": 865.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "methedras",
+     "kind": "NATURAL_MOUNTAIN_RANGE",
+     "name": "Methedras"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4110.0,
+   "y": 2925.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "borrowed",
+     "key": "ford of bruinen",
+     "kind": "NATURAL_FORD",
+     "name": "Ford of Bruinen"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 4160.0,
+   "y": 1555.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "hornburg helm s deep",
+     "kind": "MAN_MADE_FORTRESS",
+     "name": "Hornburg/Helm's Deep"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4185.0,
+   "y": 3275.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "thrihyrne",
+     "kind": "NATURAL_PEAK",
+     "name": "Thrihyrne"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4190.0,
+   "y": 3295.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "moria west door",
+     "kind": "MAN_MADE_GATE",
+     "name": "Moria West-door"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4200.0,
+   "y": 2035.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "westfold",
+     "kind": "POLITY_SUBREGION",
+     "name": "Westfold"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4250.0,
+   "y": 3200.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "celebdil",
+     "kind": "NATURAL_PEAK",
+     "name": "Celebdil"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4250.0,
+   "y": 2035.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "borrowed",
+     "key": "high pass",
+     "kind": "NATURAL_PASS",
+     "name": "High Pass"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 4255.0,
+   "y": 2010.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "caradhras",
+     "kind": "NATURAL_PEAK",
+     "name": "Caradhras"
+    },
+    {
+     "ages": "SA,TA,YT",
+     "how": "borrowed",
+     "key": "khazaddum",
+     "kind": "MAN_MADE_MANSION,POLITY_REALM",
+     "name": "Khazad-dûm"
+    },
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "the bridge of khazad dum",
+     "kind": "MAN_MADE_BRIDGE",
+     "name": "the Bridge of Khazad-dûm"
+    },
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "west gate of moria",
+     "kind": "MAN_MADE_GATE",
+     "name": "West Gate of Moria"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 4260.0,
+   "y": 2010.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "eagles eyrie",
+     "kind": "MAN_MADE_LANDMARK",
+     "name": "Eagles' Eyrie"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4265.0,
+   "y": 1535.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "fanuidhol",
+     "kind": "NATURAL_PEAK",
+     "name": "Fanuidhol"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4275.0,
+   "y": 2040.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "gundabad",
+     "kind": "NATURAL_PEAK",
+     "name": "Gundabad"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4285.0,
+   "y": 890.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "moria east gate dimrill",
+     "kind": "MAN_MADE_GATE",
+     "name": "Moria East-gate/Dimrill"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4310.0,
+   "y": 2065.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "durin s stone",
+     "kind": "MAN_MADE_LANDMARK",
+     "name": "Durin's Stone"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4315.0,
+   "y": 2080.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "warg clearing",
+     "kind": "NATURAL_CLEARING",
+     "name": "Warg Clearing"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4325.0,
+   "y": 1700.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "anfalas",
+     "kind": "POLITY_SUBREGION",
+     "name": "Anfalas"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4350.0,
+   "y": 3800.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "the carrock",
+     "kind": "NATURAL_ROCK",
+     "name": "The Carrock"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4400.0,
+   "y": 1390.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "edoras meduseld",
+     "kind": "MAN_MADE_TOWN",
+     "name": "Edoras/Meduseld"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4415.0,
+   "y": 3150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "starkhorn",
+     "kind": "NATURAL_MOUNTAIN_RANGE",
+     "name": "Starkhorn"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4430.0,
+   "y": 3245.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "west emnet",
+     "kind": "POLITY_SUBREGION",
+     "name": "West-Emnet"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4450.0,
+   "y": 2875.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "westemnet",
+     "kind": "POLITY_REGION",
+     "name": "Westemnet"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4450.0,
+   "y": 2865.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "eotheod",
+     "kind": "POLITY_REGION",
+     "name": "Eothéod"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4450.0,
+   "y": 735.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "wold of rohan",
+     "kind": "POLITY_REGION",
+     "name": "Wold of Rohan"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4490.0,
+   "y": 2465.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "lamedon",
+     "kind": "POLITY_SUBREGION",
+     "name": "Lamedon"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4550.0,
+   "y": 3500.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "calenardhon",
+     "kind": "POLITY_REALM",
+     "name": "Calenardhon"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4550.0,
+   "y": 2985.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FoA,TA",
+     "how": "own",
+     "key": "rohan",
+     "kind": "POLITY_REALM",
+     "name": "Rohan"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4550.0,
+   "y": 2925.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "the wold",
+     "kind": "POLITY_SUBREGION",
+     "name": "The Wold"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4550.0,
+   "y": 2475.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "eastfold",
+     "kind": "POLITY_SUBREGION",
+     "name": "Eastfold"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4600.0,
+   "y": 3200.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "east emnet",
+     "kind": "POLITY_SUBREGION",
+     "name": "East-Emnet"
+    },
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "eastemnet",
+     "kind": "POLITY_REGION",
+     "name": "Eastemnet"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4625.0,
+   "y": 2775.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "brown lands",
+     "kind": "POLITY_REGION",
+     "name": "the Brown Lands"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4690.0,
+   "y": 2385.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "halifirien",
+     "kind": "NATURAL_PEAK",
+     "name": "Halifirien"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4775.0,
+   "y": 3300.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "borrowed",
+     "key": "argonath",
+     "kind": "MAN_MADE_MONUMENT",
+     "name": "Argonath"
+    },
+    {
+     "ages": "TA",
+     "how": "borrowed",
+     "key": "parth galen",
+     "kind": "NATURAL_FIELD",
+     "name": "Parth Galen"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 4810.0,
+   "y": 2900.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "belfalas",
+     "kind": "POLITY_SUBREGION",
+     "name": "Belfalas"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4825.0,
+   "y": 3900.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "bay of belfalas",
+     "kind": "NATURAL_SEA",
+     "name": "Bay of Belfalas"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4850.0,
+   "y": 4325.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "dor en ernil",
+     "kind": "POLITY_SUBREGION",
+     "name": "Dor-en-Ernil"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 4900.0,
+   "y": 3875.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "forest gate",
+     "kind": "MAN_MADE_GATE",
+     "name": "Forest Gate"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 5000.0,
+   "y": 1605.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "lebennin",
+     "kind": "POLITY_SUBREGION",
+     "name": "Lebennin"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5050.0,
+   "y": 3775.0
+  },
+  {
+   "at": [
+    {
+     "ages": "FoA,SA,TA",
+     "how": "own",
+     "key": "gondor",
+     "kind": "POLITY_REALM",
+     "name": "Gondor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5050.0,
+   "y": 3675.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "anorien",
+     "kind": "POLITY_SUBREGION",
+     "name": "Anórien"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5050.0,
+   "y": 3425.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "tumladen of gondor",
+     "kind": "NATURAL_VALLEY",
+     "name": "Tumladen of Gondor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5125.0,
+   "y": 3725.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "ethir anduin",
+     "kind": "NATURAL_SEA",
+     "name": "Ethir Anduin"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5190.0,
+   "y": 4165.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "noman lands",
+     "kind": "POLITY_REGION",
+     "name": "Noman-Lands"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5375.0,
+   "y": 2950.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "dagorlad",
+     "kind": "POLITY_REGION",
+     "name": "Dagorlad"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5415.0,
+   "y": 3065.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "mindolluin",
+     "kind": "NATURAL_PEAK",
+     "name": "Mindolluin"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5450.0,
+   "y": 3565.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "the pelennor",
+     "kind": "NATURAL_FIELD",
+     "name": "The Pelennor"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 5470.0,
+   "y": 3585.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "harlond gondor quays",
+     "kind": "MAN_MADE_HAVEN",
+     "name": "Harlond (Gondor quays)"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5480.0,
+   "y": 3615.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "erebor",
+     "kind": "MAN_MADE_CITY,NATURAL_PEAK,MAN_MADE_GATE",
+     "name": "Erebor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5485.0,
+   "y": 1105.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "south gondor",
+     "kind": "POLITY_REGION",
+     "name": "South Gondor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5550.0,
+   "y": 3975.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "ithilien",
+     "kind": "POLITY_SUBREGION,NATURAL_FOREST",
+     "name": "Ithilien"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5550.0,
+   "y": 3500.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "desolation of smaug",
+     "kind": "POLITY_REGION",
+     "name": "Desolation of Smaug"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5550.0,
+   "y": 1015.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "poros march",
+     "kind": "POLITY_SUBREGION",
+     "name": "Poros-March"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5600.0,
+   "y": 3825.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "imlad morgul",
+     "kind": "NATURAL_VALLEY",
+     "name": "Imlad Morgul"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 5645.0,
+   "y": 3610.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "borrowed",
+     "key": "torech ungol",
+     "kind": "NATURAL_CAVE",
+     "name": "Torech Ungol"
+    },
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "tower of cirith ungol",
+     "kind": "MAN_MADE_FORTRESS,MAN_MADE_TOWER",
+     "name": "Tower of Cirith Ungol"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 5665.0,
+   "y": 3595.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "gorgoroth",
+     "kind": "POLITY_SUBREGION",
+     "name": "Gorgoroth"
+    },
+    {
+     "ages": "TA",
+     "how": "borrowed",
+     "key": "mount doom",
+     "kind": "NATURAL_PEAK",
+     "name": "Mount Doom (Orodruin)"
+    }
+   ],
+   "frame": "TA",
+   "how": "borrowed",
+   "x": 5750.0,
+   "y": 3300.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "withered heath",
+     "kind": "NATURAL_MOOR",
+     "name": "Withered Heath"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5790.0,
+   "y": 670.0
+  },
+  {
+   "at": [
+    {
+     "ages": "SA,TA",
+     "how": "own",
+     "key": "mordor",
+     "kind": "POLITY_REALM",
+     "name": "Mordor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5950.0,
+   "y": 3475.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "nurn",
+     "kind": "POLITY_SUBREGION",
+     "name": "Nurn"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6050.0,
+   "y": 3900.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "lithlad",
+     "kind": "POLITY_SUBREGION",
+     "name": "Lithlad"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6150.0,
+   "y": 3275.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "rhun",
+     "kind": "POLITY_REALM",
+     "name": "Rhûn & the Easterling powers"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6250.0,
+   "y": 1800.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "khand",
+     "kind": "POLITY_REGION",
+     "name": "Khand"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6400.0,
+   "y": 4225.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "dorwinion",
+     "kind": "POLITY_REALM",
+     "name": "Dorwinion"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6425.0,
+   "y": 2085.0
+  }
+ ]
+}

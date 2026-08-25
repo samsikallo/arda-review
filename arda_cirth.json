@@ -1,0 +1,1831 @@
+{
+ "script": "Cirth (Certar)",
+ "origin": {
+  "where": "Beleriand",
+  "who": "the Sindar",
+  "why_angular": "long used only for inscribing names and brief memorials upon wood or stone, which is what their angular shapes are owed to",
+  "spread": "the older and simpler form spread eastward in the Second Age to Men, Dwarves and Orcs, each altering them; one such simple form was still used by the Men of Dale and a similar one by the Rohirrim",
+  "cite": "LotR App E II, The Cirth",
+  "conf": "C"
+ },
+ "arrangements": {
+  "daeron": {
+   "name": "the Angerthas Daeron",
+   "who": "attributed in Elvish tradition to Daeron, minstrel and loremaster of King Thingol of Doriath",
+   "note": "the richest and most ordered form of the Cirth. The principal additions -- the series 13-17 and 23-28 -- were most probably inventions of the Noldor of Eregion, being for sounds not found in Sindarin.",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  },
+  "moria": {
+   "name": "the Angerthas Moria",
+   "who": "the Dwarves of Moria, from Eregion",
+   "note": "the Long Rune-rows of Moria. The Dwarves introduced unsystematic changes in value and certain new cirth. This arrangement is the one in the tomb-inscription.",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  },
+  "erebor": {
+   "name": "the mode of Erebor",
+   "who": "the Dwarves of Erebor",
+   "note": "a further modification of the Angerthas Moria, exemplified in the Book of Mazarbul. Appendix E's own table excludes these peculiarities except for the Ereborian cirth 57 and 58.",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  }
+ },
+ "principles": [
+  {
+   "n": 1,
+   "rule": "a stroke added to a branch adds voice",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  },
+  {
+   "n": 2,
+   "rule": "reversing the certh opens the sound to a spirant",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  },
+  {
+   "n": 3,
+   "rule": "a branch on BOTH sides of the stem adds voice and nasality",
+   "cite": "LotR App E II, The Cirth",
+   "conf": "C"
+  }
+ ],
+ "exception": {
+  "what": "archaic Sindarin needed a spirant m, best provided by reversing the sign for m -- so the reversible No. 6 took the value m and No. 5 took hw",
+  "affects": [
+   5,
+   6
+  ],
+  "cite": "LotR App E II, The Cirth",
+  "conf": "C"
+ },
+ "values": {
+  "daeron": [
+   {
+    "n": 5,
+    "value": "hw",
+    "note": "given hw so that 6 could be the reversible m",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 6,
+    "value": "m",
+    "note": "reversible, so its reversal serves the spirant m",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 13,
+    "value": "h/s",
+    "note": "h or s, according as 35 was used for s or h",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 15,
+    "value": "h/s",
+    "note": "h or s, according as 35 was used for s or h",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 33,
+    "value": "h",
+    "note": "independent h in the later arrangement; its OLDER value was hy",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 34,
+    "value": "s",
+    "note": "34 and 35 were used indifferently for s",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 35,
+    "value": "s",
+    "note": "34 and 35 were used indifferently for s",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 36,
+    "value": "ss",
+    "note": "theoretic value z, used for ss in Sindarin and Quenya; cf. Feanorian 31",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 38,
+    "value": "nd",
+    "note": "for the frequent sequence nd, though not clearly related in shape to the dentals",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 39,
+    "value": "i/y",
+    "note": "either i or the consonant y",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 42,
+    "value": "vowel",
+    "note": "a vowel, and remained so in all later developments",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 46,
+    "value": "vowel",
+    "note": "a vowel, and remained so in all later developments",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 50,
+    "value": "vowel",
+    "note": "a vowel, and remained so in all later developments",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   }
+  ],
+  "moria": [
+   {
+    "n": 12,
+    "value": "r",
+    "note": "consequent on the abandonment of 14 and 16",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 17,
+    "value": "z",
+    "note": "to go with 54 in its value s",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 34,
+    "value": "h",
+    "note": "one of the three alterations that dislocated the values",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 35,
+    "value": "'",
+    "note": "the clear or glottal beginning of a word with an initial vowel, which appeared in Khuzdul",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 36,
+    "value": "n",
+    "note": "consequent on 54 taking the value s",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 37,
+    "value": "ng",
+    "note": "a new certh",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 53,
+    "value": "n",
+    "note": "invented for n, and confused with 22",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 54,
+    "value": "s",
+    "note": "one of the three alterations that dislocated the values",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 55,
+    "value": "vowel",
+    "note": "in origin a halved form of 46, for the vowel heard in English butter; when weak, often reduced to a stroke without a stem",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 56,
+    "value": "vowel",
+    "note": "in origin a halved form of 46, for the vowel heard in English butter",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   }
+  ],
+  "erebor": [
+   {
+    "n": 14,
+    "value": "j",
+    "note": "reintroduced, 14 and 16 having been abandoned in Moria",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 16,
+    "value": "zh",
+    "note": "reintroduced, 14 and 16 having been abandoned in Moria",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 17,
+    "value": "ks",
+    "note": "x",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 29,
+    "value": "g",
+    "note": "or gh, or a mere variant of 19 and 21",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 30,
+    "value": "gh",
+    "note": "or g, or a mere variant of 19 and 21",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 43,
+    "value": "z",
+    "note": "",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 57,
+    "value": "ps",
+    "note": "a new certh, invented for this mode",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   },
+   {
+    "n": 58,
+    "value": "ts",
+    "note": "a new certh, invented for this mode",
+    "cite": "LotR App E II, The Cirth",
+    "conf": "C"
+   }
+  ]
+ },
+ "n_values": 31,
+ "n_distinct_cirth": 27,
+ "merged": [
+  {
+   "n": 1,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "p",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "p",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "p",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "b",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "b",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "b",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "f",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "f",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "f",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 4,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "v",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "v",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "v",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 5,
+   "glyph": true,
+   "note_held": "reversible №6 given m; №5 hw (App E's one stated exception)",
+   "values": {
+    "daeron": {
+     "value": "hw",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "given hw so that 6 could be the reversible m"
+    },
+    "moria": {
+     "value": "hw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "hw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 6,
+   "glyph": true,
+   "note_held": "[C] — LotR App E states this value in prose, not only on the plate (Angerthas section: 'the reversible No. 6 was given the value m ... No. 39 was used for either i or y ... the consequent use of 12 for r; the invention of 53 for n ... the new certh 37 for ng'). The SHAPE is still the plate's.",
+   "values": {
+    "daeron": {
+     "value": "m",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "reversible, so its reversal serves the spirant m"
+    },
+    "moria": {
+     "value": "m",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "m",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 7,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "(mh) mb",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "mb",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "mb",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 8,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "t",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "t",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "t",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 9,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "d",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "d",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "d",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 10,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "th",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "th",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "th",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 11,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "dh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "dh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "dh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 12,
+   "glyph": true,
+   "note_held": "Moria: r — part of the Dwarves' value-shift [C] — LotR App E states this value in prose, not only on the plate (Angerthas section: 'the reversible No. 6 was given the value m ... No. 39 was used for either i or y ... the consequent use of 12 for r; the invention of 53 for n ... the new certh 37 for ng'). The SHAPE is still the plate's.",
+   "values": {
+    "daeron": {
+     "value": "n(r)",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "r",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "consequent on the abandonment of 14 and 16"
+    },
+    "erebor": {
+     "value": "r",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 13,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ch",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "h/s",
+      "cite": "LotR App E II, The Cirth",
+      "note": "h or s, according as 35 was used for s or h"
+     }
+    },
+    "moria": {
+     "value": "ch",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ch",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 14,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "j",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "j",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "reintroduced, 14 and 16 having been abandoned in Moria"
+    }
+   }
+  },
+  {
+   "n": 15,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "sh",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "h/s",
+      "cite": "LotR App E II, The Cirth",
+      "note": "h or s, according as 35 was used for s or h"
+     }
+    },
+    "moria": {
+     "value": "sh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "sh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 16,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "zh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "zh",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "reintroduced, 14 and 16 having been abandoned in Moria"
+    }
+   }
+  },
+  {
+   "n": 17,
+   "glyph": true,
+   "note_held": "Daeron nj; Moria z; Erebor ks — App E describes all three",
+   "values": {
+    "daeron": {
+     "value": "nj",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "z",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "to go with 54 in its value s"
+    },
+    "erebor": {
+     "value": "ks (x)",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "x"
+    }
+   }
+  },
+  {
+   "n": 18,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "k",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "k",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "k",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 19,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "g",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "g",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "g",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 20,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "kh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "kh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "kh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 21,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "gh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "gh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "gh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 22,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ŋ (n)",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "n",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "n",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 23,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "kw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "kw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "kw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 24,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "gw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "gw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "gw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 25,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "khw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "khw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "khw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 26,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ghw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ghw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ghw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 27,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ngw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ngw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "nw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 28,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "nw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "nw",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 29,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "r",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "j",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "g",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "or gh, or a mere variant of 19 and 21"
+    }
+   }
+  },
+  {
+   "n": 30,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "rh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "zh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "gh",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "or g, or a mere variant of 19 and 21"
+    }
+   }
+  },
+  {
+   "n": 31,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "l",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "l",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "l",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 32,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "lh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "lh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "lh",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 33,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ng",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "h",
+      "cite": "LotR App E II, The Cirth",
+      "note": "independent h in the later arrangement; its OLDER value was hy"
+     }
+    },
+    "moria": {
+     "value": "ng",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ng",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 34,
+   "glyph": true,
+   "note_held": "Daeron/Erebor s vs Moria h — App E: the s/h hesitation is ancient",
+   "values": {
+    "daeron": {
+     "value": "s",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "34 and 35 were used indifferently for s"
+    },
+    "moria": {
+     "value": "h",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "one of the three alterations that dislocated the values"
+    },
+    "erebor": {
+     "value": "h",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 35,
+   "glyph": true,
+   "note_held": "Moria: the Khuzdul glottal beginning (App E)",
+   "values": {
+    "daeron": {
+     "value": "s",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "34 and 35 were used indifferently for s"
+    },
+    "moria": {
+     "value": "' (glottal)",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "the clear or glottal beginning of a word with an initial vowel, which appeared in Khuzdul"
+    },
+    "erebor": {
+     "value": "' (glottal)",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 36,
+   "glyph": true,
+   "note_held": "theoretic z, used for ss in Elvish; Moria n (App E: 'the consequent use of 36 as n') [C]; not among Erebor's listed changes, so it keeps n [I-H]",
+   "values": {
+    "daeron": {
+     "value": "z (ss)",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "ss",
+      "cite": "LotR App E II, The Cirth",
+      "note": "theoretic value z, used for ss in Sindarin and Quenya; cf. Feanorian 31"
+     }
+    },
+    "moria": {
+     "value": "n",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "consequent on 54 taking the value s"
+    },
+    "erebor": {
+     "value": "n",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 37,
+   "glyph": true,
+   "note_held": "[C] — LotR App E states this value in prose, not only on the plate (Angerthas section: 'the reversible No. 6 was given the value m ... No. 39 was used for either i or y ... the consequent use of 12 for r; the invention of 53 for n ... the new certh 37 for ng'). The SHAPE is still the plate's.",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ng*",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a new certh"
+    },
+    "erebor": {
+     "value": "ng",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 38,
+   "glyph": true,
+   "note_held": "nd 'not clearly related in shape to the dentals' (App E)",
+   "values": {
+    "daeron": {
+     "value": "nd",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "for the frequent sequence nd, though not clearly related in shape to the dentals"
+    },
+    "moria": {
+     "value": "nd",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "nd",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 39,
+   "glyph": true,
+   "note_held": "[C] — LotR App E states this value in prose, not only on the plate (Angerthas section: 'the reversible No. 6 was given the value m ... No. 39 was used for either i or y ... the consequent use of 12 for r; the invention of 53 for n ... the new certh 37 for ng'). The SHAPE is still the plate's.",
+   "values": {
+    "daeron": {
+     "value": "i (y)",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "either i or the consonant y"
+    },
+    "moria": {
+     "value": "i",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "i",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 40,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "y*",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "y",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 41,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "hy*",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "hy",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 42,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "u",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a vowel, and remained so in all later developments"
+    },
+    "moria": {
+     "value": "u",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "u",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 43,
+   "glyph": true,
+   "note_held": "App E gives 43 as z for the MODE OF EREBOR only; what Angerthas Moria made of it is on the plate and is not stated in the prose — the attached documents do not provide enough information to answer this",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "z",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "stated in Appendix E's prose"
+    }
+   }
+  },
+  {
+   "n": 44,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "w",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "w",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "w",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 45,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ü",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ü",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ü",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 46,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "e",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a vowel, and remained so in all later developments"
+    },
+    "moria": {
+     "value": "e",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "e",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 47,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ē",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ē",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ē",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 48,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "a",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "a",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "a",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 49,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ā",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ā",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ā",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 50,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "o",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a vowel, and remained so in all later developments"
+    },
+    "moria": {
+     "value": "o",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "o",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 51,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ō",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ō",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "oo",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 52,
+   "glyph": true,
+   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "ö",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ö",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ö",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 53,
+   "glyph": true,
+   "note_held": "new Moria certh; 'confusion with 22' noted [C] — LotR App E states this value in prose, not only on the plate (Angerthas section: 'the reversible No. 6 was given the value m ... No. 39 was used for either i or y ... the consequent use of 12 for r; the invention of 53 for n ... the new certh 37 for ng'). The SHAPE is still the plate's.",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "n*",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "invented for n, and confused with 22"
+    },
+    "erebor": {
+     "value": "n",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 54,
+   "glyph": true,
+   "note_held": "Moria changed 54 to s (App E) [C]; not among Erebor's listed changes, so it keeps it [I-H]",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "s*",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "one of the three alterations that dislocated the values"
+    },
+    "erebor": {
+     "value": "s*",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 55,
+   "glyph": true,
+   "note_held": "halved form of 46; schwa of Westron/Dwarvish (App E)",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ə*",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "vowel",
+      "cite": "LotR App E II, The Cirth",
+      "note": "in origin a halved form of 46, for the vowel heard in English butter; when weak, often reduced to a stroke without a stem"
+     }
+    },
+    "erebor": {
+     "value": "ə",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 56,
+   "glyph": true,
+   "note_held": "halved form of 46 (App E)",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "ʌ*",
+     "conf": "I-H",
+     "how": "read off the Angerthas plate",
+     "disagrees_with_prose": {
+      "value": "vowel",
+      "cite": "LotR App E II, The Cirth",
+      "note": "in origin a halved form of 46, for the vowel heard in English butter"
+     }
+    },
+    "erebor": {
+     "value": "ʌ",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 57,
+   "glyph": true,
+   "note_held": "Erebor invention (App E)",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ps",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a new certh, invented for this mode"
+    }
+   }
+  },
+  {
+   "n": 58,
+   "glyph": true,
+   "note_held": "Erebor invention (App E)",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "ts",
+     "conf": "C",
+     "cite": "LotR App E II, The Cirth",
+     "how": "a new certh, invented for this mode"
+    }
+   }
+  },
+  {
+   "n": 59,
+   "glyph": true,
+   "note_held": "aspiration marker (plate) [I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "+h*",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "+h",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  },
+  {
+   "n": 60,
+   "glyph": true,
+   "note_held": "'&' abbreviation (plate) [I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "values": {
+    "daeron": {
+     "value": "—",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "moria": {
+     "value": "&*",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    },
+    "erebor": {
+     "value": "&",
+     "conf": "I-H",
+     "cite": null,
+     "how": "read off the Angerthas plate"
+    }
+   }
+  }
+ ],
+ "n_merged": 60,
+ "n_upgraded": 25,
+ "n_plate_prose_disagreements": 6,
+ "refused": [
+  {
+   "what": "the Mode of Beleriand",
+   "why": "Appendix E describes the CONCEPT -- older modes in which only the consonants were denoted by full letters -- and never states which tengwa carries which Sindarin vowel. Those values are in the West-gate specimen and the mode figure, which are pictures. The text was searched and does not carry them.",
+   "what_would_answer": "a measurement of the West-gate inscription made by this archive's own instrument, as the centreline sheets measure Christopher Tolkien's linework -- not a reading of someone else's transcription."
+  },
+  {
+   "what": "a CITATION for the ~29 certh Appendix E's prose does not name",
+   "why": "Appendix E's Table of Values is a FIGURE. The archive holds those values as [I-H], read off the plate and marked as such in their own notes; what they lack is a citation, not a value.",
+   "what_would_answer": "a prose witness for each. The three rearrangement principles do not supply one: they say what a shape MEANS given a base certh, not which certh is the base."
+  },
+  {
+   "what": "a freely-licensed Cirth FONT",
+   "why": "the archive draws its own 60 cirth as SVG and needs no font to SHOW them -- that refusal was withdrawn as simply false. What a font would add is text a reader can SELECT, COPY and search, which an SVG cannot give.",
+   "what_would_answer": "a Cirth face whose licence is read from the file itself, recorded in arda_assets.json with its hand, as the two tengwar faces are."
+  }
+ ],
+ "note": "Built from what Appendix E STATES IN PROSE. Its Table of Values is a figure and is not reproduced or reconstructed; the ~40 cirth it draws and does not name are absent, and `refused` says so with what would answer each. Every value here carries its own citation."
+}

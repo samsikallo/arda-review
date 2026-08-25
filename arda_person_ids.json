@@ -1,0 +1,72 @@
+{
+ "built_from": "map/gen_person_ids.py, derived from every tracked site/arda_*.json",
+ "correspondences": [
+  {
+   "as_referenced": "anarion",
+   "basis": "base",
+   "referenced_from": [
+    "arda_realms:pol.[].rulers.[].[]"
+   ],
+   "resolves_to": "anarion_g",
+   "why": "exactly one defined person shares the base name 'anarion'"
+  },
+  {
+   "as_referenced": "arpharazon",
+   "basis": "merged",
+   "referenced_from": [
+    "arda_chronology:events.[].actors.[]"
+   ],
+   "resolves_to": "pharazon",
+   "why": "the surviving record's own note says this id was merged away"
+  },
+  {
+   "as_referenced": "dain",
+   "basis": "merged",
+   "referenced_from": [
+    "arda_chronology:events.[].actors.[]"
+   ],
+   "resolves_to": "dain2",
+   "why": "the surviving record's own note says this id was merged away"
+  }
+ ],
+ "count": 3,
+ "no_record": [],
+ "not_resolved": [
+  {
+   "as_referenced": "boromir2",
+   "candidates": [
+    "boromir",
+    "boromir_b",
+    "boromir_s"
+   ],
+   "referenced_from": [
+    "arda_realms:pol.[].rulers.[].[]"
+   ],
+   "why": "more than one defined person shares the base name 'boromir', and the archive holds nothing that separates them mechanically. Choosing one would be choosing a winner."
+  },
+  {
+   "as_referenced": "faramir2",
+   "candidates": [
+    "faramir",
+    "faramir_o",
+    "faramir_t"
+   ],
+   "referenced_from": [
+    "arda_realms:pol.[].rulers.[].[]"
+   ],
+   "why": "more than one defined person shares the base name 'faramir', and the archive holds nothing that separates them mechanically. Choosing one would be choosing a winner."
+  },
+  {
+   "as_referenced": "orodreth2",
+   "candidates": [
+    "orodreth",
+    "orodreth_s"
+   ],
+   "referenced_from": [
+    "arda_realms:pol.[].rulers.[].[]"
+   ],
+   "why": "more than one defined person shares the base name 'orodreth', and the archive holds nothing that separates them mechanically. Choosing one would be choosing a winner."
+  }
+ ],
+ "note": "The archive disambiguates same-named people two ways -- a letter suffix and a numeral -- and both are live in one dataset, so a reference written in one convention can name a record defined in the other. This states the correspondence where it can be DERIVED and refuses where it cannot. It does NOT rank the conventions and there is deliberately no `primary` field: the owner's ruling of 5 August was to publish the correspondence and not choose a winner, on the precedent of site/arda_aliases.json."
+}

@@ -1,0 +1,1000 @@
+/* arda.css — shared design tokens + accessibility layer for every hall.
+   Loaded AFTER each page's own <style>, so its fixes win the cascade. */
+/* ── THE ARCHIVE'S LATIN FACE, declared once for all 622 pages ───────────────────────────────
+   The owner, 19 Aug: the body text "look like just Times New Roman. Boring. In fact, on the whole
+   site in general, where latin alphabet is used, use this font" -- Aniron, Pete Klassen's 2004
+   retracing of the LOTR film-credits face. Its own readme says it was drawn to work "for headers
+   as well as for paragraph text".
+
+   ONE TOKEN, ON PURPOSE. `--face-latin` is the only place the family is named, so the ruling
+   costs one line to revisit rather than a sweep of 622 pages. The licence is NOT settled and the
+   position is recorded in full at fonts/Aniron-LICENCE.txt, including the fact -- given to the
+   owner before he ruled -- that this site is already reachable on the public web.
+
+   NO COMBINING MARKS IN THIS FACE (U+0300-0308), only precomposed accents. Measured before
+   shipping: of 623 published pages, 18 contain a combining mark and all but one of those are
+   inside a JavaScript regex rather than display text. The fallback stack catches the rest. */
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Architects Daughter"; src:url("fonts/ArchitectsDaughter.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+
+/* ── C61: THE FOUR GOOGLE-HOSTED FACES, NOW IN THE REPOSITORY ────────────────────────────────
+   Ruling C61, 20 August 2026: self-host them. Until this block, UnifrakturMaguntia, Uncial
+   Antiqua, Cinzel and EB Garamond arrived over the wire from fonts.gstatic.com -- a <link> in
+   codex-proto.html and, more widely, an `@import` on line 1 of codex-object.css, which 41
+   published pages load. A face fetched from somebody else's host is a face the archive does not
+   HAVE: offline it is simply gone and the look changes under the reader, and every page view
+   tells Google who is reading Tolkien here.
+
+   ALL FOUR ARE SIL OPEN FONT LICENSE 1.1 and each licence ships verbatim beside its file as
+   fonts/<Family>-OFL.txt; provenance for all eight faces is recorded in arda_assets.json.
+   Built from github.com/google/fonts (main @ 3b1480ea4b6e, fetched 20 Aug 2026). Cinzel and
+   EB Garamond ship upstream as VARIABLE fonts; they were instanced at the exact weights the
+   pages ask for -- 400/600/700 and 400/500 -- so `font:600 ... Cinzel` gets a drawn semibold
+   rather than a browser-synthesised smear of the regular. Nothing here is subsetted: EB
+   Garamond keeps all 2,091 codepoints because this archive sets accented Elvish. */
+@font-face{ font-family:"UnifrakturMaguntia"; src:url("fonts/UnifrakturMaguntia-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Uncial Antiqua"; src:url("fonts/UncialAntiqua-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-SemiBold.woff2") format("woff2");
+  font-weight:600; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Medium.woff2") format("woff2");
+  font-weight:500; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+
+:root{
+  --face-latin:"Aniron","Junicode",Georgia,'Palatino Linotype',serif;
+  --face-hand:"Architects Daughter","Junicode",Georgia,cursive;
+  --face-display:"Metamorphous","Junicode",Georgia,serif;
+  --a-parch:#efe6cd; --a-card:#fdfaf2; --a-ink:#3a3226; --a-mut:#6b5c44; /* AA on parchment */
+  --a-line:#b0a58e; --a-gold:#c9a227; --a-gold-dk:#7a5f14; --a-char:#191512; --a-hdr-gold:#d8c78e;
+  --a-elf:#4a7c59; --a-num:#4a6a8a; --a-man:#8a6a3a; --a-dwarf:#8a5a8a; --a-hobbit:#a2762a; --a-dark:#5a3a35;
+}
+/* WCAG: citation text was 4.21:1 at 11.5px italic — raise size + darken */
+.cite{color:var(--a-mut) !important; font-size:12.5px !important;}
+/* Keyboard access: visible focus everywhere, incl. the span-widgets given tabindex by nav.js */
+:focus-visible{outline:2px solid var(--a-gold) !important; outline-offset:2px; border-radius:4px;}
+a:focus-visible{outline:2px solid var(--a-gold) !important;}
+/* Skip link */
+.a-skip{position:absolute;left:-999px;top:0;background:var(--a-char);color:var(--a-hdr-gold);
+  padding:6px 14px;z-index:999;border-radius:0 0 8px 0;font:13px Georgia,serif}
+.a-skip:focus{left:0}
+/* ---- Grouped nav (rendered by nav.js) ---- */
+/* THE NAVBAR STAYS VISIBLE -- §7's "persistent navbar", and it was outstanding for a measurable
+   reason: nav.js puts the menu on all 33 pages, but nothing kept it ON SCREEN. The Chronology's
+   drawing is 4620px tall and the gazetteer holds 481 places; a reader who scrolled either lost the
+   menu, the breadcrumb and the jump box together, and had to travel back to the top to move house.
+   Sticky rather than fixed, so the header keeps its place in the flow and pushes nothing under
+   itself -- fixed would need a compensating top margin on every one of the 33 pages, each of which
+   styles its own #hdr. Declared here and not per page for the same reason.
+   z-index sits above the dropdown's own 60 so an open hall is not clipped by the page beneath. */
+/* #hdr AND .hdr, because the archive's header markup is not uniform and measuring said so: 26
+   pages carry id="hdr", map.html carries class="hdr", and the Chronology's bar had NEITHER -- an
+   anonymous div with inline styles that no selector could reach, on the tallest page in the
+   archive. It has been given the id. The five still outside this rule are 404.html, index.html and
+   the three tombstones: all short, none scrollable enough for a sticky bar to mean anything. */
+#hdr,.hdr{position:sticky;top:0;z-index:80}
+
+/* ---- THE HOUSE GROUND, AT ZERO SPECIFICITY ----------------------------------------------------
+   THE FAULT: the archive has ONE ground -- parchment, with a dark header band over it -- and every
+   hall declared it for itself, in its own <style>, 26 times. That is not a convention, it is a
+   habit, and a habit is kept by remembering. I built three halls this week (theindex, names,
+   baynes) and forgot all three times. They therefore had NO body background and NO #hdr background
+   at all, and the owner saw exactly what that produces:
+
+     "inverted colors, than the other pages"   the three fell back to the browser's default white
+                                               while carrying their own prefers-color-scheme block,
+                                               so their CARDS went dark on a light ground -- the
+                                               only three halls in the archive that answered the OS
+     "no bar, just floating text"              #hdr,.hdr is sticky (above) and these three gave it
+                                               no background, so the page scrolled THROUGH the
+                                               header and the title hung in mid-air
+     "switches order ... looks wrong"          the house #hdr is a flex row; with no rule at all its
+                                               children stacked in document order, so the header
+                                               re-laid-out the moment it stuck
+
+   `:where()` HAS ZERO SPECIFICITY -- that is the whole reason it is used here and not a plain
+   selector. arda.css is loaded AFTER every page's own <style>, so a normal `body{...}` here would
+   BEAT all 33 halls' own grounds and repaint the archive. Wrapped in :where(), this rule loses to
+   any page that states its own ground (0,0,1 beats 0,0,0) and applies only where a page states
+   none. The 33 halls that declare their own are untouched, byte for byte -- measured, not assumed,
+   by `map/houseground_check.py`, which also refuses a new hall that declares neither.
+
+   Every future hall is now right by default, which is the only fix that survives the next hall
+   built by someone tired at four in the morning.
+
+   [REPAIRED 12 Aug: a stray end-comment marker closed this comment ten lines early, so the parser
+   swallowed the ground rule below and the house ground reached NO reader. Browser, not grep: 92
+   rules and absent, repaired 93 and present. Full account, and why houseground_check reported the
+   opposite for as long as it lasted, in CLAUDE.md. NEVER WRITE EITHER CSS COMMENT DELIMITER
+   INSIDE A COMMENT -- describing one closes it, which cost a second measurement to notice.
+   This note is deliberately SHORT: arda.css is fetched by every hall, map.html sits at its
+   ceiling, and the long version cost that page 213 bytes. Prose the author can cut is not a
+   reason to raise a ceiling -- this file's own ruling, applied to its author.]
+
+   AND IT IS NARROWED TO GROUND AND INK ONLY -- background, colour, font. THE FIRST VERSION OF THIS
+   BLOCK ALSO CARRIED `display:flex`, `padding` AND `border-bottom`, AND THAT WAS WRONG in a way no
+   amount of reading the CSS would have shown me. Zero specificity does not mean "applies only to
+   pages with no rule"; it means "loses per PROPERTY". A hall that declares `#hdr{background:...}`
+   and nothing else was still handed my `display` and my `padding` -- so a headless probe of all 36
+   halls, before and after, found FOUR working headers silently relaid out: valinor block->flex,
+   map block->flex, gazetteer 100px->146px, reckoning 193px->162px. I had reasoned the rule was
+   inert and the browser said otherwise. Ground and ink cannot cause that: a page that sets its own
+   background keeps it, and a page that sets none could not have been relying on transparent.
+   The three halls that want the full house header say so in their own <style>, like the other 26. */
+:where(body){margin:0;color:var(--a-ink);font:14.5px/1.55 var(--face-latin);
+  background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),var(--a-parch)}
+:where(#hdr,.hdr){background:linear-gradient(#221c15,#191512 60%,#12100d);color:var(--a-hdr-gold)}
+
+/* A SECOND STICKY MUST NOT SHARE THE FIRST ONE'S OFFSET. `#ix .bar` was `position:sticky;top:0`
+   while the header is also sticky at top:0 -- so on every scroll the filter bar slid up UNDERNEATH
+   the header and the two occupied the same line. That is the "switches order" the owner saw, and it
+   is a collision, not a reordering. nav.js measures the header and publishes its height here; any
+   page with a second sticky sets `top:var(--a-hdr-h)` and sits below it at every wrap width.
+   Measured rather than hardcoded because the header WRAPS: 44px on a wide screen, 70px on a phone,
+   and a constant would be wrong on one of them. */
+:root{--a-hdr-h:0px}
+/* CODEX-STAGE-0-BEGIN */
+/* Codex tokens. Values only. GOLD IS UNSAFE FOR TEXT: 1.94:1 on parchment. Ornament stroke. */
+:root{--a-vellum:#efe6cd;--a-rubric:#8c2f1e;--a-gold-stroke:#c9a227;
+      --a-ink-brown:#3a3226;--a-codex-rule:#b0a58e}
+/* CODEX-STAGE-0-END */
+
+#ardanav{display:flex;flex-wrap:wrap;gap:2px;align-items:center;font-size:12px}
+#ardanav .grp{position:relative}
+#ardanav .grp>button{background:none;border:none;color:#c9b06a;font:12px Georgia,serif;
+  font-variant:small-caps;letter-spacing:.06em;cursor:pointer;padding:3px 9px;border-radius:8px}
+#ardanav .grp>button:hover,#ardanav .grp>button[aria-expanded="true"]{background:rgba(201,162,39,.16);color:#e2cf96}
+#ardanav .grp>button.here{border-bottom:2px solid var(--a-gold)}
+#ardanav .menu{display:none;position:absolute;top:100%;left:0;min-width:200px;background:#221c15;
+  border:1px solid #8a7444;border-radius:0 0 10px 10px;padding:6px 0;z-index:60;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+#ardanav .grp>button[aria-expanded="true"]+.menu{display:block}
+#ardanav .menu a{display:block;padding:5px 14px;color:#c9b06a;text-decoration:none;font-size:12.5px}
+#ardanav .menu a .sub2{display:block;font-size:10.5px;color:#8a7a52;font-style:italic}
+#ardanav .menu a:hover,#ardanav .menu a:focus-visible{background:rgba(201,162,39,.14);color:#e8dcb0}
+#ardanav .menu a[aria-current="page"]{color:#e8dcb0;border-left:3px solid var(--a-gold);padding-left:11px}
+#ardanav .home{color:#c9b06a;text-decoration:none;font-size:12px;font-variant:small-caps;padding:3px 9px;border-radius:8px}
+#ardanav .home:hover{background:rgba(201,162,39,.16)}
+/* THE JUMP BOX -- §7's multi-hall search. Styled to the nav's own palette rather than a new one:
+   the archive's chrome is #221c15 on gold, and a search field that looked like a search field from
+   some other site would read as an advert. */
+#ardanav #a-jumpw{position:relative;margin-left:4px}
+#ardanav #a-jump{width:112px;background:rgba(201,162,39,.10);border:1px solid #6d5a34;color:#e2cf96;
+  font:11.5px Georgia,serif;padding:3px 8px;border-radius:9px;transition:width .18s ease}
+#ardanav #a-jump::placeholder{color:#8a7a52;font-style:italic}
+#ardanav #a-jump:focus{width:210px;outline:none;border-color:var(--a-gold);background:rgba(201,162,39,.18)}
+#ardanav #a-jumpres{display:none;position:absolute;top:100%;right:0;min-width:250px;background:#221c15;
+  border:1px solid #8a7444;border-radius:0 0 10px 10px;padding:5px 0;z-index:70;
+  box-shadow:0 8px 22px rgba(0,0,0,.5)}
+#ardanav #a-jumpres.on{display:block}
+#ardanav #a-jumpres a{display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:5px 12px;color:#c9b06a;text-decoration:none;font-size:12.5px}
+#ardanav #a-jumpres a .jh{font-size:10px;color:#8a7a52;font-style:italic;white-space:nowrap}
+#ardanav #a-jumpres a:hover,#ardanav #a-jumpres a.sel,#ardanav #a-jumpres a:focus-visible{
+  background:rgba(201,162,39,.16);color:#e8dcb0}
+#ardanav #a-jumpres .none{padding:6px 12px;color:#8a7a52;font-size:11.5px;font-style:italic}
+@media (max-width:640px){#ardanav #a-jump{width:84px}#ardanav #a-jump:focus{width:150px}}
+#a-crumb{font-size:10.5px;color:#8a7a52;font-style:italic;flex-basis:100%;margin-top:-1px}
+#a-crumb a{color:#a08d5c;text-decoration:none}
+#a-theme{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;
+  font-size:11px;padding:2px 9px;margin-left:6px}
+@media (max-width:760px){
+  #ardanav{gap:0}
+  #ardanav .grp>button{padding:5px 7px;font-size:11.5px}
+  #ardanav .menu{position:fixed;left:8px;right:8px;top:auto;min-width:0}
+}
+/* ---- Opt-in dark theme (moon toggle; stored in localStorage) ----
+   Pragmatic inversion: the parchment site inverts cleanly; images/canvas/video counter-invert. */
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s !important;transition-duration:.01s !important}}
+
+/* canon-focus layer: dim entries badged inferred/external (the badge stays visible as the reason) */
+#a-layers{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;font-size:11px;padding:2px 9px;margin-left:4px}
+html.arda-canon .ent:has(.b-I),html.arda-canon .ent:has(.b-X),html.arda-canon .note:has(.b-I),
+html.arda-canon .phase:has(.b-I),html.arda-canon .res:has(.b-I),html.arda-canon tr:has(.b-I){opacity:.28;filter:grayscale(.7)}
+html.arda-canon .conf,html.arda-canon .refnote{opacity:.4}
+
+/* ---- feedback panel ---- */
+#a-fb{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;font-size:11px;padding:2px 9px;margin-left:4px}
+#a-fbdlg{position:fixed;right:16px;bottom:16px;width:min(360px,calc(100vw - 32px));background:#fdfaf2;border:1px solid #a8853c;border-radius:14px;padding:14px 16px;z-index:200;box-shadow:0 12px 40px rgba(20,12,4,.45);font:13px Georgia,serif;color:#3a3226}
+#a-fbdlg .fbh{font-variant:small-caps;font-size:15px;color:#5a4626;margin-bottom:6px}
+#a-fbdlg label{display:block;margin:.45em 0;font-size:12.5px}
+#a-fbdlg input,#a-fbdlg select,#a-fbdlg textarea{width:100%;box-sizing:border-box;border:1px solid #b0a58e;border-radius:8px;padding:4px 8px;font:12.5px Georgia,serif;background:#fffdf6;color:#3a3226}
+#a-fbdlg select,#a-fbdlg input{width:auto;min-width:55%}
+#a-fbdlg .fbbtns{display:flex;gap:8px;flex-wrap:wrap;margin:.6em 0 .3em}
+#a-fbdlg .fbbtns button{border:1px solid #a8853c;border-radius:10px;padding:4px 12px;font:12.5px Georgia,serif;background:#efe0bd;cursor:pointer}
+#a-fbdlg .fbnote{font-size:10.5px;color:#6b5c44;font-style:italic;border-top:1px dotted #b0a58e;padding-top:6px;margin-top:4px}
+
+/* A SHORT PAGE TILED ITS OWN BACKGROUND. Every hall paints `body` with a radial gradient
+   over a flat parchment. A gradient sizes to its positioning area, and when the body is
+   shorter than the window that area is the body -- so the browser propagated it to the
+   canvas and REPEATED it, laying hard horizontal seams every few hundred pixels down the
+   empty part of the page. Registers showed three of them.
+
+   Giving `html` a background of its own stops the propagation: body's gradient stays on
+   the body, and the canvas below it is the flat colour it was always meant to be. It is
+   set here rather than in each hall because the halls set `background` with the shorthand,
+   which would reset any repeat rule written before it. */
+html{background:#efe6cd}
+
+/* Visually hidden, still announced. nav.js uses it to NAME the hall you are in, which was
+   marked by a gold border alone -- a channel a screen reader cannot perceive. */
+.a-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* 12# — the hover glossary. Underlined with a DOTTED rule, not a colour: ruling 5 says colour is
+   never the only channel, and this must read as "there is more here" to everyone. */
+.gl{border-bottom:1px dotted rgba(122,74,18,.75);cursor:help}
+.gl:focus{outline:2px solid #c9a227;outline-offset:2px}
+#gl-box{position:absolute;z-index:60;max-width:320px;background:#fdf3df;border:1px solid #d0a53c;
+ border-radius:8px;padding:9px 12px;font-size:12.5px;line-height:1.45;
+ box-shadow:0 4px 14px rgba(60,40,10,.2);color:#2a2016}
+#gl-box .gl-r+.gl-r{border-top:1px solid rgba(122,74,18,.3);margin-top:.5rem;padding-top:.5rem}
+#gl-box .gl-w{font-weight:600;font-size:14px}
+#gl-box .gl-s{font-size:11.5px;opacity:.8;margin:.1rem 0}
+#gl-box .gl-m{font-style:italic;margin:.25rem 0}
+#gl-box .gl-b{margin-top:.25rem}
+#gl-box .gl-k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+#gl-box .gl-n{margin-top:.3rem;font-size:11.5px;opacity:.78}
+#gl-box .gl-c{margin-top:.35rem;font-size:11px;opacity:.72}
+@media (prefers-color-scheme:dark){
+ .gl{border-bottom-color:rgba(201,162,39,.75)}
+ #gl-box{background:#231d14;border-color:#6b5620;color:#e8dcc0}
+}
+
+
+
+/* ================================================================================================
+   THE NIGHT GROUND — the archive's second theme (the owner's ruling, 01 August 2026)
+
+   HIS WORDS: "there should be a dark theme". This morning's rule was ONE GROUND, written because
+   three halls answered the OS colour scheme while thirty-three did not and those three looked
+   inverted beside their neighbours. This is that rule KEPT, not broken: the archive now has two
+   grounds, both declared HERE, for every hall at once. A hall still never answers the OS on its
+   own — `map/houseground_check.py` refuses that, and it refuses it under this theme too.
+
+   IT IS NOT AN INVERSION, AND THE ARCHIVE ALREADY OWNED THE PALETTE. Every hall's header is
+   `linear-gradient(#221c15,#191512 60%,#12100d)` with #d8c78e lettering over a #8a7444 double
+   rule. That is the archive at night and it has been on every page since the first hall. The dark
+   theme carries that chrome down the page, so the two themes are one design lit two ways rather
+   than a design and its negative. #221c15 below is the header gradient's own top stop.
+
+   ONE SELECTOR, NOT TWO, AND THAT IS DELIBERATE. Every rule here keys on `[data-theme="dark"]`
+   alone. nav.js stamps that attribute — from the reader's stored choice, or from the OS when they
+   have not made one — so the OS path and the chosen path land on identical CSS and cannot drift.
+   The only media query is the two-property one directly below, which exists solely so a
+   dark-preferring reader does not get a white flash in the moment before nav.js runs.
+
+   WHY IT NEEDS `!important`, WHICH I FIRST WROTE THAT IT DID NOT. My reasoning was that arda.css
+   loads after every hall's <style>, so `:root[data-theme="dark"] X` outranks any `X` a hall writes.
+   THAT IS FALSE AND A BROWSER SAID SO: specificity compares (ids, classes, elements)
+   lexicographically, so ONE ID BEATS ANY NUMBER OF ATTRIBUTES — and nearly every hall scopes its
+   rules with an id (`#ix .law`, `#gal input`, `#p-shelf .fx-b`). A headless pass over all 36 halls
+   with the theme stamped found 484 light patches surviving on the night ground across 24 halls.
+   There is no specificity trick that wins: `<html>` carries no id to borrow. So the colour
+   properties below carry `!important`, and the cost is stated rather than hidden — a hall that
+   genuinely needs its own colour in the dark must now say so with an id-scoped
+   `:root[data-theme="dark"] #hall .thing` rule of its own, which is more specific and still wins.
+   A theme that does not apply is worse than one that is harder to override.
+
+   WHAT IT LEAVES ALONE, because a theme is not a licence to repaint meaning:
+     * the traced Baynes sheet and the drawn maps keep their light ground. They are black ink, and
+       Pauline Baynes's paper was not black; a dark sheet is a different drawing, not a theme.
+     * heraldic devices keep their tinctures. Gules is gules at midnight.
+     * confidence markers keep their hues — only their grounds move — so [C] and [I-M] read the
+       same in both themes, which ruling 5's "colour is never the only channel" already required.
+   ================================================================================================ */
+:root{--n-ground:#17140f;/* the page */
+  --n-card:#221c15;/* a card, a .law box, a panel */
+  --n-raise:#2a2318;/* a chip, a pressed tab, an input */
+  --n-ink:#e6dcc2;/* running text */
+  --n-mut:#a9997a;/* citations and captions */
+  --n-line:#5b4a28;/* rules and borders */
+  --n-gold:#d9b544;/* the accent, lifted from #c9a227 so it holds on charcoal */}
+/* Flash guard only. Two properties, no components — nav.js does the rest a tick later. */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) body{background:#17140f;color:#e6dcc2}
+}
+
+:root[data-theme="dark"] body{background:var(--n-ground) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .wrap{color:var(--n-ink) !important}
+
+/* CARDS AND PANELS. These class names are not guessed: they were counted across all 36 halls'
+   own <style> blocks by how often each carries a solid background — .on 17, .chip 15, .card 7,
+   .law 7, .tab 5, .warn 4, .tag 4, .q 3, .conf 3, .strip 2 — so the list is what the archive
+   actually uses rather than what a theme author imagines it uses. */
+:root[data-theme="dark"] .law,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .box,
+:root[data-theme="dark"] .strip,
+:root[data-theme="dark"] .k,
+:root[data-theme="dark"] .e,
+:root[data-theme="dark"] .n{background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .chip,
+:root[data-theme="dark"] .tab,
+:root[data-theme="dark"] .tag,
+:root[data-theme="dark"] .tbtn,
+:root[data-theme="dark"] .seg button,
+:root[data-theme="dark"] button,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea{background:var(--n-raise) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .chip.on,
+:root[data-theme="dark"] .tab.on,
+:root[data-theme="dark"] .on,
+:root[data-theme="dark"] [aria-pressed="true"]{background:rgba(217,181,68,.24) !important;border-color:var(--n-gold) !important;color:#f2e6c4 !important}
+:root[data-theme="dark"] .cite,
+:root[data-theme="dark"] .sub,
+:root[data-theme="dark"] .mut,
+:root[data-theme="dark"] .q{color:var(--n-mut) !important}
+:root[data-theme="dark"] a{color:var(--n-gold) !important}
+:root[data-theme="dark"] table,
+:root[data-theme="dark"] td,
+:root[data-theme="dark"] th{border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] hr{border-color:var(--n-line) !important}
+:root[data-theme="dark"] mark{background:rgba(217,181,68,.34) !important;color:inherit !important}
+:root[data-theme="dark"] .warn,
+:root[data-theme="dark"] .gap,
+:root[data-theme="dark"] .unp{background:#2c2214 !important;border-color:#8a6a2f !important;color:var(--n-ink) !important}
+/* The Index's sticky bar and letter heads must match the ground they sit on, or they smear the
+   entries scrolling underneath them. */
+:root[data-theme="dark"] #ix .bar,
+:root[data-theme="dark"] #ix .lh{background:var(--n-ground) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] #ix .lh{border-bottom-color:var(--n-line) !important}
+:root[data-theme="dark"] #ix .az a{color:var(--n-gold) !important}
+:root[data-theme="dark"] #ix .az a.on{background:var(--n-gold) !important;color:#17140f !important}
+:root[data-theme="dark"] #gl-box{background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+
+/* THE DRAWINGS KEEP THEIR PAPER. Named, not inferred: a traced sheet is black ink on light stock
+   and inverting it would publish a drawing nobody made. */
+:root[data-theme="dark"] #bs #sheet,
+:root[data-theme="dark"] .plate,
+:root[data-theme="dark"] #stage,
+:root[data-theme="dark"] #stage .note,
+:root[data-theme="dark"] #stage .lgd,
+:root[data-theme="dark"] #stage .row,
+:root[data-theme="dark"] #stage .col,
+:root[data-theme="dark"] #stage .cell,
+:root[data-theme="dark"] svg .note{background:transparent !important;color:#3a3226 !important}
+:root[data-theme="dark"] #stage > svg,
+:root[data-theme="dark"] .sheet{background:#fdfaf2 !important;color:#3a3226 !important}
+
+/* The toggle itself, in the header beside the jump box. */
+#ardanav .theme{background:none;border:1px solid #6d5a34;color:#c9b06a;font:11.5px Georgia,serif;
+  border-radius:9px;padding:3px 9px;cursor:pointer;margin-left:4px}
+#ardanav .theme:hover{background:rgba(201,162,39,.16)}
+
+/* THE HALLS THE FIRST PASS MISSED, EACH NAMED BY THE PROBE AND NOT BY GUESSWORK. These are the
+   element and class selectors that survived on a dark ground across 24 halls -- quotations, the
+   dashboards' blades and fates, the silences' references, the badges, and every hall that scopes
+   its inputs behind an id. */
+:root[data-theme="dark"] blockquote,
+:root[data-theme="dark"] .blade,:root[data-theme="dark"] .fate,:root[data-theme="dark"] .ref,
+:root[data-theme="dark"] .badge,:root[data-theme="dark"] .colh,:root[data-theme="dark"] .cols,
+:root[data-theme="dark"] .conf,:root[data-theme="dark"] .fx-b,:root[data-theme="dark"] .fx-tier,
+:root[data-theme="dark"] #bar,:root[data-theme="dark"] #cols,:root[data-theme="dark"] #limits,
+:root[data-theme="dark"] #main,:root[data-theme="dark"] main,
+:root[data-theme="dark"] .cell,:root[data-theme="dark"] .row,:root[data-theme="dark"] .item,
+:root[data-theme="dark"] .entry,:root[data-theme="dark"] .pane,:root[data-theme="dark"] .sec,
+:root[data-theme="dark"] .tile,:root[data-theme="dark"] .note,:root[data-theme="dark"] .lgd,
+:root[data-theme="dark"] .hd,:root[data-theme="dark"] .col{
+  background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] input,:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,:root[data-theme="dark"] button{
+  background:var(--n-raise) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+/* AN <img> IS NOT REPAINTED. Its whiteness is the picture's own, and a theme that recolours
+   photographs is not a theme. Where a plate needs a ground it keeps the light one above. */
+/* THE SECOND PASS, AGAIN NAMED BY THE PROBE. `.fdm` is the heraldry hall's device card (63 of the
+   survivors), `.q` carried a colour but no ground, and the character hall's portrait frames. */
+:root[data-theme="dark"] .fdm,:root[data-theme="dark"] .q,
+:root[data-theme="dark"] .frame,:root[data-theme="dark"] .por,:root[data-theme="dark"] .bio{
+  background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+/* WHAT STAYS LIGHT, AND EACH FOR A STATED REASON RATHER THAN BECAUSE THE RULE MISSED IT:
+     <img>                  a photograph's whiteness is the picture's, not the page's
+     map.html #stage,#chr   the drawn map is ink on paper, like the Baynes sheet
+     gondolin.html's spans  pastel grounds that CODE something -- a house, a quarter -- and
+                            recolouring them would destroy the distinction they carry
+   Measured, not assumed: 212 light elements remain and 119 of them are <img>. */
+
+
+/* THE READABILITY LAYER, 13 Aug — HOLDING FIX. Dark-mode contrast measured in a browser:
+   885 failures under 4.5:1, reduced to 175. Light mode verified unchanged at 354. The inks
+   were chosen for parchment and dark mode flipped the ground without flipping them; blunt
+   because they live in 39 pages' own <style>. Race/kind marks re-applied after, since those
+   carry meaning. Full account and the four measured attempts: the roadmap, 13 Aug. */
+:root[data-theme="dark"]{--a-ink:#e8dcc0;--a-mut:#b9a883;--a-line:#5a4c32}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --a-ink:#e8dcc0;--a-mut:#b9a883;--a-line:#5a4c32}}
+
+:root[data-theme="dark"] .gl,
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gl}{color:#e0cf9a}
+:root[data-theme="dark"] .gl{color:#e0cf9a !important;border-bottom-color:rgba(216,199,142,.8)}
+:root[data-theme="dark"] .sub2,
+:root[data-theme="dark"] .cite,
+:root[data-theme="dark"] .vol,
+:root[data-theme="dark"] .mut{color:#c3b28c !important}
+
+:root[data-theme="dark"] .el{color:#8fc0e8 !important}
+:root[data-theme="dark"] .nu{color:#9fc4e0 !important}
+:root[data-theme="dark"] .ma{color:#d8b98a !important}
+:root[data-theme="dark"] .dw{color:#d3a6d3 !important}
+:root[data-theme="dark"] .ho{color:#e0c07a !important}
+:root[data-theme="dark"] .da{color:#d69a92 !important}
+
+[style*="background:#e9f3e4"],[style*="background:#eef6ea"],
+.chip,.tag,.pill{color:#2a241a !important}
+
+
+/* #e9f3e4 is NOT here: it is a blazon provenance CODE. docs/DARK_CONTRAST_ANATOMY.md */
+:root[data-theme="dark"] [style*="#fffdf5"],
+:root[data-theme="dark"] [style*="#fdfaf2"],
+:root[data-theme="dark"] [style*="#f7f0de"],
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .intro,
+:root[data-theme="dark"] .hit,
+:root[data-theme="dark"] .sq,
+:root[data-theme="dark"] .w,
+:root[data-theme="dark"] .ann,
+:root[data-theme="dark"] .pcard,
+:root[data-theme="dark"] .dcard,
+:root[data-theme="dark"] .hcard,
+:root[data-theme="dark"] .hcard .txt,
+:root[data-theme="dark"] .blz,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] select{background:#241f18 !important;color:#e8dcc0 !important;
+  border-color:#5a4c32 !important}
+
+:root[data-theme="dark"] .card .cite,:root[data-theme="dark"] .intro .cite,
+:root[data-theme="dark"] .hit .vol,:root[data-theme="dark"] .cite{color:#c3b28c !important}
+
+
+:root[data-theme="dark"] [style*="#5a4626"]{color:#d8bd86 !important}
+:root[data-theme="dark"] [style*="#7a4a12"]{color:#e0b878 !important}
+:root[data-theme="dark"] [style*="#7a6a50"]{color:#c3b28c !important}
+:root[data-theme="dark"] [style*="#3a3226"]{color:#e8dcc0 !important}
+:root[data-theme="dark"] [style*="#7a3a2a"]{color:#e0a094 !important}
+:root[data-theme="dark"] [style*="#a8853c"]{color:#e5c483 !important}
+:root[data-theme="dark"] [style*="#8a7a52"]{color:#cdbd92 !important}
+:root[data-theme="dark"] [style*="#5a4c32"]{color:#c9b891 !important}
+:root[data-theme="dark"] [style*="#6b5c44"]{color:#cbb994 !important}
+:root[data-theme="dark"] [style*="#4a6a8a"]{color:#9fc4e0 !important}
+:root[data-theme="dark"] [style*="#4a7c59"]{color:#8fce9f !important}
+:root[data-theme="dark"] [style*="#8a6a3a"]{color:#d8b98a !important}
+:root[data-theme="dark"] [style*="#8a5a8a"]{color:#d3a6d3 !important}
+:root[data-theme="dark"] [style*="#a2762a"]{color:#e0c07a !important}
+:root[data-theme="dark"] [style*="#5a3a35"]{color:#d69a92 !important}
+
+
+:root[data-theme="dark"] p,:root[data-theme="dark"] li,:root[data-theme="dark"] td,
+:root[data-theme="dark"] th,:root[data-theme="dark"] dd,:root[data-theme="dark"] dt,
+:root[data-theme="dark"] label,:root[data-theme="dark"] figcaption,
+:root[data-theme="dark"] small,:root[data-theme="dark"] blockquote,
+:root[data-theme="dark"] h1,:root[data-theme="dark"] h2,:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,:root[data-theme="dark"] h5,:root[data-theme="dark"] h6{
+  color:#e8dcc0 !important}
+:root[data-theme="dark"] .cite,:root[data-theme="dark"] .vol,:root[data-theme="dark"] .mut,
+:root[data-theme="dark"] .sub,:root[data-theme="dark"] .sub2{color:#c3b28c !important}
+
+:root[data-theme="dark"] .el{color:#8fc0e8 !important}
+:root[data-theme="dark"] .nu{color:#9fc4e0 !important}
+:root[data-theme="dark"] .ma{color:#d8b98a !important}
+:root[data-theme="dark"] .dw{color:#d3a6d3 !important}
+:root[data-theme="dark"] .ho{color:#e0c07a !important}
+:root[data-theme="dark"] .da{color:#d69a92 !important}
+:root[data-theme="dark"] .gl{color:#e0cf9a !important}
+/* CODEX-STAGE-4-END */
+/* LIGHT-CONTRAST-BEGIN */
+/* THE MUTED INK, FIXED ONCE AT THE VARIABLE. `--mut:#7a6a50` is declared on 36 of 39 halls and
+   fails on every parchment ground: 4.03:1 on #ebe1c8, 4.21 on #efe6cd, 4.49 on #f5edd8. Fixing it
+   class by class is what made the earlier pass miss `.mk`, `.sq .v`, `.lbl`, `.acnote` and every
+   `label` in the Scriptorium -- 37 failures on one page while the site census said 25.
+   #6d5f47 clears 4.78:1 on the DARKEST of those grounds, so it clears all of them. */
+:root:not([data-theme="dark"]){--mut:#6d5f47}
+/* AND THE LITERALS, because most uses are NOT var(--mut): ten in the Scriptorium alone are
+   `color:#7a6a50`, several of them INLINE, and an inline style beats everything but !important.
+   The dark layer already carries the mirror of this rule for the same ink; light had none. */
+:root:not([data-theme="dark"]) [style*="#7a6a50"],
+:root:not([data-theme="dark"]) .mk,
+:root:not([data-theme="dark"]) .lbl,
+:root:not([data-theme="dark"]) .acnote,
+:root:not([data-theme="dark"]) .sq .v,
+:root:not([data-theme="dark"]) .row label,
+:root:not([data-theme="dark"]) section label{color:#6d5f47 !important}
+
+/* THE HOUSE BAND, AS A FLOOR. Measured 16 Aug: two halls style #hdr with no ground at all, so
+   the parchment body showed through and the gold nav read at 1.70:1 -- the owner's "lighter text
+   on light background", exactly. The band is the archive's since its first hall; a hall that
+   declares its own still wins, because this is a plain selector and theirs are id-scoped. */
+#hdr:where(:not([style*="background"])){background:linear-gradient(#221c15,#191512 60%,#12100d)}
+
+/* Light-ground legibility. Measured by map/contrast_check.py, which composites the REAL ground
+   (alpha and gradients) rather than the first backgroundColor it meets. NOT the dark layer's
+   blunt !important: these are the four classes that actually failed, on the light grounds only. */
+:root:not([data-theme="dark"]) .src,
+:root:not([data-theme="dark"]) .src i,
+:root:not([data-theme="dark"]) .tile .c{color:#746448}
+:root:not([data-theme="dark"]) .orn{color:#635d50}
+:root:not([data-theme="dark"]) .art .cap .cite,
+:root:not([data-theme="dark"]) .art .cap .cite .gl{color:#a89777 !important}
+:root:not([data-theme="dark"]) .meta,
+:root:not([data-theme="dark"]) .ft,
+:root:not([data-theme="dark"]) .sec .n,
+:root:not([data-theme="dark"]) h3.sub{color:#6d5f47}
+
+/* THREE CLASSES THE CENSUS FOUND ONCE THE CODEX WAS ON, and it could not have found them before:
+   turning the book-look on CHANGED THE GROUND under 30,000 nodes from near-white to parchment,
+   so colours that passed on #fdfaf2 now face #ebe1c8. A default nobody had switched was hiding
+   its own consequences. */
+/* the nav where a hall has neither #hdr nor #hero, so it sits on the page ground: 404 and map */
+:root:not([data-theme="dark"]) body > nav#ardanav,
+:root:not([data-theme="dark"]) body > nav#ardanav a,
+:root:not([data-theme="dark"]) body > nav#ardanav button{color:#5d4c1f !important}
+/* dark ink on a GOLD button is 2.64:1, so the ink goes light -- BUT ONLY ON THE PRESSED ONE.
+   My first version coloured every button light and put #fdfaf2 on parchment at 1.25:1: the gold
+   is the PRESSED state, and an unpressed button keeps the page ground. aria-pressed is the
+   archive's own marker for it and is already on these controls. */
+:root:not([data-theme="dark"]) #sh #toggles button[aria-pressed="true"],
+:root:not([data-theme="dark"]) #bs .row button[aria-pressed="true"]{color:#fdfaf2 !important}
+/* LIGHT-CONTRAST-END */
+/* DARK-CONTRAST-BEGIN */
+/* Dark-ground readability, 16 Aug: 897 unreadable nodes -> 303. The four causes -- semantic
+   inks, class-rule card grounds, class-rule muted inks, and `.note` as a homograph between a
+   hall card and an SVG map label -- are in commit c1825f0. Kept OUT of this file on purpose:
+   every hall fetches it, and the long version cost ten pages their ceilings. */
+/* Dark-ground legibility, scoped BY GROUND. 4,260 -> 897. Why, and the blanket-svg attempt that
+   cost 752 new failures: the roadmap, 16 Aug. */
+:root[data-theme="dark"] .card details .heads,
+:root[data-theme="dark"] .card .heads,
+:root[data-theme="dark"] details .heads,
+:root[data-theme="dark"] .card .meta,
+:root[data-theme="dark"] .grid .card .meta,
+:root[data-theme="dark"] .card details summary,
+:root[data-theme="dark"] .card summary{color:#c3b28c !important}
+:root[data-theme="dark"] #stage svg text,
+:root[data-theme="dark"] svg#stage text,
+:root[data-theme="dark"] #g-pins text,
+:root[data-theme="dark"] g#g-pins g text,
+:root[data-theme="dark"] .plate svg text,
+:root[data-theme="dark"] #bs #sheet text{fill:#3a3226 !important;color:#3a3226 !important}
+:root[data-theme="dark"] #lifes text,
+:root[data-theme="dark"] svg#lifes text,
+:root[data-theme="dark"] .pcard svg text,
+:root[data-theme="dark"] #tax text,
+:root[data-theme="dark"] svg#tax text,
+:root[data-theme="dark"] #chart text,
+:root[data-theme="dark"] svg#chart text{fill:#3a3226 !important}
+:root[data-theme="dark"] #hcredits,
+:root[data-theme="dark"] #hcredits .cite,
+:root[data-theme="dark"] #hcredits .cite a{color:#4a4030 !important}
+:root[data-theme="dark"] :is(#swout .sq .v,#swout .sq.vs .v,#swout .sq.miss .v,#cwout .cq .v,#gu .r .mk,.col .lbl){color:#9a8565 !important}
+:root[data-theme="dark"] :is(.cq.c>.v,.cite b span){color:#689451 !important}
+:root[data-theme="dark"] :is(.cq.c>.v>sup,.col .s i.v){color:#c7725d !important}
+:root[data-theme="dark"] [style*="#4a6a3a"]{color:#689451 !important}
+:root[data-theme="dark"] :is(.dcard .bz,.card .ft,.wrap .ft,.limits,.dcard .tk .src,.blz .cite,.row .arw){color:#c3b28c !important}
+:root[data-theme="dark"] .ann b{color:#d8bd86 !important}
+:root[data-theme="dark"] .ann .d{color:#e0b878 !important}
+/* Sarati plates are ink on a transparent ground: dark-on-dark at night. See 060144d. */
+:root[data-theme="dark"] :is(#swout img,#scout img,.sq img,img[src*="sarati/"]:not([src*="sarati_vowel_"])){filter:invert(1)}
+:root[data-theme="dark"] :is(img[src*="/illustrated/"],img[src*="sarati_vowel_"]){background:#e9dec2;padding:2px}
+/* DARK-CONTRAST-END */
+
+/* NIGHT GROUNDS for cards the palette missed. Ground AND ink together: moving one alone
+   turns light-on-light into dark-on-dark. Method and numbers: docs/DARK_CONTRAST_ANATOMY.md */
+:root[data-theme="dark"] .dcard .tk{background:#2a2318!important;color:#e8dcc0!important}
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel,#hosts){
+background:#221c15!important;color:var(--n-ink)!important;border-color:#4a3f2c!important}
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel,#hosts) :is(.cite,.era,b,i,em,span,p,div,h3,h4){color:inherit!important}
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel,#hosts) a{color:#d9b544!important}
+/* Two remaining night classes. (a) inks hardcoded for parchment (#3a3226 #4a4030 #5a4a30 #7a6a50)
+   sitting on the night card; (b) a box whose ground is an INLINE style written by JS on a
+   class-less div, which no stylesheet rule could reach until now -- !important beats an inline
+   declaration. docs/DARK_CONTRAST_ANATOMY.md */
+:root[data-theme="dark"] :is(.limits,.tiles,#hcredits,#hosts) :is(b,i,em,span,a,div,.l,.cite)
+  {color:#c9b98f!important}
+:root[data-theme="dark"] .blz div[style]{background:#2a2318!important;color:#e8dcc0!important}
+:root[data-theme="dark"] .blz div[style] span{color:#c9b98f!important}
+/* Drawn marks (Codex Phase 5). The stroke attributes live here rather than on every occurrence:
+   repeating them inline cost the front door 8 KB for 29 icons. currentColor, so they take the
+   page's ink in either theme. */
+.ai{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;
+  stroke-linejoin:round;vertical-align:-.12em}
+/* Coded blazon grounds keep their colour and take dark ink: the ground ENCODES a basis. */
+/* [style] raises specificity above the card-wide `color:inherit` rule, which scores as a
+   CLASS because :is() takes its highest-specificity argument -- being later in the file is
+   not enough. These are the swatches that carry an inline coded background. */
+/* #main is needed: the card-wide rule's :is() contains IDs, so it scores ID-strength. */
+/* ONLY the five CODED swatches take dark ink -- artwork, design, text, inferred, silent --
+   matched on the background they carry. The earlier rule hit every .blz span[style], and
+   some of those sit on the CARD's dark ground, so dark ink made them 1.30:1. */
+:root[data-theme="dark"] #main .blz span[style*="background:#e9f3e4"],
+:root[data-theme="dark"] #main .blz span[style*="background:#e6eef7"],
+:root[data-theme="dark"] #main .blz span[style*="background:#f2ecf7"],
+:root[data-theme="dark"] #main .blz span[style*="background:#fdf3df"],
+:root[data-theme="dark"] #main .blz span[style*="background:#efe8d6"]{color:#3a3226!important}
+/* Parchment inks left on the night card in containers the earlier pass did not name. */
+:root[data-theme="dark"] :is(#hcredits,#warlist,.pcard) :is(a,span,div,b,.era,.cite),
+:root[data-theme="dark"] td.q .inf{color:#c9b98f!important}
+
+/* DARK-CONTRAST-2 -- 195 dark-theme failures to an expected 8. Every rule names ground AND ink.
+   Measured 39/39 halls, 43,994 visible text nodes. Reasoning: docs/DARK_CONTRAST_ANATOMY.md.
+   Comments are deliberately few: this file is fetched by all 621 halls. */
+:root[data-theme="dark"]{--mut:#c3b28c}
+:root[data-theme="dark"] #main #hcredits,
+:root[data-theme="dark"] #main #hcredits .cite,
+:root[data-theme="dark"] #main #hcredits .cite a{color:#c9b98f !important}
+:root[data-theme="dark"] [style*="#5a4a30"]{color:#c9b98f !important}
+:root[data-theme="dark"] [style*="#f7efd8"]{background:#2c2214 !important;color:#e8dcc0 !important}
+:root[data-theme="dark"] .method{background:#221c15 !important;color:var(--n-ink) !important;
+ border-color:#4a3f2c !important}
+:root[data-theme="dark"] #p-shelf .fx-u{color:#e08b6a !important}
+:root[data-theme="dark"] #nm .f.true{color:#8fce9f !important;border-color:#5f8f4a !important}
+:root[data-theme="dark"] #nm .f.nottrue{color:#e0b878 !important;border-color:#8a6a2f !important}
+/* NOT theme-scoped: svg#bmap keeps light paper in BOTH themes by the drawn-map ruling, so the
+   defect and the fix are the same in both. `>` excludes g#formlayer's labels, whose fill is the
+   side's colour code from map/gen_formations.py:191. */
+svg#bmap > text,
+svg#bmap > g > text{fill:#6d5f47 !important}
+:root[data-theme="dark"] #main .qtxt{color:#d8bd86 !important}
+:root[data-theme="dark"] #bar #count{color:#c3b28c !important}
+:root[data-theme="dark"] #hpanlab{color:#c3b28c !important}
+:root[data-theme="dark"] kbd{background:#2a2318 !important;color:#e8dcc0 !important;
+ border-color:#5a4c32 !important}
+/* DARK-CONTRAST-2-END */
+
+/* ── THE NIGHT GROUND REACHED EVERY ELEMENT EXCEPT THE ONE BEHIND THEM ALL ───────────────────
+   Measured 19 August 2026 over all 621 routes, in a browser, with the theme proved applied
+   before any count was believed (body resolved to #17140f, and the same probe in light mode
+   returned 184 light patches on heraldry against 1 in dark -- an instrument that moves 184:1
+   across the switch is measuring the theme and not the page):
+
+       light patches in dark mode      1,225 across 621 of 621 routes
+       of which the ROOT CANVAS          621 -- one per route, every single one
+
+   `html{background:#efe6cd}` at :172 exists for a stated reason: it stops the body gradient
+   propagating to the canvas and repeating into hard seams. The dark theme never gave it a
+   counterpart, so the ROOT CANVAS stayed parchment at night on every page in the archive. It is
+   the most visible defect the archive had: 43% of compare.html's viewport, 30% of quiz, 28% of
+   chronicle, and a 212px parchment band under the codex shell on genealogy and tours.
+
+   ONE DECLARATION CLEARS 621 OF 1,225. `!important` is kept for consistency with the block above
+   and to survive a hall writing `html[data-theme]`, but this is NOT the id-beats-attributes case
+   the file documents elsewhere: `<html>` carries no id for a hall to borrow, so the dark rule
+   wins on specificity regardless. */
+:root[data-theme="dark"]{background:var(--n-ground) !important; color-scheme:dark}
+
+/* `color-scheme` is the second half and reaches what no background rule can: the native tick
+   inside a checkbox is UA chrome, and theindex.html's and gazetteer.html's boxes stayed light
+   through an `input{background:…!important}` rule. It darkens the scrollbars with them. */
+
+/* ── THE CODEX VOLUME TABS WERE THE ARCHIVE'S WORST CONTRAST, AND THEY ARE MINE ──────────────
+   `#cx-vols a` renders gold #d9b544 on a #6b5836 tab: 3.88:1 at 11.5px, against AA's 4.5. It is
+   the single most-repeated failure in the archive -- 6 to 7 tabs on every one of 621 routes,
+   about 3,700 instances -- because the tabs were built into codex.css without a night rule and
+   arda.css's blanket `a{color:var(--n-gold)!important}` then painted them.
+
+   THIS IS THE ID CASE THE FILE DOCUMENTS. `#cx-vols a` scores (1,0,1); no number of attributes
+   reaches it, so only an id-scoped dark rule wins. On the card ground the same gold reads 8.6:1. */
+:root[data-theme="dark"] #cx-vols a{background:var(--n-card) !important; color:#e8dcc0 !important}
+:root[data-theme="dark"] #cx-vols a[aria-current="true"]{background:var(--n-raise) !important;
+  color:var(--n-gold) !important}
+
+/* ── AND THE PILL AT THE FOOT OF ALL 582 ENTITY RECORDS ──────────────────────────────────────
+   Every generated person/, place/ and realm/ page ends with `a.go` -- "Open the full record" --
+   painted #efe0bd by the page's own style, with the label repainted gold by arda.css's blanket
+   `a` rule. Gold on parchment: 1.51:1, effectively unreadable, on 582 routes. It was named
+   nowhere in this file. */
+:root[data-theme="dark"] a.go{background:var(--n-raise) !important;
+  border-color:var(--n-line) !important; color:var(--n-gold) !important}
+
+
+/* ══ C16 · A WITHDRAWAL IS TOLD BY ITS FORM, NEVER BY ITS HUE ══════════════════════════
+   Rubric red meant BOTH "this is a heading" and "this claim was withdrawn". C16: no colour may
+   mean two things on the same page. THE PROTOTYPE ALREADY ANSWERS IT and says so in its own words
+   -- codex-proto.html:349, "a settled grudge is STRUCK THROUGH, not greyed out" -- so nothing here
+   invents a third device; it extends the strike to the one place an ornament stood in for it.
+   `.struck` drew its whole crossing stroke with a background-image, AND FORCED-COLORS DELETES
+   BACKGROUND-IMAGES: measured on codex-proto.html under `chromium --force-high-contrast`, the
+   withdrawn sentence rendered as plain standing black text with no mark at all.
+   NON-`!important` on purpose: codex-object.css owns `.corr`/`.struck` and these are declarations
+   it does not make, so nothing is contested -- and if it ever goes inert, the mark survives here.
+   THE CENSUS, THE BROWSER EVIDENCE AND THE ARGUMENT ARE IN map/rubric_check.py, which guards this
+   and is in the gate. They are not repeated here because 632 pages download this file. */
+.corr,.struck{ text-decoration-line:line-through; text-decoration-thickness:1px;
+  text-decoration-skip-ink:none }
+
+/* THE OBELUS -- Aristarchus' athetesis mark, the sign set against a reading judged not to stand.
+   A glyph survives where a decoration does not. `display:inline-block` is load-bearing: a
+   descendant cannot switch off a decoration its ancestor propagates, and an inline-block stops
+   the propagation, so the mark stands unstruck at the head of the struck matter. */
+.struck::before{ content:"\00F7\00A0"; display:inline-block; text-decoration:none;
+  font-weight:700; font-style:normal; opacity:1 }
+
+/* THE HEADING KEEPS ITS RULE WHERE THE ORNAMENT DIES. Both `.rubric` flanks are painted with
+   `background: radial-gradient(...)`, measured as `none` under forced-colors; a border is not. */
+@media (forced-colors: active){
+  .rubric::before,.rubric::after{ border-top:1px solid; height:1px; box-sizing:border-box }
+}
+
+
+/* ================================================================================================
+   A LEAF OF VELLUM DOES NOT INVERT BECAUSE THE READER'S OPERATING SYSTEM DID.
+   Added 20 August 2026, on the owner's third fault of that day -- "the light and dark mode is
+   confused" -- and it is the SAME fault he reported on 19 August as "most of the text became
+   white on light background". codex-proto.html's own header comment (line 3) is the ruling:
+   the codex carries its own complete palette, a DARK HALL WITH LIGHT VELLUM IN IT, so it must
+   not take the archive's night theme on top of that.
+
+   WHY THE EXISTING FIX DOES NOT HOLD, MEASURED RATHER THAN READ. The generators stamp
+   `data-theme="light"` on the root of every converted route, and the prototype's comment calls
+   that "the archive's OWN mechanism for opting a page out". IT IS OVERWRITTEN A TICK LATER:
+   nav.js:39 runs `put(stored||os())` unconditionally on every page that loads it, and the
+   prototype survives only because it deliberately does not load nav.js. Measured in Chromium at
+   color_scheme=dark, 404.html and person/beren.html: the root reads `data-theme="dark"`, and the
+   leaf's PAINTED ground stays rgb(250,242,203) -- parchment -- in both schemes, because
+   codex-object.css carries no `prefers-color-scheme` block at all. So the night theme repaints
+   the INK and nothing repaints the PAPER:
+
+       p  .rubric  .lede  .corr  .fn p  figcaption  .rh .n    #e8dcc0 on parchment   1.21:1
+       .gl                                                    #e0cf9a               1.37:1
+       .sub  .cite  .toc a                                    #c3b28c / #d9b544  1.75-1.85:1
+       .slip .quire .catch .rh .fol .mark .rm .versal         UNCHANGED          4.9-8.4:1
+
+   TEN OF TWENTY MEASURABLE INKS ON THE LEAF WERE ILLEGIBLE AND THE OTHER TEN WERE CORRECT --
+   which is exactly what "confused" describes, and why it reads as a fault rather than as a theme.
+
+   THE FIX IS SCOPED TO `.book` AND NOTHING ELSE. The hall AROUND the book is already dark in both
+   schemes (`body` is rgb(9,10,12) at noon), so the night theme has nothing to do there and keeps
+   doing it everywhere else -- the header, the nav, the colophon card below the book all still
+   follow the reader's choice. Only the physical object stops following it.
+   VALUES COME FROM codex-object.css's OWN VARIABLES, never re-typed, so the leaf cannot drift
+   into a second palette; the literal fallbacks are for `gen_errata_hall.py`, which emits a
+   `.book` on pages that do not link that sheet.
+   ================================================================================================ */
+:root[data-theme="dark"] .book,
+:root[data-theme="dark"] .book .spread,
+:root[data-theme="dark"] .book .leaf,
+:root[data-theme="dark"] .book .tb{ color:var(--ink,#3d3430) !important }
+
+/* THE THREE READABILITY VARIABLES GO BACK TO THEIR DAYLIGHT VALUES INSIDE THE BOOK, and this is
+   the general form of the fix rather than one more name in a list. The night theme redefines
+   `--a-ink`/`--a-mut`/`--a-line` on `:root` (line 419), so every rule in the archive written as
+   `color:var(--a-mut)` flips underneath the leaf without naming it -- `.cite` is the one this was
+   caught on, at #c3b28c where noon gives #6b5c44. Re-declaring them here means a rule added to
+   arda.css tomorrow that uses these variables stays correct on a leaf without anybody remembering
+   this block exists. The values are line 64's, unaltered. */
+:root[data-theme="dark"] .book{ --a-ink:#3a3226; --a-mut:#6b5c44; --a-line:#b0a58e }
+:root[data-theme="dark"] .book :is(.cite,.hit .vol){ color:var(--a-mut) !important }
+
+:root[data-theme="dark"] .book :is(p,li,td,th,dd,dt,label,small,blockquote,
+  h1,h2,h3,h4,h5,h6,a,.gl,.corr,.n,.toc a,.wrap){ color:var(--ink,#3d3430) !important }
+
+:root[data-theme="dark"] .book :is(.rubric,.mark,.rm,.manicule,.marg b,.struck .why){
+  color:var(--rubric,#bf3637) !important }
+
+:root[data-theme="dark"] .book :is(.lede,.sub,.sub2,.mut,.vol,.fn,.fn p,.quire,.catch,
+  .fol,.rh .n,figcaption,.styles,.silence .note){ color:var(--ink-soft,#5c534c) !important }
+
+:root[data-theme="dark"] .book .versal{ color:var(--lapis,#28418c) !important }
+:root[data-theme="dark"] .book .rh{ color:#2a5c6b !important }
+
+/* THE SIX SCRIBAL HANDS KEEP THEIR OWN INKS, and every element inside a note takes the hand's
+   colour by inheritance exactly as it does at noon -- so the blanket above must not reach in.
+   `.book .marg <thing>` carries one class more than `.book <thing>`, which is what makes this
+   win without a second `!important` argument. */
+:root[data-theme="dark"] .book .marg :is(b,span,p,blockquote,cite,summary,details){
+  color:inherit !important }
+:root[data-theme="dark"] .book .marg .mark{ color:var(--rubric,#bf3637) !important }
+
+/* BACKGROUNDS, AND ONLY THE ONES THE NIGHT THEME PAINTS. Measured at noon, every one of these is
+   `rgba(0,0,0,0)` inside a book; the night theme gives them --n-card/--n-raise, which puts a
+   charcoal chip on a parchment leaf. `background-color`, never `background`, so a codex gradient
+   or a paper texture underneath is left alone. */
+:root[data-theme="dark"] .book :is(.tab,.chip,.tag,.pill,.n,.k,.e,.card,.law,.panel,.box,.strip,
+  .frame,.seg button,button){ background-color:transparent !important }
+
+/* CODEX-THUMBS-BEGIN */
+/* C57 · THE STEPPED THUMB-INDEX. Reasoning: map/gen_codex_thumbs.py, not here. */
+
+:root[data-codex-object="on"] .book > nav.cx-rail{
+  position:absolute; z-index:3; display:flex; margin:0; padding:0; }
+
+/* LEVEL 2 · the fore-edge opposite the volumes.
+   C277 TURNED THESE INWARDS TOO, and finding out they existed cost a measurement. His ruling said
+   "the bookmarks"; I measured 404.html at eight widths, fixed `.tab`, and called it done.
+   404.html HAS NO THUMB RAILS. On a person route these protruded 58px past the right board --
+   margin-right:-58px, hover -70px, aria-current -76px -- and once C276 removed the empty margin
+   the old 85vw cap had been hiding them behind, they ran off the glass: measured on
+   person/aragorn.html at 1920x1080, four `a.cx-thumb` reaching x=1945 against a 1920 viewport,
+   document scrollWidth 1945. THE ARCHIVE FORBIDS A HORIZONTAL SCROLL ON ANY ROUTE and this had
+   introduced one on every route carrying a second rail.
+   THE LESSON IS THE OLD ONE: one route measured eight ways is still ONE ROUTE. */
+:root[data-codex-object="on"] .book > nav.cx-rail-2{
+  right:0; top:74px; flex-direction:column; gap:8px; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb{
+  position:relative; display:block; float:none; margin:0; width:88px;
+  padding:6px 14px 6px 9px; text-align:right; white-space:normal;
+  font:600 9.5px/1.15 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+  color:#d9dee7; text-decoration:none; border-radius:2px 0 0 2px;
+  background:linear-gradient(270deg,#241505 0%, var(--cx-hue,#4a3418) 22%, var(--cx-hue,#4a3418) 100%);
+  /* the free end is now the LEFT one, pointing into the book, so the notch turns with it */
+  clip-path:polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
+             3px 3px 6px rgba(0,0,0,.45);
+  transition:margin-right .16s ease, filter .16s ease; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:hover,
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:focus-visible{
+  margin-right:10px; filter:brightness(1.22); outline:none; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb[aria-current]{
+  margin-right:16px; color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep,#5d4318),
+             5px 4px 9px rgba(0,0,0,.5); }
+
+/* LEVEL 3 · the HEAD, ruled by C58: above the running head, and the foot stays clear for the
+   catchword that already lives there. It hangs ABOVE the plaque, which sits at top:-13px. */
+:root[data-codex-object="on"] .book > nav.cx-rail-3{
+  left:0; right:0; top:-64px; z-index:2;
+  flex-direction:row; flex-wrap:wrap-reverse; justify-content:center; gap:7px; }
+:root[data-codex-object="on"] .book[data-cx-thumbs~="3"]{ margin-top:88px; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb{
+  position:relative; display:flex; align-items:center; justify-content:center;
+  min-width:46px; height:40px; padding:7px 10px 0;
+  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.04em;
+  color:#d9dee7; text-decoration:none; border-radius:2px 2px 0 0;
+  background:linear-gradient(180deg,#241505 0%, var(--cx-hue,#4a3418) 26%, var(--cx-hue,#4a3418) 100%);
+  clip-path:polygon(50% 0, 100% 8px, 100% 100%, 0 100%, 0 8px);
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.12), inset 0 0 0 1px rgba(0,0,0,.5),
+             0 -3px 6px rgba(0,0,0,.45);
+  transition:transform .16s ease, filter .16s ease; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb:hover,
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb:focus-visible{
+  transform:translateY(-5px); filter:brightness(1.22); outline:none; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb[aria-current]{
+  transform:translateY(-8px); color:#fff;
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep,#5d4318),
+             0 -5px 9px rgba(0,0,0,.5); }
+
+/* THE DRAWER TAB AND THE DECLARATION EXIST ONLY BELOW 1000px. */
+:root[data-codex-object="on"] .cx-drawer-tab,
+:root[data-codex-object="on"] .cx-drawer-veil,
+:root[data-codex-object="on"] .book > .cx-omission{ display:none; }
+
+/* ══ C62 · BELOW 1000px THE PRIMARY BOOKMARKS BECOME A DRAWER, AND THE OTHER TWO LEVELS GO.
+   Three edges of tabs at 390px leave a text block near 35 characters, below readable measure. */
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book > nav.cx-rail-2,
+  :root[data-codex-object="on"] .book > nav.cx-rail-3{ display:none !important; }
+  :root[data-codex-object="on"] .book[data-cx-thumbs~="3"]{ margin-top:0; }
+
+  /* the hittable tab: a real button, click-activated, never hover. */
+  :root[data-codex-object="on"] button.cx-drawer-tab{
+    display:flex !important; position:fixed; left:0; top:38vh; z-index:90;
+    align-items:center; justify-content:center; gap:6px;
+    min-width:44px; min-height:88px; padding:10px 9px; border:0; cursor:pointer;
+    writing-mode:vertical-rl; text-orientation:mixed;
+    font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.14em;
+    color:#f0d79a; border-radius:0 4px 4px 0;
+    background:linear-gradient(90deg,#3a2410,#6d4b28);
+    box-shadow:inset 0 0 0 1px var(--silver-deep,#5d4318), 3px 3px 8px rgba(0,0,0,.5); }
+  :root[data-codex-object="on"] button.cx-drawer-tab:focus-visible{
+    outline:2px solid var(--silver-hi,#f0d79a); outline-offset:2px; }
+  /* open, the tab rides the drawer's edge and becomes the way back out. */
+  :root[data-codex-object="on"][data-cx-drawer="open"] button.cx-drawer-tab{
+    left:min(78vw,292px); border-radius:0 4px 4px 0; transition:left .2s ease; }
+
+  :root[data-codex-object="on"] .cx-drawer-veil{
+    display:block !important; position:fixed; inset:0; z-index:88;
+    background:rgba(10,7,3,.55); opacity:0; pointer-events:none;
+    transition:opacity .18s ease; }
+  :root[data-codex-object="on"][data-cx-drawer="open"] .cx-drawer-veil{
+    opacity:1; pointer-events:auto; }
+
+  :root[data-codex-object="on"] .book > nav.tabs{
+    display:flex !important; position:fixed !important;
+    left:0 !important; top:0 !important; bottom:0 !important; right:auto !important;
+    width:min(78vw,292px) !important; max-width:100% !important; box-sizing:border-box !important;
+    z-index:89 !important; flex-direction:column !important; flex-wrap:nowrap !important;
+    justify-content:flex-start !important; gap:6px !important;
+    margin:0 !important; padding:64px 12px 20px !important;
+    overflow:visible !important;
+    background:linear-gradient(180deg,#2a1a09,#160e05) !important;
+    box-shadow:6px 0 18px rgba(0,0,0,.55) !important;
+    transform:translateX(-102%) !important; transition:transform .2s ease !important; }
+  :root[data-codex-object="on"][data-cx-drawer="open"] .book > nav.tabs{
+    transform:translateX(0) !important; }
+
+  :root[data-codex-object="on"] .book > nav.tabs > a.tab{
+    position:relative !important; float:none !important;
+    display:flex !important; align-items:center !important; justify-content:flex-start !important;
+    margin:0 !important; width:auto !important; height:auto !important;
+    min-height:44px !important; min-width:58px !important; max-width:100% !important;
+    box-sizing:border-box !important;
+    padding:8px 12px !important; text-align:left !important; white-space:normal !important;
+    border-radius:2px !important; clip-path:none !important; transform:none !important;
+    font:600 12px/1.2 Cinzel,Georgia,serif !important; }
+  :root[data-codex-object="on"] .book > nav.tabs > a.tab[aria-current]{
+    color:#fff !important; box-shadow:inset 0 0 0 1px var(--silver-hi,#f0d79a) !important; }
+
+  /* ── C59 · A FLEX BASIS OF 100% IS NOT A ROW. ────────────────────────────────────────────
+     `.book` is `display:flex` with the initial `flex-wrap:nowrap`, and in a NOWRAP row a
+     flex-basis of 100% does not begin a new line -- it makes one item as wide as the container
+     and leaves the next item beside it, off the end. The declaration below and `.spread` are
+     the only two in-flow children of `.book` at this width (measured: 13 of the book's 15
+     children are absolute, fixed or display:none), so the spread was pushed exactly one full
+     column to the right and every route scrolled sideways:
+
+         430px   documentElement scrollWidth - clientWidth = 273px   49 of 49 routes sampled
+         768px                                             = 535px   49 of 49 routes sampled
+
+     C59 permits a vertical scroll below 1000px and forbids a horizontal one AT ANY WIDTH, so
+     this was a standing breach of the ruling that put the declaration here. It is NOT a symptom
+     of the fixed-height board C68 repaired: `volume-i.html`, the one route that always survived
+     a phone because `height:auto` was already scoped to it, carried the same 273px.
+
+     `flex-wrap:wrap` is what actually gives the notice its own row, and it takes the sampled
+     horizontal scroll to 0 at both widths with the leaves untouched -- 220 leaves measured, all
+     still 100.00% of their text inside their own leaf. It is confined to this media block and
+     to pages wearing the object, and above 1000px the declaration is `display:none`, leaving
+     `.spread` as the container's only in-flow child, where wrapping cannot change anything.
+     `align-self:flex-start` is the second half: a flex line stretches its items to the line's
+     cross size by default, which drew this four-line notice as a 326x1713 box. */
+  /* CORRECTED 22 August 2026, AND THE REASONING ABOVE IS THE THING THAT WAS WRONG.
+     It says wrapping "cannot change anything" when `.spread` is the only in-flow child. That
+     is true of a ROW and false of a COLUMN, and `.book` is a COLUMN -- codex-object.css:1045,
+     `.book{ flex-direction:column; }`. In a column flex container with a DEFINITE HEIGHT,
+     `flex-wrap:wrap` does not wrap onto new rows; it wraps into NEW COLUMNS TO THE RIGHT. The
+     <=1000px block clears `aspect-ratio` and `min-height` and does NOT clear `height`, so the
+     height stays definite on a phone and the wrap has somewhere to spill.
+     `nowrap` is the fix and it costs the omission nothing: in a COLUMN it already stacks above
+     `.spread` on its own, which is all the wrap was ever asked for. See the `flex` correction
+     on `.cx-omission` immediately below -- both halves are needed, and either alone leaves it.
+
+     RESTORED 25 August 2026, HAVING BEEN DELETED BY ACCIDENT. Commit f3d1476f (24 Aug 22:47,
+     "C277: the thumb rails turn inwards; no horizontal scroll") rewrote this file from a copy
+     taken before 5a85b7b8 and put `wrap` and `flex:0 0 100%` back, deleting this comment with
+     them. The bug returned in full and the commit's own subject line denied it. MEASURED at
+     HEAD, in a browser, before this restore:
+        404.html   .book column, width 355, P.cx-omission x30..345, DIV.spread x345..660
+        mobile_check  45 of 47 routes at 390px, 44 of them EXACTLY 660 -- one cause, not 45
+        codexfit_check  H-SCROLL 606 of 606 routes at 430x932 and at 768x1024, widest DIV.spread
+     Bisected by serving 404.html against arda.css+codex-object.css from seven revisions:
+        5a85b7b8 375 | 9115d537 375 | 57af3f4f 375 | 5e9a9c22 375 | 22a9b7d7 375
+        f3d1476f 660 | HEAD 660
+     BOTH DECLARATIONS BELOW 1000px, so nothing above 1000px can move: 404.html, index.html and
+     person/adalgrim.html measured 1185/1197/1185 at a 1200px viewport before and after. */
+  :root[data-codex-object="on"] .book{ flex-wrap:nowrap; }
+
+  /* C62 REQUIRES THE OMISSION TO BE DECLARED IN THE PAGE, not merely in the record. */
+  :root[data-codex-object="on"] .book > .cx-omission{
+    /* THE BOOK IS A FLEX CONTAINER, so a plain block child becomes a COLUMN beside the spread.
+       Measured on the 430px screenshot: the declaration rendered about 60px wide, one or two
+       words a line. flex-basis 100% sizes it to the full row; the `flex-wrap` above is what
+       puts it ON a row of its own, and `align-self` stops the row stretching it. */
+    /* `flex:0 0 100%` MEANT "the full width of its row" AND A COLUMN READS IT AS "the full
+       HEIGHT of its column" -- flex-basis is along the MAIN axis, and the main axis here is
+       vertical. So the notice claimed the entire column and forced `.spread` to wrap beside it.
+       `0 0 auto` lets it take its own height; `width:100%` still gives it the full measure.
+       Restored 25 August 2026 with the `nowrap` above; f3d1476f deleted both together. */
+    display:block !important; flex:0 0 auto !important; width:100% !important;
+    align-self:flex-start;
+    box-sizing:border-box; order:-1;
+    margin:0 0 10px; padding:7px 10px;
+    border:1px solid var(--rule,#cbb684); border-radius:2px;
+    background:rgba(255,252,244,.34);
+    font:italic 400 12px/1.35 Georgia,serif; color:var(--ink,#3a3226); }
+}
+/* CODEX-THUMBS-END */

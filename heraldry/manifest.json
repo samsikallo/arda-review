@@ -1,0 +1,439 @@
+[
+ {
+  "key": "tuor",
+  "label": "House of the White Wing — Tuor",
+  "file": "heraldry/tuor.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Alphram.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Heraldic_displayed_Swan.svg: Shadowxfox\nEscudo_Gondor.svg: *",
+  "ok": true
+ },
+ {
+  "key": "turgon",
+  "label": "House of the King — Turgon",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Aran.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Wappen_Halle_(Saale).svg: unbekannt; drawn by T. Rystau (de:",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-25: the recreation showed a sun and a scarlet heart, but Tolkien names three emblems — 'the moon and the sun and the scarlet heart'. The device is now drawn by the forge with all three."
+ },
+ {
+  "key": "hammerwrath",
+  "label": "House of the Hammer of Wrath",
+  "file": "heraldry/hammerwrath.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Damba.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Emblema_Durin.svg: *Wappen_Neuenstein_(Hohenlohe).svg: unbek",
+  "ok": true
+ },
+ {
+  "key": "swallow",
+  "label": "House of the Swallow",
+  "file": "heraldry/swallow.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Duilin.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Héraldique_meuble_Flèche.svg: User:Orror\nEscudo_Gondor.svg:",
+  "ok": true
+ },
+ {
+  "key": "ecthelion",
+  "label": "House of the Fountain — Ecthelion",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Eithel.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Rondador",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-24: no emblem is recorded; the fountain is now drawn by the forge and badged interpretive."
+ },
+ {
+  "key": "housetree",
+  "label": "House of the Tree",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Galadh.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Escudo_Gondor.svg: *Escudo_Gondor.png: Vëon Menelion\nderivat",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-24: Tolkien gives the house its green raiment and no charge. The tree was an invention."
+ },
+ {
+  "key": "glorfindel",
+  "label": "House of the Golden Flower — Glorfindel",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Lothglor.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Heraldique_Rose.svg: Ludger1961\nEscudo_Gondor.svg: *Escudo_G",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-24: the artwork showed a golden rose; Tolkien says the house 'bore a rayed sun upon their shield'. Redrawn by the forge."
+ },
+ {
+  "key": "rohan",
+  "label": "Arms of the Mark of Rohan",
+  "file": "heraldry/rohan.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_Kingdom_of_Rohan.svg",
+  "license": "CC BY-SA 4.0",
+  "author": "Pbroks13",
+  "ok": true
+ },
+ {
+  "key": "steward",
+  "label": "Banner of the Stewards of Gondor",
+  "file": "heraldry/steward.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Stewards_of_Gondor.svg",
+  "license": "CC BY-SA 4.0",
+  "author": "Chiswick Chap",
+  "ok": true
+ },
+ {
+  "key": "gandalf",
+  "label": "Emblem of Gandalf (certh G)",
+  "file": "heraldry/gandalf.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Emblema_Gandalf.svg",
+  "license": "Public domain",
+  "author": "Certh 19.svg: Tasnu Arakun\nderivative work: Rondador (talk)",
+  "ok": true
+ },
+ {
+  "key": "saruman",
+  "label": "Emblem of Saruman (certh S)",
+  "file": "heraldry/saruman.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Emblema_Saruman.svg",
+  "license": "Public domain",
+  "author": "Certh 35.svg: Tasnu Arakun\n\nderivative work: Rondador (talk)",
+  "ok": true
+ },
+ {
+  "key": "swan",
+  "label": "Swan-ship of Dol Amroth",
+  "file": "heraldry/swan.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Dol_Amroth.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "POL_Zelechow_COA.svg: User:Bastianow\nFlag_of_Saint-Pierre_an",
+  "ok": true
+ },
+ {
+  "key": "serpent",
+  "label": "The Black Serpent of Harad",
+  "file": "heraldry/serpent.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Harad.svg",
+  "license": "Public domain",
+  "author": "Serp_roja.gif: Mandos\nEscudo_Gondor.svg: *Escudo_Gondor.png:",
+  "ok": true
+ },
+ {
+  "key": "whitehand",
+  "label": "The White Hand of Saruman",
+  "file": "heraldry/whitehand.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Isengard.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Meuble_héraldique_Main.svg: Zigeuner\nderivative work: Rondad",
+  "ok": true
+ },
+ {
+  "key": "morgul",
+  "label": "Device of Minas Morgul",
+  "file": "heraldry/morgul.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Minas_Morgul.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Flag_of_Minas_Morgul.svg: *Pirate_Flag_of_Jack_Rackham.svg:",
+  "ok": true
+ },
+ {
+  "key": "redeye",
+  "label": "The Red Eye of Sauron",
+  "file": "heraldry/redeye.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Mordor.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Flag_of_Mordor.svg: *Wappen_Erbstetten.png: Source: http://w",
+  "ok": true
+ },
+ {
+  "key": "gondor",
+  "label": "Arms of the Kings of Gondor",
+  "file": "heraldry/gondor.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Escudo_Real_de_Gondor.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+  "ok": true
+ },
+ {
+  "key": "feanor",
+  "label": "Star of the House of Fëanor",
+  "file": "heraldry/feanor.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:Etoile_de_Feanor.svg",
+  "license": "CC BY-SA 4.0",
+  "author": "El Bey Effendi",
+  "ok": true
+ },
+ {
+  "key": "finwe",
+  "label": "Lozenge of Finwë",
+  "file": "heraldry/illustrated/finwe.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "superseded_commons": {
+   "file": "heraldry/finwe.png",
+   "src": "https://commons.wikimedia.org/wiki/File:Finw%C3%AB_Lozenge.png",
+   "license": "CC BY-SA 4.0",
+   "author": "Robin S. Taylor",
+   "why": "a green field Tolkien never used, and straight spikes where his own drawing has curved flames; the illustrated sheet has the flames and the finely-rayed centre"
+  },
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner."
+ },
+ {
+  "key": "harp",
+  "label": "House of the Harp",
+  "file": "heraldry/harp.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Harp.svg",
+  "license": "Public domain",
+  "author": "Coat_of_arms_of_Ireland.svg: Tonyjeff, based on national sym",
+  "ok": true
+ },
+ {
+  "key": "egalmoth",
+  "label": "House of the Heavenly Arch — Egalmoth",
+  "file": "heraldry/egalmoth.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Heavenly_Arch.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Rondador",
+  "ok": true
+ },
+ {
+  "key": "maeglin",
+  "label": "House of the Mole — Maeglin",
+  "file": "heraldry/maeglin.svg",
+  "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Mole.svg",
+  "license": "Public domain",
+  "author": "Escudo_Gondor.svg: *Escudo_Gondor.png: Vëon Menelion\nderivat",
+  "ok": true
+ },
+ {
+  "key": "pillar",
+  "label": "House of the Pillar",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Pillar.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Columnas_varias.svg: HansenBCN\nderivative work: Rondador (ta",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-24: no device for this house is recorded anywhere. The artwork was an invention."
+ },
+ {
+  "key": "towersnow",
+  "label": "House of the Tower of Snow",
+  "file": null,
+  "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Tower_of_Snow.svg",
+  "license": "CC BY-SA 3.0",
+  "author": "Blason_des_Terres_australes_et_antarctiques_françaises.svg:",
+  "ok": false,
+  "withdrawn": "withdrawn 2026-07-24: no device for this house is recorded anywhere. The artwork was an invention."
+ },
+ {
+  "key": "beor",
+  "label": "Device of Beor",
+  "file": "heraldry/illustrated/beor.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "beren",
+  "label": "Device of Beren",
+  "file": "heraldry/illustrated/beren.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "earendil",
+  "label": "Device of Earendil",
+  "file": "heraldry/illustrated/earendil.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "thingol",
+  "label": "Device of Elu Thingol",
+  "file": "heraldry/illustrated/thingol.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "feanordev",
+  "label": "Device of Feanor",
+  "file": "heraldry/illustrated/feanordev.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "finarfin",
+  "label": "Device of Finarfin",
+  "file": "heraldry/illustrated/finarfin.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "fingolfin",
+  "label": "Device of Fingolfin",
+  "file": "heraldry/illustrated/fingolfin.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "finrod",
+  "label": "Device of Finrod Felagund",
+  "file": "heraldry/illustrated/finrod.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "gilgalad",
+  "label": "Device of Gil-galad",
+  "file": "heraldry/illustrated/gilgalad.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "hador",
+  "label": "Device of Hador",
+  "file": "heraldry/illustrated/hador.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "haleth",
+  "label": "Device of the House of Haleth",
+  "file": "heraldry/illustrated/haleth.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "idril",
+  "label": "Device of Idril Celebrindal",
+  "file": "heraldry/illustrated/idril.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "luthien",
+  "label": "Device of Luthien",
+  "file": "heraldry/illustrated/luthien.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "luthien2",
+  "label": "Second device of Luthien",
+  "file": "heraldry/illustrated/luthien2.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "melian",
+  "label": "Device of Melian",
+  "file": "heraldry/illustrated/melian.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "durin",
+  "label": "Emblems of Durin's Folk",
+  "file": "heraldry/illustrated/durin.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "supplied to the archive; rights confirmed by the site's owner",
+  "author": "Rondador Nocturno (monogram ROH/NOC on the source plate)",
+  "ok": true,
+  "why": "canon-complete where the Commons relief was not: “an anvil and a hammer surmounted by a crown with seven stars” (LotR II.4), all four present, and drawn flat rather than as a shaded three-dimensional panel. The crop takes the shield and leaves the artist's monogram outside it, so his name is carried in words instead — here, in the published asset index, and in the credit line under the hall.",
+  "superseded_commons": {
+   "file": "heraldry/durin.svg",
+   "src": "https://commons.wikimedia.org/wiki/File:Emblema_Durin.svg",
+   "license": "CC BY-SA 3.0",
+   "author": "Rondador, after Wappen Neuenstein (Hohenlohe).svg",
+   "modified": "background rectangle removed 2026-07-26 (fill #f0f0f0 over the whole canvas): every other device in the hall stands on the card's own ground, and this one alone sat in a grey box. The emblem itself is untouched. CC BY-SA 3.0 permits the change; the attribution above is unaltered."
+  }
+ },
+ {
+  "key": "silmarilsdev",
+  "label": "Emblem of the Silmarils",
+  "file": "heraldry/illustrated/silmarilsdev.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "why": "a tree bearing three faceted jewels among yellow fruit, which is the structure of Tolkien's own drawing; it replaces a forge device that was pale and sparse beside it"
+ },
+ {
+  "key": "elendilbadge",
+  "label": "The badge of Elendil — L·ND·L",
+  "file": "heraldry/illustrated/elendilbadge.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "why": "L·ND·L in tengwar upon sable. The forge's own setting of the same letters, on parchment within a square, stays in the bench: a square is Tolkien's shape for an impersonal emblem, and which is righter for a badge worn on a seal is a question the sources do not settle."
+ },
+ {
+  "key": "flyingcorps",
+  "label": "Emblem of the Flying Corps of Mordor",
+  "file": "heraldry/illustrated/flyingcorps.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "why": "Tolkien drew and titled this emblem himself, 'seen from below'. The supplied drawing has the segmented body, the eyed wings and the pale pinions; the forge device it replaces had the structure and none of the drawing."
+ },
+ {
+  "key": "finwehouse",
+  "label": "House of Finwë — the Winged Sun",
+  "file": "heraldry/illustrated/finwehouse.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "why": "its ground measures #786090 against #786060 for the drawing this archive files as the House of Finwë — the same dusty mauve — and it carries that device's flame-rays, dashed ring and spoked heart. A better drawing of it than the forge makes."
+ }
+]

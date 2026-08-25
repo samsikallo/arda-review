@@ -1,0 +1,3121 @@
+{
+ "what": "This file ASSERTS NOTHING: every value in it is copied verbatim from site/arda_gazetteer.json, assembled mechanically as a reading list of what the archive already holds about each unillustrated built place, so that a hand can write an illustration prompt from sources rather than from memory.",
+ "built_from": [
+  "site/arda_gazetteer.json",
+  "site/arda_plates.json"
+ ],
+ "count": 141,
+ "dossiers": [
+  {
+   "id": "almaren",
+   "name": "Almaren",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING",
+    "NATURAL_LAKE"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Beginning Of Days",
+    "A ch1"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Y.T.",
+     "what": "The Valar remove west after Almaren's ruin; Valinor built behind the Pelóri; the Two Trees made",
+     "cite": "Silm 1 [C]"
+    }
+   ],
+   "notes": [
+    "“And there upon the Isle of Almaren in the Great Lake was the first dwelling of the Valar when all things were young, and new-made green was yet a marvel in the eyes of the makers; and they were long content.” — The Silmarillion, Of The Beginning Of Days",
+    "indexed by Christopher Tolkien as: The first dwelling of the Valar in Arda"
+   ],
+   "quoted": [
+    "“And there upon the Isle of Almaren in the Great Lake was the first dwelling of the Valar when all things were young, and new-made green was yet a marvel in the eyes of the makers; and they were long content.” — The Silmarillion, Of The Beginning Of Days"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "amon din",
+   "name": "Amon Din",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:892 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [
+    "within anorien, per Christopher Tolkien's index gloss — “The seventh beacon in Anórien” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "amon ereb",
+   "name": "Amon Ereb",
+   "aka": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "Silm 10/18/20/22",
+    "The Silmarillion, Of Beleriand and its Realms [C]",
+    "corpus/t1_13_index.txt:893 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [
+    {
+     "when": "First Battle",
+     "what": "Denethor falls on Amon Ereb; the Green-elves take to secrecy — no king again",
+     "cite": "Silm 10 [C]"
+    },
+    {
+     "when": "F.A. 455",
+     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+     "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "Where Denethor of the Green-elves fell in the First Battle; the sons of Fëanor kept 'a watch and some strength of war' here after the Bragollach (Silm 18) — not their last hold: after the Nirnaeth Silm 20 says the sons of Fëanor 'wandered as leaves before the wind', living a wild and woodland life beneath Ered Lindon.",
+    "“an endless chain of hills running from Eglarest beyond Narog in the west to Amon Ereb in the east, within far sight of Gelion.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "in East Beleriand, west of Gelion and so within the land that was drowned; it is not in Ossiriand, and Lindon is the country on the far bank",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two",
+    "a merged record also called it man made watchpost; the kinds are those the corpus states",
+    "drawn within lindon, and that containment is not carried: Lindon is the country on the FAR bank of Gelion; the hill stands west of the river, in East Beleriand"
+   ],
+   "quoted": [
+    "Where Denethor of the Green-elves fell in the First Battle; the sons of Fëanor kept 'a watch and some strength of war' here after the Bragollach (Silm 18) — not their last hold: after the Nirnaeth Silm 20 says the sons of Fëanor 'wandered as leaves before the wind', living a wild and woodland life beneath Ered Lindon.",
+    "“an endless chain of hills running from Eglarest beyond Narog in the west to Amon Ereb in the east, within far sight of Gelion.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two",
+    "within east beleriand, per Christopher Tolkien's index gloss — “'The Lonely Hill' in East Beleriand” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "amon gwareth",
+   "name": "Amon Gwareth",
+   "aka": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "The Silmarillion, Of the Noldor in Beleriand"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Gondolin upon Amon Gwareth became fair indeed and fit to compare even with Elven Tirion beyond the sea. High and white were its walls, and smooth its stairs, and tall and strong was the Tower of the King.” — The Silmarillion, Of the Noldor in Beleriand",
+    "indexed by Christopher Tolkien as: ‘Hill of Watch’ on which Gondolin was built"
+   ],
+   "quoted": [
+    "“Gondolin upon Amon Gwareth became fair indeed and fit to compare even with Elven Tirion beyond the sea. High and white were its walls, and smooth its stairs, and tall and strong was the Tower of the King.” — The Silmarillion, Of the Noldor in Beleriand",
+    "indexed by Christopher Tolkien as: ‘Hill of Watch’ on which Gondolin was built"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "amon hen",
+   "name": "Amon Hen",
+   "aka": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]",
+    "LotR II.10; App B",
+    "LotR II.9, Aragorn at Nen Hithoel [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“He was sitting upon the Seat of Seeing, on Amon Hen, the Hill of the Eye of the Men of Númenor.” — The Lord of the Rings [C]",
+    "the Hill of the Eye, with the Seat of Seeing upon it. THE ARCHIVE HAD NO RECORD FOR IT: its only trace was inside the living map’s event label “Parth Galen — Amon Hen”, which had become a single place under a compound key",
+    "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
+    "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
+    "a work of the great kings of Gondor at Nen Hithoel, watched from Gondor's northern march; the Reader's Companion glosses the seat as 'on Amon Hen, the Hill of the Eye of the Men of Numenor' [EXT]"
+   ],
+   "quoted": [
+    "“He was sitting upon the Seat of Seeing, on Amon Hen, the Hill of the Eye of the Men of Númenor.” — The Lord of the Rings [C]",
+    "the Hill of the Eye, with the Seat of Seeing upon it. THE ARCHIVE HAD NO RECORD FOR IT: its only trace was inside the living map’s event label “Parth Galen — Amon Hen”, which had become a single place under a compound key",
+    "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
+    "a work of the great kings of Gondor at Nen Hithoel, watched from Gondor's northern march; the Reader's Companion glosses the seat as 'on Amon Hen, the Hill of the Eye of the Men of Numenor' [EXT]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "andrath",
+   "name": "Andrath",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 16 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "annon in gelydh",
+   "name": "Annon-in-Gelydh",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_FA); the name is attested 18 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "annuminas",
+   "name": "Annúminas",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CITY"
+   ],
+   "cites": [
+    "App A; UT"
+   ],
+   "timeline_cites": [
+    {
+     "when": "S.A. 3320",
+     "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+     "cite": "App A/B [C]"
+    }
+   ],
+   "notes": [
+    "Elendil's first capital on Lake Evendim; restored by Elessar."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "argonath",
+   "name": "Argonath",
+   "aka": [
+    "Pillars of the Kings"
+   ],
+   "types": [
+    "MAN_MADE_MONUMENT"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Rings Of Power And The Third Age",
+    "C II.9–III.1; RC[T]",
+    "HoME XII, The Peoples of Middle-earth; LotR App A/B [C]",
+    "LotR II.9; HoME XII",
+    "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, Of The Rings Of Power And The Third Age",
+    "indexed by Christopher Tolkien as: Gates of, Pillars o f",
+    "“He there built the Gates of Argonath with images of Isildur and Anárion beyond which no stranger was allowed to come south without leave.” — HoME XII, The Peoples of Middle-earth; LotR App A/B [C]",
+    "Gondor's own northern boundary-work, raised by Rómendacil II — no tier-1 text dates the building; App A puts it 'on his return' from the campaign of 1248, and in 1248 he was still Minalcar the Regent, crowned only in 1304 [I-M] — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
+    "Rómendacil's giants of stone fencing the north-way of Gondor.",
+    "the archive also lists it as “The Argonath”, at the same place; one record, not two",
+    "a merged record also called it natural peak; the kinds are those the corpus states",
+    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's",
+    "NOT ITS OWN POINT: it shares the point of Nen Hithoel — the pillars stand at that lake's entrance, and this is its point"
+   ],
+   "quoted": [
+    "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, Of The Rings Of Power And The Third Age",
+    "“He there built the Gates of Argonath with images of Isildur and Anárion beyond which no stranger was allowed to come south without leave.” — HoME XII, The Peoples of Middle-earth; LotR App A/B [C]",
+    "Gondor's own northern boundary-work, raised by Rómendacil II — no tier-1 text dates the building; App A puts it 'on his return' from the campaign of 1248, and in 1248 he was still Minalcar the Regent, crowned only in 1304 [I-M] — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
+    "the archive also lists it as “The Argonath”, at the same place; one record, not two",
+    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "armenelos",
+   "name": "Armenelos",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CITY",
+    "NATURAL_PEAK"
+   ],
+   "cites": [
+    "The Silmarillion, Akallabêth",
+    "A Akallabêth; I"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“At the feet of the mountain were built the tombs of the Kings, and hard by upon a hill was Armenelos, fairest of cities, and there stood the tower and the citadel that was raised by Elros son of Eärendil, whom the Valar appointed to be the first King of the Dúnedain.” — The Silmarillion, Akallabêth",
+    "indexed by Christopher Tolkien as: City of the Kings in Númenor",
+    "named among numenor's own settlements in its dossier (UT, Description; Akallabêth [I-H])"
+   ],
+   "quoted": [
+    "“At the feet of the mountain were built the tombs of the Kings, and hard by upon a hill was Armenelos, fairest of cities, and there stood the tower and the citadel that was raised by Elros son of Eärendil, whom the Valar appointed to be the first King of the Dúnedain.” — The Silmarillion, Akallabêth"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "arossiach",
+   "name": "Arossiach",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]",
+    "Christopher Tolkien letters Arossiach on the Beleriand plate; the Fords of Aros"
+   ],
+   "quoted": [
+    "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "bag end",
+   "name": "Bag End",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [
+    "LotR I.10 — Gandalf's own direction on the letter, read out by Butterbur at Bree [C]",
+    "placed at Hobbiton [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Mr. FRODO BAGGINS, BAG END, HOBBITON in the SHIRE.” — LotR I.10 — Gandalf's own direction on the letter, read out by Butterbur at Bree [C]",
+    "the hole under the Hill — 'Bag-End, Under-Hill' in The Hobbit; t1 never calls it a smial; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)",
+    "NOT ITS OWN POINT: it shares the point of Hobbiton — the letter addresses it in Hobbiton, and this is Hobbiton's point"
+   ],
+   "quoted": [
+    "“Mr. FRODO BAGGINS, BAG END, HOBBITON in the SHIRE.” — LotR I.10 — Gandalf's own direction on the letter, read out by Butterbur at Bree [C]",
+    "the hole under the Hill — 'Bag-End, Under-Hill' in The Hobbit; t1 never calls it a smial; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "bar en danwedh",
+   "name": "Bar-en-Danwedh",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "barad eithel",
+   "name": "Barad Eithel",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "named among hithlum's own settlements in its dossier (Silm 18; CoH [I-H])"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "barad nimras",
+   "name": "Barad Nimras",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "A ch14, ch20"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "barrow downs",
+   "name": "Barrow-downs",
+   "aka": [
+    "Tyrn Gorthad"
+   ],
+   "types": [
+    "MAN_MADE_TOMB",
+    "NATURAL_HILL"
+   ],
+   "cites": [
+    "LotR I.8; App A",
+    "C I.8, App A; D Hunt; RC[T]",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
+    "the middle of the shape the archive draws"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "beorn s house",
+   "name": "Beorn's house",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "blue mtn dwarf halls",
+   "name": "Blue Mtn dwarf-halls",
+   "aka": [],
+   "types": [
+    "MAN_MADE_MANSION",
+    "MAN_MADE_HALL",
+    "NATURAL_PEAK"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "bombadil s house",
+   "name": "Bombadil's house",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT",
+    "POLITY_REALM"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation"
+   ],
+   "timeline_cites": [
+    {
+     "when": "always",
+     "what": "'Tom was here before the river and the trees... he knew the dark under the stars when it was fearless'",
+     "cite": "LotR I.7 [C]"
+    },
+    {
+     "when": "T.A. 3018",
+     "what": "Old Man Willow overruled; the Wight cast out; four hobbits saved twice",
+     "cite": "LotR I.6–8 [C]; LotR App B (The Tale of Years) [C]"
+    }
+   ],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "held under two keys until they were folded: the record keyed 'bombadil' is named 'The house of Tom Bombadil' in its own words -- the same house the other holds, arriving from the realms model instead of the drawn sheet. [I-H]",
+    "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
+    "the realms model dates it 'Eldest' – enduring",
+    "the archive also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
+   ],
+   "quoted": [
+    "held under two keys until they were folded: the record keyed 'bombadil' is named 'The house of Tom Bombadil' in its own words -- the same house the other holds, arriving from the realms model instead of the drawn sheet. [I-H]",
+    "the realms model dates it 'Eldest' – enduring",
+    "the archive also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "brandywine bridge",
+   "name": "Brandywine Bridge",
+   "aka": [],
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "bree",
+   "name": "Bree",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [
+    "LotR I.9"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Elder Days",
+     "what": "the last remnant of the vast forests of the Elder Days — once one wood with the Old Forest from Dunland to Bree",
+     "cite": "LotR III.4 [I-H] — the archive's summary; neither 'remnant of the vast forests' nor 'vast forests of the Elder' occurs anywhere in the corpus"
+    },
+    {
+     "when": "S.A.",
+     "what": "Men of the White Mountains' kin settle about Bree-hill — 'the oldest settlement of Men... in the western world' surviving",
+     "cite": "App F; LotR I.9 [C]"
+    },
+    {
+     "when": "T.A. 1300s",
+     "what": "Hobbits (Stoors and others) join; Bree Year 1 = T.A. 1300 in their count",
+     "cite": "App D; Prologue; LotR App B [C] — 'c. 1300 ... The Periannath migrate westward; many settle at Bree' and '1356 ... About this time the Stoors leave the Angle'. App B's own 'c.' matches the record's '1300s'; the Bree-reckoning itself is App D's"
+    },
+    {
+     "when": "T.A. 3019",
+     "what": "Ruffian troubles and the fight of the five; the Greenway reopens",
+     "cite": "LotR VI.7 [C]; LotR App B (The Tale of Years) [C]"
+    }
+   ],
+   "notes": [
+    "At an old meeting of ways — Tolkien's own phrase, not a place-name: the Prancing Pony, and a man called Strider."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "brithiach",
+   "name": "Brithiach",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "buck hill",
+   "name": "Buck Hill",
+   "aka": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_HALL"
+   ],
+   "cites": [
+    "The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Behind loomed up the Buck Hill; and out of it, through stray shrouds of mist, shone many round windows, yellow and red.” — The Lord of the Rings, A Conspiracy Unmasked",
+    "indexed by Christopher Tolkien as: The hill in which was Brandy Hall"
+   ],
+   "quoted": [
+    "“Behind loomed up the Buck Hill; and out of it, through stray shrouds of mist, shone many round windows, yellow and red.” — The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "bucklebury",
+   "name": "Bucklebury",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 69 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "bucklebury ferry",
+   "name": "Bucklebury + Ferry",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "bywater",
+   "name": "Bywater",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "T.A. 3019 Nov 3",
+     "what": "Battle of Bywater; the Shire scoured",
+     "cite": "LotR VI.8; LotR App B (The Tale of Years) [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "cair andros",
+   "name": "Cair Andros",
+   "aka": [],
+   "types": [
+    "NATURAL_ISLAND",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "LotR V.4; App B",
+    "C App A, V.4; RC[T]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "calembel",
+   "name": "Calembel",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [
+    "corpus/t1_13_index.txt:3247 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [
+    "within lamedon, per Christopher Tolkien's index gloss — “Town in Lamedon” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "calenhad",
+   "name": "Calenhad",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:3262 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [
+    "within anorien, per Christopher Tolkien's index gloss — “The second beacon in Anórien” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "carn dum",
+   "name": "Carn Dûm",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_RUIN"
+   ],
+   "cites": [
+    "App A I(iv)",
+    "C App A; D (Index)"
+   ],
+   "timeline_cites": [
+    {
+     "when": "c. T.A. 1300",
+     "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
+     "cite": "App B, the Tale of Years [C] — '1300 ... The Nazgul reappear. The chief of these comes north to Angmar'."
+    }
+   ],
+   "notes": [
+    "The Witch-king's mountain-hold of Angmar."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "causeway forts",
+   "name": "Causeway Forts",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "cerin amroth",
+   "name": "Cerin Amroth",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "T.A. 2980",
+     "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
+     "cite": "App A/B"
+    },
+    {
+     "when": "F.o.A. 121",
+     "what": "Arwen dies at Cerin Amroth",
+     "cite": "App A I(v) [C] for the death. [I-M] ON THE YEAR: NO ANNAL DATES IT. Appendix B's last Fourth Age entry is the Passing of King Elessar; its only 'Cerin Amroth' is the TROTH at T.A. 2980. Verified by me across the whole of Appendix B."
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named within Lothlorien by the vector spec's own block for it"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "crickhollow",
+   "name": "Crickhollow",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [
+    "LotR I.5"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "crossings of teiglin",
+   "name": "Crossings of Teiglin",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_FA); the name is attested 53 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "dimrill gate",
+   "name": "Dimrill Gate",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "dol guldur",
+   "name": "Dol Guldur",
+   "aka": [
+    "Hill of Sorcery"
+   ],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "App B"
+   ],
+   "timeline_cites": [
+    {
+     "when": "S.A.",
+     "what": "Oropher, Sindar among the Silvan, king in Greenwood; removes north before Dol Guldur's shadow is ever raised",
+     "cite": "UT, History of Galadriel app. [C]"
+    },
+    {
+     "when": "T.A. 1050+",
+     "what": "The Shadow at Dol Guldur; the wood becomes Mirkwood; the realm withdraws to the north-east halls",
+     "cite": "App A/B [C]"
+    },
+    {
+     "when": "c. T.A. 1050",
+     "what": "A shadow rises in southern Greenwood — 'the Necromancer' unknown",
+     "cite": "App B [C]"
+    },
+    {
+     "when": "2063–2460",
+     "what": "The Watchful Peace: Sauron east; then return 'with increased strength'",
+     "cite": "App B [C]"
+    },
+    {
+     "when": "T.A. 2063",
+     "what": "Gandalf goes to Dol Guldur; the Watchful Peace begins (to 2460)",
+     "cite": "App B"
+    },
+    {
+     "when": "2850",
+     "what": "Gandalf enters, finds Thráin II dying, learns the truth",
+     "cite": "App A III/B [C]"
+    },
+    {
+     "when": "T.A. 2850",
+     "what": "Gandalf in Dol Guldur: the Necromancer is Sauron; Thráin's map and key",
+     "cite": "App B; Hobbit i"
+    },
+    {
+     "when": "2941",
+     "what": "The White Council drives Sauron out — into prepared Mordor",
+     "cite": "App B [C]"
+    },
+    {
+     "when": "3019",
+     "what": "Khamûl's assaults on Lórien and the wood; Galadriel throws down its walls",
+     "cite": "App B [C]"
+    },
+    {
+     "when": "T.A. 3019",
+     "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
+     "cite": "App B [C]"
+    }
+   ],
+   "notes": [
+    "The Necromancer's keep — Sauron veiled, 1050–2941; thrown down by Galadriel."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "dunharrow",
+   "name": "Dunharrow",
+   "aka": [],
+   "types": [
+    "MAN_MADE_REFUGE",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "LotR V.3",
+    "C V.3; RC[T]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "durin s stone",
+   "name": "Durin's Stone",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named among khazaddum's own settlements in its dossier (LotR II.4–6 [I-H])"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "durthang",
+   "name": "Durthang",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "dwarf road",
+   "name": "Dwarf Road",
+   "aka": [],
+   "types": [
+    "MAN_MADE_ROAD"
+   ],
+   "cites": [
+    "Unfinished Tales [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Men-i-Naugrim, the Dwarf Road, is the Old Forest Road described in The Hobbit, Chapter 7.” — Unfinished Tales [C]",
+    "Christopher Tolkien letters Dwarf Road on the Beleriand plate, running east to Ered Luin; Men-i-Naugrim"
+   ],
+   "quoted": [
+    "“Men-i-Naugrim, the Dwarf Road, is the Old Forest Road described in The Hobbit, Chapter 7.” — Unfinished Tales [C]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "eagles eyrie",
+   "name": "Eagles' Eyrie",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "east road",
+   "name": "The East Road",
+   "aka": [],
+   "types": [
+    "MAN_MADE_ROAD"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“And what is more, the Bridge and the East Road near the borders will certainly be watched, whether any Rider gets into Buckland or not.” — The Lord of the Rings [C]",
+    "Christopher Tolkien letters GREAT EAST ROAD on the General Map; the text of The Lord of the Rings calls it the East Road, and the archive follows the text"
+   ],
+   "quoted": [
+    "“And what is more, the Bridge and the East Road near the borders will certainly be watched, whether any Rider gets into Buckland or not.” — The Lord of the Rings [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "edhellond",
+   "name": "Edhellond",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "T.A. 1981+",
+     "what": "Amroth lost at Edhellond's sailing; Galadriel and Celeborn take up the guardianship; Nenya's power hides the wood",
+     "cite": "App A/B; UT [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "edoras meduseld",
+   "name": "Edoras/Meduseld",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "eilenach",
+   "name": "Eilenach",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 46 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:5170 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [
+    "within anorien, per Christopher Tolkien's index gloss — “The sixth (or fifth, see 344) beacon in Anórien” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "eithel sirion",
+   "name": "Eithel Sirion",
+   "aka": [
+    "Barad Eithel"
+   ],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "Silm 18/20"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 455–456",
+     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
+     "cite": "Silm 18 [C]; GA 455 §145 and 456 §155 (HoME XI) [C]"
+    }
+   ],
+   "notes": [
+    "Fingolfin's great fortress at Sirion's well; Fingon's muster-ground of the Nirnaeth."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "elostirion tower",
+   "name": "Elostirion tower",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "elvenking s halls",
+   "name": "Elvenking's Halls",
+   "aka": [
+    "Thranduil's caverns"
+   ],
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL",
+    "NATURAL_RIVER"
+   ],
+   "cites": [
+    "Hobbit ix"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Doors of stone with the river running out before them (Hobbit viii); the barrels went out by the water-gate on a tributary stream and floated down to Lake-town (Hobbit ix — which names neither stone nor Esgaroth; Esgaroth is first named in ch xii).",
+    "the archive also lists it as “The Elvenking's Halls”, at the same place; one record, not two"
+   ],
+   "quoted": [
+    "the archive also lists it as “The Elvenking's Halls”, at the same place; one record, not two"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "entwade",
+   "name": "Entwade",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "eol s house",
+   "name": "Eol's house",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_FA); the name is attested 3 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "ephel brandir",
+   "name": "Ephel Brandir",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "erelas",
+   "name": "Erelas",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:6312 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [
+    "within anorien, per Christopher Tolkien's index gloss — “The fourth (or third, see 344) beacon in Anórien” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "esgaroth",
+   "name": "Esgaroth (Lake-town)",
+   "aka": [
+    "Lake-town"
+   ],
+   "types": [
+    "MAN_MADE_TOWN",
+    "NATURAL_LAKE"
+   ],
+   "cites": [
+    "Hobbit x/xiv"
+   ],
+   "timeline_cites": [
+    {
+     "when": "(age-old)",
+     "what": "The piled town on the Long Lake, heir of a greater older town drowned by the shore",
+     "cite": "Hobbit 10 [C]"
+    },
+    {
+     "when": "after",
+     "what": "Rebuilt fairer; a new Master chosen",
+     "cite": "Hobbit 19 [C]"
+    },
+    {
+     "when": "2941",
+     "what": "Smaug destroys the town; the Master flees with the gold; Bard's arrow ends the Dragon",
+     "cite": "Hobbit 14 [C]"
+    }
+   ],
+   "notes": [
+    "The wooden town on huge piles (Hobbit x; 'on stilts' is Foster's word, t3). Smaug fell FULL ON THE TOWN — 'Full on the town he fell... The lake roared in' (Hobbit xiv) — not into the lake; the lake came in over the wreck. The year 2941 is App B's; The Hobbit carries no dates."
+   ],
+   "quoted": [
+    "The wooden town on huge piles (Hobbit x; 'on stilts' is Foster's word, t3). Smaug fell FULL ON THE TOWN — 'Full on the town he fell... The lake roared in' (Hobbit xiv) — not into the lake; the lake came in over the wreck. The year 2941 is App B's; The Hobbit carries no dates."
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "eyrie",
+   "name": "the Eyrie",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "ezellohar",
+   "name": "Ezellohar",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOMB"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Beginning Of Days",
+    "A ch1"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Before its western gate there was a green mound, Ezellohar, that is named also Corollairë; and Yavanna hallowed it, and she sat there long upon the green grass and sang a song of power, in which was set all her thought of things that grow in the earth.” — The Silmarillion, Of The Beginning Of Days",
+    "indexed by Christopher Tolkien as: The Mound of the Two Trees"
+   ],
+   "quoted": [
+    "“Before its western gate there was a green mound, Ezellohar, that is named also Corollairë; and Yavanna hallowed it, and she sat there long upon the green grass and sang a song of power, in which was set all her thought of things that grow in the earth.” — The Silmarillion, Of The Beginning Of Days"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "fords of isen",
+   "name": "Fords of Isen",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING",
+    "NATURAL_ISLAND"
+   ],
+   "cites": [
+    "UT; App B",
+    "The Lord of the Rings, Helm’s Deep"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Théodred fell here Feb 25; Grimbold's shield-wall Mar 2, 3019.",
+    "“Go not to the Fords of Isen, and do not tarry in the plain!” — The Lord of the Rings, Helm’s Deep",
+    "indexed by Christopher Tolkien as: (including references to the Fords)"
+   ],
+   "quoted": [
+    "“Go not to the Fords of Isen, and do not tarry in the plain!” — The Lord of the Rings, Helm’s Deep"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "forest gate",
+   "name": "Forest Gate",
+   "aka": [
+    "the Forest Gate"
+   ],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road' — NOT FOUND in the 49 volumes; the lettering is unverified from the corpus [I-L]",
+    "placed at Mirkwood (Greenwood the Great / Eryn Lasgalen) [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“At the gate of the forest I must ask you to send back my horse and my ponies.” — The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road' — NOT FOUND in the 49 volumes; the lettering is unverified from the corpus [I-L]",
+    "the western entry of the ELF-ROAD into Mirkwood — Tolkien's word; 'elf-path' and the westward placing are Foster's (t3), not the text's [I-H] — where Beorn's beasts were sent back, Hobbit VII",
+    "NOT ITS OWN POINT: it shares the point of Mirkwood (Greenwood the Great / Eryn Lasgalen) — the gate opens into that forest, and this is Mirkwood's point"
+   ],
+   "quoted": [
+    "“At the gate of the forest I must ask you to send back my horse and my ponies.” — The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road' — NOT FOUND in the 49 volumes; the lettering is unverified from the corpus [I-L]",
+    "the western entry of the ELF-ROAD into Mirkwood — Tolkien's word; 'elf-path' and the westward placing are Foster's (t3), not the text's [I-H] — where Beorn's beasts were sent back, Hobbit VII"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "forlond",
+   "name": "Forlond",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "formenos",
+   "name": "Formenos",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "NATURAL_HILL"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Silmarils And The Unrest Of The Noldor",
+    "A ch7"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“With him into banishment went his seven sons, and northward in Valinor they made a strong place and treasury in the hills; and there at Formenos a multitude of gems were laid in hoard, and weapons also, and the Silmarils were shut in a chamber of iron.” — The Silmarillion, Of The Silmarils And The Unrest Of The Noldor",
+    "indexed by Christopher Tolkien as: Stronghold of the Fëanorians in the north of Valinor",
+    "Ages taken from its realm valinor, having none of its own [I-H]"
+   ],
+   "quoted": [
+    "“With him into banishment went his seven sons, and northward in Valinor they made a strong place and treasury in the hills; and there at Formenos a multitude of gems were laid in hoard, and weapons also, and the Silmarils were shut in a chamber of iron.” — The Silmarillion, Of The Silmarils And The Unrest Of The Noldor"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "fornost erain",
+   "name": "Fornost Erain",
+   "aka": [
+    "Norbury",
+    "Deadmen's Dike"
+   ],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CITY"
+   ],
+   "cites": [
+    "App A I(iii-iv)"
+   ],
+   "timeline_cites": [
+    {
+     "when": "T.A. 861",
+     "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
+     "cite": "App B, the Tale of Years [C] — '861 Death of Eärendur, and division of Arnor'. App A carries the narrative of the division; App B carries the year. The annal names the EVENT and none of the detail this record gives."
+    },
+    {
+     "when": "T.A. 1409–1974",
+     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+     "cite": "App B, the Tale of Years [C] — both ends annalled: '1409 The Witch-king of Angmar invades Arnor' and '1974 End of the North-kingdom. The Witch-king overruns Arthedain and takes Fornost'."
+    },
+    {
+     "when": "1974–75",
+     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
+     "cite": "App A [C]"
+    },
+    {
+     "when": "T.A. 1974–75",
+     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+     "cite": "App A/B"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "held under two keys until they were folded: Fornost Erain, Norbury of the Kings, IS Fornost. One record has the city and the coordinate, the other the ruin it became; the place was both, in that order. [I-H]",
+    "The North-kingdom's last capital; the great battle that broke Angmar was fought west of it, on the plain between Nenuial and the North Downs (App A I(iv), undated there) and is dated 1975 by App B — App A gives only 1974, the year Angmar TOOK Fornost.",
+    "the vector spec also lists it as “Fornost”, at the same place; one record, not two"
+   ],
+   "quoted": [
+    "the vector spec also lists it as “Fornost”, at the same place; one record, not two"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "forsaken inn",
+   "name": "Forsaken Inn",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "framsburg",
+   "name": "Framsburg",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II",
+    "D Cirion; C App A; RC[T]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "A name Tolkien gave for the Baynes map, near Éothéod; the Reader's Companion (t2) says 'presumably a stronghold named for Fram' — the hedge is its own; the Complete Tolkien Companion (t3) asserts it flatly, and they are different books. No narrative text places it."
+   ],
+   "quoted": [
+    "A name Tolkien gave for the Baynes map, near Éothéod; the Reader's Companion (t2) says 'presumably a stronghold named for Fram' — the hedge is its own; the Complete Tolkien Companion (t3) asserts it flatly, and they are different books. No narrative text places it."
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "frogmorton",
+   "name": "Frogmorton",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "gates of sirion",
+   "name": "Gates of Sirion",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [
+    "A ch14; HoME 5 §113",
+    "The Silmarillion [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“But some twenty-five leagues east of the gorge of Nargothrond Sirion fell from the north in a mighty fall below the Meres, and then he plunged suddenly underground into great tunnels that the weight of his falling waters delved; and he issued again three leagues southward with great noise and smoke through rocky arches at the foot of the hills which were called the Gates of Sirion.” — The Silmarillion [C]",
+    "Christopher Tolkien letters Gates of Sirion on the Beleriand plate, three leagues south of the Falls"
+   ],
+   "quoted": [
+    "“But some twenty-five leagues east of the gorge of Nargothrond Sirion fell from the north in a mighty fall below the Meres, and then he plunged suddenly underground into great tunnels that the weight of his falling waters delved; and he issued again three leagues southward with great noise and smoke through rocky arches at the foot of the hills which were called the Gates of Sirion.” — The Silmarillion [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "goblin gate",
+   "name": "Goblin-gate (High Pass)",
+   "aka": [],
+   "types": [
+    "MAN_MADE_GATE",
+    "NATURAL_PASS"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "grey havens",
+   "name": "Grey Havens (Mithlond)",
+   "aka": [
+    "Mithlond"
+   ],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [
+    "Silm; LotR VI.9"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Círdan's harbours on the Gulf of Lune; the Ring-bearers sailed hence."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "halifirien hallow",
+   "name": "Halifirien hallow",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HALLOW"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "hall of fire",
+   "name": "Hall of Fire",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [
+    "The Lord of the Rings, The Ring Goes South"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“In those last days the hobbits sat together in the evening in the Hall of Fire, and there among many tales they heard told in full the lay of Beren and Lúthien and the winning of the Great Jewel; but in the day, while Merry and Pippin were out and about, Frodo and Sam were to be found with Bilbo in his own small room.” — The Lord of the Rings, The Ring Goes South",
+    "indexed by Christopher Tolkien as: In Elrond’s house"
+   ],
+   "quoted": [
+    "“In those last days the hobbits sat together in the evening in the Hall of Fire, and there among many tales they heard told in full the lay of Beren and Lúthien and the winning of the Great Jewel; but in the day, while Merry and Pippin were out and about, Frodo and Sam were to be found with Bilbo in his own small room.” — The Lord of the Rings, The Ring Goes South"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "harlond",
+   "name": "Harlond",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "harlond gondor quays",
+   "name": "Harlond (Gondor quays)",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named Gondor quays by the spec, which is how it is told from the other place of the same name"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "harlond lindon",
+   "name": "Harlond (Lindon)",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named Lindon by the spec, which is how it is told from the other place of the same name"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "haudh en arwen",
+   "name": "Haudh-en-Arwen",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOMB",
+    "NATURAL_FOREST"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Coming Of Men Into The West"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West",
+    "indexed by Christopher Tolkien as: The burial-mound of the Lady Haleth"
+   ],
+   "quoted": [
+    "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "haudh en ndengin",
+   "name": "Haudh-en-Ndengin",
+   "aka": [
+    "Hill of Slain"
+   ],
+   "types": [
+    "MAN_MADE_TOMB",
+    "NATURAL_PEAK"
+   ],
+   "cites": [
+    "Silm 20; CoH"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "The mound of the Nirnaeth dead, alone green in Anfauglith; Rían died upon it."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "havens of sirion",
+   "name": "Havens of Sirion",
+   "aka": [
+    "Lisgardh, the land of reeds"
+   ],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [
+    "Silm 23-24"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 532",
+     "what": "Elrond and Elros born at the Havens of Sirion",
+     "cite": "Silm 24 for the birth; HoME XI, the Tale of Years [C] for F.A. 532 — the annal reads \"528 [> 532] Elros and Elrond twin sons of Earendil born\", the revised layer shown"
+    },
+    {
+     "when": "F.A. 538",
+     "what": "The Third Kinslaying: the Havens of Sirion destroyed; Elwing bears the Silmaril to the sea",
+     "cite": "WoJ, Tale of Years (dated 532→534→538 across the revisions — final layer shown)"
+    }
+   ],
+   "notes": [
+    "Refuge of the survivors of Gondolin and Doriath; the Third Kinslaying fell here."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "hedge",
+   "name": "Hedge",
+   "aka": [],
+   "types": [
+    "NATURAL_MARSH",
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“They could have reached here by now, of course, if they were not stopped at the North-gate, where the Hedge runs down to the river-bank, just this side of the Bridge.” — The Lord of the Rings, A Conspiracy Unmasked",
+    "indexed by Christopher Tolkien as: Fencing Buckland from the Old Forest"
+   ],
+   "quoted": [
+    "“They could have reached here by now, of course, if they were not stopped at the North-gate, where the Hedge runs down to the river-bank, just this side of the Bridge.” — The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "helm s deep",
+   "name": "Helm's Deep",
+   "aka": [
+    "Hornburg",
+    "Aglarond"
+   ],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "App A II; LotR III.7",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Mar 3-4, 3019",
+     "what": "The Hornburg: Helm's Deep held; the Huorns; Isengard drowned by the Ents",
+     "cite": "LotR III.7-9; App B"
+    }
+   ],
+   "notes": [
+    "Helm's winter-siege 2758-9 (App A II); the Battle of the Hornburg 3-4 March T.A. 3019 (App B — not App A II, which gives 3019 only as Théoden's death-year); the Glittering Caves that Gimli saw, LotR III.8 and App A III, not III.7.",
+    "the middle of the shape the archive draws"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "henneth annun",
+   "name": "Henneth Annûn",
+   "aka": [
+    "Window on the West"
+   ],
+   "types": [
+    "MAN_MADE_REFUGE",
+    "MAN_MADE_HALL"
+   ],
+   "cites": [
+    "LotR IV.5"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Faramir's hidden refuge behind the falls of Ithilien."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "himring",
+   "name": "Himring",
+   "aka": [
+    "Himling",
+    "Ever-cold"
+   ],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "NATURAL_HILL"
+   ],
+   "cites": [
+    "Silm 14/18",
+    "Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 7",
+     "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
+     "cite": "Silm 13–14; GA 7 §70 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 455",
+     "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
+     "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 473",
+     "what": "After the Nirnaeth the March is broken; the brothers scatter to Ossiriand's eaves",
+     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THE BREAKING of the March; 473 is inferred from the Nirnaeth being 472. Searched both recensions for Ossiriand and 'March of Maedhros/Maidros' in contexts of scattering, flight or breaking: the Grey Annals passages are GEOGRAPHIC -- \"east the wide countries south of the March of Maidros, even to the borders of Ossiriand were held to be the domain of the sons of Fëanor\" -- and carry no year. Silm 20 narrates and dates nothing; the Silmarillion contains 473 zero times. Owner's ruling 31 Jul"
+    },
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand went under the sea; this hill's top stood above it as the isle of Himling",
+     "cite": "Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']. WJ Tale of Years [C] for the year: recension A '597 Maidros and Maglor, last surviving sons of Fëanor, seize the Silmarils', recension B '597 This entry was changed to 587', and the same recension's '550–597 ... changed to 545–587' — the two ends of one redating, and the witness behind the owner's ruling of 31 July."
+    }
+   ],
+   "notes": [
+    "Maedhros' hill-fortress that held the Leaguer's east — and held after the Bragollach.",
+    "“Himling was the earlier form of Himring (the great hill on which Maedhros son of Feanor had his fortress in The Silmarillion), and though the fact is nowhere referred to it is clear that Himring's top rose above the waters that covered drowned Beleriand.” — Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']",
+    "the hill's top remained as the isle of Himling, drawn on Tolkien's own sketch-map and on Christopher Tolkien's first draft map",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "the vector spec also lists it as “Himring citadel”, at the same place; one record, not two",
+    "the inferred drowning of Beleriand is not carried here: the corpus says this place remained"
+   ],
+   "quoted": [
+    "“Himling was the earlier form of Himring (the great hill on which Maedhros son of Feanor had his fortress in The Silmarillion), and though the fact is nowhere referred to it is clear that Himring's top rose above the waters that covered drowned Beleriand.” — Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']",
+    "the vector spec also lists it as “Himring citadel”, at the same place; one record, not two"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "hobbiton",
+   "name": "Hobbiton",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "named among the shire's own settlements in its dossier (LotR passim [I-H])"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "hobbiton bag end",
+   "name": "Hobbiton + Bag End",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN",
+    "NATURAL_HILL"
+   ],
+   "cites": [
+    "Hobbit i; LotR I.1"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Under the Hill: Bilbo's and Frodo's door, where two Quests began."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "hornburg helm s deep",
+   "name": "Hornburg/Helm's Deep",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "iant iaur",
+   "name": "Iant Iaur",
+   "aka": [],
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ],
+   "cites": [],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "iron hills",
+   "name": "Iron Hills",
+   "aka": [],
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE",
+    "NATURAL_HILL",
+    "MAN_MADE_HALL"
+   ],
+   "cites": [
+    "B ch15–17; C App A; Atlas",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
+    "App A III; Hobbit"
+   ],
+   "timeline_cites": [
+    {
+     "when": "T.A. 2590",
+     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
+     "cite": "App B, the Tale of Years [C] — '2590 Thror returns to Erebor. Gror his brother goes to the Iron Hills'. App A carries the narrative; App B carries the year."
+    },
+    {
+     "when": "2799",
+     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
+     "cite": "App A III [C]"
+    },
+    {
+     "when": "2941",
+     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
+     "cite": "Hobbit 15+; App A III [C]"
+    }
+   ],
+   "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
+    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
+    "the archive also lists it as “The Iron Hills”, at the same place; one record, not two"
+   ],
+   "quoted": [
+    "the archive also lists it as “The Iron Hills”, at the same place; one record, not two"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "isengard orthanc",
+   "name": "Isengard/Orthanc",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "C III.8–10; D Cirion, Fords"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "isenmouthe",
+   "name": "Isenmouthe",
+   "aka": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "ivy bush",
+   "name": "Ivy Bush",
+   "aka": [],
+   "types": [
+    "MAN_MADE_ROAD"
+   ],
+   "cites": [
+    "The Lord of the Rings, A Long-Expected Party"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“He held forth at The Ivy Bush, a small inn on the Bywater road; and he spoke with some authority, for he had tended the garden at Bag End for forty years, and had helped old Holman in the same job before that.” — The Lord of the Rings, A Long-Expected Party",
+    "indexed by Christopher Tolkien as: Inn on the Bywater road"
+   ],
+   "quoted": [
+    "“He held forth at The Ivy Bush, a small inn on the Bywater road; and he spoke with some authority, for he had tended the garden at Bag End for forty years, and had helped old Holman in the same job before that.” — The Lord of the Rings, A Long-Expected Party"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "last bridge",
+   "name": "Last Bridge",
+   "aka": [],
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "last homely house",
+   "name": "Last Homely House",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [
+    "The Hobbit, A Short Rest"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Hidden somewhere ahead of us is the fair valley of Rivendell where Elrond lives in the Last Homely House.” — The Hobbit, A Short Rest",
+    "indexed by Christopher Tolkien as: Elrond’s house at Rivendell"
+   ],
+   "quoted": [
+    "“Hidden somewhere ahead of us is the fair valley of Rivendell where Elrond lives in the Last Homely House.” — The Hobbit, A Short Rest"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "linhir",
+   "name": "Linhir",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING",
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [
+    "corpus/t1_13_index.txt:11270 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [
+    "within gondor, per Christopher Tolkien's index gloss — “Town in Gondor on the river Lameduin” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "lond daer",
+   "name": "Lond Daer",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [
+    "D Aldarion, App D; RC[T]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "longbottom",
+   "name": "Longbottom",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, Prologue"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“But all accounts agree that Tobold Hornblower of Longbottom in the Southfarthing first grew the true pipe-weed in his gardens in the days of Isengrim the Second, about the year 1070 of Shire-reckoning.” — The Lord of the Rings, Prologue",
+    "indexed by Christopher Tolkien as: Village in the South Farthing"
+   ],
+   "quoted": [
+    "“But all accounts agree that Tobold Hornblower of Longbottom in the Southfarthing first grew the true pipe-weed in his gardens in the days of Isengrim the Second, about the year 1070 of Shire-reckoning.” — The Lord of the Rings, Prologue"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "michel delving",
+   "name": "Michel Delving",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [
+    "Prologue"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Chief town of the Shire; the Mathom-house."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "min rimmon",
+   "name": "Min-Rimmon",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "moria east gate dimrill",
+   "name": "Moria East-gate/Dimrill",
+   "aka": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "moria west door",
+   "name": "Moria West-door",
+   "aka": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "moria west gate",
+   "name": "Moria — West-gate",
+   "aka": [
+    "Doors of Durin"
+   ],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "LotR II.4-5; App B"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "'Speak, friend, and enter'; the Watcher in the Water; the Company came to it at nightfall, 13 January 3019."
+   ],
+   "quoted": [
+    "'Speak, friend, and enter'; the Watcher in the Water; the Company came to it at nightfall, 13 January 3019."
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "mount gundabad",
+   "name": "Mount Gundabad",
+   "aka": [],
+   "types": [
+    "NATURAL_PEAK",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "HoME XII; App A III",
+    "HoME 12; B ch17; C App A"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Durin's awakening-place, revered and defiled; the orc-capital of the North."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "nardol",
+   "name": "Nardol",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:13289 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [
+    "within anorien, per Christopher Tolkien's index gloss — “The fifth (or fourth, see 344) beacon in Anórien” [I-H]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "nargothrond",
+   "name": "Nargothrond",
+   "aka": [
+    "Nulukkizdîn"
+   ],
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
+   ],
+   "cites": [
+    "Silm 13/21; CoH",
+    "A ch14, ch21; F ch X–XIV"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 52",
+     "what": "Nargothrond founded by Finrod",
+     "cite": "Silm 13; GA 52 §75 (HoME XI) [C] — 'that stronghold was called Nargothrond. Wherefore the Noldor named him Felagund, Lord of Caves'. The annal names him INGLOR; in the Grey Annals 'Finrod' means Finarfin, the father."
+    },
+    {
+     "when": "F.A. 52–102",
+     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+     "cite": "Silm 13 [C]; GA 52 §75 and 102 §108 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 465",
+     "what": "Finrod goes with Beren; Celegorm and Curufin usurp the people's love; Orodreth rules after",
+     "cite": "[I-M] the archive's own reading of when the aftermath reached Nargothrond. AB2 dates Felagund's death to 464 (\"264 [464] Here King Felagund and Beren son of Barahir were emprisoned in Tol-na-Gaurhoth by Thu, and King Felagund was slain\"); the Grey Annals narrate the sequel undated -- \"when the tidings came to Nargothrond of the death of Felagund... then Celegorn and Curufin were hated, and Orodreth took the crown of Nargothrond\". No annal dates the usurpation or Orodreth's accession. Silm 19 narrates and dates nothing. Owner's ruling 31 Jul"
+    },
+    {
+     "when": "F.A. 495",
+     "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
+     "cite": "Silm 21; CoH [C]; GA 495 §275 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 495",
+     "what": "Tumhalad; the Sack of Nargothrond",
+     "cite": "Silm 21; CoH; GA 495 §275 (HoME XI) [C]"
+    },
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "Finrod's hidden halls above Narog; betrayed by its own bridge."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "oiolosse",
+   "name": "Oiolossë",
+   "aka": [],
+   "types": [
+    "NATURAL_PEAK",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "The Silmarillion, Valaquenta",
+    "A Valaquenta, ch1"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Their halls are above the everlasting snow, upon Oiolossë, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, Valaquenta",
+    "indexed by Christopher Tolkien as: Mount Everwhite"
+   ],
+   "quoted": [
+    "“Their halls are above the everlasting snow, upon Oiolossë, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, Valaquenta"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "old ford",
+   "name": "Old Ford",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "orfalch echor",
+   "name": "Orfalch Echor",
+   "aka": [
+    "the Seven Gates"
+   ],
+   "types": [
+    "NATURAL_RAVINE",
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "placed at Gondolin [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Then they were led up the mighty ravine of Orfalch Echor, barred by seven gates.” — The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "the ravine of the Seven Gates, the only road into Gondolin through the Encircling Mountains",
+    "NOT ITS OWN POINT: it shares the point of Gondolin — the ravine is the road into that city, and this is the city's point"
+   ],
+   "quoted": [
+    "“Then they were led up the mighty ravine of Orfalch Echor, barred by seven gates.” — The Silmarillion, Of Tuor and the Fall of Gondolin [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "pelargir",
+   "name": "Pelargir",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [
+    "App A/B; LotR V.9",
+    "A Akallabêth; C App B, V.2, V.9"
+   ],
+   "timeline_cites": [
+    {
+     "when": "S.A. 2350",
+     "what": "Pelargir built, haven of the Faithful",
+     "cite": "App B"
+    },
+    {
+     "when": "T.A. 2980–3019",
+     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
+     "cite": "App A; LotR V.9 [I-M] — the OPENING year is the archive's own placement. NO ANNAL DATES THE RAID: App A narrates it without a year — 'he came to Umbar unlooked for by night, and there burned a great part of the ships of the Corsairs' — and the Tale of Years' Umbar annals are all centuries earlier: T.A. 933, 1015, 1448, 1540 and 1810 (plus S.A. 2280 and 3261), none of them within 1,100 years of Thorongil's raid. The closing year is sound: the Corsairs' end at Pelargir is March 3019, LotR V.9",
+     "date_conf": "I-M"
+    }
+   ],
+   "notes": [
+    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "ramdal",
+   "name": "Ramdal",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [
+    "The Silmarillion [C]",
+    "corpus/t1_13_index.txt:15110 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“This dividing fall was named Andram, the Long Wall, from Nargothrond to Ramdal, the Wall’s End, in East Beleriand.” — The Silmarillion [C]",
+    "Christopher Tolkien letters Ramdal on the Beleriand plate at the east end of the Andram"
+   ],
+   "quoted": [
+    "“This dividing fall was named Andram, the Long Wall, from Nargothrond to Ramdal, the Wall’s End, in East Beleriand.” — The Silmarillion [C]",
+    "within east beleriand, per Christopher Tolkien's index gloss — “'Wall's End' in East Beleriand” [I-H]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "rhosgobel",
+   "name": "Rhosgobel",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING",
+    "MAN_MADE_HALL"
+   ],
+   "cites": [
+    "LotR II.2; UT Istari"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Radagast the Brown's dwelling at Mirkwood's edge."
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "rivil",
+   "name": "Rivil",
+   "aka": [],
+   "types": [
+    "NATURAL_RIVER",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Fifth Battle: Nirnaeth Arnoediad",
+    "A ch19, ch20; HoME 3, 11",
+    "placed from the archive's own vector map (RIVERS_FA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“He marched on therefore until the front of his battle was drawn up before the stream of Sirion, from the walls of the fortress of Eithel Sirion to the inflowing of Rivil at the Fen of Serech; and the outposts of Fingon could see the eyes of their enemies.” — The Silmarillion, Of The Fifth Battle: Nirnaeth Arnoediad",
+    "indexed by Christopher Tolkien as: Tributary stream of Sirion",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
+   ],
+   "quoted": [
+    "“He marched on therefore until the front of his battle was drawn up before the stream of Sirion, from the walls of the fortress of Eithel Sirion to the inflowing of Rivil at the Fen of Serech; and the outposts of Fingon could see the eyes of their enemies.” — The Silmarillion, Of The Fifth Battle: Nirnaeth Arnoediad"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "romenna",
+   "name": "Rómenna",
+   "aka": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ],
+   "cites": [
+    "The Silmarillion, Akallabêth",
+    "D; A Akallabêth"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“And the chief dwelling of the Faithful in the later days was thus nigh to the harbour of Rómenna; thence many set sail to Middle-earth, seeking the northern coasts where they might speak still with the Eldar in the kingdom of Gil-galad.” — The Silmarillion, Akallabêth",
+    "indexed by Christopher Tolkien as: Haven in the east of Nûmenor",
+    "named among numenor's own settlements in its dossier (UT, Description; Akallabêth [I-H])"
+   ],
+   "quoted": [
+    "“And the chief dwelling of the Faithful in the later days was thus nigh to the harbour of Rómenna; thence many set sail to Middle-earth, seeking the northern coasts where they might speak still with the Eldar in the kingdom of Gil-galad.” — The Silmarillion, Akallabêth"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "rushey",
+   "name": "Rushey",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“The people in the Marish were friendly with the Bucklanders, and the authority of the Master of the Hall (as the head of the Brandybuck family was called) was still acknowledged by the farmers between Stock and Rushey.” — The Lord of the Rings, A Conspiracy Unmasked",
+    "indexed by Christopher Tolkien as: Village in the Marish"
+   ],
+   "quoted": [
+    "“The people in the Marish were friendly with the Bucklanders, and the authority of the Master of the Hall (as the head of the Brandybuck family was called) was still acknowledged by the farmers between Stock and Rushey.” — The Lord of the Rings, A Conspiracy Unmasked"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "sammath naur",
+   "name": "Sammath Naur",
+   "aka": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "sarn ford",
+   "name": "Sarn Ford",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CROSSING"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "scary",
+   "name": "Scary",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE",
+    "NATURAL_HILL"
+   ],
+   "cites": [
+    "The Lord of the Rings, Thegreyhavens"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“He had been taken when the ruffians smoked out a band of rebels that he led from their hidings up in the Brockenbores by the hills of Scary.” — The Lord of the Rings, Thegreyhavens",
+    "indexed by Christopher Tolkien as: Village in the Eastfarthing"
+   ],
+   "quoted": [
+    "“He had been taken when the ruffians smoked out a band of rebels that he led from their hidings up in the Brockenbores by the hills of Scary.” — The Lord of the Rings, Thegreyhavens"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "sirannon",
+   "name": "Sirannon",
+   "aka": [],
+   "types": [
+    "NATURAL_RIVER",
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "The Silmarillion, Elements In Quenya And Sindarin Names"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“sîr ‘river’, from root sir- ‘flow’, in Ossiriand (the first element is from the stem of the numeral ‘seven’, Quenya otso, Sindarin odo), Sirion; also in Sirannon (the ‘Gate-stream’ of Moria) and Sirith (‘a flowing’, as tirith ‘watching’ from tir), a river in Gondor.” — The Silmarillion, Elements In Quenya And Sindarin Names",
+    "indexed by Christopher Tolkien as: The Gate-stream of Moria"
+   ],
+   "quoted": [
+    "“sîr ‘river’, from root sir- ‘flow’, in Ossiriand (the first element is from the stem of the numeral ‘seven’, Quenya otso, Sindarin odo), Sirion; also in Sirannon (the ‘Gate-stream’ of Moria) and Sirith (‘a flowing’, as tirith ‘watching’ from tir), a river in Gondor.” — The Silmarillion, Elements In Quenya And Sindarin Names"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "stair falls",
+   "name": "Stair Falls",
+   "aka": [],
+   "types": [
+    "NATURAL_RIVER",
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "The Lord of the Rings, A Journey In The Dark"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“There is all that remains of the Stair Falls.” — The Lord of the Rings, A Journey In The Dark",
+    "indexed by Christopher Tolkien as: Falls in the Gate-stream of Moria"
+   ],
+   "quoted": [
+    "“There is all that remains of the Stair Falls.” — The Lord of the Rings, A Journey In The Dark"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "stock",
+   "name": "Stock",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, I.4 [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "“the road to Woodhall, and Stock, and the Bucklebury Ferry” — The Lord of the Rings, I.4 [C]",
+    "a village of the Marish in the Eastfarthing, on the road from the Stock-brook to the Bucklebury Ferry; Christopher Tolkien's index glosses it 'Village in the Marish' [C]"
+   ],
+   "quoted": [
+    "“the road to Woodhall, and Stock, and the Bucklebury Ferry” — The Lord of the Rings, I.4 [C]",
+    "a village of the Marish in the Eastfarthing, on the road from the Stock-brook to the Bucklebury Ferry; Christopher Tolkien's index glosses it 'Village in the Marish' [C]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "stone of erech",
+   "name": "Stone of Erech",
+   "aka": [],
+   "types": [
+    "MAN_MADE_MONUMENT",
+    "NATURAL_PEAK"
+   ],
+   "cites": [
+    "LotR V.2"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
+    "the archive also lists it as “The Stone of Erech”, at the same place; one record, not two"
+   ],
+   "quoted": [
+    "the archive also lists it as “The Stone of Erech”, at the same place; one record, not two"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "taniquetil",
+   "name": "Taniquetil",
+   "aka": [],
+   "types": [
+    "NATURAL_PEAK",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "The Silmarillion, Valaquenta",
+    "A Valaquenta, ch1"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Y.T.",
+     "what": "Built on Túna in the Calacirya by Vanyar and Noldor together; the Vanyar later remove to Taniquetil",
+     "cite": "Silm 5 [C]"
+    }
+   ],
+   "notes": [
+    "“Their halls are above the everlasting snow, upon Oiolosse, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, Valaquenta",
+    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the mountain Oiolossë"
+   ],
+   "quoted": [
+    "“Their halls are above the everlasting snow, upon Oiolosse, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, Valaquenta",
+    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the mountain Oiolossë"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "tharbad",
+   "name": "Tharbad",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CROSSING",
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [
+    "UT; LotR II.3",
+    "D App D; RC; C II.3 (Boromir's crossing)"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "The ruined river-town at the great crossing of the Gwathló."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "the bridge of khazad dum",
+   "name": "the Bridge of Khazad-dûm",
+   "aka": [
+    "the Bridge of Moria"
+   ],
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ],
+   "cites": [
+    "LotR II.5, the Bridge of Khazad-dûm [C]",
+    "placed at Khazad-dûm [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“At that moment Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
+    "the span over the chasm before the East-gate of Moria, where Gandalf fell",
+    "NOT ITS OWN POINT: it shares the point of Khazad-dûm — the bridge is within the delving, and this is Khazad-dûm's point"
+   ],
+   "quoted": [
+    "“At that moment Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "the crossroads",
+   "name": "The Crossroads",
+   "aka": [
+    "Cross-roads",
+    "Cross-roads of the Fallen King"
+   ],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [
+    "The Lord of the Rings, IV.7; V.10 [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "“In the very centre four ways met.” — The Lord of the Rings, IV.7; V.10 [C]",
+    "where the Morgul-road out of Ithilien meets the North-South road; V.10 calls it 'the Cross-roads of the Fallen King' for the beheaded statue that stood there [C]"
+   ],
+   "quoted": [
+    "“In the very centre four ways met.” — The Lord of the Rings, IV.7; V.10 [C]",
+    "where the Morgul-road out of Ithilien meets the North-South road; V.10 calls it 'the Cross-roads of the Fallen King' for the beheaded statue that stood there [C]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "the morannon",
+   "name": "The Morannon (Black Gate)",
+   "aka": [
+    "Black Gate"
+   ],
+   "types": [
+    "MAN_MADE_TOWER",
+    "MAN_MADE_GATE",
+    "MAN_MADE_FORTRESS"
+   ],
+   "cites": [
+    "LotR IV.3; V.10; App B"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "Mordor's iron door between the Towers of the Teeth; the last battle, Mar 25, 3019."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "three farthing stone",
+   "name": "Three-Farthing Stone",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "tigh eld",
+   "name": "Tighﬁeld",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, The Voice Of Saruman"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Why, my grand-dad, and my uncle Andy after him, him that was the Gaffer’s eldest brother, he had a rope-walk over by Tighfield many a year.” — The Lord of the Rings, The Voice Of Saruman",
+    "indexed by Christopher Tolkien as: Village of the Shire",
+    "Ages taken from its realm shire, having none of its own [I-H]"
+   ],
+   "quoted": [
+    "“Why, my grand-dad, and my uncle Andy after him, him that was the Gaffer’s eldest brother, he had a rope-walk over by Tighfield many a year.” — The Lord of the Rings, The Voice Of Saruman"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "tol in gaurhoth",
+   "name": "Tol-in-Gaurhoth",
+   "aka": [],
+   "types": [
+    "NATURAL_ISLAND",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Ruin Of Beleriand And The Fall Of Fingolfin"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Then Sauron made it into a watch-tower for Morgoth, a stronghold of evil, and a menace; and the fair isle of Tol Sirion became accursed, and it was called Tol-in-Gaurhoth, the Isle of Werewolves.” — The Silmarillion, Of The Ruin Of Beleriand And The Fall Of Fingolfin",
+    "indexed by Christopher Tolkien as: ‘Isle of Werewolves’"
+   ],
+   "quoted": [
+    "“Then Sauron made it into a watch-tower for Morgoth, a stronghold of evil, and a menace; and the fair isle of Tol Sirion became accursed, and it was called Tol-in-Gaurhoth, the Isle of Werewolves.” — The Silmarillion, Of The Ruin Of Beleriand And The Fall Of Fingolfin",
+    "indexed by Christopher Tolkien as: ‘Isle of Werewolves’"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "tom bombadil s house",
+   "name": "Tom Bombadil's house",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "tower of cirith ungol",
+   "name": "Tower of Cirith Ungol",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "trolls clearing",
+   "name": "Trolls' clearing (Hobbit)",
+   "aka": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "tuckborough",
+   "name": "Tuckborough",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "tuckborough great smials",
+   "name": "Tuckborough/Great Smials",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "tuna",
+   "name": "Túna",
+   "aka": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_CITY"
+   ],
+   "cites": [
+    "The Silmarillion, Of Eldamar and the Princes of the Eldalië",
+    "A ch5, ch9"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Y.T.",
+     "what": "Built on Túna in the Calacirya by Vanyar and Noldor together; the Vanyar later remove to Taniquetil",
+     "cite": "Silm 5 [C]"
+    }
+   ],
+   "notes": [
+    "“there in a deep valley that ran down to the sea the Eldar raised a high green hill: Túna it was called.” — The Silmarillion, Of Eldamar and the Princes of the Eldalië",
+    "indexed by Christopher Tolkien as: The hill on which Tirion was built, but also often used of the city itself"
+   ],
+   "quoted": [
+    "“there in a deep valley that ran down to the sea the Eldar raised a high green hill: Túna it was called.” — The Silmarillion, Of Eldamar and the Princes of the Eldalië"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "tur haretha",
+   "name": "Tûr Haretha",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOMB",
+    "NATURAL_FOREST"
+   ],
+   "cites": [
+    "The Silmarillion, Of The Coming Of Men Into The West"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West",
+    "indexed by Christopher Tolkien as: The burial-mound of the Lady Haleth"
+   ],
+   "quoted": [
+    "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "turin s stone",
+   "name": "Turin's Stone",
+   "aka": [],
+   "types": [
+    "MAN_MADE_MONUMENT"
+   ],
+   "cites": [
+    "The Silmarillion, Of Turin Turambar [C] for the stone standing; HoME XI, the Tale of Years [C] for F.A. 587, the year the Silmarillion cannot give — it carries no age-marker at all"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "the sea drowned all the land, and the Stone of the Hapless stood on upon Tol Morwen",
+     "cite": "The Silmarillion, Of Turin Turambar [C] for the stone standing; HoME XI, the Tale of Years [C] for F.A. 587, the year the Silmarillion cannot give — it carries no age-marker at all"
+    }
+   ],
+   "notes": [
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "“It is told that a seer and harp-player of Brethil named Glirhuin made a song, saying that the Stone of the Hapless should not be defiled by Morgoth nor ever thrown down, not though the sea should drown all the land; as after indeed befell, and still Tol Morwen stands alone in the water beyond the new coasts.” — The Silmarillion, Of Turin Turambar [C] for the stone standing; HoME XI, the Tale of Years [C] for F.A. 587, the year the Silmarillion cannot give — it carries no age-marker at all",
+    "the narrative says outright that it was not thrown down: the sea drowned all the land and the stone stood on, upon the isle that took Morwen's name"
+   ],
+   "quoted": [
+    "“It is told that a seer and harp-player of Brethil named Glirhuin made a song, saying that the Stone of the Hapless should not be defiled by Morgoth nor ever thrown down, not though the sea should drown all the land; as after indeed befell, and still Tol Morwen stands alone in the water beyond the new coasts.” — The Silmarillion, Of Turin Turambar [C] for the stone standing; HoME XI, the Tale of Years [C] for F.A. 587, the year the Silmarillion cannot give — it carries no age-marker at all"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "underharrow",
+   "name": "Underharrow",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, The Muster Of Rohan"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“On down the grey road they went beside the Snowbourn rushing on its stones; through the hamlets of Underharrow and Upbourn, where many sad faces of women looked out from dark doors; and so without horn or harp or music of men’s voices the great ride into the East began with which the songs of Rohan were busy for many long lives of men thereafter.” — The Lord of the Rings, The Muster Of Rohan",
+    "indexed by Christopher Tolkien as: Village in Harrowdaîe"
+   ],
+   "quoted": [
+    "“On down the grey road they went beside the Snowbourn rushing on its stones; through the hamlets of Underharrow and Upbourn, where many sad faces of women looked out from dark doors; and so without horn or harp or music of men’s voices the great ride into the East began with which the songs of Rohan were busy for many long lives of men thereafter.” — The Lord of the Rings, The Muster Of Rohan"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "undertowers",
+   "name": "Undertowers",
+   "aka": [],
+   "types": [
+    "MAN_MADE_TOWN"
+   ],
+   "cites": [],
+   "timeline_cites": [],
+   "notes": [
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "utumno",
+   "name": "Utumno",
+   "aka": [],
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "POLITY_REALM"
+   ],
+   "cites": [
+    "Silm 3 [C]",
+    "A ch1, ch3; HoME 4"
+   ],
+   "timeline_cites": [
+    {
+     "when": "Lamps' era",
+     "what": "Delved 'exceeding deep' under the northern mountains; the Lamps cast down from it",
+     "cite": "Silm 1, 3 [C]"
+    },
+    {
+     "when": "Y.T. 1090–1099",
+     "what": "The Battle of the Powers; Utumno unroofed; Melkor chained",
+     "cite": "Silm 3 [C]; AAm 1090 §47 and 1099 §50 (HoME X) [C]"
+    }
+   ],
+   "notes": [
+    "Beneath Ered Engrin in the uttermost North, its pits never wholly cleansed — 'the Valar... did not discover all the mighty vaults'. — Silm 3 [C]",
+    "the realms model dates it before the Trees – Y.T. 1099"
+   ],
+   "quoted": [
+    "Beneath Ered Engrin in the uttermost North, its pits never wholly cleansed — 'the Valar... did not discover all the mighty vaults'. — Silm 3 [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "valimar",
+   "name": "Valimar",
+   "aka": [],
+   "types": [
+    "MAN_MADE_CITY"
+   ],
+   "cites": [
+    "The Silmarillion, Valaquenta"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“Her halls are west of West, upon the borders of the world; and she comes seldom to the city of Valimar where all is glad.” — The Silmarillion, Valaquenta",
+    "indexed by Christopher Tolkien as: City of the Valar in Valinor",
+    "Ages taken from its realm valinor, having none of its own [I-H]"
+   ],
+   "quoted": [
+    "“Her halls are west of West, upon the borders of the world; and she comes seldom to the city of Valimar where all is glad.” — The Silmarillion, Valaquenta"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "vinyamar",
+   "name": "Vinyamar",
+   "aka": [],
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_HALL",
+    "MAN_MADE_TOWER"
+   ],
+   "cites": [
+    "Silm 15; UT (Tuor)",
+    "A ch14; G LV"
+   ],
+   "timeline_cites": [
+    {
+     "when": "F.A. 587 (War of Wrath)",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]"
+    }
+   ],
+   "notes": [
+    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo."
+   ],
+   "quoted": [],
+   "has_visual_words": true
+  },
+  {
+   "id": "wellinghall",
+   "name": "Wellinghall",
+   "aka": [],
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "cites": [
+    "The Lord of the Rings, Flotsam And Jetsam",
+    "The Lord of the Rings, Flotsam And Jetsam [C]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“We met Treebeard that morning after the battle; and that night we were at Wellinghall, one of his ent-houses.” — The Lord of the Rings, Flotsam And Jetsam",
+    "indexed by Christopher Tolkien as: Treebeard’s house",
+    "named within Fangorn Forest (Entwood) by the vector spec's own block for it",
+    "“We met Treebeard that morning after the battle; and that night we were at Wellinghall, one of his ent-houses.” — The Lord of the Rings, Flotsam And Jetsam [C]",
+    "the archive typed it NATURAL_FOREST from a note recording which forest CONTAINS it; a containment note says where a place is, never what it is"
+   ],
+   "quoted": [
+    "“We met Treebeard that morning after the battle; and that night we were at Wellinghall, one of his ent-houses.” — The Lord of the Rings, Flotsam And Jetsam",
+    "“We met Treebeard that morning after the battle; and that night we were at Wellinghall, one of his ent-houses.” — The Lord of the Rings, Flotsam And Jetsam [C]"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "west door",
+   "name": "West-door",
+   "aka": [],
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "named among khazaddum's own settlements in its dossier (LotR II.4–6 [I-H])"
+   ],
+   "quoted": [],
+   "has_visual_words": false
+  },
+  {
+   "id": "west gate of moria",
+   "name": "West Gate of Moria",
+   "aka": [
+    "the Doors of Durin",
+    "the West-gate"
+   ],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "cites": [
+    "LotR II.4, the ithildin inscription on the West-gate [C]",
+    "placed at Khazad-dûm [I-H]: the text names the container, not a position within it"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“The Doors of Durin, Lord of Moria. Speak, friend, and enter.” — LotR II.4, the ithildin inscription on the West-gate [C]",
+    "the Doors of Durin at the western foot of the mountains, opening from the Sirannon into Khazad-dûm",
+    "NOT ITS OWN POINT: it shares the point of Khazad-dûm — the doors open into it, and this is Khazad-dûm's point"
+   ],
+   "quoted": [
+    "“The Doors of Durin, Lord of Moria. Speak, friend, and enter.” — LotR II.4, the ithildin inscription on the West-gate [C]"
+   ],
+   "has_visual_words": true
+  },
+  {
+   "id": "whitfurrows",
+   "name": "Whitfurrows",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, The Scouring Of The Shire"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“One came in from Whitfurrows last night with a ‘‘secret message’’, and another took it on from here.” — The Lord of the Rings, The Scouring Of The Shire",
+    "indexed by Christopher Tolkien as: Village in the Eastfarthíng"
+   ],
+   "quoted": [
+    "“One came in from Whitfurrows last night with a ‘‘secret message’’, and another took it on from here.” — The Lord of the Rings, The Scouring Of The Shire"
+   ],
+   "has_visual_words": false
+  },
+  {
+   "id": "whitwell",
+   "name": "Whitwell",
+   "aka": [],
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ],
+   "cites": [
+    "The Lord of the Rings, Minas Tirith"
+   ],
+   "timeline_cites": [],
+   "notes": [
+    "“My father farms the lands round Whitwell near Tuckborough in the Shire.” — The Lord of the Rings, Minas Tirith",
+    "indexed by Christopher Tolkien as: Village in the Shire near Tuckborough",
+    "Ages taken from its realm shire, having none of its own [I-H]"
+   ],
+   "quoted": [
+    "“My father farms the lands round Whitwell near Tuckborough in the Shire.” — The Lord of the Rings, Minas Tirith"
+   ],
+   "has_visual_words": false
+  }
+ ]
+}

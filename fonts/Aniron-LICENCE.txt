@@ -1,0 +1,29 @@
+ANIRON — Pete Klassen, 2004. "All Rights Reserved."  Contact: thehutt@gmx.net
+
+WHAT THIS FONT IS. A replication of the typeface used in the front and end credits of Peter
+Jackson's "The Lord Of The Rings" trilogy, retraced by hand from the SEE DVD because the
+resolution was too low to trace mechanically. Missing characters, punctuation, numerals and a
+Cyrillic set were drawn from scratch by the designer.
+
+THE LICENCE POSITION, RECORDED PLAINLY BECAUSE THIS ARCHIVE RECORDS THE POSITION OF EVERYTHING
+IT SHIPS. Independent font directories state Aniron as PERSONAL USE ONLY, with commercial use
+and modification not permitted and a commercial licence available from the designer. The
+readme shipped inside the archive says only "All Rights Reserved", and separately encourages
+use for both headings and paragraph text.
+
+THE OWNER'S RULING, 19 August 2026, in his own words: "for now the Arda Archive is personal use
+only, we haven't published it because it's not nearly done. I can get licence to publish it,
+until that use freely Aniron, if you don't find a better and higher quality similar one."
+
+THE FACT HE WAS GIVEN BEFORE RULING, and it is recorded here so nobody has to rediscover it:
+the site IS reachable on the public web at https://samsikallo.github.io/arda-archive and was
+serving 200s on the day of this ruling. "Not published" describes intent, not reachability.
+
+WHAT WAS DONE TO THE FILES: the two TTFs were converted to WOFF2 with no subsetting and no
+glyph removal — 278 glyphs in, 278 out — because subsetting would be modification and the
+licence does not permit it. A container change is the least-altering way to put a font on a
+page.
+
+HOW TO SWAP IT OUT IN ONE LINE: every Latin rule reads `var(--face-latin)`. Change that one
+custom property and the whole archive changes face. It was built that way on purpose, so this
+ruling costs one line to revisit rather than 622 pages.

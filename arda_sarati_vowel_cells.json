@@ -1,0 +1,1815 @@
+{
+ "built_from": "map/segment_sarati_vowels.py",
+ "reads": "site/sarati/ — the vowel SHEETS",
+ "credit": {
+  "plates": "Hëernamae Pëen Ionoëryn, via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0 — the cells are crops of CC BY-SA plates and carry the same licence and the same attribution"
+ },
+ "n_cells": 120,
+ "cells": [
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 0,
+   "box": [
+    23,
+    13,
+    74,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 1,
+   "box": [
+    91,
+    13,
+    109,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 2,
+   "box": [
+    124,
+    13,
+    140,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 3,
+   "box": [
+    248,
+    13,
+    277,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 4,
+   "box": [
+    313,
+    13,
+    338,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 5,
+   "box": [
+    349,
+    13,
+    365,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 6,
+   "box": [
+    475,
+    13,
+    501,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 7,
+   "box": [
+    539,
+    13,
+    558,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 8,
+   "box": [
+    574,
+    13,
+    590,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 9,
+   "box": [
+    698,
+    13,
+    728,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 10,
+   "box": [
+    747,
+    13,
+    786,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 11,
+   "box": [
+    799,
+    13,
+    815,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 12,
+   "box": [
+    925,
+    13,
+    951,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c12.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 13,
+   "box": [
+    975,
+    13,
+    1008,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c13.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 0,
+   "col": 14,
+   "box": [
+    1024,
+    13,
+    1040,
+    131
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r0_c14.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 0,
+   "box": [
+    23,
+    162,
+    78,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 1,
+   "box": [
+    90,
+    162,
+    109,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 2,
+   "box": [
+    123,
+    162,
+    140,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 3,
+   "box": [
+    162,
+    162,
+    180,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 4,
+   "box": [
+    248,
+    162,
+    278,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 5,
+   "box": [
+    320,
+    162,
+    339,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 6,
+   "box": [
+    348,
+    162,
+    365,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 7,
+   "box": [
+    387,
+    162,
+    404,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 8,
+   "box": [
+    473,
+    162,
+    502,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 9,
+   "box": [
+    537,
+    162,
+    563,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 10,
+   "box": [
+    574,
+    162,
+    589,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 11,
+   "box": [
+    612,
+    162,
+    637,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 12,
+   "box": [
+    698,
+    162,
+    728,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c12.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 13,
+   "box": [
+    746,
+    162,
+    787,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c13.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 14,
+   "box": [
+    799,
+    162,
+    814,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c14.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 15,
+   "box": [
+    833,
+    162,
+    869,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c15.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 16,
+   "box": [
+    925,
+    162,
+    952,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c16.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 17,
+   "box": [
+    975,
+    162,
+    1010,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c17.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 18,
+   "box": [
+    1023,
+    162,
+    1040,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c18.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_vowels.png",
+   "form": "Quenya",
+   "row": 1,
+   "col": 19,
+   "box": [
+    1062,
+    162,
+    1102,
+    285
+   ],
+   "cell": "sarati_Sarati_Quenya_-_vowels_r1_c19.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 0,
+   "box": [
+    28,
+    14,
+    79,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 1,
+   "box": [
+    96,
+    14,
+    114,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 2,
+   "box": [
+    114,
+    14,
+    138,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 3,
+   "box": [
+    253,
+    14,
+    282,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 4,
+   "box": [
+    318,
+    14,
+    359,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 5,
+   "box": [
+    478,
+    14,
+    507,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 6,
+   "box": [
+    543,
+    14,
+    583,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 7,
+   "box": [
+    703,
+    14,
+    733,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 8,
+   "box": [
+    751,
+    14,
+    807,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 9,
+   "box": [
+    930,
+    14,
+    956,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 10,
+   "box": [
+    980,
+    14,
+    1014,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 0,
+   "col": 11,
+   "box": [
+    1014,
+    14,
+    1038,
+    132
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r0_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 0,
+   "box": [
+    28,
+    157,
+    83,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 1,
+   "box": [
+    95,
+    157,
+    114,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 2,
+   "box": [
+    115,
+    157,
+    157,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 3,
+   "box": [
+    167,
+    157,
+    184,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 4,
+   "box": [
+    253,
+    157,
+    283,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 5,
+   "box": [
+    325,
+    157,
+    405,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 6,
+   "box": [
+    478,
+    157,
+    507,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 7,
+   "box": [
+    542,
+    157,
+    637,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 8,
+   "box": [
+    703,
+    157,
+    734,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 9,
+   "box": [
+    751,
+    157,
+    869,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 10,
+   "box": [
+    930,
+    157,
+    957,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 11,
+   "box": [
+    980,
+    157,
+    1059,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Quenya)_-_long_vowels.png",
+   "form": "Quenya (long)",
+   "row": 1,
+   "col": 12,
+   "box": [
+    1067,
+    157,
+    1107,
+    408
+   ],
+   "cell": "sarati_Sarati_Quenya_-_long_vowels_r1_c12.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 0,
+   "box": [
+    17,
+    6,
+    34,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 1,
+   "box": [
+    123,
+    6,
+    144,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 2,
+   "box": [
+    172,
+    6,
+    191,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 3,
+   "box": [
+    355,
+    6,
+    384,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 4,
+   "box": [
+    456,
+    6,
+    477,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 5,
+   "box": [
+    482,
+    6,
+    548,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 6,
+   "box": [
+    692,
+    6,
+    729,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 7,
+   "box": [
+    767,
+    6,
+    822,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 8,
+   "box": [
+    844,
+    6,
+    865,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 9,
+   "box": [
+    1030,
+    6,
+    1066,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 10,
+   "box": [
+    1067,
+    6,
+    1086,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 11,
+   "box": [
+    1114,
+    6,
+    1170,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 0,
+   "col": 12,
+   "box": [
+    1170,
+    6,
+    1243,
+    107
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r0_c12.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 0,
+   "box": [
+    14,
+    135,
+    171,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 1,
+   "box": [
+    352,
+    135,
+    431,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 2,
+   "box": [
+    438,
+    135,
+    502,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 3,
+   "box": [
+    689,
+    135,
+    789,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 4,
+   "box": [
+    1027,
+    135,
+    1086,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 1,
+   "col": 5,
+   "box": [
+    1094,
+    135,
+    1165,
+    182
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r1_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 0,
+   "box": [
+    17,
+    254,
+    54,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 1,
+   "box": [
+    122,
+    254,
+    153,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 2,
+   "box": [
+    175,
+    254,
+    195,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 3,
+   "box": [
+    354,
+    254,
+    391,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 4,
+   "box": [
+    513,
+    254,
+    532,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 5,
+   "box": [
+    551,
+    254,
+    574,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 6,
+   "box": [
+    692,
+    254,
+    732,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 7,
+   "box": [
+    772,
+    254,
+    820,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 8,
+   "box": [
+    845,
+    254,
+    865,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c8.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 9,
+   "box": [
+    1029,
+    254,
+    1085,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 10,
+   "box": [
+    1135,
+    254,
+    1187,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c10.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 2,
+   "col": 11,
+   "box": [
+    1208,
+    254,
+    1227,
+    347
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r2_c11.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 0,
+   "box": [
+    14,
+    360,
+    104,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 1,
+   "box": [
+    110,
+    360,
+    259,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 2,
+   "box": [
+    352,
+    360,
+    422,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 3,
+   "box": [
+    430,
+    360,
+    480,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 4,
+   "box": [
+    689,
+    360,
+    816,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 5,
+   "box": [
+    828,
+    360,
+    927,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 6,
+   "box": [
+    1026,
+    360,
+    1167,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c6.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 3,
+   "col": 7,
+   "box": [
+    1183,
+    360,
+    1275,
+    408
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r3_c7.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 0,
+   "box": [
+    17,
+    479,
+    76,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 1,
+   "box": [
+    125,
+    479,
+    158,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 2,
+   "box": [
+    175,
+    479,
+    195,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 3,
+   "box": [
+    692,
+    479,
+    728,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 4,
+   "box": [
+    795,
+    479,
+    828,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 4,
+   "col": 5,
+   "box": [
+    849,
+    479,
+    869,
+    532
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r4_c5.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 5,
+   "col": 0,
+   "box": [
+    692,
+    532,
+    730,
+    572
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r5_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 6,
+   "col": 0,
+   "box": [
+    16,
+    585,
+    116,
+    631
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r6_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 6,
+   "col": 1,
+   "box": [
+    126,
+    585,
+    176,
+    631
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r6_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 6,
+   "col": 2,
+   "box": [
+    691,
+    585,
+    771,
+    631
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r6_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Late_Form)_-_vowels.png",
+   "form": "Late",
+   "row": 6,
+   "col": 3,
+   "box": [
+    776,
+    585,
+    842,
+    631
+   ],
+   "cell": "sarati_Sarati_Late_Form_-_vowels_r6_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 0,
+   "col": 4,
+   "box": [
+    126,
+    9,
+    152,
+    42
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r0_c4.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 0,
+   "col": 9,
+   "box": [
+    300,
+    9,
+    335,
+    42
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r0_c9.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 1,
+   "col": 0,
+   "box": [
+    6,
+    45,
+    50,
+    64
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r1_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 1,
+   "col": 1,
+   "box": [
+    96,
+    45,
+    150,
+    64
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r1_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 1,
+   "col": 2,
+   "box": [
+    186,
+    45,
+    228,
+    64
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r1_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 1,
+   "col": 3,
+   "box": [
+    276,
+    45,
+    300,
+    64
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r1_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 2,
+   "col": 0,
+   "box": [
+    6,
+    65,
+    69,
+    165
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r2_c0.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 2,
+   "col": 1,
+   "box": [
+    96,
+    65,
+    150,
+    165
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r2_c1.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 2,
+   "col": 2,
+   "box": [
+    186,
+    65,
+    251,
+    165
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r2_c2.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  },
+  {
+   "sheet": "Sarati_(Early_Form)_-_vowels.gif",
+   "form": "Early",
+   "row": 2,
+   "col": 3,
+   "box": [
+    276,
+    65,
+    348,
+    165
+   ],
+   "cell": "sarati_Sarati_Early_Form_-_vowels_r2_c3.png",
+   "value": null,
+   "why_no_value": "the sheet carries no label this archive can read -- see map/segment_sarati_vowels.py for the three routes tried"
+  }
+ ],
+ "unresolved": {
+  "which vowel each cell is": "REFUSED. The sheets carry no label this archive can read. Three routes were measured: the Quenya sheet's two ink bands are 110px and 115px tall, so both are GLYPH rows and neither is a caption; tesseract on the Late Form's short bands returned English prose, which is a reader hallucinating on shapes it has no model for; and ordering by position is a guess, because Sarati sheets are not alphabetical and the same mark differs by valuation. WHAT WOULD SETTLE IT: the k-type test -- Amanyë Tenceli keys each valuation to a distinct k-shape and the archive holds Sarati_-_letter_k.png. That assigns each SHEET to a valuation, after which the order within it follows from Björkman's own tables."
+ },
+ "note": "Shapes, not sounds. The Scriptorium therefore still writes Sarati CONSONANTS and names every vowel as having no plate -- which is true, and better than a vowel drawn from a guess."
+}

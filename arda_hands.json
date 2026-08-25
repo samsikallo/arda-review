@@ -1,0 +1,623 @@
+{
+ "what": "SIX SCRIBAL HANDS, and every one of them quotes Christopher Tolkien. A marginal note in this archive is never invented: each is a plain-English restatement of a span of tier-1 text about how his father's writing CHANGED, and each carries the exact span it restates and the line it stands on.",
+ "conf_note": "The marker grades the NOTE against its QUOTATION, not the note against Arda. Every quotation here is tier-1 text (Christopher Tolkien in The History of Middle-earth), but each is a claim about his father's WRITING -- what a draft said, what was struck out, which reading is later -- and not a claim about events in Arda. So [C] means the quoted span states the note's assertion outright and a reader can check it in one look; [I-H]/[I-M]/[I-L] mean the note reaches beyond what the span says. Reading [C] here as 'canon within the legendarium' would be a category error: these notes are canon about the TEXTS.",
+ "reading": "The hand tells you WHAT KIND of change is recorded; the marker tells you how closely the note follows its quotation. A note is checkable in one look: the quotation is printed beside it.",
+ "hands": {
+  "nomenclator": {
+   "label": "THE NOMENCLATOR",
+   "of": "the hand that keeps track of what a thing was called before. Every note records a name that changed: a person, a place or a thing that stood under another name in an earlier text. Drawn from Christopher Tolkien's name-notes across HoME I-XII."
+  },
+  "stemma": {
+   "label": "THE GENEALOGIST",
+   "of": "the hand that watches kinship move. Parentage reassigned, a wife or a son introduced or struck out, a house enlarged into a clan. Drawn from Christopher Tolkien's commentary where a descent differs between drafts."
+  },
+  "annalist": {
+   "label": "THE ANNALIST",
+   "of": "the hand that distrusts a date. Years rewritten, annals moved from one year to another, spans opened and closed, ages recomputed. Drawn from the Annals of Aman, the Grey Annals, the Tale of Years and the LotR drafts."
+  },
+  "corrector": {
+   "label": "THE CORRECTOR",
+   "of": "the hand that reads the page rather than the story. Words struck out, clauses cancelled, names written above the line, notes pencilled and then deleted. It records physical acts on the manuscript, not conclusions about Arda."
+  },
+  "revisor": {
+   "label": "THE REVISOR",
+   "of": "the hand that records an idea let go. A conception abandoned, superseded or replaced, and the point in the writing at which it happened. The largest changes in the legendarium and the ones with no single name attached."
+  },
+  "chartarius": {
+   "label": "THE MAP-HAND",
+   "of": "the hand that annotates the sheets. Names struck from a map and rewritten, forms altered on the plate, a mountain drawn before it was named, a name over an erasure. Drawn from the map commentaries of HoME IV, V, VII and XI."
+  }
+ },
+ "notes": [
+  {
+   "id": "tol-eressea-names",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Do not trust the Gnomish name of this isle: it was rewritten five times over, Gar Eglos giving way through three forms before Dor Faidwen stood.",
+   "q": "The Gnomish name of Tol Eressëa was changed many times: Gar Eglos > Dor Edloth > Dor Usgwen > Dor Uswen > Dor Faidwen.",
+   "src": "t1_1_the_book_of_lost_tales_part_one.txt:809",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "fionwe-eonwe",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The herald of Manwe was Fionwe long before he was Eonwe; the name changed when the whole notion of the Children of the Valar was let go.",
+   "q": "Fionwë, his name long afterwards changed to Eönwë, endured to become the Herald of Manwë, when the idea of 'the Children of the Valar' was abandoned.",
+   "src": "t1_1_the_book_of_lost_tales_part_one.txt:3218",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "ungoliont-gungliont",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The great spider was Gungliont when first written into the tale and into the Gnomish lexicon alike; Ungweliont and Ungoliont came after.",
+   "q": "In GL the name as originally entered was Gungliont, as also first written in the text (p. 172); later this was changed to 'Ungweliont or Ungoliont'.",
+   "src": "t1_1_the_book_of_lost_tales_part_one.txt:14322",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "wendelin-gwendeling",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "As the tale was originally written the queen of Doriath was Wendelin throughout; the name Gwendeling belongs to a later stratum of the same telling.",
+   "q": "As the tale was originally written, Wendelin was the name throughout",
+   "src": "t1_2_the_book_of_lost_tales_part_two.txt:2327",
+   "tier": 1,
+   "conf": "[I-H]"
+  },
+  {
+   "id": "mandar-mandos",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Mandos was Mandar at his first three appearances; the name was brought over before the text was finished, so the earlier form never stood complete.",
+   "q": "at the first three occurrences of the name my father wrote Mandar, changing it before the text was completed to Mandos.",
+   "src": "t1_10_morgoths_ring.txt:7920",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "enadar-denethor",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The lord of the Nandor was Enadar for the length of a pen-stroke: Denethor replaced it immediately, and Denethor is the name in AV 2, in the Quenta and in the Lhammas.",
+   "q": "The name of the leader of the Nandor was first written Enadar, changed immediately to Denethor (the name in AV 2, QS, and the Lhammas).",
+   "src": "t1_10_morgoths_ring.txt:4003",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "minyon-curufinwe",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Before he was Curufinwe or Feanor the eldest son of Finwe was Minyon, the First-begotten; the epithet became the name and then was set aside.",
+   "q": "He was first named Minyon First-begotten, but afterwards Curufinwë or Fëanor.",
+   "src": "t1_10_morgoths_ring.txt:3433",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "arvalin-avathar",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Avathar enters here and Arvalin leaves: the ancient name for that shadowed land goes out of the texts at this point and does not return.",
+   "q": "Here first appears the name Avathar, and the ancient name Arvalin at last disappears.",
+   "src": "t1_10_morgoths_ring.txt:10994",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "bladorion-ardgalen",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The great northern plain before its burning was Bladorion first; Ardgalen enters the texts here as its replacement.",
+   "q": "This is the first occurrence of Ardgalen in the texts as here presented, replacing Bladorion as the original name of the great northern plain before its devastation.",
+   "src": "t1_11_the_war_of_the_jewels.txt:4255",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "haudh-ndengin",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The Mound of the Slain was named Haudh-en-Ndengin in the Narn version of the account, and that name was subsequently changed to Haudh-en-Nirnaeth.",
+   "q": "In the account of the Mound of the Slain the Narn version names it Haudh-en-Ndengin, subsequently changed to Haudh-en-Nirnaeth.",
+   "src": "t1_11_the_war_of_the_jewels.txt:6485",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "albarth-torbarth-hunthor",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "This man of Brethil was named three times over: Albarth, then Torbarth as in the Grey Annals, and at every occurrence afterwards Hunthor.",
+   "q": "in the final manuscript of NE Albarth was changed to Torbarth, the name in GA; but at all occurrences in NE of Torbarth it was changed later to Hunthor.",
+   "src": "t1_11_the_war_of_the_jewels.txt:6017",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "cranthir-caranthir",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The typist set Cranthir twice and it was mended to Caranthir; but further on in the same text Caranthir is what was typed. The change overtook the copying.",
+   "q": "Caranthir: the name as typed (twice) was Cranthir, emended to Caranthir, but later in the text (§23 and subsequently) Caranthir was the form as typed.",
+   "src": "t1_11_the_war_of_the_jewels.txt:8432",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "glomund-glaurung",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Glaurung was already the dragon's name in the Grey Annals while the Quenta typescript still carried Glomund: the two names ran concurrently in different texts.",
+   "q": "but the LQ typescript, as typed, has Glómund - whereas Glaurung appears already in the Grey Annals as written.",
+   "src": "t1_11_the_war_of_the_jewels.txt:6815",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "isfin-feiniel",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "An instruction in his own hand: Isfin was to go out everywhere in favour of Feiniel, the White Lady. Neither name is the one that finally stood.",
+   "q": "Here my father wrote: 'Name Isfin must be changed throughout to Feiniel (= White Lady)'.",
+   "src": "t1_11_the_war_of_the_jewels.txt:11666",
+   "tier": 1,
+   "conf": "[I-H]"
+  },
+  {
+   "id": "bingo-bolger-baggins",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The Ring-bearer of the first drafts is Bingo Bolger-Baggins: Bilbo's young cousin, son of Primula Brandybuck, adopted by an unmarried Bilbo and renamed on adoption.",
+   "q": "Bilbo, unmarried, adopted his young cousin Bingo Bolger (son of Primula Brandybuck), changed his name to Bingo Bolger-Baggins",
+   "src": "t1_6_the_return_of_the_shadow.txt:1794",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "trotter-aragorn",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "Against the question of who the ranger really was, one word pencilled into the margin: Aragorn. In the text before it he is still only Trotter.",
+   "q": "(2) Real name of Trotter? [Pencilled against this: 'Aragorn'.",
+   "src": "t1_7_the_treason_of_isengard.txt:488",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "valandil-elendil",
+   "hand": "nomenclator",
+   "subject": "name",
+   "text": "The King of Men was Valandil before he was Elendil; the change was made almost at once, and carried through the rest of the passage.",
+   "q": "Valandil was then changed to Elendil, probably almost immediately, and also at the subsequent occurrences of the name in this passage.",
+   "src": "t1_6_the_return_of_the_shadow.txt:13548",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "beren-son-of-egnor",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Beren's own words as the manuscript was first written: I Beren of the Noldoli, son of Egnor the huntsman. He is of the Elves here, and his father is Egnor.",
+   "q": "The manuscript as originally written read: 'I Beren of the Noldoli, son of Egnor the huntsman . . .'",
+   "src": "t1_2_the_book_of_lost_tales_part_two.txt:2233",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "barahir-replaces-egnor",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Barahir takes Egnor's place as Beren's father here, and at this stage the pair are still Ilkorin Elves rather than Men.",
+   "q": "Barahir already appears as the father of Beren, replacing Egnor; and they are here Ilkorin Elves, not Men, though this was changed when the passage was revised.",
+   "src": "t1_4_the_shaping_of_middle_earth.txt:2568",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "fionwe-son-of-tulkas",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Fionwe is called son of Tulkas here and in the Quenta as first written; afterwards he is son of Manwe again. His parentage moved and came back.",
+   "q": "The naming Fionwe son of Tulkas may have been a simple slip, though the same is said in the Quenta as first written (p. 178); subsequently Fionwe again becomes the son of Manwe (p. 185).",
+   "src": "t1_4_the_shaping_of_middle_earth.txt:3278",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "hareth-hiriel",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Halmir's daughter was Hiriel before a second daughter named Hiril was brought in; the first daughter then became Hareth.",
+   "q": "Before Hiril was introduced as a second daughter of Halmir, his daughter Hareth was first named Hiriel",
+   "src": "t1_11_the_war_of_the_jewels.txt:17594",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "elboron-eldun",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "The sons of Dior were Elboron and Elbereth in the earlier texts, and were replaced by Eldun and Elrun.",
+   "q": "Elboron and Elbereth Sons of Dior. 300. (Replaced by Eldún and Elrún.)",
+   "src": "t1_11_the_war_of_the_jewels.txt:15938",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "curufin-caranthir-wrath",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "In the rough initial drafting for these annals the harshest and quickest to anger of Feanor's sons was Curufin; the trait was afterwards moved to Caranthir.",
+   "q": "In the very rough initial draft for the annals 6 and 7 (see p. 29) the son of Fëanor who was 'the harshest and the most quick to anger' was Curufin, changed to Caranthir.",
+   "src": "t1_11_the_war_of_the_jewels.txt:4358",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "orodreth-struck-out",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Finrod's house was rewritten on the page itself: the father's name changed, Inglor became Finrod, Egnor became Aegnor, and Orodreth was struck out of the list of sons.",
+   "q": "The sons of Finrod [> Finarphin] were Inglor [> Finrod] the faithful (who afterwards was named Felagund, Lord of Caves), [struck out: and Orodreth,] and Angrod, and Egnor [> Aegnor].",
+   "src": "t1_10_morgoths_ring.txt:6788",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "gil-galad-felagund",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Felagund is given a wife, Meril, and a son, Gil-galad, and neither had been named before: Gil-galad enters here out of The Lord of the Rings.",
+   "q": "Felagund's wife Meril has not been named before, nor any child of his; and this is the first appearance of Gil-galad from The Lord of the Rings.",
+   "src": "t1_11_the_war_of_the_jewels.txt:8919",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "garman-leod",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "Eorl's father was Garman as far as the final text, where the name was mended at last to Leod.",
+   "q": "The father of Eorl was still named Garman, as in the old version III (p. 272), and that name appeared in the final text, where it was emended to Léod.",
+   "src": "t1_12_the_peoples_of_middle_earth.txt:9247",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "gorhendad-gormadoc",
+   "hand": "stemma",
+   "subject": "genealogy",
+   "text": "The head of the Brandybucks was Gorhendad Oldbuck before Gormadoc Deepdelver replaced him, and a wife, Malva Headstrong, was brought in beside him.",
+   "q": "Gorhendad Oldbuck was replaced by Gormadoc 'Deepdelver', and his wife Malva Headstrong was introduced.",
+   "src": "t1_12_the_peoples_of_middle_earth.txt:3642",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "trees-dates-six-times",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "Read no year of the Trees as fixed: some of these annal dates were substituted as many as six times, and only the last of them is printed here.",
+   "q": "The dates of the annals of the Years of the Trees were changed very frequently — in some cases there are as many as six substitutions — and I give only the final form.",
+   "src": "t1_10_morgoths_ring.txt:1869",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "earendil-valinor-date",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "The annal stands under 533, and the year Earendil came at last to Valinor would not settle: 536, then 540, then 542 were written over it in turn.",
+   "q": "533 The date of Ëarendil's coming to Valinor was changed several times, apparently > 536 > 540 > 542.",
+   "src": "t1_11_the_war_of_the_jewels.txt:12729",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "isfin-eol-316",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "An annal entry for the year 316 concerning Isfin and Eol was inserted here, replacing the entry that had stood in the manuscript under the year 471.",
+   "q": "my father inserted an annal entry for the year 316 concerning Isfin and Ëol, replacing the annal that stood in the manuscript under 471",
+   "src": "t1_11_the_war_of_the_jewels.txt:1888",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "ga-annal-1102",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "This annal is an afterthought, added to the manuscript later, and its date was first a single year, 1102, then opened into a span, 1102-5.",
+   "q": "This annal was a later addition to the manuscript; the date was first written 1102, then changed to 1102-5.",
+   "src": "t1_11_the_war_of_the_jewels.txt:3945",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "haldir-488-struck",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "The year 488 stood over Haldir's death and was struck out: the annal was moved off that date.",
+   "q": "[Struck out: 488] §264 Here Haldir Orodreth's son of Nargothrond was trapped and hung on a tree by Orcs.",
+   "src": "t1_11_the_war_of_the_jewels.txt:3111",
+   "tier": 1,
+   "conf": "[I-H]"
+  },
+  {
+   "id": "valian-year-nine",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "The length of a Valian year was rewritten in the draft to read as longer than nine years of the Sun that is now.",
+   "q": "This was changed on the draft text to 'each such year is longer than are nine years of the Sun that is now'.",
+   "src": "t1_10_morgoths_ring.txt:2202",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "gollum-ring-dates",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "The finding of the Ring and Gollum's vanishing were struck from where they first stood and set down again under 2463 and 2470, which are the dates of Appendix B.",
+   "q": "These entries concerning the finding of the Ring and Gollum's disappearance were struck out and replaced by additions under 2463 and 2470 (the dates in Appendix B).",
+   "src": "t1_12_the_peoples_of_middle_earth.txt:8412",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "bingo-age-27-37",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "Bingo's age at his adoption was moved from 27 to 37 so that the arithmetic of Bilbo's hundred and eleventh year would come right.",
+   "q": "Bingo's age at his adoption was changed from 27 to 37, so that when Bilbo was 111 (twelve years later) Bingo was 49",
+   "src": "t1_6_the_return_of_the_shadow.txt:10050",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "hador-423-pencil",
+   "hand": "annalist",
+   "subject": "date",
+   "text": "The entry bringing Hador's folk into Dorlomin in 423 is not part of the annals as written: it was pencilled in afterwards.",
+   "q": "423 §136 Hador's folk entered Dorlómin. [This annal was a late pencilled addition.]",
+   "src": "t1_11_the_war_of_the_jewels.txt:2030",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "salt-struck-out",
+   "hand": "corrector",
+   "subject": "conception",
+   "text": "One word gone from the sea: salt was struck out of the phrase the salt thankless Sea, and the sea kept only its thanklessness.",
+   "q": "In 'the salt thankless Sea' the word salt was struck out.",
+   "src": "t1_10_morgoths_ring.txt:5009",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "dorthonion-dark-elves",
+   "hand": "corrector",
+   "subject": "name",
+   "text": "Two hands on one sentence: the footnote calling Dorthonion an Ilkorin name was struck out, and Gnomes in the text was altered to Dark-elves.",
+   "q": "The footnote in the QS manuscript 'Ilkorin name' to the sentence 'the great highland that the Gnomes first named Dorthonion' was struck out, and in the text 'Gnomes' was changed to 'Dark-elves'.",
+   "src": "t1_11_the_war_of_the_jewels.txt:7182",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "sleeper-is-idril",
+   "hand": "corrector",
+   "subject": "conception",
+   "text": "A line struck out of the outline before it could be told: that the Sleeper is Idril, and that he does not know it.",
+   "q": "Struck out here: 'The Sleeper is Idril but he does not know.'",
+   "src": "t1_2_the_book_of_lost_tales_part_two.txt:13976",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "osse-neorth",
+   "hand": "corrector",
+   "subject": "name",
+   "text": "Osse was mended to Neorth and then the whole sentence was struck through and written again: the correction did not survive the rewriting.",
+   "q": "Ossë was emended to Neorth; and then the sentence was struck through and rewritten",
+   "src": "t1_2_the_book_of_lost_tales_part_two.txt:17016",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "rathlorion-mallen",
+   "hand": "corrector",
+   "subject": "name",
+   "text": "The river's earlier form was Rathlorion; lorion was pencilled beneath the later Rathloriel and then struck out again in its turn.",
+   "q": "Beneath the -lóriel of Rathlóriel my father wrote in pencil: lórion (Rathlórion was the original form of this river-name), but he struck this out",
+   "src": "t1_11_the_war_of_the_jewels.txt:13024",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "wrath-restrained-struck",
+   "hand": "corrector",
+   "subject": "conception",
+   "text": "A clause struck from the sentence: that his wrath could no longer be restrained. What is left is only that it was kindled.",
+   "q": "Therefore his wrath [struck out: could no longer be restrained, but] was kindled to a flame",
+   "src": "t1_11_the_war_of_the_jewels.txt:2803",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "hithlum-dorlomin",
+   "hand": "corrector",
+   "subject": "place",
+   "text": "Where Morgoth speaks of Hurin's wife and son helpless in Hithlum, Dorlomin was written in above the name later.",
+   "q": "Morgoth restrained his wrath and spoke of Húrin's wife and son now helpless in Hithlum [written above later: Dorlómin]",
+   "src": "t1_11_the_war_of_the_jewels.txt:2975",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "bilbo-wife-struck",
+   "hand": "corrector",
+   "subject": "genealogy",
+   "text": "He starts on a holiday with his wife, and the wife is struck out of the sentence, leaving only the handing over of the ring to Bingo.",
+   "q": "He starts on a holiday [struck out: with his wife] handing over ring to Bingo.",
+   "src": "t1_6_the_return_of_the_shadow.txt:1878",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "children-of-the-valar",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "The Children of the Valar, the Sons of the Valar: an old and long-rooted idea, and it was given up. Everything that hung upon it had to be rebuilt.",
+   "q": "This is an aspect of an important development in the conception of the Powers of Arda, the abandonment of the old and long-rooted idea of 'the Children of the Valar, the Sons of the Valar'.",
+   "src": "t1_10_morgoths_ring.txt:5846",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "children-valar-struck",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "And the conception was not merely left aside: it was struck out of the typescript of the Annals of Aman.",
+   "q": "On the typescript text of AAm the conception of the Children of the Valar was struck out",
+   "src": "t1_10_morgoths_ring.txt:5852",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "noldorin-in-gondolin",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "The idea that the Noldorin tongue stayed in daily use in Gondolin was abandoned by later changes made to this very text.",
+   "q": "By later changes to the text (see notes 8-11) the idea that Noldorin remained in daily use in Gondolin was abandoned.",
+   "src": "t1_11_the_war_of_the_jewels.txt:1212",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "qs-abandoned-1937",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "The continuous Quenta Silmarillion stops in December 1937 at Chapter 17, the beginning of the story of Turin, and was abandoned there.",
+   "q": "With Chapter 17, the beginning of the story of Túrin (V.316-21), my father abandoned, in December 1937, the writing of the continuous Quenta Silmarillion.",
+   "src": "t1_11_the_war_of_the_jewels.txt:8992",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "nienna-death-goddess",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "Nienna was darker at the first: a death-goddess standing close to Mandos, and not the mourner she afterwards became.",
+   "q": "The original conception of Nienna was indeed darker and more fearful, a death-goddess in close association with Mandos, than it afterwards became.",
+   "src": "t1_1_the_book_of_lost_tales_part_one.txt:4062",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "mithril-before-the-name",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "Mithril is here as a thing before it is here as a word: the conception emerged in this passage and the name did not.",
+   "q": "This is where the conception of mithril first emerged, though not yet the name",
+   "src": "t1_6_the_return_of_the_shadow.txt:19666",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "mandos-no-longer-fits",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "Against the Doom of Mandos, a note in his own hand admitting the passage had been overtaken: this no longer fits even the Eldar of Valinor.",
+   "q": "my father afterwards noted on the AAm typescript (p. 127, §120): 'This no longer fits even the Eldar of Valinor.",
+   "src": "t1_10_morgoths_ring.txt:10145",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "maiar-emerging",
+   "hand": "revisor",
+   "subject": "conception",
+   "text": "The lesser beings who entered the world with the Valar were reconceived several times before they emerged as the Maiar.",
+   "q": "the idea of the lesser beings who came into the world with the Valar, which underwent several changes (ultimately emerging into the conception of the Maiar)",
+   "src": "t1_5_the_lost_road_and_other_writings.txt:5118",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "eglor-eglahir-nenning",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "Eglor was struck from the map and two names written in its place, Eglahir and Nenning, and both were left to stand there.",
+   "q": "On the map my father later struck out Eglor and wrote in two names, Eglahir and Nenning, leaving both to stand",
+   "src": "t1_11_the_war_of_the_jewels.txt:4434",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "thargelion-thargelian",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "On the primary map Thargelion was altered to Thargelian, with the a underlined to make the change plain.",
+   "q": "The name Thargelion on the primary map was changed to Thargelian (with the a underlined: p. 331)",
+   "src": "t1_11_the_war_of_the_jewels.txt:12373",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "endor-endon",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "The Earth-middle is marked as a point on the world-diagrams under the name Endor, and that name was afterwards changed to Endon.",
+   "q": "Endor is marked in also on the 'World-diagrams' I and II, and also on the map IV, where it is shown as a point, the 'Earth-middle', and subsequently changed to Endon.",
+   "src": "t1_4_the_shaping_of_middle_earth.txt:11536",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "dagras-dagorlad",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "The Battle Plain was Dagras when it was first written on the First Map, and Dagorlad is a pencilled replacement over it.",
+   "q": "The original name Dagras of the Battle Plain was replaced in pencil by Dagorlad, which appears on the 1943 map",
+   "src": "t1_7_the_treason_of_isengard.txt:13371",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "celebdil-fanuidol",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "The final names of two of the Mountains of Moria, Celebdil and Fanuidol, were pencilled onto the First Map afterwards.",
+   "q": "Afterwards my father pencilled on the First Map the final names Celebdil and Fanuidol (so spelt).",
+   "src": "t1_7_the_treason_of_isengard.txt:13258",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "seven-to-five",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "Seven became Five on the First Map, and Lebennin in the finished book means the Five Streams.",
+   "q": "my father afterwards changed 'Seven' to 'Five' on the First Map",
+   "src": "t1_7_the_treason_of_isengard.txt:13445",
+   "tier": 1,
+   "conf": "[C]"
+  },
+  {
+   "id": "helevorn-erasure",
+   "hand": "chartarius",
+   "subject": "place",
+   "text": "The name of this lake is written over an erasure, and what was scraped away beneath it is read as perhaps Elivorn: a form the texts do not otherwise keep.",
+   "q": "the name being written over an erasure, perhaps of Elivorn",
+   "src": "t1_5_the_lost_road_and_other_writings.txt:11508",
+   "tier": 1,
+   "conf": "[I-H]"
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+/* ===========================================================================
+   flip.css — turning the leaf of a book.  Arda Archive, diegetic book UI.
+   Pairs with flip.js.  Vanilla CSS, no build step, no dependencies.
+
+   Everything the flip creates is prefixed .af-  (arda flip) so it cannot
+   collide with the archive's own classes.  The host markup is untouched:
+
+     .book > .spread > (.gutter, .leaf.l, .leaf.r)   and   .book > .folio
+
+   PROGRESSIVE ENHANCEMENT
+   Without JS the book keeps every .spread in the flow: all leaves readable,
+   all content reachable.  flip.js sets data-flip="on" on .book, which is the
+   only thing that turns the single-spread behaviour on.
+   =========================================================================== */
+
+/* --- tunables ------------------------------------------------------------ */
+.book{
+  --af-dur: 700ms;                                /* read by flip.js         */
+  --af-ease: cubic-bezier(.45,.7,.7,1);         /* leaves fast, then settles */
+  --af-mode: turn;                                /* turn | swap             */
+  --af-perspective: 2200px;
+  --af-ink: 38,24,8;                              /* warm shadow             */
+  --af-glare: 255,250,236;                        /* warm highlight          */
+}
+
+/* --- no-JS fallback: every spread stays visible and readable -------------- */
+.book:not([data-flip="on"]) > .spread + .spread{ margin-top: 2.5rem; }
+
+/* --- JS on: one spread at a time ----------------------------------------- */
+.book[data-flip="on"] > .spread.af-off{ display: none !important; }
+/* the outgoing spread keeps its box (so .book cannot collapse) but yields
+   the pixels to the flip layer, which is showing an exact copy of it */
+.book[data-flip="on"] > .spread.af-veil{ visibility: hidden; }
+
+.book[data-flip="on"]{
+  position: relative;        /* the flip layer is absolutely placed inside */
+  touch-action: pan-y;       /* vertical scroll stays; horizontal is ours  */
+}
+
+/* ===========================================================================
+   THE FLIP LAYER
+   =========================================================================== */
+.af-layer{
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  perspective: var(--af-perspective);
+  perspective-origin: 50% 44%;
+  overflow: hidden;          /* a page cannot escape its covers */
+}
+.af-layer[hidden]{ display: none; }
+
+/* the two leaves that are NOT turning: the one that stays put, and the one
+   being uncovered underneath the turning leaf */
+.af-base{ position: absolute; inset: 0; }
+.af-slot{ position: absolute; overflow: hidden; }
+
+/* clones of real .leaf elements — they keep their own classes, so they paint
+   exactly like the page they copy; we only pin their box */
+.af-clone{
+  position: absolute !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* ===========================================================================
+   THE TURNING LEAF
+   Three hinged panels approximate the bend.  Each panel is a flat plane;
+   the chain rotateY(a) translateX(w) rotateY(b) translateX(w) rotateY(c)
+   walks them along the sheet, so the sheet is a polyline that curls.
+   The gradient band and the cast shadow do the rest of the cylinder.
+   =========================================================================== */
+.af-turn{
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.af-panel{
+  position: absolute;
+  top: 0;
+  transform-style: preserve-3d;
+  will-change: transform;
+  backface-visibility: visible;
+}
+.af-face{
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.af-verso{ transform: rotateY(180deg); }
+
+/* the ink: a pinned clone of the page this face shows.  .af-cb reproduces the
+   original's containing block so the copy wraps its text identically.      */
+.af-ink{ position: absolute; top: 0; height: 100%; }
+.af-cb{ position: absolute; }
+
+/* show-through: the recto's own ink, mirrored, bleeding faintly through the
+   vellum.  This is what tells you the second half of the arc is the BACK. */
+.af-ghost{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: scaleX(-1);
+  opacity: .055;
+  filter: blur(.35px) saturate(.2);
+  pointer-events: none;
+}
+
+/* cylindrical shading.  .af-fx is pinned to the whole sheet so the band is
+   continuous across all three panels; .af-band is 220% wide and slides. */
+.af-fx{ position: absolute; top: 0; height: 100%; overflow: hidden; pointer-events: none; }
+.af-band{ position: absolute; top: 0; left: 0; height: 100%; width: 220%; }
+
+.af-recto .af-band{
+  background-image: linear-gradient(90deg,
+    rgba(var(--af-ink),0)      0%,
+    rgba(var(--af-ink),0)     44%,
+    rgba(var(--af-glare),.14) 47.5%,
+    rgba(var(--af-glare),.52) 51%,
+    rgba(var(--af-glare),.66) 53%,
+    rgba(var(--af-glare),.30) 56%,
+    rgba(var(--af-ink),.04)   60%,
+    rgba(var(--af-ink),.16)   68%,
+    rgba(var(--af-ink),.28)   79%,
+    rgba(var(--af-ink),.40)   90%,
+    rgba(var(--af-ink),.46)  100%);
+}
+.af-verso .af-band{
+  background-image: linear-gradient(90deg,
+    rgba(var(--af-ink),.42)    0%,
+    rgba(var(--af-ink),.32)   12%,
+    rgba(var(--af-ink),.18)   24%,
+    rgba(var(--af-ink),.06)   34%,
+    rgba(var(--af-glare),.14) 40%,
+    rgba(var(--af-glare),.40) 45%,
+    rgba(var(--af-glare),.18) 50%,
+    rgba(var(--af-ink),.14)   57%,
+    rgba(var(--af-ink),.11)   68%,
+    rgba(var(--af-ink),.05)   82%,
+    rgba(var(--af-ink),0)    100%);
+}
+
+/* uniform dim — the underside of a page is in its own shadow until it lands */
+.af-dim{
+  position: absolute; inset: 0;
+  background: rgb(56,34,10);       /* warm shade, never a grey wash */
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* paper thickness: a lit edge on the free side of the outermost panel */
+.af-edge{
+  position: absolute; top: 0; bottom: 0; width: 1.5px;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(var(--af-glare),0), rgba(var(--af-glare),.45));
+}
+.af-edge.af-edge-l{ left: 0; transform: scaleX(-1); transform-origin: 0 50%; }
+.af-edge.af-edge-r{ right: 0; }
+
+/* ===========================================================================
+   CAST SHADOW — sweeps off the turning leaf onto the page beneath
+   =========================================================================== */
+.af-cast{
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.af-cast-from{                       /* onto the page the leaf lifts off      */
+  background: linear-gradient(var(--af-cast-dir,90deg),
+    rgba(var(--af-ink),.42) 0%, rgba(var(--af-ink),.24) 34%, rgba(var(--af-ink),0) 88%);
+}
+.af-cast-to{                         /* onto the page the leaf comes down over */
+  background: linear-gradient(var(--af-cast-dir,90deg),
+    rgba(var(--af-ink),.46) 0%, rgba(var(--af-ink),.22) 40%, rgba(var(--af-ink),0) 92%);
+}
+
+/* ===========================================================================
+   CONTROLS + LIVE REGION
+   Keyboard users get real buttons; they are clipped until focused so the
+   archive's own design is untouched.  No focus trap: they are two ordinary
+   buttons in the tab order, nothing else changes.
+   =========================================================================== */
+.af-sr{
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.af-nav{
+  position: absolute;
+  top: 50%;
+  z-index: 60;
+  width: 1px; height: 1px;
+  padding: 0; margin: 0; border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  opacity: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+.af-nav.af-prev{ left: .5rem; }
+.af-nav.af-next{ right: .5rem; }
+.af-nav:focus-visible,
+.af-nav:focus{
+  width: auto; height: auto;
+  clip-path: none;
+  opacity: 1;
+  transform: translateY(-50%);
+  padding: .5em .9em;
+  background: rgba(28,18,6,.92);
+  color: #f3e6c8;
+  border-radius: .25em;
+  outline: 2px solid #f3e6c8;
+  outline-offset: 2px;
+}
+
+/* ===========================================================================
+   PHONE — the two leaves stack; a "turn" becomes a content swap.
+   flip.js reads --af-mode, so this breakpoint is the single source of truth.
+   =========================================================================== */
+@media (max-width: 640px){
+  .book{ --af-mode: swap; }
+  .af-layer{ display: none !important; }
+}
+
+/* ===========================================================================
+   REDUCED MOTION — no arc, no transition, no layer.  Content swaps instantly.
+   Belt and braces: flip.js also checks matchMedia and never builds the layer,
+   but if it ever did, nothing here would move.
+   =========================================================================== */
+@media (prefers-reduced-motion: reduce){
+  .book{ --af-mode: swap; }
+  .af-layer{ display: none !important; }
+  .af-layer *,
+  .book[data-flip="on"] > .spread,
+  .book[data-flip="on"] > .spread *{
+    animation: none !important;
+    transition: none !important;
+  }
+}

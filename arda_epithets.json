@@ -1,0 +1,2028 @@
+[
+ {
+  "id": "aragorn",
+  "n": "Aragorn II Elessar",
+  "names": [
+   {
+    "e": "Strider",
+    "by": "Barliman Butterbur and the folk of Bree",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "What his right name is I’ve never heard: but he’s known round here as Strider.",
+    "src": "t1_c_the_lord_of_the_rings.txt:7550",
+    "c": "LotR I.9"
+   },
+   {
+    "e": "Strider",
+    "by": "himself, to the hobbits at The Prancing Pony",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘I am called Strider,’ he said in a low voice.",
+    "src": "t1_c_the_lord_of_the_rings.txt:7563",
+    "c": "LotR I.9"
+   },
+   {
+    "e": "Stick-at-naught Strider",
+    "by": "Bill Ferny of Bree",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "That’s Stick-at-naught Strider, that is!",
+    "src": "t1_c_the_lord_of_the_rings.txt:8618",
+    "c": "LotR I.11"
+   },
+   {
+    "e": "Longshanks",
+    "by": "Bill Ferny of Bree",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘Morning, Longshanks!’",
+    "src": "t1_c_the_lord_of_the_rings.txt:8615",
+    "c": "LotR I.11"
+   },
+   {
+    "e": "Dúnadan",
+    "by": "Glorfindel of Rivendell",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "When he saw Strider, he dismounted and ran to meet him calling out: Ai na vedui Dúnadan!",
+    "src": "t1_c_the_lord_of_the_rings.txt:9896",
+    "c": "LotR I.12"
+   },
+   {
+    "e": "the Dúnadan",
+    "by": "Bilbo Baggins, at Rivendell",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "‘Ah, there you are at last, Dúnadan!’",
+    "src": "t1_c_the_lord_of_the_rings.txt:10793",
+    "c": "LotR II.1"
+   },
+   {
+    "e": "Elessar, the Elfstone",
+    "by": "Galadriel, giving him the green stone",
+    "tongue": "Quenya",
+    "mean": "Elfstone",
+    "q": "In this hour take the name that was foretold for you, Elessar, the Elfstone of the House of Elendil!’",
+    "src": "t1_c_the_lord_of_the_rings.txt:17166",
+    "c": "LotR II.8"
+   },
+   {
+    "e": "Wingfoot",
+    "by": "Éomer, Third Marshal of the Mark",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘Strider is too poor a name, son of Arathorn,’ he said. ‘Wingfoot I name you.",
+    "src": "t1_c_the_lord_of_the_rings.txt:19676",
+    "c": "LotR III.2"
+   },
+   {
+    "e": "Envinyatar",
+    "by": "himself, in the Houses of Healing",
+    "tongue": "Quenya",
+    "mean": "the Renewer",
+    "q": "And Aragorn hearing him, turned and said: ‘Verily, for in the high tongue of old I am Elessar, the Elfstone, and Envinyatar, the Renewer’: and he lifted from his breast the green stone that lay there.",
+    "src": "t1_c_the_lord_of_the_rings.txt:38667",
+    "c": "LotR V.8"
+   },
+   {
+    "e": "Telcontar",
+    "by": "himself, taking it as the name of his house",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "In the high tongue it will not sound so ill, and Telcontar I will be and all the heirs of my body.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:38670",
+    "c": "LotR V.8"
+   },
+   {
+    "e": "Thorongil",
+    "by": "the Men of Gondor, in the service of Ecthelion II",
+    "tongue": "Sindarin",
+    "mean": "Eagle of the Star",
+    "q": "Thorongil men called him in Gondor, the Eagle of the Star, for he was swift and keen-eyed, and wore a silver star upon his cloak; but no one knew his true name nor in what land he was born.",
+    "src": "t1_c_the_lord_of_the_rings.txt:47280",
+    "c": "LotR App A"
+   },
+   {
+    "e": "Estel",
+    "by": "the household of Elrond at Rivendell",
+    "tongue": "Sindarin",
+    "mean": "Hope",
+    "q": "But he was called Estel, that is ‘‘Hope’’, and his true name and lineage were kept secret at the bidding of Elrond; for the Wise then knew that the Enemy was seeking to discover the Heir of Isildur, if any remained upon earth.",
+    "src": "t1_c_the_lord_of_the_rings.txt:47403",
+    "c": "LotR App A"
+   },
+   {
+    "e": "Isildur's Heir",
+    "by": "himself, to Arwen at their first meeting in the woods of Rivendell",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘ ‘‘Estel I was called,’’ he said; ‘‘but I am Aragorn, Arathorn’s son, Isildur’s Heir, Lord of the Dúnedain’’",
+    "src": "t1_c_the_lord_of_the_rings.txt:47443",
+    "c": "LotR App A",
+    "note": "App A: 'there Lúthien walked before his eyes IN RIVENDELL' — their first meeting, Aragorn twenty. The meeting on Cerin Amroth in Lórien is a different scene twenty-nine years later."
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "gandalf",
+  "n": "Gandalf",
+  "names": [
+   {
+    "e": "Gandalf",
+    "by": "Men of the North",
+    "tongue": "Common Speech",
+    "mean": "the Elf of the Wand",
+    "q": "Mostly he journeyed unwearyingly on foot, leaning on a staff; and so he was called among Men of the North Gandalf, ‘the Elf of the Wand’.",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12265",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Mithrandir",
+    "by": "the Elves; sung by the Elves of Lórien in lament",
+    "tongue": "Sindarin",
+    "mean": "the Grey Pilgrim / Grey Wanderer",
+    "q": "Mithrandir, Mithrandir sang the Elves, O Pilgrim Grey!",
+    "src": "t1_c_the_lord_of_the_rings.txt:16426",
+    "c": "LotR II.7"
+   },
+   {
+    "e": "Olórin",
+    "by": "his name in Valinor, in his youth in the West",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "Wisest of the Maiar was Olórin.",
+    "src": "t1_a_the_silmarillion.txt:2458",
+    "c": "Valaquenta"
+   },
+   {
+    "e": "Olórin",
+    "by": "himself, to Faramir in Ithilien",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "Mithrandir among the Elves, Tharkûn to the Dwarves; Olórin I was in my youth in the West that is forgotten, in the South Incánus, in the North Gandalf; to the East I go not.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:30146",
+    "c": "LotR IV.5"
+   },
+   {
+    "e": "Tharkûn",
+    "by": "the Dwarves",
+    "tongue": "Khuzdul",
+    "mean": "said to mean ‘Staff-man’",
+    "q": "His own statement (or a version of it, and in any case not fully understood) is preserved that his name in youth was Olórin in the West, but he was called Mithrandir by the Elves (Grey Wanderer), Tharkûn by the Dwarves (said to mean ‘Staff-man’), Incánus in the South, and Gandalf in the North, but ‘to the East I go not’.",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12496",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Incánus",
+    "by": "in the South",
+    "tongue": "an ‘alien’ tongue, neither Westron nor Elvish",
+    "mean": "",
+    "q": "The name Incánus is apparently ‘alien’, that is neither Westron, nor Elvish (Sindarin or Quenya), nor explicable by the surviving tongues of Northern Men.",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12536",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Greyhame",
+    "by": "Éomer, and men of the Mark",
+    "tongue": "Rohirric (rendered in Old English)",
+    "mean": "",
+    "q": "‘Gandalf Greyhame is known in the Mark; but his name, I warn you, is no longer a password to the king’s favour.",
+    "src": "t1_c_the_lord_of_the_rings.txt:19623",
+    "c": "LotR III.2"
+   },
+   {
+    "e": "Stormcrow",
+    "by": "Théoden King of Rohan",
+    "tongue": "Rohirric",
+    "mean": "",
+    "q": "Why should I welcome you, Gandalf Stormcrow?",
+    "src": "t1_c_the_lord_of_the_rings.txt:23147",
+    "c": "LotR III.6"
+   },
+   {
+    "e": "Láthspell",
+    "by": "Gríma Wormtongue, in Meduseld",
+    "tongue": "Rohirric (rendered in Old English)",
+    "mean": "Ill-news",
+    "q": "Why indeed should we welcome you, Master Stormcrow? Láthspell I name you, Ill-news; and ill news is an ill guest they say.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:23157",
+    "c": "LotR III.6"
+   },
+   {
+    "e": "the Grey Pilgrim",
+    "by": "Faramir and the house of Denethor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "It was these records that brought the Grey Pilgrim to us.",
+    "src": "t1_c_the_lord_of_the_rings.txt:30141",
+    "c": "LotR IV.5"
+   },
+   {
+    "e": "the Grey Wanderer",
+    "by": "the men of Minas Tirith",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘The Grey Wanderer or no one, it would seem,’ said Pippin",
+    "src": "t1_c_the_lord_of_the_rings.txt:37000",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "the White Rider",
+    "by": "Aragorn, after Gandalf's return",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But we have One, mightier than they: the White Rider.",
+    "src": "t1_c_the_lord_of_the_rings.txt:22609",
+    "c": "LotR III.5"
+   },
+   {
+    "e": "Gandalf the White",
+    "by": "himself, in Fangorn",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "I am Gandalf, Gandalf the White, but Black is mightier still.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:22570",
+    "c": "LotR III.5"
+   },
+   {
+    "e": "Mithrandir, ‘the Grey Pilgrim’",
+    "by": "the Eldar, in the Tale of Years",
+    "tongue": "Sindarin",
+    "mean": "the Grey Pilgrim",
+    "q": "called by the Eldar Curunír, ‘the Man of Skill’, and Mithrandir, ‘the Grey Pilgrim’, but by Men in the North Saruman and Gandalf.",
+    "src": "t1_c_the_lord_of_the_rings.txt:48716",
+    "c": "LotR App B"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "sauron",
+  "n": "Sauron",
+  "names": [
+   {
+    "e": "Sauron",
+    "by": "the Eldar",
+    "tongue": "Quenya",
+    "mean": "The Abhorred",
+    "q": "Sauron ‘The Abhorred’ (in Sindarin called Gorthaur); greatest of the servants of Melkor, in his origin a Maia of Aulë.",
+    "src": "t1_a_the_silmarillion.txt:15445",
+    "c": "Silm Index"
+   },
+   {
+    "e": "Gorthaur",
+    "by": "the Sindar in Beleriand",
+    "tongue": "Sindarin",
+    "mean": "the Cruel",
+    "q": "Among those of his servants that have names the greatest was that spirit whom the Eldar called Sauron, or Gorthaur the Cruel.",
+    "src": "t1_a_the_silmarillion.txt:2505",
+    "c": "Valaquenta"
+   },
+   {
+    "e": "Gorthu",
+    "by": "the Gnomes (Noldor), in the earlier legends",
+    "tongue": "Noldorin",
+    "mean": "",
+    "q": "But others say that this is the black shadow of Sauron, whom the Gnomes named Gorthu, who served Morgoth even in Valinor and came with him, and was the greatest and most evil of his underlings",
+    "src": "t1_5_the_lost_road_and_other_writings.txt:14319",
+    "c": "HoME V The Lost Road"
+   },
+   {
+    "e": "Thû",
+    "by": "the Gnomes (Noldor), in the earlier Quenta",
+    "tongue": "Gnomish (Noldorin)",
+    "mean": "",
+    "q": "And they came at last even to Mordor the Black Country, where Sauron, that is in the Gnomish tongue named Thu, had rebuilt his fortresses.",
+    "src": "t1_5_the_lost_road_and_other_writings.txt:1223",
+    "c": "HoME V The Lost Road"
+   },
+   {
+    "e": "Annatar",
+    "by": "himself, among the Elves of Eregion",
+    "tongue": "Quenya",
+    "mean": "the Lord of Gifts",
+    "q": "for Sauron took to himself the name of Annatar, the Lord of Gifts, and they had at first much profit from his friendship.",
+    "src": "t1_a_the_silmarillion.txt:12970",
+    "c": "Silm, Of the Rings of Power and the Third Age"
+   },
+   {
+    "e": "Zigûr",
+    "by": "the Númenóreans",
+    "tongue": "Adûnaic",
+    "mean": "wizard",
+    "q": "‘Woe to this time and the fell counsels of Zigūr!",
+    "src": "t1_9_sauron_defeated.txt:8519",
+    "c": "HoME IX Sauron Defeated"
+   },
+   {
+    "e": "the Necromancer",
+    "by": "Gandalf and the folk of Wilderland",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "How he got there I don’t know, but I found him a prisoner in the dungeons of the Necromancer.”",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:840",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "the Dark Lord",
+    "by": "Gandalf, to Frodo",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘But last night I told you of Sauron the Great, the Dark Lord.",
+    "src": "t1_c_the_lord_of_the_rings.txt:2820",
+    "c": "LotR I.2"
+   },
+   {
+    "e": "the Dark Power",
+    "by": "Gandalf, of the master of the Rings",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "And if he often uses the Ring to make himself invisible, he fades: he becomes in the end invisible permanently, and walks in the twilight under the eye of the Dark Power that rules the Rings.",
+    "src": "t1_c_the_lord_of_the_rings.txt:2637",
+    "c": "LotR I.2"
+   },
+   {
+    "e": "the Eye",
+    "by": "Frodo, seeing it in the Mirror and on Amon Hen",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Then the Eye began to rove, searching this way and that; and Frodo knew with certainty and horror that among the many things that it sought he himself was one.",
+    "src": "t1_c_the_lord_of_the_rings.txt:16670",
+    "c": "LotR II.7"
+   },
+   {
+    "e": "Lord of the Earth",
+    "by": "himself, in Númenor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "He brooked no freedom nor any rivalry, and he named himself Lord of the Earth.",
+    "src": "t1_a_the_silmarillion.txt:13069",
+    "c": "Silm, Of the Rings of Power and the Third Age"
+   },
+   {
+    "e": "the Base Master of Treachery",
+    "by": "Gandalf, before the Black Gate",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "And if indeed we rated this prisoner so high, what surety have we that Sauron, the Base Master of Treachery, will keep his part?",
+    "src": "t1_c_the_lord_of_the_rings.txt:39923",
+    "c": "LotR V.10"
+   },
+   {
+    "e": "Sauron the Deceiver",
+    "by": "Amandil of Númenor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But it is for mercy upon Men and their deliverance from Sauron the Deceiver that I would plead, since some at least have remained faithful.",
+    "src": "t1_a_the_silmarillion.txt:12576",
+    "c": "Akallabêth"
+   },
+   {
+    "e": "Sauron the Great",
+    "by": "the Mouth of Sauron, and his own heralds",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "The Lord Sauron the Great, so he said, wished for our friendship.",
+    "src": "t1_c_the_lord_of_the_rings.txt:11173",
+    "c": "LotR II.2"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "morgoth",
+  "n": "Melkor / Morgoth Bauglir",
+  "names": [
+   {
+    "e": "Melkor",
+    "by": "his own name among the Valar",
+    "tongue": "Quenya",
+    "mean": "He who arises in Might",
+    "q": "Last of all is set the name of Melkor, He who arises in Might.",
+    "src": "t1_a_the_silmarillion.txt:2474",
+    "c": "Valaquenta"
+   },
+   {
+    "e": "Morgoth",
+    "by": "Fëanor, cursing him before Manwë",
+    "tongue": "Sindarin",
+    "mean": "the Black Foe of the World",
+    "q": "Then Fëanor rose, and lifting up his hand before Manwë he cursed Melkor, naming him Morgoth, the Black Foe of the World; and by that name only was he known to the Eldar ever after.",
+    "src": "t1_a_the_silmarillion.txt:4388",
+    "c": "Silm 9"
+   },
+   {
+    "e": "Morgoth",
+    "by": "the Noldor, refusing to utter his true name",
+    "tongue": "Sindarin",
+    "mean": "the Dark Enemy of the World",
+    "q": "But that name he has forfeited; and the Noldor, who among the Elves suffered most from his malice, will not utter it, and they name him Morgoth, the Dark Enemy of the World.",
+    "src": "t1_a_the_silmarillion.txt:2477",
+    "c": "Valaquenta"
+   },
+   {
+    "e": "Bauglir",
+    "by": "the Noldor",
+    "tongue": "Sindarin",
+    "mean": "the Constrainer",
+    "q": "The Great Battle. Bauglir A name of Morgoth: ‘the Constrainer’.",
+    "src": "t1_a_the_silmarillion.txt:14108",
+    "c": "Silm Index"
+   },
+   {
+    "e": "Morgoth Bauglir",
+    "by": "the loremasters of the Eldar",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "Yet the lies that Melkor, the mighty and accursed, Morgoth Bauglir, the Power of Terror and of Hate, sowed in the hearts of Elves and Men are a seed that does not die and cannot be destroyed",
+    "src": "t1_a_the_silmarillion.txt:11854",
+    "c": "Silm 24"
+   },
+   {
+    "e": "Belegûr",
+    "by": "the Sindarin form of Melkor, never used",
+    "tongue": "Sindarin",
+    "mean": "he that arises in might",
+    "q": "Melkor they called Morgoth ‘the Black Enemy’, refusing to use the Sindarin form of Melkor: Belegûr ‘he that arises in might’, save (but rarely) in a deliberately altered form Belegurth ‘Great Death’.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11890",
+    "c": "HoME XII The Peoples of Middle-earth"
+   },
+   {
+    "e": "Belegurth",
+    "by": "the Sindar, in deliberate alteration",
+    "tongue": "Sindarin",
+    "mean": "Great Death",
+    "q": "The meaning of Melkor was ‘He who arises in Might’; the Sindarin form was Belegûr, but it was never used, save in a deliberately altered form Belegurth ‘Great Death’.",
+    "src": "t1_a_the_silmarillion.txt:15088",
+    "c": "Silm Index"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "turin",
+  "n": "Túrin son of Húrin",
+  "names": [
+   {
+    "e": "Neithan",
+    "by": "himself, among the outlaws of Dor-Cúarthol",
+    "tongue": "Sindarin",
+    "mean": "the Wronged",
+    "q": "‘Neithan, the Wronged, I call myself,’ said Túrin, and Neithan he was afterwards called by the outlaws",
+    "src": "t1_f_the_children_of_hurin.txt:1997",
+    "c": "The Children of Húrin"
+   },
+   {
+    "e": "Wildman of the Woods",
+    "by": "himself, to the Men of Brethil",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "I am Wildman of the Woods.’",
+    "src": "t1_f_the_children_of_hurin.txt:3978",
+    "c": "The Children of Húrin"
+   },
+   {
+    "e": "Gorthol",
+    "by": "himself, as one of the Two Captains",
+    "tongue": "Sindarin",
+    "mean": "the Dread Helm",
+    "q": "Dor-Cúarthol, the Land of Bow and Helm, was in that time named all the region between Teiglin and the west march of Doriath; and Túrin named himself anew, Gorthol, the Dread Helm, and his heart was high again.",
+    "src": "t1_a_the_silmarillion.txt:9837",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Agarwaen son of Úmarth",
+    "by": "himself, entering Nargothrond",
+    "tongue": "Sindarin",
+    "mean": "the Bloodstained, son of Ill-fate",
+    "q": "But when Gwindor would tell his name, Túrin checked him, saying: ‘I am Agarwaen the son of Úmarth (which is the Bloodstained, son of Ill-fate), a hunter in the woods’",
+    "src": "t1_a_the_silmarillion.txt:10020",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Adanedhel",
+    "by": "the Elves of Nargothrond",
+    "tongue": "Sindarin",
+    "mean": "the Elf-Man",
+    "q": "His speech and bearing were that of the ancient kingdom of Doriath, and even among the Elves he might be taken for one from the great houses of the Noldor; therefore many called him Adanedhel, the Elf-Man.",
+    "src": "t1_a_the_silmarillion.txt:10031",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Mormegil",
+    "by": "the Elves of Nargothrond",
+    "tongue": "Sindarin",
+    "mean": "the Black Sword",
+    "q": "So great was his prowess and skill in warfare on the confines of the Guarded Plain that he himself became known as Mormegil, the Black Sword",
+    "src": "t1_a_the_silmarillion.txt:10036",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Thurin",
+    "by": "Finduilas daughter of Orodreth",
+    "tongue": "Sindarin",
+    "mean": "the Secret",
+    "q": "And I do not think that Agarwaen is your name, nor is it fit for you, Adanedhel. I call you Thurin, the Secret.’",
+    "src": "t1_f_the_children_of_hurin.txt:3377",
+    "c": "The Children of Húrin"
+   },
+   {
+    "e": "Turambar",
+    "by": "himself, among the woodmen of Brethil",
+    "tongue": "Quenya",
+    "mean": "Master of Doom",
+    "q": "He took therefore a new name, Turambar, which in the High-elven speech signified Master of Doom; and he besought the woodmen to forget that he was a stranger among them or ever bore any other name.",
+    "src": "t1_a_the_silmarillion.txt:10314",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Turambar turún' ambartanen",
+    "by": "Niënor Níniel, crying it over him at Cabed-en-Aras",
+    "tongue": "Quenya",
+    "mean": "master of doom by doom mastered",
+    "q": "A Túrin Turambar turún’ambartanen: master of doom by doom mastered!",
+    "src": "t1_f_the_children_of_hurin.txt:5056",
+    "c": "The Children of Húrin",
+    "note": "NOT an epitaph. All three corpus occurrences are Niënor's cry. What was graven on the stone is different: 'TÚRIN TURAMBAR DAGNIR GLAURUNGA', with 'NIËNOR NÍNIEL' beneath. arda_oaths already attributed this correctly, so the two files disagreed."
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "galadriel",
+  "n": "Galadriel",
+  "names": [
+   {
+    "e": "Nerwen",
+    "by": "her mother Eärwen (mother-name)",
+    "tongue": "Quenya",
+    "mean": "man-maiden",
+    "q": "Her mother-name was Nerwen (‘man-maiden’), 1 and she grew to be tall beyond the measure even of the women of the Noldor",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7232",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Artanis",
+    "by": "her father Finarfin (father-name)",
+    "tongue": "Quenya",
+    "mean": "noble woman",
+    "q": "Later in this essay it is said that though called Nerwen by her mother and Artanis (‘noble woman’) by her father, the name she chose to be her Sindarin name was Galadriel",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7289",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Alatáriel / Altáriel",
+    "by": "Celeborn (Teleporno) her lover, in Aman",
+    "tongue": "Telerin (Quenya Altáriel)",
+    "mean": "",
+    "q": "Thus the name Alatáriel, which, according to the late version of the story of their relationship (p. 298), was given to Galadriel by Celeborn in Aman, was an epessë",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8476",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Galadriel",
+    "by": "her chosen Sindarin name",
+    "tongue": "Sindarin",
+    "mean": "lady of the glittering coronal, referring to the sheen of her golden hair",
+    "q": "The name Galadriel is in this form Sindarin. Its original meaning was ‘lady of the glittering coronal’, referring to the brilliant sheen of her golden hair, which in her youth she wore in three long braids, the middle one being wound about her head.",
+    "src": "t2_i_the_nature_of_middle_earth.txt:13451",
+    "c": "The Nature of Middle-earth"
+   },
+   {
+    "e": "the Lady of the Galadhrim",
+    "by": "Haldir and the Elves of Lórien",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘You feel the power of the Lady of the Galadhrim,’ he said.",
+    "src": "t1_c_the_lord_of_the_rings.txt:16073",
+    "c": "LotR II.6"
+   },
+   {
+    "e": "the Lady of Lothlórien",
+    "by": "Aragorn, giving the lembas",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘Keep these well,’ he said, ‘for they come from the Golden Wood and the Lady of Lothlórien gave them to me.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:23030",
+    "c": "LotR III.6"
+   },
+   {
+    "e": "the Sorceress of the Golden Wood",
+    "by": "Éomer's report, quoted by Gríma Wormtongue",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "that you are in league with the Sorceress of the Golden Wood?’",
+    "src": "t1_c_the_lord_of_the_rings.txt:23189",
+    "c": "LotR III.6"
+   },
+   {
+    "e": "the White Lady / Lady of the Golden Wood",
+    "by": "index of Unfinished Tales",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Called Lady of the Noldor, Lady of the Golden Wood, the White Lady; see also Al(a)táriel, Artanis, Nerwen.",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13824",
+    "c": "Unfinished Tales"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "frodo",
+  "n": "Frodo Baggins",
+  "names": [
+   {
+    "e": "Mr. Underhill",
+    "by": "his travelling alias, given by Gandalf",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "When you go, go as Mr. Underhill.",
+    "src": "t1_c_the_lord_of_the_rings.txt:3369",
+    "c": "LotR I.2"
+   },
+   {
+    "e": "Elf-friend",
+    "by": "Gildor Inglorion of the House of Finrod",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "I name you Elf-friend; and may the stars shine upon the end of your road!",
+    "src": "t1_c_the_lord_of_the_rings.txt:4356",
+    "c": "LotR I.3"
+   },
+   {
+    "e": "the Ring-bearer",
+    "by": "Elrond, at the Council",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Do you still hold to your word, Frodo, that you will be the Ring-bearer?’",
+    "src": "t1_c_the_lord_of_the_rings.txt:12724",
+    "c": "LotR II.3"
+   },
+   {
+    "e": "Nine-fingered Frodo",
+    "by": "himself, imagining the tale on Mount Doom's slopes",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Do you think they’ll say: Now comes the story of Nine-fingered Frodo and the Ring of Doom?",
+    "src": "t1_c_the_lord_of_the_rings.txt:42487",
+    "c": "LotR VI.4"
+   },
+   {
+    "e": "Frodo of the Nine Fingers",
+    "by": "the minstrel of Gondor at the Field of Cormallen",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "For I will sing to you of Frodo of the Nine Fingers and the Ring of Doom.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:42651",
+    "c": "LotR VI.4"
+   },
+   {
+    "e": "Iorhael",
+    "by": "King Elessar, in the Sindarin of the King's Letter",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "But Frodo is Iorhael, and Rose is Meril, and Merry is Gelir, and Pippin is Cordof, and Goldilocks is Glorfinniel, and Hamfast is Baravorn, and Daisy is Eirien.",
+    "src": "t1_9_sauron_defeated.txt:4509",
+    "c": "HoME IX Sauron Defeated"
+   },
+   {
+    "e": "Maura",
+    "by": "his true Hobbit (Westron) name",
+    "tongue": "Westron",
+    "mean": "",
+    "q": "Frodo On the other hand the H. name was Maura.33 This was not a common name in the Shire, but I think it probably once had a meaning, even if that had long been forgotten.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:2026",
+    "c": "HoME XII The Peoples of Middle-earth"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "elrond",
+  "n": "Elrond",
+  "names": [
+   {
+    "e": "Elrond Half-elven",
+    "by": "the loremasters of the Eldar",
+    "tongue": "Common Speech",
+    "mean": "translation of Sindarin Peredhel",
+    "q": "In Middle-earth dwelt also Gil-galad the High King, and with him was Elrond Half-elven, who chose, as was granted to him, to be numbered among the Eldar; but Elros his brother chose to abide with Men.",
+    "src": "t1_a_the_silmarillion.txt:11844",
+    "c": "Silm 24"
+   },
+   {
+    "e": "Peredhel",
+    "by": "the Sindar",
+    "tongue": "Sindarin",
+    "mean": "Half-elven",
+    "q": "Half-elven Translation of Sindarin Peredhel, plural Peredhil, applied to Elrond and Elros, and to Eärendil.",
+    "src": "t1_a_the_silmarillion.txt:14801",
+    "c": "Silm Index"
+   },
+   {
+    "e": "Master Elrond",
+    "by": "the Council at Rivendell",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘Give me leave, Master Elrond,’ said he, ‘first to say more of Gondor, for verily from the land of Gondor I am come.",
+    "src": "t1_c_the_lord_of_the_rings.txt:11364",
+    "c": "LotR II.2"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "gollum",
+  "n": "Sméagol / Gollum",
+  "names": [
+   {
+    "e": "Sméagol",
+    "by": "his own kin of the Gladden Fields",
+    "tongue": "Westron (rendered)",
+    "mean": "",
+    "q": "The most inquisitive and curious-minded of that family was called Sméagol.",
+    "src": "t1_c_the_lord_of_the_rings.txt:2905",
+    "c": "LotR I.2"
+   },
+   {
+    "e": "Gollum",
+    "by": "the folk of Wilderland, from the noise he made",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Deep down here by the dark water lived old Gollum, a small slimy creature.",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:2093",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Slinker and Stinker",
+    "by": "Samwise Gamgee, in his own mind",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Sam’s guess was that the Sméagol and Gollum halves (or what in his own mind he called Slinker and Stinker) had made a truce and a temporary alliance",
+    "src": "t1_c_the_lord_of_the_rings.txt:28728",
+    "c": "LotR IV.3"
+   },
+   {
+    "e": "Slinker and Stinker",
+    "by": "Samwise, aloud to Frodo",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘Yes, Slinker and Stinker, as I’ve said before,’ said Sam.",
+    "src": "t1_c_the_lord_of_the_rings.txt:32096",
+    "c": "LotR IV.8"
+   },
+   {
+    "e": "Her Sneak",
+    "by": "Shagrat of Cirith Ungol, of Shelob's creature",
+    "tongue": "Orkish/Common Speech",
+    "mean": "",
+    "q": "My lads saw her and her Sneak.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:33165",
+    "c": "LotR IV.10"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "feanor",
+  "n": "Fëanor",
+  "names": [
+   {
+    "e": "Curufinwë",
+    "by": "his father Finwë (father-name)",
+    "tongue": "Quenya",
+    "mean": "curu ‘skill’",
+    "q": "Curufinwë was his name, but by his mother he was called Fëanor, Spirit of Fire; and thus he is remembered in all the tales of the Noldor.",
+    "src": "t1_a_the_silmarillion.txt:3719",
+    "c": "Silm 6"
+   },
+   {
+    "e": "Fëanáro / Fëanor",
+    "by": "his mother Míriel Serindë (mother-name)",
+    "tongue": "Quenya (Sindarin form Fëanor)",
+    "mean": "Spirit of Fire",
+    "q": "His name was Curufinwë (curu ‘skill’), and he gave this name to his fifth son, Curufin; but he was himself known always by his mother’s name for him, Fëanáro ‘Spirit of Fire’, which was given the Sindarin form Fëanor.",
+    "src": "t1_a_the_silmarillion.txt:14602",
+    "c": "Silm Index"
+   },
+   {
+    "e": "the Spirit of Fire",
+    "by": "Fingolfin, before Finwë",
+    "tongue": "Quenya (rendered)",
+    "mean": "",
+    "q": "‘King and father, wilt thou not restrain the pride of our brother, Curufinwë, who is called the Spirit of Fire, all too truly?",
+    "src": "t1_a_the_silmarillion.txt:4011",
+    "c": "Silm 7"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "finrod",
+  "n": "Finrod Felagund",
+  "names": [
+   {
+    "e": "Felagund",
+    "by": "the Dwarves who delved Nargothrond with him",
+    "tongue": "Khuzdul",
+    "mean": "Hewer of Caves",
+    "q": "There in Nargothrond Finrod made his home with many of his people, and he was named in the tongue of the Dwarves Felagund, Hewer of Caves; and that name he bore thereafter until his end.",
+    "src": "t1_a_the_silmarillion.txt:5983",
+    "c": "Silm 13"
+   },
+   {
+    "e": "Felagund, Lord of Caves",
+    "by": "the Noldor",
+    "tongue": "Khuzdul (rendered)",
+    "mean": "Lord of Caves",
+    "q": "The sons of Finarfin were Finrod the faithful (who was afterwards named Felagund, Lord of Caves), Orodreth, Angrod, and Aegnor",
+    "src": "t1_a_the_silmarillion.txt:3635",
+    "c": "Silm 5"
+   },
+   {
+    "e": "Nóm",
+    "by": "the Men of Bëor's house, who first met him",
+    "tongue": "the tongue of the folk of Bëor",
+    "mean": "Wisdom",
+    "q": "Thus it was that Men called King Felagund, whom they first met of all the Eldar, Nóm, that is Wisdom, in the language of that people, and after him they named his folk Nómin, the Wise.",
+    "src": "t1_a_the_silmarillion.txt:7068",
+    "c": "Silm 17"
+   },
+   {
+    "e": "the Faithful / the Friend of Men",
+    "by": "the Eldar",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Finrod The eldest son of Finarfin, called ‘the Faithful’ and ‘the Friend of Men’.",
+    "src": "t1_a_the_silmarillion.txt:14634",
+    "c": "Silm Index"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "earendil",
+  "n": "Eärendil",
+  "names": [
+   {
+    "e": "Eärendil the Mariner",
+    "by": "the loremasters of the Eldar",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Now fair and marvellous was that vessel made, and it was filled with a wavering flame, pure and bright; and Eärendil the Mariner sat at the helm, glistening with dust of elven-gems, and the Silmaril was bound upon his brow.",
+    "src": "t1_a_the_silmarillion.txt:11668",
+    "c": "Silm 24"
+   },
+   {
+    "e": "Eärendil the Blessed",
+    "by": "Elves and Men alike",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Therefore by Elves and Men he is called Eärendil the Blessed, for he achieved his quest after long labours and many perils",
+    "src": "t1_a_the_silmarillion.txt:11897",
+    "c": "Akallabêth"
+   },
+   {
+    "e": "Gil-Estel",
+    "by": "the people of Middle-earth, beholding his star",
+    "tongue": "Sindarin",
+    "mean": "the Star of High Hope",
+    "q": "the people of Middle-earth beheld it from afar and wondered, and they took it for a sign, and called it Gil-Estel, the Star of High Hope.",
+    "src": "t1_a_the_silmarillion.txt:11688",
+    "c": "Silm 24"
+   },
+   {
+    "e": "Azrubêl",
+    "by": "the Númenóreans",
+    "tongue": "Adûnaic",
+    "mean": "",
+    "q": "The corresponding Adunaic name, apparently meaning just the same, is Azrubēl.",
+    "src": "t1_9_sauron_defeated.txt:8166",
+    "c": "HoME IX Sauron Defeated"
+   },
+   {
+    "e": "Ardamírë",
+    "by": "his mother Idril (mother-name)",
+    "tongue": "Quenya",
+    "mean": "jewel of the world",
+    "q": "Eärendil had this name as father-name, and as mother-name he was called Ardamírë. In this case both names were ‘prophetic’.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11588",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "treebeard",
+  "n": "Treebeard",
+  "names": [
+   {
+    "e": "Fangorn",
+    "by": "the Elves and Men who name the forest after him",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "Fangorn is my name according to some, Treebeard others make it. Treebeard will do.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:20921",
+    "c": "LotR III.4"
+   },
+   {
+    "e": "Treebeard",
+    "by": "himself, to Merry and Pippin",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Fangorn is my name according to some, Treebeard others make it. Treebeard will do.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:20921",
+    "c": "LotR III.4"
+   },
+   {
+    "e": "the eldest and chief of the Ents",
+    "by": "Gandalf, to Aragorn",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "For Treebeard is Fangorn, and the eldest and chief of the Ents, and when you speak with him you will hear the speech of the oldest of all living things.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:25264",
+    "c": "LotR III.8"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "shelob",
+  "n": "Shelob",
+  "names": [
+   {
+    "e": "Shelob the Great",
+    "by": "the tale-tellers of Gondor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But none could rival her, Shelob the Great, last child of Ungoliant to trouble the unhappy world.",
+    "src": "t1_c_the_lord_of_the_rings.txt:32505",
+    "c": "LotR IV.9"
+   },
+   {
+    "e": "Her Ladyship",
+    "by": "Shagrat, captain of the tower of Cirith Ungol",
+    "tongue": "Orkish/Common Speech",
+    "mean": "",
+    "q": "Anyway my lads reported that Her Ladyship was having some fun, and that seemed good enough for me, until the message came.",
+    "src": "t1_c_the_lord_of_the_rings.txt:33177",
+    "c": "LotR IV.10",
+    "note": "All three occurrences are Shagrat's, the last explicitly: \"'You fool,' snarled Shagrat... Is that all you know of Her Ladyship?\" Gorbag is of Minas Morgul and is the one being addressed."
+   },
+   {
+    "e": "Shelob's Lair (Torech Ungol)",
+    "by": "Gollum, naming her lair",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "He did not speak its name: Torech Ungol, Shelob’s Lair.",
+    "src": "t1_c_the_lord_of_the_rings.txt:32215",
+    "c": "LotR IV.9"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "witchking",
+  "n": "The Witch-king of Angmar",
+  "names": [
+   {
+    "e": "the Witch-king",
+    "by": "the annals of Arnor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘In 1974 the power of Angmar arose again, and the Witch-king came down upon Arthedain before winter was ended.",
+    "src": "t1_c_the_lord_of_the_rings.txt:46577",
+    "c": "LotR App A"
+   },
+   {
+    "e": "Lord of the Nazgûl",
+    "by": "Gandalf, to Denethor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘King of Angmar long ago, Sorcerer, Ringwraith, Lord of the Nazgûl, a spear of terror in the hand of Sauron, shadow of despair.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:36618",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "the Black Captain",
+    "by": "the messengers and captains of Gondor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘And we have learned,’ said the messenger, ‘that the Black Captain leads them once again, and the fear of him has passed before him over the River.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:36550",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "the Captain of Despair",
+    "by": "Gandalf, in the siege of Gondor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "However that may be, the Captain of Despair does not press forward, yet.",
+    "src": "t1_c_the_lord_of_the_rings.txt:36631",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "the Morgul-lord",
+    "by": "Gandalf, to the Council of Elrond",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "The Morgul-lord and his Black Riders have come forth.",
+    "src": "t1_c_the_lord_of_the_rings.txt:10223",
+    "c": "LotR II.1"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "saruman",
+  "n": "Saruman",
+  "names": [
+   {
+    "e": "Curumo",
+    "by": "the Valar, at the choosing of the Istari",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "The note ends with the statement that Curumo [Saruman] took Aiwendil [Radagast] because Yavanna begged him, and that Alatar took Pallando as a friend.",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12341",
+    "c": "Unfinished Tales"
+   },
+   {
+    "e": "Curunír",
+    "by": "the Eldar",
+    "tongue": "Sindarin",
+    "mean": "the Man of Skill",
+    "q": "called by the Eldar Curunír, ‘the Man of Skill’, and Mithrandir, ‘the Grey Pilgrim’, but by Men in the North Saruman and Gandalf.",
+    "src": "t1_c_the_lord_of_the_rings.txt:48716",
+    "c": "LotR App B"
+   },
+   {
+    "e": "Saruman the White",
+    "by": "Radagast, and the Wise",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘ ‘‘Saruman the White,’’ answered Radagast.",
+    "src": "t1_c_the_lord_of_the_rings.txt:11920",
+    "c": "LotR II.2"
+   },
+   {
+    "e": "Saruman of Many Colours",
+    "by": "himself, to Gandalf in Orthanc",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "For I am Saruman the Wise, Saruman Ring-maker, Saruman of Many Colours!’’",
+    "src": "t1_c_the_lord_of_the_rings.txt:11999",
+    "c": "LotR II.2"
+   },
+   {
+    "e": "Sharkey",
+    "by": "his ruffians in the Shire",
+    "tongue": "Common Speech, from Orkish",
+    "mean": "based on Orkish sharkil ‘old man’ (Tolkien, Nomenclature)",
+    "q": "Sharkey’s come now, and he’ll do what Sharkey says.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:44926",
+    "c": "LotR VI.8"
+   },
+   {
+    "e": "Sharkey",
+    "by": "Tolkien's own gloss in the Nomenclature",
+    "tongue": "Orkish",
+    "mean": "old man",
+    "q": "Sharkey - In Nomenclature Tolkien writes that Sharkey 'is supposed to be a nickname modified to fit Common Speech (in the English text anglicized), based on Orkish sharkil \"old man\" '.",
+    "src": "t2_the_lord_of_the_rings_a_reader_s_companion.txt:29812",
+    "c": "The LotR: A Reader's Companion"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "bilbo",
+  "n": "Bilbo Baggins",
+  "names": [
+   {
+    "e": "Burglar",
+    "by": "Gandalf and Thorin's Company",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "And I assure you there is a mark on this door—the usual one in the trade, or used to be. Burglar wants a good job, plenty of Excitement and reasonable Reward, that’s how it is usually read.",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:653",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Ringwinner",
+    "by": "himself, riddling with Smaug",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "I am Ringwinner and Luckwearer; and I am Barrel-rider,” went on Bilbo beginning to be pleased with his riddling.",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:6233",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Luckwearer",
+    "by": "himself, riddling with Smaug",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "I am Ringwinner and Luckwearer; and I am Barrel-rider,” went on Bilbo beginning to be pleased with his riddling.",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:6233",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Barrel-rider",
+    "by": "Smaug the Golden, mocking him",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "“Very well, O Barrel-rider!”",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:6250",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Thief Barrel-rider",
+    "by": "Smaug the Golden",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "You’ll come to a bad end, if you go with such friends, Thief Barrel-rider.",
+    "src": "t1_b_the_hobbit_or_there_and_back_again.txt:6259",
+    "c": "The Hobbit"
+   },
+   {
+    "e": "Mad Baggins",
+    "by": "the hobbits of the Shire, in fireside-story",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "It became a fireside-story for young hobbits; and eventually Mad Baggins, who used to vanish with a bang and a flash and reappear with bags of jewels and gold, became a favourite character of legend",
+    "src": "t1_c_the_lord_of_the_rings.txt:2406",
+    "c": "LotR I.2"
+   },
+   {
+    "e": "Bilba Labingi",
+    "by": "his true Hobbit (Westron) name",
+    "tongue": "Westron",
+    "mean": "",
+    "q": "Family names Took Hobbit Tūc, as noted above.27 Baggins H. Labingi.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:1954",
+    "c": "HoME XII The Peoples of Middle-earth"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "samwise",
+  "n": "Samwise Gamgee",
+  "names": [
+   {
+    "e": "Banazîr",
+    "by": "his true Hobbit (Westron) name",
+    "tongue": "Westron",
+    "mean": "halfwise, simple",
+    "q": "These were shortenings of Banazîr and Ranugad, originally nicknames, meaning ‘halfwise, simple’ and ‘stay-at-home’",
+    "src": "t1_c_the_lord_of_the_rings.txt:50812",
+    "c": "LotR App F"
+   },
+   {
+    "e": "Perhael",
+    "by": "King Elessar, in the Sindarin of the King's Letter",
+    "tongue": "Sindarin",
+    "mean": "Half-wise",
+    "q": "‘For in the Elvish part, if you must know, the King says: “Master Perhael who should be called Panthael”.",
+    "src": "t1_9_sauron_defeated.txt:4517",
+    "c": "HoME IX Sauron Defeated"
+   },
+   {
+    "e": "Panthael",
+    "by": "King Elessar, in the King's Letter",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "edregol e aníra tírad i Cherdir Perhael (i sennui Panthael estathar aen) Condir i Drann",
+    "src": "t1_9_sauron_defeated.txt:4598",
+    "c": "HoME IX Sauron Defeated"
+   },
+   {
+    "e": "Samwise the stouthearted",
+    "by": "Frodo, on the Stairs of Cirith Ungol",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But you’ve left out one of the chief characters: Samwise the stouthearted.",
+    "src": "t1_c_the_lord_of_the_rings.txt:32036",
+    "c": "LotR IV.8"
+   },
+   {
+    "e": "Samwise the Strong, Hero of the Age",
+    "by": "his own fantasy under the Ring's temptation",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "and he saw Samwise the Strong, Hero of the Age, striding with a flaming sword across the darkened land",
+    "src": "t1_c_the_lord_of_the_rings.txt:40230",
+    "c": "LotR VI.1"
+   },
+   {
+    "e": "Master Samwise the Mayor",
+    "by": "the folk of the Shire",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Thain Peregrin has been there many times; and so has Master Samwise the Mayor.",
+    "src": "t1_c_the_lord_of_the_rings.txt:46722",
+    "c": "LotR App A"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "boromir",
+  "n": "Boromir son of Denethor",
+  "names": [
+   {
+    "e": "High Warden of the White Tower",
+    "by": "Beregond of the Guard, in Minas Tirith",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Know, little strangers, that Boromir son of Denethor was High Warden of the White Tower, and our Captain-General: sorely do we miss him.",
+    "src": "t1_c_the_lord_of_the_rings.txt:29604",
+    "c": "LotR IV.4"
+   },
+   {
+    "e": "Captain-General",
+    "by": "Beregond of the Guard",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Know, little strangers, that Boromir son of Denethor was High Warden of the White Tower, and our Captain-General: sorely do we miss him.",
+    "src": "t1_c_the_lord_of_the_rings.txt:29604",
+    "c": "LotR IV.4"
+   },
+   {
+    "e": "heir of Denethor, Captain of the White Tower",
+    "by": "the annals of the Stewards",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "could rival Boromir, heir of Denethor, Captain of the White Tower; and of like mind was Boromir.",
+    "src": "t1_c_the_lord_of_the_rings.txt:47371",
+    "c": "LotR App A"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "faramir",
+  "n": "Faramir son of Denethor",
+  "names": [
+   {
+    "e": "Captain of the White Tower",
+    "by": "Gandalf, rebuking the servants of Denethor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But think, you servants of the Lord, blind in your obedience, that but for the treason of Beregond Faramir, Captain of the White Tower, would now also be burned.",
+    "src": "t1_c_the_lord_of_the_rings.txt:38310",
+    "c": "LotR V.7"
+   },
+   {
+    "e": "Prince of Ithilien",
+    "by": "King Elessar, at his crowning",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘So it must be, for you are appointed to the White Company, the Guard of Faramir, Prince of Ithilien, and you shall be its captain and dwell in Emyn Arnen in honour and peace",
+    "src": "t1_c_the_lord_of_the_rings.txt:43351",
+    "c": "LotR VI.5"
+   },
+   {
+    "e": "Lord of Emyn Arnen, Steward to King Elessar",
+    "by": "the roll of the Stewards of Gondor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "He was the last of the Ruling Stewards, and was followed by his second son Faramir, Lord of Emyn Arnen, Steward to King Elessar",
+    "src": "t1_c_the_lord_of_the_rings.txt:46467",
+    "c": "LotR App A"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "theoden",
+  "n": "Théoden son of Thengel",
+  "names": [
+   {
+    "e": "Théoden Ednew",
+    "by": "the lore of Rohan",
+    "tongue": "Rohirric (rendered in Old English)",
+    "mean": "",
+    "q": "He is called Théoden Ednew in the lore of Rohan, for he fell into a decline under the spells of Saruman, but was healed by Gandalf",
+    "src": "t1_c_the_lord_of_the_rings.txt:48016",
+    "c": "LotR App A"
+   },
+   {
+    "e": "Ednew",
+    "by": "Hammond & Scull, glossing the epithet",
+    "tongue": "Old English",
+    "mean": "renewed (from Old English edneowe)",
+    "q": "Theoden ... Ednew - The epithet Ednew is derived from Old English edneowe 'renewed'.",
+    "src": "t2_the_lord_of_the_rings_a_reader_s_companion.txt:31853",
+    "c": "The LotR: A Reader's Companion",
+    "tier": 2,
+    "note": "TIER 2, and the record's own tier is 1. This is Hammond & Scull's editorial gloss, not Tolkien's words inside a tier-2 book, so it does not inherit tier-1 authority. The record carries ONE tier for all its names, so until that changes this per-name marker is the only place the distinction can live."
+   },
+   {
+    "e": "Lord of the Mark",
+    "by": "Gandalf, at the doors of Meduseld",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "My errand is not to Wormtongue, but to the Lord of the Mark himself.",
+    "src": "t1_c_the_lord_of_the_rings.txt:22970",
+    "c": "LotR III.6"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "eowyn",
+  "n": "Éowyn of Rohan",
+  "names": [
+   {
+    "e": "Dernhelm",
+    "by": "herself, riding in disguise with the Rohirrim",
+    "tongue": "Rohirric (rendered in Old English)",
+    "mean": "",
+    "q": "‘Then call me Dernhelm.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:35997",
+    "c": "LotR V.3"
+   },
+   {
+    "e": "a shieldmaiden",
+    "by": "herself, to Aragorn at Dunharrow",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘But am I not of the House of Eorl, a shieldmaiden and not a dry-nurse?",
+    "src": "t1_c_the_lord_of_the_rings.txt:35064",
+    "c": "LotR V.2"
+   },
+   {
+    "e": "the Lady of the Shield-arm",
+    "by": "the Men of the Mark, after the Pelennor",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "she fought in that battle, riding in disguise; and was known after in the Mark as the Lady of the Shield-arm.",
+    "src": "t1_c_the_lord_of_the_rings.txt:48069",
+    "c": "LotR App A"
+   },
+   {
+    "e": "White Lady of Rohan",
+    "by": "Faramir, in the Houses of Healing",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Eowyn, White Lady of Rohan, in this hour I do not believe that any darkness will endure!’",
+    "src": "t1_c_the_lord_of_the_rings.txt:43052",
+    "c": "LotR VI.5"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "bombadil",
+  "n": "Tom Bombadil",
+  "names": [
+   {
+    "e": "Iarwain Ben-adar",
+    "by": "Elrond and the Elves",
+    "tongue": "Sindarin",
+    "mean": "oldest and fatherless",
+    "q": "That was not then his name. Iarwain Ben-adar we called him, oldest and fatherless.",
+    "src": "t1_c_the_lord_of_the_rings.txt:12297",
+    "c": "LotR II.2"
+   },
+   {
+    "e": "Forn",
+    "by": "the Dwarves",
+    "tongue": "Khuzdul (Norse-rendered)",
+    "mean": "",
+    "q": "But many another name he has since been given by other folk: Forn by the Dwarves, Orald by Northern Men, and other names beside.",
+    "src": "t1_c_the_lord_of_the_rings.txt:12299",
+    "c": "LotR II.2"
+   },
+   {
+    "e": "Orald",
+    "by": "Northern Men",
+    "tongue": "the tongue of Northern Men (rendered in Old English)",
+    "mean": "",
+    "q": "But many another name he has since been given by other folk: Forn by the Dwarves, Orald by Northern Men, and other names beside.",
+    "src": "t1_c_the_lord_of_the_rings.txt:12299",
+    "c": "LotR II.2"
+   },
+   {
+    "e": "Eldest",
+    "by": "himself, in his own house",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "But you are young and I am old. Eldest, that’s what I am.",
+    "src": "t1_c_the_lord_of_the_rings.txt:6428",
+    "c": "LotR I.7"
+   },
+   {
+    "e": "the Master",
+    "by": "Goldberry, answering Frodo",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘The trees and the grasses and all things growing or living in the land belong each to themselves. Tom Bombadil is the Master.",
+    "src": "t1_c_the_lord_of_the_rings.txt:6115",
+    "c": "LotR I.7"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "goldberry",
+  "n": "Goldberry",
+  "names": [
+   {
+    "e": "the River-woman's daughter",
+    "by": "Tom Bombadil, in his song",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "There my pretty lady is, River-woman’s daughter, Slender as the willow-wand, clearer than the water.",
+    "src": "t1_c_the_lord_of_the_rings.txt:5896",
+    "c": "LotR I.6"
+   },
+   {
+    "e": "the River-daughter",
+    "by": "Tom Bombadil",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "By that pool long ago I found the River-daughter, fair young Goldberry sitting in the rushes.",
+    "src": "t1_c_the_lord_of_the_rings.txt:6196",
+    "c": "LotR I.7"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "butterbur",
+  "n": "Barliman Butterbur",
+  "names": [
+   {
+    "e": "Barliman",
+    "by": "himself, at The Prancing Pony",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "Barliman is my name. Barliman Butterbur at your service!",
+    "src": "t1_c_the_lord_of_the_rings.txt:7386",
+    "c": "LotR I.9"
+   },
+   {
+    "e": "Butterbur",
+    "by": "Tolkien's own gloss in the Nomenclature",
+    "tongue": "Common Speech (English rendering)",
+    "mean": "the plant-name butterbur (Petasites vulgaris)",
+    "q": "These have in the tale been modified, to fit the generally botanical names of Bree, to the plant-name butterbur (Petasites vulgaris) .",
+    "src": "t2_the_lord_of_the_rings_a_reader_s_companion.txt:9569",
+    "c": "The LotR: A Reader's Companion"
+   },
+   {
+    "e": "the worthy keeper of The Prancing Pony",
+    "by": "Gandalf, in his letter to Frodo",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "There you’ll find an old inn that is called The Prancing Pony. Barliman Butterbur is the worthy keeper.",
+    "src": "t1_c_the_lord_of_the_rings.txt:7164",
+    "c": "LotR I.8"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "grima",
+  "n": "Gríma son of Gálmód",
+  "names": [
+   {
+    "e": "Wormtongue",
+    "by": "the doorwards and folk of Rohan",
+    "tongue": "Rohirric (rendered)",
+    "mean": "",
+    "q": "It is but two nights ago that Wormtongue came to us and said that by the will of Théoden no stranger should pass these gates.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:22966",
+    "c": "LotR III.6"
+   },
+   {
+    "e": "Wormtongue",
+    "by": "Tolkien's own gloss in the Nomenclature",
+    "tongue": "Old English (for Rohirric)",
+    "mean": "wyrm-tunge ‘snake-tongue’",
+    "q": "Wormtongue - A '''modernized\" form of the nickname of Grima, the evil counsellor of Rohan = Rohan [Old English] wyrm-tunge \"snake-tongue\"' (Nomenclature).",
+    "src": "t2_the_lord_of_the_rings_a_reader_s_companion.txt:19845",
+    "c": "The LotR: A Reader's Companion"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "meriadoc",
+  "n": "Meriadoc Brandybuck",
+  "names": [
+   {
+    "e": "Holdwine of the Mark",
+    "by": "Éomer King of Rohan",
+    "tongue": "Rohirric (rendered in Old English)",
+    "mean": "",
+    "q": "‘Farewell now, Meriadoc of the Shire and Holdwine of the Mark!",
+    "src": "t1_c_the_lord_of_the_rings.txt:43735",
+    "c": "LotR VI.6"
+   },
+   {
+    "e": "Meriadoc the Magnificent",
+    "by": "the chronicles of the Shire",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "1432 Meriadoc, called the Magnificent, becomes Master of Buckland.",
+    "src": "t1_c_the_lord_of_the_rings.txt:49331",
+    "c": "LotR App B"
+   },
+   {
+    "e": "Master of Buckland",
+    "by": "the Shire-folk",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "All that could be discovered about it in antiquity was put together by Meriadoc Brandybuck (later Master of Buckland)",
+    "src": "t1_c_the_lord_of_the_rings.txt:1084",
+    "c": "LotR Prologue"
+   },
+   {
+    "e": "Kalimac (Kali)",
+    "by": "his true Buckland (Westron) name",
+    "tongue": "Westron",
+    "mean": "Kali meant ‘jolly, gay’ in the Westron",
+    "q": "Meriadoc was chosen to fit the fact that this character’s shortened name, Kali, meant in the Westron ‘jolly, gay’, though it was actually an abbreviation of the now unmeaning Buckland name Kalimac.",
+    "src": "t1_c_the_lord_of_the_rings.txt:50803",
+    "c": "LotR App F"
+   },
+   {
+    "e": "Gelir",
+    "by": "King Elessar, in the Sindarin of the King's Letter",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "But Frodo is Iorhael, and Rose is Meril, and Merry is Gelir, and Pippin is Cordof, and Goldilocks is Glorfinniel, and Hamfast is Baravorn, and Daisy is Eirien.",
+    "src": "t1_9_sauron_defeated.txt:4509",
+    "c": "HoME IX Sauron Defeated"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "peregrin",
+  "n": "Peregrin Took",
+  "names": [
+   {
+    "e": "Ernil i Pheriannath",
+    "by": "the folk of Minas Tirith",
+    "tongue": "Sindarin",
+    "mean": "the Prince of the Halflings",
+    "q": "He looked now, had he known it, verily Ernil i Pheriannath, the Prince of the Halflings, that folk had called him; but he felt uncomfortable.",
+    "src": "t1_c_the_lord_of_the_rings.txt:36094",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "Razanur Tûc (Razar)",
+    "by": "his true Hobbit (Westron) name",
+    "tongue": "Westron",
+    "mean": "Razar, a kind of small red apple",
+    "q": "Peregrin (Pippin) The H. name was Razanul [> Razanur].",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:2046",
+    "c": "HoME XII The Peoples of Middle-earth"
+   },
+   {
+    "e": "Cordof",
+    "by": "King Elessar, in the Sindarin of the King's Letter",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "But Frodo is Iorhael, and Rose is Meril, and Merry is Gelir, and Pippin is Cordof, and Goldilocks is Glorfinniel, and Hamfast is Baravorn, and Daisy is Eirien.",
+    "src": "t1_9_sauron_defeated.txt:4509",
+    "c": "HoME IX Sauron Defeated"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "beren",
+  "n": "Beren son of Barahir",
+  "names": [
+   {
+    "e": "Erchamion",
+    "by": "the Eldar of Doriath",
+    "tongue": "Sindarin",
+    "mean": "the One-handed",
+    "q": "Thereafter Beren was named Erchamion, which is the One-handed; and suffering was graven in his face.",
+    "src": "t1_a_the_silmarillion.txt:8839",
+    "c": "Silm 19"
+   },
+   {
+    "e": "Camlost",
+    "by": "himself, returning to Thingol without the Silmaril",
+    "tongue": "Sindarin",
+    "mean": "the Empty-handed",
+    "q": "Then he held up his right arm; and from that hour he named himself Camlost, the Empty-handed.",
+    "src": "t1_a_the_silmarillion.txt:8907",
+    "c": "Silm 19"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "luthien",
+  "n": "Lúthien",
+  "names": [
+   {
+    "e": "Tinúviel",
+    "by": "Beren, when he first beheld her in Neldoreth",
+    "tongue": "Sindarin",
+    "mean": "Nightingale, daughter of twilight",
+    "q": "In his heart he called her Tinúviel, that signifies Nightingale, daughter of twilight, in the Grey-elven tongue, for he knew no other name for her.",
+    "src": "t1_a_the_silmarillion.txt:8082",
+    "c": "Silm 19"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "thingol",
+  "n": "Elwë Singollo / Elu Thingol",
+  "names": [
+   {
+    "e": "Elwë Singollo",
+    "by": "the Teleri, his own people",
+    "tongue": "Quenya/Telerin",
+    "mean": "Greymantle",
+    "q": "Two lords they had, for their numbers were great: Elwë Singollo (which signifies Greymantle) and Olwë his brother.",
+    "src": "t1_a_the_silmarillion.txt:3310",
+    "c": "Silm 3"
+   },
+   {
+    "e": "Elu Thingol, King Greymantle",
+    "by": "the Sindar of Beleriand",
+    "tongue": "Sindarin",
+    "mean": "Greymantle",
+    "q": "Elu Thingol he was called, King Greymantle, in the tongue of his people.",
+    "src": "t1_a_the_silmarillion.txt:4941",
+    "c": "Silm 10"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "hurin",
+  "n": "Húrin Thalion",
+  "names": [
+   {
+    "e": "Thalion",
+    "by": "the Eldar and Edain",
+    "tongue": "Sindarin",
+    "mean": "the Steadfast",
+    "q": "the fearful figure of the old man, the great hero, Thalion the Steadfast, furthering still the purposes of Morgoth, as he was doomed to do.",
+    "src": "t1_11_the_war_of_the_jewels.txt:10900",
+    "c": "HoME XI The War of the Jewels"
+   },
+   {
+    "e": "Húrin Thalion",
+    "by": "the Elves of Nargothrond",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "When it became known to Orodreth that the Mormegil was in truth the son of Húrin Thalion he gave him great honour, and Túrin became mighty among the people of Nargothrond.",
+    "src": "t1_a_the_silmarillion.txt:10068",
+    "c": "Silm 21"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "beleg",
+  "n": "Beleg Cúthalion",
+  "names": [
+   {
+    "e": "Cúthalion",
+    "by": "Thingol and the Elves of Doriath",
+    "tongue": "Sindarin",
+    "mean": "",
+    "q": "Then Thingol gave Beleg leave to do as he would; and he said: ‘Beleg Cúthalion!",
+    "src": "t1_a_the_silmarillion.txt:9661",
+    "c": "Silm 21"
+   },
+   {
+    "e": "Strongbow",
+    "by": "the folk of Doriath (translation of Cúthalion)",
+    "tongue": "Sindarin (rendered)",
+    "mean": "",
+    "q": "In that time Beleg Strongbow returned from the north marches and came to Menegroth, seeking him",
+    "src": "t1_a_the_silmarillion.txt:9601",
+    "c": "Silm 21"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "denethor",
+  "n": "Denethor II",
+  "names": [
+   {
+    "e": "the Lord of the City",
+    "by": "the folk and guards of Minas Tirith",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "You are summoned to the Lord of the City to learn your new duties.’",
+    "src": "t1_c_the_lord_of_the_rings.txt:36030",
+    "c": "LotR V.4"
+   },
+   {
+    "e": "the Lord Denethor",
+    "by": "Pippin and the men of the Citadel",
+    "tongue": "Common Speech",
+    "mean": "",
+    "q": "‘The Lord Denethor or the Grey Wanderer?’",
+    "src": "t1_c_the_lord_of_the_rings.txt:36999",
+    "c": "LotR V.4"
+   }
+  ],
+  "tier": 1
+ },
+ {
+  "id": "tar_calmacil",
+  "n": "Tar-Calmacil",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Ar-Belzagar",
+    "by": "the King's Men, in Adûnaic",
+    "tongue": "Adûnaic",
+    "mean": "",
+    "q": "in the days of Tar-Calmacil the name of the King was first spoken in Adûnaic; and by the King's Men he was called Ar-Belzagar",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:6960",
+    "c": "UT, The Line of Elros"
+   }
+  ]
+ },
+ {
+  "id": "morwen_lossarnach",
+  "n": "Morwen of Lossarnach",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Steelsheen",
+    "by": "the Rohirrim",
+    "tongue": "Westron",
+    "mean": "",
+    "q": "Morwen of Lossarnach, whom the Rohirrim had called Steelsheen",
+    "src": "t1_c_the_lord_of_the_rings.txt:48056",
+    "c": "LotR App A II, The House of Eorl"
+   }
+  ]
+ },
+ {
+  "id": "miriel",
+  "n": "Míriel Þerindë",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Þerindë",
+    "by": "her mother (mother-name)",
+    "tongue": "Quenya",
+    "mean": "Needlewoman",
+    "q": "She was therefore called Þerindë (Needlewoman) – a name which she had indeed already been given as a ‘mother-name’.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11147",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   }
+  ]
+ },
+ {
+  "id": "irien",
+  "n": "Írien",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Lalwendë",
+    "by": "her mother (mother-name)",
+    "tongue": "Quenya",
+    "mean": "laughing maiden",
+    "q": "Lalwendë (laughing maiden). By this name, or in shortened form Lalwen, she was generally",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11451",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   }
+  ]
+ },
+ {
+  "id": "fingolfin",
+  "n": "Fingolfin",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Arakáno",
+    "by": "his mother (mother-name)",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "Arakáno had been the mother-name of Fingolfin.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11492",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   }
+  ]
+ },
+ {
+  "id": "aikanaro",
+  "n": "Aikanáro (Aegnor)",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Ambaráto",
+    "by": "his father Finarfin (father-name)",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "Aikanáro was called by his father Ambaráto.",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11552",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   },
+   {
+    "e": "Aikanáro",
+    "by": "his mother (mother-name)",
+    "tongue": "Quenya",
+    "mean": "fell fire",
+    "q": "meant ‘fell fire’. It was in part a ‘prophetic’ name; for he was renowned as one of the most",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11555",
+    "c": "PM, The Shibboleth of Fëanor, the names of Finwë's descendants"
+   }
+  ]
+ },
+ {
+  "id": "maedhros",
+  "n": "Maedhros",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Nelyafinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "Finwë third, in succession",
+    "q": "(1) [Maedros] Nelyafinwë ‘Finwë third’ in succession.57 (Nelyo)",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11725",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Maitimo",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "well-shaped one",
+    "q": "(1) Maitimo ‘well-shaped one’: he was of beautiful bodily form. But he, and the",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11735",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Russandol",
+    "by": "his brothers and other kin (epessë)",
+    "tongue": "Quenya",
+    "mean": "copper-top",
+    "q": "epessë of rusco ‘fox’. So Maitimo had as an epessë given by his brothers and other",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11737",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "maglor",
+  "n": "Maglor",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Kanafinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "strong-voiced or commanding",
+    "q": "(2) [Maglor] Kanafinwë ‘strong-voiced or Pcommanding’. (Káno)58",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11726",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Makalaurë",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "forging gold, as it is usually interpreted",
+    "q": "(2) Makalaurë Of uncertain meaning. Usually interpreted (and said to have been a",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11739",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "celegorm",
+  "n": "Celegorm",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Turkafinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "strong, powerful in body",
+    "q": "(3) [Celegorm] Turkafinwë ‘strong, powerful (in body)’. (Turko)",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11727",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Tyelkormo",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "hasty-riser",
+    "q": "(3) Tyelkormo ‘hasty-riser’. Quenya tyelka ‘hasty’. Possibly in reference to his quick",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11743",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "curufin",
+  "n": "Curufin",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Kurufinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "Fëanor's own name, given to his favourite son",
+    "q": "(4) [Curufin] Kurufinwë Fëanor’s own name; given to this, his favourite son, because he",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11728",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Atarinkë",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "little father",
+    "q": "(4) Atarinkë ‘little father’ – referring to his physical likeness to Fëanor, later found to be",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11745",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "caranthir",
+  "n": "Caranthir",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Morifinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "dark",
+    "q": "(5) [Caranthir] Morifinwë ‘dark’ – he was black-haired as his grandfather. (Moryo)",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11731",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Carnistir",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "red-face",
+    "q": "Carnistir ‘red-face’ – he was dark (brown) haired, but had the ruddy complexion of",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11747",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "amrod",
+  "n": "Amrod",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Pityafinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "Little Finwë",
+    "q": "(6) [Amrod] Pityafinwë ‘Little Finwë’. (Pityo)59",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11732",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Ambarto",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "",
+    "q": "Their ‘mother-names’ are recorded (though never used in narrative) as:",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11734",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ },
+ {
+  "id": "amras",
+  "n": "Amras",
+  "tier": 1,
+  "names": [
+   {
+    "e": "Telufinwë",
+    "by": "his father Fëanor (father-name)",
+    "tongue": "Quenya",
+    "mean": "Last Finwë",
+    "q": "(7) [Amras] Telufinwë ‘Last Finwë’. (Telvo)60",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11733",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   },
+   {
+    "e": "Ambarussa",
+    "by": "his mother Nerdanel (mother-name)",
+    "tongue": "Quenya",
+    "mean": "top-russet",
+    "q": "Ambarussa ‘top-russet’ must have referred to hair: the first and last of Nerdanel’s children",
+    "src": "t1_12_the_peoples_of_middle_earth.txt:11752",
+    "c": "PM, The Shibboleth of Fëanor, the names of the Sons of Fëanor"
+   }
+  ]
+ }
+]

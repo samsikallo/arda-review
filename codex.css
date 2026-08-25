@@ -1,0 +1,461 @@
+/* codex.css — geometry and ornament for the shared codex shell. Phase 2.
+   Reasoning is in docs/codex-architecture.md and the commits: this file is fetched by all 621
+   routes, so prose in it is paid for by every reader. Ornament is separable from layout on
+   purpose (§12.2) — data-ornament="0" removes decoration and leaves the structure standing. */
+
+/* ---- tokens. One source of truth; no literal parchment/gold repeated per page (§14.7) ---- */
+:root{
+  --cx-tab-w:34px; --cx-gutter:14px; --cx-rule:#b0a58e; --cx-rule-soft:#cdc2a6;
+  --cx-rubric:#8c2f1e; --cx-ink:#3a3226; --cx-mut:#6b5c44; --cx-stock:#fdfaf2;
+  --cx-edge:rgba(60,40,10,.10); --cx-motion:200ms; --cx-ease:cubic-bezier(.2,.6,.2,1);
+}
+:root[data-theme="dark"]{
+  --cx-rule:#5a4c32; --cx-rule-soft:#3a3226; --cx-rubric:#c0705c; --cx-ink:#e6dcc2;
+  --cx-mut:#c3b28c; --cx-stock:#221c15; --cx-edge:rgba(0,0,0,.35);
+}
+
+#codex-shell{font:12.5px/1.5 Georgia,'Palatino Linotype',serif;color:var(--cx-mut);
+  max-width:100%;overflow-x:clip}   /* the shell may never widen the document */
+
+/* ---- 2. BREADCRUMB — canonical position, as links, ending in plain current text ---- */
+#cx-crumb{max-width:1100px;margin:0 auto;padding:6px 16px 0}
+#cx-crumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:0;margin:0;padding:0;
+  font-variant:small-caps;letter-spacing:.04em}
+#cx-crumb li+li::before{content:"›";margin:0 .5em;color:var(--cx-rule);speak:never}
+#cx-crumb a{color:var(--cx-mut);text-decoration:none;border-bottom:1px solid transparent}
+#cx-crumb a:hover,#cx-crumb a:focus-visible{border-bottom-color:var(--cx-rubric);color:var(--cx-ink)}
+#cx-crumb [aria-current="page"]{color:var(--cx-ink)}
+
+/* ---- 3. RUNNING HEAD — orientation only, and decorative, so it is aria-hidden in the JS ---- */
+#cx-run{max-width:1100px;margin:2px auto 0;padding:0 16px 6px;display:flex;gap:10px;
+  align-items:baseline;border-bottom:1px solid var(--cx-rule-soft);
+  font-variant:small-caps;letter-spacing:.06em;font-size:11.5px;color:var(--cx-mut)}
+#cx-run .cx-rv{color:var(--cx-rubric);font-weight:600}
+#cx-run .cx-rp{opacity:.85}
+
+/* ---- 1. VOLUME THUMB INDEX — global tabs on the outer edge at wide sizes ---- */
+#cx-vols ul{list-style:none;margin:0;padding:0}
+#cx-vols a{display:block;text-decoration:none;color:var(--cx-mut);font-variant:small-caps;
+  letter-spacing:.06em}
+@media (min-width:1100px){
+  #cx-vols{position:fixed;right:0;top:32vh;z-index:70}
+  #cx-vols a{width:var(--cx-tab-w);padding:10px 4px;writing-mode:vertical-rl;text-align:center;
+    background:var(--cx-stock);border:1px solid var(--cx-rule);border-right:none;
+    border-radius:6px 0 0 6px;margin:2px 0;box-shadow:-2px 2px 6px var(--cx-edge);
+    transition:transform var(--cx-motion) var(--cx-ease)}
+  #cx-vols a:hover,#cx-vols a:focus-visible{transform:translateX(-3px);color:var(--cx-ink)}
+  /* current volume: shape AND text, never colour alone (ruling 5, §15) */
+  #cx-vols [aria-current="true"]{border-left:3px solid var(--cx-rubric);color:var(--cx-ink);
+    font-weight:600}
+}
+/* Narrow: an ordinary labelled row, not a tiny page-edge tab (§9 mobile) */
+@media (max-width:1099px){
+  #cx-vols{max-width:1100px;margin:0 auto;padding:6px 16px 0;overflow-x:auto}
+  #cx-vols ul{display:flex;gap:6px}
+  #cx-vols a{white-space:nowrap;padding:8px 12px;min-height:44px;line-height:28px;
+    border:1px solid var(--cx-rule);border-radius:8px;background:var(--cx-stock)}
+  #cx-vols [aria-current="true"]{border-color:var(--cx-rubric);border-width:2px;font-weight:600}
+}
+
+/* ---- 4. FOLIO NAVIGATION — destination always named, never a bare arrow ---- */
+#cx-folio{max-width:1100px;margin:18px auto 0;padding:10px 16px 16px;display:flex;gap:10px;
+  flex-wrap:wrap;border-top:1px solid var(--cx-rule-soft)}
+#cx-folio a{flex:1 1 200px;min-height:44px;padding:8px 12px;text-decoration:none;
+  border:1px solid var(--cx-rule);border-radius:8px;background:var(--cx-stock);
+  display:flex;flex-direction:column;gap:2px}
+#cx-folio a:hover,#cx-folio a:focus-visible{border-color:var(--cx-rubric)}
+#cx-folio .cx-dir{font-variant:small-caps;letter-spacing:.07em;font-size:11px;color:var(--cx-rubric)}
+#cx-folio .cx-dest{color:var(--cx-ink);font-size:13px}
+#cx-folio .cx-up{flex:0 1 160px}
+
+/* ---- ARCHETYPE GEOMETRY. One shell, eight behaviours (§8) ---- */
+:root[data-archetype="index"] #cx-run,
+:root[data-archetype="workbench"] #cx-run{display:none}          /* ornament level 0: dense views */
+:root[data-archetype="atlas"] #cx-crumb,
+:root[data-archetype="roll"] #cx-crumb{padding-bottom:4px}
+:root[data-archetype="atlas"] #cx-vols,
+:root[data-archetype="roll"] #cx-vols{opacity:.55}               /* the plate gets the room */
+:root[data-archetype="atlas"] #cx-vols:hover,
+:root[data-archetype="atlas"] #cx-vols:focus-within,
+:root[data-archetype="roll"] #cx-vols:hover,
+:root[data-archetype="roll"] #cx-vols:focus-within{opacity:1}
+:root[data-archetype="carpet"] #cx-run{border-bottom-width:2px}
+
+/* ---- ORNAMENT IS SEPARABLE FROM STRUCTURE (§12.2). Level 0 keeps every control. ---- */
+:root[data-ornament="0"] #cx-vols a{box-shadow:none}
+:root[data-ornament="0"] #cx-run{display:none}
+
+/* ---- READER CONTROLS (Phase 3). Personal state is a DIFFERENT SHAPE from the canonical volume
+        tabs: a bar of labelled buttons, never an edge ribbon that could be mistaken for a tab. */
+#cx-bar{max-width:1100px;margin:6px auto 0;padding:0 16px;display:flex;gap:8px;flex-wrap:wrap}
+#cx-bar button{min-height:44px;padding:6px 12px;font:12.5px Georgia,serif;font-variant:small-caps;
+  letter-spacing:.05em;background:var(--cx-stock);color:var(--cx-mut);
+  border:1px solid var(--cx-rule);border-radius:8px;cursor:pointer}
+#cx-bar button:hover,#cx-bar button:focus-visible{border-color:var(--cx-rubric);color:var(--cx-ink)}
+#cx-bar button[aria-pressed="true"]{border-color:var(--cx-rubric);border-width:2px;
+  color:var(--cx-ink);font-weight:600}
+#cx-bar button[aria-expanded="true"]{border-color:var(--cx-rubric);color:var(--cx-ink)}
+#cx-bar button[disabled]{opacity:.6;cursor:not-allowed}
+
+#cx-toc,#cx-jrn{max-width:1100px;margin:8px auto 0;padding:12px 16px;background:var(--cx-stock);
+  border:1px solid var(--cx-rule);border-radius:10px}
+#cx-toc[hidden],#cx-jrn[hidden]{display:none}
+#cx-toc ul,#cx-jrn ul{list-style:none;margin:0;padding:0}
+#cx-toc li{padding:5px 0;border-bottom:1px dotted var(--cx-rule-soft)}
+#cx-toc a,#cx-jrn a{color:var(--cx-ink);text-decoration:none;border-bottom:1px solid transparent}
+#cx-toc a:hover,#cx-toc a:focus-visible,#cx-jrn a:hover,#cx-jrn a:focus-visible{
+  border-bottom-color:var(--cx-rubric)}
+#cx-toc [aria-current="true"]{font-weight:600;color:var(--cx-rubric)}
+#cx-toc .cx-th{display:block;font-size:11.5px;color:var(--cx-mut);font-style:italic}
+#cx-jrn h3{font-variant:small-caps;letter-spacing:.06em;font-size:12.5px;color:var(--cx-rubric);
+  margin:8px 0 4px}
+#cx-jrn li{padding:3px 0}
+#cx-jrn .cx-empty{color:var(--cx-mut);font-style:italic;margin:2px 0}
+#cx-jrn .cx-clear{margin-top:10px;min-height:44px;padding:6px 12px;font:12px Georgia,serif;
+  background:none;border:1px solid var(--cx-rule);border-radius:8px;color:var(--cx-mut);cursor:pointer}
+:root[data-ornament="0"] #cx-toc .cx-th{display:none}
+
+@media (prefers-reduced-motion:reduce){
+  #cx-vols a{transition:none}
+  #cx-vols a:hover,#cx-vols a:focus-visible{transform:none}
+}
+@media print{ #codex-shell{display:none} }                        /* content and citations only */
+/* ---- PHASE 4: the archetypes that styled nothing ------------------------------------------
+   593 of 621 routes are `folio`; folio, contents and plates had NO rule, and data-spread (on 522
+   routes) was read by nothing. Reasoning, and why no page layout is touched: docs/codex-ia.md. */
+:root[data-archetype="folio"] #cx-run{border-bottom:1px solid var(--a-codex-rule,#b0a58e);
+  letter-spacing:.06em}
+:root[data-archetype="folio"] #cx-crumb{padding-bottom:2px}
+@media (min-width:900px){
+  :root[data-spread="spread"] :where(body){padding-inline:clamp(0px,2.5vw,34px)}
+}
+:root[data-archetype="contents"] #cx-vols{opacity:1}
+:root[data-archetype="contents"] #cx-run{border-bottom-width:2px}
+:root[data-archetype="plates"] #cx-vols{opacity:.55}
+:root[data-archetype="plates"] #cx-vols:hover,
+:root[data-archetype="plates"] #cx-vols:focus-within{opacity:1}
+:root[data-archetype="plates"] #cx-crumb{padding-bottom:4px}
+
+/* 2. THE CODEX OBJECT. The existing main landmark IS the open book: page stock, a bevelled
+      edge, and the shadow that makes it sit on something. */
+@media (min-width:900px){
+  :root[data-codex="on"] [role="main"],
+  :root[data-codex="on"] main{
+    background:linear-gradient(92deg,var(--cx-stock2),var(--cx-stock) 8%,var(--cx-stock) 92%,var(--cx-stock2));
+    border:1px solid var(--cx-edge);
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 18px 44px -14px rgba(0,0,0,.65),
+               0 3px 10px -4px rgba(0,0,0,.5);
+    padding-inline:clamp(20px,3.2vw,46px);
+    margin-inline:auto;
+    position:relative;
+  }
+  /* THE GUTTER IS DECORATION AND MUST NEVER BE A TARGET. pointer-events:none is not a nicety:
+     a shaded strip down the middle of the reading surface would otherwise swallow text
+     selection, focus outlines and map drags on every route at once. */
+  /* THE GUTTER IS DRAWN ONLY WHERE TWO LEAVES ACTUALLY EXIST, and the first version drew it on
+     all 606 paired-leaf routes -- none of which splits its content. A shaded spine down the
+     middle of a single prose column is a painted affordance: it tells the reader the page has
+     two halves when it has one, which is the same class of lie as an arrow promising a sequence
+     that is not there. codex.js sets data-leaves="2" only when it has produced a real second
+     leaf, so today this rule matches nothing, and that is the honest state. */
+  /* AND NOT WHEN THE LEAVES ARE INSIDE A LEDGER, which drew TWO gutters the first time the two
+     stages met. The ledger's leaves are the grid's two columns, so its spine belongs on the
+     grid; the page-level spine here ran down the whole main -- straight through the intro
+     paragraph, which has no facing half at all. `:not([data-ledger])` keeps each stage drawing
+     the division it actually owns. A second gutter is not twice as much book; it is a page
+     claiming a fold it does not have. */
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"]:not([data-ledger]) [role="main"]::before,
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"]:not([data-ledger]) main::before{
+    content:"";position:absolute;inset-block:0;inset-inline-start:50%;
+    width:clamp(10px,1.6vw,26px);transform:translateX(-50%);
+    background:linear-gradient(90deg,transparent,rgba(90,70,40,.16) 42%,rgba(90,70,40,.22) 50%,rgba(90,70,40,.16) 58%,transparent);
+    pointer-events:none;z-index:1;
+  }
+}
+
+/* 4. THE VOLUME THUMB INDEX, on the OUTER LEFT EDGE. Canonical destinations, one silhouette
+      family, and never confusable with a personal ribbon. Below 1100px they stop being tabs and
+      become an ordinary labelled list inside the contents layer -- a 30px tab with rotated text
+      is unusable on a phone and pretending otherwise is how the metaphor starts costing access. */
+@media (min-width:1100px){
+  :root[data-codex="on"] #cx-vols{
+    /* ANCHORED TO THE MEASURED BOOK, NOT A GUESSED WIDTH. This was
+       `50vw - min(46rem,46vw)`, which assumed a 736px page; the real main landmark is 1100px at
+       1440 viewport, so the expression went negative, clamped to the viewport edge, and left the
+       tabs floating 160px away from the object they are supposed to be bound into. A thumb index
+       that does not touch its book is a decoration. codex.js measures the landmark and publishes
+       --cx-book-x / --cx-book-r, re-measured on resize. */
+    position:fixed;inset-inline-start:max(4px,calc(var(--cx-book-x,170px) - var(--cx-tabw)));
+    inset-block-start:22vh;z-index:30;inline-size:max-content;
+  }
+  :root[data-codex="on"] #cx-vols ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
+  :root[data-codex="on"] #cx-vols a{
+    display:flex;align-items:center;justify-content:center;
+    /* PHYSICAL width/height HERE, DELIBERATELY, AND THE LOGICAL PAIR WAS A REAL BUG.
+       `writing-mode:vertical-rl` SWAPS THE AXES: inline-size becomes the vertical dimension and
+       block-size the horizontal. Written logically this box came out 73px wide and 40px tall --
+       the opposite of a thumb tab -- and it overlapped 34px into the page it is supposed to sit
+       against. Logical properties are right almost everywhere and wrong exactly here, because
+       this box's orientation is fixed by design rather than by the document's direction. */
+    box-sizing:border-box;width:var(--cx-tabw);height:clamp(58px,7vh,84px);
+    background:linear-gradient(90deg,var(--cx-tab),#5a4a2c);color:#f0e4c0;
+    border:1px solid #4a3d24;border-inline-end:0;
+    border-start-start-radius:4px;border-end-start-radius:4px;
+    writing-mode:vertical-rl;text-orientation:mixed;
+    font-variant:small-caps;letter-spacing:.1em;font-size:.72rem;text-decoration:none;
+    box-shadow:-2px 2px 6px -2px rgba(0,0,0,.6);
+    transition:inline-size .16s ease, background .16s ease;
+  }
+  :root[data-codex="on"] #cx-vols a:hover{width:calc(var(--cx-tabw) + 5px)}
+  /* THE ACTIVE TAB READS AS CONNECTED TO THE LEAF, which is the whole job of a thumb index:
+     it is lighter, wider, and its inner edge is the page's own colour so the tab and the page
+     look like one object. Shape and value carry it, not colour alone. */
+  :root[data-codex="on"] #cx-vols a[aria-current="page"],
+  :root[data-codex="on"] #cx-vols a[aria-current="true"]{
+    background:linear-gradient(90deg,var(--cx-tab-on),var(--cx-stock));
+    color:#2c2318;width:calc(var(--cx-tabw) + 8px);font-weight:600;
+  }
+}
+
+/* 5. THE UTILITY CLASPS, on the OUTER RIGHT EDGE. A SECOND silhouette family, deliberately:
+      the left edge is where you go, the right edge is what you do. Round versus rectangular is
+      the difference, and it survives with every texture disabled. */
+@media (min-width:1100px){
+  :root[data-codex="on"] #cx-clasps{
+    position:fixed;inset-inline-end:max(4px,calc(var(--cx-book-r,170px) - 42px));
+    inset-block-start:24vh;z-index:30;display:flex;flex-direction:column;gap:8px;
+  }
+  :root[data-codex="on"] #cx-clasps button{
+    inline-size:34px;block-size:34px;border-radius:50%;
+    background:radial-gradient(circle at 34% 30%,#9d8a5e,#6b5a3c);
+    border:1px solid #4a3d24;color:#f0e4c0;cursor:pointer;
+    display:grid;place-items:center;font-size:.9rem;line-height:1;
+    box-shadow:0 2px 6px -2px rgba(0,0,0,.6);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   CODEX-STAGE-6 — THE LEDGER GRAMMAR, AND THE FIRST REAL SECOND LEAF.
+
+   WHAT THIS IS FOR. The reference's transferable 2x2 short-record spread: four concise,
+   comparable records across a facing pair, collapsing to an ordinary list in reflow. Until now
+   `data-leaves="2"` was set on ZERO routes, so the gutter correctly rendered nowhere and the
+   codex had no page with two functional halves. This is that page.
+
+   IT IS APPLIED TO A GRID THE ARCHIVE ALREADY BUILDS, NOT TO A NEW COMPONENT. `ainur.html` has
+   carried `.grid`/`.card` since long before the codex: 30 records, each a heading, a meta line, a
+   quotation and a citation. What it did NOT have is a codex-aware column count -- it was
+   `auto-fill minmax(320px,1fr)`, which at 1440 flows three or four tiles a row and reads as a
+   dashboard. The spec's own §7.3 names that failure by name: "cards must not become a generic
+   dashboard tile system."
+
+   SO THE LEDGER CHANGES THE COLUMN COUNT AND THE GUTTER, AND NOTHING ELSE. Same markup, same
+   records, same citations. A grammar is a layout decision about existing content; if it needed
+   new content it would be a new page wearing a grammar's name.
+
+   AND IT IS EARNED PER ROUTE, NEVER DECLARED. codex.js sets data-ledger only where it has
+   COUNTED at least four comparable records in a real grid. A route with two records gets no
+   ledger, because a 2x2 with two empty cells is the blank-leaf anti-pattern the spec calls out
+   in its own bug capture.                                                                      */
+
+@media (min-width:1100px){
+  /* EXACTLY TWO COLUMNS, because the grammar is a SPREAD and not a flow. auto-fill would give
+     three or four at this width and the facing-page relationship would be lost -- which is the
+     difference between a ledger and a tile wall. */
+  :root[data-codex="on"][data-ledger="on"] .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(26px,3.4vw,54px);   /* the gutter lives HERE, as space between the leaves */
+    row-gap:14px;
+  }
+  /* THE GUTTER IS DRAWN ONLY NOW, and this is the first route where it means anything. It is
+     pointer-events:none so it can never swallow a card's text selection or focus ring. */
+  :root[data-codex="on"][data-leaves="2"] .grid{position:relative}
+  :root[data-codex="on"][data-leaves="2"] .grid::before{
+    content:"";position:absolute;inset-block:-4px;inset-inline-start:50%;
+    width:clamp(10px,1.4vw,22px);transform:translateX(-50%);
+    background:linear-gradient(90deg,transparent,rgba(90,70,40,.13) 42%,rgba(90,70,40,.20) 50%,rgba(90,70,40,.13) 58%,transparent);
+    pointer-events:none;z-index:0;
+  }
+  :root[data-codex="on"][data-leaves="2"] .grid>*{position:relative;z-index:1}
+}
+
+/* REFLOW IS ONE COLUMN AND IS NOT AN AFTERTHOUGHT. Below the wide breakpoint the ledger is an
+   ordinary vertical list of the same records -- no miniature two-page canvas, no horizontal
+   scroll, and no gutter, because there are no facing leaves to divide. */
+@media (max-width:1099px){
+  :root[data-codex="on"][data-ledger="on"] .grid{grid-template-columns:minmax(0,1fr)}
+}
+
+/* ── BELOW THE WIDE BREAKPOINT THE THUMB INDEX STANDS DOWN ──────────────────────────────────
+   Everything that MAKES a thumb tab -- the fixed position, the vertical writing mode, the
+   silhouette, the anchoring to the book's measured edge -- lives inside `@media (min-width:1100px)`.
+   Below it those rules simply do not apply, so `#cx-vols` fell back into normal flow and rendered
+   as a bare list of seven links stacked above the page. Measured at 390 and at 1024: seven tabs
+   "visible", none of them a tab.
+
+   THAT IS THE FAULT §9 NAMES -- "no tiny page-edge tabs ... decorative frame consuming most of
+   the viewport" -- and the honest fix is not to shrink a tab until it is unusable. IT IS TO LET
+   THE OTHER MECHANISM CARRY IT. The top bar's hall dropdowns are already an accessible disclosure
+   navigation with `aria-expanded` buttons, they hold the same seven halls, and the rule above
+   leaves them untouched at exactly these widths. So the volume index does not vanish; it CHANGES
+   SHAPE, which is what a responsive transformation is.
+
+   `display:none` and not `visibility:hidden`, deliberately: the links are duplicated in the
+   dropdowns at these widths, and a screen reader should meet each destination once, not twice. */
+@media (max-width:1099px){
+  :root[data-codex="on"] #cx-vols{display:none}
+  /* The clasps go with them for the same reason: they are fixed furniture anchored to a book
+     edge that only exists at wide sizes. Contents and the Journal remain reachable -- the layer
+     machine in codex_state.js is what actually opens them, and it is width-independent. */
+  :root[data-codex="on"] #cx-clasps{display:none}
+}
+
+/* ── THE TOUCH TARGET, WHICH IS THE HALF THAT MAKES THE DRAWER A DRAWER ─────────────────────
+   Driven at 390px: the seven hall buttons are 24px tall. They are the ONLY route between halls
+   at that width now, they carry `aria-expanded`, they open to five links each and they fit the
+   viewport -- every part of §9's "accessible drawer" holds EXCEPT the part a thumb touches.
+   44px is the figure the archive already uses for `#cx-jrn .cx-clear`, so this is the house
+   number rather than a new one.
+
+   `min-height` and not `height`: a hall label wraps at this width ("Peoples & Living Beings"
+   is 116px on a 390px screen), and a fixed height would clip the second line. */
+@media (max-width:1099px){
+  :root[data-codex="on"] #ardanav .grp > button{
+    min-height:44px;
+    display:flex; align-items:center;
+  }
+  /* The links INSIDE an opened hall are touched too, and they were never sized for it either. */
+  :root[data-codex="on"] #ardanav .grp [role="menu"] a,
+  :root[data-codex="on"] #ardanav .grp > div a{
+    min-height:44px;
+    display:flex; align-items:center;
+  }
+}
+
+/* ── THE READING MEASURE, §12.1 ────────────────────────────────────────────────────────────
+   MEASURED FIRST, in a browser, on a real paragraph, in the page's own font:
+
+       viewport 1440   main 1340px   paragraph 1182px   163 CHARACTERS
+       viewport 1280   main 1216px   paragraph 1068px   147
+       viewport 1100   main 1045px   paragraph  909px   125
+
+   against §12.1's 60-75. At 1440 a line of prose is more than twice as long as a reader can
+   track, and the return sweep -- the eye's jump from the end of one line to the start of the
+   next -- is where a too-long measure actually costs comprehension.
+
+   THE CAP IS ON PROSE AND NOT ON THE LEAF. A leaf is furniture and may be as wide as the book;
+   what has a measure is a line of TEXT. So this caps the elements that hold running prose and
+   deliberately leaves the ledger alone: `#out` is 26,062 characters of RECORDS, laid out in two
+   columns by stage 6, and a record is scanned rather than read. Capping it would fight the
+   grammar built one commit ago.
+
+   `ch` is the right unit and not a guess: 1ch is the advance of "0" in the element's own font,
+   so the rule tracks Georgia at 14.5px and would still track a different face if the archive
+   ever changed one. 66ch sits in the middle of the 60-75 band rather than at its edge.
+
+   AND THE FIRST VERSION OF THIS RULE NAMED `.intro` AND MEASURED ON THE ONE HALL THAT HAS ONE.
+   `.intro` exists on 7 of 39 halls. Enumerated at 1440 across all 39 -- which is the readers-table
+   rule pointed at my own CSS -- the direct-child form left SIX halls over 75ch: languages 200,
+   sheets 200, heraldry 185, writing 176, silences 133, valinor 107. Every one nests its prose
+   deeper than a direct child, and heraldry's is inside an `.intro` the rule could not reach.
+
+   So the selector is STRUCTURAL and not positional: prose is a paragraph anywhere in the leaf,
+   and the ledger is put back by name below. A rule that names the class a hall happens to use
+   is a rule that goes stale the next time a hall is built. */
+@media (min-width:900px){
+  :root[data-codex="on"] [role="main"] p,
+  :root[data-codex="on"] [role="main"] li,
+  :root[data-codex="on"] [role="main"] blockquote,
+  :root[data-codex="on"] main p,
+  :root[data-codex="on"] main li,
+  :root[data-codex="on"] main blockquote{
+    max-width:66ch;
+  }
+  /* AND THE LEDGER IS PUT BACK, because the cap above is a DESCENDANT rule and a record's
+     prose is inside it. A record is scanned, not read: it is already in a 2-column ledger and
+     a second cap inside one would set 66ch inside 585px and waste the leaf. The reset is
+     explicit rather than expressed as :not(), so a reader of this file can see both halves. */
+  :root[data-codex="on"] [role="main"] .grid p,
+  :root[data-codex="on"] [role="main"] .grid li,
+  :root[data-codex="on"] [role="main"] .grid blockquote,
+  :root[data-codex="on"] main .grid p,
+  :root[data-codex="on"] main .grid li,
+  :root[data-codex="on"] main .grid blockquote{
+    max-width:none;
+  }
+}
+
+/* ── THE INTRO BECOMES A SPREAD, WHICH IS WHAT THE MEASURE LEFT UNFINISHED ──────────────────
+   Capping prose at 66ch fixed the line length and left the intro card holding text in its left
+   470px and nothing in its right 750px -- a margin is a good thing and an EMPTY BOX is not, and
+   a bordered card with one half filled reads as the second half having failed to load.
+
+   An intro is already two things: the statement, and the caveat that qualifies it. On ainur
+   those are a <p> and a <blockquote>, and standing them side by side is not decoration -- it is
+   the paired-leaf grammar this codex is built on, applied to the one block that already had two
+   parts and was stacking them.
+
+   TWO COLUMNS EXACTLY, because the grammar is a PAIRED LEAF and a book does not open to three.
+   An earlier version used auto-fit, which fitted three tracks in a 1120px intro and broke
+   heraldry's eight blocks across a row of three -- flexible, and not the thing being built.
+
+   `:has(> p)` IS THE GATE, AND IT IS NOT A STYLE PREFERENCE -- IT PREVENTS SCRAMBLED PROSE.
+   Measured across all 7 halls that carry an .intro: six hold block children (p, ul, blockquote,
+   div) and gazetteer holds `<b>` and `<span>` WITH A BARE TEXT NODE BESIDE THEM. Bare text
+   inside a grid container becomes an ANONYMOUS GRID ITEM, so gazetteer's one sentence would be
+   cut into pieces and dealt into separate tracks -- its prose reordered on screen by a layout
+   rule. The six safe halls all have a direct-child <p> and the one unsafe hall has none, so the
+   gate is exactly the measured population rather than a list of hall names.
+
+   Mobile needs no separate rule: this whole block is inside `min-width:1100px`, so a narrow
+   screen never becomes a grid at all. Verified at 390 -- all 7 single column, no scroll. */
+@media (min-width:1100px){
+  :root[data-codex="on"] [role="main"] .intro:has(> p),
+  :root[data-codex="on"] main .intro:has(> p){
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(24px,3vw,48px);
+    row-gap:10px;
+    align-items:start;
+  }
+}
+/* ── AND THE THREE RULES ABOVE REACHED 39 ROUTES OF 621 UNTIL 19 AUGUST ─────────────────────
+   The gate was the ATTRIBUTE `[role="main"]`. All 39 halls carry an explicit `role="main"`; all
+   582 generated entity pages use a bare `<main class="card">`, whose ARIA role is IMPLICIT -- and
+   a CSS attribute selector does not match an implicit role. So every person/, place/ and realm/
+   page rendered its prose at 88.0ch, 17% over the top of §12.1's band, while the halls sat at 66.
+
+   THE ASYMMETRY WAS INSIDE THIS FILE AND IT IS WHY THE FAULT WAS INVISIBLE. The codex OBJECT rule
+   already carries a bare-`main` companion, so entity pages got the book, the stock and the shadow
+   -- they looked entirely correct. Only the measure was missing, and a page that looks right is
+   the last place anyone checks. codex.js has always queried `'[role="main"], main'`: the
+   JavaScript handled both and the stylesheet did not.
+
+   Measured as a CENSUS of all 621 routes, not a sample: 582/582 entity pages at 88.0ch before,
+   and the figure is a dead tie because they share one `.card{max-width:660px}
+/* THE CUE HAD NOTHING TO SHOW AND COULD NOT HAVE MATCHED THESE PAGES EITHER -- two faults,
+   23 Aug 2026. There was no `content` in any stylesheet, so this breathed the opacity of a
+   ::before that generated no box; and every selector demanded data-codex="on" while all 13
+   dataset-fetching halls are data-codex-object="on". "Loading..." is the archive's own generic
+   form, already published in writing.html. The full measurement is in the commit, not here:
+   every page fetches this file, and prose the author could have cut is not worth a ceiling. */
+:root[data-codex="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before,
+:root[data-codex-object="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before{
+  content:"Loading\2026";
+  display:block;
+  padding:1.5em 0;
+  text-align:center;
+  font-style:italic;
+  opacity:.6;
+}
+
+/* The rule breathes rather than spins: a codex is not a progress bar. Motion is opt-out by the
+   reader's own setting, and the text stands unaided when it is off. */
+@media (prefers-reduced-motion:no-preference){
+  :root[data-codex="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before,
+  :root[data-codex-object="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before{
+    animation:cx-breathe 1.9s ease-in-out infinite;
+  }
+  @keyframes cx-breathe{0%,100%{opacity:.45}50%{opacity:.95}}
+}

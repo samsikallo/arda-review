@@ -1,0 +1,3276 @@
+{
+ "sites": {
+  "arda_elv": {
+   "work": "The Elvish Linguistic Fellowship",
+   "url": "https://www.elvish.org/",
+   "authority": 1,
+   "why": "§6 ranks the E.L.F. FIRST: it publishes Vinyar Tengwar and Parma Eldalamberon, the two journals that carry Tolkien's own linguistic papers.",
+   "licence": "no open licence stated",
+   "pages": [
+    {
+     "file": "www.elvish.org/FAQ.html",
+     "title": "The Tolkienian Linguistics FAQ",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2894
+    },
+    {
+     "file": "www.elvish.org/errata.html",
+     "title": "E.L.F. Errata",
+     "headings": [],
+     "sources_cited": [],
+     "words": 164
+    },
+    {
+     "file": "www.elvish.org/gwaith.html",
+     "title": "Welcome to the Fellowship of the Word-smiths :: Mae govannen vi Gwaith-i-Phethdain",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 351
+    },
+    {
+     "file": "www.elvish.org/index.html",
+     "title": "The Elvish Linguistic Fellowship",
+     "headings": [],
+     "sources_cited": [],
+     "words": 596
+    },
+    {
+     "file": "www.elvish.org/resources.html",
+     "title": "Resources for Tolkienian Linguistics",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "MC",
+      "NM",
+      "Plotz",
+      "QL",
+      "RC",
+      "UT"
+     ],
+     "words": 4952
+    },
+    {
+     "file": "www.elvish.org/gwaith/aelfwine.htm",
+     "title": "Aelfwine by A. Appleyard",
+     "headings": [],
+     "sources_cited": [
+      "SD"
+     ],
+     "words": 7720
+    },
+    {
+     "file": "www.elvish.org/gwaith/ainulindale.htm",
+     "title": "Ainulindal�",
+     "headings": [],
+     "sources_cited": [
+      "Ety"
+     ],
+     "words": 207
+    },
+    {
+     "file": "www.elvish.org/gwaith/alatariel.htm",
+     "title": "Altariello L�r�",
+     "headings": [],
+     "sources_cited": [],
+     "words": 111
+    },
+    {
+     "file": "www.elvish.org/gwaith/alatarielotelerin.htm",
+     "title": "Alatariello Nainie in Telerin by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [],
+     "words": 394
+    },
+    {
+     "file": "www.elvish.org/gwaith/andamalle.html",
+     "title": "I Anda Malle by Thomas Ferencz",
+     "headings": [],
+     "sources_cited": [],
+     "words": 444
+    },
+    {
+     "file": "www.elvish.org/gwaith/andries.htm",
+     "title": "Maendeithad Edhellen by D. Andri�s",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1210
+    },
+    {
+     "file": "www.elvish.org/gwaith/anduril.htm",
+     "title": "And�ril",
+     "headings": [],
+     "sources_cited": [],
+     "words": 182
+    },
+    {
+     "file": "www.elvish.org/gwaith/anglosaxon.htm",
+     "title": "Arek Kubala's Anglo-Saxon Calligraphy",
+     "headings": [],
+     "sources_cited": [],
+     "words": 85
+    },
+    {
+     "file": "www.elvish.org/gwaith/arandil.htm",
+     "title": "Quenya Poems by Arandil Elenion",
+     "headings": [],
+     "sources_cited": [],
+     "words": 375
+    },
+    {
+     "file": "www.elvish.org/gwaith/arwenlament.html",
+     "title": "Lament to Arwen by Thomas Ferencz",
+     "headings": [],
+     "sources_cited": [],
+     "words": 164
+    },
+    {
+     "file": "www.elvish.org/gwaith/atholad.htm",
+     "title": "O Hatholad",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "VT42"
+     ],
+     "words": 581
+    },
+    {
+     "file": "www.elvish.org/gwaith/athrabeth.htm",
+     "title": "Fragment of Athrabeth Finrod ah Andreth",
+     "headings": [
+      "Fragment of Athrabeth Finrod ah Andreth",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "WJ"
+     ],
+     "words": 228
+    },
+    {
+     "file": "www.elvish.org/gwaith/avesind.htm",
+     "title": "Ave Maria in Sindarin by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [],
+     "words": 128
+    },
+    {
+     "file": "www.elvish.org/gwaith/bfp.htm",
+     "title": "T�rbeth Lossfin",
+     "headings": [
+      "Beadu Felda Pelennora"
+     ],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 471
+    },
+    {
+     "file": "www.elvish.org/gwaith/bibliography.htm",
+     "title": "Tolkien's Linguistic Writings and Drafts",
+     "headings": [],
+     "sources_cited": [
+      "Plotz"
+     ],
+     "words": 689
+    },
+    {
+     "file": "www.elvish.org/gwaith/bilbos_last_song.htm",
+     "title": "Boromir's Death",
+     "headings": [],
+     "sources_cited": [],
+     "words": 560
+    },
+    {
+     "file": "www.elvish.org/gwaith/boris_and_olga.htm",
+     "title": "Boris and Olga",
+     "headings": [],
+     "sources_cited": [],
+     "words": 168
+    },
+    {
+     "file": "www.elvish.org/gwaith/calendars.htm",
+     "title": "Calendars of Imladris, Gondor and the Shire v1.2b",
+     "headings": [],
+     "sources_cited": [
+      "Let",
+      "LotR"
+     ],
+     "words": 3661
+    },
+    {
+     "file": "www.elvish.org/gwaith/calligraphy.htm",
+     "title": "Sindarin Tengwar Inscriptions",
+     "headings": [],
+     "sources_cited": [],
+     "words": 268
+    },
+    {
+     "file": "www.elvish.org/gwaith/casa_loma.htm",
+     "title": "Casa Loma Exhibit",
+     "headings": [],
+     "sources_cited": [
+      "Let",
+      "LotR"
+     ],
+     "words": 762
+    },
+    {
+     "file": "www.elvish.org/gwaith/ce_pronouns.htm",
+     "title": "Common Eldarin Pronouns",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "MR",
+      "UT",
+      "WJ"
+     ],
+     "words": 2234
+    },
+    {
+     "file": "www.elvish.org/gwaith/cirion.html",
+     "title": "Cition and Eorl in Sindarin",
+     "headings": [],
+     "sources_cited": [
+      "Ety",
+      "LotR",
+      "MR",
+      "PM",
+      "SD",
+      "UT",
+      "WJ"
+     ],
+     "words": 930
+    },
+    {
+     "file": "www.elvish.org/gwaith/cuivienello.htm",
+     "title": "Cuivienello Tol Eress�anna by Ryszard Derdzinski",
+     "headings": [
+      "Ulyaina serc� alafiryar ar firyaiva"
+     ],
+     "sources_cited": [],
+     "words": 288
+    },
+    {
+     "file": "www.elvish.org/gwaith/curse.htm",
+     "title": "Legolas' Song of the Sea",
+     "headings": [
+      "I Thrach in Gelydh",
+      "'The Curse of the Noldor' translated into Sindarin b y Menelvantar"
+     ],
+     "sources_cited": [],
+     "words": 611
+    },
+    {
+     "file": "www.elvish.org/gwaith/dchapman.htm",
+     "title": "N�men by David Chapman",
+     "headings": [],
+     "sources_cited": [],
+     "words": 276
+    },
+    {
+     "file": "www.elvish.org/gwaith/dchapmanb.htm",
+     "title": "Romen by David Chapman",
+     "headings": [],
+     "sources_cited": [],
+     "words": 499
+    },
+    {
+     "file": "www.elvish.org/gwaith/derdzinski.htm",
+     "title": "Valacormaron by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [],
+     "words": 157
+    },
+    {
+     "file": "www.elvish.org/gwaith/dombach.htm",
+     "title": "Florian Dombach",
+     "headings": [],
+     "sources_cited": [],
+     "words": 72
+    },
+    {
+     "file": "www.elvish.org/gwaith/eagles_song.htm",
+     "title": "Eagle's Song",
+     "headings": [
+      "Laer T horon",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [],
+     "words": 807
+    },
+    {
+     "file": "www.elvish.org/gwaith/eirien_a.htm",
+     "title": "Amrun o Lamedon by Eirien Tuilinn",
+     "headings": [],
+     "sources_cited": [],
+     "words": 248
+    },
+    {
+     "file": "www.elvish.org/gwaith/eirien_b.htm",
+     "title": "Aerlinn in elvellyn by Eirien Tuilinn",
+     "headings": [],
+     "sources_cited": [],
+     "words": 302
+    },
+    {
+     "file": "www.elvish.org/gwaith/elanor.htm",
+     "title": "Boromir's Death",
+     "headings": [],
+     "sources_cited": [],
+     "words": 287
+    },
+    {
+     "file": "www.elvish.org/gwaith/elendils_hymn.htm",
+     "title": "Elendil's Hymn",
+     "headings": [
+      "Aerlinn Elendil",
+      "a fragment translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [],
+     "words": 570
+    },
+    {
+     "file": "www.elvish.org/gwaith/elgaladna.htm",
+     "title": "Elgaladna",
+     "headings": [],
+     "sources_cited": [],
+     "words": 70
+    },
+    {
+     "file": "www.elvish.org/gwaith/elrond.htm",
+     "title": "Elrond's Blessing",
+     "headings": [],
+     "sources_cited": [],
+     "words": 203
+    },
+    {
+     "file": "www.elvish.org/gwaith/ents.htm",
+     "title": "Ent and Entwife",
+     "headings": [],
+     "sources_cited": [],
+     "words": 828
+    },
+    {
+     "file": "www.elvish.org/gwaith/epitaph_1.htm",
+     "title": "Gandalf's last words",
+     "headings": [],
+     "sources_cited": [],
+     "words": 261
+    },
+    {
+     "file": "www.elvish.org/gwaith/epitaph_2.htm",
+     "title": "The epitaph of Beowulf",
+     "headings": [],
+     "sources_cited": [],
+     "words": 220
+    },
+    {
+     "file": "www.elvish.org/gwaith/eruontale_2004.htm",
+     "title": "Gwaith",
+     "headings": [],
+     "sources_cited": [],
+     "words": 94
+    },
+    {
+     "file": "www.elvish.org/gwaith/fangorn.htm",
+     "title": "Words of Fangorn",
+     "headings": [
+      "Pent Fangorn na 'Aladriel a Geleborn",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 396
+    },
+    {
+     "file": "www.elvish.org/gwaith/faq.htm",
+     "title": "FAQ",
+     "headings": [
+      "About",
+      "Index",
+      "Questions",
+      "� What is Elvish? What are Quenya and Sindarin ?",
+      "� What is the difference between Quenya and Sindarin ?",
+      "� Which is easier? Which one should learn first?",
+      "� How can I speak Elvish fluently with my friends?",
+      "� How can I study Elvish? Are there any courses or books?",
+      "� What is 'Grelvish'? Why do the linguists seem to disdain it so?",
+      "� Where can I find a good dictionary/wordlist?",
+      "� I want to speak Dwarvish and Ardalambion has very few words. Where do I find more?",
+      "� What if we want a word/words that cannot be found in the dictionary (either Quenya or Sindarin ), what do we do?",
+      "� What does That Character say in That Scene of the Movie?",
+      "� How can I translate my name into Elvish?",
+      "� How can I \"translate\" my name in Elvish letters?",
+      "� I want to write something on a tattoo or wedding ring \"translated\" in the \"runes\" of the One Ring.",
+      "� What about the Elvish letters? What are the Tengwar ?",
+      "� How do I learn the Elvish scripts?",
+      "� How can I write Elvish on my PC?",
+      "� How do I write with the fonts? The result doesn't look right!"
+     ],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 5935
+    },
+    {
+     "file": "www.elvish.org/gwaith/faramir.htm",
+     "title": "Faramir's Love",
+     "headings": [],
+     "sources_cited": [],
+     "words": 365
+    },
+    {
+     "file": "www.elvish.org/gwaith/gandalf.htm",
+     "title": "Gandalf's Advice",
+     "headings": [],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 347
+    },
+    {
+     "file": "www.elvish.org/gwaith/gilgalad.htm",
+     "title": "Glir Gil-galad",
+     "headings": [
+      "The Fall of Gil-galad",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [],
+     "words": 324
+    },
+    {
+     "file": "www.elvish.org/gwaith/gondor.htm",
+     "title": "Gondor",
+     "headings": [
+      "Song of Gondor",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "SD"
+     ],
+     "words": 249
+    },
+    {
+     "file": "www.elvish.org/gwaith/gucza.htm",
+     "title": "The Gucza's Wedding",
+     "headings": [],
+     "sources_cited": [],
+     "words": 113
+    },
+    {
+     "file": "www.elvish.org/gwaith/gwaith.htm",
+     "title": "Contents",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 75
+    },
+    {
+     "file": "www.elvish.org/gwaith/gwaith1.htm",
+     "title": "Contents",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 75
+    },
+    {
+     "file": "www.elvish.org/gwaith/gwaith2.htm",
+     "title": "Contents",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 88
+    },
+    {
+     "file": "www.elvish.org/gwaith/gwaith3.htm",
+     "title": "Contents",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 77
+    },
+    {
+     "file": "www.elvish.org/gwaith/hithaeglir.htm",
+     "title": "Erin daen Hithaeglir :: Thorsten Renk",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2121
+    },
+    {
+     "file": "www.elvish.org/gwaith/iessadriel.htm",
+     "title": "Naergon an Kharas Crist by Iessadriel",
+     "headings": [],
+     "sources_cited": [],
+     "words": 732
+    },
+    {
+     "file": "www.elvish.org/gwaith/index.html",
+     "title": "Welcome to the Fellowship of the Word-smiths :: Mae govannen vi Gwaith-i-Phethdain",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 351
+    },
+    {
+     "file": "www.elvish.org/gwaith/intothewest.htm",
+     "title": "N�menna by Thorsten Renk",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 408
+    },
+    {
+     "file": "www.elvish.org/gwaith/j_butler_2.htm",
+     "title": "Jessica Butler's Music",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 856
+    },
+    {
+     "file": "www.elvish.org/gwaith/language.htm",
+     "title": "Fellowship of the Word-smiths",
+     "headings": [],
+     "sources_cited": [],
+     "words": 14
+    },
+    {
+     "file": "www.elvish.org/gwaith/language1.htm",
+     "title": "Contents of the Gwaith-i-Pheddain",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1954
+    },
+    {
+     "file": "www.elvish.org/gwaith/leithian.htm",
+     "title": "Lay of Leithian",
+     "headings": [],
+     "sources_cited": [],
+     "words": 362
+    },
+    {
+     "file": "www.elvish.org/gwaith/lingal.htm",
+     "title": "Linguistic Gallery",
+     "headings": [],
+     "sources_cited": [],
+     "words": 38
+    },
+    {
+     "file": "www.elvish.org/gwaith/lisamessage.htm",
+     "title": "Elfling message by Lisa Star",
+     "headings": [],
+     "sources_cited": [
+      "GG",
+      "LotR",
+      "RGEO",
+      "UT"
+     ],
+     "words": 3148
+    },
+    {
+     "file": "www.elvish.org/gwaith/lisastar.htm",
+     "title": "Three Compositions by Lisa Star",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 278
+    },
+    {
+     "file": "www.elvish.org/gwaith/lore_song.htm",
+     "title": "Song of Lore",
+     "headings": [
+      "Ist-Minlamad Fangorn",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [],
+     "words": 360
+    },
+    {
+     "file": "www.elvish.org/gwaith/lukasnovak.htm",
+     "title": "I Vinyamasse Omentie by Lukas Novak",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 760
+    },
+    {
+     "file": "www.elvish.org/gwaith/manwe.htm",
+     "title": "Menwe ar Melcoro",
+     "headings": [],
+     "sources_cited": [],
+     "words": 362
+    },
+    {
+     "file": "www.elvish.org/gwaith/merseburg.htm",
+     "title": "Eagle's Song",
+     "headings": [
+      "Merseburg Charm",
+      "translated into Sindarin b y Lothenon"
+     ],
+     "sources_cited": [],
+     "words": 752
+    },
+    {
+     "file": "www.elvish.org/gwaith/mistalondesse.htm",
+     "title": "Altariello Nainie Mistalondesse",
+     "headings": [
+      "Altariello Nainie Mistalondesse",
+      "(part of Samwise Gamgee's Letter)",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "Ety",
+      "LotR",
+      "PM"
+     ],
+     "words": 219
+    },
+    {
+     "file": "www.elvish.org/gwaith/morn_ellui.htm",
+     "title": "Morn 'ellui",
+     "headings": [],
+     "sources_cited": [],
+     "words": 412
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie.htm",
+     "title": "Fellowship of the Word-smiths",
+     "headings": [],
+     "sources_cited": [],
+     "words": 14
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_archives.htm",
+     "title": "Archives",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "Let",
+      "LotR"
+     ],
+     "words": 2988
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_archives_2.htm",
+     "title": "Movie Archives 2",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "UT"
+     ],
+     "words": 3866
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_archives_3.htm",
+     "title": "Movie News 3",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 2442
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_archives_4.htm",
+     "title": "Movie News 3",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 3604
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_elvish.htm",
+     "title": "Elvish Dialog List",
+     "headings": [],
+     "sources_cited": [],
+     "words": 739
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_fotr.htm",
+     "title": "Dialogs in FotR",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "SD",
+      "UT",
+      "WJ"
+     ],
+     "words": 4717
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_inscriptions.htm",
+     "title": "Sword Inscriptions",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "WJ"
+     ],
+     "words": 2091
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_intro.htm",
+     "title": "Language in the Movie: Introduction",
+     "headings": [],
+     "sources_cited": [],
+     "words": 835
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_news.htm",
+     "title": "Languages in The Lord of the Rings movie",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 4491
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_official.htm",
+     "title": "Tolkien's Languages in the LotR Movie",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 503
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_otherinscr.htm",
+     "title": "Inscriptions",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "UT"
+     ],
+     "words": 3758
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_rotk.htm",
+     "title": "Dialogs RotK",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "PM"
+     ],
+     "words": 775
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_scripts.htm",
+     "title": "Scripts in the Movie",
+     "headings": [],
+     "sources_cited": [],
+     "words": 992
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_soundtrack.htm",
+     "title": "Soundtrack Analysis",
+     "headings": [],
+     "sources_cited": [],
+     "words": 590
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_soundtrack_fotr.htm",
+     "title": "Soundtrack Analysis",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "MR",
+      "PM",
+      "RGEO",
+      "SD",
+      "UT",
+      "VT41",
+      "WJ"
+     ],
+     "words": 5606
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_soundtrack_rotk.htm",
+     "title": "Soundtrack Analysis",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "Let",
+      "LotR",
+      "PM",
+      "UT",
+      "WJ"
+     ],
+     "words": 3600
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_soundtrack_ttt.htm",
+     "title": "Soundtrack Analysis",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "PM",
+      "UT",
+      "WJ"
+     ],
+     "words": 3399
+    },
+    {
+     "file": "www.elvish.org/gwaith/movie_ttt.htm",
+     "title": "Dialogs TTT",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "Let",
+      "LotR",
+      "UT",
+      "WJ"
+     ],
+     "words": 4476
+    },
+    {
+     "file": "www.elvish.org/gwaith/mrezac.htm",
+     "title": "Oath of the Feanorians by Milan Rezac",
+     "headings": [],
+     "sources_cited": [
+      "Plotz"
+     ],
+     "words": 909
+    },
+    {
+     "file": "www.elvish.org/gwaith/navaer.htm",
+     "title": "Galadriel's Lament in Sindarin",
+     "headings": [
+      "Naergon Galadriel",
+      "or Galadriel's Lament in Sindarin",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 683
+    },
+    {
+     "file": "www.elvish.org/gwaith/news.htm",
+     "title": "Elvish Linguistic News",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 4145
+    },
+    {
+     "file": "www.elvish.org/gwaith/news_archive.htm",
+     "title": "News Archive",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR"
+     ],
+     "words": 3297
+    },
+    {
+     "file": "www.elvish.org/gwaith/news_archive_2.htm",
+     "title": "News Archive 2001-2003",
+     "headings": [],
+     "sources_cited": [
+      "Let",
+      "LotR"
+     ],
+     "words": 4728
+    },
+    {
+     "file": "www.elvish.org/gwaith/north_sindarin.htm",
+     "title": "Legolas' Song of the Sea",
+     "headings": [
+      "Narn Fingolfin Aran Golo�rim Lothenon 's account in North Sindarin",
+      "b y Florian 'Lothenon' Dombach"
+     ],
+     "sources_cited": [
+      "WJ"
+     ],
+     "words": 524
+    },
+    {
+     "file": "www.elvish.org/gwaith/old_sindarin.htm",
+     "title": "Legolas' Song of the Sea",
+     "headings": [
+      "I lambi y�ri - I laim i oe r",
+      "Lothenon 's account in Old and Middle Sindarin",
+      "b y Florian 'Lothenon' Dombach"
+     ],
+     "sources_cited": [],
+     "words": 1103
+    },
+    {
+     "file": "www.elvish.org/gwaith/patrick_wynne.htm",
+     "title": "Patrick Wynne",
+     "headings": [],
+     "sources_cited": [],
+     "words": 307
+    },
+    {
+     "file": "www.elvish.org/gwaith/petri_tikka.htm",
+     "title": "Petri Tikka's Kalevala translation",
+     "headings": [
+      "The �Kalevala� Fragment",
+      "by Petri Tikka"
+     ],
+     "sources_cited": [],
+     "words": 237
+    },
+    {
+     "file": "www.elvish.org/gwaith/polski.htm",
+     "title": "Witajcie w Bractwie Kowali S�owa",
+     "headings": [],
+     "sources_cited": [],
+     "words": 139
+    },
+    {
+     "file": "www.elvish.org/gwaith/ppq.htm",
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T"
+     ],
+     "sources_cited": [
+      "LR",
+      "LT1",
+      "LT2",
+      "LotR",
+      "MR",
+      "PE12",
+      "PM",
+      "QL",
+      "SD",
+      "UT",
+      "VT27",
+      "VT32",
+      "VT39",
+      "VT41",
+      "VT42",
+      "VT43",
+      "VT44",
+      "WJ"
+     ],
+     "words": 10319
+    },
+    {
+     "file": "www.elvish.org/gwaith/ppq_intro.htm",
+     "title": "PPQ Introduction",
+     "headings": [],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 429
+    },
+    {
+     "file": "www.elvish.org/gwaith/ppq_trouble.htm",
+     "title": "Troubleshooting",
+     "headings": [],
+     "sources_cited": [],
+     "words": 42
+    },
+    {
+     "file": "www.elvish.org/gwaith/pps.htm",
+     "title": "Parf Pith 'Wain",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T"
+     ],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "MC",
+      "RGEO",
+      "SD",
+      "UT"
+     ],
+     "words": 847
+    },
+    {
+     "file": "www.elvish.org/gwaith/qprose.htm",
+     "title": "Quenya Prose Fragment by Didier Willis",
+     "headings": [],
+     "sources_cited": [],
+     "words": 314
+    },
+    {
+     "file": "www.elvish.org/gwaith/quenya.htm",
+     "title": "Quenya Poems by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 405
+    },
+    {
+     "file": "www.elvish.org/gwaith/rhyme_of_lore.htm",
+     "title": "Legolas' Song of the Sea",
+     "headings": [
+      "Narn en-Angol",
+      "'Rhyme of Lore' translated into Sindarin b y Lea Sheler"
+     ],
+     "sources_cited": [],
+     "words": 335
+    },
+    {
+     "file": "www.elvish.org/gwaith/riddle.htm",
+     "title": "Riddle of Strider in Sindarin",
+     "headings": [
+      "Riddle of Strider",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "WJ"
+     ],
+     "words": 361
+    },
+    {
+     "file": "www.elvish.org/gwaith/ringpoem.htm",
+     "title": "Ring Poem by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "SD",
+      "UT",
+      "VT42",
+      "WJ"
+     ],
+     "words": 1835
+    },
+    {
+     "file": "www.elvish.org/gwaith/ringpoemq.htm",
+     "title": "Ring Poem by Maciej Garbowski",
+     "headings": [],
+     "sources_cited": [],
+     "words": 220
+    },
+    {
+     "file": "www.elvish.org/gwaith/roadgoes.htm",
+     "title": "RGEO part 1",
+     "headings": [
+      "The Road Goes Ever On. Part 1",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "RGEO"
+     ],
+     "words": 429
+    },
+    {
+     "file": "www.elvish.org/gwaith/rumilian.htm",
+     "title": "R�milian Document by Karolina Stopa",
+     "headings": [],
+     "sources_cited": [],
+     "words": 143
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu",
+     "headings": [],
+     "sources_cited": [],
+     "words": 669
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_1.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 1",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1480
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_10.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 10",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1418
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_11.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 11",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1252
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_12.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 12",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1380
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_13.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 12",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1272
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_14.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 12",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1353
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_2.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 2",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1804
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_3.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 3",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1851
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_4.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 4",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1687
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_5.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 5",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1079
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_6.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 6",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1455
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_7.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 7",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1315
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_8.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 8",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1575
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_9.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 9",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1183
+    },
+    {
+     "file": "www.elvish.org/gwaith/s_kurs_wstep.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Wst�p",
+     "headings": [],
+     "sources_cited": [],
+     "words": 654
+    },
+    {
+     "file": "www.elvish.org/gwaith/sams_letter.htm",
+     "title": "Sam's Letter",
+     "headings": [
+      "Samwise Gamgee's Letter",
+      "( and Altariello Nainie Mistalondesse)",
+      "by Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 806
+    },
+    {
+     "file": "www.elvish.org/gwaith/sarati.htm",
+     "title": "Sarati R�milo Quenyava",
+     "headings": [],
+     "sources_cited": [],
+     "words": 288
+    },
+    {
+     "file": "www.elvish.org/gwaith/saso.htm",
+     "title": "Elgaladna",
+     "headings": [],
+     "sources_cited": [],
+     "words": 68
+    },
+    {
+     "file": "www.elvish.org/gwaith/sdprose.html",
+     "title": "Sindarin Text by Didier Willis",
+     "headings": [],
+     "sources_cited": [
+      "Ety",
+      "LR",
+      "Let",
+      "LotR",
+      "PM",
+      "SD",
+      "UT",
+      "WJ"
+     ],
+     "words": 1048
+    },
+    {
+     "file": "www.elvish.org/gwaith/search.htm",
+     "title": "New Page 1",
+     "headings": [],
+     "sources_cited": [],
+     "words": 3
+    },
+    {
+     "file": "www.elvish.org/gwaith/shapiro_1.htm",
+     "title": "Elrond's Blessing",
+     "headings": [],
+     "sources_cited": [],
+     "words": 410
+    },
+    {
+     "file": "www.elvish.org/gwaith/shop.htm",
+     "title": "Galadhorn's Tolkien Shop",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1270
+    },
+    {
+     "file": "www.elvish.org/gwaith/silmarillion_battle.htm",
+     "title": "Ohta imbe Nolofinwe ar Moringotto",
+     "headings": [
+      "Ohta Imb� Nolofinw� ar Moringotto"
+     ],
+     "sources_cited": [],
+     "words": 1001
+    },
+    {
+     "file": "www.elvish.org/gwaith/silmarillion_beginning.htm",
+     "title": "Quenta Silmarillion: Of the Beginning of Days",
+     "headings": [],
+     "sources_cited": [],
+     "words": 4108
+    },
+    {
+     "file": "www.elvish.org/gwaith/silmarillion_project.htm",
+     "title": "\"Quenta Silmarillion Eldalambenen\" Project",
+     "headings": [],
+     "sources_cited": [],
+     "words": 327
+    },
+    {
+     "file": "www.elvish.org/gwaith/silmarillion_varda.htm",
+     "title": "Of Varda",
+     "headings": [],
+     "sources_cited": [],
+     "words": 458
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin.htm",
+     "title": "Sindarin Poems by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "MR",
+      "PM",
+      "SD",
+      "WJ"
+     ],
+     "words": 985
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin_grammar.htm",
+     "title": "Summary of the Sindarin Grammar by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "WJ"
+     ],
+     "words": 5319
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin_intro.htm",
+     "title": "Summary of the Sindarin Grammar",
+     "headings": [],
+     "sources_cited": [],
+     "words": 188
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin_phonetics.htm",
+     "title": "Summary of the Sindarin Grammar by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "LR"
+     ],
+     "words": 1515
+    },
+    {
+     "file": "www.elvish.org/gwaith/slownik.htm",
+     "title": "New URL",
+     "headings": [],
+     "sources_cited": [],
+     "words": 5
+    },
+    {
+     "file": "www.elvish.org/gwaith/stillroundthecorner.htm",
+     "title": "RGEO part 2",
+     "headings": [
+      "The Road Goes Ever On. Part 2",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "RGEO"
+     ],
+     "words": 283
+    },
+    {
+     "file": "www.elvish.org/gwaith/swoboda_1.htm",
+     "title": "Galadriel's Song of Eldamar",
+     "headings": [],
+     "sources_cited": [],
+     "words": 372
+    },
+    {
+     "file": "www.elvish.org/gwaith/taramiluiel_1.htm",
+     "title": "Into The West in Sindarin by Taramiluiel",
+     "headings": [
+      "Nan Ann � n - I nto the West"
+     ],
+     "sources_cited": [],
+     "words": 699
+    },
+    {
+     "file": "www.elvish.org/gwaith/telerin_velasco.htm",
+     "title": "Galadriel's Lament in Telerin",
+     "headings": [],
+     "sources_cited": [],
+     "words": 281
+    },
+    {
+     "file": "www.elvish.org/gwaith/tengwar_polski.htm",
+     "title": "Tengwar dla j�zyka polskiego",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1049
+    },
+    {
+     "file": "www.elvish.org/gwaith/tom_loback.htm",
+     "title": "Tom Loback",
+     "headings": [],
+     "sources_cited": [],
+     "words": 653
+    },
+    {
+     "file": "www.elvish.org/gwaith/tom_loback_2.htm",
+     "title": "Tom Loback",
+     "headings": [],
+     "sources_cited": [],
+     "words": 450
+    },
+    {
+     "file": "www.elvish.org/gwaith/tom_loback_3.htm",
+     "title": "Tom Loback",
+     "headings": [],
+     "sources_cited": [],
+     "words": 403
+    },
+    {
+     "file": "www.elvish.org/gwaith/tom_loback_4.htm",
+     "title": "Tom Loback",
+     "headings": [],
+     "sources_cited": [],
+     "words": 290
+    },
+    {
+     "file": "www.elvish.org/gwaith/tothesea.htm",
+     "title": "Legolas' Song of the Sea",
+     "headings": [
+      "Gaerlin Legolas",
+      "translated into Sindarin b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "WJ"
+     ],
+     "words": 571
+    },
+    {
+     "file": "www.elvish.org/gwaith/tothewest.htm",
+     "title": "Into the West in Quenya",
+     "headings": [
+      "N�menna - Into the West",
+      "song by Annie Lennox translated into Quenya b y Ryszard Derdzinski"
+     ],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 423
+    },
+    {
+     "file": "www.elvish.org/gwaith/tothewest_tikka.htm",
+     "title": "Into the West in Quenya",
+     "headings": [
+      "Minna N�men - Into the West",
+      "song by Annie Lennox translated into Quenya b y Petri Tikka"
+     ],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 425
+    },
+    {
+     "file": "www.elvish.org/gwaith/turbeth.htm",
+     "title": "T�rbeth Lossfin by Ryszard Derdzinski",
+     "headings": [
+      "T�rbeth Lossfin",
+      "Snowmane�s Epitaph"
+     ],
+     "sources_cited": [],
+     "words": 198
+    },
+    {
+     "file": "www.elvish.org/gwaith/two_christian_prayers.htm",
+     "title": "Two Christian Prayers by David Chapman",
+     "headings": [],
+     "sources_cited": [],
+     "words": 595
+    },
+    {
+     "file": "www.elvish.org/gwaith/two_trees_gallery.htm",
+     "title": "Two Trees Gallery",
+     "headings": [],
+     "sources_cited": [],
+     "words": 77
+    },
+    {
+     "file": "www.elvish.org/gwaith/up_2002.htm",
+     "title": "Updates 2002",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1017
+    },
+    {
+     "file": "www.elvish.org/gwaith/up_2003.htm",
+     "title": "Updates 2002",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1836
+    },
+    {
+     "file": "www.elvish.org/gwaith/up_archive.htm",
+     "title": "Archive",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1387
+    },
+    {
+     "file": "www.elvish.org/gwaith/valaqenta.htm",
+     "title": "Valaquenta by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [
+      "Plotz"
+     ],
+     "words": 247
+    },
+    {
+     "file": "www.elvish.org/gwaith/valaquenta.htm",
+     "title": "Valaquenta by Ryszard Derdzinski",
+     "headings": [],
+     "sources_cited": [],
+     "words": 568
+    },
+    {
+     "file": "www.elvish.org/gwaith/varia.htm",
+     "title": "Varia",
+     "headings": [],
+     "sources_cited": [],
+     "words": 144
+    },
+    {
+     "file": "www.elvish.org/gwaith/weddingrings.htm",
+     "title": "Stephen and Juli's wedding rings",
+     "headings": [],
+     "sources_cited": [],
+     "words": 649
+    },
+    {
+     "file": "www.elvish.org/gwaith/whatsnew.htm",
+     "title": "What's new!",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1207
+    },
+    {
+     "file": "www.elvish.org/gwaith/whsn.htm",
+     "title": "Fellowship of the Word-smiths",
+     "headings": [],
+     "sources_cited": [],
+     "words": 14
+    },
+    {
+     "file": "www.elvish.org/gwaith/ppq/ppq.htm",
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T"
+     ],
+     "sources_cited": [
+      "LR",
+      "LT1",
+      "LT2",
+      "LotR",
+      "MR",
+      "PE12",
+      "PM",
+      "QL",
+      "SD",
+      "UT",
+      "VT27",
+      "VT32",
+      "VT39",
+      "VT41",
+      "VT42",
+      "VT43",
+      "VT44",
+      "WJ"
+     ],
+     "words": 10319
+    },
+    {
+     "file": "www.elvish.org/gwaith/ppq/ppq_intro.htm",
+     "title": "PPQ Introduction",
+     "headings": [],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 429
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/bees.htm",
+     "title": "bees",
+     "headings": [],
+     "sources_cited": [],
+     "words": 964
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/derdzinscy.htm",
+     "title": "Klaudia i Ryszard Derdzi�scy",
+     "headings": [],
+     "sources_cited": [],
+     "words": 52
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/index.htm",
+     "title": "�l�skie Ma�e Ojczyzny - Witaj!",
+     "headings": [],
+     "sources_cited": [],
+     "words": 15
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/indexx.htm",
+     "title": "Spis tre�ci",
+     "headings": [],
+     "sources_cited": [],
+     "words": 21
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/kadlub.htm",
+     "title": "Kad�ub Wolny, woj. opolskie",
+     "headings": [],
+     "sources_cited": [],
+     "words": 5625
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/malaojcz.htm",
+     "title": "Ma�a ojczyzna to w polskiej publicystyce termin nowy",
+     "headings": [],
+     "sources_cited": [],
+     "words": 107
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/mapy_slaska.htm",
+     "title": "Mapy �l�ska",
+     "headings": [],
+     "sources_cited": [],
+     "words": 73
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/pilchowice.htm",
+     "title": "Pilchowice, woj, �l�skie",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2990
+    },
+    {
+     "file": "www.elvish.org/gwaith/slask/slask.htm",
+     "title": "Witejcie Ziomkowie! Poczytomy �o �lonsku...",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2002
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_15.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 15",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1721
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_16.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 16",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1559
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_17.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 17",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2067
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_18.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 17",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1548
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_19.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 17",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2211
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_20.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 20",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1319
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_21.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 21",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2499
+    },
+    {
+     "file": "www.elvish.org/gwaith/sindarin/s_kurs_22.htm",
+     "title": "Thorsten Renk :: Kurs sindarinu :: Lekcja 21",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1507
+    },
+    {
+     "file": "www.elvish.org/gwaith/calendar/calendar.htm",
+     "title": "Elvish Calendar by Boris Shapiro",
+     "headings": [],
+     "sources_cited": [],
+     "words": 165
+    },
+    {
+     "file": "www.elvish.org/articles/Attolma.html",
+     "title": "Attolma: The Lord's Prayer in Quenya",
+     "headings": [
+      "Attolma",
+      "The Lord's Prayer in Quenya",
+      "Notes:",
+      "Line 1:",
+      "Line 2:",
+      "Line 3:",
+      "Line 4:",
+      "Line 5:",
+      "Line 6:",
+      "Line 7:",
+      "Footnotes:",
+      "Bibliographical abbreviations:",
+      "Other abbreviations:"
+     ],
+     "sources_cited": [
+      "LR",
+      "LT1",
+      "LT2",
+      "MR",
+      "SD",
+      "UT",
+      "VT24"
+     ],
+     "words": 1940
+    },
+    {
+     "file": "www.elvish.org/articles/BQ.html",
+     "title": "A Critique of Nancy Martsch's Basic Quenya",
+     "headings": [
+      "A Critique of Nancy Martsch's",
+      "Basic Quenya"
+     ],
+     "sources_cited": [
+      "NM"
+     ],
+     "words": 570
+    },
+    {
+     "file": "www.elvish.org/articles/LRH.html",
+     "title": "Ruth S. Noel's The Languages of Tolkien's Middle Earth",
+     "headings": [
+      "Ruth S. Noel's",
+      "The Languages of Tolkien's Middle Earth",
+      "Quotations Translated",
+      "Using Elvish",
+      "English to Elvish Glossary; the Tolkien Dictionary",
+      "The 'Rosetta Stone' Approach to Quenya"
+     ],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1438
+    },
+    {
+     "file": "www.elvish.org/articles/index.html",
+     "title": "Articles",
+     "headings": [],
+     "sources_cited": [],
+     "words": 544
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/conventions.phtml.html",
+     "title": "Conventions and Abbreviations",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "MC",
+      "PME",
+      "QL",
+      "RC",
+      "UT",
+      "VT43"
+     ],
+     "words": 823
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/index.html",
+     "title": "Tengwestië",
+     "headings": [
+      "Articles",
+      "Editorials",
+      "Site Guide",
+      "Review Panel"
+     ],
+     "sources_cited": [],
+     "words": 597
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html",
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "PE15",
+      "QL"
+     ],
+     "words": 13266
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html",
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "NM",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "PE15",
+      "PE17",
+      "PE18",
+      "PE19",
+      "PE21",
+      "PE22",
+      "Plotz",
+      "VT47"
+     ],
+     "words": 10614
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html",
+     "title": "Light and Tree",
+     "headings": [],
+     "sources_cited": [
+      "GG",
+      "GL",
+      "LR",
+      "Let",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "PE15",
+      "QL",
+      "UT",
+      "VT39",
+      "VT45"
+     ],
+     "words": 8394
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html",
+     "title": "Musings on Limlight",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "MC",
+      "PE11",
+      "PE13",
+      "QL",
+      "UT",
+      "VT39",
+      "VT42",
+      "VT43",
+      "VT45"
+     ],
+     "words": 5442
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.phtml.html",
+     "title": "Commentary on Musings on Limlight",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "PE17",
+      "QL",
+      "UT"
+     ],
+     "words": 1368
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html",
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "MC",
+      "NM",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "PE15",
+      "PE16",
+      "PE17",
+      "PE18",
+      "PE19",
+      "PE21",
+      "PE22",
+      "QL",
+      "RC",
+      "UT",
+      "VT39",
+      "VT41",
+      "VT42",
+      "VT43",
+      "VT44",
+      "VT45"
+     ],
+     "words": 14722
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html",
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "sources_cited": [
+      "MC",
+      "PE12",
+      "PE14",
+      "PE16",
+      "PE17",
+      "PE22",
+      "VT48"
+     ],
+     "words": 6259
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html",
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "PE14",
+      "PE15",
+      "QL",
+      "VT17",
+      "VT21",
+      "VT42",
+      "VT47",
+      "VT48"
+     ],
+     "words": 6192
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html",
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "sources_cited": [
+      "PE12",
+      "PE17",
+      "UT",
+      "VT34",
+      "VT39",
+      "VT41",
+      "VT42",
+      "VT44",
+      "VT49",
+      "WJ"
+     ],
+     "words": 1162
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/noldpat.phtml.html",
+     "title": "The Past-Tense Verb in the Noldorin of the Etymologies",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "PE13"
+     ],
+     "words": 5138
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/sindll.phtml.html",
+     "title": "The Two Phonetic Values of ll in Elvish Sindarin in The Lord of the Rings",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "UT",
+      "VT42"
+     ],
+     "words": 2028
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html",
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "sources_cited": [
+      "Let",
+      "MC",
+      "PE12",
+      "PE16",
+      "PE17",
+      "PE19",
+      "PE22",
+      "UT",
+      "VT41",
+      "VT43",
+      "VT44",
+      "VT47",
+      "VT49"
+     ],
+     "words": 7135
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml.html",
+     "title": "Intensifying Prefixes in the Etymologies",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "Let",
+      "UT",
+      "VT45",
+      "VT46"
+     ],
+     "words": 2708
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml.html",
+     "title": "Noldorin Plurals in the Etymologies",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "UT",
+      "VT45",
+      "VT46"
+     ],
+     "words": 4277
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html",
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "sources_cited": [
+      "GG",
+      "GL",
+      "PE11",
+      "PE12",
+      "PE13",
+      "PE14",
+      "QL",
+      "VT39"
+     ],
+     "words": 14916
+    },
+    {
+     "file": "www.elvish.org/VT/index.html",
+     "title": "Vinyar Tengwar",
+     "headings": [],
+     "sources_cited": [],
+     "words": 726
+    },
+    {
+     "file": "www.elvish.org/VT/sample.html",
+     "title": "Vinyar Tengwar Sample",
+     "headings": [],
+     "sources_cited": [],
+     "words": 218
+    },
+    {
+     "file": "www.elvish.org/VT/shop.html",
+     "title": "Vinyar Tengwar Web Shop",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "Plotz"
+     ],
+     "words": 2506
+    },
+    {
+     "file": "www.elvish.org/elm/abbrev.html",
+     "title": "abbreviations",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "LT1",
+      "LT2",
+      "LotR",
+      "MC",
+      "MR",
+      "PM",
+      "QL",
+      "RGEO",
+      "SD",
+      "Silm",
+      "UT",
+      "VT28",
+      "VT36",
+      "VT40",
+      "WJ"
+     ],
+     "words": 612
+    },
+    {
+     "file": "www.elvish.org/elm/amusings.html",
+     "title": "(a)musings",
+     "headings": [],
+     "sources_cited": [],
+     "words": 59
+    },
+    {
+     "file": "www.elvish.org/elm/aplay.html",
+     "title": "a play",
+     "headings": [],
+     "sources_cited": [
+      "LR",
+      "LotR",
+      "VT39",
+      "VT41"
+     ],
+     "words": 1883
+    },
+    {
+     "file": "www.elvish.org/elm/dagbok.html",
+     "title": "dagbok | show me love",
+     "headings": [],
+     "sources_cited": [],
+     "words": 206
+    },
+    {
+     "file": "www.elvish.org/elm/eclats.html",
+     "title": "éclats de poésie",
+     "headings": [],
+     "sources_cited": [
+      "Silm"
+     ],
+     "words": 147
+    },
+    {
+     "file": "www.elvish.org/elm/galsong.html",
+     "title": "Galadriel's Song of Eldamar | Christopher Gilson",
+     "headings": [],
+     "sources_cited": [],
+     "words": 180
+    },
+    {
+     "file": "www.elvish.org/elm/garden.html",
+     "title": "There is a Garden in her Face",
+     "headings": [],
+     "sources_cited": [],
+     "words": 212
+    },
+    {
+     "file": "www.elvish.org/elm/ice.html",
+     "title": "ice | Yana Timkova",
+     "headings": [],
+     "sources_cited": [],
+     "words": 206
+    },
+    {
+     "file": "www.elvish.org/elm/index.html",
+     "title": "elm",
+     "headings": [],
+     "sources_cited": [],
+     "words": 74
+    },
+    {
+     "file": "www.elvish.org/elm/index2.html",
+     "title": "elm / alalme",
+     "headings": [],
+     "sources_cited": [],
+     "words": 94
+    },
+    {
+     "file": "www.elvish.org/elm/karne.html",
+     "title": "karne",
+     "headings": [],
+     "sources_cited": [],
+     "words": 82
+    },
+    {
+     "file": "www.elvish.org/elm/laika.html",
+     "title": "laika",
+     "headings": [],
+     "sources_cited": [],
+     "words": 78
+    },
+    {
+     "file": "www.elvish.org/elm/links.html",
+     "title": "world wide web links",
+     "headings": [],
+     "sources_cited": [],
+     "words": 603
+    },
+    {
+     "file": "www.elvish.org/elm/luine.html",
+     "title": "luine",
+     "headings": [],
+     "sources_cited": [],
+     "words": 96
+    },
+    {
+     "file": "www.elvish.org/elm/merin.html",
+     "title": "info on the merin sentence",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "VT41"
+     ],
+     "words": 1018
+    },
+    {
+     "file": "www.elvish.org/elm/names.html",
+     "title": "quenya lapseparma | a brief history of nonsense",
+     "headings": [],
+     "sources_cited": [
+      "Let",
+      "QL"
+     ],
+     "words": 817
+    },
+    {
+     "file": "www.elvish.org/elm/newwords.html",
+     "title": "newwords | viewed from the spire...",
+     "headings": [],
+     "sources_cited": [
+      "GL",
+      "LR",
+      "LotR",
+      "MR",
+      "PM",
+      "QL",
+      "VT39",
+      "VT41",
+      "VT43",
+      "WJ"
+     ],
+     "words": 2728
+    },
+    {
+     "file": "www.elvish.org/elm/others.html",
+     "title": "others | bridged over",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1592
+    },
+    {
+     "file": "www.elvish.org/elm/playgirl.html",
+     "title": "playgirl",
+     "headings": [],
+     "sources_cited": [],
+     "words": 26
+    },
+    {
+     "file": "www.elvish.org/elm/reversed.html",
+     "title": "reversed | perfect motion",
+     "headings": [],
+     "sources_cited": [],
+     "words": 552
+    },
+    {
+     "file": "www.elvish.org/elm/silmesse.html",
+     "title": "Silmesse | Helge Fauskanger",
+     "headings": [],
+     "sources_cited": [],
+     "words": 243
+    },
+    {
+     "file": "www.elvish.org/elm/spelling.html",
+     "title": "Quenya Spelling | David Salo",
+     "headings": [],
+     "sources_cited": [],
+     "words": 2975
+    },
+    {
+     "file": "www.elvish.org/elm/trans.html",
+     "title": "translation",
+     "headings": [],
+     "sources_cited": [],
+     "words": 417
+    },
+    {
+     "file": "www.elvish.org/elm/trivia.html",
+     "title": "trivia",
+     "headings": [],
+     "sources_cited": [],
+     "words": 627
+    },
+    {
+     "file": "www.elvish.org/elm/tuile.html",
+     "title": "tuile",
+     "headings": [],
+     "sources_cited": [
+      "MC"
+     ],
+     "words": 510
+    },
+    {
+     "file": "www.elvish.org/elm/tyalie.html",
+     "title": "tyalie",
+     "headings": [],
+     "sources_cited": [
+      "PM",
+      "RGEO",
+      "VT39",
+      "VT44"
+     ],
+     "words": 521
+    },
+    {
+     "file": "www.elvish.org/elm/updates.html",
+     "title": "updates",
+     "headings": [],
+     "sources_cited": [],
+     "words": 844
+    },
+    {
+     "file": "www.elvish.org/elm/names/a.html",
+     "title": "quenya lapseparma | A",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 1902
+    },
+    {
+     "file": "www.elvish.org/elm/names/b.html",
+     "title": "quenya lapseparma | B",
+     "headings": [],
+     "sources_cited": [],
+     "words": 1116
+    },
+    {
+     "file": "www.elvish.org/elm/names/c.html",
+     "title": "quenya lapseparma | C",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "QL"
+     ],
+     "words": 1568
+    },
+    {
+     "file": "www.elvish.org/elm/names/d.html",
+     "title": "quenya lapseparma | D",
+     "headings": [],
+     "sources_cited": [
+      "LotR"
+     ],
+     "words": 1197
+    },
+    {
+     "file": "www.elvish.org/elm/names/e.html",
+     "title": "quenya lapseparma | E",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 828
+    },
+    {
+     "file": "www.elvish.org/elm/names/f.html",
+     "title": "quenya lapseparma | F",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 562
+    },
+    {
+     "file": "www.elvish.org/elm/names/g.html",
+     "title": "quenya lapseparma | G",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 627
+    },
+    {
+     "file": "www.elvish.org/elm/names/h.html",
+     "title": "quenya lapseparma | H",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 708
+    },
+    {
+     "file": "www.elvish.org/elm/names/i.html",
+     "title": "quenya lapseparma | I",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 440
+    },
+    {
+     "file": "www.elvish.org/elm/names/j.html",
+     "title": "quenya lapseparma | J",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 1093
+    },
+    {
+     "file": "www.elvish.org/elm/names/k.html",
+     "title": "quenya lapseparma | K",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 655
+    },
+    {
+     "file": "www.elvish.org/elm/names/l.html",
+     "title": "quenya lapseparma | L",
+     "headings": [],
+     "sources_cited": [],
+     "words": 947
+    },
+    {
+     "file": "www.elvish.org/elm/names/m.html",
+     "title": "quenya lapseparma | M",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 954
+    },
+    {
+     "file": "www.elvish.org/elm/names/n.html",
+     "title": "quenya lapseparma | N",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 337
+    },
+    {
+     "file": "www.elvish.org/elm/names/o.html",
+     "title": "quenya lapseparma | O",
+     "headings": [],
+     "sources_cited": [],
+     "words": 358
+    },
+    {
+     "file": "www.elvish.org/elm/names/p.html",
+     "title": "quenya lapseparma | P",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 420
+    },
+    {
+     "file": "www.elvish.org/elm/names/q.html",
+     "title": "quenya lapseparma | Q",
+     "headings": [],
+     "sources_cited": [],
+     "words": 77
+    },
+    {
+     "file": "www.elvish.org/elm/names/r.html",
+     "title": "quenya lapseparma | R",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 777
+    },
+    {
+     "file": "www.elvish.org/elm/names/s.html",
+     "title": "quenya lapseparma | S",
+     "headings": [],
+     "sources_cited": [
+      "QL",
+      "VT43"
+     ],
+     "words": 1067
+    },
+    {
+     "file": "www.elvish.org/elm/names/t.html",
+     "title": "quenya lapseparma | T",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 586
+    },
+    {
+     "file": "www.elvish.org/elm/names/u.html",
+     "title": "quenya lapseparma | U",
+     "headings": [],
+     "sources_cited": [],
+     "words": 145
+    },
+    {
+     "file": "www.elvish.org/elm/names/v.html",
+     "title": "quenya lapseparma | V",
+     "headings": [],
+     "sources_cited": [],
+     "words": 363
+    },
+    {
+     "file": "www.elvish.org/elm/names/w.html",
+     "title": "quenya lapseparma | W",
+     "headings": [],
+     "sources_cited": [],
+     "words": 320
+    },
+    {
+     "file": "www.elvish.org/elm/names/x.html",
+     "title": "quenya lapseparma | X",
+     "headings": [],
+     "sources_cited": [],
+     "words": 129
+    },
+    {
+     "file": "www.elvish.org/elm/names/y.html",
+     "title": "quenya lapseparma | Y",
+     "headings": [],
+     "sources_cited": [
+      "LotR",
+      "QL"
+     ],
+     "words": 133
+    },
+    {
+     "file": "www.elvish.org/elm/names/z.html",
+     "title": "quenya lapseparma | Z",
+     "headings": [],
+     "sources_cited": [
+      "QL"
+     ],
+     "words": 158
+    }
+   ],
+   "n_pages": 266,
+   "documents": [
+    {
+     "file": "www.elvish.org/gwaith/adarem.zip",
+     "bytes": 304421,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/adarem.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/bruinen.wav.zip",
+     "bytes": 50540,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/bruinen.wav.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/hfauskanger.doc",
+     "bytes": 19456,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/hfauskanger.doc"
+    },
+    {
+     "file": "www.elvish.org/gwaith/li_aj_onfans.zip",
+     "bytes": 203483,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/li_aj_onfans.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/obrien-tylerspeakselvish.zip",
+     "bytes": 104473,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/obrien-tylerspeakselvish.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/quenyanumbers.zip",
+     "bytes": 152583,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/quenyanumbers.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/sarati/Tirion20.zip",
+     "bytes": 11435,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/sarati/Tirion20.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/sounds/boyenselvish.zip",
+     "bytes": 97461,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/sounds/boyenselvish.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/sounds/boyenselvish4.zip",
+     "bytes": 209309,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/sounds/boyenselvish4.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/sounds/official-elvish.zip",
+     "bytes": 485186,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/sounds/official-elvish.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/fonts/fonts.zip",
+     "bytes": 306918,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/fonts/fonts.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/graphics/LR02_TOC.pdf",
+     "bytes": 37807,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/graphics/LR02_TOC.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/graphics/LR03_TOC.pdf",
+     "bytes": 88881,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/graphics/LR03_TOC.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/numbers/QuenyaNumbers_Readme.rtf",
+     "bytes": 1719,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/numbers/QuenyaNumbers_Readme.rtf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/calendar/calendar.zip",
+     "bytes": 236072,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/calendar/calendar.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/NewLOTRSymphonyTranslation.pdf",
+     "bytes": 44424,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/NewLOTRSymphonyTranslation.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/addenda.zip",
+     "bytes": 87690,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/addenda.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/consonant_mutations.pdf",
+     "bytes": 124353,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/consonant_mutations.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/fotr_annotated_score_2.pdf",
+     "bytes": 1134830,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/fotr_annotated_score_2.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/history1.doc",
+     "bytes": 468480,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/history1.doc"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/history_of_writing.pdf",
+     "bytes": 296862,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/history_of_writing.pdf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/history_of_writing.rtf",
+     "bytes": 602666,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/history_of_writing.rtf"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/hithaeglir.zip",
+     "bytes": 42636,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/hithaeglir.zip"
+    },
+    {
+     "file": "www.elvish.org/gwaith/pdf/sams_letter.pdf",
+     "bytes": 60435,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/pdf/sams_letter.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.pdf",
+     "bytes": 326263,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.pdf",
+     "bytes": 247670,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.pdf",
+     "bytes": 205205,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.pdf",
+     "bytes": 155911,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.pdf",
+     "bytes": 83119,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.pdf",
+     "bytes": 451697,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.pdf",
+     "bytes": 193285,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.pdf",
+     "bytes": 394761,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.pdf",
+     "bytes": 94270,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/noldpat.pdf",
+     "bytes": 170430,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/noldpat.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Hostetter/sindll.pdf",
+     "bytes": 97509,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/sindll.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Rausch/causquen.pdf",
+     "bytes": 235556,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Renk/noldintenspref.pdf",
+     "bytes": 112686,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Renk/noldintenspref.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Bellet/noldplur.pdf",
+     "bytes": 151018,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Bellet/noldplur.pdf"
+    },
+    {
+     "file": "www.elvish.org/Tengwestie/articles/Wynne/goldpat.pdf",
+     "bytes": 368220,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.pdf"
+    },
+    {
+     "file": "www.elvish.org/errata/Parma-Errata.pdf",
+     "bytes": 95922,
+     "url": "https://www.elvish.org/www.elvish.org/errata/Parma-Errata.pdf"
+    },
+    {
+     "file": "www.elvish.org/errata/VT-Errata.pdf",
+     "bytes": 83308,
+     "url": "https://www.elvish.org/www.elvish.org/errata/VT-Errata.pdf"
+    },
+    {
+     "file": "www.elvish.org/VT/VT-index-en.pdf",
+     "bytes": 591600,
+     "url": "https://www.elvish.org/www.elvish.org/VT/VT-index-en.pdf"
+    },
+    {
+     "file": "www.elvish.org/VT/VT-index-sp.pdf",
+     "bytes": 591729,
+     "url": "https://www.elvish.org/www.elvish.org/VT/VT-index-sp.pdf"
+    },
+    {
+     "file": "www.elvish.org/VT/VT43sample.pdf",
+     "bytes": 864757,
+     "url": "https://www.elvish.org/www.elvish.org/VT/VT43sample.pdf"
+    },
+    {
+     "file": "www.elvish.org/elm/atalante.rtf",
+     "bytes": 347362,
+     "url": "https://www.elvish.org/www.elvish.org/elm/atalante.rtf"
+    },
+    {
+     "file": "www.elvish.org/elm/atalante.zip",
+     "bytes": 130238,
+     "url": "https://www.elvish.org/www.elvish.org/elm/atalante.zip"
+    }
+   ],
+   "n_documents": 46,
+   "words": 376839
+  },
+  "arda_ae": {
+   "work": "Ambar Eldaron (English section)",
+   "url": "https://www.ambar-eldaron.com/english/",
+   "authority": 5,
+   "why": "§6 ranks it fifth: dictionaries and learning materials, derived rather than primary.",
+   "licence": "no open licence stated",
+   "pages": [
+    {
+     "file": "www.ambar-eldaron.com/english/classical_illuminations.html",
+     "title": "Classical illuminations",
+     "headings": [
+      "Scriptorium Classical illuminations"
+     ],
+     "sources_cited": [],
+     "words": 85
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/cliodh.html",
+     "title": "Cliohdna",
+     "headings": [
+      "Clíodhna",
+      "Blood in the snow Part 1",
+      "Truth from Beyond Part 2",
+      "Storm Crag Part 3"
+     ],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 97
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/cliodhna.html",
+     "title": "Cliodhna",
+     "headings": [
+      "Cliódhna",
+      "\"Blood in the snow\" (1st part)",
+      "Truth from Beyond (2nd part)",
+      "Storm Crag (3rd PART)"
+     ],
+     "sources_cited": [],
+     "words": 457
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/crafts.html",
+     "title": "Elvish Crafts",
+     "headings": [
+      "DIY and little Elvish crafts",
+      "Click on the images to enlarge",
+      "The White Tree of Gondor",
+      "Bed embroidery",
+      "A Smaug bedside lamp",
+      "Rohan stained glass",
+      "Elvish T-shirts",
+      "Bed embroidery in backstitch",
+      "Smaug Lamp",
+      "Rohan stained glass",
+      "Elvish T-shirts"
+     ],
+     "sources_cited": [],
+     "words": 399
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/dan_i_duath.html",
+     "title": "Dan i Duath",
+     "headings": [
+      "Dan iDhúath",
+      "Illuminated version in Tengwar in two parts:",
+      "Sindarin only version",
+      "Tengwar only version",
+      "Bilingual version Quenya - English"
+     ],
+     "sources_cited": [],
+     "words": 139
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/david_salo.html",
+     "title": "Interview of David Salo",
+     "headings": [
+      "Interview of David Salo",
+      "December 2004"
+     ],
+     "sources_cited": [],
+     "words": 1507
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/fiondil.html",
+     "title": "Fiondil",
+     "headings": [
+      "iRúnië Fiondilo",
+      "Illuminated version in Tengwar in two parts:",
+      "Quenya only version",
+      "Tengwar only version",
+      "Bilingual version Quenya - English"
+     ],
+     "sources_cited": [],
+     "words": 162
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/gothic_writing.html",
+     "title": "Gothic writing",
+     "headings": [
+      "Scriptorium Gothic writing"
+     ],
+     "sources_cited": [],
+     "words": 114
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/index.html",
+     "title": "Welcome on Ambar Eldaron",
+     "headings": [
+      "The miniature of Bag End",
+      "The book of the miniature of Bag End",
+      "The Elvish languages",
+      "Clíodhna",
+      "Our publications"
+     ],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 167
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/jigsaw.html",
+     "title": "Jigsaw puzzles",
+     "headings": [
+      "Jigsaw puzzles of the Middle Earth",
+      "Let's play with four little jigsaw puzzles"
+     ],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 50
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/language.html",
+     "title": "Elves'languages",
+     "headings": [
+      "The Elvish languages",
+      "Elvish languages",
+      "The courses",
+      "The dictionnaries",
+      "The publications",
+      "Additional downloads",
+      "Online transcriptor",
+      "The Tengscribe",
+      "Elvish fonts (396 ko) Elfica Noldor Quenya Parmaite Sindarin Formal Annatar Have a look on the various fonts ICI",
+      "Module Editor Tengscribe (2.10 Mo)",
+      "Elvish numbers",
+      "Dwarvish runic fonts by Dan Smith with French and English explanations"
+     ],
+     "sources_cited": [],
+     "words": 462
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/letter_paper.html",
+     "title": "Letter paper",
+     "headings": [
+      "Scriptorium Letter paper"
+     ],
+     "sources_cited": [],
+     "words": 100
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/link.html",
+     "title": "Links",
+     "headings": [
+      "Links"
+     ],
+     "sources_cited": [],
+     "words": 346
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/material.html",
+     "title": "material",
+     "headings": [
+      "Scriptorium Material for calligraphy"
+     ],
+     "sources_cited": [],
+     "words": 140
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/memory.html",
+     "title": "Memory",
+     "headings": [
+      "Memory games of the Middle Earth",
+      "Let's play with four little memory games"
+     ],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 57
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/numerical illuminations.html",
+     "title": "Numerical illuminations",
+     "headings": [
+      "Numerical illuminations"
+     ],
+     "sources_cited": [],
+     "words": 74
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/patterns_illuminations.html",
+     "title": "Patterns for illuminations",
+     "headings": [
+      "Scriptorium",
+      "Here are some examples of illuminations Click to download the PDF file"
+     ],
+     "sources_cited": [],
+     "words": 53
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/pseudo_runes.html",
+     "title": "Pseudo-Runes",
+     "headings": [
+      "Scriptorium"
+     ],
+     "sources_cited": [],
+     "words": 98
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/publications.html",
+     "title": "Publications",
+     "headings": [
+      "Ambar Eldaron Elvish publications",
+      "Click on the picture to see some pages",
+      "Quenya Course",
+      "Elvish dictionnary English-Quenya",
+      "Elvish Verb Chart Quenya",
+      "Sindarin Course",
+      "Elvish dictionnary English-Sindarin pocket",
+      "Bag End miniature"
+     ],
+     "sources_cited": [],
+     "words": 176
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/ronde_writing.html",
+     "title": "Ronde Writing",
+     "headings": [
+      "Scriptorium Ronde writing"
+     ],
+     "sources_cited": [],
+     "words": 142
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/runes.html",
+     "title": "Runes",
+     "headings": [
+      "The Elvish Runes"
+     ],
+     "sources_cited": [],
+     "words": 312
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/runes_tengscribe.html",
+     "title": "Runes with Tengscribe",
+     "headings": [
+      "Scriptorium"
+     ],
+     "sources_cited": [],
+     "words": 298
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/scriptorium.html",
+     "title": "Scriptorium",
+     "headings": [
+      "Scriptorium"
+     ],
+     "sources_cited": [],
+     "words": 178
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/scriptorium2.html",
+     "title": "Elvish look",
+     "headings": [
+      "Scriptorium"
+     ],
+     "sources_cited": [],
+     "words": 234
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/scriptorium_tengwar.html",
+     "title": "Elvish poem in tengwar with tengscribe",
+     "headings": [
+      "Scriptorium",
+      "Elvish Poem in Tengwar (8 versions) with Tengscribe tutorial"
+     ],
+     "sources_cited": [],
+     "words": 237
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/texts.html",
+     "title": "Texts",
+     "headings": [
+      "Elvish texts",
+      "Some Elvish texts in Quenya with English translation and a little grammatical explanation."
+     ],
+     "sources_cited": [],
+     "words": 402
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/zodiac.html",
+     "title": "Elvish Zodiac",
+     "headings": [
+      "Elvish Zodiac",
+      "Download the Zodiac in a good resolution Let's see in more in details the translations (Quenya, French, English):"
+     ],
+     "sources_cited": [
+      "Let"
+     ],
+     "words": 251
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/nouvelle_newsletter/Newsletter.php.html",
+     "title": "newsletter",
+     "headings": [],
+     "sources_cited": [],
+     "words": 6
+    }
+   ],
+   "n_pages": 28,
+   "documents": [
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/Quenya_verb_chart_1.0.pdf",
+     "bytes": 383665,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/Quenya_verb_chart_1.0.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/bilbo_farewell.pdf",
+     "bytes": 37929,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/bilbo_farewell.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/elvish_numerals.pdf",
+     "bytes": 32013,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/elvish_numerals.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/eng-quen.pdf",
+     "bytes": 1016961,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/eng-quen.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/nelde_coranar_engl.pdf",
+     "bytes": 22052,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/nelde_coranar_engl.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/pedin_edhellen_en.pdf",
+     "bytes": 738727,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/pedin_edhellen_en.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/quen-eng.pdf",
+     "bytes": 1912799,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/quen-eng.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/quenya-engl-A4.pdf",
+     "bytes": 609645,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/quenya-engl-A4.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/quetin_lambe_eldaiva_en.pdf",
+     "bytes": 773151,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/quetin_lambe_eldaiva_en.pdf"
+    },
+    {
+     "file": "www.ambar-eldaron.com/english/downloads/sindarin-english.pdf",
+     "bytes": 342321,
+     "url": "https://www.ambar-eldaron.com/english/www.ambar-eldaron.com/english/downloads/sindarin-english.pdf"
+    }
+   ],
+   "n_documents": 10,
+   "words": 6743
+  },
+  "arda_tec": {
+   "work": "Tecendil",
+   "url": "https://www.tecendil.com/",
+   "authority": 6,
+   "why": "a transcription engine. What the archive wants from it is HOW it represents modes, not its text.",
+   "licence": "no open licence stated",
+   "pages": [
+    {
+     "file": "www.tecendil.com/index.html",
+     "title": "Tecendil -- Tengwar Transcriber",
+     "headings": [
+      "TECENDIL ",
+      "Tecendil requires JavaScript",
+      "Drop a file anywhere to transcribe it",
+      "Welcome to Tecendil",
+      "Get the Mobile App",
+      "Loading..."
+     ],
+     "sources_cited": [],
+     "words": 149
+    }
+   ],
+   "n_pages": 1,
+   "documents": [],
+   "n_documents": 0,
+   "words": 149
+  },
+  "arda_tg": {
+   "work": "Tolkien Gateway",
+   "url": "https://tolkiengateway.net/",
+   "authority": 9,
+   "why": "a wiki -- tier 4 by this archive's hierarchy: no independent authority, usable where it restates Tolkien.",
+   "licence": "CC BY-SA per the site, unverified here",
+   "pages": [
+    {
+     "file": "tolkiengateway.net/wiki/Tengwar.html",
+     "title": "Tengwar - Tolkien Gateway",
+     "headings": [
+      "Tengwar",
+      "History",
+      "Classical Quenya mode",
+      "Mode of Beleriand",
+      "General use",
+      "Spelling and pronunciation",
+      "Structure",
+      "Arrangement",
+      "Values",
+      "Other modes",
+      "External history",
+      "Inspiration",
+      "Tengwar study",
+      "Modes",
+      "Encoding schemes",
+      "Non-Unicode",
+      "Unicode",
+      "Uses outside the legendarium",
+      "See also",
+      "External links"
+     ],
+     "sources_cited": [
+      "RGEO"
+     ],
+     "words": 3819
+    }
+   ],
+   "n_pages": 1,
+   "documents": [],
+   "n_documents": 0,
+   "words": 3819
+  }
+ },
+ "n_pages": 296,
+ "n_documents": 56,
+ "n_words": 387550,
+ "missing": [],
+ "licence_position": "FACTS AND POINTERS ONLY. None of these sites states an open licence, so this archive files what each work IS -- its shape, its author, what it covers, where to read it -- and reproduces none of its prose. The same line gen_amanye.py takes for Amanye Tenceli, and the same line the artwork ruling draws for Christopher Tolkien's plates: our measurement of a work is ours; the work is not.",
+ "corpus_position": "The documents are NOT placed in corpus/. Samu's ruling of 11 August: a file belongs in corpus/ if and only if a claim about Arda could be cited to its text, and corpus/ is a CITABLE POPULATION that quoted_check and rule1_check both read. Scholarship not licensed to us cannot enter it, however useful. Filed here as pointers.",
+ "how_they_arrived": "Both were recorded as unreachable for days and neither was down. This guest has no global IPv6 address while SLIRP advertises an IPv6 route, so curl preferred AAAA and reported 'Could not resolve host'. curl -4 plus a browser User-Agent took the reachable count from 2 of 11 to 9 of 11."
+}

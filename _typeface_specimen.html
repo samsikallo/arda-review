@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" data-hand="humanist" data-theme="light" data-theme-lock="light">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Latin hand — a specimen for The Arda Archive</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Alegreya:ital,wght@0,400;1,400&family=Vollkorn:ital,wght@0,400;1,400&family=Sorts+Mill+Goudy:ital@0;1&family=Spectral:ital,wght@0,400;1,400&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Eczar&family=Caudex:ital@0;1&family=MedievalSharp&family=Amarante&family=Federant&family=Nova+Cut&family=Yeseva+One&family=Sancreek&family=Pirata+One&family=Grenze+Gotisch&family=Almendra:ital@0;1&family=Fondamento&family=Junge&family=Italiana&family=Macondo&family=Marcellus+SC&family=Gilda+Display&family=Cormorant+Unicase&family=Forum&family=Crimson+Pro&family=Petrona&family=Faustina&display=swap">
+<style>
+/* ══════════════════════════════════════════════════════════════════════════
+   THE LATIN HAND — a specimen, not a page of the archive.
+   Gitignored by `_*.html`. Nothing here is published; it exists to be looked at.
+   The vellum, the ink and the ruling are lifted verbatim from codex-proto.html
+   so that every sample below sits on the SAME surface the codex sits on.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ---- THE SELF-HOSTED FACES. These carry the full combining-mark repertoire,
+        which the Google Fonts CDN does NOT serve (see §3). Only these can be
+        honestly tested against the corpus. ---- */
+@font-face{font-family:"Junicode";src:url("fonts/Junicode-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Junicode";src:url("fonts/Junicode-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Gentium Book Plus L";src:url("fonts/GentiumBookPlus-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Cardo L";src:url("fonts/Cardo-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Cardo L";src:url("fonts/Cardo-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Metamorphous L";src:url("fonts/Metamorphous-Regular.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Marcellus L";src:url("fonts/Marcellus-Regular.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Almendra Display L";src:url("fonts/AlmendraDisplay-Regular.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Nova Cut L";src:url("fonts/NovaCut.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Cormorant Unicase L";src:url("fonts/CormorantUnicase-Regular.woff2") format("woff2");font-display:swap}
+@font-face{font-family:"Junicode Versal";src:url("fonts/junicode-versal.woff2") format("woff2");
+  unicode-range:U+0041-005A,U+00C0-00DE,U+0152,U+00C6}
+
+:root{
+  --vellum:#faf2cb; --vellum-2:#f6ecc0; --vellum-3:#f1e4b3; --vellum-edge:#d9c48b;
+  --ink:#3d3430; --ink-deep:#0e0c0a; --ink-soft:#5c534c;
+  --rubric:#8f2f22; --lapis:#2c4a7c; --gold:#a98a4e; --silver:#8a8377;
+  --rule:rgba(120,96,52,.30); --rule-soft:rgba(120,96,52,.16);
+  --line:21px;
+}
+*{box-sizing:border-box}
+html{background:#241a0c}
+body{
+  margin:0; padding:0 0 90px; color:var(--ink);
+  font:15px/21px 'EB Garamond','Iowan Old Style',Georgia,serif;
+  background:
+    radial-gradient(120% 60% at 50% 0%, rgba(255,255,255,.06), transparent 70%),
+    linear-gradient(178deg,#2c2011 0%,#1c1409 100%);
+}
+
+/* the board the volume sits on */
+.board{ max-width:1480px; margin:0 auto; padding:34px 26px 0; }
+.plaque{
+  display:inline-block; background:#3a2410; color:#f0d79a; padding:7px 20px 8px;
+  font:15px/1.25 UnifrakturMaguntia,'Uncial Antiqua',serif; letter-spacing:.02em;
+  border:1px solid #6b4a24; box-shadow:0 2px 0 rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.12);
+}
+.board .sub{ margin:10px 0 0; color:#c9b483; font:italic 13.5px/1.5 'EB Garamond',Georgia,serif; max-width:78ch; }
+.board .sub b{ color:#f0d79a; font-style:normal; font-weight:600; }
+
+/* a leaf: same vellum, same padding, same ruling pitch as codex-proto.html */
+.leaf{
+  position:relative; margin:26px auto 0; max-width:1480px; padding:30px 34px 44px;
+  background:
+    radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+    radial-gradient(45% 38% at 82% 74%, rgba(160,130,80,.13), transparent 62%),
+    linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%);
+  box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+h2.rubric{
+  margin:0 0 4px; color:var(--rubric); font:400 21px/1.2 'Uncial Antiqua',Cinzel,serif;
+  letter-spacing:.01em;
+}
+.rubric .n{ color:var(--gold); font:600 12px Cinzel,serif; letter-spacing:.14em; vertical-align:.28em; margin-right:8px; }
+.lede{ font-style:italic; color:var(--ink-soft); margin:0 0 20px; max-width:74ch; }
+.rulehr{ border:0; border-top:1px solid var(--rule); margin:26px 0 22px; }
+
+/* ── the specimen grid: every sample gets the SAME 508px measure ─────────────
+   508px is the archive's real one: .book width min(1480,85vw) → 1360 at 1600px
+   viewport, halved to a 680px leaf, less 68px padding = 612px, less the .tb
+   outer margin clamp(76px,17%,132px) → 104px.  612 − 104 = 508px.          */
+.grid{ display:flex; flex-wrap:wrap; gap:22px 26px; align-items:flex-start; }
+.spec{ width:508px; }
+.spec h3{
+  margin:0 0 3px; font:600 11px/1.3 Cinzel,Georgia,serif; letter-spacing:.06em;
+  color:var(--ink-deep); text-transform:uppercase; display:flex; gap:8px; align-items:baseline;
+}
+.spec h3 .tag{ font:600 8.5px Cinzel,serif; letter-spacing:.1em; padding:1px 5px 2px; border:1px solid; }
+.tag.ok{ color:#2f5c33; border-color:#7fa07f; background:rgba(70,120,70,.09) }
+.tag.warn{ color:#8a5a12; border-color:#c9a86a; background:rgba(180,140,60,.11) }
+.tag.bad{ color:var(--rubric); border-color:#c08076; background:rgba(150,60,45,.09) }
+.spec .meta{
+  margin:0 0 9px; font:10px/1.5 Cinzel,Georgia,serif; letter-spacing:.02em; color:var(--ink-soft);
+  border-bottom:1px solid var(--rule-soft); padding-bottom:6px;
+}
+.spec .meta b{ color:var(--ink); font-weight:600 }
+
+/* THE SAMPLE. Ruled at 21px, exactly as the codex leaf is ruled. */
+.smp{
+  position:relative; padding-top:1px;
+  background:repeating-linear-gradient(to bottom,
+    transparent 0 calc(var(--line) - 1px), rgba(120,96,52,.11) calc(var(--line) - 1px) var(--line));
+}
+.smp p{ margin:0 0 var(--line); font-size:15px; line-height:var(--line); }
+.smp p:last-child{ margin-bottom:0 }
+.smp .h{ font-size:17px; line-height:var(--line); margin-bottom:0; font-weight:600; }
+.smp .h em{ font-style:italic; font-weight:400; color:var(--ink-soft) }
+.smp .sub{
+  font:600 9.5px/var(--line) Cinzel,Georgia,serif; letter-spacing:.14em; color:var(--gold);
+  text-transform:uppercase; margin-bottom:0;
+}
+.smp .q{ font-style:italic }
+.smp .cite{ font-size:12.5px; color:var(--ink-soft) }
+.smp .mark{ font:11px Cinzel,serif; letter-spacing:.1em; color:var(--rubric) }
+.cpl{ margin-top:5px; font:9.5px Cinzel,serif; letter-spacing:.05em; color:var(--gold) }
+
+/* per-face bindings ------------------------------------------------------- */
+.f-junicode  .smp{ font-family:"Junicode",Georgia,serif }
+.f-gentium   .smp{ font-family:"Gentium Book Plus L",Georgia,serif }
+.f-cardo     .smp{ font-family:"Cardo L",Georgia,serif }
+.f-ebg       .smp{ font-family:'EB Garamond',Georgia,serif }
+.f-alegreya  .smp{ font-family:'Alegreya',Georgia,serif }
+.f-vollkorn  .smp{ font-family:'Vollkorn',Georgia,serif }
+.f-goudy     .smp{ font-family:'Sorts Mill Goudy',Georgia,serif }
+.f-spectral  .smp{ font-family:'Spectral',Georgia,serif }
+.f-imfell    .smp{ font-family:'IM Fell English',Georgia,serif }
+.f-cormorant .smp{ font-family:'Cormorant Garamond',Georgia,serif }
+.f-eczar     .smp{ font-family:'Eczar',Georgia,serif }
+.f-caudex    .smp{ font-family:'Caudex',Georgia,serif }
+.f-crimson   .smp{ font-family:'Crimson Pro',Georgia,serif }
+.f-faustina  .smp{ font-family:'Faustina',Georgia,serif }
+.f-petrona   .smp{ font-family:'Petrona',Georgia,serif }
+
+/* ── §3 the corpus test ──────────────────────────────────────────────────── */
+table.t{ border-collapse:collapse; width:100%; font:12px/1.5 'EB Garamond',Georgia,serif }
+table.t th{
+  text-align:left; font:600 9.5px Cinzel,serif; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ink-soft); border-bottom:1px solid var(--rule); padding:5px 10px 6px; vertical-align:bottom;
+}
+table.t td{ padding:8px 10px; border-bottom:1px solid var(--rule-soft); vertical-align:middle }
+table.t tr:hover td{ background:rgba(169,138,78,.07) }
+.big{ font-size:27px; line-height:1.25; white-space:nowrap }
+.lbl{ font:600 10px Cinzel,serif; letter-spacing:.05em; color:var(--ink-soft); white-space:nowrap }
+.num{ font-variant-numeric:tabular-nums; font:11.5px Cinzel,serif; letter-spacing:.02em; white-space:nowrap }
+.v-ok{ color:#2f5c33; font:600 10px Cinzel,serif; letter-spacing:.05em }
+.v-bad{ color:var(--rubric); font:600 10px Cinzel,serif; letter-spacing:.05em }
+.v-warn{ color:#8a5a12; font:600 10px Cinzel,serif; letter-spacing:.05em }
+
+/* ── §4 display hands ────────────────────────────────────────────────────── */
+.dgrid{ display:flex; flex-wrap:wrap; gap:20px }
+.dcard{ width:340px; border:1px solid var(--rule-soft); padding:13px 15px 14px; background:rgba(255,255,255,.16) }
+.dcard .nm{ font:600 9.5px Cinzel,serif; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:9px;
+  display:flex; justify-content:space-between; gap:8px }
+.dcard .nm span{ color:var(--gold); font-weight:400 }
+.dcard .d1{ font-size:25px; line-height:1.18; color:var(--rubric); margin-bottom:5px }
+.dcard .d2{ font-size:16px; line-height:1.3; color:var(--ink); margin-bottom:4px }
+.dcard .d3{ font-size:11.5px; line-height:1.4; letter-spacing:.06em; color:var(--ink-soft); text-transform:uppercase }
+
+/* ── the Aniron ruling panel ─────────────────────────────────────────────── */
+.ruling{ border:1px solid #c08076; background:rgba(150,60,45,.055); padding:18px 22px 20px; margin:0 0 24px }
+.ruling h3{ margin:0 0 9px; color:var(--rubric); font:400 18px 'Uncial Antiqua',serif }
+.ruling p{ margin:0 0 9px; max-width:96ch; font-size:14px; line-height:20px }
+.ruling p:last-child{ margin-bottom:0 }
+blockquote.lic{
+  margin:11px 0 13px; padding:11px 16px; border-left:3px solid var(--rubric);
+  background:rgba(255,255,255,.34); font:italic 13.5px/1.62 'EB Garamond',Georgia,serif; max-width:94ch;
+}
+blockquote.lic b{ font-style:normal; color:var(--rubric) }
+.src{ font:10.5px/1.7 Cinzel,Georgia,serif; letter-spacing:.01em; color:var(--ink-soft) }
+.src a{ color:var(--lapis) }
+.versal{ float:left; font:400 3.3em/0.8 "Junicode Versal",Cinzel,Georgia,serif;
+  font-feature-settings:"salt" 1; color:var(--lapis); margin:.02em .1em 0 0; }
+.callout{ border-left:3px solid var(--gold); padding:2px 0 2px 15px; margin:16px 0; max-width:96ch;
+  font-size:14px; line-height:20px; }
+.callout b{ color:var(--rubric) }
+.foot{ max-width:1480px; margin:26px auto 0; padding:0 26px; color:#8d7a52;
+  font:italic 12px/1.7 'EB Garamond',Georgia,serif }
+</style>
+<link rel="stylesheet" href="arda.css"></head>
+<body><a class="a-skip" href="#main">skip to content</a>
+
+<div class="board">
+  <div class="plaque">The Latin Hand · a specimen</div>
+  <p class="sub">Every sample below is the <b>same real text from <code>codex-proto.html</code></b> — Manwë Súlimo's
+  entry from The Aratar — set at the archive's real reading size, <b>15px on a 21px rule</b>, at the archive's real
+  measure of <b>508px</b>, on the archive's real vellum (<code>#faf2cb</code>) in the archive's real ink
+  (<code>#3d3430</code>). Nothing is scaled up to flatter it. Workshop page: gitignored by <code>_*.html</code>,
+  never published.</p>
+</div>
+
+<!-- ══════════════ §1 · THE RULING ON ANIRON ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">I</span>Aniron cannot ship, and buying a licence would not fix it</h2>
+  <div class="ruling">
+    <h3>The licence, read from inside the font itself</h3>
+    <p>Not from a font-site's badge. This is name record 13 (<em>License Description</em>) in
+    <code>anirm___.ttf</code>, the file inside <code>aniron.zip</code> as distributed by 1001fonts and dafont
+    (both downloads byte-identical in content, 178 KB):</p>
+    <blockquote class="lic">“The Aniron font is © Pete Klassen, 2004. <b>All Rights Reserved.</b> You are allowed to
+    distribute this font free of charge only, and <b>only with the complete contents of the original archive file
+    included</b>. You are allowed to use this font <b>for private use only</b>. <b>Commercial use and/or modification
+    of this font are not allowed.</b><br><br>Aniron is based on the credits font from “Lord of the Rings”.
+    <b>© 2001-2003 New Line Cinema and Wingnut Films. All Rights Reserved.</b>”</blockquote>
+    <p><b>Four independent blocks, any one of them fatal.</b>
+    <b>(1)</b> “Private use only” — a site on the public web is not private use.
+    <b>(2)</b> “Only with the complete contents of the original archive file included” — a webfont serves a bare
+    file; the archive would be distributing the font stripped of its own readme, which this sentence forbids
+    <em>even for a free, non-commercial site</em>.
+    <b>(3)</b> “Modification … not allowed” — subsetting is modification, and so is converting TTF to WOFF2.
+    <b>(4)</b> The author states the design is New Line Cinema's and Wingnut Films'. <b>Pete Klassen cannot licence
+    what he does not own.</b> A commercial licence bought from him would clear his claim and leave the studio's
+    untouched — which is why no price is published and why no price would settle it.</p>
+    <p class="src">Sources, four, independent: the font binary's own <code>name[13]</code> record (quoted above) ·
+    the <code>readme.html</code> in the same archive, which opens “© Pete Klassen, 2004. All Rights Reserved.” ·
+    <a href="https://www.1001fonts.com/aniron-font.html">1001fonts.com/aniron-font.html</a> — “Free for personal
+    use / <b>Not free for commercial use</b>” (the page the owner linked) ·
+    <a href="https://www.dafont.com/aniron.font">dafont.com/aniron.font</a> — “Free for personal use”, Pete Klassen,
+    added 7 Dec 2004 · <a href="https://www.fontspace.com/aniron-font-f2247">fontspace.com</a> — “Freeware,
+    Non-Commercial … Contact the designer to purchase a commercial license, if needed.”</p>
+    <p class="src"><b>Purchasability, measured:</b> no commercial licence is offered anywhere. The author's site
+    <code>thehutt.de</code> is alive; its Tolkien and fonts pages carry no licence, no price and no purchase route,
+    and the site's own footer restricts its contents to “private, non-commercial” use. The only contact is
+    <code>thehutt@gmx.net</code>, an address published in 2004. <b>There is no price to quote because there is no
+    offer.</b></p>
+    <p><b>And it could not set this archive even if it were free.</b> Measured from the binary: 278 glyphs,
+    <b>zero combining diacritical marks</b>, and no em-dash and no ellipsis — two characters the approved
+    <code>codex-proto.html</code> already uses. It would break the archive's own page on day one.</p>
+  </div>
+  <div class="ruling" style="border-color:var(--gold);background:rgba(180,140,60,.07)">
+    <h3 style="color:#7a5a14">The owner has already ruled, and his ruling set a condition that is now met</h3>
+    <p>Recorded in <code>fonts/Aniron-LICENCE.txt</code> as landed in commit <code>33c1520</code>, in his own words:</p>
+    <blockquote class="lic" style="border-left-color:var(--gold)">“for now the Arda Archive is personal use only,
+    we haven't published it because it's not nearly done. I can get licence to publish it, until that use freely
+    Aniron, <b>if you don't find a better and higher quality similar one.</b>”</blockquote>
+    <p>So this page is not an argument against a ruling. It is the answer to the question the ruling asked. And the
+    answer does not turn on the licence at all — <b>it turns on whether Aniron can set this archive</b>, which is a
+    thing that can be measured rather than debated.</p>
+    <p class="src"><b>State of play, measured 19 Aug:</b> commit <code>33c1520</code> is <b>local only</b> —
+    <code>origin/master</code> is one commit behind it, and
+    <code>samsikallo.github.io/arda-archive/fonts/Aniron-Regular.woff2</code> returns <b>404</b> while the site root
+    returns 200. Aniron is <b>not on the public web</b>. The decision can still be made before it becomes
+    publication. The work already done is not wasted either way: the face sits behind a single
+    <code>--face-latin</code> token in <code>arda.css:23</code> and <code>codex-object.css:22</code>, so changing it
+    costs two lines.</p>
+  </div>
+
+  <h3 style="margin:26px 0 6px;font:400 19px 'Uncial Antiqua',serif;color:var(--rubric)">
+    The measurement that decides it, with no reference to any licence</h3>
+  <p class="lede" style="max-width:100ch">Aniron holds <b>278 glyphs, 270 codepoints</b>. Counted across the
+  <b>622 published HTML pages</b>, 382,862 visible characters: <b>Aniron cannot render 3,569 of them, 49 distinct,
+  on 621 of the 622 pages — 100% of the archive.</b> And the misses are not exotica. They are the punctuation of
+  running prose:</p>
+  <table class="t" style="max-width:900px">
+    <thead><tr><th style="width:210px">Character</th><th class="num" style="width:120px">Aniron</th>
+      <th class="num" style="width:120px">Junicode</th><th>What it is</th></tr></thead>
+    <tbody>
+      <tr><td class="lbl">U+2014 em dash</td><td class="num"><span class="v-bad">MISSING ×1,714</span></td>
+        <td class="num"><span class="v-ok">renders</span></td><td>prose punctuation, on nearly every leaf</td></tr>
+      <tr><td class="lbl">U+2013 en dash</td><td class="num"><span class="v-bad">MISSING ×500</span></td>
+        <td class="num"><span class="v-ok">renders</span></td><td>date and number ranges</td></tr>
+      <tr><td class="lbl">U+2026 ellipsis</td><td class="num"><span class="v-bad">MISSING ×9</span></td>
+        <td class="num"><span class="v-ok">renders</span></td><td>elision inside quoted text</td></tr>
+      <tr><td class="lbl">U+203A single angle quote</td><td class="num"><span class="v-bad">MISSING ×22</span></td>
+        <td class="num"><span class="v-ok">renders</span></td><td>the archive's own breadcrumb separator</td></tr>
+      <tr><td class="lbl">U+2011 non-breaking hyphen</td><td class="num"><span class="v-bad">MISSING ×3</span></td>
+        <td class="num"><span class="v-ok">renders</span></td><td>unbreakable compounds</td></tr>
+      <tr><td class="lbl">all 21 combining marks</td><td class="num"><span class="v-bad">MISSING ×2,636</span></td>
+        <td class="num"><span class="v-ok">all 21, mark + mkmk</span></td><td>the corpus's phonological notation</td></tr>
+      <tr style="background:rgba(150,60,45,.05)"><td class="lbl"><b>prose characters lost</b></td>
+        <td class="num"><span class="v-bad"><b>2,248</b></span></td><td class="num"><span class="v-ok"><b>0</b></span></td>
+        <td><b>every one of them mid-sentence, falling back to Georgia</b></td></tr>
+      <tr><td class="lbl">UI symbols (arrows, stars, ⌂)</td><td class="num">missing ×1,321</td>
+        <td class="num">missing ×1,318</td><td>furniture — already falls back today, in every face</td></tr>
+    </tbody>
+  </table>
+  <p class="callout" style="border-left-color:var(--rubric)"><b>The two columns are not the same kind of miss.</b>
+  Junicode's 1,318 misses are arrows, box-drawing and icons — furniture that falls back to a system font today and
+  did so under EB Garamond too. Junicode misses <b>zero</b> characters of running prose. Aniron drops an em dash
+  every few paragraphs, which means a visible change of face <em>inside a sentence</em>, on 621 pages. That is not
+  a licence objection. It is the reason it is not the better face.</p>
+
+  <p class="callout"><span class="versal">W</span><b>What the owner actually pointed at</b>, and this is worth
+  separating from the font. Aniron's own author records two facts: the film credits <b>use no capitals at all</b>,
+  and the face must be <b>stretched vertically by 120%</b> to match the DVD material. Looked at closely, Aniron's
+  “lowercase” <em>is small capitals</em> — it is a <b>unicase</b> face. So a large part of what reads as “Aniron”
+  is a <em>setting</em>, not a drawing, and a setting cannot be copyrighted. §4 shows the nearest openly-licensed
+  drawings; the panel immediately below shows the setting, reproduced legitimately.</p>
+</section>
+
+<!-- ══════════════ §1b · ANIRON'S TRICK, LEGITIMATELY ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">I·b</span>Aniron's trick, done with faces the archive can keep</h2>
+  <p class="lede">Left column: the face set normally. Right column: the same face set the way the film credits are
+  set — <b>unicase, letterspaced, at reduced size</b> (<code>text-transform:uppercase; font-size:.72em;
+  letter-spacing:.09em</code>). The right column is where the resemblance lives.</p>
+  <table class="t">
+    <thead><tr><th style="width:190px">Face</th><th style="width:44%">set normally</th>
+      <th>set as the credits are set</th></tr></thead>
+    <tbody id="unirows"></tbody>
+  </table>
+</section>
+
+<!-- ══════════════ §2 · THE READING HAND ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">II</span>The reading hand — one paragraph, one size, one measure</h2>
+  <p class="lede">A display face set as body text is how a beautiful page becomes unreadable. Each panel below is
+  the same 508px column at 15px on a 21px rule. The number under each is the measured characters-per-line, taken
+  from the rendered page, not calculated. The first panel is what the archive sets today.</p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ══════════════ §3 · THE CORPUS TEST ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">III</span>The corpus test — what actually breaks</h2>
+  <p class="lede">The archive is mixed-normalisation and it is not a theoretical problem. Measured across the 15
+  corpus files that carry them: <b>2,636 decomposed base+mark sequences, 117 distinct, using 21 distinct combining
+  marks</b>. Eleven of those sequences <b>have no precomposed form at all</b> — <code>ı̯</code> (×192),
+  <code>u̯</code> (×161), <code>Ō̆</code> (×145), <code>ā̆</code> (×113), <code>ā́</code> (×113), <code>ē̆</code> (×112),
+  <code>l̡</code> (×79), <code>ı́</code> (×73), <code>j̊</code> (×33) — so no normalisation pass can make them go away.
+  Combining marks appear in <b>18 published HTML pages</b>, <code>index.html</code>, <code>languages.html</code>,
+  <code>character.html</code> and <code>place.html</code> among them.</p>
+
+  <p class="callout"><b>The live defect this uncovered, independent of any typeface choice.</b> The archive loads
+  EB Garamond from the Google Fonts CDN. Google's <code>latin</code> and <code>latin-ext</code> slices carry only
+  <b>U+0304, U+0308 and U+0329</b>; the <code>vietnamese</code> slice adds four more. Of the 21 combining marks the
+  corpus uses, <b>Google serves 7</b>. <b>1,422 of 2,720 mark occurrences — 52.3% — are falling through to a system
+  font on the live site right now.</b> Self-hosting a subset that includes U+0300–U+036F fixes that whichever face
+  is chosen.</p>
+
+  <p class="lede" style="margin-top:18px">Only the four self-hosted faces below can be tested honestly, because
+  only they were subset with the full mark range. <code>Théoden</code> is shown composed (NFC) and decomposed
+  (NFD) side by side; the last four columns are the corpus's real hard cases, two of which <b>stack two marks on
+  one letter</b> and therefore need GPOS <code>mkmk</code>, not merely <code>mark</code>.</p>
+
+  <table class="t">
+    <thead><tr>
+      <th style="width:132px">Face</th>
+      <th>Théoden <span style="font-weight:400;text-transform:none">NFC</span></th>
+      <th>Théoden <span style="font-weight:400;text-transform:none">NFD</span></th>
+      <th>ā́ <span style="font-weight:400;text-transform:none">×113</span></th>
+      <th>Ō̆ <span style="font-weight:400;text-transform:none">×145</span></th>
+      <th>ı̯ <span style="font-weight:400;text-transform:none">×192</span></th>
+      <th>j̊ <span style="font-weight:400;text-transform:none">×33</span></th>
+      <th style="width:196px">Verdict, from HarfBuzz</th>
+    </tr></thead>
+    <tbody id="nfdrows"></tbody>
+  </table>
+
+  <hr class="rulehr">
+  <p class="lede">And the two the owner's list asked for that cannot pass. These are rendered from the Google CDN,
+  which is how they would arrive; the marks are simply absent from the font.</p>
+  <table class="t">
+    <thead><tr><th style="width:132px">Face</th><th>Théoden NFC</th><th>Théoden NFD</th><th>ā́</th><th>Ō̆</th><th>ı̯</th><th>j̊</th><th style="width:196px">Verdict</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="lbl">IM Fell English</td>
+        <td class="big f-imfell" style="font-family:'IM Fell English',Georgia,serif">Théoden</td>
+        <td class="big" style="font-family:'IM Fell English',Georgia,serif">The&#x301;oden</td>
+        <td class="big" style="font-family:'IM Fell English',Georgia,serif">a&#x304;&#x301;</td>
+        <td class="big" style="font-family:'IM Fell English',Georgia,serif">O&#x304;&#x306;</td>
+        <td class="big" style="font-family:'IM Fell English',Georgia,serif">&#x131;&#x32F;</td>
+        <td class="big" style="font-family:'IM Fell English',Georgia,serif">j&#x30A;</td>
+        <td><span class="v-bad">TOFU — 0 of 21 marks</span><br><span class="num">all three IM Fell cuts carry no
+          combining marks at all; HarfBuzz returns <code>.notdef</code></span></td>
+      </tr>
+      <tr>
+        <td class="lbl">Uncial Antiqua<br><span style="font-weight:400">(the current display hand)</span></td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">Théoden</td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">The&#x301;oden</td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">a&#x304;&#x301;</td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">O&#x304;&#x306;</td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">&#x131;&#x32F;</td>
+        <td class="big" style="font-family:'Uncial Antiqua',Georgia,serif">j&#x30A;</td>
+        <td><span class="v-warn">0 of 21 marks — safe as DISPLAY only</span><br><span class="num">acceptable while it
+          sets headings; it must never set the language leaves' notation</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════ §4 · THE DISPLAY HAND ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">IV</span>The display hand — the hunt for an open Aniron</h2>
+  <p class="lede">Character matters here and readability at length does not apply. Every face below is SIL OFL 1.1,
+  licence file read in full, grant clause and sale clause both verified present. They are ordered by how close
+  they come to the angular, flared, pointed idiom the owner pointed at. <b>Nothing free is a replica</b> — but the
+  first four are in the family.</p>
+  <div class="dgrid" id="dgrid"></div>
+</section>
+
+<!-- ══════════════ §5 · THE NUMBERS ══════════════ -->
+<section class="leaf">
+  <h2 class="rubric"><span class="n">V</span>The cost, and the measurement that decides it</h2>
+  <p class="lede">WOFF2 is Brotli-compressed already, so gzip over it gains nothing (measured: every file grew by
+  20–50 bytes). The wire figure is the WOFF2 byte count. Every subset holds the archive's full measured
+  repertoire — ASCII, Latin-1, Latin Extended-A/B, IPA Extensions, all 21 combining marks, General Punctuation,
+  the fi/fl ligatures. <code>x@15px</code> is the x-height the reader actually sees at the archive's reading
+  size, measured from the glyph outline, not from a possibly-wrong OS/2 field.</p>
+  <table class="t"><thead><tr>
+    <th style="width:170px">Face</th><th>Role</th><th class="num">WOFF2</th><th class="num">x@15px</th>
+    <th class="num">marks 21</th><th class="num">mark</th><th class="num">mkmk</th><th>Licence</th><th>Verdict</th>
+  </tr></thead><tbody id="numrows"></tbody></table>
+  <p class="callout" style="margin-top:20px"><b>What the owner is seeing when he says “Times New Roman”.</b>
+  Times has an x-height of 0.448 em. EB Garamond's is <b>0.409</b>. At 15px that is a 6.13px x-height against
+  Times' 6.72px — <b>the archive's reading text is 8.8% smaller on the x-height than the face he compared it to</b>,
+  at the same nominal size, with less colour on the page. He is not wrong; he is describing a real measurement.</p>
+</section>
+
+<div class="foot">Built 19 August 2026. Every font downloaded from its canonical source — the designer's own
+release for Junicode, the <code>google/fonts</code> OFL repository for the rest — and every licence file read in
+full, never a font-site's badge. 48 licence files checked: 48 are SIL OFL 1.1 verbatim, 0 non-conforming.</div>
+
+<script>
+/* ── the real paragraph, from codex-proto.html lines 998-1008 ────────────── */
+const SAMPLE = `
+<p class="sub">The Aratar</p>
+<p class="q">Eight are held in chief reverence, and one, mightiest in his beginning, unmade himself.</p>
+<p class="h">Manwë <em>Súlimo</em></p>
+<p>Lord of the Breath of Arda, the Elder King. The winds, the clouds and all the regions of the air;
+appointed King of Arda under Eru. Néna a Théoden, and Fëanor, and Lúthien Tinúviel — the names the
+archive must set are the whole difficulty.</p>
+<p class="cite">Silm, Valaquenta · <span class="mark">[C]</span> t1_a:2228</p>`;
+
+/* face, cssClass, woff2 bytes, x/em, marks/21, verdict-tag, note */
+const READING = [
+ ["EB Garamond  (today)","f-ebg",122900,0.409,"20/21","warn",
+   "the incumbent · <b>self-hosted</b> figure; today it is CDN-served and 52.3% of the corpus's marks never arrive"],
+ ["Junicode","f-junicode",110512,0.422,"21/21","ok",
+   "<b>the recommendation</b> · mark + mkmk · Insular letters, Lombardic versals, smcp, onum · 5,980 glyphs"],
+ ["Gentium Book Plus","f-gentium",62720,0.454,"20/21","ok",
+   "the runner-up · mark + mkmk · positions all four hard sequences · SIL, built for diacritics"],
+ ["Cardo","f-cardo",36536,0.440,"21/21","warn",
+   "all 21 marks but <b>no mkmk</b> — the 258 stacked sequences collide"],
+ ["Caudex","f-caudex",33236,0.458,"21/21","bad",
+   "all 21 marks and <b>no mark, no mkmk</b> — every mark lands at the glyph origin"],
+ ["Alegreya","f-alegreya",67312,0.462,"13/21","bad",
+   "the most characterful humanist of the field; 8 marks missing outright"],
+ ["Vollkorn","f-vollkorn",72992,0.462,"13/21","bad","warm and sturdy; same 8 marks missing"],
+ ["Sorts Mill Goudy","f-goudy",31044,0.427,"9/21","bad","Goudy's personality, no mark, no mkmk"],
+ ["Spectral","f-spectral",21884,0.450,"12/21","bad","cheapest on the wire and too modern for the brief"],
+ ["Eczar","f-eczar",28392,0.468,"11/21","bad",
+   "flared angular stems — the closest <em>readable</em> face to the Aniron idiom"],
+ ["IM Fell English","f-imfell",67188,0.458,"0/21","bad",
+   "asked for by name · <b>no combining marks at all</b> — tofu on the corpus"],
+ ["Cormorant Garamond","f-cormorant",69828,0.386,"12/21","bad",
+   "a <em>display</em> Garamond · smallest x-height measured, 5.79px at 15px"],
+ ["Crimson Pro","f-crimson",0,0.420,"12/21","bad","a screen Garamond; no medieval claim"],
+ ["Faustina","f-faustina",0,0.494,"12/21","bad","biggest x-height of the field, wrong century"],
+ ["Petrona","f-petrona",0,0.443,"12/21","bad","contemporary; listed for completeness"],
+];
+
+const g = document.getElementById('grid');
+READING.forEach(([nm,cls,bytes,xem,marks,tag,note])=>{
+  const d=document.createElement('div');
+  d.className='spec '+cls;
+  const tagtxt = tag==='ok'?'PASSES THE CORPUS':(tag==='warn'?'PARTIAL':'FAILS THE CORPUS');
+  d.innerHTML=`<h3>${nm}<span class="tag ${tag}">${tagtxt}</span></h3>
+    <p class="meta">${bytes?('<b>'+bytes.toLocaleString()+'</b> B woff2 · '):''}x-height <b>${(xem*15).toFixed(2)}px</b>
+      at 15px · combining marks <b>${marks}</b><br>${note}</p>
+    <div class="smp">${SAMPLE}</div><div class="cpl"></div>`;
+  g.appendChild(d);
+});
+
+/* ── §3 rows: the four self-hosted faces, the ones that can be tested ─────── */
+const NFD = [
+ ["Junicode",'"Junicode",Georgia,serif',"ok",
+  "ALL FOUR POSITIONED","mark + mkmk. The breve is lifted clear above the macron (y +341/1000). The only face in the survey that does this."],
+ ["Gentium Book Plus",'"Gentium Book Plus L",Georgia,serif',"ok",
+  "ALL FOUR POSITIONED","mark + mkmk; y +312/1000 on the stack. 20 of 21 marks carried."],
+ ["Cardo",'"Cardo L",Georgia,serif',"bad",
+  "THREE OF FOUR COLLIDE","no mkmk: the second mark is left at offset (0,0) and prints on top of the first."],
+ ["EB Garamond (today)",'"EB Garamond",Georgia,serif',"bad",
+  "STACKS COLLIDE","<code>Ō̆</code> unpositioned; on <code>ā́</code> the acute is moved sideways but not up."],
+];
+const CELLS=["Théoden","Théoden","ā́","Ō̆","ı̯","j̊"];
+const nb=document.getElementById('nfdrows');
+NFD.forEach(([nm,ff,v,verdict,note])=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="lbl">${nm}</td>`+
+    CELLS.map(c=>`<td class="big" style="font-family:${ff}">${c}</td>`).join('')+
+    `<td><span class="v-${v}">${verdict}</span><br><span class="num">${note}</span></td>`;
+  nb.appendChild(tr);
+});
+
+/* ── §4 display faces ────────────────────────────────────────────────────── */
+const DISPLAY=[
+ ["Metamorphous","'Metamorphous L',serif",17076,"nearest to Aniron in the whole OFL corpus"],
+ ["Almendra Display","'Almendra Display L',serif",10856,"the strongest pen-drawn character"],
+ ["MedievalSharp","'MedievalSharp',serif",18864,"angular, sharp-cut calligraphic"],
+ ["Amarante","'Amarante',serif",17496,"flared, art-nouveau-inflected"],
+ ["Marcellus","'Marcellus L',serif",16512,"flared Roman, the quiet choice"],
+ ["Federant","'Federant',serif",12352,"sharp, condensed, high tension"],
+ ["Nova Cut","'Nova Cut',serif",10196,"cut rather than written"],
+ ["Yeseva One","'Yeseva One',serif",11400,"high contrast, wedge serifs"],
+ ["Sancreek","'Sancreek',serif",25688,"heavy, incised, Western"],
+ ["Grenze Gotisch","'Grenze Gotisch',serif",42036,"blackletter-roman hybrid"],
+ ["Pirata One","'Pirata One',serif",10952,"textura, condensed"],
+ ["Almendra","'Almendra',serif",14240,"the text cut of the display face"],
+ ["Fondamento","'Fondamento',serif",28708,"a written chancery hand"],
+ ["Junge","'Junge',serif",12772,"soft, wide, low contrast"],
+ ["Italiana","'Italiana',serif",9912,"very high contrast didone-ish"],
+ ["Macondo","'Macondo',serif",12104,"decorative, hand-drawn"],
+ ["Gilda Display","'Gilda Display',serif",13804,"delicate high-contrast titling"],
+ ["Cormorant Unicase","'Cormorant Unicase',serif",26808,"unicase — Aniron's own trick"],
+ ["Marcellus SC","'Marcellus SC',serif",16152,"small-caps cut"],
+ ["Forum","'Forum',serif",17820,"broad-nib Roman"],
+ ["Uncial Antiqua  (today)","'Uncial Antiqua',serif",23124,"the incumbent display hand"],
+ ["Cinzel  (today)","'Cinzel',serif",29432,"the incumbent furniture"],
+ ["UnifrakturMaguntia  (today)","'UnifrakturMaguntia',serif",22436,"the incumbent plaque"],
+];
+const dg=document.getElementById('dgrid');
+DISPLAY.forEach(([nm,ff,bytes,note])=>{
+  const d=document.createElement('div'); d.className='dcard';
+  d.innerHTML=`<div class="nm"><span style="color:var(--ink-soft)">${nm}</span><span>${bytes.toLocaleString()} B</span></div>
+   <div class="d1" style="font-family:${ff}">The Aratar</div>
+   <div class="d2" style="font-family:${ff}">Manwë Súlimo · Fëanor · Lúthien</div>
+   <div class="d3" style="font-family:${ff}">Where the texts disagree</div>
+   <div class="num" style="margin-top:7px;color:var(--ink-soft)">${note}</div>`;
+  dg.appendChild(d);
+});
+
+/* ── §1b unicase: Aniron's setting, on faces the archive can keep ────────── */
+const UNI=[
+ ["Metamorphous","'Metamorphous L',serif"],
+ ["Nova Cut","'Nova Cut L',serif"],
+ ["Cormorant Unicase","'Cormorant Unicase L',serif"],
+ ["MedievalSharp","'MedievalSharp',serif"],
+ ["Marcellus","'Marcellus L',serif"],
+ ["Uncial Antiqua  (today)","'Uncial Antiqua',serif"],
+];
+const ub=document.getElementById('unirows');
+UNI.forEach(([nm,ff])=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="lbl">${nm}</td>
+   <td style="font-family:${ff};font-size:26px;line-height:1.28">Manwë Súlimo · The Aratar</td>
+   <td style="font-family:${ff};font-size:26px;line-height:1.32"><span style="text-transform:uppercase">M</span><span
+     style="text-transform:uppercase;font-size:.72em;letter-spacing:.09em">anwë </span><span
+     style="text-transform:uppercase">S</span><span style="text-transform:uppercase;font-size:.72em;letter-spacing:.09em">úlimo · </span><span
+     style="text-transform:uppercase">T</span><span style="text-transform:uppercase;font-size:.72em;letter-spacing:.09em">he </span><span
+     style="text-transform:uppercase">A</span><span style="text-transform:uppercase;font-size:.72em;letter-spacing:.09em">ratar</span></td>`;
+  ub.appendChild(tr);
+});
+
+/* ── §5 numbers ──────────────────────────────────────────────────────────── */
+const NUM=[
+ ["Junicode","reading",110512,6.33,"21/21","yes","YES","OFL-1.1 · Peter S. Baker","ok","RECOMMENDED — the only face that sets the corpus correctly"],
+ ["Junicode Italic","reading",100400,6.44,"21/21","yes","YES","OFL-1.1 · Peter S. Baker","ok","the matching italic"],
+ ["Gentium Book Plus","reading",62720,6.81,"20/21","yes","YES","OFL-1.1 · SIL International","ok","runner-up; 48 KB cheaper, larger x-height"],
+ ["Cardo","reading",36536,6.59,"21/21","yes","no","OFL-1.1 · David J. Perry","warn","stacked marks collide"],
+ ["Caudex","reading",33236,6.86,"21/21","no","no","OFL-1.1 · Hjort Nidudsson","bad","no positioning at all"],
+ ["EB Garamond","reading",122900,6.13,"20/21","yes","no","OFL-1.1 · EB Garamond Authors","warn","the incumbent; largest file of the three finalists"],
+ ["Alegreya","reading",67312,6.93,"13/21","yes","yes","OFL-1.1 · Huerta Tipográfica","bad","8 marks missing"],
+ ["IM Fell English","reading",67188,6.87,"0/21","no","no","OFL-1.1 · Igino Marini","bad","tofu on 2,636 corpus sequences"],
+ ["Cormorant Garamond","reading",69828,5.79,"12/21","yes","yes","OFL-1.1 · Catharsis Fonts","bad","a display face; smallest x-height measured"],
+ ["Metamorphous","display",17076,8.85,"0/21","no","no","OFL-1.1 · Sorkin Type Co","ok","the Aniron-idiom answer, display only"],
+ ["Almendra Display","display",10856,7.80,"0/21","no","no","OFL-1.1 · Ana Sanfelippo","ok","display only"],
+ ["Marcellus","display",16512,7.50,"0/21","no","no","OFL-1.1 · Astigmatic AOETI","ok","display only"],
+ ["Uncial Antiqua","display",23124,7.96,"0/21","no","no","OFL-1.1 · Astigmatic AOETI","warn","incumbent; display only, and it is"],
+];
+const nr=document.getElementById('numrows');
+NUM.forEach(([nm,role,b,x,m,mk,mkmk,lic,v,note])=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="lbl">${nm}</td><td class="num">${role}</td>
+   <td class="num">${b.toLocaleString()}</td><td class="num">${x.toFixed(2)}px</td>
+   <td class="num">${m}</td><td class="num">${mk}</td>
+   <td class="num" style="${mkmk==='YES'?'color:#2f5c33;font-weight:700':''}">${mkmk}</td>
+   <td class="num">${lic}</td><td><span class="v-${v}">${note}</span></td>`;
+  nr.appendChild(tr);
+});
+
+/* ── measure characters-per-line on the RENDERED page ─────────────────────── */
+function measure(){
+  document.querySelectorAll('.spec').forEach(sp=>{
+    const p=sp.querySelector('.smp p:nth-of-type(4)') || sp.querySelectorAll('.smp p')[3];
+    if(!p) return;
+    const r=document.createRange(); r.selectNodeContents(p);
+    const lines=r.getClientRects().length;
+    const chars=p.textContent.trim().replace(/\s+/g,' ').length;
+    const h=Math.round(p.getBoundingClientRect().height);
+    sp.querySelector('.cpl').innerHTML =
+      `measured on this page: <b>${lines} lines</b> · <b>${Math.round(chars/Math.max(lines,1))} characters per line</b> · block height <b>${h}px</b>`;
+  });
+}
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(()=>setTimeout(measure,220)); }
+else setTimeout(measure,900);
+setTimeout(measure,2600);
+</script>
+<script src="nav.js"></script><script src="glossary.js" defer></script></body>
+</html>

@@ -1,0 +1,289 @@
+{
+ "aliases": [
+  {
+   "as_defined": [
+    "amon ereb"
+   ],
+   "as_referenced": "amon_ereb",
+   "defined_in": [
+    "arda_gazetteer:places"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "amon rudh"
+   ],
+   "as_referenced": "amon_rudh",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "barrow downs"
+   ],
+   "as_referenced": "barrow_downs",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "carn dum"
+   ],
+   "as_referenced": "carn_dum",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "eithel sirion"
+   ],
+   "as_referenced": "eithel_sirion",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "ered gorgoroth"
+   ],
+   "as_referenced": "ered_gorgoroth",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "ford of bruinen"
+   ],
+   "as_referenced": "ford_of_bruinen",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members",
+    "arda_undrawn:points.at"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "grey havens"
+   ],
+   "as_referenced": "grey_havens",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "havens of sirion"
+   ],
+   "as_referenced": "havens_of_sirion",
+   "defined_in": [
+    "arda_gazetteer:places"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "isle of balar"
+   ],
+   "as_referenced": "isle_of_balar",
+   "defined_in": [
+    "arda_gazetteer:places"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "lake helevorn"
+   ],
+   "as_referenced": "lake_helevorn",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "michel delving"
+   ],
+   "as_referenced": "michel_delving",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "mount gram"
+   ],
+   "as_referenced": "mount_gram",
+   "defined_in": [
+    "arda_gazetteer:places"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "mount gundabad"
+   ],
+   "as_referenced": "mount_gundabad",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "sarn athrad"
+   ],
+   "as_referenced": "sarn_athrad",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "the old forest"
+   ],
+   "as_referenced": "the_old_forest",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "tol galen"
+   ],
+   "as_referenced": "tol_galen",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "tol sirion"
+   ],
+   "as_referenced": "tol_sirion",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_journeys:journeys.stages",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  },
+  {
+   "as_defined": [
+    "tower hills"
+   ],
+   "as_referenced": "tower_hills",
+   "defined_in": [
+    "arda_gazetteer:places",
+    "arda_realms_layer:realms.members"
+   ],
+   "kind": "place",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ]
+  }
+ ],
+ "built_from": "map/gen_aliases.py, derived from every tracked site/arda_*.json",
+ "count": 19,
+ "not_aliased": [
+  {
+   "as_referenced": "helm_s_deep",
+   "folds_onto": [
+    "helm s deep"
+   ],
+   "kinds": [
+    "battle",
+    "place"
+   ],
+   "why": "the folded id names more than one KIND, so an alias would merge them"
+  }
+ ],
+ "note": "Two spellings of one id. The archive publishes both and says they name one record; it does NOT rank them. Ruling 2a forbids renaming a record to satisfy a reading of a rule, and there is deliberately no `primary` field."
+}

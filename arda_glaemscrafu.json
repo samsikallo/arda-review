@@ -1,0 +1,2664 @@
+{
+ "credit": {
+  "work": "Glǽmscrafu — Tolkien's Linguistic Cellar",
+  "authors": "Bertrand Bellet and Benjamin Babut",
+  "url": "https://glaemscrafu.jrrvf.com/",
+  "copyright": "Glǽmscrafu states that the texts remain the copyright of their authors and rights holders, naming their publishers and the Tolkien Estate; the transcriptions and the recordings are Bellet and Babut's own.",
+  "statement": "AN INVENTORY, NOT A COPY. This archive files that a text exists, what tongue it is in, and the page where a reader may read and hear it. It reproduces none of Tolkien's text, none of their transcriptions, and none of their 131 recordings -- a recording is a performance and is theirs."
+ },
+ "n_texts": 163,
+ "n_with_recording": 139,
+ "n_apparatus": 6,
+ "tongues": {
+  "Sindarin": 19,
+  "Quenya": 25,
+  "Adûnaic": 4,
+  "Black Speech": 3,
+  "Gothic": 4,
+  "Khuzdul": 3,
+  "Old English": 9,
+  "Welsh": 6,
+  "Old Norse": 5,
+  "Telerin": 3,
+  "Middle English": 4,
+  "Westron": 2,
+  "Finnish": 4
+ },
+ "texts": [
+  {
+   "file": "adunaic.html",
+   "title": "Adûnaic",
+   "url": "https://glaemscrafu.jrrvf.com/english/adunaic.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "aeadarnin.html",
+   "title": "Ae Adar nín",
+   "url": "https://glaemscrafu.jrrvf.com/english/aeadarnin.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "aelberethgilthoniel-preparatoire.html",
+   "title": "A Elbereth Gilthoniel, preparatory version",
+   "url": "https://glaemscrafu.jrrvf.com/english/aelberethgilthoniel-preparatoire.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "aelberethgilthoniel.html",
+   "title": "A Elbereth Gilthoniel",
+   "url": "https://glaemscrafu.jrrvf.com/english/aelberethgilthoniel.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "aiamaria.html",
+   "title": "Aia María",
+   "url": "https://glaemscrafu.jrrvf.com/english/aiamaria.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ainavedui.html",
+   "title": "Glorfindel’s greeting to Aragorn",
+   "url": "https://glaemscrafu.jrrvf.com/english/ainavedui.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "aiyaearendil.html",
+   "title": "Aiya Eärendil elenion ancalima!",
+   "url": "https://glaemscrafu.jrrvf.com/english/aiyaearendil.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "akallabeth.html",
+   "title": "Akallabêth",
+   "url": "https://glaemscrafu.jrrvf.com/english/akallabeth.html",
+   "tongues": [
+    "Adûnaic"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Adûnaic",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "alcariataren.html",
+   "title": "Alcar i Ataren",
+   "url": "https://glaemscrafu.jrrvf.com/english/alcariataren.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "alcarmitarmenelnaerun.html",
+   "title": "Alcar mi Tarmenel na Erun",
+   "url": "https://glaemscrafu.jrrvf.com/english/alcarmitarmenelnaerun.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ambidexters.html",
+   "title": "Ambidexters",
+   "url": "https://glaemscrafu.jrrvf.com/english/ambidexters.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "anarkaluva.html",
+   "title": "Farewell of Gelmir and Arminas to Tuor",
+   "url": "https://glaemscrafu.jrrvf.com/english/anarkaluva.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "arctic.html",
+   "title": "A sentence in “Arctic”",
+   "url": "https://glaemscrafu.jrrvf.com/english/arctic.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "arwenvanimelda.html",
+   "title": "Arwen vanimelda, namárië!",
+   "url": "https://glaemscrafu.jrrvf.com/english/arwenvanimelda.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ashnazgdurbatuluk.html",
+   "title": "Ash nazg durbatulûk",
+   "url": "https://glaemscrafu.jrrvf.com/english/ashnazgdurbatuluk.html",
+   "tongues": [
+    "Black Speech"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Black Speech",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "atalante.html",
+   "title": "Atalante",
+   "url": "https://glaemscrafu.jrrvf.com/english/atalante.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ataremma.html",
+   "title": "Átaremma",
+   "url": "https://glaemscrafu.jrrvf.com/english/ataremma.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "attaunsar.html",
+   "title": "Atta unsar",
+   "url": "https://glaemscrafu.jrrvf.com/english/attaunsar.html",
+   "tongues": [
+    "Gothic"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Gothic",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "avanimar.html",
+   "title": "Treebeard’s greeting to Celeborn and Galadriel",
+   "url": "https://glaemscrafu.jrrvf.com/english/avanimar.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "avemaria.html",
+   "title": "Ave Maria",
+   "url": "https://glaemscrafu.jrrvf.com/english/avemaria.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "bagmebloma.html",
+   "title": "Bagme bloma",
+   "url": "https://glaemscrafu.jrrvf.com/english/bagmebloma.html",
+   "tongues": [
+    "Gothic"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Gothic",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "balin.html",
+   "title": "Inscription on the tomb of Balin in Moria",
+   "url": "https://glaemscrafu.jrrvf.com/english/balin.html",
+   "tongues": [
+    "Khuzdul"
+   ],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Khuzdul",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "barukkhazad.html",
+   "title": "Dwarvish battle cry",
+   "url": "https://glaemscrafu.jrrvf.com/english/barukkhazad.html",
+   "tongues": [
+    "Khuzdul"
+   ],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Khuzdul",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "beowulf-crossing.html",
+   "title": "Béowulf – Crossing the sea",
+   "url": "https://glaemscrafu.jrrvf.com/english/beowulf-crossing.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "beowulf-prologue.html",
+   "title": "Béowulf – Prologue",
+   "url": "https://glaemscrafu.jrrvf.com/english/beowulf-prologue.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "blackspeech.html",
+   "title": "Black Speech",
+   "url": "https://glaemscrafu.jrrvf.com/english/blackspeech.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "cantrergwaelod.html",
+   "title": "Clychau Cantre’r Gwaelod",
+   "url": "https://glaemscrafu.jrrvf.com/english/cantrergwaelod.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "cartedethror.html",
+   "title": "Thrór’s map inscription",
+   "url": "https://glaemscrafu.jrrvf.com/english/cartedethror.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "cinqvoeux.html",
+   "title": "Five wishes",
+   "url": "https://glaemscrafu.jrrvf.com/english/cinqvoeux.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "cirion.html",
+   "title": "Cirion’s oath",
+   "url": "https://glaemscrafu.jrrvf.com/english/cirion.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "cormallenquenya.html",
+   "title": "Praise in the field of Cormallen (Quenya)",
+   "url": "https://glaemscrafu.jrrvf.com/english/cormallenquenya.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "cormallensindarin.html",
+   "title": "Praise in the field of Cormallen (Sindarin)",
+   "url": "https://glaemscrafu.jrrvf.com/english/cormallensindarin.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "crist.html",
+   "title": "Crist of Cynewulf (Lines 104 to 108)",
+   "url": "https://glaemscrafu.jrrvf.com/english/crist.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old English",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "deuxarbres.html",
+   "title": "The Two Trees",
+   "url": "https://glaemscrafu.jrrvf.com/english/deuxarbres.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "dirige.html",
+   "title": "Dirige",
+   "url": "https://glaemscrafu.jrrvf.com/english/dirige.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "dvergatal.html",
+   "title": "Dvergatal",
+   "url": "https://glaemscrafu.jrrvf.com/english/dvergatal.html",
+   "tongues": [
+    "Old Norse"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old Norse",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "eadigbeothu.html",
+   "title": "Éadig béo þu",
+   "url": "https://glaemscrafu.jrrvf.com/english/eadigbeothu.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "earendel.html",
+   "title": "Earendel",
+   "url": "https://glaemscrafu.jrrvf.com/english/earendel.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "eintad.html",
+   "title": "Ein Tad",
+   "url": "https://glaemscrafu.jrrvf.com/english/eintad.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "elendil.html",
+   "title": "Elendil’s words",
+   "url": "https://glaemscrafu.jrrvf.com/english/elendil.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "elendiletherendil.html",
+   "title": "Elendil and Herendil",
+   "url": "https://glaemscrafu.jrrvf.com/english/elendiletherendil.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "elensila.html",
+   "title": "Elen síla lúmenn’ omentielvo",
+   "url": "https://glaemscrafu.jrrvf.com/english/elensila.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "elsila.html",
+   "title": "Ēl sīla lūmena vomentienguo",
+   "url": "https://glaemscrafu.jrrvf.com/english/elsila.html",
+   "tongues": [
+    "Telerin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Telerin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "englishandwelsh.html",
+   "title": "English and Welsh",
+   "url": "https://glaemscrafu.jrrvf.com/english/englishandwelsh.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "eomer.html",
+   "title": "Éomer’s greeting",
+   "url": "https://glaemscrafu.jrrvf.com/english/eomer.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "eowyn.html",
+   "title": "Éowyn’s toast",
+   "url": "https://glaemscrafu.jrrvf.com/english/eowyn.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "exclamationsenadunaique.html",
+   "title": "Exclamations in Adûnaic",
+   "url": "https://glaemscrafu.jrrvf.com/english/exclamationsenadunaique.html",
+   "tongues": [
+    "Adûnaic"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Adûnaic",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "fadirvarr.html",
+   "title": "Faðir várr",
+   "url": "https://glaemscrafu.jrrvf.com/english/fadirvarr.html",
+   "tongues": [
+    "Old Norse"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old Norse",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "faederure.html",
+   "title": "Fæder úre",
+   "url": "https://glaemscrafu.jrrvf.com/english/faederure.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old English",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "faginomarja.html",
+   "title": "Fagino Marja",
+   "url": "https://glaemscrafu.jrrvf.com/english/faginomarja.html",
+   "tongues": [
+    "Gothic"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Gothic",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "fingon.html",
+   "title": "Fingon and his host at Nirnaeth Arnœdiad",
+   "url": "https://glaemscrafu.jrrvf.com/english/fingon.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "finnish.html",
+   "title": "Finnish",
+   "url": "https://glaemscrafu.jrrvf.com/english/finnish.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "firiel.html",
+   "title": "Fíriel’s song",
+   "url": "https://glaemscrafu.jrrvf.com/english/firiel.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "gandalffeu.html",
+   "title": "Gandalf’s fire-spell",
+   "url": "https://glaemscrafu.jrrvf.com/english/gandalffeu.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "gandalfportes-preparatoire.html",
+   "title": "Gandalf’s door spell, preparatory version",
+   "url": "https://glaemscrafu.jrrvf.com/english/gandalfportes-preparatoire.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "gandalfportes.html",
+   "title": "Gandalf’s door spell",
+   "url": "https://glaemscrafu.jrrvf.com/english/gandalfportes.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "gawain.html",
+   "title": "Sir Gawain and the Green Knight",
+   "url": "https://glaemscrafu.jrrvf.com/english/gawain.html",
+   "tongues": [
+    "Middle English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Middle English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "glaemscribe-mode-authoring.html",
+   "title": "Creating and editing modes",
+   "url": "https://glaemscrafu.jrrvf.com/english/glaemscribe-mode-authoring.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 32
+  },
+  {
+   "file": "gloriainexcelsisdeo.html",
+   "title": "Gloria in excelsis Deo",
+   "url": "https://glaemscrafu.jrrvf.com/english/gloriainexcelsisdeo.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "gloriapatri.html",
+   "title": "Gloria Patri",
+   "url": "https://glaemscrafu.jrrvf.com/english/gloriapatri.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "gogoniantirtad.html",
+   "title": "Gogoniant i’r Tad",
+   "url": "https://glaemscrafu.jrrvf.com/english/gogoniantirtad.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "goldogrin.html",
+   "title": "Gnomish phrases",
+   "url": "https://glaemscrafu.jrrvf.com/english/goldogrin.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "gothic.html",
+   "title": "Gothic",
+   "url": "https://glaemscrafu.jrrvf.com/english/gothic.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "gurenbedenni.html",
+   "title": "Guren bêd enni",
+   "url": "https://glaemscrafu.jrrvf.com/english/gurenbedenni.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "halwesthumaria.html",
+   "title": "Hál wes þú Maria",
+   "url": "https://glaemscrafu.jrrvf.com/english/halwesthumaria.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old English",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "heilmarie.html",
+   "title": "Heil Marie",
+   "url": "https://glaemscrafu.jrrvf.com/english/heilmarie.html",
+   "tongues": [
+    "Middle English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Middle English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "henffychwellmair.html",
+   "title": "Henffych well Mair",
+   "url": "https://glaemscrafu.jrrvf.com/english/henffychwellmair.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "hervor.html",
+   "title": "The death of Hervǫr",
+   "url": "https://glaemscrafu.jrrvf.com/english/hervor.html",
+   "tongues": [
+    "Old Norse"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old Norse",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "hobbits.html",
+   "title": "Names of Hobbits",
+   "url": "https://glaemscrafu.jrrvf.com/english/hobbits.html",
+   "tongues": [
+    "Westron"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Westron",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "hurinquenya.html",
+   "title": "Húrin’s cry",
+   "url": "https://glaemscrafu.jrrvf.com/english/hurinquenya.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "hurinsindarin.html",
+   "title": "Húrin’s threat",
+   "url": "https://glaemscrafu.jrrvf.com/english/hurinsindarin.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "idesaelfscyne.html",
+   "title": "Ides ælfscýne",
+   "url": "https://glaemscrafu.jrrvf.com/english/idesaelfscyne.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "introduction.html",
+   "title": "Introduction",
+   "url": "https://glaemscrafu.jrrvf.com/english/introduction.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "invocationsam-preparatoire.html",
+   "title": "Sam’s invocation of Elbereth at Cirith Ungol, preparatory version",
+   "url": "https://glaemscrafu.jrrvf.com/english/invocationsam-preparatoire.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "invocationsam.html",
+   "title": "Sam’s invocation of Elbereth at Cirith Ungol",
+   "url": "https://glaemscrafu.jrrvf.com/english/invocationsam.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "isameidan.html",
+   "title": "Isä meidän",
+   "url": "https://glaemscrafu.jrrvf.com/english/isameidan.html",
+   "tongues": [
+    "Finnish"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Finnish",
+    "Fraktur"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "khuzdul.html",
+   "title": "Khuzdul",
+   "url": "https://glaemscrafu.jrrvf.com/english/khuzdul.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "koivieneni.html",
+   "title": "The Elves at Koivienéni",
+   "url": "https://glaemscrafu.jrrvf.com/english/koivieneni.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "kullervo.html",
+   "title": "The death of Kullervo",
+   "url": "https://glaemscrafu.jrrvf.com/english/kullervo.html",
+   "tongues": [
+    "Finnish"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Finnish",
+    "Fraktur"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "kunniaisalle.html",
+   "title": "Kunnia Isälle",
+   "url": "https://glaemscrafu.jrrvf.com/english/kunniaisalle.html",
+   "tongues": [
+    "Finnish"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Finnish",
+    "Fraktur"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "lachocalad.html",
+   "title": "Battle cry of the Edain of the North",
+   "url": "https://glaemscrafu.jrrvf.com/english/lachocalad.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "latin.html",
+   "title": "Latin",
+   "url": "https://glaemscrafu.jrrvf.com/english/latin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "lettreduroi.html",
+   "title": "King’s letter",
+   "url": "https://glaemscrafu.jrrvf.com/english/lettreduroi.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "linnod.html",
+   "title": "Gilraen’s Linnod",
+   "url": "https://glaemscrafu.jrrvf.com/english/linnod.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "loreto-latin.html",
+   "title": "Litaniæ Lauretanæ",
+   "url": "https://glaemscrafu.jrrvf.com/english/loreto-latin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "loreto-quenya.html",
+   "title": "Litany of Loreto",
+   "url": "https://glaemscrafu.jrrvf.com/english/loreto-quenya.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "losttales.html",
+   "title": "Jubilation in Valinor",
+   "url": "https://glaemscrafu.jrrvf.com/english/losttales.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "luthien.html",
+   "title": "Lúthien’s song",
+   "url": "https://glaemscrafu.jrrvf.com/english/luthien.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "malletera.html",
+   "title": "The straight road (Qenya)",
+   "url": "https://glaemscrafu.jrrvf.com/english/malletera.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "markirya.html",
+   "title": "Markirya",
+   "url": "https://glaemscrafu.jrrvf.com/english/markirya.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "mathoms.html",
+   "title": "Mathoms",
+   "url": "https://glaemscrafu.jrrvf.com/english/mathoms.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "mensibus.html",
+   "title": "De mensibus Anglorum",
+   "url": "https://glaemscrafu.jrrvf.com/english/mensibus.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "middleenglish.html",
+   "title": "Middle English",
+   "url": "https://glaemscrafu.jrrvf.com/english/middleenglish.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "monadhmodeslust.html",
+   "title": "Monað módes lust",
+   "url": "https://glaemscrafu.jrrvf.com/english/monadhmodeslust.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "monathmodaeslust.html",
+   "title": "Monath módaes lust",
+   "url": "https://glaemscrafu.jrrvf.com/english/monathmodaeslust.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "motsvalarins.html",
+   "title": "Valarin words",
+   "url": "https://glaemscrafu.jrrvf.com/english/motsvalarins.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Valarin",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "namarie-preparatoire.html",
+   "title": "Namárië, preparatory version",
+   "url": "https://glaemscrafu.jrrvf.com/english/namarie-preparatoire.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "namarie.html",
+   "title": "Namárië",
+   "url": "https://glaemscrafu.jrrvf.com/english/namarie.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "narqelion.html",
+   "title": "Narqelion",
+   "url": "https://glaemscrafu.jrrvf.com/english/narqelion.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "navigatio.html",
+   "title": "Navigatio Sancti Brendani abbatis (Ch. 9 to 11)",
+   "url": "https://glaemscrafu.jrrvf.com/english/navigatio.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "nebrachar.html",
+   "title": "Nebrachar",
+   "url": "https://glaemscrafu.jrrvf.com/english/nebrachar.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nerninedenedair.html",
+   "title": "Legendarium of the Fathers of Men",
+   "url": "https://glaemscrafu.jrrvf.com/english/nerninedenedair.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "news.html",
+   "title": "News",
+   "url": "https://glaemscrafu.jrrvf.com/english/news.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 14
+  },
+  {
+   "file": "nieninqe.html",
+   "title": "Nieninqe",
+   "url": "https://glaemscrafu.jrrvf.com/english/nieninqe.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nieninque.html",
+   "title": "Nieninque",
+   "url": "https://glaemscrafu.jrrvf.com/english/nieninque.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nienor.html",
+   "title": "Nienor Níniel’s cry",
+   "url": "https://glaemscrafu.jrrvf.com/english/nienor.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "njordhrokskadhi.html",
+   "title": "Njǫrðr and Skaði",
+   "url": "https://glaemscrafu.jrrvf.com/english/njordhrokskadhi.html",
+   "tongues": [
+    "Old Norse"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old Norse",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "noldorin.html",
+   "title": "Gnomish & Noldorin",
+   "url": "https://glaemscrafu.jrrvf.com/english/noldorin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "nomsadunaiques.html",
+   "title": "Other Adûnaic names",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomsadunaiques.html",
+   "tongues": [
+    "Adûnaic"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Adûnaic",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nomskhuzduls.html",
+   "title": "Khuzdul names",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomskhuzduls.html",
+   "tongues": [
+    "Khuzdul"
+   ],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Khuzdul",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nomsnoirparler.html",
+   "title": "Names in Black Speech",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomsnoirparler.html",
+   "tongues": [
+    "Black Speech"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Black Speech",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nomstelerins.html",
+   "title": "Names in Telerin",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomstelerins.html",
+   "tongues": [
+    "Telerin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Telerin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nomsvalarins.html",
+   "title": "Valarin names",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomsvalarins.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Valarin",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "nomswestrons.html",
+   "title": "Other names in Westron",
+   "url": "https://glaemscrafu.jrrvf.com/english/nomswestrons.html",
+   "tongues": [
+    "Westron"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Westron",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "norolim.html",
+   "title": "Glorfindel’s cry to his horse",
+   "url": "https://glaemscrafu.jrrvf.com/english/norolim.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "numenormercien.html",
+   "title": "The fall of Númenor – Mercian",
+   "url": "https://glaemscrafu.jrrvf.com/english/numenormercien.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "numenorwest-saxon.html",
+   "title": "The fall of Númenor – West Saxon",
+   "url": "https://glaemscrafu.jrrvf.com/english/numenorwest-saxon.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "oferwidnegarsecg.html",
+   "title": "Ofer wídne gársecg",
+   "url": "https://glaemscrafu.jrrvf.com/english/oferwidnegarsecg.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "oilimamarkiryai.html",
+   "title": "Oilima Markirya I",
+   "url": "https://glaemscrafu.jrrvf.com/english/oilimamarkiryai.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "oilimamarkiryaii.html",
+   "title": "Oilima Markirya II",
+   "url": "https://glaemscrafu.jrrvf.com/english/oilimamarkiryaii.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "oldenglish.html",
+   "title": "Old English",
+   "url": "https://glaemscrafu.jrrvf.com/english/oldenglish.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "oldenglishtolkien.html",
+   "title": "Old English – Tolkien",
+   "url": "https://glaemscrafu.jrrvf.com/english/oldenglishtolkien.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "oldnorse.html",
+   "title": "Old Norse",
+   "url": "https://glaemscrafu.jrrvf.com/english/oldnorse.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "oreniapetenin.html",
+   "title": "Ōre nia pete nin",
+   "url": "https://glaemscrafu.jrrvf.com/english/oreniapetenin.html",
+   "tongues": [
+    "Telerin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Telerin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "orenyaquetenin.html",
+   "title": "Órenya quete nin",
+   "url": "https://glaemscrafu.jrrvf.com/english/orenyaquetenin.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "orfeo.html",
+   "title": "Sir Orfeo",
+   "url": "https://glaemscrafu.jrrvf.com/english/orfeo.html",
+   "tongues": [
+    "Middle English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Middle English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "orpheus.html",
+   "title": "Orpheus and Eurydice",
+   "url": "https://glaemscrafu.jrrvf.com/english/orpheus.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "ortirielyanna.html",
+   "title": "Ortírielyanna",
+   "url": "https://glaemscrafu.jrrvf.com/english/ortirielyanna.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ourefadir.html",
+   "title": "Oure Fadir",
+   "url": "https://glaemscrafu.jrrvf.com/english/ourefadir.html",
+   "tongues": [
+    "Middle English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Middle English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "paternoster.html",
+   "title": "Pater noster",
+   "url": "https://glaemscrafu.jrrvf.com/english/paternoster.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "pengolodh.html",
+   "title": "Pengoloð and Ælfwine",
+   "url": "https://glaemscrafu.jrrvf.com/english/pengolodh.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "portesmoria-preparatoire.html",
+   "title": "Moria gate inscription, preparatory version",
+   "url": "https://glaemscrafu.jrrvf.com/english/portesmoria-preparatoire.html",
+   "tongues": [],
+   "scripts": [
+    "Cirth"
+   ],
+   "declared": [
+    "English",
+    "Gnomish & Noldorin",
+    "Cirth"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "portesmoria.html",
+   "title": "Moria gate inscription",
+   "url": "https://glaemscrafu.jrrvf.com/english/portesmoria.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "pwyllpendefigdyfed.html",
+   "title": "Pwyll Pendefig Dyfed",
+   "url": "https://glaemscrafu.jrrvf.com/english/pwyllpendefigdyfed.html",
+   "tongues": [
+    "Welsh"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Welsh",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "qenya.html",
+   "title": "Qenya",
+   "url": "https://glaemscrafu.jrrvf.com/english/qenya.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "quenya.html",
+   "title": "Quenya",
+   "url": "https://glaemscrafu.jrrvf.com/english/quenya.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "riddle.html",
+   "title": "Riddle n° 85 from the Exeter Book",
+   "url": "https://glaemscrafu.jrrvf.com/english/riddle.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "rohirrim.html",
+   "title": "Summons of the Rohirrim",
+   "url": "https://glaemscrafu.jrrvf.com/english/rohirrim.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "roisdenumenor.html",
+   "title": "Adûnaic names of the kings of Númenor",
+   "url": "https://glaemscrafu.jrrvf.com/english/roisdenumenor.html",
+   "tongues": [
+    "Adûnaic"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Adûnaic",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "seafarer.html",
+   "title": "The Seafarer",
+   "url": "https://glaemscrafu.jrrvf.com/english/seafarer.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "seonitherhrorene.html",
+   "title": "Seo Niþerhrorene",
+   "url": "https://glaemscrafu.jrrvf.com/english/seonitherhrorene.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "sigurdr.html",
+   "title": "Sigurðr kills Fáfnir",
+   "url": "https://glaemscrafu.jrrvf.com/english/sigurdr.html",
+   "tongues": [
+    "Old Norse"
+   ],
+   "scripts": [
+    "Runes"
+   ],
+   "declared": [
+    "English",
+    "Old Norse",
+    "Runes"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "sindarin.html",
+   "title": "Sindarin",
+   "url": "https://glaemscrafu.jrrvf.com/english/sindarin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "siqentefeanor.html",
+   "title": "Sí qente Feanor",
+   "url": "https://glaemscrafu.jrrvf.com/english/siqentefeanor.html",
+   "tongues": [],
+   "scripts": [
+    "Sarati"
+   ],
+   "declared": [
+    "English",
+    "Qenya",
+    "Sarati"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "subtuumpraesidium.html",
+   "title": "Sub tuum præsidium",
+   "url": "https://glaemscrafu.jrrvf.com/english/subtuumpraesidium.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Latin",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "telerin.html",
+   "title": "Telerin",
+   "url": "https://glaemscrafu.jrrvf.com/english/telerin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "tervemaria.html",
+   "title": "Terve Maria",
+   "url": "https://glaemscrafu.jrrvf.com/english/tervemaria.html",
+   "tongues": [
+    "Finnish"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Finnish",
+    "Fraktur"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "thucydide.html",
+   "title": "Apostil to Thucydides",
+   "url": "https://glaemscrafu.jrrvf.com/english/thucydide.html",
+   "tongues": [
+    "Gothic"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Gothic",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "thuscwaedhaelfwinewidlast.html",
+   "title": "Þus cwæð Ælfwine Wídlást",
+   "url": "https://glaemscrafu.jrrvf.com/english/thuscwaedhaelfwinewidlast.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "tolkienhimself.html",
+   "title": "Read by Tolkien",
+   "url": "https://glaemscrafu.jrrvf.com/english/tolkienhimself.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "tolkienhimselfatb.html",
+   "title": "Tom Bombadil",
+   "url": "https://glaemscrafu.jrrvf.com/english/tolkienhimselfatb.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "tolkienhimselflotrhob.html",
+   "title": "LotR and Hobbit",
+   "url": "https://glaemscrafu.jrrvf.com/english/tolkienhimselflotrhob.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "tuor.html",
+   "title": "Tuor’s cry",
+   "url": "https://glaemscrafu.jrrvf.com/english/tuor.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "turinwrapper.html",
+   "title": "Túrin Wrapper",
+   "url": "https://glaemscrafu.jrrvf.com/english/turinwrapper.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "ugluk.html",
+   "title": "Uglúk u bagronk",
+   "url": "https://glaemscrafu.jrrvf.com/english/ugluk.html",
+   "tongues": [
+    "Black Speech"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Black Speech",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "valarin.html",
+   "title": "Valarin",
+   "url": "https://glaemscrafu.jrrvf.com/english/valarin.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "voronwe.html",
+   "title": "Voronwë’s cry",
+   "url": "https://glaemscrafu.jrrvf.com/english/voronwe.html",
+   "tongues": [
+    "Sindarin"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Sindarin",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "wanderer.html",
+   "title": "The Wanderer",
+   "url": "https://glaemscrafu.jrrvf.com/english/wanderer.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "welsh.html",
+   "title": "Welsh",
+   "url": "https://glaemscrafu.jrrvf.com/english/welsh.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "westron.html",
+   "title": "Westron",
+   "url": "https://glaemscrafu.jrrvf.com/english/westron.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "westwegwaesrihtweg.html",
+   "title": "The straight road (Old English)",
+   "url": "https://glaemscrafu.jrrvf.com/english/westwegwaesrihtweg.html",
+   "tongues": [],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Old English – Tolkien",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  },
+  {
+   "file": "whale.html",
+   "title": "The Whale",
+   "url": "https://glaemscrafu.jrrvf.com/english/whale.html",
+   "tongues": [
+    "Old English"
+   ],
+   "scripts": [],
+   "declared": [
+    "English",
+    "Old English",
+    "Manuscript"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "yeutuvienyes.html",
+   "title": "Yé! Utúvienyes!",
+   "url": "https://glaemscrafu.jrrvf.com/english/yeutuvienyes.html",
+   "tongues": [
+    "Quenya"
+   ],
+   "scripts": [
+    "Tengwar"
+   ],
+   "declared": [
+    "English",
+    "Quenya",
+    "Tengwar"
+   ],
+   "has_recording": true,
+   "n_glaemscribe_refs": 5
+  }
+ ],
+ "apparatus": [
+  {
+   "file": "about-glaemscribe.html",
+   "title": "About Glǽmscribe",
+   "url": "https://glaemscrafu.jrrvf.com/english/about-glaemscribe.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 19
+  },
+  {
+   "file": "about-transcriptions.html",
+   "title": "About transcriptions & typefaces",
+   "url": "https://glaemscrafu.jrrvf.com/english/about-transcriptions.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 8
+  },
+  {
+   "file": "bibliography.html",
+   "title": "Bibliography",
+   "url": "https://glaemscrafu.jrrvf.com/english/bibliography.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  },
+  {
+   "file": "glaemscribe.html",
+   "title": "Glǽmscribe",
+   "url": "https://glaemscrafu.jrrvf.com/english/glaemscribe.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": true,
+   "n_glaemscribe_refs": 77
+  },
+  {
+   "file": "index.html",
+   "title": "The Cellar",
+   "url": "https://glaemscrafu.jrrvf.com/english/index.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 3
+  },
+  {
+   "file": "links.html",
+   "title": "Links",
+   "url": "https://glaemscrafu.jrrvf.com/english/links.html",
+   "tongues": [],
+   "scripts": [],
+   "declared": [],
+   "has_recording": false,
+   "n_glaemscribe_refs": 2
+  }
+ ],
+ "note": "An inventory of Glǽmscrafu with links, at the owner's instruction of 11 August. Nothing of Tolkien's text, nothing of Bellet and Babut's transcriptions, and none of their recordings is reproduced. This says a text exists and where to hear it -- which is what a catalogue does."
+}

@@ -1,0 +1,1011 @@
+{
+ "issues": {
+  "PE11": {
+   "cited_by_archive": 45,
+   "discussed_by": [
+    {
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "words": 13266,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html"
+    },
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "words": 14916,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    }
+   ]
+  },
+  "PE12": {
+   "cited_by_archive": 1756,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "words": 13266,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html"
+    },
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    },
+    {
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "words": 14916,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    }
+   ]
+  },
+  "PE13": {
+   "cited_by_archive": 6668,
+   "discussed_by": [
+    {
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "words": 13266,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html"
+    },
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "The Past-Tense Verb in the Noldorin of the Etymologies",
+     "headings": [],
+     "words": 5138,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/noldpat.phtml.html"
+    },
+    {
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "words": 14916,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    }
+   ]
+  },
+  "PE14": {
+   "cited_by_archive": 3748,
+   "discussed_by": [
+    {
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "words": 13266,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html"
+    },
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    },
+    {
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "words": 14916,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    }
+   ]
+  },
+  "PE15": {
+   "cited_by_archive": 1484,
+   "discussed_by": [
+    {
+     "title": "Early Ilkorin Phonology",
+     "headings": [],
+     "words": 13266,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml.html"
+    },
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    }
+   ]
+  },
+  "PE16": {
+   "cited_by_archive": 1930,
+   "discussed_by": [
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "PE17": {
+   "cited_by_archive": 15010,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Commentary on Musings on Limlight",
+     "headings": [],
+     "words": 1368,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "PE18": {
+   "cited_by_archive": 2394,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    }
+   ]
+  },
+  "PE19": {
+   "cited_by_archive": 4950,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "PE21": {
+   "cited_by_archive": 3552,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    }
+   ]
+  },
+  "PE22": {
+   "cited_by_archive": 6775,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "PE23": {
+   "cited_by_archive": 5217,
+   "discussed_by": []
+  },
+  "VT13": {
+   "cited_by_archive": 1,
+   "discussed_by": []
+  },
+  "VT17": {
+   "cited_by_archive": 1,
+   "discussed_by": [
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    }
+   ]
+  },
+  "VT21": {
+   "cited_by_archive": 5,
+   "discussed_by": [
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    }
+   ]
+  },
+  "VT24": {
+   "cited_by_archive": 81,
+   "discussed_by": [
+    {
+     "title": "Attolma: The Lord's Prayer in Quenya",
+     "headings": [
+      "Attolma",
+      "The Lord's Prayer in Quenya",
+      "Notes:",
+      "Line 1:",
+      "Line 2:"
+     ],
+     "words": 1940,
+     "url": "https://www.elvish.org/www.elvish.org/articles/Attolma.html"
+    }
+   ]
+  },
+  "VT27": {
+   "cited_by_archive": 33,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    }
+   ]
+  },
+  "VT28": {
+   "cited_by_archive": 34,
+   "discussed_by": [
+    {
+     "title": "abbreviations",
+     "headings": [],
+     "words": 612,
+     "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    }
+   ]
+  },
+  "VT32": {
+   "cited_by_archive": 4,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    }
+   ]
+  },
+  "VT34": {
+   "cited_by_archive": 1,
+   "discussed_by": [
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    }
+   ]
+  },
+  "VT36": {
+   "cited_by_archive": 83,
+   "discussed_by": [
+    {
+     "title": "abbreviations",
+     "headings": [],
+     "words": 612,
+     "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    }
+   ]
+  },
+  "VT39": {
+   "cited_by_archive": 406,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "The Goldogrin Past Tense",
+     "headings": [],
+     "words": 14916,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    },
+    {
+     "title": "a play",
+     "headings": [],
+     "words": 1883,
+     "url": "https://www.elvish.org/www.elvish.org/elm/aplay.html"
+    },
+    {
+     "title": "newwords | viewed from the spire...",
+     "headings": [],
+     "words": 2728,
+     "url": "https://www.elvish.org/www.elvish.org/elm/newwords.html"
+    },
+    {
+     "title": "tyalie",
+     "headings": [],
+     "words": 521,
+     "url": "https://www.elvish.org/www.elvish.org/elm/tyalie.html"
+    }
+   ]
+  },
+  "VT40": {
+   "cited_by_archive": 152,
+   "discussed_by": [
+    {
+     "title": "abbreviations",
+     "headings": [],
+     "words": 612,
+     "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    }
+   ]
+  },
+  "VT41": {
+   "cited_by_archive": 448,
+   "discussed_by": [
+    {
+     "title": "Soundtrack Analysis",
+     "headings": [],
+     "words": 5606,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/movie_soundtrack_fotr.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    },
+    {
+     "title": "a play",
+     "headings": [],
+     "words": 1883,
+     "url": "https://www.elvish.org/www.elvish.org/elm/aplay.html"
+    },
+    {
+     "title": "info on the merin sentence",
+     "headings": [],
+     "words": 1018,
+     "url": "https://www.elvish.org/www.elvish.org/elm/merin.html"
+    },
+    {
+     "title": "newwords | viewed from the spire...",
+     "headings": [],
+     "words": 2728,
+     "url": "https://www.elvish.org/www.elvish.org/elm/newwords.html"
+    }
+   ]
+  },
+  "VT42": {
+   "cited_by_archive": 983,
+   "discussed_by": [
+    {
+     "title": "O Hatholad",
+     "headings": [],
+     "words": 581,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/atholad.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Ring Poem by Ryszard Derdzinski",
+     "headings": [],
+     "words": 1835,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ringpoem.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "The Two Phonetic Values of ll in Elvish Sindarin in The Lord of the Rings",
+     "headings": [],
+     "words": 2028,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/sindll.phtml.html"
+    }
+   ]
+  },
+  "VT43": {
+   "cited_by_archive": 688,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Conventions and Abbreviations",
+     "headings": [],
+     "words": 823,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/conventions.phtml.html"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    },
+    {
+     "title": "newwords | viewed from the spire...",
+     "headings": [],
+     "words": 2728,
+     "url": "https://www.elvish.org/www.elvish.org/elm/newwords.html"
+    },
+    {
+     "title": "quenya lapseparma | S",
+     "headings": [],
+     "words": 1067,
+     "url": "https://www.elvish.org/www.elvish.org/elm/names/s.html"
+    }
+   ]
+  },
+  "VT44": {
+   "cited_by_archive": 396,
+   "discussed_by": [
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq.htm"
+    },
+    {
+     "title": "Parma Penyane Quettaron v2.5",
+     "headings": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+     ],
+     "words": 10319,
+     "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    },
+    {
+     "title": "tyalie",
+     "headings": [],
+     "words": 521,
+     "url": "https://www.elvish.org/www.elvish.org/elm/tyalie.html"
+    }
+   ]
+  },
+  "VT45": {
+   "cited_by_archive": 13,
+   "discussed_by": [
+    {
+     "title": "Light and Tree",
+     "headings": [],
+     "words": 8394,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml.html"
+    },
+    {
+     "title": "Musings on Limlight",
+     "headings": [],
+     "words": 5442,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml.html"
+    },
+    {
+     "title": "Commentary on The Nature of Middle-earth",
+     "headings": [],
+     "words": 14722,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml.html"
+    },
+    {
+     "title": "Intensifying Prefixes in the Etymologies",
+     "headings": [],
+     "words": 2708,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml.html"
+    },
+    {
+     "title": "Noldorin Plurals in the Etymologies",
+     "headings": [],
+     "words": 4277,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml.html"
+    }
+   ]
+  },
+  "VT46": {
+   "cited_by_archive": 6,
+   "discussed_by": [
+    {
+     "title": "Intensifying Prefixes in the Etymologies",
+     "headings": [],
+     "words": 2708,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml.html"
+    },
+    {
+     "title": "Noldorin Plurals in the Etymologies",
+     "headings": [],
+     "words": 4277,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml.html"
+    }
+   ]
+  },
+  "VT47": {
+   "cited_by_archive": 1561,
+   "discussed_by": [
+    {
+     "title": "The Eldarin Accent System",
+     "headings": [],
+     "words": 10614,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml.html"
+    },
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "VT48": {
+   "cited_by_archive": 966,
+   "discussed_by": [
+    {
+     "title": "Quenya Compound Tenses",
+     "headings": [],
+     "words": 6259,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml.html"
+    },
+    {
+     "title": "Rúmilian Numerals",
+     "headings": [],
+     "words": 6192,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml.html"
+    }
+   ]
+  },
+  "VT49": {
+   "cited_by_archive": 1101,
+   "discussed_by": [
+    {
+     "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
+     "headings": [],
+     "words": 1162,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml.html"
+    },
+    {
+     "title": "Causativity in Quenya",
+     "headings": [],
+     "words": 7135,
+     "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml.html"
+    }
+   ]
+  },
+  "VT50": {
+   "cited_by_archive": 129,
+   "discussed_by": []
+  }
+ },
+ "n_cited": 33,
+ "n_discussed": 30,
+ "n_covered": 30,
+ "no_scholarship_yet": [
+  "PE23",
+  "VT13",
+  "VT50"
+ ],
+ "cited_outside_published_ranges": [],
+ "note": "Issue -> the scholarship that discusses it. POINTERS ONLY: titles, section headings and URLs from a mirror of the Elvish Linguistic Fellowship's site. The archive does not hold the journals and reproduces none of anyone's prose. Built because the archive cites 33 issues and a reader following one arrived at a journal rather than at a paper.",
+ "not_a_guard": "A guard on 'is this a real issue' was measured and NOT kept: all cited issues fall inside the published ranges, zero out of range, so its debt is zero on the day it is written and rule 5 says such a thing has never been shown to be a guard."
+}

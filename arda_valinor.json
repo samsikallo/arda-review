@@ -1,0 +1,305 @@
+{
+ "note": "Aman drawn from the corpus by the Arda Archive. No map of this land exists in Christopher Tolkien's hand; the outline, the coastline and every coordinate here are the archive's own work and carry no authority but their own. What the corpus establishes is the RELATION recorded on each feature, never the position.",
+ "placed": [
+  {
+   "n": "Ekkaia",
+   "k": "sea",
+   "x": 64,
+   "y": 900,
+   "q": "west shores looked upon the Outer Sea, that is called by the Elves Ekkaia",
+   "c": "t1_a_the_silmarillion.txt:2630",
+   "attests": "the Outer Sea lies off the WEST shore of Aman",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Belegaer",
+   "k": "sea",
+   "x": 1150,
+   "y": 1400,
+   "q": "the east shores of Aman were the uttermost end of Belegaer, the Great Sea of the West",
+   "c": "t1_a_the_silmarillion.txt:2632",
+   "attests": "the Great Sea lies off the EAST shore of Aman",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "the Pelóri",
+   "k": "range",
+   "x": 875,
+   "y": 900,
+   "q": "upon the shores of the sea they raised the Pelóri, the Mountains of Aman, highest upon Earth",
+   "c": "t1_a_the_silmarillion.txt:2635",
+   "attests": "the mountains stand ON the eastern shore, between the sea and what lies behind them",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Taniquetil",
+   "k": "mountain",
+   "x": 862,
+   "y": 806,
+   "q": "above all the mountains of the Pelóri was that height upon whose summit Manwë set his throne",
+   "c": "t1_a_the_silmarillion.txt:2637",
+   "attests": "the highest peak OF the Pelóri, therefore on the range",
+   "drawn": "the archive's own placement",
+   "infer": "the corpus fixes Taniquetil THREE times: the highest of the Pelóri; 'standing upon the margin of the sea' (Silm:2732); and — the one that places it ALONG the range — 'Túna beneath Taniquetil' (Silm, Flight of the Noldor) [C], where Túna is 'The green hill in the Calacirya' by Silm's own index [C]. Drawn beside the pass on those two, not on the Vanyar inference given here until 12 Aug"
+  },
+  {
+   "n": "Valinor",
+   "k": "region",
+   "x": 470,
+   "y": 900,
+   "q": "Behind the walls of the Pelóri the Valar established their domain in that region which is called Valinor",
+   "c": "t1_a_the_silmarillion.txt:2643",
+   "attests": "Valinor lies BEHIND the mountains — that is, west of them",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Valmar",
+   "k": "city",
+   "x": 520,
+   "y": 900,
+   "q": "in the midst of the plain beyond the mountains they built their city, Valmar of many bells",
+   "c": "t1_a_the_silmarillion.txt:2656",
+   "attests": "in the MIDDLE of the plain, beyond the mountains from the sea",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Ezellohar",
+   "k": "mound",
+   "x": 452,
+   "y": 900,
+   "q": "Before its western gate there was a green mound, Ezellohar, that is named also Corollairë",
+   "c": "t1_a_the_silmarillion.txt:2657",
+   "attests": "immediately WEST of Valmar, before its western gate — where the Two Trees stood",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "the Máhanaxar",
+   "k": "ring",
+   "x": 447,
+   "y": 946,
+   "q": "the Máhanaxar, the Ring of Doom near to the golden gates of Valmar",
+   "c": "t1_a_the_silmarillion.txt:2663",
+   "attests": "NEAR the gates of Valmar",
+   "drawn": "the archive's own placement",
+   "infer": "'near to the golden gates' fixes it beside the city but not on which side; it is drawn by Ezellohar because the Valar sat in it to hear Yavanna sing upon the mound"
+  },
+  {
+   "n": "the Calacirya",
+   "k": "pass",
+   "x": 900,
+   "y": 918,
+   "q": "a gap was made in the great walls of the Pelóri",
+   "c": "t1_a_the_silmarillion.txt:3560",
+   "attests": "a GAP THROUGH the range — the only breach in the mountain wall",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Túna",
+   "k": "hill",
+   "x": 934,
+   "y": 918,
+   "q": "there in a deep valley that ran down to the sea the Eldar raised a high green hill: Túna it was called",
+   "c": "t1_a_the_silmarillion.txt:3561",
+   "attests": "IN the valley of the gap, on the seaward side",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Tirion",
+   "k": "city",
+   "x": 934,
+   "y": 910,
+   "q": "Upon the crown of Túna the city of the Elves was built, the white walls and terraces of Tirion",
+   "c": "t1_a_the_silmarillion.txt:3571",
+   "attests": "ON the crown of Túna",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Mindon Eldaliéva",
+   "k": "tower",
+   "x": 934,
+   "y": 900,
+   "q": "the highest of the towers of that city was the Tower of Ingwë, Mindon Eldaliéva",
+   "c": "t1_a_the_silmarillion.txt:3572",
+   "attests": "the highest tower OF Tirion",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "the Bay of Eldamar",
+   "k": "bay",
+   "x": 1075,
+   "y": 940,
+   "q": "to the east it looked towards the Bay of Elvenhome, and the Lonely Isle, and the Shadowy Seas",
+   "c": "t1_a_the_silmarillion.txt:3564",
+   "attests": "EAST of Túna, seen from the hill",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Tol Eressëa",
+   "k": "isle",
+   "x": 1112,
+   "y": 952,
+   "q": "stood there alone in the Bay of Eldamar; and it was called Tol Eressëa, the Lonely Isle",
+   "c": "t1_a_the_silmarillion.txt:3552",
+   "attests": "IN the Bay of Eldamar",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Alqualondë",
+   "k": "city",
+   "x": 1002,
+   "y": 782,
+   "q": "it lay upon the confines of Eldamar, north of the Calacirya",
+   "c": "t1_a_the_silmarillion.txt:3669",
+   "attests": "NORTH of the Calacirya, on the coast of Eldamar",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Araman",
+   "k": "waste",
+   "x": 990,
+   "y": 470,
+   "q": "This land lay northward between the Mountains of the Pelóri and the Great Sea",
+   "c": "t1_a_the_silmarillion.txt:4412",
+   "attests": "NORTH, and BETWEEN the mountains and the sea — a coastal strip east of the range",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Oiomúrë",
+   "k": "mist",
+   "x": 980,
+   "y": 250,
+   "q": "came through the great mists of Oiomúrë to the Helcaraxë",
+   "c": "t1_a_the_silmarillion.txt:4417",
+   "attests": "between Araman and the Helcaraxë — passed through on the way north",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "the Helcaraxë",
+   "k": "strait",
+   "x": 940,
+   "y": 140,
+   "q": "the strait between Araman and Middle-earth was filled with grinding ice",
+   "c": "t1_a_the_silmarillion.txt:4419",
+   "attests": "the strait at the NORTH, between Araman and Middle-earth",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Avathar",
+   "k": "waste",
+   "x": 980,
+   "y": 1370,
+   "q": "That narrow land lay south of the Bay of Eldamar, beneath the eastern feet of the Pelóri",
+   "c": "t1_a_the_silmarillion.txt:4156",
+   "attests": "SOUTH of the bay, at the EASTERN foot of the mountains, and narrow",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Formenos",
+   "k": "fortress",
+   "x": 560,
+   "y": 470,
+   "q": "northward in Valinor they made a strong place and treasury in the hills",
+   "c": "t1_a_the_silmarillion.txt:4073",
+   "attests": "NORTHWARD within Valinor, in hills",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Mandos",
+   "k": "hall",
+   "x": 470,
+   "y": 520,
+   "q": "Námo the elder dwells in Mandos, which is northward in Valinor",
+   "c": "t1_10_morgoths_ring.txt:7784",
+   "attests": "NORTHWARD within Valinor, near where Feanor dwelt and built Formenos",
+   "drawn": "the archive's own placement",
+   "infer": "the published Silmarillion reads 'westward' and Christopher Tolkien calls that his own change and 'a regrettable error'; the final text of the Valaquenta has 'northward'. Placed north-of-centre beside Formenos because Feanor 'dwelt northward in Valinor near to the halls of Mandos'. The compass direction is Tolkien's final text; the exact spot is the archive's."
+  },
+  {
+   "n": "the halls of Nienna",
+   "k": "hall",
+   "x": 150,
+   "y": 1010,
+   "q": "Her halls are west of West, upon the borders of the world",
+   "c": "t1_a_the_silmarillion.txt:2352",
+   "attests": "the FURTHEST west — at the world's border, beyond Valinor proper",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "the mansions of Aulë",
+   "k": "hall",
+   "x": 620,
+   "y": 1004,
+   "q": "And in the midst of the Blessed Realm were the mansions of Aulë, and there he laboured long",
+   "c": "t1_a_the_silmarillion.txt:2715",
+   "attests": "in the MIDST of the Blessed Realm",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Ilmarin",
+   "k": "hall",
+   "x": 862,
+   "y": 776,
+   "q": "Their halls are above the everlasting snow, upon Oiolossë, the uttermost tower of Taniquetil",
+   "c": "t1_a_the_silmarillion.txt:2239",
+   "attests": "ON the summit of Taniquetil, above the snowline",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Ulmo in the Outer Ocean",
+   "k": "sea",
+   "x": 64,
+   "y": 1380,
+   "q": "he dwelt from the beginning of Arda in the Outer Ocean, and still he dwells there",
+   "c": "t1_a_the_silmarillion.txt:2752",
+   "attests": "Ulmo dwells in Ekkaia — OUTSIDE Valinor, and outside Aman altogether",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Lórellin",
+   "k": "lake",
+   "x": 360,
+   "y": 1090,
+   "q": "she walks not by day, but sleeps upon an island in the tree-shadowed lake of Lórellin",
+   "c": "t1_a_the_silmarillion.txt:2338",
+   "attests": "a lake with an island, in Lórien",
+   "drawn": "the archive's own placement",
+   "infer": "the corpus places Lórellin IN Lórien, and Lórien only 'in the land of the Valar'. Where in that land is nowhere stated. It is drawn on the plain south of Valmar as a position that contradicts nothing, and for no better reason than that"
+  }
+ ],
+ "unplaced": [
+  {
+   "n": "the gardens of Lórien",
+   "q": "In Lórien are his gardens in the land of the Valar, and they are the fairest of all places in the world",
+   "c": "t1_a_the_silmarillion.txt:2334",
+   "why": "'in the land of the Valar' is the whole of it. Lórien is placed nowhere within Valinor, and the lake of Lórellin is placed only within Lórien"
+  },
+  {
+   "n": "the woods of Oromë",
+   "q": "Oromë loved the lands of Middle-earth, and he left them unwillingly",
+   "c": "t1_a_the_silmarillion.txt:2376",
+   "why": "Oromë's woods in Aman are named but never sited; what the corpus places is his riding in Middle-earth, which is a different thing"
+  }
+ ]
+}

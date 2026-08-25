@@ -1,0 +1,1132 @@
+{
+ "n_edges": 117,
+ "n_realms": 33,
+ "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
+ "realms": [
+  {
+   "ages": "FoA,SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "gondor",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "anfalas",
+     "name": "Anfalas",
+     "where": "unmapped"
+    },
+    {
+     "key": "anorien",
+     "name": "Anórien",
+     "where": "unmapped"
+    },
+    {
+     "key": "belfalas",
+     "name": "Belfalas",
+     "where": "unmapped"
+    },
+    {
+     "key": "cair andros",
+     "name": "Cair Andros",
+     "where": "sheet"
+    },
+    {
+     "key": "dol amroth",
+     "name": "Dol Amroth",
+     "where": "sheet"
+    },
+    {
+     "key": "dor en ernil",
+     "name": "Dor-en-Ernil",
+     "where": "unmapped"
+    },
+    {
+     "key": "field of celebrant",
+     "name": "Field of Celebrant",
+     "where": "his plate"
+    },
+    {
+     "key": "harlond gondor quays",
+     "name": "Harlond (Gondor quays)",
+     "where": "unmapped"
+    },
+    {
+     "key": "ithilien",
+     "name": "Ithilien",
+     "where": "unmapped"
+    },
+    {
+     "key": "lamedon",
+     "name": "Lamedon",
+     "where": "unmapped"
+    },
+    {
+     "key": "lebennin",
+     "name": "Lebennin",
+     "where": "unmapped"
+    },
+    {
+     "key": "linhir",
+     "name": "Linhir",
+     "where": "sheet"
+    },
+    {
+     "key": "minas tirith",
+     "name": "Minas Tirith",
+     "where": "sheet"
+    },
+    {
+     "key": "osgiliath",
+     "name": "Osgiliath",
+     "where": "sheet"
+    },
+    {
+     "key": "pelargir",
+     "name": "Pelargir",
+     "where": "sheet"
+    },
+    {
+     "key": "poros march",
+     "name": "Poros-March",
+     "where": "unmapped"
+    },
+    {
+     "key": "stone of erech",
+     "name": "Stone of Erech",
+     "where": "sheet"
+    },
+    {
+     "key": "the morannon",
+     "name": "The Morannon (Black Gate)",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 19,
+   "n_shown": 18,
+   "name": "Gondor"
+  },
+  {
+   "ages": "FoA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "rohan",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "dunharrow",
+     "name": "Dunharrow",
+     "where": "sheet"
+    },
+    {
+     "key": "east emnet",
+     "name": "East-Emnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "eastemnet",
+     "name": "Eastemnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "eastfold",
+     "name": "Eastfold",
+     "where": "unmapped"
+    },
+    {
+     "key": "edoras",
+     "name": "Edoras",
+     "where": "sheet"
+    },
+    {
+     "key": "edoras meduseld",
+     "name": "Edoras/Meduseld",
+     "where": "unmapped"
+    },
+    {
+     "key": "fangorn",
+     "name": "Fangorn",
+     "where": "sheet"
+    },
+    {
+     "key": "fords of isen",
+     "name": "Fords of Isen",
+     "where": "sheet"
+    },
+    {
+     "key": "helm s deep",
+     "name": "Helm's Deep",
+     "where": "sheet"
+    },
+    {
+     "key": "isengard",
+     "name": "Isengard",
+     "where": "sheet"
+    },
+    {
+     "key": "parth galen",
+     "name": "Parth Galen",
+     "where": "unmapped"
+    },
+    {
+     "key": "the wold",
+     "name": "The Wold",
+     "where": "unmapped"
+    },
+    {
+     "key": "west emnet",
+     "name": "West-Emnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "westfold",
+     "name": "Westfold",
+     "where": "unmapped"
+    }
+   ],
+   "n_members": 15,
+   "n_shown": 14,
+   "name": "Rohan"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "the shire",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "brandywine bridge",
+     "name": "Brandywine Bridge",
+     "where": "sheet"
+    },
+    {
+     "key": "buckland",
+     "name": "Buckland",
+     "where": "unmapped"
+    },
+    {
+     "key": "bucklebury ferry",
+     "name": "Bucklebury + Ferry",
+     "where": "unmapped"
+    },
+    {
+     "key": "bywater",
+     "name": "Bywater",
+     "where": "sheet"
+    },
+    {
+     "key": "crickhollow",
+     "name": "Crickhollow",
+     "where": "sheet"
+    },
+    {
+     "key": "frogmorton",
+     "name": "Frogmorton",
+     "where": "sheet"
+    },
+    {
+     "key": "hobbiton",
+     "name": "Hobbiton",
+     "where": "sheet"
+    },
+    {
+     "key": "hobbiton bag end",
+     "name": "Hobbiton + Bag End",
+     "where": "unmapped"
+    },
+    {
+     "key": "michel delving",
+     "name": "Michel Delving",
+     "where": "sheet"
+    },
+    {
+     "key": "stock",
+     "name": "Stock",
+     "where": "sheet"
+    },
+    {
+     "key": "the old forest",
+     "name": "The Old Forest",
+     "where": "sheet"
+    },
+    {
+     "key": "three farthing stone",
+     "name": "Three-Farthing Stone",
+     "where": "sheet"
+    },
+    {
+     "key": "tuckborough great smials",
+     "name": "Tuckborough/Great Smials",
+     "where": "unmapped"
+    },
+    {
+     "key": "woodhall woody end",
+     "name": "Woodhall/Woody End",
+     "where": "unmapped"
+    }
+   ],
+   "n_members": 18,
+   "n_shown": 14,
+   "name": "The Shire"
+  },
+  {
+   "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "mordor",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "barad dur",
+     "name": "Barad-dûr",
+     "where": "sheet"
+    },
+    {
+     "key": "cirith ungol",
+     "name": "Cirith Ungol",
+     "where": "sheet"
+    },
+    {
+     "key": "gorgoroth",
+     "name": "Gorgoroth",
+     "where": "unmapped"
+    },
+    {
+     "key": "henneth annun",
+     "name": "Henneth Annûn",
+     "where": "sheet"
+    },
+    {
+     "key": "lithlad",
+     "name": "Lithlad",
+     "where": "unmapped"
+    },
+    {
+     "key": "minas morgul",
+     "name": "Minas Morgul",
+     "where": "sheet"
+    },
+    {
+     "key": "mount doom",
+     "name": "Mount Doom (Orodruin)",
+     "where": "unmapped"
+    },
+    {
+     "key": "nurn",
+     "name": "Nurn",
+     "where": "unmapped"
+    },
+    {
+     "key": "sea of nurnen",
+     "name": "Sea of Nurnen",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 9,
+   "n_shown": 9,
+   "name": "Mordor"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "anorien",
+   "kind": "POLITY_SUBREGION",
+   "members": [
+    {
+     "key": "amon din",
+     "name": "Amon Din",
+     "where": "sheet"
+    },
+    {
+     "key": "calenhad",
+     "name": "Calenhad",
+     "where": "sheet"
+    },
+    {
+     "key": "eilenach",
+     "name": "Eilenach",
+     "where": "sheet"
+    },
+    {
+     "key": "erelas",
+     "name": "Erelas",
+     "where": "sheet"
+    },
+    {
+     "key": "halifirien",
+     "name": "Halifirien",
+     "where": "unmapped"
+    },
+    {
+     "key": "nardol",
+     "name": "Nardol",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 6,
+   "n_shown": 6,
+   "name": "Anórien"
+  },
+  {
+   "ages": "SA,TA",
+   "bounded_by": [
+    {
+     "key": "gulf of lhun",
+     "name": "Gulf of Lhun"
+    },
+    {
+     "key": "ered luin third age remnant",
+     "name": "Ered Luin (Blue Mountains), Third Age remnant"
+    },
+    {
+     "key": "lhun",
+     "name": "Lhun (Lune)"
+    }
+   ],
+   "bounds_cite": "HoME XII, The Peoples of Middle-earth [C]",
+   "bounds_quote": "The regions of Forlindon and Harlindon were inhabited by Elves and were the chief part of Gil-galad’s kingdom, which extended, north of the Gulf of Lune, to include the lands east of the Blue Mountains and west of the River Lune as far as the inflow of the Little Lune.",
+   "bounds_unheld": [
+    "Little Lune"
+   ],
+   "key": "lindon",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "grey havens",
+     "name": "Grey Havens (Mithlond)",
+     "where": "sheet"
+    },
+    {
+     "key": "harlond lindon",
+     "name": "Harlond (Lindon)",
+     "where": "unmapped"
+    },
+    {
+     "key": "nogrod",
+     "name": "Nogrod",
+     "where": "sheet"
+    },
+    {
+     "key": "sarn athrad",
+     "name": "Sarn Athrad",
+     "where": "sheet"
+    },
+    {
+     "key": "tol galen",
+     "name": "Tol Galen",
+     "where": "sheet"
+    },
+    {
+     "key": "tower hills",
+     "name": "Tower Hills",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 6,
+   "n_shown": 6,
+   "name": "Lindon"
+  },
+  {
+   "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "angband",
+   "kind": "MAN_MADE_FORTRESS",
+   "members": [
+    {
+     "key": "anfauglith",
+     "name": "Anfauglith",
+     "where": "unmapped"
+    },
+    {
+     "key": "eithel sirion",
+     "name": "Eithel Sirion",
+     "where": "his plate"
+    },
+    {
+     "key": "haudh en ndengin",
+     "name": "Haudh-en-Ndengin",
+     "where": "sheet"
+    },
+    {
+     "key": "tol sirion",
+     "name": "Tol Sirion",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 4,
+   "n_shown": 4,
+   "name": "Angband"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "arthedain",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "annuminas",
+     "name": "Annúminas",
+     "where": "sheet"
+    },
+    {
+     "key": "fornost erain",
+     "name": "Fornost Erain",
+     "where": "sheet"
+    },
+    {
+     "key": "tower hills",
+     "name": "Tower Hills",
+     "where": "sheet"
+    },
+    {
+     "key": "weathertop",
+     "name": "Weathertop",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 4,
+   "n_shown": 4,
+   "name": "Arthedain"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "rhudaur",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "ettenmoors",
+     "name": "Ettenmoors",
+     "where": "sheet"
+    },
+    {
+     "key": "ford of bruinen",
+     "name": "Ford of Bruinen",
+     "where": "unmapped"
+    },
+    {
+     "key": "trollshaws",
+     "name": "Trollshaws",
+     "where": "sheet"
+    },
+    {
+     "key": "weathertop",
+     "name": "Weathertop",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 4,
+   "n_shown": 4,
+   "name": "Rhudaur"
+  },
+  {
+   "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "arnor",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "annuminas",
+     "name": "Annúminas",
+     "where": "sheet"
+    },
+    {
+     "key": "tower hills",
+     "name": "Tower Hills",
+     "where": "sheet"
+    },
+    {
+     "key": "weathertop",
+     "name": "Weathertop",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 3,
+   "name": "Arnor"
+  },
+  {
+   "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "doriath",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "menegroth",
+     "name": "Menegroth",
+     "where": "sheet"
+    },
+    {
+     "key": "neldoreth",
+     "name": "Neldoreth",
+     "where": "unmapped"
+    },
+    {
+     "key": "region",
+     "name": "Region",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 3,
+   "name": "Doriath"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "hithlum",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "barad eithel",
+     "name": "Barad Eithel",
+     "where": "sheet"
+    },
+    {
+     "key": "eithel sirion",
+     "name": "Eithel Sirion",
+     "where": "his plate"
+    },
+    {
+     "key": "ivrin",
+     "name": "Ivrin",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 3,
+   "name": "Hithlum"
+  },
+  {
+   "ages": "SA,TA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "khazaddum",
+   "kind": "MAN_MADE_MANSION,POLITY_REALM",
+   "members": [
+    {
+     "key": "durin s stone",
+     "name": "Durin's Stone",
+     "where": "unmapped"
+    },
+    {
+     "key": "nogrod",
+     "name": "Nogrod",
+     "where": "sheet"
+    },
+    {
+     "key": "west door",
+     "name": "West-door",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 4,
+   "n_shown": 3,
+   "name": "Khazad-dûm"
+  },
+  {
+   "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "mirkwood",
+   "kind": "NATURAL_FOREST",
+   "members": [
+    {
+     "key": "dol guldur",
+     "name": "Dol Guldur",
+     "where": "sheet"
+    },
+    {
+     "key": "elvenking s halls",
+     "name": "Elvenking's Halls",
+     "where": "sheet"
+    },
+    {
+     "key": "rhosgobel",
+     "name": "Rhosgobel",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 3,
+   "name": "Mirkwood (Greenwood the Great / Eryn Lasgalen)"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "angmar",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "carn dum",
+     "name": "Carn Dûm",
+     "where": "sheet"
+    },
+    {
+     "key": "mount gundabad",
+     "name": "Mount Gundabad",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 2,
+   "name": "Angmar"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "bombadil s house",
+   "kind": "MAN_MADE_SETTLEMENT,POLITY_REALM",
+   "members": [
+    {
+     "key": "barrow downs",
+     "name": "Barrow-downs",
+     "where": "sheet"
+    },
+    {
+     "key": "the old forest",
+     "name": "The Old Forest",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Bombadil's house"
+  },
+  {
+   "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "bree",
+   "kind": "MAN_MADE_TOWN",
+   "members": [
+    {
+     "key": "archet",
+     "name": "Archet",
+     "where": "sheet"
+    },
+    {
+     "key": "combe",
+     "name": "Combe",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Bree"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "cardolan",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "barrow downs",
+     "name": "Barrow-downs",
+     "where": "sheet"
+    },
+    {
+     "key": "tharbad",
+     "name": "Tharbad",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Cardolan"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "dale",
+   "kind": "MAN_MADE_TOWN,NATURAL_VALLEY",
+   "members": [
+    {
+     "key": "erebor",
+     "name": "Erebor",
+     "where": "unmapped"
+    },
+    {
+     "key": "esgaroth",
+     "name": "Esgaroth (Lake-town)",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Dale"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "dorthonion",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "ered gorgoroth",
+     "name": "Ered Gorgoroth",
+     "where": "sheet"
+    },
+    {
+     "key": "tarn aeluin",
+     "name": "Tarn Aeluin",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Dorthonion"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "east beleriand",
+   "kind": "POLITY_REGION",
+   "members": [
+    {
+     "key": "amon ereb",
+     "name": "Amon Ereb",
+     "where": "sheet"
+    },
+    {
+     "key": "ramdal",
+     "name": "Ramdal",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "East Beleriand"
+  },
+  {
+   "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "lothlorien",
+   "kind": "NATURAL_FOREST",
+   "members": [
+    {
+     "key": "caras galadhon",
+     "name": "Caras Galadhon",
+     "where": "sheet"
+    },
+    {
+     "key": "cerin amroth",
+     "name": "Cerin Amroth",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Lothlorien"
+  },
+  {
+   "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "misty mountains",
+   "kind": "NATURAL_MOUNTAIN_RANGE",
+   "members": [
+    {
+     "key": "caradhras",
+     "name": "Caradhras",
+     "where": "unmapped"
+    },
+    {
+     "key": "methedras",
+     "name": "Methedras",
+     "where": "unmapped"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Misty Mountains (Hithaeglir)"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "nargothrond",
+   "kind": "MAN_MADE_CITY,MAN_MADE_HALL",
+   "members": [
+    {
+     "key": "amon ethir",
+     "name": "Amon Ethir",
+     "where": "sheet"
+    },
+    {
+     "key": "amon rudh",
+     "name": "Amon Rûdh",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Nargothrond"
+  },
+  {
+   "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "falas",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "brithombar",
+     "name": "Brithombar",
+     "where": "sheet"
+    },
+    {
+     "key": "eglarest",
+     "name": "Eglarest",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "The Falas"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "rerir",
+     "name": "Rerir"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "There Mount Rerir, and about it many lesser heights, stood out from the main range of Ered Lindon westward; and in the angle between Rerir and Ered Lindon there was a lake, shadowed by mountains on all sides save the south.",
+   "bounds_unheld": [
+    "Ered Lindon"
+   ],
+   "key": "thargelion",
+   "kind": "POLITY_REGION",
+   "members": [
+    {
+     "key": "lake helevorn",
+     "name": "Lake Helevorn",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 1,
+   "n_shown": 1,
+   "name": "Thargelion"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "teiglin",
+     "name": "Teiglin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "And following Sirion from north to south there lay upon the right hand in West Beleriand the Forest of Brethil between Sirion and Teiglin, and then the realm of Nargothrond, between Teiglin and Narog.",
+   "bounds_unheld": [],
+   "key": "brethil",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 2,
+   "n_shown": 0,
+   "name": "Brethil"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "mindeb",
+     "name": "Mindeb"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.",
+   "bounds_unheld": [],
+   "key": "dimbar",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Dimbar"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "mindeb",
+     "name": "Mindeb"
+    },
+    {
+     "key": "esgalduin",
+     "name": "Esgalduin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Between Mindeb and the upper waters of Esgalduin lay the no-land of Nan Dungortheb; and that region was filled with fear, for upon its one side the power of Melian fenced the north march of Doriath, but upon the other side the sheer precipices of Ered Gorgoroth, Mountains of Terror, fell down from high Dorthonion.",
+   "bounds_unheld": [],
+   "key": "nan dungortheb",
+   "kind": "NATURAL_VALLEY",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Nan Dungortheb"
+  },
+  {
+   "ages": "FA,YT",
+   "bounded_by": [
+    {
+     "key": "esgalduin",
+     "name": "Esgalduin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Its northern and lesser part, the Forest of Neldoreth, was bounded east and south by the dark river Esgalduin, which bent westward in the midst of the land; and between Aros and Esgalduin lay the denser and greater woods of Region.",
+   "bounds_unheld": [],
+   "key": "neldoreth",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Neldoreth"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "firth of drengist",
+     "name": "Firth of Drengist"
+    },
+    {
+     "key": "taras",
+     "name": "Taras"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "That name was given at first to all the coastlands south of the Firth, but afterwards only to the land whose shores lay between Drengist and Mount Taras.",
+   "bounds_unheld": [],
+   "key": "nevrast",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Nevrast"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "narog",
+     "name": "Narog"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Thence he looked westward, and through the mist and rains that lay upon those hills he saw Talath Dirnen, the Guarded Plain, stretching between Sirion and Narog; and beyond he descried afar the highlands of Taur-en-Faroth that rose above Nargothrond.",
+   "bounds_unheld": [],
+   "key": "talath dirnen",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Talath Dirnen"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "andram",
+     "name": "Andram"
+    },
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "gelion",
+     "name": "Gelion"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "But south of the Andram, between Sirion and Gelion, was a wild land of tangled forest in which no folk went, save here and there a few Dark Elves wandering; Taur-im- Duinath it was named, the Forest between the Rivers.",
+   "bounds_unheld": [],
+   "key": "taur im duinath",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Taur-im-Duinath"
+  }
+ ]
+}

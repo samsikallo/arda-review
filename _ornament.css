@@ -1,0 +1,390 @@
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   INSULAR ORNAMENT FOR THE CODEX — ready to paste.
+   Written 19 August 2026. Assets: site/ornament/*.svg, twenty files, 9.3 KB gzipped for the set.
+
+   HOW TO PASTE IT. Everything here is scoped `:root[data-codex-object="on"] .book …`, exactly as
+   the codex object is, so it is inert on the old skin and on every route that has not been
+   re-hung. It adds no new class to the proto's vocabulary except the four opt-in `orn-*` hooks at
+   the foot; every other rule hangs off classes the prototype already has — `.leaf .tb .rubric
+   .versal .marg .catch .folio .plaque .book .spread .gutter`.
+
+   THE MECHANISM, AND IT IS THE ONE THING TO UNDERSTAND BEFORE EDITING ANY OF THIS.
+   Every asset is ONE MONOCHROME FILE. The colour is not in the file: the element paints its own
+   `background` through the file as a CSS mask, so `--rubric`, `--lapis`, `--azure` and `--gold`
+   all come out of the same twenty bytes on disk. A CSS custom property cannot cascade into an SVG
+   loaded as `background-image`, which is why masks and not backgrounds — this is the only
+   arrangement in which the ornament INHERITS the leaf instead of fighting it, and the only one
+   in which the palette cannot drift out of step with the assets.
+
+   IT DEGRADES BY CONSTRUCTION, TWICE OVER.
+     · Delete site/ornament/ and every rule below fails to a transparent box of a fixed size that
+       carries no text and no state. The leaf still reads. Nothing here is the only thing marking
+       a state, and nothing here is inside a control.
+     · A browser without `mask-image` (none current; the property is prefixed for WebKit below)
+       shows the element's flat background colour. The `@supports` guard at the top of §1 hides
+       the ornament outright in that case rather than leaving coloured blocks on the vellum.
+
+   AND IT OBEYS C10. Ruling C10 orders a thin leaf: pull in more archive FIRST, then art, then a
+   declared silence, then let the book be thinner — "a gap that is filled with ornament is a gap
+   that has been hidden." So §6 below is the load-bearing part of this file: ornament is REFUSED
+   next to a declared silence, and the three line-fillers exist at three densities so the choice
+   can be proportionate to how short the line actually is. Nothing here fills a leaf.
+   ═══════════════════════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── 1 · THE MECHANISM ──────────────────────────────────────────────────────────────────────
+   One class does all the work. Everything after this is a size, a colour and a placement. */
+
+@supports (mask-image: url(#a)) or (-webkit-mask-image: url(#a)) {
+
+:root[data-codex-object="on"] .book .orn{
+  display:inline-block; vertical-align:middle; flex:0 0 auto;
+  background:currentColor;                       /* the DEFAULT is the ink the leaf is set in */
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-position:center;  mask-position:center;
+  -webkit-mask-size:contain;     mask-size:contain;
+  pointer-events:none;                           /* ornament is never a target */
+}
+
+/* the four inks it may take. Nothing else: the palette is measured and closed. */
+:root[data-codex-object="on"] .book .orn-rubric{ background:var(--rubric) }
+:root[data-codex-object="on"] .book .orn-lapis { background:var(--lapis)  }
+:root[data-codex-object="on"] .book .orn-azure { background:var(--azure)  }
+:root[data-codex-object="on"] .book .orn-gold  { background:var(--gold)   }
+:root[data-codex-object="on"] .book .orn-ink   { background:var(--ink)    }
+
+/* a band tiles along its axis; a mark does not */
+:root[data-codex-object="on"] .book .orn-band{
+  -webkit-mask-repeat:repeat-x; mask-repeat:repeat-x;
+  -webkit-mask-size:auto 100%;  mask-size:auto 100%;
+  -webkit-mask-position:left center; mask-position:left center;
+}
+:root[data-codex-object="on"] .book .orn-band-v{
+  -webkit-mask-repeat:repeat-y; mask-repeat:repeat-y;
+  -webkit-mask-size:100% auto;  mask-size:100% auto;
+  -webkit-mask-position:center top; mask-position:center top;
+}
+
+
+/* ── 2 · THE RUBRIC — the heading rule the prototype already draws ──────────────────────────
+   `.rubric::before/::after` in codex-proto.html is a hairline with four points on it, described
+   in its own comment as "seven stars of Elendil, reduced to a rule". THIS REPLACES ONLY THE
+   PICTURE, not the layout: the flex sizing, the gap and the max-width are the prototype's and
+   are untouched, so removing this block restores the original exactly.
+
+   IT IS A TWO-CORD TWIST AND NOT A FOUR-CORD PLAIT, deliberately. A heading rule that is heavier
+   than the heading is a rule that has become the heading. */
+:root[data-codex-object="on"] .book .rubric::before,
+:root[data-codex-object="on"] .book .rubric::after{
+  background:var(--rubric);
+  -webkit-mask-image:url("ornament/rule-twist.svg"); mask-image:url("ornament/rule-twist.svg");
+  -webkit-mask-repeat:repeat-x; mask-repeat:repeat-x;
+  -webkit-mask-size:auto 100%;  mask-size:auto 100%;
+  height:9px;
+}
+/* the recto's rule runs the other way, as a scribe would have turned the block */
+:root[data-codex-object="on"] .book .leaf.r .rubric::before{ transform:scaleX(-1) }
+
+
+/* ── 3 · THE VERSAL — three weights, and WHICH ONE IS CHOSEN IS A JUDGEMENT ABOUT THE LEAF ──
+   The letter is never baked into the asset. `.versal` keeps the prototype's alternating lapis and
+   rubric; what is added is a frame BEHIND it, on the pseudo-element, so the letter itself is
+   untouched and still selectable, still copyable, still text.
+
+   ALL THREE ARE OPT-IN AND THERE IS NO DEFAULT. A bare `.versal` gets nothing. That is C10's
+   order in miniature: ornament is the SECOND step, after the archive has been asked for more, so
+   a frame appears because somebody decided this leaf needed one — never because it was free.
+
+   THE FLOAT BOX MUST RESERVE THE FRAME. Measured, not guessed: the frame is 1.92em wide at
+   left:-0.22em, so its right edge falls at 1.70em, and the box is 1.15em + 0.60em of padding =
+   1.75em. THE FIRST VERSION DID NOT DO THIS and the screenshot showed the frame lying across two
+   lines of running text — a float reserves the width of its GLYPH, and an absolutely-positioned
+   pseudo-element is not in the flow, so nothing made room for it. */
+:root[data-codex-object="on"] .book .versal.orn-v1,
+:root[data-codex-object="on"] .book .versal.orn-v2,
+:root[data-codex-object="on"] .book .versal.orn-v3{
+  position:relative; z-index:1; box-sizing:content-box;
+  width:1.15em; text-align:center; padding:.10em .30em;
+  margin:.02em .30em .02em .10em;
+}
+:root[data-codex-object="on"] .book .versal.orn-v1::before,
+:root[data-codex-object="on"] .book .versal.orn-v2::before,
+:root[data-codex-object="on"] .book .versal.orn-v3::before{
+  content:""; position:absolute; z-index:-1;
+  background:currentColor;                       /* takes the versal's own lapis or rubric */
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+  -webkit-mask-position:center;  mask-position:center;
+}
+/* the light: red-lead dots round the slot, and nothing else. The most authentic of the three. */
+:root[data-codex-object="on"] .book .versal.orn-v3::before{
+  left:-.16em; top:-.10em; width:1.72em; height:1.72em; opacity:.68;
+  -webkit-mask-image:url("ornament/versal-frame-3.svg");
+          mask-image:url("ornament/versal-frame-3.svg");
+}
+/* the medium: a panel with spiral corners */
+:root[data-codex-object="on"] .book .versal.orn-v2::before{
+  left:-.19em; top:-.13em; width:1.78em; height:1.78em; opacity:.85;
+  -webkit-mask-image:url("ornament/versal-frame-2.svg");
+          mask-image:url("ornament/versal-frame-2.svg");
+}
+/* the heavy: the incipit weight. One per leaf at most, and never on a leaf declaring a silence. */
+:root[data-codex-object="on"] .book .versal.orn-v1::before{
+  left:-.22em; top:-.16em; width:1.92em; height:1.92em; opacity:1;
+  -webkit-mask-image:url("ornament/versal-frame-1.svg");
+          mask-image:url("ornament/versal-frame-1.svg");
+}
+
+
+/* ── 4 · THE OUTER MARGIN — the prototype's `.illum` strip ──────────────────────────────────
+   `.illum` is already a 15px vertical strip in the outer margin at opacity .55, drawn with
+   gradients. This gives it a real plait. It stays at low opacity and stays `pointer-events:none`
+   from the prototype: a margin band that competes with the marginal hands in `.marg` would be
+   ornament crowding out the archive's own voice, which is the thing C10 forbids. */
+:root[data-codex-object="on"] .book .illum{
+  background:var(--gold);
+  -webkit-mask-image:url("ornament/border-plait-v.svg");
+          mask-image:url("ornament/border-plait-v.svg");
+  -webkit-mask-repeat:repeat-y; mask-repeat:repeat-y;
+  -webkit-mask-size:100% auto;  mask-size:100% auto;
+  -webkit-mask-position:center top; mask-position:center top;
+  opacity:.34;
+}
+:root[data-codex-object="on"] .book .illum::before,
+:root[data-codex-object="on"] .book .illum::after{ display:none }   /* the gradients it replaces */
+
+
+/* ── 5 · THE LEAF FRAME — corner panels, opt-in per leaf ────────────────────────────────────
+   `.leaf::before` already draws the ruled border inset 16px/20px. The corners are added on
+   `.leaf::after`, which the prototype leaves free. FOUR CORNERS FROM ONE FILE: the same 38×38
+   Solomon's knot placed four times by `mask-position`, so the four can never drift apart.
+
+   OPT-IN, on `.leaf.orn-frame`. A frame on every one of 622 routes is a frame nobody sees. */
+:root[data-codex-object="on"] .book .leaf.orn-frame::after{
+  content:""; position:absolute; inset:11px 15px; pointer-events:none; z-index:0;
+  background:var(--gold);
+  -webkit-mask-image:
+    url("ornament/corner-knot.svg"), url("ornament/corner-knot.svg"),
+    url("ornament/corner-knot.svg"), url("ornament/corner-knot.svg");
+  mask-image:
+    url("ornament/corner-knot.svg"), url("ornament/corner-knot.svg"),
+    url("ornament/corner-knot.svg"), url("ornament/corner-knot.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:26px 26px;   mask-size:26px 26px;
+  -webkit-mask-position:left top, right top, left bottom, right bottom;
+          mask-position:left top, right top, left bottom, right bottom;
+  opacity:.46;
+}
+
+
+/* ── 6 · THE LINE-FILLER, AND THE RULE THAT GOVERNS IT — C10 ────────────────────────────────
+   THIS IS THE LOAD-BEARING BLOCK OF THE FILE AND IT IS MOSTLY A REFUSAL.
+
+   Ruling C10: a thin leaf pulls in more archive FIRST, then art, then a declared silence, then it
+   is simply short. So a filler may be used ONLY on a paragraph that has already been through the
+   first step, and it may NEVER appear on a leaf that is declaring a silence — the ruling's own
+   words are that "a gap that is filled with ornament is a gap that has been hidden". The three
+   weights exist so the ornament can be proportionate rather than uniform:
+
+       .orn-f3   eight dots      a line short by a word or two
+       .orn-f2   stepped blocks  a line short by a third
+       .orn-f1   knotwork        a line short by half, and nowhere else
+
+   The refusal at the foot of this block is not belt-and-braces. It is the enforcement: a leaf
+   carrying `.silence` cannot show a filler even if one is marked up, so the rule holds against
+   a template that forgets it rather than only against an author who remembers. */
+:root[data-codex-object="on"] .book .fill{
+  display:inline-block; vertical-align:-.14em; margin-left:.5em; height:.82em; width:3.2em;
+  background:var(--rubric);
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+  -webkit-mask-position:left center; mask-position:left center;
+  -webkit-mask-image:url("ornament/filler-dots.svg");
+          mask-image:url("ornament/filler-dots.svg");
+  opacity:.78; pointer-events:none;
+}
+:root[data-codex-object="on"] .book .fill.orn-f2{
+  width:3.6em; background:var(--lapis);
+  -webkit-mask-image:url("ornament/filler-step.svg"); mask-image:url("ornament/filler-step.svg");
+}
+:root[data-codex-object="on"] .book .fill.orn-f1{
+  width:4.0em;
+  -webkit-mask-image:url("ornament/filler-knot.svg"); mask-image:url("ornament/filler-knot.svg");
+}
+/* ORNAMENT MAY NOT STAND WHERE THE ARCHIVE IS DECLARING A SILENCE. C10, third step. */
+:root[data-codex-object="on"] .book .silence .fill,
+:root[data-codex-object="on"] .book .card.silence .fill,
+:root[data-codex-object="on"] .book .leaf.silence .fill{ display:none }
+
+
+/* ── 7 · TAILPIECES — closing a section, and the two that CARRY A CITATION ──────────────────
+   `.tail` is a block, centred, at the end of a section. Three are offered and they are not
+   interchangeable:
+
+     .orn-t-spiral   trumpet-spirals and a lens. Insular; claims nothing. THE DEFAULT.
+     .orn-t-star     a twelve-rayed star. CITED — "a single star with many rays", LotR II.4.
+                     Twelve and not eight: the eight-rayed form is Tolkien's own drawing and the
+                     archive does not republish his artwork.
+     .orn-t-seven    seven stars in the hooked form. CITED TWICE — Valacirca, the Sickle of the
+                     Valar (Silm., Of the Coming of the Elves), and the Crown of Durin (LotR II.6).
+
+   USE THE CITED ONES WHERE THE CITATION IS TRUE OF THE LEAF, and the plain one everywhere else.
+   A star closing a leaf about the Shire is decoration wearing a citation, which is worse than
+   decoration. */
+:root[data-codex-object="on"] .book .tail{
+  display:block; margin:18px auto 4px; width:46px; height:19px;
+  background:var(--azure);
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+  -webkit-mask-position:center;  mask-position:center;
+  -webkit-mask-image:url("ornament/tailpiece-spiral.svg");
+          mask-image:url("ornament/tailpiece-spiral.svg");
+  opacity:.8; pointer-events:none;
+}
+:root[data-codex-object="on"] .book .tail.orn-t-star{
+  width:54px; height:27px; background:var(--rubric);
+  -webkit-mask-image:url("ornament/tailpiece-star.svg"); mask-image:url("ornament/tailpiece-star.svg");
+}
+:root[data-codex-object="on"] .book .tail.orn-t-seven{
+  width:54px; height:19px; background:var(--gold);
+  -webkit-mask-image:url("ornament/tailpiece-seven.svg"); mask-image:url("ornament/tailpiece-seven.svg");
+}
+:root[data-codex-object="on"] .book .tail.orn-t-trees{
+  width:78px; height:51px; background:var(--lapis);
+  -webkit-mask-image:url("ornament/device-trees-moons.svg");
+          mask-image:url("ornament/device-trees-moons.svg");
+}
+
+
+/* ── 8 · THE CATCHWORD AND THE FOLIO — the smallest marks in the set ────────────────────────
+   `.catch` sits bottom-right of a leaf in the prototype, italic, as a binder read it. A beast
+   terminal is hung off it: the ribbon runs toward the gutter and ends in a head that grips it.
+   ZOOMORPHIC AND NOT NAMEABLE, on purpose — a beast a reader could identify would be a claim
+   about what lives in Middle-earth. */
+:root[data-codex-object="on"] .book .catch::before{
+  content:""; display:inline-block; vertical-align:-.18em; margin-right:.42em;
+  width:22px; height:11px; background:var(--ink-soft); opacity:.6;
+  -webkit-mask-image:url("ornament/terminal-beast.svg"); mask-image:url("ornament/terminal-beast.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+  transform:scaleX(-1);                       /* it faces the gutter, which is where the eye goes */
+}
+:root[data-codex-object="on"] .book .leaf.r .catch::before{ transform:none }
+
+/* the folio plate on the board gets a boss either side — SILVER-ADJACENT, not vellum ink.
+   The plate is FURNITURE, not leaf, so it takes the board's metal and not the leaf's palette. */
+:root[data-codex-object="on"] .book .folio::before,
+:root[data-codex-object="on"] .book .folio::after{
+  content:""; display:inline-block; vertical-align:-.12em; width:9px; height:9px;
+  background:var(--silver-lo);
+  -webkit-mask-image:url("ornament/boss-spiral.svg"); mask-image:url("ornament/boss-spiral.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+}
+:root[data-codex-object="on"] .book .folio::before{ margin-right:7px }
+:root[data-codex-object="on"] .book .folio::after { margin-left:7px; transform:scaleX(-1) }
+
+
+/* ── 9 · THE SECTION BAND — an opt-in rule between major sections of a leaf ─────────────────
+   Three weights again, and again the light one is the default. `.tb > hr.orn` or a bare
+   `<div class="orn-rule">`; either takes these. */
+:root[data-codex-object="on"] .book .orn-rule{
+  display:block; border:0; margin:16px auto; height:11px; width:min(72%, 320px);
+  background:var(--gold); opacity:.5;
+  -webkit-mask-image:url("ornament/border-step-h.svg"); mask-image:url("ornament/border-step-h.svg");
+  -webkit-mask-repeat:repeat-x; mask-repeat:repeat-x;
+  -webkit-mask-size:auto 100%;  mask-size:auto 100%;
+}
+:root[data-codex-object="on"] .book .orn-rule.orn-b2{
+  height:14px; background:var(--lapis); opacity:.62;
+  -webkit-mask-image:url("ornament/border-plait-h.svg"); mask-image:url("ornament/border-plait-h.svg");
+}
+:root[data-codex-object="on"] .book .orn-rule.orn-b1{
+  height:17px; width:min(86%, 420px); background:var(--rubric); opacity:.72;
+  -webkit-mask-image:url("ornament/border-knot-h.svg"); mask-image:url("ornament/border-knot-h.svg");
+}
+
+/* the diminuendo spray, hung after a lede where an incipit initial is used */
+:root[data-codex-object="on"] .book .orn-spray{
+  content:""; display:block; margin:8px auto 0; width:56px; height:21px;
+  background:var(--rubric); opacity:.66;
+  -webkit-mask-image:url("ornament/initial-spray.svg"); mask-image:url("ornament/initial-spray.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+}
+
+/* the triskele boss, for a plaque or a spread-level mark. The only three-fold thing in the set. */
+:root[data-codex-object="on"] .book .orn-boss{
+  display:inline-block; width:22px; height:22px; background:var(--gold); opacity:.7;
+  -webkit-mask-image:url("ornament/boss-triskele.svg"); mask-image:url("ornament/boss-triskele.svg");
+  -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+  -webkit-mask-size:contain;     mask-size:contain;
+  vertical-align:-.3em; pointer-events:none;
+}
+
+
+/* ── 10 · WHERE ORNAMENT IS REFUSED OUTRIGHT ────────────────────────────────────────────────
+   Four refusals, and each is a rule of the archive rather than a matter of taste.
+
+   1. A DECLARED SILENCE. C10, and it is already enforced for fillers in §6; this widens it to
+      every ornament inside a silence, because the ruling is about the gap and not about one
+      class. "A gap that is filled with ornament is a gap that has been hidden."
+   2. A STRUCK RECORD. `.struck` is the scribe's own hand cancelling a reading. Ornamenting a
+      retraction dresses it up, and the whole point of the struck-through form is that the
+      archive shows what it withdrew rather than tidying it away.
+   3. PRINT. Ornament is screen furniture; a printed leaf keeps its rules and loses its knots.
+   4. REDUCED MOTION is not relevant here — nothing animates — but `forced-colors` IS: in a
+      high-contrast mode a masked element becomes a solid block, so it is hidden instead. */
+:root[data-codex-object="on"] .book .silence .orn,
+:root[data-codex-object="on"] .book .silence .tail,
+:root[data-codex-object="on"] .book .silence .orn-rule,
+:root[data-codex-object="on"] .book .silence .orn-boss,
+:root[data-codex-object="on"] .book .card.silence::after,
+:root[data-codex-object="on"] .book .struck .orn,
+:root[data-codex-object="on"] .book .struck .tail,
+:root[data-codex-object="on"] .book .struck .fill,
+:root[data-codex-object="on"] .book .struck .orn-rule{ display:none }
+:root[data-codex-object="on"] .book .silence .versal::before,
+:root[data-codex-object="on"] .book .struck  .versal::before{ display:none }
+
+@media print{
+  :root[data-codex-object="on"] .book .orn,
+  :root[data-codex-object="on"] .book .fill,
+  :root[data-codex-object="on"] .book .tail,
+  :root[data-codex-object="on"] .book .orn-rule,
+  :root[data-codex-object="on"] .book .orn-boss,
+  :root[data-codex-object="on"] .book .leaf.orn-frame::after{ display:none }
+  :root[data-codex-object="on"] .book .versal::before{ display:none }
+}
+@media (forced-colors: active){
+  :root[data-codex-object="on"] .book .orn,
+  :root[data-codex-object="on"] .book .fill,
+  :root[data-codex-object="on"] .book .tail,
+  :root[data-codex-object="on"] .book .orn-rule,
+  :root[data-codex-object="on"] .book .orn-boss,
+  :root[data-codex-object="on"] .book .catch::before,
+  :root[data-codex-object="on"] .book .folio::before,
+  :root[data-codex-object="on"] .book .folio::after,
+  :root[data-codex-object="on"] .book .leaf.orn-frame::after{ display:none }
+  :root[data-codex-object="on"] .book .versal::before{ display:none }
+}
+
+/* narrow leaves drop the frame and the margin band before they drop the text.
+   The prototype's own measured fault was a leaf clipping its own words; ornament goes first. */
+@media (max-width: 760px){
+  :root[data-codex-object="on"] .book .leaf.orn-frame::after,
+  :root[data-codex-object="on"] .book .illum{ display:none }
+  :root[data-codex-object="on"] .book .versal.orn-v1::before{
+    -webkit-mask-image:url("ornament/versal-frame-2.svg");
+            mask-image:url("ornament/versal-frame-2.svg");
+  }
+}
+
+}  /* end @supports */
+
+
+/* ── 11 · NO MASK SUPPORT ───────────────────────────────────────────────────────────────────
+   Outside the @supports block nothing above applies, so a browser with no mask support gets the
+   prototype exactly as it is today — the gradient rubric rule, the gradient `.illum`, no fillers,
+   no tailpieces. That is the graceful degradation, and it is the whole reason every rule here is
+   inside one guard rather than scattered. */

@@ -1,0 +1,585 @@
+[
+ {
+  "id": "manwe",
+  "n": "Manwë",
+  "alt": [
+   "Súlimo",
+   "Lord of the Breath of Arda",
+   "the Elder King",
+   "Manwë Súlimo"
+  ],
+  "ord": "Vala",
+  "rank": "Aratar",
+  "dom": "the winds, the clouds and all the regions of the air; appointed King of Arda under Eru",
+  "sp": "varda",
+  "dwell": "Ilmarin, the mansions upon Oiolossë, the uttermost tower of Taniquetil",
+  "q": "Súlimo he is surnamed, Lord of the Breath of Arda.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2228",
+  "tier": 1,
+  "note": "'Manwë and Melkor were brethren in the thought of Ilúvatar' (Silm 2219); Melkor was the mightier in his beginning, but Manwë 'is dearest to Ilúvatar and understands most clearly his purposes' (2221-2). Called the Elder King: 'his Vicegerent is Manwë, the Elder King of Arda who is blessed' (MR:11701)."
+ },
+ {
+  "id": "varda",
+  "n": "Varda",
+  "alt": [
+   "Elbereth",
+   "Elentári",
+   "Tintallë",
+   "Gilthoniel",
+   "Lady of the Stars",
+   "Fanuilos",
+   "Snow-white"
+  ],
+  "ord": "Valië",
+  "rank": "Aratar",
+  "dom": "light and the kindling of the stars; she knows all the regions of Eä",
+  "sp": "manwe",
+  "dwell": "Ilmarin upon Oiolossë with Manwë; seldom parted from him, and they remain in Valinor",
+  "q": "Of all the Great Ones who dwell in this world the Elves hold Varda most in reverence and love.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2248",
+  "tier": 1,
+  "note": "'Melkor she knew from before the making of the Music and rejected him, and he hated her, and feared her more than all others whom Eru made' (Silm 2235-8). Fanuilos and Snow-white occur in LotR only; Tintallë and Elentári in Silm and LotR."
+ },
+ {
+  "id": "ulmo",
+  "n": "Ulmo",
+  "alt": [
+   "Lord of Waters",
+   "King of the Sea"
+  ],
+  "ord": "Vala",
+  "rank": "Aratar",
+  "dom": "all seas, lakes, rivers, fountains and springs",
+  "sp": null,
+  "dwell": "nowhere long; all the deep waters about the Earth or under the Earth",
+  "q": "Ulmo is the Lord of Waters.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2253",
+  "tier": 1,
+  "note": "Alone, and spouseless: 'He is alone' (2253); cf. MR:687 'but Nienna dwells alone, even as does Ulmo'. Next in might to Manwë, but 'he went seldom to the councils of the Valar, unless great matters were in debate' (2257-8). His horns are the Ulumúri, made for him by Salmar."
+ },
+ {
+  "id": "aule",
+  "n": "Aulë",
+  "alt": [
+   "the Smith",
+   "Mahal (among the Dwarves)"
+  ],
+  "ord": "Vala",
+  "rank": "Aratar",
+  "dom": "all the substances of which Arda is made; smithcraft and all crafts",
+  "sp": "yavanna",
+  "dwell": "his mansions in Valinor",
+  "q": "He is a smith and a master of all crafts, and he delights in works of skill, however small, as much as in the mighty building of old.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2287",
+  "tier": 1,
+  "note": "'Melkor was jealous of him, for Aulë was most like himself in thought and in powers' (2293-4); the difference is that 'Aulë remained faithful to Eru and submitted all that he did to his will' (2300-1). Maker of the Dwarves; Sauron and Curumo (Saruman) were both of his people."
+ },
+ {
+  "id": "yavanna",
+  "n": "Yavanna",
+  "alt": [
+   "Kementári",
+   "Queen of the Earth",
+   "Giver of Fruits",
+   "Palúrien"
+  ],
+  "ord": "Valië",
+  "rank": "Aratar",
+  "dom": "all things that grow in the earth",
+  "sp": "aule",
+  "dwell": "Valinor; the woods and meads of Aman, and the green mound Ezellohar where she sang forth the Two Trees",
+  "q": "The spouse of Aulë is Yavanna, the Giver of Fruits.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2306",
+  "tier": 1,
+  "note": "'In reverence Yavanna is next to Varda among the Queens of the Valar' (2310-11). MR:687 makes her Varda's sister ('Yavanna was her sister, and Yavanna espoused Aulë'); Silm makes Vána her younger sister. She begged Curumo to take Aiwendil (Radagast) among the Istari."
+ },
+ {
+  "id": "namo",
+  "n": "Námo",
+  "alt": [
+   "Mandos",
+   "the Doomsman of the Valar",
+   "Fëanturo",
+   "one of the Fëanturi"
+  ],
+  "ord": "Vala",
+  "rank": "Aratar",
+  "dom": "the Houses of the Dead; keeper of the spirits of the slain and pronouncer of dooms",
+  "sp": "vaire",
+  "dwell": "Mandos, which is westward in Valinor",
+  "q": "He is the Doomsman of the Valar; but he pronounces his dooms and his judgements only at the bidding of Manwë.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2328",
+  "tier": 1,
+  "note": "'Yet these are rightly the names of the places of their dwelling, and their true names are Námo and Irmo' (2322-3) — Mandos and Lórien are place-names used for the brethren. 'He forgets nothing; and he knows all things that shall be, save only those that lie still in the freedom of Ilúvatar' (2326-8)."
+ },
+ {
+  "id": "vaire",
+  "n": "Vairë",
+  "alt": [
+   "the Weaver"
+  ],
+  "ord": "Valië",
+  "rank": "Valië",
+  "dom": "the weaving of all that has been in Time into her storied webs",
+  "sp": "namo",
+  "dwell": "the halls of Mandos, which ever widen as the ages pass",
+  "q": "Vairë the Weaver is his spouse, who weaves all things that have ever been in Time into her storied webs, and the halls of Mandos that ever widen as the ages pass are clothed with them.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2330",
+  "tier": 1,
+  "note": "An earlier text has 'Vairë the Weaver dwells with Mandos' rather than naming her his spouse (MR:2574). Tolkien noted in the margin of AAm* that \"'spouse' meant only an 'association'. The Valar had no bodies, but could assume shapes\" (MR:2744-5)."
+ },
+ {
+  "id": "irmo",
+  "n": "Irmo",
+  "alt": [
+   "Lórien",
+   "master of visions and dreams",
+   "one of the Fëanturi"
+  ],
+  "ord": "Vala",
+  "rank": "Vala",
+  "dom": "visions and dreams",
+  "sp": "este",
+  "dwell": "Lórien, his gardens in the land of the Valar, the fairest of all places in the world",
+  "q": "Irmo the younger is the master of visions and dreams.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2334",
+  "tier": 1,
+  "note": "The younger of the Fëanturi, brother of Námo. Not counted among the Aratar. Melian and Olórin both dwelt in his gardens before they came to Middle-earth."
+ },
+ {
+  "id": "este",
+  "n": "Estë",
+  "alt": [
+   "the gentle",
+   "Estë the Pale"
+  ],
+  "ord": "Valië",
+  "rank": "Valië",
+  "dom": "healing of hurts and of weariness; rest is her gift",
+  "sp": "irmo",
+  "dwell": "an island in the tree-shadowed lake of Lórellin, in Lórien",
+  "q": "Estë the gentle, healer of hurts and of weariness, is his spouse.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2337",
+  "tier": 1,
+  "note": "CONTESTED RANK: in the Annals of Aman Estë is not listed among the queens of the Valar at all but is 'the chief of the Maiar', and 'she goes not to the councils of the Valar' (MR:2588-91, 2732-4); a contemporary emendation extended this exclusion to Nessa, making Estë and 'Lëa' together 'the highest among the Maiar' (MR:2594-9). Only in the final Valaquenta is she firmly one of the seven Valier."
+ },
+ {
+  "id": "nienna",
+  "n": "Nienna",
+  "alt": [
+   "the Weeper",
+   "queen of Shadow"
+  ],
+  "ord": "Valië",
+  "rank": "Aratar",
+  "dom": "grief and mourning; she teaches pity, and endurance in hope",
+  "sp": null,
+  "dwell": "halls west of West, upon the borders of the world, whose windows look outward from the walls of the world",
+  "q": "Mightier than Estë is Nienna, sister of the Fëanturi; she dwells alone.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2344",
+  "tier": 1,
+  "note": "CONTESTED KINSHIP: Christopher Tolkien records that 'The words \"sister of the Fëanturi\" were changed editorially from Vq \"sister of Námo\"' (MR:7812-13); earlier texts call her 'Nienna, queen of Shadow, Manwë's sister' (MR:2582) and 'Manwë's sister and Melkor's', a phrase later struck out (MR:2730). Olórin 'learned pity and patience' of her (Silm 2459-60); PoME/UT jottings once associated Pallando with 'Mandos and Nienna' before that was replaced (UT:12347)."
+ },
+ {
+  "id": "tulkas",
+  "n": "Tulkas",
+  "alt": [
+   "Astaldo",
+   "the Valiant"
+  ],
+  "ord": "Vala",
+  "rank": "Vala",
+  "dom": "strength, wrestling and deeds of prowess; champion of the Valar in battle",
+  "sp": "nessa",
+  "dwell": "",
+  "q": "Greatest in strength and deeds of prowess is Tulkas, who is surnamed Astaldo, the Valiant.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2359",
+  "tier": 1,
+  "note": "'He came last to Arda, to aid the Valar in the first battles with Melkor' (2360-1). Not one of the Aratar: 'He has little heed for either the past or the future, and is of no avail as a counsellor, but is a hardy friend' (2365-7). No dwelling is named for him in the Valaquenta, so the field is left empty. An emendation in AAm* briefly gave his spouse as 'Lëa the Young' in place of Nessa (MR:2596-7)."
+ },
+ {
+  "id": "nessa",
+  "n": "Nessa",
+  "alt": [
+   "the Evermaid",
+   "Nessa the Young"
+  ],
+  "ord": "Valië",
+  "rank": "Valië",
+  "dom": "swiftness and the dance; deer follow her train",
+  "sp": "tulkas",
+  "dwell": "Valimar, where she dances on lawns of never-fading green",
+  "q": "His spouse is Nessa, the sister of Oromë, and she also is lithe and fleetfooted.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2367",
+  "tier": 1,
+  "note": "CONTESTED RANK: an emendation to AAm* reads 'No lord had Nienna, Manwë's sister; nor Nessa the Evermaid' and replaces her as Tulkas' wife with 'Lëa the Young', demoting Nessa and Estë to 'the highest among the Maiar' (MR:2593-9). Christopher Tolkien notes 'There is no trace of this development in any other text'."
+ },
+ {
+  "id": "orome",
+  "n": "Oromë",
+  "alt": [
+   "Aldaron",
+   "Tauron",
+   "the Lord of Forests",
+   "the Great Rider"
+  ],
+  "ord": "Vala",
+  "rank": "Aratar",
+  "dom": "the hunt; the forests and the beasts of Middle-earth",
+  "sp": "vana",
+  "dwell": "the woods of Oromë in Valinor, but he passed often east over the mountains into Middle-earth",
+  "q": "He is a hunter of monsters and fell beasts, and he delights in horses and in hounds; and all trees he loves, for which reason he is called Aldaron, and by the Sindar Tauron, the Lord of Forests.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2380",
+  "tier": 1,
+  "note": "His horse is Nahar and his horn the Valaróma. He found the Quendi at Cuiviénen. 'If he is less strong than Tulkas, he is more dreadful in anger' (2373-4). One late text has 'Oromë and Tulkas were the youngest in the thought of Eru' where the Annals of Aman have 'younger' (MR:2571-2). In the UT jottings both Blue Wizards are associated with him."
+ },
+ {
+  "id": "vana",
+  "n": "Vána",
+  "alt": [
+   "the Ever-young"
+  ],
+  "ord": "Valië",
+  "rank": "Valië",
+  "dom": "the flowering of spring; all flowers open at her glance and all birds sing at her coming",
+  "sp": "orome",
+  "dwell": "her gardens in Valinor, where Arien tended the golden flowers of Laurelin",
+  "q": "The spouse of Oromë is Vána, the Ever-young; she is the younger sister of Yavanna.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2390",
+  "tier": 1,
+  "note": "Christopher Tolkien notes of an earlier text that 'It is not now said that Vana (marked Vána at the first occurrence but not subsequently) was the sister of Yavanna' (MR:2578-9) — the kinship is not constant across versions. Melian served both Vána and Estë."
+ },
+ {
+  "id": "melkor",
+  "n": "Melkor",
+  "alt": [
+   "Morgoth",
+   "Morgoth Bauglir",
+   "the Dark Enemy of the World",
+   "He who arises in Might",
+   "Belegûr",
+   "the Black Foe"
+  ],
+  "ord": "Vala (removed from their number)",
+  "rank": "corrupted",
+  "dom": "coveted Arda and all that was in it; darkness, violence and tyranny",
+  "sp": null,
+  "dwell": "Utumno in the north of Middle-earth; afterwards Angband",
+  "q": "Last of all is set the name of Melkor, He who arises in Might.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2474",
+  "tier": 1,
+  "note": "'Melkor is counted no longer among the Valar, and his name is not spoken upon Earth' (Silm 2214-16), which is why the Aratar are eight and not nine. 'he was in the beginning the greatest of the Ainur who took part in the Music' (MR:572). His self-expenditure is described in MR: 'as he grew in malice, and sent forth from himself the evil that he conceived in lies and creatures of wickedness, his power passed into them and was dispersed, and he himself became ever more earth-bound' (MR:5195-8)."
+ },
+ {
+  "id": "eonwe",
+  "n": "Eönwë",
+  "alt": [
+   "banner-bearer and herald of Manwë",
+   "herald of the Elder King"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "herald and banner-bearer of Manwë; captain of the Host of the West in the Great Battle",
+  "sp": null,
+  "dwell": "",
+  "q": "Then Eönwë as herald of the Elder King summoned the Elves of Beleriand to depart from Middle-earth.",
+  "c": "Silm 24, Of the Voyage of Eärendil",
+  "src": "t1_a_the_silmarillion.txt:11768",
+  "tier": 1,
+  "note": "IMPORTANT EDITORIAL CAVEAT: the famous Valaquenta phrase 'whose might in arms is surpassed by none in Arda' (Silm 2427-8) is NOT Tolkien's — Christopher Tolkien states the words 'were an editorial addition, made in order to prepare for his leadership of the hosts of the West at the Great Battle' (MR:7822-4). He also summoned Eärendil before the Powers (Silm 11626-7) and took the recovered Silmarils into his keeping (Silm 11759)."
+ },
+ {
+  "id": "ilmare",
+  "n": "Ilmarë",
+  "alt": [
+   "the handmaid of Varda"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "handmaid of Varda",
+  "sp": null,
+  "dwell": "",
+  "q": "Chief among the Maiar of Valinor whose names are remembered in the histories of the Elder Days are Ilmarë, the handmaid of Varda, and Eönwë, the banner-bearer and herald of Manwë, whose might in arms is surpassed by none in Arda.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2424",
+  "tier": 1,
+  "note": "Ilmarë is named only twice in the whole Silmarillion — here and in the Index ('Ilmarë A Maia, the handmaid of Varda', 14904). Nothing else is told of her. The stem ilm- 'appears in Ilmen, Ilmarë, and also in Ilmarin' (Silm 15975)."
+ },
+ {
+  "id": "osse",
+  "n": "Ossë",
+  "alt": [
+   "vassal of Ulmo",
+   "master of the inner seas"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "the seas that wash the shores of Middle-earth; storms, coasts and isles",
+  "sp": "uinen",
+  "dwell": "the coasts and the isles; he does not go in the deeps",
+  "q": "Ossë is a vassal of Ulmo, and he is master of the seas that wash the shores of Middle-earth.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2430",
+  "tier": 1,
+  "note": "CONTESTED RANK: in an earlier text Ossë was one of the chieftains of the Valar — Christopher Tolkien records the emendation \"'nine chieftains' > 'seven chieftains'; Ossë and Melkor were struck from the list\" (MR:2720-1), and correspondingly 'and Uinen, lady of the seas, is the spouse of Ossë' was struck out of the list of queens (MR:2727-9). Melkor tried to draw him to his allegiance and 'he was pardoned and returned to his allegiance, to which he has remained faithful. For the most part' (Silm 2447-9)."
+ },
+ {
+  "id": "uinen",
+  "n": "Uinen",
+  "alt": [
+   "the Lady of the Seas"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "the calm waters; all creatures that live in the salt streams",
+  "sp": "osse",
+  "dwell": "all waters under sky; her hair lies spread through them",
+  "q": "His spouse is Uinen, the Lady of the Seas, whose hair lies spread through all waters under sky.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2434",
+  "tier": 1,
+  "note": "'The Númenóreans lived long in her protection, and held her in reverence equal to the Valar' (Silm 2439-40). She was at one stage listed among the queens of the Valar and later removed, Estë being added in her place (MR:2722-4). Christopher Tolkien notes that Uinen and Nienna are uniquely 'described in the present, in contrast to all the others' in one text (MR:7856)."
+ },
+ {
+  "id": "salmar",
+  "n": "Salmar",
+  "alt": [
+   "maker of the Ulumúri"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "maker of the great horns of Ulmo",
+  "sp": null,
+  "dwell": "",
+  "q": "Salmar came with him to Arda, he who made the horns of Ulmo that none may ever forget who once has heard them; and Ossë and Uinen also, to whom he gave the government of the waves and the movements of the Inner Seas, and many other spirits beside.",
+  "c": "Silm 1, Of the Beginning of Days",
+  "src": "t1_a_the_silmarillion.txt:2761",
+  "tier": 1,
+  "note": "Salmar is named only here and in the Silmarillion Index ('Salmar A Maia who entered Arda with Ulmo; maker of Ulmo’s great horns, the Ulumúri', 15439). He is absent from the Valaquenta. The horns are the Ulumúri, 'wrought of white shell' (Silm 2273-4)."
+ },
+ {
+  "id": "melian",
+  "n": "Melian",
+  "alt": [
+   "Queen of Doriath",
+   "the Maia of Lórien"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "enchantment and song; the Girdle of Melian that fenced Doriath",
+  "sp": "thingol",
+  "dwell": "the gardens of Lórien in Valinor; afterwards Menegroth in Doriath",
+  "q": "Melian was a Maia, of the race of the Valar.",
+  "c": "Silm 4, Of Thingol and Melian",
+  "src": "t1_a_the_silmarillion.txt:3398",
+  "tier": 1,
+  "note": "CONTESTED ALLEGIANCE: the Valaquenta says she 'served both Vána and Estë' (Silm 2454-5) and that 'She was akin before the World was made to Yavanna herself' (Silm 3406-7); but Christopher Tolkien notes that 'In LQ 2 Melian was said to be \"of the people of Yavanna\"' (MR:7820-1). Her spouse Elu Thingol is an Elf, not an Ainu. In an unused NoME scheme she is sent to Cuiviénen as chief of five Maiar Guardians — 'the only woman, but the chief' (NoME:2739). By incarnation and childbearing she became 'more and more earthbound' (cf. MR:15224)."
+ },
+ {
+  "id": "arien",
+  "n": "Arien",
+  "alt": [
+   "the maiden of the Sun"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "guide of the vessel of the Sun; a spirit of fire",
+  "sp": null,
+  "dwell": "the vessel of the Sun",
+  "q": "The maiden whom the Valar chose from among the Maiar to guide the vessel of the Sun was named Arien, and he that steered the island of the Moon was Tilion.",
+  "c": "Silm 11, Of the Sun and Moon",
+  "src": "t1_a_the_silmarillion.txt:5331",
+  "tier": 1,
+  "note": "'she was chosen because she had not feared the heats of Laurelin, and was unhurt by them, being from the beginning a spirit of fire, whom Melkor had not deceived nor drawn to his service' (Silm 5343-6). Leaving Valinor 'she forsook the form and raiment which like the Valar she had worn there, and she was as a naked flame' (5347-9). Morgoth 'feared with a great fear, and dared not to come nigh her, having indeed no longer the power' (MR:5193-5)."
+ },
+ {
+  "id": "tilion",
+  "n": "Tilion",
+  "alt": [
+   "steersman of the Moon"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "steersman of the island of the Moon; formerly a hunter of Oromë",
+  "sp": null,
+  "dwell": "the island of the Moon",
+  "q": "In the days of the Trees Arien had tended the golden flowers in the gardens of Vána, and watered them with the bright dews of Laurelin; but Tilion was a hunter of the company of Oromë, and he had a silver bow.",
+  "c": "Silm 11, Of the Sun and Moon",
+  "src": "t1_a_the_silmarillion.txt:5333",
+  "tier": 1,
+  "note": "'Arien the maiden was mightier than he' (Silm 5341-2). 'Tilion was wayward and uncertain in speed, and held not to his appointed path; and he sought to come near to Arien' (5377-8). Melkor 'assailed Tilion, sending spirits of shadow against him' but 'Tilion was victorious' (5425-7)."
+ },
+ {
+  "id": "olorin",
+  "n": "Olórin",
+  "alt": [
+   "Gandalf",
+   "Mithrandir",
+   "the Grey Pilgrim",
+   "Tharkûn",
+   "Incánus",
+   "Gandalf the Grey",
+   "Gandalf the White",
+   "the White Rider"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "wisdom, pity and the kindling of hope; chief of the Istari in deed if not in rank",
+  "sp": null,
+  "dwell": "Lórien in Valinor, and often the house of Nienna; in Middle-earth he dwelt in no place",
+  "q": "Wisest of the Maiar was Olórin.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2458",
+  "tier": 1,
+  "note": "'his ways took him often to the house of Nienna, and of her he learned pity and patience' (Silm 2459-60). A scribbled addition to the Valaquenta typescript, omitted from the published Silmarillion, reads: 'He was humble in the Land of the Blessed; and in Middle-earth he sought no renown. His triumph was in the uprising of the fallen, and his joy was in the renewal of hope.' (MR:7828-31). Sent as third messenger at Manwë's command though he pleaded 'that he was too weak for such a task, and that he feared Sauron' (UT:12336-7). Alone of the five he keeps the name Olórin in the unrelated NoME Cuiviénen scheme, where the others are Tarindor, Hrávandil, Palacendo and Haimenar (NoME:2740-1). His own list of names: LotR IV 5, 'Mithrandir among the Elves, Tharkûn to the Dwarves; Olórin I was in my youth in the West that is forgotten, in the South Incánus, in the North Gandalf' (t1_c_the_lord_of_the_rings.txt:30145).",
+  "istar": 2
+ },
+ {
+  "id": "curumo",
+  "n": "Curumo",
+  "alt": [
+   "Saruman",
+   "Curunír",
+   "Curunír'Lân",
+   "the Man of Craft",
+   "the Man of Skill",
+   "Saruman the White",
+   "Tarindor"
+  ],
+  "ord": "Maia",
+  "rank": "corrupted",
+  "dom": "skill, craft and lore; head of the Order of the Istari",
+  "sp": null,
+  "dwell": "Isengard (Nan Curunír), after many journeys into the East",
+  "q": "Now the White Messenger in later days became known among Elves as Curunír, the Man of Craft, in the tongues of Northern Men Saruman; but that was after he returned from his many journeys and came into the realm of Gondor and there abode.",
+  "c": "UT, The Istari",
+  "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12230",
+  "tier": 1,
+  "note": "Marked 'corrupted' because he fell, not because he began evil: 'Curunír'Lân, Saruman the White, fell from his high errand, and becoming proud and impatient and enamoured of power sought to have his own will by force, and to oust Sauron; but he was ensnared by that dark spirit, mightier than he' (UT:12252-4). NAME CONFLICT: Quenya Curumo appears in the UT council-of-the-Valar jottings and 'would seem to be Saruman's name in Quenya, recorded nowhere else' (UT:12609); an unrelated NoME scheme instead names him Tarindor (NoME:2740). He 'was chosen by Aulë' (UT:12331) — of Aulë's people, as Sauron was.",
+  "istar": 1
+ },
+ {
+  "id": "aiwendil",
+  "n": "Aiwendil",
+  "alt": [
+   "Radagast",
+   "Radagast the Brown",
+   "Lover of Birds",
+   "Hrávandil"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "beasts and birds; chosen by Yavanna",
+  "sp": null,
+  "dwell": "among the wild creatures of Middle-earth",
+  "q": "For Radagast, the fourth, became enamoured of the many beasts and birds that dwelt in Middle-earth, and forsook Elves and Men, and spent his days among the wild creatures.",
+  "c": "UT, The Istari",
+  "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12248",
+  "tier": 1,
+  "note": "CONFLICT: the Istari essay treats him as having failed his mission ('of all the Istari, one only remained faithful, and he was the last-comer', UT:12248), whereas the council jottings have him specially chosen by Yavanna — Curumo 'was obliged to take Aiwendil to please Yavanna wife of Aulë' (UT:12344). Christopher Tolkien calls the two 'perhaps not perfectly in accord' (UT:12356-9). NAME CONFLICT: Aiwendil in UT ('Aiwendil must mean \"lover of birds\"', UT:12611); Hrávandil in the NoME Cuiviénen scheme (NoME:2741). Radagast is Númenórean, 'signifies, it is said, \"tender of beasts\"' (UT:12251).",
+  "istar": 3
+ },
+ {
+  "id": "alatar",
+  "n": "Alatar",
+  "alt": [
+   "one of the Ithryn Luin",
+   "one of the Blue Wizards",
+   "Morinehtar (?)",
+   "Palacendo (?)"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "one of the two emissaries who passed into the East of Middle-earth",
+  "sp": null,
+  "dwell": "the East of Middle-earth; he never returned into the Westlands",
+  "q": "But two only came forward: Curumo, who was chosen by Aulë, and Alatar, who was sent by Oromë.",
+  "c": "UT, The Istari (council of the Valar jottings)",
+  "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12331",
+  "tier": 1,
+  "note": "MAJOR CONFLICT, THREE INCOMPATIBLE ACCOUNTS. (1) UT Istari essay: the two 'had no names save Ithryn Luin \"the Blue Wizards\"; for they passed into the East with Curunír, but they never returned, and whether they remained in the East, pursuing there the purposes for which they were sent; or perished; or as some hold were ensnared by Sauron and became his servants, is not now known' (UT:12233-6). (2) UT council jottings: they are Alatar and Pallando, both associated with Oromë, 'but this replaces Pallando to Mandos and Nienna' (UT:12346-7). (3) PoME late writing: they are named Morinehtar and Rómestámo, 'Darkness-slayer and East-helper', they came in the SECOND Age, not the Third, and they succeeded — 'They must have had very great influence on the history of the Second Age and Third Age in weakening and disarraying the forces of East' (PoME:12741-8). A fourth, unrelated NoME scheme sends five Maiar Guardians to Cuiviénen in the Years of the Trees and names two of them Palacendo and Haimenar (NoME:2740-1). Tolkien himself wrote in 1956 that 'the names of the other two wizards' were among the things that do not exist (UT:12617-19). No one account is chosen here.",
+  "istar": 4
+ },
+ {
+  "id": "pallando",
+  "n": "Pallando",
+  "alt": [
+   "one of the Ithryn Luin",
+   "one of the Blue Wizards",
+   "Rómestámo (?)",
+   "Haimenar (?)"
+  ],
+  "ord": "Maia",
+  "rank": "Maia",
+  "dom": "one of the two emissaries who passed into the East of Middle-earth",
+  "sp": null,
+  "dwell": "the East of Middle-earth; he never returned into the Westlands",
+  "q": "The note ends with the statement that Curumo [Saruman] took Aiwendil [Radagast] because Yavanna begged him, and that Alatar took Pallando as a friend.",
+  "c": "UT, The Istari (Christopher Tolkien's summary of the jottings)",
+  "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12341",
+  "tier": 1,
+  "note": "The quote is Christopher Tolkien's editorial summary, not his father's narrative prose; no continuous Tolkien text about Pallando survives in this corpus. His patron shifts within the same set of jottings: 'Alatar to Oromë, and Pallando also to Oromë (but this replaces Pallando to Mandos and Nienna)' (UT:12346-7). See the note on 'alatar' for the three-way conflict over the Blue Wizards' names, date of arrival and success or failure of their errand.",
+  "istar": 5
+ },
+ {
+  "id": "sauron",
+  "n": "Sauron",
+  "alt": [
+   "Gorthaur",
+   "Gorthaur the Cruel",
+   "Annatar",
+   "the Lord of Gifts",
+   "Thû",
+   "the Necromancer",
+   "Zigûr",
+   "the Dark Lord"
+  ],
+  "ord": "Maia",
+  "rank": "corrupted",
+  "dom": "domination and order through force; lore and craft learned of Aulë",
+  "sp": null,
+  "dwell": "Angband under Morgoth; afterwards Tol-in-Gaurhoth, Dol Guldur, and Barad-dûr in Mordor",
+  "q": "Among those of his servants that have names the greatest was that spirit whom the Eldar called Sauron, or Gorthaur the Cruel.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2503",
+  "tier": 1,
+  "note": "'In his beginning he was of the Maiar of Aulë, and he remained mighty in the lore of that people' (Silm, Valaquenta); the Annals of Aman call him 'a great craftsman of the household of Aulë' (MR:2053-4). The name MAIRON IS attested: 4 times in t2_ocr_parma_eldalamberon_17 \u2014 'Sauron's original name was Mairon', and 'he continued to call himself Mairon the Admirable, or Tar-mairon' \u2014 and 13 times more in four t3 volumes -- but NOT as independent witnesses: eldamo (8) rests on PE17 for six of its eight -- five citing PE17:183, and one the cross-reference in its maira entry, which cites PE17:163 and 172 -- while ONE cites PE18:163, a volume this archive does not hold, so the archive cannot follow it (eldamo cites PE18 four times against PE17 918 times, which leaves a slip for the PE17:163 two lines above it possible and unresolvable here), and ONE carries no source at all, being eldamo's own reading that the name is a translation by sense of a Valarin original; Giraudeau's PE17 lexicon (3) is by its own introduction a synthesis of PE17 and 'must be read together with' it; and the remaining two are a single remark of Giraudeau's about Kloczko's encyclopedia, printed in both of his own volumes. Kloczko wrote none of them -- the mention in his volume sits in Giraudeau's footnote 24, and the volume credits 'Edouard J. Kloczko / Notes by David Giraudeau'. The form carries no diacritic, so the owner's ruling of 6 August 2026 admits it as [EXT]. It is not listed among the alt names; whether it should be is a canon judgement this note does not make. Annatar: 'Sauron took to himself the name of Annatar, the Lord of Gifts' (Silm, Of the Rings of Power and the Third Age); Zigûr is the Adûnaic name (SD:12122). Tolkien judged that 'Sauron was \"greater\", effectively, in the Second Age than Morgoth at the end of the First. Why? Because, though he was far smaller by natural stature, he had not yet fallen so low.' (MR:14680-2)."
+ },
+ {
+  "id": "valaraukar",
+  "n": "Valaraukar",
+  "alt": [
+   "Balrogs",
+   "Valarauko (sing.)",
+   "Balrogath",
+   "demons of terror",
+   "Demons of Might",
+   "Úmaiar"
+  ],
+  "ord": "Maiar (a kind, not an individual)",
+  "rank": "corrupted",
+  "dom": "scourges of fire; the chief of the evil spirits that followed Melkor",
+  "sp": null,
+  "dwell": "Utumno and Angband; one endured long after in the deep places beneath the Misty Mountains",
+  "q": "Dreadful among these spirits were the Valaraukar, the scourges of fire that in Middle-earth were called the Balrogs, demons of terror.",
+  "c": "Silm, Valaquenta",
+  "src": "t1_a_the_silmarillion.txt:2500",
+  "tier": 1,
+  "note": "CONFLICT OF ORIGIN: earlier texts have Melkor 'wrought' or 'made' them as creatures — 'These were the first made of his creatures: their hearts were of fire, but they were cloaked in darkness, and terror went before them; they had whips of flame. Balrogs they were named by the Noldor in later days.' (MR:6109-11). Christopher Tolkien notes that in the Valaquenta 'appears the conception that the Balrogs (Valaraukar) were powerful spirits from before the World', i.e. corrupted Maiar, 'the chief of \"the evil spirits that followed [Melkor], the Úmaiar\"' (MR:7834-7). CONFLICT OF NUMBER: the narrative speaks of 'a host of Balrogs', but Tolkien wrote in the margin against that phrase: 'There should not be supposed more than say 3 or at most 7 ever existed.' (MR:3173-4). Etymology: 'rauko \"demon\" in Valaraukar; Sindarin raug, rog in Balrog' (Silm 16106)."
+ }
+]

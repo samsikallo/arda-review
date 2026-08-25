@@ -1,0 +1,48 @@
+{
+ "what": "Open-access journal runs held by this archive, one row per RUN.",
+ "why_not_per_article": "a row per article would bury the 190 books this archive is built on under a thousand rows of periodical literature, in a file the corpus hall fetches on every visit. The unit that matters is the run; the journal's own site indexes the articles better.",
+ "not_extracted": "NONE of these is extracted into corpus/. They are tier-3 scholarship and could be, but sweeping several hundred files into the citable set in one commit would be a claim that they were read. Extraction is a separate decision, by touch, recorded when it is taken.",
+ "n_runs": 3,
+ "n_articles": 2704,
+ "runs": [
+  {
+   "journal": "Inklings Forever",
+   "publisher": "Taylor University (Pillars)",
+   "url": "https://pillars.taylor.edu/inklings_forever/",
+   "tier": 3,
+   "terms": "fully open access; colloquium proceedings, free to read and download",
+   "note": "Proceedings of the Frances White Ewbank Colloquium on C.S. Lewis and Friends, 1997-2016. Conference papers rather than refereed articles, and the distinction matters when citing.",
+   "dir": "sources/openaccess/inklings",
+   "articles": 303,
+   "bytes": 247491106,
+   "extracted_to_corpus": false,
+   "how_obtained": "map/oa_fetch.py, a real browser: the publisher's download endpoint answers HTTP 202 behind an AWS WAF JavaScript challenge that curl cannot solve. Every file verified as a PDF by magic bytes and a page count before it was kept."
+  },
+  {
+   "journal": "Journal of Tolkien Research",
+   "publisher": "Valparaiso University (Digital Commons), ISSN 2471-934X",
+   "url": "https://scholar.valpo.edu/journaloftolkienresearch/",
+   "tier": 3,
+   "terms": "fully open access; every article free to read and download from the publisher",
+   "note": "The only peer-reviewed journal devoted solely to Tolkien scholarship. Tier 3 for the reason Tolkien Studies is: it prints criticism, not his manuscripts.",
+   "dir": "sources/openaccess/jtr",
+   "articles": 392,
+   "bytes": 162625975,
+   "extracted_to_corpus": false,
+   "how_obtained": "map/oa_fetch.py, a real browser: the publisher's download endpoint answers HTTP 202 behind an AWS WAF JavaScript challenge that curl cannot solve. Every file verified as a PDF by magic bytes and a page count before it was kept."
+  },
+  {
+   "journal": "Mythlore",
+   "publisher": "Mythopoeic Society (Digital Commons at SWOSU)",
+   "url": "https://dc.swosu.edu/mythlore/",
+   "tier": 3,
+   "terms": "fully open access; the complete run is free to read and download",
+   "note": "Published since 1969, covering Tolkien, Lewis and Williams. The longest continuous run of Inklings scholarship there is.",
+   "dir": "sources/openaccess/mythlore",
+   "articles": 2009,
+   "bytes": 3102829971,
+   "extracted_to_corpus": false,
+   "how_obtained": "map/oa_fetch.py, a real browser: the publisher's download endpoint answers HTTP 202 behind an AWS WAF JavaScript challenge that curl cannot solve. Every file verified as a PDF by magic bytes and a page count before it was kept."
+  }
+ ]
+}

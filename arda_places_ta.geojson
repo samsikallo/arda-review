@@ -1,0 +1,8641 @@
+{
+ "type": "FeatureCollection",
+ "name": "arda_places_ta",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "note": "Latitudes are Tolkien's: one sentence on his son's General Map puts Hobbiton at the latitude of Oxford, and the archive's own frame -- scaled from its drawn scale bar and not from his notes -- then reproduces his other three latitudes to within 0.3, 1.4 and 2.7 degrees. LONGITUDES ARE NOT HIS: he named no meridian, so Hobbiton is put on Oxford's and the rest follow from the frame. His one east-west figure DISAGREES -- he wrote that Minas Tirith lies 900 miles east of Hobbiton and the frame makes it 789, twelve per cent short -- which is the measure of how much less a longitude here is worth than a latitude.",
+ "anchor": {
+  "hobbiton_frame": [
+   218,
+   668
+  ],
+  "oxford": [
+   -1.2577,
+   51.752
+  ],
+  "miles_per_unit": 1.5,
+  "miles_per_degree": 69.0
+ },
+ "his_checks": [
+  {
+   "what": "minas tirith",
+   "archive": 43.1,
+   "his": 44.4,
+   "place": "Ravenna",
+   "diff_deg": 1.3
+  },
+  {
+   "what": "umbar",
+   "archive": 37.9,
+   "his": 35.2,
+   "place": "Cyprus",
+   "diff_deg": 2.7
+  },
+  {
+   "what": "Minas Tirith east of Hobbiton",
+   "archive": 789,
+   "his": 900.0,
+   "place": "his own note",
+   "diff_mi": 111
+  }
+ ],
+ "n": 358,
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7193,
+     44.8824
+    ]
+   },
+   "properties": {
+    "id": "adorn",
+    "name": "Adorn",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 478,
+    "frame_y": 352,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.797,
+     47.339
+    ]
+   },
+   "properties": {
+    "id": "adurant",
+    "name": "Adurant",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 851,
+    "frame_y": 214,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.478,
+     50.1107
+    ]
+   },
+   "properties": {
+    "id": "aelin uial",
+    "name": "Aelin-uial",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 531,
+    "frame_y": 469,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.7519,
+     43.5998
+    ]
+   },
+   "properties": {
+    "id": "amon din",
+    "name": "Amon Din",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 718,
+    "frame_y": 293,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.9858,
+     49.6216
+    ]
+   },
+   "properties": {
+    "id": "amon ereb",
+    "name": "Amon Ereb",
+    "types": "NATURAL_HILL,MAN_MADE_FORTRESS",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 733,
+    "frame_y": 424,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.2052,
+     50.5781
+    ]
+   },
+   "properties": {
+    "id": "amon rudh",
+    "name": "Amon Rûdh",
+    "types": "NATURAL_PEAK",
+    "ages": "FA",
+    "parents": "nargothrond",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 436,
+    "frame_y": 512,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.0284,
+     49.8172
+    ]
+   },
+   "properties": {
+    "id": "andram",
+    "name": "Andram",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 554,
+    "frame_y": 442,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6966,
+     51.4694
+    ]
+   },
+   "properties": {
+    "id": "andrath",
+    "name": "Andrath",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 274,
+    "frame_y": 655,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.728,
+     46.1433
+    ]
+   },
+   "properties": {
+    "id": "anduin",
+    "name": "Anduin (the Great River)",
+    "types": "NATURAL_RIVER",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "L",
+    "frame": "TA",
+    "frame_x": 600,
+    "frame_y": 410,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5936,
+     42.1216
+    ]
+   },
+   "properties": {
+    "id": "anfalas",
+    "name": "Anfalas",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 520,
+    "frame_y": 225,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.6706,
+     53.7846
+    ]
+   },
+   "properties": {
+    "id": "anfauglith",
+    "name": "Anfauglith",
+    "types": "NATURAL_PLAIN",
+    "ages": "FA",
+    "parents": "angband",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 568,
+    "frame_y": 807,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.3662,
+     57.839
+    ]
+   },
+   "properties": {
+    "id": "angband",
+    "name": "Angband",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "FA,YT",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": -54,
+    "frame_y": 948,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9619,
+     51.0129
+    ]
+   },
+   "properties": {
+    "id": "angle",
+    "name": "Angle",
+    "types": "NATURAL_RIVER",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 398,
+    "frame_y": 634,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1899,
+     54.8824
+    ]
+   },
+   "properties": {
+    "id": "angmar",
+    "name": "Angmar",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 468,
+    "frame_y": 812,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.4578,
+     51.8933
+    ]
+   },
+   "properties": {
+    "id": "annon in gelydh",
+    "name": "Annon-in-Gelydh",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 271,
+    "frame_y": 633,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1115,
+     53.4911
+    ]
+   },
+   "properties": {
+    "id": "annuminas",
+    "name": "Annúminas",
+    "types": "MAN_MADE_CITY,MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "arthedain,arnor,reunited",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 222,
+    "frame_y": 748,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.0445,
+     43.752
+    ]
+   },
+   "properties": {
+    "id": "anorien",
+    "name": "Anórien",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 660,
+    "frame_y": 300,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9806,
+     52.2737
+    ]
+   },
+   "properties": {
+    "id": "archet",
+    "name": "Archet",
+    "types": "POLITY_REGION",
+    "ages": "SA,TA",
+    "parents": "bree",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 281,
+    "frame_y": 692,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.7331,
+     54.0346
+    ]
+   },
+   "properties": {
+    "id": "ard galen",
+    "name": "Ard-Galen",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 568,
+    "frame_y": 830,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0801,
+     46.0346
+    ]
+   },
+   "properties": {
+    "id": "argonath",
+    "name": "Argonath",
+    "types": "MAN_MADE_MONUMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 612,
+    "frame_y": 405,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.754,
+     53.7085
+    ]
+   },
+   "properties": {
+    "id": "arnor",
+    "name": "Arnor",
+    "types": "POLITY_REALM",
+    "ages": "SA,TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 300,
+    "frame_y": 758,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.1027,
+     50.8281
+    ]
+   },
+   "properties": {
+    "id": "aros",
+    "name": "Aros",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 620,
+    "frame_y": 535,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.3147,
+     51.9368
+    ]
+   },
+   "properties": {
+    "id": "arossiach",
+    "name": "Arossiach",
+    "types": "MAN_MADE_CROSSING",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 677,
+    "frame_y": 637,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9781,
+     52.9259
+    ]
+   },
+   "properties": {
+    "id": "arthedain",
+    "name": "Arthedain",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 280,
+    "frame_y": 722,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.5518,
+     46.9911
+    ]
+   },
+   "properties": {
+    "id": "arvernien",
+    "name": "Arvernien",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 488,
+    "frame_y": 182,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.8989,
+     49.7303
+    ]
+   },
+   "properties": {
+    "id": "ascar",
+    "name": "Ascar",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 858,
+    "frame_y": 434,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2577,
+     51.752
+    ]
+   },
+   "properties": {
+    "id": "bag end",
+    "name": "Bag End",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 218,
+    "frame_y": 668,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.2052,
+     50.5781
+    ]
+   },
+   "properties": {
+    "id": "bar en danwedh",
+    "name": "Bar-en-Danwedh",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 436,
+    "frame_y": 512,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.8882,
+     44.1433
+    ]
+   },
+   "properties": {
+    "id": "barad dur",
+    "name": "Barad-dûr",
+    "types": "MAN_MADE_TOWER",
+    "ages": "SA,TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 850,
+    "frame_y": 318,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.8711,
+     52.3933
+    ]
+   },
+   "properties": {
+    "id": "barad eithel",
+    "name": "Barad Eithel",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "FA",
+    "parents": "hithlum",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 482,
+    "frame_y": 679,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.6155,
+     48.3498
+    ]
+   },
+   "properties": {
+    "id": "barad nimras",
+    "name": "Barad Nimras",
+    "types": "MAN_MADE_TOWER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 195,
+    "frame_y": 307,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3914,
+     51.1433
+    ]
+   },
+   "properties": {
+    "id": "baranduin",
+    "name": "Baranduin (Brandywine)",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 243,
+    "frame_y": 640,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.659,
+     51.4042
+    ]
+   },
+   "properties": {
+    "id": "barrow downs",
+    "name": "Barrow-downs",
+    "types": "MAN_MADE_TOMB,NATURAL_HILL",
+    "ages": "TA",
+    "parents": "cardolan,bombadil s house",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 273,
+    "frame_y": 652,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.4122,
+     46.252
+    ]
+   },
+   "properties": {
+    "id": "bay of balar",
+    "name": "Bay of Balar",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -105,
+    "frame_y": 415,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.1236,
+     39.839
+    ]
+   },
+   "properties": {
+    "id": "bay of belfalas",
+    "name": "Bay of Belfalas",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 620,
+    "frame_y": 120,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -27.5758,
+     49.0781
+    ]
+   },
+   "properties": {
+    "id": "bay of eldamar",
+    "name": "Bay of Eldamar",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -575,
+    "frame_y": 545,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -22.2034,
+     48.5346
+    ]
+   },
+   "properties": {
+    "id": "belegaer",
+    "name": "Belegaer",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -420,
+    "frame_y": 520,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.8033,
+     49.9259
+    ]
+   },
+   "properties": {
+    "id": "belegost",
+    "name": "Belegost",
+    "types": "MAN_MADE_CITY",
+    "ages": "FA,SA,YT",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 924,
+    "frame_y": 452,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.195,
+     48.7085
+    ]
+   },
+   "properties": {
+    "id": "beleriand",
+    "name": "Beleriand",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 470,
+    "frame_y": 340,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.299,
+     41.6868
+    ]
+   },
+   "properties": {
+    "id": "belfalas",
+    "name": "Belfalas",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 615,
+    "frame_y": 205,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4057,
+     52.4477
+    ]
+   },
+   "properties": {
+    "id": "beorn s house",
+    "name": "Beorn's house",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 545,
+    "frame_y": 700,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.4016,
+     53.6433
+    ]
+   },
+   "properties": {
+    "id": "blue mtn dwarf halls",
+    "name": "Blue Mtn dwarf-halls",
+    "types": "MAN_MADE_MANSION,MAN_MADE_HALL,NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 105,
+    "frame_y": 755,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3097,
+     51.3824
+    ]
+   },
+   "properties": {
+    "id": "bombadil s house",
+    "name": "Bombadil's house",
+    "types": "MAN_MADE_SETTLEMENT,POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 263,
+    "frame_y": 651,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2418,
+     51.6433
+    ]
+   },
+   "properties": {
+    "id": "brandywine bridge",
+    "name": "Brandywine Bridge",
+    "types": "MAN_MADE_BRIDGE",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 247,
+    "frame_y": 663,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6897,
+     52.1216
+    ]
+   },
+   "properties": {
+    "id": "bree",
+    "name": "Bree",
+    "types": "MAN_MADE_TOWN,MAN_MADE_CITY",
+    "ages": "SA,TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 273,
+    "frame_y": 685,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.1353,
+     50.7629
+    ]
+   },
+   "properties": {
+    "id": "brethil",
+    "name": "Brethil",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 501,
+    "frame_y": 529,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5851,
+     48.3063
+    ]
+   },
+   "properties": {
+    "id": "brilthor",
+    "name": "Brilthor",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 808,
+    "frame_y": 303,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.1856,
+     51.1977
+    ]
+   },
+   "properties": {
+    "id": "brithiach",
+    "name": "Brithiach",
+    "types": "MAN_MADE_CROSSING",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 504,
+    "frame_y": 569,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.7551,
+     49.339
+    ]
+   },
+   "properties": {
+    "id": "brithombar",
+    "name": "Brithombar",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "FA",
+    "parents": "falas",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 205,
+    "frame_y": 398,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.1194,
+     49.7737
+    ]
+   },
+   "properties": {
+    "id": "brithon",
+    "name": "Brithon",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 251,
+    "frame_y": 438,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.8274,
+     48.2737
+    ]
+   },
+   "properties": {
+    "id": "brown lands",
+    "name": "the Brown Lands",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 588,
+    "frame_y": 508,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1077,
+     51.4042
+    ]
+   },
+   "properties": {
+    "id": "buckland",
+    "name": "Buckland",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 251,
+    "frame_y": 652,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1753,
+     51.4911
+    ]
+   },
+   "properties": {
+    "id": "bucklebury",
+    "name": "Bucklebury",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 249,
+    "frame_y": 656,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2452,
+     51.4911
+    ]
+   },
+   "properties": {
+    "id": "bucklebury ferry",
+    "name": "Bucklebury + Ferry",
+    "types": "MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 247,
+    "frame_y": 656,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1875,
+     51.7085
+    ]
+   },
+   "properties": {
+    "id": "bywater",
+    "name": "Bywater",
+    "types": "MAN_MADE_VILLAGE",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 220,
+    "frame_y": 666,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3636,
+     43.6433
+    ]
+   },
+   "properties": {
+    "id": "cair andros",
+    "name": "Cair Andros",
+    "types": "NATURAL_ISLAND,MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 738,
+    "frame_y": 295,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.103,
+     43.2737
+    ]
+   },
+   "properties": {
+    "id": "calembel",
+    "name": "Calembel",
+    "types": "MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 565,
+    "frame_y": 278,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.3809,
+     45.665
+    ]
+   },
+   "properties": {
+    "id": "calenardhon",
+    "name": "Calenardhon",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 560,
+    "frame_y": 388,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9296,
+     44.1868
+    ]
+   },
+   "properties": {
+    "id": "calenhad",
+    "name": "Calenhad",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 620,
+    "frame_y": 320,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3281,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "caradhras",
+    "name": "Caradhras",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "misty mountains",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 502,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5143,
+     49.0129
+    ]
+   },
+   "properties": {
+    "id": "caras galadhon",
+    "name": "Caras Galadhon",
+    "types": "MAN_MADE_CITY",
+    "ages": "TA",
+    "parents": "lothlorien",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 543,
+    "frame_y": 542,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.7015,
+     50.2737
+    ]
+   },
+   "properties": {
+    "id": "cardolan",
+    "name": "Cardolan",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 305,
+    "frame_y": 600,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8651,
+     55.0129
+    ]
+   },
+   "properties": {
+    "id": "carn dum",
+    "name": "Carn Dûm",
+    "types": "MAN_MADE_FORTRESS,NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "angmar",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 485,
+    "frame_y": 818,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.9,
+     51.5781
+    ]
+   },
+   "properties": {
+    "id": "carnen",
+    "name": "Carnen",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 880,
+    "frame_y": 660,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5871,
+     43.1216
+    ]
+   },
+   "properties": {
+    "id": "causeway forts",
+    "name": "Causeway Forts",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 750,
+    "frame_y": 271,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.2082,
+     53.7085
+    ]
+   },
+   "properties": {
+    "id": "celduin",
+    "name": "Celduin",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 748,
+    "frame_y": 758,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2392,
+     49.7955
+    ]
+   },
+   "properties": {
+    "id": "celebdil",
+    "name": "Celebdil",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 500,
+    "frame_y": 578,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0987,
+     49.4042
+    ]
+   },
+   "properties": {
+    "id": "celebrant",
+    "name": "Celebrant",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 528,
+    "frame_y": 560,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.2309,
+     50.4368
+    ]
+   },
+   "properties": {
+    "id": "celebros",
+    "name": "Celebros",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 491,
+    "frame_y": 499,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.0805,
+     51.502
+    ]
+   },
+   "properties": {
+    "id": "celon",
+    "name": "Celon",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 686,
+    "frame_y": 597,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1549,
+     42.6216
+    ]
+   },
+   "properties": {
+    "id": "celos",
+    "name": "Celos",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 672,
+    "frame_y": 248,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4429,
+     49.1433
+    ]
+   },
+   "properties": {
+    "id": "cerin amroth",
+    "name": "Cerin Amroth",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "FoA,TA",
+    "parents": "lothlorien",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 548,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0837,
+     52.2085
+    ]
+   },
+   "properties": {
+    "id": "chetwood",
+    "name": "Chetwood",
+    "types": "NATURAL_FOREST",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 284,
+    "frame_y": 689,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.7392,
+     50.6216
+    ]
+   },
+   "properties": {
+    "id": "cirith ninniach",
+    "name": "Cirith Ninniach",
+    "types": "NATURAL_PASS",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "FA",
+    "frame_x": 172,
+    "frame_y": 516,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5402,
+     43.0129
+    ]
+   },
+   "properties": {
+    "id": "cirith ungol",
+    "name": "Cirith Ungol",
+    "types": "NATURAL_PASS,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 783,
+    "frame_y": 266,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9407,
+     52.1868
+    ]
+   },
+   "properties": {
+    "id": "combe",
+    "name": "Combe",
+    "types": "POLITY_REGION",
+    "ages": "SA,TA",
+    "parents": "bree",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 280,
+    "frame_y": 688,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1394,
+     51.5346
+    ]
+   },
+   "properties": {
+    "id": "crickhollow",
+    "name": "Crickhollow",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 250,
+    "frame_y": 658,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.5982,
+     50.5455
+    ]
+   },
+   "properties": {
+    "id": "crossings of teiglin",
+    "name": "Crossings of Teiglin",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 471,
+    "frame_y": 509,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.6637,
+     45.3172
+    ]
+   },
+   "properties": {
+    "id": "dagorlad",
+    "name": "Dagorlad",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 733,
+    "frame_y": 372,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.2082,
+     53.7085
+    ]
+   },
+   "properties": {
+    "id": "dale",
+    "name": "Dale",
+    "types": "MAN_MADE_TOWN,NATURAL_VALLEY,MAN_MADE_CITY",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 748,
+    "frame_y": 758,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.8997,
+     54.2303
+    ]
+   },
+   "properties": {
+    "id": "desolation of smaug",
+    "name": "Desolation of Smaug",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 760,
+    "frame_y": 782,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.8413,
+     51.2846
+    ]
+   },
+   "properties": {
+    "id": "dimbar",
+    "name": "Dimbar",
+    "types": "POLITY_REGION",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 525,
+    "frame_y": 577,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6168,
+     49.665
+    ]
+   },
+   "properties": {
+    "id": "dimrill gate",
+    "name": "Dimrill Gate",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 512,
+    "frame_y": 572,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.347,
+     41.1433
+    ]
+   },
+   "properties": {
+    "id": "dol amroth",
+    "name": "Dol Amroth",
+    "types": "MAN_MADE_CITY,MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 620,
+    "frame_y": 180,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4816,
+     49.3172
+    ]
+   },
+   "properties": {
+    "id": "dol guldur",
+    "name": "Dol Guldur",
+    "types": "MAN_MADE_FORTRESS,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "mirkwood",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 600,
+    "frame_y": 556,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.756,
+     41.7955
+    ]
+   },
+   "properties": {
+    "id": "dor en ernil",
+    "name": "Dor-en-Ernil",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 630,
+    "frame_y": 210,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.7458,
+     47.4911
+    ]
+   },
+   "properties": {
+    "id": "dor firn i guinar",
+    "name": "Dor Firn-i-Guinar",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 855,
+    "frame_y": 228,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.5871,
+     51.0129
+    ]
+   },
+   "properties": {
+    "id": "doriath",
+    "name": "Doriath",
+    "types": "POLITY_REALM",
+    "ages": "FA,YT",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 594,
+    "frame_y": 552,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.3414,
+     51.5455
+    ]
+   },
+   "properties": {
+    "id": "dorlomin",
+    "name": "Dor-lómin (House of Hador)",
+    "types": "POLITY_REALM,POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 271,
+    "frame_y": 601,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.3626,
+     52.752
+    ]
+   },
+   "properties": {
+    "id": "dorthonion",
+    "name": "Dorthonion",
+    "types": "POLITY_REALM",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 627,
+    "frame_y": 712,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.781,
+     49.5781
+    ]
+   },
+   "properties": {
+    "id": "dorwinion",
+    "name": "Dorwinion",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "L",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 935,
+    "frame_y": 568,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3316,
+     43.5998
+    ]
+   },
+   "properties": {
+    "id": "druadan",
+    "name": "Druadan",
+    "types": "NATURAL_FOREST",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 704,
+    "frame_y": 293,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0142,
+     42.7085
+    ]
+   },
+   "properties": {
+    "id": "druwaith iaur",
+    "name": "Druwaith Iaur",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 430,
+    "frame_y": 252,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5855,
+     47.839
+    ]
+   },
+   "properties": {
+    "id": "duilwen",
+    "name": "Duilwen",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 805,
+    "frame_y": 260,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4658,
+     44.6868
+    ]
+   },
+   "properties": {
+    "id": "dunharrow",
+    "name": "Dunharrow",
+    "types": "MAN_MADE_REFUGE,MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 536,
+    "frame_y": 343,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6215,
+     47.4477
+    ]
+   },
+   "properties": {
+    "id": "dunland",
+    "name": "Dunland",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 432,
+    "frame_y": 470,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6371,
+     49.5998
+    ]
+   },
+   "properties": {
+    "id": "durin s stone",
+    "name": "Durin's Stone",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "TA",
+    "parents": "khazaddum",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 513,
+    "frame_y": 569,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.7979,
+     44.665
+    ]
+   },
+   "properties": {
+    "id": "durthang",
+    "name": "Durthang",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 776,
+    "frame_y": 342,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7988,
+     51.9694
+    ]
+   },
+   "properties": {
+    "id": "eagles eyrie",
+    "name": "Eagles' Eyrie",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 503,
+    "frame_y": 678,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.1459,
+     50.3933
+    ]
+   },
+   "properties": {
+    "id": "east beleriand",
+    "name": "East Beleriand",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 730,
+    "frame_y": 495,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.033,
+     46.5781
+    ]
+   },
+   "properties": {
+    "id": "east emnet",
+    "name": "East-Emnet",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 575,
+    "frame_y": 430,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.033,
+     46.5781
+    ]
+   },
+   "properties": {
+    "id": "eastemnet",
+    "name": "Eastemnet",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 575,
+    "frame_y": 430,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5135,
+     44.7303
+    ]
+   },
+   "properties": {
+    "id": "eastfold",
+    "name": "Eastfold",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 570,
+    "frame_y": 345,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.0435,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "echoriath",
+    "name": "Echoriath",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 578,
+    "frame_y": 630,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4436,
+     41.3607
+    ]
+   },
+   "properties": {
+    "id": "edhellond",
+    "name": "Edhellond",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 622,
+    "frame_y": 190,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4178,
+     44.9477
+    ]
+   },
+   "properties": {
+    "id": "edoras",
+    "name": "Edoras",
+    "types": "MAN_MADE_CITY,NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 533,
+    "frame_y": 355,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4178,
+     44.9477
+    ]
+   },
+   "properties": {
+    "id": "edoras meduseld",
+    "name": "Edoras/Meduseld",
+    "types": "MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 533,
+    "frame_y": 355,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -16.1239,
+     48.4585
+    ]
+   },
+   "properties": {
+    "id": "eglarest",
+    "name": "Eglarest",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "FA",
+    "parents": "falas",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 227,
+    "frame_y": 317,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.1776,
+     43.7085
+    ]
+   },
+   "properties": {
+    "id": "eilenach",
+    "name": "Eilenach",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 698,
+    "frame_y": 298,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.2923,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "eithel ivrin",
+    "name": "Eithel Ivrin",
+    "types": "NATURAL_FALLS,NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 442,
+    "frame_y": 580,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.7485,
+     51.7085
+    ]
+   },
+   "properties": {
+    "id": "elostirion tower",
+    "name": "Elostirion tower",
+    "types": "MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 147,
+    "frame_y": 666,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.3544,
+     53.4911
+    ]
+   },
+   "properties": {
+    "id": "elvenking s halls",
+    "name": "Elvenking's Halls",
+    "types": "MAN_MADE_CITY,MAN_MADE_HALL,NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "mirkwood",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 700,
+    "frame_y": 748,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.8799,
+     42.5346
+    ]
+   },
+   "properties": {
+    "id": "emyn arnen",
+    "name": "Emyn Arnen",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 765,
+    "frame_y": 244,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7469,
+     46.2303
+    ]
+   },
+   "properties": {
+    "id": "emyn muil",
+    "name": "Emyn Muil",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 600,
+    "frame_y": 414,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2845,
+     46.5781
+    ]
+   },
+   "properties": {
+    "id": "enedwaith",
+    "name": "Enedwaith",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 330,
+    "frame_y": 430,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2871,
+     45.165
+    ]
+   },
+   "properties": {
+    "id": "entwade",
+    "name": "Entwade",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 560,
+    "frame_y": 365,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1747,
+     45.0563
+    ]
+   },
+   "properties": {
+    "id": "entwash",
+    "name": "Entwash",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 557,
+    "frame_y": 360,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.0815,
+     51.3607
+    ]
+   },
+   "properties": {
+    "id": "eol s house",
+    "name": "Eol's house",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 742,
+    "frame_y": 584,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0845,
+     55.4477
+    ]
+   },
+   "properties": {
+    "id": "eotheod",
+    "name": "Eothéod",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 838,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.0762,
+     50.7303
+    ]
+   },
+   "properties": {
+    "id": "ephel brandir",
+    "name": "Ephel Brandir",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 504,
+    "frame_y": 526,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5342,
+     43.0998
+    ]
+   },
+   "properties": {
+    "id": "ephel duath",
+    "name": "Ephel Duath",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 782,
+    "frame_y": 270,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.2319,
+     53.839
+    ]
+   },
+   "properties": {
+    "id": "erebor",
+    "name": "Erebor",
+    "types": "MAN_MADE_CITY,NATURAL_PEAK,MAN_MADE_GATE",
+    "ages": "TA",
+    "parents": "dale",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 747,
+    "frame_y": 764,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.2043,
+     52.2085
+    ]
+   },
+   "properties": {
+    "id": "ered gorgoroth",
+    "name": "Ered Gorgoroth",
+    "types": "NATURAL_PEAK",
+    "ages": "FA",
+    "parents": "dorthonion",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 686,
+    "frame_y": 662,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.8475,
+     44.9477
+    ]
+   },
+   "properties": {
+    "id": "ered lithui",
+    "name": "Ered Lithui",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 840,
+    "frame_y": 355,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.4897,
+     52.165
+    ]
+   },
+   "properties": {
+    "id": "ered lomin",
+    "name": "Ered Lomin",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 218,
+    "frame_y": 658,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.1509,
+     51.2411
+    ]
+   },
+   "properties": {
+    "id": "ered wethrin",
+    "name": "Ered Wethrin",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 449,
+    "frame_y": 573,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.942,
+     43.9694
+    ]
+   },
+   "properties": {
+    "id": "erelas",
+    "name": "Erelas",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 655,
+    "frame_y": 310,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.2906,
+     50.8824
+    ]
+   },
+   "properties": {
+    "id": "eriador",
+    "name": "Eriador",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 350,
+    "frame_y": 628,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.7709,
+     42.339
+    ]
+   },
+   "properties": {
+    "id": "erui",
+    "name": "Erui",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 695,
+    "frame_y": 235,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.2017,
+     48.0998
+    ]
+   },
+   "properties": {
+    "id": "eryn vorn",
+    "name": "Eryn Vorn",
+    "types": "NATURAL_FOREST",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 189,
+    "frame_y": 500,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.6939,
+     51.1977
+    ]
+   },
+   "properties": {
+    "id": "esgalduin",
+    "name": "Esgalduin",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 590,
+    "frame_y": 569,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.0765,
+     53.0998
+    ]
+   },
+   "properties": {
+    "id": "esgaroth",
+    "name": "Esgaroth (Lake-town)",
+    "types": "MAN_MADE_TOWN,NATURAL_LAKE,MAN_MADE_CITY",
+    "ages": "TA",
+    "parents": "dale",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 752,
+    "frame_y": 730,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5552,
+     51.165
+    ]
+   },
+   "properties": {
+    "id": "estolad",
+    "name": "Estolad",
+    "types": "UNCLASSIFIED",
+    "ages": "FA",
+    "parents": "ladros",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 713,
+    "frame_y": 566,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.186,
+     40.5346
+    ]
+   },
+   "properties": {
+    "id": "ethir anduin",
+    "name": "Ethir Anduin",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 688,
+    "frame_y": 152,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6261,
+     53.339
+    ]
+   },
+   "properties": {
+    "id": "ettenmoors",
+    "name": "Ettenmoors",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "rhudaur",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 462,
+    "frame_y": 741,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7988,
+     51.9694
+    ]
+   },
+   "properties": {
+    "id": "eyrie",
+    "name": "the Eyrie",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 503,
+    "frame_y": 678,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.7884,
+     49.002
+    ]
+   },
+   "properties": {
+    "id": "falas",
+    "name": "The Falas",
+    "types": "POLITY_REALM",
+    "ages": "FA,YT",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 257,
+    "frame_y": 367,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0608,
+     47.4259
+    ]
+   },
+   "properties": {
+    "id": "fangorn",
+    "name": "Fangorn",
+    "types": "NATURAL_FOREST,MAN_MADE_HALL",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 508,
+    "frame_y": 469,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4033,
+     49.7737
+    ]
+   },
+   "properties": {
+    "id": "fanuidhol",
+    "name": "Fanuidhol",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 505,
+    "frame_y": 577,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.971,
+     51.5563
+    ]
+   },
+   "properties": {
+    "id": "far downs",
+    "name": "Far Downs",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 169,
+    "frame_y": 659,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.7971,
+     52.9259
+    ]
+   },
+   "properties": {
+    "id": "fen of serech",
+    "name": "Fen of Serech",
+    "types": "NATURAL_MARSH",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 494,
+    "frame_y": 728,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5008,
+     44.165
+    ]
+   },
+   "properties": {
+    "id": "firien wood",
+    "name": "Firien Wood",
+    "types": "NATURAL_FOREST",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 606,
+    "frame_y": 319,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -19.3592,
+     52.2303
+    ]
+   },
+   "properties": {
+    "id": "firth of drengist",
+    "name": "Firth of Drengist",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -292,
+    "frame_y": 690,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0398,
+     51.8824
+    ]
+   },
+   "properties": {
+    "id": "ford of bruinen",
+    "name": "Ford of Bruinen",
+    "types": "NATURAL_FORD",
+    "ages": "TA",
+    "parents": "rhudaur,rivendell",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 482,
+    "frame_y": 674,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0441,
+     45.1216
+    ]
+   },
+   "properties": {
+    "id": "fords of isen",
+    "name": "Fords of Isen",
+    "types": "MAN_MADE_CROSSING,NATURAL_ISLAND",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "High",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 455,
+    "frame_y": 363,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.8833,
+     51.665
+    ]
+   },
+   "properties": {
+    "id": "forest gate",
+    "name": "Forest Gate",
+    "types": "MAN_MADE_GATE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 650,
+    "frame_y": 664,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.3743,
+     53.3172
+    ]
+   },
+   "properties": {
+    "id": "forest river",
+    "name": "Forest River",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 730,
+    "frame_y": 740,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5523,
+     52.5781
+    ]
+   },
+   "properties": {
+    "id": "forlindon",
+    "name": "Forlindon",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 70,
+    "frame_y": 706,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.3445,
+     51.839
+    ]
+   },
+   "properties": {
+    "id": "forlond",
+    "name": "Forlond",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 45,
+    "frame_y": 672,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6463,
+     53.5781
+    ]
+   },
+   "properties": {
+    "id": "fornost erain",
+    "name": "Fornost Erain",
+    "types": "MAN_MADE_CITY,MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "arthedain",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 270,
+    "frame_y": 752,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2067,
+     57.9911
+    ]
+   },
+   "properties": {
+    "id": "forodwaith",
+    "name": "Forodwaith",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 400,
+    "frame_y": 955,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1134,
+     52.0998
+    ]
+   },
+   "properties": {
+    "id": "forsaken inn",
+    "name": "Forsaken Inn",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 285,
+    "frame_y": 684,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9969,
+     55.165
+    ]
+   },
+   "properties": {
+    "id": "framsburg",
+    "name": "Framsburg",
+    "types": "MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "eotheod",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 825,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.767,
+     51.665
+    ]
+   },
+   "properties": {
+    "id": "frogmorton",
+    "name": "Frogmorton",
+    "types": "MAN_MADE_VILLAGE",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 232,
+    "frame_y": 664,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.56,
+     48.8498
+    ]
+   },
+   "properties": {
+    "id": "gelion",
+    "name": "Gelion",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 813,
+    "frame_y": 353,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3889,
+     41.752
+    ]
+   },
+   "properties": {
+    "id": "gilrain",
+    "name": "Gilrain",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 652,
+    "frame_y": 208,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.7212,
+     50.3933
+    ]
+   },
+   "properties": {
+    "id": "ginglith",
+    "name": "Ginglith",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 403,
+    "frame_y": 495,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7109,
+     50.4477
+    ]
+   },
+   "properties": {
+    "id": "gladden",
+    "name": "Gladden",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 510,
+    "frame_y": 608,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1261,
+     50.3172
+    ]
+   },
+   "properties": {
+    "id": "gladden fields",
+    "name": "Gladden Fields",
+    "types": "NATURAL_PLAIN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 523,
+    "frame_y": 602,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3891,
+     48.5346
+    ]
+   },
+   "properties": {
+    "id": "glanduin",
+    "name": "Glanduin",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 390,
+    "frame_y": 520,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.283,
+     50.8824
+    ]
+   },
+   "properties": {
+    "id": "glithui",
+    "name": "Glithui",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 436,
+    "frame_y": 540,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.439,
+     51.7737
+    ]
+   },
+   "properties": {
+    "id": "goblin gate",
+    "name": "Goblin-gate (High Pass)",
+    "types": "MAN_MADE_GATE,NATURAL_PASS",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 494,
+    "frame_y": 669,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.8003,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "gondolin",
+    "name": "Gondolin",
+    "types": "MAN_MADE_CITY",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 535,
+    "frame_y": 630,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.8095,
+     42.665
+    ]
+   },
+   "properties": {
+    "id": "gondor",
+    "name": "Gondor",
+    "types": "POLITY_REALM",
+    "ages": "FoA,SA,TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 660,
+    "frame_y": 250,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.4192,
+     44.2955
+    ]
+   },
+   "properties": {
+    "id": "gorgoroth",
+    "name": "Gorgoroth",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 800,
+    "frame_y": 325,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -21.4454,
+     47.4477
+    ]
+   },
+   "properties": {
+    "id": "great sea",
+    "name": "The Great Sea",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -410,
+    "frame_y": 470,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.049,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "green hills",
+    "name": "Green Hills",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 224,
+    "frame_y": 648,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.0296,
+     51.5781
+    ]
+   },
+   "properties": {
+    "id": "grey havens",
+    "name": "Grey Havens (Mithlond)",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "lindon",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 53,
+    "frame_y": 660,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.8615,
+     55.665
+    ]
+   },
+   "properties": {
+    "id": "grey mountains",
+    "name": "Grey Mountains (Ered Mithrin)",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 740,
+    "frame_y": 848,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4263,
+     48.3824
+    ]
+   },
+   "properties": {
+    "id": "greyflood",
+    "name": "Greyflood",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 300,
+    "frame_y": 513,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9969,
+     55.165
+    ]
+   },
+   "properties": {
+    "id": "greylin",
+    "name": "Greylin",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 825,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.2607,
+     51.6216
+    ]
+   },
+   "properties": {
+    "id": "gulf of lhun",
+    "name": "Gulf of Lhun",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 18,
+    "frame_y": 662,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.6344,
+     54.7737
+    ]
+   },
+   "properties": {
+    "id": "gundabad",
+    "name": "Gundabad",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 507,
+    "frame_y": 807,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4965,
+     44.2955
+    ]
+   },
+   "properties": {
+    "id": "halifirien",
+    "name": "Halifirien",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 605,
+    "frame_y": 325,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4965,
+     44.2955
+    ]
+   },
+   "properties": {
+    "id": "halifirien hallow",
+    "name": "Halifirien hallow",
+    "types": "MAN_MADE_HALLOW",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 605,
+    "frame_y": 325,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.9841,
+     50.5998
+    ]
+   },
+   "properties": {
+    "id": "harlindon",
+    "name": "Harlindon",
+    "types": "NATURAL_GULF",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 80,
+    "frame_y": 615,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.275,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "harlond",
+    "name": "Harlond",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 45,
+    "frame_y": 648,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.418,
+     42.9259
+    ]
+   },
+   "properties": {
+    "id": "harlond gondor quays",
+    "name": "Harlond (Gondor quays)",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 746,
+    "frame_y": 262,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.275,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "harlond lindon",
+    "name": "Harlond (Lindon)",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "lindon",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 45,
+    "frame_y": 648,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4496,
+     40.165
+    ]
+   },
+   "properties": {
+    "id": "harnen",
+    "name": "Harnen",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 735,
+    "frame_y": 135,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.8705,
+     53.5563
+    ]
+   },
+   "properties": {
+    "id": "haudh en ndengin",
+    "name": "Haudh-en-Ndengin",
+    "types": "MAN_MADE_TOMB,NATURAL_PEAK",
+    "ages": "FA",
+    "parents": "angband",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 554,
+    "frame_y": 786,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -27.0141,
+     57.9911
+    ]
+   },
+   "properties": {
+    "id": "helcaraxe",
+    "name": "Helcaraxe",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -410,
+    "frame_y": 955,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.7944,
+     52.6868
+    ]
+   },
+   "properties": {
+    "id": "helevorn",
+    "name": "Helevorn",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 881,
+    "frame_y": 706,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9277,
+     44.4042
+    ]
+   },
+   "properties": {
+    "id": "helm s deep",
+    "name": "Helm's Deep",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 487,
+    "frame_y": 330,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.1142,
+     43.752
+    ]
+   },
+   "properties": {
+    "id": "henneth annun",
+    "name": "Henneth Annûn",
+    "types": "MAN_MADE_REFUGE,MAN_MADE_HALL",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 762,
+    "frame_y": 300,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2944,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "high pass",
+    "name": "High Pass",
+    "types": "NATURAL_PASS",
+    "ages": "TA",
+    "parents": "beornings",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 501,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1106,
+     53.752
+    ]
+   },
+   "properties": {
+    "id": "hills of evendim",
+    "name": "Hills of Evendim",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 222,
+    "frame_y": 760,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6675,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "himlad",
+    "name": "Himlad",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 713,
+    "frame_y": 630,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.7248,
+     52.5237
+    ]
+   },
+   "properties": {
+    "id": "himring",
+    "name": "Himring",
+    "types": "MAN_MADE_FORTRESS,NATURAL_HILL",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 772,
+    "frame_y": 691,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.4539,
+     52.3933
+    ]
+   },
+   "properties": {
+    "id": "hithlum",
+    "name": "Hithlum",
+    "types": "POLITY_REALM",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 337,
+    "frame_y": 679,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9728,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "hoarwell",
+    "name": "Hoarwell",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 395,
+    "frame_y": 673,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2577,
+     51.752
+    ]
+   },
+   "properties": {
+    "id": "hobbiton",
+    "name": "Hobbiton",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 218,
+    "frame_y": 668,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2577,
+     51.752
+    ]
+   },
+   "properties": {
+    "id": "hobbiton bag end",
+    "name": "Hobbiton + Bag End",
+    "types": "MAN_MADE_TOWN,MAN_MADE_CITY",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 218,
+    "frame_y": 668,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9277,
+     44.4042
+    ]
+   },
+   "properties": {
+    "id": "hornburg helm s deep",
+    "name": "Hornburg/Helm's Deep",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 487,
+    "frame_y": 330,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.6161,
+     51.752
+    ]
+   },
+   "properties": {
+    "id": "iant iaur",
+    "name": "Iant Iaur",
+    "types": "MAN_MADE_BRIDGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 601,
+    "frame_y": 620,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.4036,
+     42.9477
+    ]
+   },
+   "properties": {
+    "id": "imlad morgul",
+    "name": "Imlad Morgul",
+    "types": "NATURAL_VALLEY",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 779,
+    "frame_y": 263,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4257,
+     53.9694
+    ]
+   },
+   "properties": {
+    "id": "iron hills",
+    "name": "Iron Hills",
+    "types": "NATURAL_MOUNTAIN_RANGE,NATURAL_HILL,MAN_MADE_HALL",
+    "ages": "TA",
+    "parents": "ironhills",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 940,
+    "frame_y": 770,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2174,
+     44.6216
+    ]
+   },
+   "properties": {
+    "id": "isen",
+    "name": "Isen",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 430,
+    "frame_y": 340,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2614,
+     45.5998
+    ]
+   },
+   "properties": {
+    "id": "isengard",
+    "name": "Isengard",
+    "types": "MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 460,
+    "frame_y": 385,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2614,
+     45.5998
+    ]
+   },
+   "properties": {
+    "id": "isengard orthanc",
+    "name": "Isengard/Orthanc",
+    "types": "MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 460,
+    "frame_y": 385,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.9796,
+     44.5563
+    ]
+   },
+   "properties": {
+    "id": "isenmouthe",
+    "name": "Isenmouthe",
+    "types": "MAN_MADE_GATE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 783,
+    "frame_y": 337,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.9659,
+     43.4259
+    ]
+   },
+   "properties": {
+    "id": "ithilien",
+    "name": "Ithilien",
+    "types": "POLITY_SUBREGION,NATURAL_FOREST",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 760,
+    "frame_y": 285,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.2167,
+     51.3607
+    ]
+   },
+   "properties": {
+    "id": "ivrin",
+    "name": "Ivrin",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "hithlum",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 447,
+    "frame_y": 584,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.0293,
+     40.2737
+    ]
+   },
+   "properties": {
+    "id": "khand",
+    "name": "Khand",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 930,
+    "frame_y": 140,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3281,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "khazaddum",
+    "name": "Khazad-dûm",
+    "types": "MAN_MADE_MANSION,POLITY_REALM",
+    "ages": "SA,TA,YT",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 502,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6365,
+     53.4911
+    ]
+   },
+   "properties": {
+    "id": "lake evendim",
+    "name": "Lake Evendim",
+    "types": "NATURAL_LAKE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 235,
+    "frame_y": 748,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.1901,
+     52.1216
+    ]
+   },
+   "properties": {
+    "id": "lake mithrim",
+    "name": "Lake Mithrim",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 347,
+    "frame_y": 654,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.9793,
+     43.4259
+    ]
+   },
+   "properties": {
+    "id": "lamedon",
+    "name": "Lamedon",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 560,
+    "frame_y": 285,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -18.9831,
+     52.665
+    ]
+   },
+   "properties": {
+    "id": "lammoth",
+    "name": "Lammoth",
+    "types": "POLITY_REGION",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 145,
+    "frame_y": 704,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9969,
+     55.165
+    ]
+   },
+   "properties": {
+    "id": "langwell",
+    "name": "Langwell",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 825,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9728,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "last bridge",
+    "name": "Last Bridge",
+    "types": "MAN_MADE_BRIDGE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 395,
+    "frame_y": 673,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.7191,
+     42.2303
+    ]
+   },
+   "properties": {
+    "id": "lebennin",
+    "name": "Lebennin",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 660,
+    "frame_y": 230,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5628,
+     48.7194
+    ]
+   },
+   "properties": {
+    "id": "legolin",
+    "name": "Legolin",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 812,
+    "frame_y": 341,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.8248,
+     51.9042
+    ]
+   },
+   "properties": {
+    "id": "lhun",
+    "name": "Lhun (Lune)",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 60,
+    "frame_y": 675,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0074,
+     48.6433
+    ]
+   },
+   "properties": {
+    "id": "limlight",
+    "name": "Limlight",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 530,
+    "frame_y": 525,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.4281,
+     50.7629
+    ]
+   },
+   "properties": {
+    "id": "linaewen",
+    "name": "Linaewen",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 193,
+    "frame_y": 529,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.2315,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "lindon",
+    "name": "Lindon",
+    "types": "POLITY_REALM",
+    "ages": "SA,TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 75,
+    "frame_y": 648,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3889,
+     41.752
+    ]
+   },
+   "properties": {
+    "id": "linhir",
+    "name": "Linhir",
+    "types": "MAN_MADE_CROSSING,MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 652,
+    "frame_y": 208,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.8863,
+     44.4042
+    ]
+   },
+   "properties": {
+    "id": "lithlad",
+    "name": "Lithlad",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 880,
+    "frame_y": 330,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5133,
+     47.1216
+    ]
+   },
+   "properties": {
+    "id": "lond daer",
+    "name": "Lond Daer",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 210,
+    "frame_y": 455,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.003,
+     52.4477
+    ]
+   },
+   "properties": {
+    "id": "long lake",
+    "name": "Long Lake",
+    "types": "NATURAL_LAKE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 758,
+    "frame_y": 700,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.6974,
+     53.1433
+    ]
+   },
+   "properties": {
+    "id": "long marshes",
+    "name": "Long Marshes",
+    "types": "NATURAL_MARSH",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 741,
+    "frame_y": 732,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.391,
+     49.0563
+    ]
+   },
+   "properties": {
+    "id": "lorien",
+    "name": "Lorien",
+    "types": "NATURAL_FOREST",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 539,
+    "frame_y": 544,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -19.5685,
+     52.3933
+    ]
+   },
+   "properties": {
+    "id": "losgar",
+    "name": "Losgar",
+    "types": "NATURAL_COAST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 106,
+    "frame_y": 679,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5247,
+     53.7846
+    ]
+   },
+   "properties": {
+    "id": "lothlann",
+    "name": "Lothlann",
+    "types": "NATURAL_PLAIN",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 739,
+    "frame_y": 807,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7813,
+     51.1433
+    ]
+   },
+   "properties": {
+    "id": "loudwater",
+    "name": "Loudwater",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 450,
+    "frame_y": 640,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.7333,
+     52.165
+    ]
+   },
+   "properties": {
+    "id": "maglor s gap",
+    "name": "Maglor'S Gap",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 825,
+    "frame_y": 658,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.1025,
+     50.8498
+    ]
+   },
+   "properties": {
+    "id": "malduin",
+    "name": "Malduin",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 446,
+    "frame_y": 537,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.6872,
+     51.165
+    ]
+   },
+   "properties": {
+    "id": "menegroth",
+    "name": "Menegroth",
+    "types": "MAN_MADE_CITY,MAN_MADE_HALL",
+    "ages": "FA",
+    "parents": "doriath",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 590,
+    "frame_y": 566,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5012,
+     44.6216
+    ]
+   },
+   "properties": {
+    "id": "mering",
+    "name": "Mering",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 603,
+    "frame_y": 340,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6805,
+     45.9259
+    ]
+   },
+   "properties": {
+    "id": "methedras",
+    "name": "Methedras",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "misty mountains",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 472,
+    "frame_y": 400,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.4826,
+     51.5998
+    ]
+   },
+   "properties": {
+    "id": "michel delving",
+    "name": "Michel Delving",
+    "types": "MAN_MADE_TOWN,MAN_MADE_CITY",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 183,
+    "frame_y": 661,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8122,
+     51.9694
+    ]
+   },
+   "properties": {
+    "id": "midgewater",
+    "name": "Midgewater",
+    "types": "NATURAL_MARSH",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 305,
+    "frame_y": 678,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5124,
+     44.0781
+    ]
+   },
+   "properties": {
+    "id": "min rimmon",
+    "name": "Min-Rimmon",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 640,
+    "frame_y": 315,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.4036,
+     42.9477
+    ]
+   },
+   "properties": {
+    "id": "minas morgul",
+    "name": "Minas Morgul",
+    "types": "MAN_MADE_CITY,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 779,
+    "frame_y": 263,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3918,
+     43.0563
+    ]
+   },
+   "properties": {
+    "id": "minas tirith",
+    "name": "Minas Tirith",
+    "types": "MAN_MADE_CITY,MAN_MADE_WALL",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 744,
+    "frame_y": 268,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.5706,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "mindeb",
+    "name": "Mindeb",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 541,
+    "frame_y": 580,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2948,
+     43.1433
+    ]
+   },
+   "properties": {
+    "id": "mindolluin",
+    "name": "Mindolluin",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 740,
+    "frame_y": 272,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0243,
+     49.2955
+    ]
+   },
+   "properties": {
+    "id": "minhiriath",
+    "name": "Minhiriath",
+    "types": "POLITY_REGION",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 255,
+    "frame_y": 555,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.8833,
+     51.665
+    ]
+   },
+   "properties": {
+    "id": "mirkwood",
+    "name": "Mirkwood (Greenwood the Great / Eryn Lasgalen)",
+    "types": "NATURAL_FOREST",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 650,
+    "frame_y": 664,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7668,
+     49.5781
+    ]
+   },
+   "properties": {
+    "id": "mirrormere",
+    "name": "Mirrormere (Kheled-zaram)",
+    "types": "NATURAL_LAKE",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 517,
+    "frame_y": 568,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2944,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "misty mountains",
+    "name": "Misty Mountains (Hithaeglir)",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 501,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.3329,
+     52.0129
+    ]
+   },
+   "properties": {
+    "id": "mithrim",
+    "name": "Mithrim",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 337,
+    "frame_y": 644,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.394,
+     43.5346
+    ]
+   },
+   "properties": {
+    "id": "mordor",
+    "name": "Mordor",
+    "types": "POLITY_REALM",
+    "ages": "SA,TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 840,
+    "frame_y": 290,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.804,
+     43.4259
+    ]
+   },
+   "properties": {
+    "id": "morgai",
+    "name": "Morgai (inner ridge)",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 788,
+    "frame_y": 285,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.0117,
+     42.9259
+    ]
+   },
+   "properties": {
+    "id": "morgulduin",
+    "name": "Morgulduin",
+    "types": "NATURAL_RIVER",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 766,
+    "frame_y": 262,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6168,
+     49.665
+    ]
+   },
+   "properties": {
+    "id": "moria east gate dimrill",
+    "name": "Moria East-gate/Dimrill",
+    "types": "MAN_MADE_GATE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 512,
+    "frame_y": 572,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9025,
+     49.7955
+    ]
+   },
+   "properties": {
+    "id": "moria west door",
+    "name": "Moria West-door",
+    "types": "MAN_MADE_GATE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 490,
+    "frame_y": 578,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.4192,
+     44.2955
+    ]
+   },
+   "properties": {
+    "id": "mount doom",
+    "name": "Mount Doom (Orodruin)",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 800,
+    "frame_y": 325,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.1888,
+     46.752
+    ]
+   },
+   "properties": {
+    "id": "mouths of sirion",
+    "name": "Mouths of Sirion",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -95,
+    "frame_y": 438,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.1136,
+     52.1433
+    ]
+   },
+   "properties": {
+    "id": "nan dungortheb",
+    "name": "Nan Dungortheb",
+    "types": "NATURAL_VALLEY",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 634,
+    "frame_y": 656,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.0515,
+     51.3933
+    ]
+   },
+   "properties": {
+    "id": "nan elmoth",
+    "name": "Nan Elmoth",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 744,
+    "frame_y": 587,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.3704,
+     47.7955
+    ]
+   },
+   "properties": {
+    "id": "nan tathren",
+    "name": "Nan-tathren",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 509,
+    "frame_y": 256,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4305,
+     43.8607
+    ]
+   },
+   "properties": {
+    "id": "nardol",
+    "name": "Nardol",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 672,
+    "frame_y": 305,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.6195,
+     50.002
+    ]
+   },
+   "properties": {
+    "id": "nargothrond",
+    "name": "Nargothrond",
+    "types": "MAN_MADE_CITY,MAN_MADE_HALL",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 403,
+    "frame_y": 459,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.1905,
+     49.1542
+    ]
+   },
+   "properties": {
+    "id": "narog",
+    "name": "Narog",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 416,
+    "frame_y": 381,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.3063,
+     38.5346
+    ]
+   },
+   "properties": {
+    "id": "near harad",
+    "name": "Near Harad",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 850,
+    "frame_y": 60,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -10.9568,
+     51.6216
+    ]
+   },
+   "properties": {
+    "id": "neldoreth",
+    "name": "Neldoreth",
+    "types": "NATURAL_FOREST",
+    "ages": "FA,YT",
+    "parents": "doriath",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 580,
+    "frame_y": 608,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0801,
+     46.0346
+    ]
+   },
+   "properties": {
+    "id": "nen hithoel",
+    "name": "Nen Hithoel",
+    "types": "NATURAL_LAKE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 612,
+    "frame_y": 405,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -15.263,
+     49.0781
+    ]
+   },
+   "properties": {
+    "id": "nenning",
+    "name": "Nenning",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 290,
+    "frame_y": 374,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -17.7392,
+     50.6216
+    ]
+   },
+   "properties": {
+    "id": "nevrast",
+    "name": "Nevrast",
+    "types": "POLITY_REGION",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 172,
+    "frame_y": 516,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4617,
+     49.2303
+    ]
+   },
+   "properties": {
+    "id": "nimrodel",
+    "name": "Nimrodel",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 552,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4857,
+     45.2955
+    ]
+   },
+   "properties": {
+    "id": "nindalf",
+    "name": "Nindalf",
+    "types": "NATURAL_MARSH",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 598,
+    "frame_y": 371,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.8847,
+     50.1868
+    ]
+   },
+   "properties": {
+    "id": "nivrim",
+    "name": "Nivrim",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 508,
+    "frame_y": 476,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.7586,
+     49.3063
+    ]
+   },
+   "properties": {
+    "id": "nogrod",
+    "name": "Nogrod",
+    "types": "MAN_MADE_CITY",
+    "ages": "FA,YT",
+    "parents": "lindon,khazaddum",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 924,
+    "frame_y": 395,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5566,
+     45.8172
+    ]
+   },
+   "properties": {
+    "id": "noman lands",
+    "name": "Noman-Lands",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 725,
+    "frame_y": 395,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.7094,
+     53.3607
+    ]
+   },
+   "properties": {
+    "id": "north downs",
+    "name": "North Downs",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 272,
+    "frame_y": 742,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.4309,
+     41.6868
+    ]
+   },
+   "properties": {
+    "id": "nurn",
+    "name": "Nurn",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 860,
+    "frame_y": 205,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7451,
+     52.2303
+    ]
+   },
+   "properties": {
+    "id": "old ford",
+    "name": "Old Ford",
+    "types": "MAN_MADE_CROSSING",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 528,
+    "frame_y": 690,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.8003,
+     51.8607
+    ]
+   },
+   "properties": {
+    "id": "orfalch echor",
+    "name": "Orfalch Echor",
+    "types": "NATURAL_RAVINE,MAN_MADE_GATE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "FA",
+    "frame_x": 535,
+    "frame_y": 630,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.6241,
+     43.0346
+    ]
+   },
+   "properties": {
+    "id": "osgiliath",
+    "name": "Osgiliath",
+    "types": "MAN_MADE_CITY,MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 752,
+    "frame_y": 267,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.8972,
+     48.4694
+    ]
+   },
+   "properties": {
+    "id": "ossiriand",
+    "name": "Ossiriand",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 851,
+    "frame_y": 318,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4584,
+     49.9477
+    ]
+   },
+   "properties": {
+    "id": "ost in edhil",
+    "name": "Ost-in-Edhil",
+    "types": "MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 476,
+    "frame_y": 585,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0801,
+     46.0346
+    ]
+   },
+   "properties": {
+    "id": "parth galen",
+    "name": "Parth Galen",
+    "types": "NATURAL_FIELD",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 612,
+    "frame_y": 405,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.0703,
+     52.4477
+    ]
+   },
+   "properties": {
+    "id": "pass of aglon",
+    "name": "Pass of Aglon",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 752,
+    "frame_y": 684,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.0677,
+     52.1324
+    ]
+   },
+   "properties": {
+    "id": "pass of anach",
+    "name": "Pass of Anach",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 580,
+    "frame_y": 655,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.6266,
+     52.2737
+    ]
+   },
+   "properties": {
+    "id": "pass of sirion",
+    "name": "Pass of Sirion",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 494,
+    "frame_y": 668,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4181,
+     41.5781
+    ]
+   },
+   "properties": {
+    "id": "pelargir",
+    "name": "Pelargir",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "SA,TA",
+    "parents": "gondor",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 723,
+    "frame_y": 200,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7486,
+     42.7955
+    ]
+   },
+   "properties": {
+    "id": "pinnath gelin",
+    "name": "Pinnath Gelin",
+    "types": "NATURAL_HILL",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 522,
+    "frame_y": 256,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.7359,
+     41.9694
+    ]
+   },
+   "properties": {
+    "id": "poros",
+    "name": "Poros",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 765,
+    "frame_y": 218,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.8932,
+     42.0129
+    ]
+   },
+   "properties": {
+    "id": "poros march",
+    "name": "Poros-March",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 770,
+    "frame_y": 220,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.9796,
+     52.7411
+    ]
+   },
+   "properties": {
+    "id": "rerir",
+    "name": "Rerir",
+    "types": "NATURAL_PEAK",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "FA",
+    "frame_x": 871,
+    "frame_y": 711,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3688,
+     52.4477
+    ]
+   },
+   "properties": {
+    "id": "rhosgobel",
+    "name": "Rhosgobel",
+    "types": "MAN_MADE_DWELLING,MAN_MADE_HALL",
+    "ages": "TA",
+    "parents": "mirkwood",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 572,
+    "frame_y": 700,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9119,
+     52.2303
+    ]
+   },
+   "properties": {
+    "id": "rhudaur",
+    "name": "Rhudaur",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 420,
+    "frame_y": 690,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.2089,
+     50.8172
+    ]
+   },
+   "properties": {
+    "id": "rhun",
+    "name": "Rhûn & the Easterling powers",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 900,
+    "frame_y": 625,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0398,
+     51.8824
+    ]
+   },
+   "properties": {
+    "id": "rivendell",
+    "name": "Rivendell (Imladris)",
+    "types": "MAN_MADE_REFUGE,MAN_MADE_HALL",
+    "ages": "FoA,SA,TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 482,
+    "frame_y": 674,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.5447,
+     52.9259
+    ]
+   },
+   "properties": {
+    "id": "rivil",
+    "name": "Rivil",
+    "types": "NATURAL_RIVER,MAN_MADE_FORTRESS",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 508,
+    "frame_y": 728,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4308,
+     45.9259
+    ]
+   },
+   "properties": {
+    "id": "rohan",
+    "name": "Rohan",
+    "types": "POLITY_REALM",
+    "ages": "FoA,TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "L",
+    "frame": "TA",
+    "frame_x": 560,
+    "frame_y": 400,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.7158,
+     43.7737
+    ]
+   },
+   "properties": {
+    "id": "sammath naur",
+    "name": "Sammath Naur",
+    "types": "MAN_MADE_GATE",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 815,
+    "frame_y": 301,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5727,
+     49.7411
+    ]
+   },
+   "properties": {
+    "id": "sarn athrad",
+    "name": "Sarn Athrad",
+    "types": "NATURAL_FORD",
+    "ages": "FA",
+    "parents": "lindon,nogrod",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 818,
+    "frame_y": 435,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6763,
+     50.5346
+    ]
+   },
+   "properties": {
+    "id": "sarn ford",
+    "name": "Sarn Ford",
+    "types": "MAN_MADE_CROSSING",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 235,
+    "frame_y": 612,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.2579,
+     42.0129
+    ]
+   },
+   "properties": {
+    "id": "sea of nurnen",
+    "name": "Sea of Nurnen",
+    "types": "NATURAL_SEA",
+    "ages": "TA",
+    "parents": "mordor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 885,
+    "frame_y": 220,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.6179,
+     50.0998
+    ]
+   },
+   "properties": {
+    "id": "sea of rhun",
+    "name": "Sea of Rhûn",
+    "types": "NATURAL_SEA",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 952,
+    "frame_y": 592,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3606,
+     41.9042
+    ]
+   },
+   "properties": {
+    "id": "serni",
+    "name": "Serni",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 650,
+    "frame_y": 215,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -25.6799,
+     50.2737
+    ]
+   },
+   "properties": {
+    "id": "shadowy seas",
+    "name": "the Shadowy Seas",
+    "types": "NATURAL_SEA",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": -500,
+    "frame_y": 600,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.7611,
+     50.165
+    ]
+   },
+   "properties": {
+    "id": "sirion",
+    "name": "Sirion",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 515,
+    "frame_y": 474,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2569,
+     42.2737
+    ]
+   },
+   "properties": {
+    "id": "sirith",
+    "name": "Sirith",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 678,
+    "frame_y": 232,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7901,
+     44.9694
+    ]
+   },
+   "properties": {
+    "id": "snowbourn",
+    "name": "Snowbourn",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 545,
+    "frame_y": 356,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1656,
+     51.0998
+    ]
+   },
+   "properties": {
+    "id": "south downs",
+    "name": "South Downs",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 288,
+    "frame_y": 638,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4406,
+     41.3607
+    ]
+   },
+   "properties": {
+    "id": "south gondor",
+    "name": "South Gondor",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 760,
+    "frame_y": 190,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.8282,
+     52.0563
+    ]
+   },
+   "properties": {
+    "id": "staddle",
+    "name": "Staddle",
+    "types": "POLITY_REGION",
+    "ages": "",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 277,
+    "frame_y": 682,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4404,
+     44.5346
+    ]
+   },
+   "properties": {
+    "id": "starkhorn",
+    "name": "Starkhorn",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "white mountains",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "TA",
+    "frame_x": 536,
+    "frame_y": 336,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3852,
+     51.4694
+    ]
+   },
+   "properties": {
+    "id": "stock",
+    "name": "Stock",
+    "types": "MAN_MADE_VILLAGE",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 243,
+    "frame_y": 655,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1837,
+     44.0781
+    ]
+   },
+   "properties": {
+    "id": "stone of erech",
+    "name": "Stone of Erech",
+    "types": "MAN_MADE_MONUMENT,NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 530,
+    "frame_y": 315,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.0144,
+     48.4042
+    ]
+   },
+   "properties": {
+    "id": "swanfleet",
+    "name": "Swanfleet",
+    "types": "NATURAL_MARSH",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 379,
+    "frame_y": 514,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.2586,
+     50.3172
+    ]
+   },
+   "properties": {
+    "id": "talath dirnen",
+    "name": "Talath Dirnen",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 429,
+    "frame_y": 488,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -18.4335,
+     50.3172
+    ]
+   },
+   "properties": {
+    "id": "taras",
+    "name": "Taras",
+    "types": "NATURAL_PEAK",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "FA",
+    "frame_x": 125,
+    "frame_y": 488,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.2552,
+     52.9803
+    ]
+   },
+   "properties": {
+    "id": "tarn aeluin",
+    "name": "Tarn Aeluin",
+    "types": "NATURAL_LAKE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 691,
+    "frame_y": 733,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.6285,
+     49.7737
+    ]
+   },
+   "properties": {
+    "id": "taur en faroth",
+    "name": "Taur-en-Faroth",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 399,
+    "frame_y": 438,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9.1828,
+     48.1977
+    ]
+   },
+   "properties": {
+    "id": "taur im duinath",
+    "name": "Taur-im-Duinath",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 648,
+    "frame_y": 293,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.272,
+     50.3933
+    ]
+   },
+   "properties": {
+    "id": "teiglin",
+    "name": "Teiglin",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 488,
+    "frame_y": 495,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5462,
+     49.1868
+    ]
+   },
+   "properties": {
+    "id": "thalos",
+    "name": "Thalos",
+    "types": "NATURAL_RIVER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 816,
+    "frame_y": 384,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4263,
+     48.3824
+    ]
+   },
+   "properties": {
+    "id": "tharbad",
+    "name": "Tharbad",
+    "types": "MAN_MADE_CROSSING,MAN_MADE_TOWN,MAN_MADE_RUIN",
+    "ages": "TA",
+    "parents": "cardolan,dunland",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 300,
+    "frame_y": 513,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.1562,
+     51.2629
+    ]
+   },
+   "properties": {
+    "id": "thargelion",
+    "name": "Thargelion",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "High",
+    "place_conf": "High",
+    "frame": "FA",
+    "frame_x": 852,
+    "frame_y": 575,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3281,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "the bridge of khazad dum",
+    "name": "The Bridge of Khazad Dum",
+    "types": "MAN_MADE_BRIDGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 502,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9093,
+     52.5998
+    ]
+   },
+   "properties": {
+    "id": "the carrock",
+    "name": "The Carrock",
+    "types": "NATURAL_ROCK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 530,
+    "frame_y": 707,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.0165,
+     43.0563
+    ]
+   },
+   "properties": {
+    "id": "the crossroads",
+    "name": "The Crossroads",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 765,
+    "frame_y": 268,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.5261,
+     45.4259
+    ]
+   },
+   "properties": {
+    "id": "the dead marshes",
+    "name": "The Dead Marshes",
+    "types": "NATURAL_MARSH",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 663,
+    "frame_y": 377,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.7395,
+     44.8824
+    ]
+   },
+   "properties": {
+    "id": "the morannon",
+    "name": "The Morannon (Black Gate)",
+    "types": "MAN_MADE_TOWER,MAN_MADE_GATE,MAN_MADE_FORTRESS",
+    "ages": "TA",
+    "parents": "gondor",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 772,
+    "frame_y": 352,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.272,
+     51.2955
+    ]
+   },
+   "properties": {
+    "id": "the old forest",
+    "name": "The Old Forest",
+    "types": "NATURAL_FOREST",
+    "ages": "TA",
+    "parents": "the shire,bombadil s house",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 262,
+    "frame_y": 647,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4781,
+     44.5781
+    ]
+   },
+   "properties": {
+    "id": "the paths of the dead",
+    "name": "The Paths of the Dead",
+    "types": "NATURAL_PASS",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 537,
+    "frame_y": 338,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3918,
+     43.0563
+    ]
+   },
+   "properties": {
+    "id": "the pelennor",
+    "name": "The Pelennor",
+    "types": "NATURAL_FIELD",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 744,
+    "frame_y": 268,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.7151,
+     51.839
+    ]
+   },
+   "properties": {
+    "id": "the shire",
+    "name": "The Shire",
+    "types": "POLITY_REALM",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 205,
+    "frame_y": 672,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8282,
+     47.8824
+    ]
+   },
+   "properties": {
+    "id": "the wold",
+    "name": "The Wold",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 560,
+    "frame_y": 490,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9772,
+     51.6868
+    ]
+   },
+   "properties": {
+    "id": "three farthing stone",
+    "name": "Three-Farthing Stone",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 226,
+    "frame_y": 665,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9459,
+     44.3172
+    ]
+   },
+   "properties": {
+    "id": "thrihyrne",
+    "name": "Thrihyrne",
+    "types": "NATURAL_PEAK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 488,
+    "frame_y": 326,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.8932,
+     47.339
+    ]
+   },
+   "properties": {
+    "id": "tol galen",
+    "name": "Tol Galen",
+    "types": "NATURAL_ISLE",
+    "ages": "FA",
+    "parents": "lindon",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 845,
+    "frame_y": 214,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.6912,
+     52.5237
+    ]
+   },
+   "properties": {
+    "id": "tol sirion",
+    "name": "Tol Sirion",
+    "types": "MAN_MADE_TOWER,NATURAL_PASS,MAN_MADE_FORTRESS",
+    "ages": "FA",
+    "parents": "angband",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 494,
+    "frame_y": 691,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3097,
+     51.3824
+    ]
+   },
+   "properties": {
+    "id": "tom bombadil s house",
+    "name": "Tom Bombadil's house",
+    "types": "MAN_MADE_DWELLING",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 263,
+    "frame_y": 651,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5402,
+     43.0129
+    ]
+   },
+   "properties": {
+    "id": "torech ungol",
+    "name": "Torech Ungol",
+    "types": "NATURAL_CAVE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 783,
+    "frame_y": 266,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.7485,
+     51.7085
+    ]
+   },
+   "properties": {
+    "id": "tower hills",
+    "name": "Tower Hills",
+    "types": "NATURAL_HILL,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "lindon,arnor,arthedain",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 147,
+    "frame_y": 666,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.5402,
+     43.0129
+    ]
+   },
+   "properties": {
+    "id": "tower of cirith ungol",
+    "name": "Tower of Cirith Ungol",
+    "types": "MAN_MADE_FORTRESS,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 783,
+    "frame_y": 266,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.568,
+     51.839
+    ]
+   },
+   "properties": {
+    "id": "trolls clearing",
+    "name": "Trolls' clearing (Hobbit)",
+    "types": "MAN_MADE_LANDMARK",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 412,
+    "frame_y": 672,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8357,
+     51.752
+    ]
+   },
+   "properties": {
+    "id": "trollshaws",
+    "name": "Trollshaws",
+    "types": "NATURAL_FOREST",
+    "ages": "TA",
+    "parents": "rhudaur",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 420,
+    "frame_y": 668,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1181,
+     51.4694
+    ]
+   },
+   "properties": {
+    "id": "tuckborough",
+    "name": "Tuckborough",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 222,
+    "frame_y": 655,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1181,
+     51.4694
+    ]
+   },
+   "properties": {
+    "id": "tuckborough great smials",
+    "name": "Tuckborough/Great Smials",
+    "types": "MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 222,
+    "frame_y": 655,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.7699,
+     51.7303
+    ]
+   },
+   "properties": {
+    "id": "tumladen",
+    "name": "Tumladen",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 535,
+    "frame_y": 618,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.206,
+     42.4477
+    ]
+   },
+   "properties": {
+    "id": "tumladen of gondor",
+    "name": "Tumladen of Gondor",
+    "types": "NATURAL_VALLEY",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 675,
+    "frame_y": 240,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.2108,
+     50.3498
+    ]
+   },
+   "properties": {
+    "id": "turin s stone",
+    "name": "Turin's Stone",
+    "types": "MAN_MADE_MONUMENT",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 491,
+    "frame_y": 491,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.8085,
+     37.8824
+    ]
+   },
+   "properties": {
+    "id": "umbar",
+    "name": "Umbar",
+    "types": "MAN_MADE_HAVEN",
+    "ages": "SA,TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 765,
+    "frame_y": 30,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.641,
+     51.665
+    ]
+   },
+   "properties": {
+    "id": "undertowers",
+    "name": "Undertowers",
+    "types": "MAN_MADE_TOWN",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 150,
+    "frame_y": 664,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -18.4741,
+     50.2411
+    ]
+   },
+   "properties": {
+    "id": "vinyamar",
+    "name": "Vinyamar",
+    "types": "MAN_MADE_RUIN,MAN_MADE_TOWER",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "FA",
+    "frame_x": 121,
+    "frame_y": 481,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0579,
+     51.252
+    ]
+   },
+   "properties": {
+    "id": "warg clearing",
+    "name": "Warg Clearing",
+    "types": "NATURAL_CLEARING",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 515,
+    "frame_y": 645,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.281,
+     52.1868
+    ]
+   },
+   "properties": {
+    "id": "weather hills",
+    "name": "Weather Hills",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 346,
+    "frame_y": 688,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.292,
+     51.9477
+    ]
+   },
+   "properties": {
+    "id": "weathertop",
+    "name": "Weathertop",
+    "types": "NATURAL_PEAK,MAN_MADE_TOWER",
+    "ages": "TA",
+    "parents": "rhudaur,arnor,arthedain",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 347,
+    "frame_y": 677,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -14.8577,
+     49.415
+    ]
+   },
+   "properties": {
+    "id": "west beleriand",
+    "name": "West Beleriand",
+    "types": "POLITY_REGION",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 320,
+    "frame_y": 405,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9025,
+     49.7955
+    ]
+   },
+   "properties": {
+    "id": "west door",
+    "name": "West-door",
+    "types": "MAN_MADE_SETTLEMENT",
+    "ages": "TA",
+    "parents": "khazaddum",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 490,
+    "frame_y": 578,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8454,
+     46.1433
+    ]
+   },
+   "properties": {
+    "id": "west emnet",
+    "name": "West-Emnet",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 410,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3281,
+     49.9042
+    ]
+   },
+   "properties": {
+    "id": "west gate of moria",
+    "name": "West Gate of Moria",
+    "types": "MAN_MADE_GATE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": null,
+    "frame": "TA",
+    "frame_x": 502,
+    "frame_y": 583,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8534,
+     46.1868
+    ]
+   },
+   "properties": {
+    "id": "westemnet",
+    "name": "Westemnet",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 540,
+    "frame_y": 412,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3715,
+     44.7303
+    ]
+   },
+   "properties": {
+    "id": "westfold",
+    "name": "Westfold",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "rohan",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 500,
+    "frame_y": 345,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.3406,
+     51.5129
+    ]
+   },
+   "properties": {
+    "id": "white downs",
+    "name": "White Downs",
+    "types": "NATURAL_HILL",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 187,
+    "frame_y": 657,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3748,
+     44.4477
+    ]
+   },
+   "properties": {
+    "id": "white mountains",
+    "name": "White Mountains (Ered Nimrais)",
+    "types": "NATURAL_MOUNTAIN_RANGE",
+    "ages": "",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 600,
+    "frame_y": 332,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.5204,
+     55.7303
+    ]
+   },
+   "properties": {
+    "id": "withered heath",
+    "name": "Withered Heath",
+    "types": "NATURAL_MOOR",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 808,
+    "frame_y": 851,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1336,
+     51.3172
+    ]
+   },
+   "properties": {
+    "id": "withywindle",
+    "name": "Withywindle",
+    "types": "NATURAL_RIVER",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 258,
+    "frame_y": 648,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4482,
+     47.9259
+    ]
+   },
+   "properties": {
+    "id": "wold of rohan",
+    "name": "Wold of Rohan",
+    "types": "POLITY_REGION",
+    "ages": "TA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "TA",
+    "frame_x": 548,
+    "frame_y": 492,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5956,
+     51.4042
+    ]
+   },
+   "properties": {
+    "id": "woodhall woody end",
+    "name": "Woodhall/Woody End",
+    "types": "POLITY_SUBREGION",
+    "ages": "TA",
+    "parents": "the shire",
+    "name_conf": null,
+    "place_conf": "H",
+    "frame": "TA",
+    "frame_x": 237,
+    "frame_y": 652,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -13.9083,
+     51.1542
+    ]
+   },
+   "properties": {
+    "id": "woods of nuath",
+    "name": "Woods of Nuath",
+    "types": "NATURAL_FOREST",
+    "ages": "FA",
+    "parents": "",
+    "name_conf": "H",
+    "place_conf": "M",
+    "frame": "FA",
+    "frame_x": 404,
+    "frame_y": 565,
+    "latitude": "Tolkien's own anchor: Hobbiton at the latitude of Oxford",
+    "longitude": "the archive's construction: he named no meridian"
+   }
+  }
+ ]
+}

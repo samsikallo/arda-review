@@ -1,0 +1,107 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512">
+<title>Errata — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Errata: every correction the archive can prove it made — the superseded reading struck with the obelus beside the reading that replaced it, with the date, the record and the commit."><meta property="og:title" content="Errata — the Arda Archive"><meta property="og:description" content="The Errata: every correction the archive can prove it made — the superseded reading struck with the obelus beside the reading that replaced it, with the date, the record and the commit."><meta property="og:type" content="article"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/errata.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/errata.html"><!--/ARDA:META-->
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227;--rub:#8c2f1e}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;
+border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;
+color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+.wrap{max-width:1220px;margin:0 auto;padding:16px 20px 60px}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;
+padding:13px 18px;box-shadow:0 2px 8px rgba(60,40,10,.12);margin-bottom:14px}
+.intro p{margin:.45em 0}
+.intro .k{font-variant:small-caps;letter-spacing:.06em;color:#5a4626}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+
+/* ── THE DATE BAND. A register's sections are its dates. ──────────────────────────────────── */
+.errdate{font-variant:small-caps;font-size:15px;color:#5a4626;border-bottom:2px solid var(--line);
+padding-bottom:2px;margin:16px 0 8px;display:flex;align-items:baseline;gap:9px;
+break-after:avoid;page-break-after:avoid}
+.errdate .n{font-size:10.5px;font-variant:normal;color:var(--mut);font-style:italic}
+
+/* ── ONE ERRATUM ──────────────────────────────────────────────────────────────────────────
+   No border box and no card: a card would make each entry an unsplittable block with its own
+   background, and an entry taller than a leaf has to be able to continue across the gutter.
+   A hairline rule above each entry does the separating and costs nothing to split. */
+.err{margin:0 0 9px;padding:6px 0 0;border-top:1px solid rgba(176,165,142,.55)}
+.err-h{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;font-size:10.5px;color:var(--mut);
+line-height:1.3;margin-bottom:2px}
+.err-n{font-variant-numeric:tabular-nums;font-weight:bold;color:#5a4626}
+.err-n::before{content:"No. "}
+.err-ds{font-family:'Courier New',monospace;font-size:10px;color:#5a4626}
+.err-fd{font-family:'Courier New',monospace;font-size:10px;word-break:break-word}
+.err-kd{font-variant:small-caps;letter-spacing:.08em}
+.err p{margin:0 0 3px;font-size:12.6px;line-height:1.45}
+
+/* THE LABEL. The third cue, and the only one that does not depend on CSS arriving. */
+.err-lab{font-variant:small-caps;letter-spacing:.09em;font-size:9.5px;color:var(--mut);
+margin-right:.5em;white-space:nowrap;display:inline-block;text-decoration:none}
+.err-lab::after{content:":"}
+
+/* ── THE SUPERSEDED READING ────────────────────────────────────────────────────────────────
+   `.struck` IS THE MARK AND IT IS DECLARED IN arda.css, NOT HERE -- C16:
+       .corr,.struck{text-decoration-line:line-through}
+       .struck::before{content:"\00F7\00A0"; display:inline-block}
+   the obelus. Nothing below adds a device; two are taken away.
+
+   codex-object.css:250 draws `.struck::after` -- a rotated rubric-red bar -- and dims
+   `.struck > *` to .55. Both were written for a whole struck CARD in the silences idiom, where
+   the bar crosses a small block. On a paragraph of running prose it lands across one line of the
+   superseded reading and hides it, and the dim costs contrast on the very text this register
+   exists to let a reader read. Suppressed under `.reg` and nowhere else. */
+.reg .struck::after{content:none}
+.reg .struck > *{opacity:1}
+.reg .struck{position:static}
+.err-was{color:#4a4034}
+.err-was .err-lab{opacity:1}
+.err-now{color:var(--ink)}
+.err-gone em{color:var(--mut)}
+.err-why{font-style:italic;color:#6b5d46;font-size:11.8px}
+.err-p{font-size:10px;color:var(--mut);margin-top:2px;line-height:1.4}
+.err-p .sep{margin:0 .4em;opacity:.6}
+.err-sha{font-family:'Courier New',monospace;font-size:9.5px;color:#5a4626}
+.err-rt{color:#5a4626}
+.err-rc{font-family:'Courier New',monospace;font-size:9.5px}
+.err-p .mark{font-size:9.5px;letter-spacing:.06em;color:var(--rub)}
+
+/* ── NOT ONE TOKEN MAY BE WIDER THAN ITS COLUMN -- C59, AND IT WAS MEASURED, NOT FEARED ─────
+   A leaf column here is 219.5px and this register prints identifiers in it: dataset filenames,
+   dotted field paths like `routes.arda_timemap_jpeg.html.relevance`, twelve-character shas, and
+   record keys that are whole sentences. Five leaves of the first built register overflowed
+   HORIZONTALLY by 5 to 132px -- `scrollWidth` past `clientWidth`, which C59 forbids outright and
+   which no amount of re-dealing entries can fix, because the offending box is one word.
+   `overflow-wrap:anywhere` breaks a token ONLY when it would otherwise overflow, so ordinary
+   prose is untouched; `word-break:break-all` would have broken every line and was not used. */
+.reg .err p,.reg .err-h,.reg .err-p{overflow-wrap:anywhere}
+.err-ds,.err-fd,.err-sha,.err-rc,.err-rt{overflow-wrap:anywhere}
+
+/* ── THE BAND INDEX, ON THE FRONT MATTER. `.toc` and `.fol` are the contents leaf's own
+   vocabulary, already in codex-object.css; nothing here invents a list. ─────────────────── */
+.bandix{margin:0;padding:0;list-style:none}
+.bandix li{display:flex;align-items:baseline;gap:6px;font-size:12px;line-height:1.5}
+.bandix li > a{flex:0 1 auto;min-width:0;overflow-wrap:anywhere;color:#5a4626}
+.bandix li > .rule{flex:1 1 auto;border-bottom:1px dotted var(--line);transform:translateY(-3px)}
+.bandix li > .n{flex:0 0 auto;font-variant-numeric:tabular-nums;color:var(--mut);font-size:10.5px}
+.denom{font-size:13px;line-height:1.5}
+.denom b{font-variant-numeric:tabular-nums}
+
+/* THE STRIKE MUST NOT BE A COLOUR ANYWHERE. arda.css leaves text-decoration-color unset, so it
+   is currentColor and greys with the ink; this states it rather than relying on the default
+   surviving somebody else's future rule. */
+.reg .struck{text-decoration-color:currentColor}
+
+@media (forced-colors: active){
+  .err{border-top:1px solid}
+  .reg .struck{text-decoration-line:line-through}
+}
+</style><link rel="stylesheet" href="arda.css"><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><link rel="stylesheet" href="codex-flip.css"><script src="codex-flip.js" defer></script><noscript><style>.book[data-flip="on"]>.spread.af-off{display:grid !important}.book[data-openings]{height:auto !important;aspect-ratio:auto !important;display:flex !important;flex-direction:column !important}.book[data-openings]>.spread{flex:0 0 auto !important;width:100% !important}.book[data-openings]>.spread+.spread{margin-top:2.5rem}.book[data-openings] .leaf.fitted,.book[data-openings] .leaf.fitted .tb{overflow:visible !important}</style></noscript><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="ledger" data-density="high" data-turn-prev="annals.html" data-turn-next="errata/2026-08-25.html" data-openings="2" data-flip="on"><div class="plaque">The Arda Archive <i>&middot;</i> Volume VII <i>&middot;</i> Errata</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html" aria-current="page">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol fitted" style="display:flex;flex-direction:column"><div class="rh"><span>The Arda Archive &middot; Errata</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><div class="tbi reg"><article class="card silence"><span class="no"><span>?</span></span><h3>Why this is a register entry</h3><div class="lines" aria-hidden="true"></div><p class="note">A whole spread is earned by having an illustration &mdash; the owner's rule of 19 August. An errata route is a register of corrections and carries none: what it records is what the archive got wrong and when it was put right.</p></article><h2 class="rubric">Errata</h2><p class="lede">what this archive used to say, and what it says now</p><p><span class="err-lab">what this is</span>Every correction this archive can PROVE it made. Each entry prints the reading that was superseded, struck through and marked with the obelus &#247;, beside the reading that replaced it &mdash; with the date, the dataset, the record inside it, and the commit that made the change.</p><p class="denom"><span class="err-lab">and what it is not</span>This register holds <b>1,410</b> corrections. It is not a record of everything that changed. <b>9,905 further real changes stand in this repository’s history with no stated reason</b> &mdash; <b>88%</b> of everything that changed &mdash; and they are NOT dressed as errata, because a change whose commit body states no reason cannot be quoted as one. <b>1,410 of 11,315 is 12%.</b> A register that published only its own numerator would be making the exact claim this archive exists to refuse.</p><p><span class="err-lab">where it comes from</span>Not one row of it was written. <b>567</b> commits touching a published dataset were read, and only a change whose commit body states a reason naming that record is written here. A change that moved the wording without moving the claim is a refinement and takes no mark at all.</p></div></div><span class="quire">A&middot;i</span></section><section class="leaf r ruled twocol fitted" style="display:flex;flex-direction:column"><div class="rh"><span>The Arda Archive &middot; Errata</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><div class="tbi reg"><p><span class="err-lab">how to check one</span>Every prior reading is verbatim. <code>git show &lt;sha&gt;^:&lt;dataset&gt;</code> holds the struck reading at the named field, and <code>git show &lt;sha&gt;:&lt;dataset&gt;</code> holds the one beside it. <code>map/errata_check.py</code> re-opens all 1,410 and refuses if a single one does not stand where it says it stands &mdash; and it counts what these leaves PRINT against what the register holds, so an entry lost in the split reddens the gate.</p><p><span class="err-lab">the marker</span>On these leaves <code>[C]</code>, <code>[I-H]</code> and <code>[I-M]</code> grade the REASON’s distance from the record, never a claim about Arda: <code>[C]</code> the commit names this record or a token that moved in it; <code>[I-H]</code> it names the field and nothing narrower; <code>[I-M]</code> it states a reason for the commit and this record is one of the values it changed. The prior reading itself is always verbatim &mdash; a record whose prior reading could not be recovered is not written at all.</p><p><span class="err-lab">how it is set</span>1,331 corrections and 79 retractions, across 45 datasets and 22 days. 458 name a published page; the rest name a record inside a dataset that no single page owns. The register is dealt onto leaves at BUILD TIME, not in your browser, so the leaf you are on is the leaf in the archive’s history.</p></div></div><span class="quire">A&middot;ij</span></section></div><div class="spread af-off"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol fitted" style="display:flex;flex-direction:column"><div class="rh"><span>The Arda Archive &middot; Errata</span><span class="n">iii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><div class="tbi reg"><article class="card silence"><span class="no"><span>?</span></span><h3>Why this is a register entry</h3><div class="lines" aria-hidden="true"></div><p class="note">A whole spread is earned by having an illustration &mdash; the owner's rule of 19 August. An errata route is a register of corrections and carries none: what it records is what the archive got wrong and when it was put right.</p></article><p><span class="err-lab">the bands</span>The register is set by the day the archive made the change, newest first. One route per band; a band too long for 48 leaves continues into a further part, named for the same day.</p><ul class="bandix"><li><a href="errata/2026-08-25.html">25 August 2026</a><span class="rule"></span><span class="n">3 entries &middot; 2 leaves</span></li><li><a href="errata/2026-08-22.html">22 August 2026</a><span class="rule"></span><span class="n">2 entries &middot; 2 leaves</span></li><li><a href="errata/2026-08-21.html">21 August 2026 · part I</a><span class="rule"></span><span class="n">99 entries &middot; 28 leaves</span></li><li><a href="errata/2026-08-21-ii.html">21 August 2026 · part II</a><span class="rule"></span><span class="n">94 entries &middot; 26 leaves</span></li><li><a href="errata/2026-08-20.html">20 August 2026 · part I</a><span class="rule"></span><span class="n">89 entries &middot; 44 leaves</span></li><li><a href="errata/2026-08-20-ii.html">20 August 2026 · part II</a><span class="rule"></span><span class="n">87 entries &middot; 44 leaves</span></li><li><a href="errata/2026-08-20-iii.html">20 August 2026 · part III</a><span class="rule"></span><span class="n">84 entries &middot; 44 leaves</span></li><li><a href="errata/2026-08-20-iv.html">20 August 2026 · part IV</a><span class="rule"></span><span class="n">87 entries &middot; 44 leaves</span></li><li><a href="errata/2026-08-20-v.html">20 August 2026 · part V</a><span class="rule"></span><span class="n">84 entries &middot; 44 leaves</span></li><li><a href="errata/2026-08-20-vi.html">20 August 2026 · part VI</a><span class="rule"></span><span class="n">77 entries &middot; 38 leaves</span></li><li><a href="errata/2026-08-19.html">19 August 2026</a><span class="rule"></span><span class="n">38 entries &middot; 16 leaves</span></li><li><a href="errata/2026-08-18.html">18 August 2026</a><span class="rule"></span><span class="n">2 entries &middot; 4 leaves</span></li><li><a href="errata/2026-08-17.html">17 August 2026</a><span class="rule"></span><span class="n">11 entries &middot; 10 leaves</span></li><li><a href="errata/2026-08-16.html">16 August 2026</a><span class="rule"></span><span class="n">11 entries &middot; 8 leaves</span></li><li><a href="errata/2026-08-13.html">13 August 2026</a><span class="rule"></span><span class="n">1 entry &middot; 2 leaves</span></li><li><a href="errata/2026-08-12.html">12 August 2026</a><span class="rule"></span><span class="n">7 entries &middot; 4 leaves</span></li><li><a href="errata/2026-08-11.html">11 August 2026</a><span class="rule"></span><span class="n">12 entries &middot; 14 leaves</span></li><li><a href="errata/2026-08-05.html">5 August 2026</a><span class="rule"></span><span class="n">62 entries &middot; 28 leaves</span></li><li><a href="errata/2026-08-04.html">4 August 2026</a><span class="rule"></span><span class="n">52 entries &middot; 18 leaves</span></li><li><a href="errata/2026-08-01.html">1 August 2026</a><span class="rule"></span><span class="n">174 entries &middot; 48 leaves</span></li><li><a href="errata/2026-07-31.html">31 July 2026</a><span class="rule"></span><span class="n">8 entries &middot; 4 leaves</span></li><li><a href="errata/2026-07-30.html">30 July 2026</a><span class="rule"></span><span class="n">47 entries &middot; 18 leaves</span></li></ul></div></div><span class="quire">A&middot;iij</span></section><section class="leaf r ruled twocol fitted" style="display:flex;flex-direction:column"><div class="rh"><span>The Arda Archive &middot; Errata</span><span class="n">iv</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><div class="tbi reg"><p><span class="err-lab">the bands</span>continued</p><ul class="bandix"><li><a href="errata/2026-07-29.html">29 July 2026</a><span class="rule"></span><span class="n">105 entries &middot; 34 leaves</span></li><li><a href="errata/2026-07-28.html">28 July 2026</a><span class="rule"></span><span class="n">51 entries &middot; 20 leaves</span></li><li><a href="errata/2026-07-27.html">27 July 2026</a><span class="rule"></span><span class="n">20 entries &middot; 8 leaves</span></li><li><a href="errata/2026-07-26.html">26 July 2026</a><span class="rule"></span><span class="n">1 entry &middot; 2 leaves</span></li><li><a href="errata/2026-07-24.html">24 July 2026</a><span class="rule"></span><span class="n">99 entries &middot; 28 leaves</span></li><li><a href="errata/2026-07-23.html">23 July 2026</a><span class="rule"></span><span class="n">3 entries &middot; 2 leaves</span></li></ul></div></div><span class="quire">A&middot;iv</span></section></div><div class="clasp" role="presentation"></div><div class="folio">Volume VII &middot; The archive’s register of its own corrections &amp;mdash; both readings, the superseded one struck</div></div><!--/ARDA:CODEX-BODY--><div id="hdr"><h1>Errata</h1><span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav>
+<div class="sub">The archive’s register of its own corrections &mdash; both readings, the superseded one struck</div></div>
+<div class="wrap" role="main" id="main"><p class="cite">The leaves of this register are above, already set. <a href="errata.html">The register's front matter</a> holds what it is, what it does not hold, and every date band.</p></div>
+<script>window.ARDA_BASE=""</script>
+<script src="nav.js" defer></script>
+<!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--><script src="glossary.js" defer></script></body></html>

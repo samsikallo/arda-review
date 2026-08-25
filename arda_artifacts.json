@@ -1,0 +1,891 @@
+[
+ {
+  "n": "The Silmarils",
+  "t": "jewel",
+  "cat": "jewel",
+  "cl": "Jewel",
+  "o": "Wrought by Fëanor in Valinor, Y.T. 1449-50; hallowed by Varda — 'the fire of the Trees' locked in crystal. AAm 1450 §93 (HoME X) [C]: 'In this year the Silmarils were full-wrought, the wonder of Arda', under the rubric 'The Silmarilli of Fëanor are made'; 1449 and 1450 are both annal headers, so the span has two annalled ends.",
+  "d": "The three great jewels over which every war of the First Age was fought; 'the Doom of the Noldor' bound within them.",
+  "ch": [
+   {
+    "what": "Fëanor — at Formenos",
+    "when": "Y.T.",
+    "cite": "Silm 7"
+   },
+   {
+    "what": "Morgoth — in the Iron Crown",
+    "when": "Y.T. 1495 – F.A. 587",
+    "cite": "Silm 9/18 for the deed; HoME X, the Annals of Aman 1495 [C] for the year — 'in Angband Morgoth forged for himself a great crown of iron ... In token of which he set the Silmarils in his crown'. The Silmarillion carries NO age-marker at all."
+   },
+   {
+    "what": "one cut free by Beren and Lúthien",
+    "when": "F.A. 466",
+    "cite": "Silm 19 for the deed; HoME XI, the Grey Annals §§184-185, annal 466 [C] for the year — 'the Iron Crown rolled from his head ... Luthien and Beren bearing a Silmaril'. The annal dates the WINNING and describes no cutting; Angrist appears NOWHERE in the annals."
+   },
+   {
+    "what": "Thingol — set in the Nauglamír",
+    "when": "F.A. c.500-502",
+    "cite": "Silm 22 for the deed; HoME XI, the Tale of Years 502 [C] for the year — 'The Nauglamir is wrought of the treasure of Glaurung, and the Silmaril is hung thereon'."
+   },
+   {
+    "what": "Dior, then Elwing at Sirion",
+    "when": "F.A. 504–538",
+    "cite": "Silm 22-23 for the deeds; HoME XI, the Tale of Years, TWO RECENSIONS NAMED because they disagree [I-M]: 506 is D 2 ('506-507 At Yule Dior fought the sons of Feanor ... and was slain'), and 538 is C alone, as its final emendation ('532 [> 534 > 538] The Third and Last Kinslaying ... Elwing carries away the Silmaril'). B and C move the Second Kinslaying to 509; D 2 never reaches 538. THE START DATE IS D 2's 504, when 'Dior now publicly wore the Nauglamír and the Jewel' (t1_11:12936-12938); 506 was here before and dated his DEATH, which is when a tenure ends, not when it begins."
+   },
+   {
+    "what": "Eärendil — bound on his brow, raised as the Star",
+    "when": "F.A. 536 – 542",
+    "cite": "Silm 24 for the deed [C]; HoME XI, the Tale of Years C for the year, in its own revision series '536 [> 540 > 542] Earendil comes to Valinor' [I-M]. THE ANNAL DATES THE ARRIVAL, NOT THE STAR: 'brow', 'sky' and 'star' return ZERO across the whole Tale of Years."
+   },
+   {
+    "what": "the last two: Maedhros to the fiery chasm, Maglor to the sea",
+    "when": "F.A. 587",
+    "cite": "Silm 24 for the deeds; HoME XI, the Tale of Years A '597 Maidros and Maglor ... seize the Silmarils. Maidros perishes. The Silmarils are lost in fire and sea', REDATED IN B to 587 [C]. THE ANNAL SAYS 'fire and sea' AND NO MORE: 'fiery pit', 'fiery chasm' and 'yawning chasm' return zero in all three annal files. The chasm and the casting into the Sea are Silm 24, undated."
+   }
+  ],
+  "f": "One in the heavens, one in the earth, one in the sea — 'the Silmarils found their long homes'.",
+  "x": "",
+  "l": [
+   [
+    "character.html#feanor",
+    "Fëanor"
+   ],
+   [
+    "arda_timeline.html#y=-480",
+    "the wrighting"
+   ]
+  ]
+ },
+ {
+  "n": "The One Ring",
+  "t": "ring",
+  "cat": "ring",
+  "cl": "Ring",
+  "o": "Forged by Sauron in Orodruin, c. S.A. 1600, to rule the others. LotR App B [C]: 'c. 1600 Sauron forges the One Ring in Orodruin. He completes the Barad-dûr.'",
+  "d": "'One Ring to rule them all'. NO FRACTION IS ATTESTED ANYWHERE IN THE CITABLE CORPUS [C]: every statement of how much of Sauron's power passed into the Ring is QUALITATIVE, and three tier-1 witnesses agree — the Silmarillion's own narrative voice, 'And much of the strength and will of Sauron passed into that One Ring' (Silm, Of the Rings of Power); Gandalf, 'he let a great part of his own former power pass into it' (LotR I.2); and HoME VI, 'He put into that Ring much of his own power'. The often-quoted FRACTION is not Tolkien's [C, not [I-M]: a corpus-wide search finds no fraction attached to the Ring's power at all — the single 'half' is Gandalf on the Morgul-wound, 'you were half in the wraith-world yourself', which is not about the Ring].",
+  "ch": [
+   {
+    "what": "Sauron",
+    "when": "S.A. c. 1600 – 3441",
+    "cite": "App B; Silm, Of the Rings"
+   },
+   {
+    "what": "Isildur takes it — the annal says taking; 'cut from the hand' is Elrond at the Council",
+    "when": "S.A. 3441 – T.A. 2",
+    "cite": "LotR App B [C] — '3441 Sauron overthrown by Elendil and Gil-galad, who perish. Isildur takes the One Ring.' THE ANNAL DATES THE TAKING; 'cut from the hand' is LotR II.2, Elrond at the Council, and is not annal text."
+   },
+   {
+    "what": "the Gladden river-bed",
+    "when": "T.A. 2 – 2463",
+    "cite": "UT; App B"
+   },
+   {
+    "what": "Déagol finds it and is murdered by Sméagol — the annal gives no duration",
+    "when": "T.A. 2463",
+    "cite": "LotR App B [C] — '2463 The White Council is formed. About this time Deagol the Stoor finds the One Ring, and is murdered by Smeagol.' THE ANNAL HEDGES: 'About this time' attaches 2463 firmly to the Council and loosely to Deagol. 'For minutes' is not in the annal; no duration is given."
+   },
+   {
+    "what": "Sméagol-Gollum, under the mountains",
+    "when": "T.A. 2463 – 2941",
+    "cite": "LotR I.2; App B"
+   },
+   {
+    "what": "Bilbo Baggins",
+    "when": "T.A. 2941 – 3001",
+    "cite": "Hobbit v; App B"
+   },
+   {
+    "what": "Frodo (and at need Samwise)",
+    "when": "T.A. 3001 – 3019",
+    "cite": "LotR I-VI for the bearing. NO ANNAL [I-M]: App B dates the Ring's FINDING (2463, 2941) and its DESTRUCTION (3019 March 25) and never annals a custody in between. A bearer is not an event."
+   },
+   {
+    "what": "the Fire of Orodruin",
+    "when": "Mar 25, 3019",
+    "cite": "LotR VI.3"
+   }
+  ],
+  "f": "Unmade where it was made; with it fell the Dark Tower.",
+  "x": "",
+  "l": [
+   [
+    "armies_dashboard.html#b=morannon",
+    "the last battle"
+   ],
+   [
+    "character.html#frodo",
+    "Frodo"
+   ]
+  ]
+ },
+ {
+  "n": "The Three Rings — Narya, Nenya, Vilya",
+  "t": "ring",
+  "cat": "ring",
+  "cl": "Ring",
+  "o": "Celebrimbor alone, Eregion, c. S.A. 1590 — never touched by Sauron. Silm, Of the Rings of Power [C]: 'the Three remained unsullied, for they were forged by Celebrimbor alone, and the hand of Sauron had never touched them'; LotR II.2, Elrond: 'The Three were not made by Sauron, nor did he ever touch them'; LotR App B: 'c. 1590 The Three Rings are completed in Eregion'.",
+  "d": "Fire, adamant and sapphire; preservation and kindling, not dominion.",
+  "ch": [
+   {
+    "what": "Celebrimbor — sent them away before the sack",
+    "when": "S.A. c. 1590 – 1693",
+    "cite": "Silm, Of the Rings of Power for the deed; LotR App B for BOTH ends [C] — 'c. 1590 The Three Rings are completed in Eregion' and '1693 War of the Elves and Sauron begins. The Three Rings are hidden'. TWO CORRECTIONS: the c. is the corpus's own hedge and was dropped; and the span closed on 1697, which is the SACK ('Eregion laid waste. Death of Celebrimbor'), not the hiding. No annal names Celebrimbor as the agent -- Silm says 'the Elves fled from him; and three of their rings they saved'."
+   },
+   {
+    "what": "Gil-galad took Vilya and Narya; Galadriel Nenya",
+    "when": "S.A. 1697",
+    "cite": "UT, The History of Galadriel and Celeborn, for the dispersal. NO ANNAL [I-M]: App B's 1697 names no ring. AND THE CORPUS CONTRADICTS ITSELF: UT says Gil-galad gave Narya to Cirdan, then a marginal note says he kept it; App B's own preamble says the Three were held from the first by Gil-galad, Galadriel and CIRDAN. Nenya was RECEIVED by Galadriel from Celebrimbor, not kept."
+   },
+   {
+    "what": "Vilya to Elrond; Narya to Círdan",
+    "when": "S.A. 3441 / earlier",
+    "cite": "App B; UT"
+   },
+   {
+    "what": "Círdan gave Narya to Gandalf at his landing",
+    "when": "T.A. c.1000",
+    "cite": "UT, The Istari; App B"
+   },
+   {
+    "what": "borne over Sea by the Three Keepers",
+    "when": "Sept 29, 3021",
+    "cite": "LotR VI.9"
+   }
+  ],
+  "f": "Their power ended with the One; they went West with their keepers.",
+  "x": "UT notes divergent accounts of when Gil-galad passed Narya — 'at first' vs at the Last Alliance; both recorded.",
+  "l": [
+   [
+    "character.html#galadriel",
+    "Galadriel"
+   ],
+   [
+    "character.html#elrond",
+    "Elrond"
+   ]
+  ]
+ },
+ {
+  "n": "The Seven and the Nine",
+  "t": "ring",
+  "cat": "ring",
+  "cl": "Ring",
+  "o": "Eregion's smiths with Sauron's aid, c. S.A. 1500-1590. Silm, Of the Rings of Power [C]: 'the smiths of Ost-in-Edhil surpassed all that they had contrived before … But Sauron guided their labours'. [I-M] ON THE SPAN: no annal dates these rings. App B's 'c. 1500' begins the Rings of Power in general and 'c. 1590' completes THE THREE; the bracket is the archive's, computed from 'the Three … had last been made'.",
+  "d": "Given to Dwarf-kings and Men; the Seven bred gold and wrath, the Nine made wraiths.",
+  "ch": [
+   {
+    "what": "Sauron seized them at Eregion's fall; distributed",
+    "when": "S.A. 1697+",
+    "cite": "Silm, Of the Rings of Power for the deed [C]. THE YEAR IS THE ARCHIVE'S OWN INFERENCE [I-M]: NO ANNAL records Sauron seizing or dealing out the Seven and the Nine. App B's nearest entry is 2251, 'the Nazgul ... first appear', which dates the Nine's EFFECT 554 years later."
+   },
+   {
+    "what": "the Nine: the Nazgûl appear",
+    "when": "c. S.A. 2251",
+    "cite": "App B"
+   },
+   {
+    "what": "the Seven: 'of the Seven he has recovered three' [C]; the rest 'consumed in fire' as the Dragons devoured the hoards — the tally of four is 7 − 3, and tier 1 says only 'some' [I-H]",
+    "when": "T.A.",
+    "cite": "Silm, Of the Rings"
+   },
+   {
+    "what": "the last of the Seven taken from Thráin II in Dol Guldur",
+    "when": "T.A. 2845",
+    "cite": "LotR App B [C] — '2845 Thrain the Dwarf is imprisoned in Dol Guldur; the last of the Seven Rings is taken from him.' Exact, unhedged."
+   }
+  ],
+  "f": "All accounted to Sauron or the fire before the end.",
+  "x": "",
+  "l": [
+   [
+    "character.html#thrain2",
+    "Thráin II"
+   ]
+  ]
+ },
+ {
+  "n": "Narsil / Andúril",
+  "t": "sword",
+  "cat": "sword",
+  "cl": "Sword",
+  "o": "Telchar of Nogrod, First Age. LotR III.6, Aragorn [C]: 'In this Elvish sheath dwells the Blade that was Broken and has been made again. Telchar first wrought it in the deeps of time.' [I-H] ON THE AGE AND THE PLACE: Aragorn says only 'Telchar', and the corpus dates it only 'in the deeps of time'. 'Of Nogrod' and 'First Age' come from the Silmarillion's Index, which itself flags the attribution 'according to Aragorn'.",
+  "d": "The sword that cut the Ring from Sauron's hand — broken, kept, reforged as the Flame of the West.",
+  "ch": [
+   {
+    "what": "Telchar's forge, Nogrod — 'Telchar first wrought it in the deeps of time'",
+    "when": "F.A.",
+    "cite": "LotR TT III.6 for the deed, and the corpus flags it as ONE CHARACTER'S TESTIMONY -- the Silmarillion index attributes it '(according to Aragorn in The Two Towers III 6)'. NO ANNAL AND NO DATE EXISTS IN ANY FORM [I-M]: 'Telchar' occurs zero times in Appendix B."
+   },
+   {
+    "what": "heirloom to Elendil (the road between unstated — honest gap)",
+    "when": "S.A.",
+    "cite": "App A"
+   },
+   {
+    "what": "broken beneath Elendil at the Siege",
+    "when": "S.A. 3441",
+    "cite": "Silm, Of the Rings of Power for the deed. THE ANNAL DATES THE SURROUNDING EVENT AND IS SILENT ON THE SWORD [I-M]: App B 3441 reads 'Sauron overthrown by Elendil and Gil-galad, who perish. Isildur takes the One Ring' and never mentions Narsil, which appears nowhere in the Second Age annals."
+   },
+   {
+    "what": "the Shards, heirloom of Isildur's line",
+    "when": "T.A. 2 – 2951",
+    "cite": "LotR App B [C] — T.A. 3 'Ohtar brings the shards of Narsil to Imladris', and 'delivers to him the shards of Narsil' (T.A. 2951). NOTE THE ANNAL SAYS 3, NOT 2: the archive's opening year is one earlier than the entry it rests on."
+   },
+   {
+    "what": "given to Aragorn with the ring of Barahir",
+    "when": "T.A. 2951",
+    "cite": "LotR App B [C] FOR THE SHARDS ONLY — '2951 ... delivers to him the shards of Narsil'. THE RING OF BARAHIR IS NOT NAMED IN IT [I-M]: 'Barahir' appears twice in App B and neither is this handover. The joint delivery is App A I(v), narrative."
+   },
+   {
+    "what": "reforged at Rivendell: Andúril",
+    "when": "T.A. 3018-19",
+    "cite": "LotR FR II.3 for the deed. NO ANNAL DATES THIS [I-M]: 'Anduril' and 'reforged' occur ZERO times in Appendix B, and the whole of December 3018 in the Tale of Years is one line, 'December 25 The Company of the Ring leaves Rivendell at dusk'. The annal bounds are 25 October and 25 December 3018."
+   }
+  ],
+  "f": "Hangs at the King's side in the Fourth Age.",
+  "x": "",
+  "l": [
+   [
+    "character.html#aragorn",
+    "Aragorn"
+   ],
+   [
+    "armies_dashboard.html",
+    "the armoury"
+   ]
+  ]
+ },
+ {
+  "n": "The ring of Barahir",
+  "t": "ring",
+  "cat": "ring",
+  "cl": "Ring",
+  "o": "Silm 19 [C] for the device: 'this ring was like to twin serpents, whose eyes were emeralds, and their heads met beneath a crown of golden flowers, that the one upheld and the other devoured; that was the badge of Finarfin and his house'; Silm 18 for the giving, 'in token of his vow he gave to Barahir his ring'. [I-H] ON THE ORIGIN: THE CORPUS NAMES NO MAKER, and 'of Valinor' belongs to the JEWELS — 'the green jewels … that the Noldor had devised in Valinor' — not to the ring. Finrod is its giver, and the badge is Finarfin's house, not his own.",
+  "d": "The oldest heirloom of the line of kings — a Elf-lord's oath made metal.",
+  "ch": [
+   {
+    "what": "Finrod Felagund",
+    "when": "Y.T. – F.A. 465",
+    "cite": "Silm 17/19 for the deed. NEITHER BOUND IS ANNALLED [I-M]: 'ring' occurs ZERO times in the Grey Annals' whole Years-of-the-Trees section, so the making has no annal; and the EARLIEST annal naming it, GA §146 at 455, calls it ALREADY 'an heirloom of his house', giving the heirloom no origin date. The closing 465 is unsupported too -- GA dates Beren's recovery to 460 (§168), and §189 at 465 only has the ring SHOWN to Thingol. The annal names the giver INGLOR."
+   },
+   {
+    "what": "given to Barahir for the saving of his life at the Bragollach",
+    "when": "F.A. 455",
+    "cite": "Silm 17 for the deed; HoME XI, the Grey Annals §146, annal 455 [C] for the year — 'Then Inglor gave to Barahir his ring, an heirloom of his house'. The annal names the giver INGLOR; 'Finrod' in the Grey Annals is his FATHER, Finarfin."
+   },
+   {
+    "what": "recovered from the Orcs by Beren, with his father's hand",
+    "when": "F.A. 460",
+    "cite": "Silm 19 for the deed; HoME XI, the Grey Annals §168, annal 460 [C] for the year — 'Thus he regained the Ring of Felagund that his father had worn'. The header is a BARE 460: the archive's earlier 'c.460' invented a hedge the corpus does not carry."
+   },
+   {
+    "what": "Beren → Dior → the line of Elros in Númenor",
+    "when": "F.A.-S.A.",
+    "cite": "UT, Line of Elros; Akallabêth"
+   },
+   {
+    "what": "Silmariën's line: the Lords of Andúnië",
+    "when": "S.A.",
+    "cite": "UT; App A"
+   },
+   {
+    "what": "Elendil → the kings of Arnor → Arvedui",
+    "when": "S.A. 3320 – T.A. 1975",
+    "cite": "LotR App A I(iii) footnote for the descent, UNDATED. NO ANNAL [I-M]: App B's 3320 entry is 'Foundations of the Realms in Exile ... The Stones are divided' and names no ring. A custody hand-off, which the annals never date."
+   },
+   {
+    "what": "pledged to the Lossoth of Forochel; ransomed back",
+    "when": "T.A. 1975+",
+    "cite": "LotR App A I(iii) for the pledge and the ransom, BOTH UNDATED. NO ANNAL [I-M]: App B 1975 names the palantiri and not the ring; 1976 has 'The heirlooms of Arnor are given into the keeping of Elrond' -- collectively, ring unnamed. The open-ended '1975+' is the archive's own."
+   },
+   {
+    "what": "the Chieftains → Aragorn → given to Arwen on Cerin Amroth",
+    "when": "T.A. 2951-2980",
+    "cite": "SPLIT. App B 2951 delivers THE SHARDS OF NARSIL ONLY and never names the ring; that handover is App A I(v), narrative. But the CLOSE is annalled -- LotR App B [C] '2980 Aragorn enters Lorien, and there meets again Arwen Undomiel. Aragorn gives her the ring of Barahir, and they plight their troth upon the hill of Cerin Amroth.' The 'About this time' in that entry hedges the Gollum clause, not the ring."
+   }
+  ],
+  "f": "On Arwen's hand; the one object that passes through the whole legendarium.",
+  "x": "",
+  "l": [
+   [
+    "genealogy.html#p=finrod",
+    "Finrod"
+   ],
+   [
+    "character.html#aragorn",
+    "Aragorn"
+   ]
+  ]
+ },
+ {
+  "n": "The palantíri",
+  "t": "stone",
+  "cat": "stone",
+  "cl": "Stone",
+  "o": "LotR III.11, Gandalf [C]: 'The palantíri came from beyond Westernesse, from Eldamar. The Noldor made them. Fëanor himself, maybe, wrought them, in days so long ago that the time cannot be measured in years.' Gandalf's 'maybe' is the whole of the Fëanor attribution and the corpus hedges it itself.",
+  "d": "The Seven Seeing-stones of the Realms in Exile; the master-stone abode in Avallónë.",
+  "ch": [
+   {
+    "what": "gift of the Eldar to Amandil's house",
+    "when": "S.A.",
+    "cite": "UT, The Palantíri; Silm, Of the Rings"
+   },
+   {
+    "what": "seven placed: Annúminas, Amon Sûl, Elostirion; Osgiliath, Minas Ithil, Minas Anor, Orthanc",
+    "when": "S.A. 3320+",
+    "cite": "LotR App B [C] — '3320 Foundations of the Realms in Exile: Arnor and Gondor. The Stones are divided.' THE ANNAL DATES THE DIVISION, not the bringing: 3319 records the Downfall and Elendil's escape with no mention of the Stones, and the carrying is narrative only (Akallabeth), undated."
+   },
+   {
+    "what": "Amon Sûl & Annúminas lost with Arvedui in the Ice-bay",
+    "when": "T.A. 1975",
+    "cite": "LotR App B [C] — '1975 Arvedui drowned in the Bay of Forochel. The palantiri of Annuminas and Amon Sul are lost.'"
+   },
+   {
+    "what": "Osgiliath-stone lost in the Anduin (Kin-strife)",
+    "when": "T.A. 1437",
+    "cite": "LotR App B [C] — '1437 Burning of Osgiliath and loss of the palantir. Eldacar flees to Rhovanion'. The annal says LOSS, not destruction."
+   },
+   {
+    "what": "Ithil-stone taken — Sauron's trap",
+    "when": "T.A. 2002",
+    "cite": "LotR App B [C] — '2002 Fall of Minas Ithil, afterwards known as Minas Morgul. The palantir is captured.' The annal does NOT name Sauron as the taker; that comes from the c.3000 entry."
+   },
+   {
+    "what": "Anor-stone: Denethor's despair; Orthanc-stone: to the King",
+    "when": "T.A. 3019",
+    "cite": "LotR III.11 and V.7 for the deeds. NO ANNAL [I-M]: no 3019 entry names a palantir. App B's whole palantir population is FIVE mentions, none later than c.3000. March 5 annals the Orthanc parley and March 15 Denethor's pyre, both without the Stone."
+   },
+   {
+    "what": "Elostirion-stone borne back over Sea",
+    "when": "T.A. 3021",
+    "cite": "LotR App A I(iii) FOOTNOTE for the deed — 'Cirdan put it aboard Elrond's ship when he left'. NO ANNAL [I-M]: 'Elostirion' occurs ZERO times in LotR, and the 3021 entry records only the departure."
+   }
+  ],
+  "f": "Two under the Ice-bay, one in the River, one burned hands in the White Tower, one serves the King, one looks on Eressëa no more.",
+  "x": "",
+  "l": [
+   [
+    "sheets.html#place=Weathertop",
+    "Amon Sûl"
+   ],
+   [
+    "sheets.html#place=Tower Hills",
+    "Elostirion"
+   ]
+  ]
+ },
+ {
+  "n": "The White Tree line",
+  "t": "tree",
+  "cat": "tree",
+  "cl": "Tree",
+  "o": "Silm 5 [C]: 'Yavanna made for them a tree like to a lesser image of Telperion, save that it did not give light of its own being; Galathilion it was named'; LotR VI.5, Gandalf, for the descent: 'a sapling of the line of Nimloth the fair; and that was a seedling of Galathilion, and that a fruit of Telperion of many names, Eldest of Trees'.",
+  "d": "A living heirloom: light handed down as seed and sapling through three ages.",
+  "ch": [
+   {
+    "what": "Telperion of Valinor — slain by Melkor & Ungoliant",
+    "when": "Y.T. 1495",
+    "cite": "Silm 8 for the deed; HoME X, the Annals of Aman 1495 §113 [C] for the year — 'with his black spear he smote each Tree to its core ... and they died'. The annal says EACH TREE and does not name Telperion; the name is in §108 of the same annal."
+   },
+   {
+    "what": "Galathilion in Tirion → Celeborn of Tol Eressëa",
+    "when": "Y.T.",
+    "cite": "Silm 5; Akallabêth"
+   },
+   {
+    "what": "Nimloth of Númenor — Isildur steals the fruit; the Tree burned by Sauron",
+    "when": "S.A. c.3280",
+    "cite": "Silm/Akallabeth for the deed. NO ANNAL DATES THIS [I-M]: there is NO ANNAL BLOCK FOR S.A. 3280 ANYWHERE -- checked by exhaustion against every year header in the Annals of Aman, the Grey Annals, the First Age Tale of Years and LotR Appendix B, 1107 distinct years. The archive's c.3280 is its own reading and the corpus offers no annal to confirm it."
+   },
+   {
+    "what": "the First White Tree of Minas Ithil — burned by Sauron",
+    "when": "S.A. 3320-3429",
+    "cite": "App A/B"
+   },
+   {
+    "what": "second and third Trees of Minas Anor; the Withered Tree",
+    "when": "T.A. 2 – 3019",
+    "cite": "App A/B"
+   },
+   {
+    "what": "the sapling found on Mindolluin by the King and Mithrandir",
+    "when": "June 3019",
+    "cite": "LotR VI.5"
+   }
+  ],
+  "f": "Flowering in the Court of the Fountain, Fourth Age.",
+  "x": "",
+  "l": [
+   [
+    "sheets.html#place=Minas Tirith",
+    "the Citadel"
+   ]
+  ]
+ },
+ {
+  "n": "The Arkenstone",
+  "t": "jewel",
+  "cat": "jewel",
+  "cl": "Jewel",
+  "o": "LotR App A III [C]: 'In Erebor he found the great jewel, the Arkenstone, Heart of the Mountain'; Hobbit ch. 12, 'the great white gem, which the dwarves had found beneath the roots of the Mountain'. [I-M] ON THE YEAR: App B's '1999 Thráin I comes to Erebor' dates his ARRIVAL, and no source dates the FINDING; the archive fuses two sentences into one date.",
+  "d": "The Heart of the Mountain — 'shone before his feet of its own inner light'.",
+  "ch": [
+   {
+    "what": "the Kings under the Mountain",
+    "when": "T.A. 1999-2770",
+    "cite": "LotR App A III for the finding — 'In Erebor he found the great jewel, the Arkenstone, Heart of the Mountain'. NO ANNAL [I-M]: 'Arkenstone' occurs ZERO times in Appendix B; 1999 and 2770 are both annalled and neither names it."
+   },
+   {
+    "what": "in Smaug's bed of gold",
+    "when": "T.A. 2770-2941",
+    "cite": "LotR App B [C] for the year -- '2770 Smaug the Dragon descends on Erebor. Dale destroyed.' THE ANNAL DATES THE SACK AND NEVER NAMES THE ARKENSTONE [I-M]; App A III goes only as far as 'Smaug entered into the Great Hall and lay there upon a bed of gold', the jewel unnamed."
+   },
+   {
+    "what": "Bilbo's pocket — and his ransom-gambit",
+    "when": "T.A. 2941",
+    "cite": "The Hobbit xiii for the deed. NO ANNAL [I-M]: the 2941 entry names the RING and not the Arkenstone."
+   },
+   {
+    "what": "laid on Thorin's breast in the deep tomb",
+    "when": "T.A. 2941",
+    "cite": "LotR App B [C] for the year -- '2941 ... The Battle of the Five Armies in Dale. Death of Thorin II.' THE ANNAL DATES THE DEATH AND NEVER NAMES THE ARKENSTONE [I-M]; the burial is The Hobbit XVIII, 'Bard laid the Arkenstone upon his breast', undated."
+   }
+  ],
+  "f": "Under the Mountain forever, with Orcrist above it.",
+  "x": "",
+  "l": [
+   [
+    "character.html#thorin",
+    "Thorin"
+   ],
+   [
+    "armies_dashboard.html#b=fivearmies",
+    "the Five Armies"
+   ]
+  ]
+ },
+ {
+  "n": "Sting",
+  "t": "sword",
+  "cat": "sword",
+  "cl": "Sword",
+  "o": "Hobbit ch. 5 [C]: 'a blade made in Gondolin for the goblin-wars'; ch. 2 for the size, 'a knife in a leather sheath … as good as a short sword for the hobbit'; LotR II.4, 'the work of Elvish smiths in the Elder Days'. [I-H]: THE CORPUS NEVER CALLS IT A LONG KNIFE, and 'First Age' rests on 'the Elder Days' plus App B's definition — two steps, not a quotation.",
+  "d": "Glows blue at orcs; named by its owner in Mirkwood.",
+  "ch": [
+   {
+    "what": "the armouries of Gondolin",
+    "when": "F.A.",
+    "cite": "Hobbit iii; LotR"
+   },
+   {
+    "what": "a troll-hoard in the Trollshaws",
+    "when": "T.A. 2941",
+    "cite": "The Hobbit ii for the finding [C]. NO ANNAL [I-M]: Sting is named nowhere in Appendix B — its two 'sting' substring hits are 'casting' and 'lasting'. The blade is unnamed in The Hobbit ii and named only in ch. viii, 'I will give you a name ... and I shall call you Sting'."
+   },
+   {
+    "what": "Bilbo",
+    "when": "2941-3001? (given at Rivendell 3018)",
+    "cite": "Hobbit; LotR II.3"
+   },
+   {
+    "what": "Frodo; borne by Sam through Cirith Ungol",
+    "when": "3018-3019",
+    "cite": "LotR IV.9-VI.1"
+   },
+   {
+    "what": "with Sam, then his line? — the corpus does not say beyond",
+    "when": "after 3019",
+    "cite": "LotR VI.2 and VI.4 for the giving and its REFUSAL. NO ANNAL, AND THE ARCHIVE'S 'after 3019' OVERSTATES [I-M]: Frodo gives Sting to Sam in VI.2, Sam REFUSES it in VI.4 ('No, master! Mr. Bilbo gave it to you'), and VI.6 has it back with Frodo. The corpus records no later transfer."
+   }
+  ],
+  "f": "Last seen at the Ring-bearer's side.",
+  "x": "",
+  "l": [
+   [
+    "character.html#bilbo",
+    "Bilbo"
+   ]
+  ]
+ },
+ {
+  "n": "Glamdring & Orcrist",
+  "t": "sword",
+  "cat": "sword",
+  "cl": "Sword",
+  "o": "Turgon's own blade and its mate, Gondolin, First Age. Hobbit ch. 3 [C]: 'They are old swords, very old swords of the High Elves of the West, my kin. They were made in Gondolin for the Goblin-wars … This, Thorin, the runes name Orcrist, the Goblin-cleaver … This, Gandalf, was Glamdring, Foe-hammer that the king of Gondolin once wore.' [I-H] ON THE NAME: the Hobbit says 'the king of Gondolin' and never Turgon; that he IS Turgon is established elsewhere, not here.",
+  "d": "Foe-hammer and Goblin-cleaver — the trolls' hoard gave back the Hidden King's sword.",
+  "ch": [
+   {
+    "what": "Turgon; the armouries of the Hidden City",
+    "when": "F.A. 126–510",
+    "cite": "The Hobbit iii, Elrond speaking, for the making [C]. NO ANNAL AND NO DATE [I-M]: the swords are named nowhere in either appendix, and the archive's span closes on Gondolin's fall, which is annalled for the CITY and not for them."
+   },
+   {
+    "what": "plunder-road unstated: 'they came from Gondolin' — six millennia dark",
+    "when": "F.A. 510 – T.A. 2941",
+    "cite": "The Hobbit iii for the making. NO ANNAL [I-M]: 'Glamdring' and 'Orcrist' are ZERO in the Grey Annals, the Tale of Years and the Annals of Aman alike. Gondolin's fall IS annalled at 510 and the entry names no sword. The plunder-road is a guess IN THE SOURCE: 'one may guess that your trolls had plundered other plunderers'."
+   },
+   {
+    "what": "the troll-hoard",
+    "when": "T.A. 2941",
+    "cite": "The Hobbit ii for the finding [C]. NO ANNAL [I-M]: 'Glamdring' and 'Orcrist' occur ZERO times in Appendix B and zero in Appendix A. The 2941 annal records the Battle of Five Armies and says nothing of the swords."
+   },
+   {
+    "what": "Glamdring: Gandalf, through Moria and the war; Orcrist: on Thorin's tomb",
+    "when": "2941 —",
+    "cite": "Hobbit; LotR; App A III"
+   }
+  ],
+  "f": "One sailed West at a wizard's side; one warns the Mountain of foes.",
+  "x": "",
+  "l": [
+   [
+    "character.html#gandalf",
+    "Gandalf"
+   ],
+   [
+    "character.html#turgon",
+    "Turgon"
+   ]
+  ]
+ },
+ {
+  "n": "Anglachel / Gurthang",
+  "t": "sword",
+  "cat": "sword",
+  "cl": "Sword",
+  "o": "Silm 21 [C]: 'it was so named because it was made of iron that fell from heaven as a blazing star … that smith was Eöl the Dark Elf'. NOTE THE ORIGIN COVERS ANGLACHEL ONLY: Gurthang is a RE-forging, 'forged anew for him by cunning smiths of Nargothrond', not Eöl's work.",
+  "d": "The black sword with a will of its own; it spoke once, at the end.",
+  "ch": [
+   {
+    "what": "Eöl of Nan Elmoth — given to Thingol as fee for Nan Elmoth",
+    "when": "F.A.",
+    "cite": "Silm 21; CoH"
+   },
+   {
+    "what": "Beleg Strongbow — against the counsel of Melian",
+    "when": "F.A.",
+    "cite": "CoH IX"
+   },
+   {
+    "what": "Túrin — who slew Beleg with it; reforged black: Gurthang",
+    "when": "F.A. 490–5",
+    "cite": "CoH for the deeds; HoME XI, the Grey Annals §268 [C] for the reforging — 'The Noldor took Beleg's sword which Turin had kept, and re-forged it ... the sword itself he named Gurthang Iron of Death'. THE ANNAL HEADER IS 490-5, NOT 489: 489 is §§265-266, Turin's capture and Beleg's death. The archive's opening year belonged to a different event."
+   },
+   {
+    "what": "broken beneath Túrin at Cabed Naeramarth; buried with him",
+    "when": "F.A. 499",
+    "cite": "HoME XI, the Grey Annals §349, under year header 499 [C] — 'Then they lifted up Turin and found that Gurthang had broken asunder ... the shards of Gurthang were laid beside him'. THE ANNAL CARRIES BOTH HALVES. Note the annal spells it Cabad Naeramarth, and ANGLACHEL DOES NOT OCCUR IN THE GREY ANNALS AT ALL -- the sword is Gurthang throughout."
+   }
+  ],
+  "f": "'I will drink thy blood gladly' — its last words; shards under the standing stone.",
+  "x": "",
+  "l": [
+   [
+    "character.html#turin",
+    "Túrin"
+   ]
+  ]
+ },
+ {
+  "n": "The Dragon-helm of Dor-lómin",
+  "t": "helm",
+  "cat": "helm",
+  "cl": "Helm",
+  "o": "Telchar of Nogrod; the image of Glaurung on its crest. CoH ch. 4 [C]: 'It was wrought by Telchar, the smith of Nogrod, whose works were renowned … Upon its crest was set in defiance a gilded image of Glaurung the dragon.' UT I.ii carries the same passage reading 'the head of Glaurung', and adds that the helm 'had not been made for Men, but for Azaghâl Lord of Belegost'.",
+  "d": "Its wearer feared no stroke — and was known to every eye.",
+  "ch": [
+   {
+    "what": "Azaghâl of Belegost → Maedhros → Fingon",
+    "when": "F.A.",
+    "cite": "CoH VI"
+   },
+   {
+    "what": "Fingolfin to Hador with the lordship of Dor-lómin (GA §129, 420); the helm's own passage is undated",
+    "when": "F.A. c.416",
+    "cite": "UT, Narn i Hin Hurin, for the gift, UNDATED. NO ANNAL AND THERE IS NO F.A. 416 [I-M]: I checked the Grey Annals headers myself -- 413, 417, 419, 420, 422, 423. AND THE ANNAL DISAGREES ON THE GIVER: GA §129 under 420 gives Hador the lordship from FINGOLFIN, not Fingon -- 'became a vassal of Fingolfin ... he was given wide lands in Hithlum in the country of Dor-Lomin' -- and names no helm."
+   },
+   {
+    "what": "Hador → Galdor → Húrin (who wore it not) → Túrin",
+    "when": "F.A.",
+    "cite": "CoH VI"
+   },
+   {
+    "what": "borne by Túrin in Dor-Cúarthol — the whisper went that 'the Helm and Bow that had fallen in Dimbar had arisen again beyond hope'",
+    "when": "F.A. 486–489",
+    "cite": "Silm 21; CoH for the deed. NO ANNAL, AND THERE IS NO F.A. 486 AT ALL [I-M]: I checked every Grey Annals header and they run 481, 484, 487, 488, 489, 490 — 486 does not exist. The only annal-line record of the helm reaching Turin is GA §258 under 481, and Christopher states that note 'is not in the typescript of GA'. Every other Dragon-helm mention in the annals is a bracketed pencilled marginal, including Tolkien's own 'What happened to the Dragon-helm?' at 489."
+   }
+  ],
+  "f": "Passes out of the tale with Nargothrond's sack; the corpus follows it no further.",
+  "x": "",
+  "l": [
+   [
+    "character.html#turin",
+    "Túrin"
+   ]
+  ]
+ },
+ {
+  "n": "The Nauglamír",
+  "t": "jewel",
+  "cat": "jewel",
+  "cl": "Jewel",
+  "o": "The Necklace of the Dwarves, made of old for Finrod Felagund. Silm 22 [C]: 'the Nauglamír, the Necklace of the Dwarves', 'made for Finrod Felagund'.",
+  "d": "Fairest work of Nogrod and Belegost; deadliest gift of the First Age.",
+  "ch": [
+   {
+    "what": "Finrod, chief treasure of Nargothrond",
+    "when": "F.A. 102–495",
+    "cite": "Silm for the making [C]. NO ANNAL DATES A NAUGLAMIR MADE FOR FINROD [I-M], and this is silence across COVERED years — the Grey Annals run 2 to 499 and never name it. THE ANNALS RECORD AN INCOMPATIBLE MAKING: every Tale of Years recension dates a 'Making of the Nauglamir' to 501/502, from Glaurung's treasure, FOR THINGOL."
+   },
+   {
+    "what": "Húrin bore GLAURUNG'S TREASURE from the sacked halls to Thingol — the necklace is wrought from it after — 'thy fee'",
+    "when": "F.A. c.501",
+    "cite": "Silm 22 for the deed. THE ANNAL DATES THE TREASURE, NOT THE NECKLACE [I-M]: Tale of Years D 1, 501 -- 'He goes to Nargothrond and seizes THE TREASURE of Glaurung. He takes THE TREASURE to Menegroth and casts it at the feet of Thingol.' In that same recension the Nauglamir is MADE AFTERWARDS, at 502, out of that treasure. Hurin bearing the necklace itself is the published Silmarillion, which carries no year."
+   },
+   {
+    "what": "remade about a Silmaril; Thingol slain over it by the smiths of Nogrod",
+    "when": "F.A. c.502",
+    "cite": "HoME XI, the Tale of Years D 1 [C] for the making -- '502 The Nauglamir is wrought of the treasure of Glaurung, and the Silmaril is hung thereon.' THE SLAYING IS 503, NOT 502, IN EVERY RECENSION: D 1 503 'King Elu Thingol is slain and his realm ended'; B and C likewise 502/503; A alone 501/502, and A's making entry names no Silmaril. The Silmaril-hung-thereon element exists ONLY in D 1."
+   },
+   {
+    "what": "recovered at Sarn Athrad; Lúthien wore it at Tol Galen",
+    "when": "F.A.",
+    "cite": "Silm 22"
+   },
+   {
+    "what": "Dior, then Elwing — into the Sea and to Eärendil",
+    "when": "F.A. 504–538",
+    "cite": "Silm 22-24 for the deeds; HoME XI, the Tale of Years, TWO RECENSIONS NAMED because they disagree [I-M]: 506 is D 2 ('506-507 At Yule Dior fought the sons of Feanor ... and was slain'), and 538 is C ALONE as its final emendation ('532 [> 534 > 538] The Third and Last Kinslaying ... Elwing carries away the Silmaril'). B and C move the Second Kinslaying to 509; D 2 never reaches 538. THE START DATE IS D 2's 504, when 'Dior now publicly wore the Nauglamír and the Jewel' (t1_11:12936-12938); 506 was here before and dated his DEATH, which is when a tenure ends, not when it begins. Same weld as the Silmarils record repaired at 4e776f0."
+   }
+  ],
+  "f": "Its Silmaril rides the sky; of the necklace no more is said.",
+  "x": "",
+  "l": [
+   [
+    "armies_dashboard.html#b=doriath",
+    "the Sacks of Doriath"
+   ]
+  ]
+ },
+ {
+  "n": "The Elessar",
+  "t": "jewel",
+  "cat": "jewel",
+  "cl": "Jewel",
+  "o": "Two traditions: made in Gondolin by Enerdhil the jewel-smith — or by Celebrimbor in Eregion",
+  "d": "The green stone of healing whose light makes all things fair; it named a king.",
+  "ch": [
+   {
+    "what": "(tradition one) Enerdhil → Idril → Eärendil, into the sky",
+    "when": "F.A.",
+    "cite": "UT, The Elessar, for the tradition. NO ANNAL [I-M]: 'elessar', 'elfstone', 'enerdhil' and 'celebrimbor' are ZERO inside the Grey Annals and the Tale of Years, and zero in Morgoth's Ring entire. Every temporal marker in that essay is RELATIVE — 'ere Sauron deluded the smiths of Eregion', 'before Sauron rose again' — and no numbered year appears."
+   },
+   {
+    "what": "(tradition two, or a second stone) Celebrimbor → Galadriel",
+    "when": "S.A.",
+    "cite": "UT, The Elessar"
+   },
+   {
+    "what": "Galadriel → Celebrían → Arwen? — 'by right of kin'; given to Aragorn at Lórien",
+    "when": "T.A. 3019",
+    "cite": "LotR II.8 for the giving; UT 'The Elessar' for the descent. NO ANNAL [I-M]: no App B entry names the Elessar as a JEWEL — all eight occurrences there are the king-name. 'Green stone' and 'Elfstone' are zero."
+   },
+   {
+    "what": "Aragorn Elessar — crowned in its name",
+    "when": "3019 —",
+    "cite": "LotR V.8/VI.5"
+   }
+  ],
+  "f": "On the King's breast; UT prints both makings side by side.",
+  "x": "UT's two accounts are irreconcilable and both kept — the archive's rule made visible.",
+  "l": [
+   [
+    "character.html#aragorn",
+    "Aragorn"
+   ],
+   [
+    "character.html#galadriel",
+    "Galadriel"
+   ]
+  ]
+ },
+ {
+  "n": "The Phial of Galadriel",
+  "t": "phial",
+  "cat": "phial",
+  "cl": "Phial",
+  "o": "The light of Eärendil's star caught in Galadriel's fountain-water",
+  "d": "'A light to you in dark places, when all other lights go out.'",
+  "ch": [
+   {
+    "what": "Galadriel's parting gift to Frodo",
+    "when": "Feb 3019",
+    "cite": "LotR II.8"
+   },
+   {
+    "what": "against Shelob in the pass; against the Watchers of the Tower",
+    "when": "Mar 3019",
+    "cite": "LotR IV.9; VI.1"
+   },
+   {
+    "what": "borne over Sea in the Ring-bearer's hand",
+    "when": "Sept 3021",
+    "cite": "LotR VI.9"
+   }
+  ],
+  "f": "Went West still shining.",
+  "x": "",
+  "l": [
+   [
+    "character.html#frodo",
+    "Frodo"
+   ]
+  ]
+ },
+ {
+  "n": "The Horn of the Mark",
+  "t": "horn",
+  "cat": "horn",
+  "cl": "Horn",
+  "o": "Out of the hoard of Scatha the Worm, brought south by Eorl's folk",
+  "d": "Small, silver-wound, of dwarf-make: “He that blows it at need shall set fear in the hearts of his enemies and joy in the hearts of his friends”.",
+  "ch": [
+   {
+    "what": "the hoard of Scatha; the Éothéod",
+    "when": "before T.A. 2510",
+    "cite": "LotR VI.6 for the gift. NO ANNAL [I-M]: 'Scatha' occurs ZERO times in Appendix B; the 2510 entry annals Eorl's victory with no horn and no hoard."
+   },
+   {
+    "what": "the house of Eorl",
+    "when": "2510-3019",
+    "cite": "LotR VI.6"
+   },
+   {
+    "what": "Éowyn's gift to Meriadoc at the parting",
+    "when": "3019",
+    "cite": "LotR VI.6 for the gift, quoted at length there. NO ANNAL [I-M]: 'Horn of the Mark' occurs NOWHERE in the corpus file; App B's August 3019 entries date the leave-taking -- '14. The guests take leave of King Eomer' -- without mentioning the horn."
+   },
+   {
+    "what": "blown at the raising of the Shire — Bywater",
+    "when": "Nov 3019",
+    "cite": "LotR VI.8"
+   }
+  ],
+  "f": "An heirloom of Buckland thereafter (the Yule-horns of the Shire).",
+  "x": "",
+  "l": [
+   [
+    "character.html#merry",
+    "Merry"
+   ],
+   [
+    "armies_dashboard.html#b=bywater",
+    "Bywater"
+   ]
+  ]
+ },
+ {
+  "n": "The mithril-coat",
+  "t": "mail",
+  "cat": "mail",
+  "cl": "Mail",
+  "o": "Wrought for an elf-prince of old; given to Bilbo from Smaug's hoard",
+  "d": "'…its worth was greater than the value of the whole Shire and everything in it' — Gandalf.",
+  "ch": [
+   {
+    "what": "Thorin's gift to Bilbo",
+    "when": "T.A. 2941",
+    "cite": "The Hobbit xiii for the gift [C]. NO ANNAL [I-M]: the 2941 annal dates the Battle of Five Armies and Thorin's death and omits the coat."
+   },
+   {
+    "what": "lent to the Mathom-house of Michel Delving; recalled, and given to Frodo",
+    "when": "3018",
+    "cite": "LotR Prologue; II.3"
+   },
+   {
+    "what": "saved Frodo from the Moria-spear; taken by the Tower; restored at Cormallen",
+    "when": "3019",
+    "cite": "LotR II.4 and VI.1 for the deeds; LotR App B [C] for the year — '17 Battle of Dale ... Shagrat brings Frodo's cloak, mail-shirt, and sword to Barad-dur' (3019, March 17). THE ONLY ENTRY IN THE WHOLE OF APPENDIX B NAMING ANY ARTEFACT OF THIS DATASET. Note the annal writes 'sword' unnamed."
+   },
+   {
+    "what": "worn again at the Havens-riding",
+    "when": "3021",
+    "cite": "LotR VI.6 for the last sighting. NO ANNAL AND NO NARRATIVE [I-M]: the 3021 annal names only 'They come to the Grey Havens ... the end of the Third Age', and VI.9 mentions neither the coat nor Sting. The last record of the coat is VI.6."
+   }
+  ],
+  "f": "With Frodo over Sea — or left? the corpus does not say; the gap stands.",
+  "x": "",
+  "l": [
+   [
+    "character.html#bilbo",
+    "Bilbo"
+   ],
+   [
+    "character.html#frodo",
+    "Frodo"
+   ]
+  ]
+ },
+ {
+  "n": "Grond, twice",
+  "t": "ram",
+  "cat": "ram",
+  "cl": "Ram",
+  "o": "The Hammer of the Underworld — Morgoth's mace; its name given again to the wolf-headed ram of Mordor. Silm 18 [C]: 'Then Morgoth hurled aloft Grond, the Hammer of the Underworld, and swung it down like a bolt of thunder.' LotR V.4 [C] for the ram: 'Grond they named it', 'in memory of the Hammer of the Underworld'.",
+  "d": "The first broke the ground before Fingolfin; the second broke the Gate of Gondor.",
+  "ch": [
+   {
+    "what": "Morgoth's mace at the duel",
+    "when": "F.A. 456",
+    "cite": "HoME XI, the Grey Annals §156, annal 456 [C] — 'Morgoth fought with a great hammer, Grond, that he wielded as a mace'. THE ANNAL DATES THE WIELDING and says nothing of the mace's making."
+   },
+   {
+    "what": "the ram of Minas Morgul, 'a hundred feet in length', hauled by great beasts",
+    "when": "Mar 15, 3019",
+    "cite": "LotR V.4 for the ram, undated in the narrative. LotR App B [C] dates the EVENT and never names it — '15 In the early hours the Witch-king breaks the Gates of the City'."
+   }
+  ],
+  "f": "The Gate it broke was rebuilt in mithril and steel by Gimli's folk.",
+  "x": "",
+  "l": [
+   [
+    "armies_dashboard.html#b=pelennor",
+    "the Pelennor"
+   ]
+  ]
+ },
+ {
+  "n": "The Red Arrow & the beacons",
+  "t": "token",
+  "cat": "token",
+  "cl": "Token",
+  "o": "The war-summons of Gondor to the Mark. LotR V.3 [C]: 'He sank on one knee and presented the arrow to Théoden … Hirgon I am, errand-rider of Denethor, who bring you this token of war.' — 'The Red Arrow!' said Théoden, holding it.",
+  "d": "One black-feathered arrow, its head painted red — six days from errand to answer.",
+  "ch": [
+   {
+    "what": "Hirgon of Gondor to Théoden at Dunharrow",
+    "when": "9 March 3019 (the evening Théoden came to Dunharrow; the Mark rides next day)",
+    "cite": "LotR V.3"
+   },
+   {
+    "what": "Hirgon slain riding back; the arrow found by the fallen",
+    "when": "Mar 15?",
+    "cite": "LotR V.5"
+   },
+   {
+    "what": "the beacons: Amon Dîn to Halifirien, burning westward",
+    "when": "Mar 7-8, 3019",
+    "cite": "LotR V.1"
+   }
+  ],
+  "f": "Answered: six thousand spears at dawn.",
+  "x": "",
+  "l": [
+   [
+    "armies_dashboard.html#b=pelennor",
+    "the ride's end"
+   ]
+  ]
+ }
+]

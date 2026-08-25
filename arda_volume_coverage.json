@@ -1,0 +1,1155 @@
+{
+ "what": "Per-volume USE, not per-volume reading. A volume no published claim rests on is one the archive holds and has never drawn on.",
+ "why_not_read": "nothing in this archive distinguishes a volume that has been read from one merely extracted, and a per-volume 'read' flag would be an unevidenced claim about 190 books. USE is measurable; reading is not.",
+ "signals": {
+  "bound": "a machine verified a published quotation against this text (arda_attributions, both the `b` and `bb` binding forms) — the stronger signal",
+  "cited": "a human named the volume in a cite field — no machine checked it"
+ },
+ "not_classified": "this record does NOT say which volumes are reference works and which are narrative. No dataset here classifies a volume by kind, so any such split would be a guess from filenames rather than a measurement.",
+ "n_volumes": 190,
+ "n_used": 37,
+ "n_empty": 1,
+ "n_unused": 152,
+ "volumes": [
+  {
+   "file": "t1_10_morgoths_ring.txt",
+   "bytes": 1198608,
+   "bound": 52,
+   "cited": 542
+  },
+  {
+   "file": "t1_11_the_war_of_the_jewels.txt",
+   "bytes": 1187682,
+   "bound": 20,
+   "cited": 18
+  },
+  {
+   "file": "t1_12_the_peoples_of_middle_earth.txt",
+   "bytes": 1203316,
+   "bound": 15,
+   "cited": 21
+  },
+  {
+   "file": "t1_13_index.txt",
+   "bytes": 1035761,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t1_1_the_book_of_lost_tales_part_one.txt",
+   "bytes": 796575,
+   "bound": 2,
+   "cited": 413
+  },
+  {
+   "file": "t1_2_the_book_of_lost_tales_part_two.txt",
+   "bytes": 1008218,
+   "bound": 4,
+   "cited": 618
+  },
+  {
+   "file": "t1_3_the_lays_of_beleriand.txt",
+   "bytes": 822359,
+   "bound": 4,
+   "cited": 371
+  },
+  {
+   "file": "t1_4_the_shaping_of_middle_earth.txt",
+   "bytes": 805031,
+   "bound": 8,
+   "cited": 0
+  },
+  {
+   "file": "t1_5_the_lost_road_and_other_writings.txt",
+   "bytes": 1163407,
+   "bound": 14,
+   "cited": 736
+  },
+  {
+   "file": "t1_6_the_return_of_the_shadow.txt",
+   "bytes": 1250766,
+   "bound": 6,
+   "cited": 448
+  },
+  {
+   "file": "t1_7_the_treason_of_isengard.txt",
+   "bytes": 1239795,
+   "bound": 7,
+   "cited": 545
+  },
+  {
+   "file": "t1_8_the_war_of_the_ring.txt",
+   "bytes": 1052172,
+   "bound": 0,
+   "cited": 3
+  },
+  {
+   "file": "t1_9_sauron_defeated.txt",
+   "bytes": 1146754,
+   "bound": 7,
+   "cited": 23
+  },
+  {
+   "file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
+   "bytes": 357589,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t1_a_the_silmarillion.txt",
+   "bytes": 938372,
+   "bound": 145,
+   "cited": 1255
+  },
+  {
+   "file": "t1_b_the_hobbit_or_there_and_back_again.txt",
+   "bytes": 531985,
+   "bound": 34,
+   "cited": 80
+  },
+  {
+   "file": "t1_beowulf_the_monsters_and_the_critics.txt",
+   "bytes": 123161,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t1_c_appendix_tables_raw.txt",
+   "bytes": 71580,
+   "bound": 15,
+   "cited": 0
+  },
+  {
+   "file": "t1_c_the_lord_of_the_rings.txt",
+   "bytes": 3210307,
+   "bound": 272,
+   "cited": 4650
+  },
+  {
+   "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "bytes": 1205529,
+   "bound": 56,
+   "cited": 1554
+  },
+  {
+   "file": "t1_e_beren_and_luthien.txt",
+   "bytes": 366661,
+   "bound": 7,
+   "cited": 0
+  },
+  {
+   "file": "t1_f_the_children_of_hurin.txt",
+   "bytes": 416379,
+   "bound": 15,
+   "cited": 0
+  },
+  {
+   "file": "t1_g_the_fall_of_gondolin.txt",
+   "bytes": 461647,
+   "bound": 9,
+   "cited": 0
+  },
+  {
+   "file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
+   "bytes": 670307,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
+   "bytes": 151460,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
+   "bytes": 86468,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
+   "bytes": 268550,
+   "bound": 7,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+   "bytes": 3216461,
+   "bound": 16,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_hobbit_illustrated.txt",
+   "bytes": 586867,
+   "bound": 34,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_king_s_letter_manuscript_plate_png.txt",
+   "bytes": 0,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "bytes": 1271033,
+   "bound": 13,
+   "cited": 833
+  },
+  {
+   "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+   "bytes": 1732639,
+   "bound": 13,
+   "cited": 833
+  },
+  {
+   "file": "t1_the_monsters_and_the_critics_and_other_essays.txt",
+   "bytes": 629428,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t1_the_tolkien_reader.txt",
+   "bytes": 404795,
+   "bound": 3,
+   "cited": 0
+  },
+  {
+   "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
+   "bytes": 559516,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_i_the_nature_of_middle_earth.txt",
+   "bytes": 947938,
+   "bound": 2,
+   "cited": 592
+  },
+  {
+   "file": "t2_ocr_parma_eldalamberon_17.txt",
+   "bytes": 760824,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_parma_eldalamberon_23.txt",
+   "bytes": 428295,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_the_art_of_the_hobbit.txt",
+   "bytes": 131220,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_11.txt",
+   "bytes": 67697,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_12.txt",
+   "bytes": 75685,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_14.txt",
+   "bytes": 78392,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_24.txt",
+   "bytes": 101144,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_25.txt",
+   "bytes": 76275,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_27.txt",
+   "bytes": 127885,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_28.txt",
+   "bytes": 114515,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_29.txt",
+   "bytes": 65894,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_31.txt",
+   "bytes": 94491,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_36.txt",
+   "bytes": 108732,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_37.txt",
+   "bytes": 69888,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_39.txt",
+   "bytes": 105972,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_ocr_vinyar_tengwar_39_2.txt",
+   "bytes": 106142,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_parma_eldalamberon_11.txt",
+   "bytes": 353682,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_parma_eldalamberon_13.txt",
+   "bytes": 530179,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_parma_eldalamberon_14.txt",
+   "bytes": 440140,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_parma_eldalamberon_15.txt",
+   "bytes": 447494,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_pictures_by_j_r_r_tolkien.txt",
+   "bytes": 43022,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_the_history_of_the_hobbit.txt",
+   "bytes": 2652657,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+   "bytes": 2638431,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+   "bytes": 2551141,
+   "bound": 5,
+   "cited": 0
+  },
+  {
+   "file": "t2_vinyar_tengwar_39_41_osanwe_kenta_extract.txt",
+   "bytes": 48867,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_vinyar_tengwar_41_50.txt",
+   "bytes": 1192466,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t2_vinyar_tengwar_43.txt",
+   "bytes": 115404,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_a_gateway_to_sindarin.txt",
+   "bytes": 1107231,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_a_sindarin_and_noldorin_dictionary.txt",
+   "bytes": 385820,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_amanye_tenceli_the_sarati.txt",
+   "bytes": 13619,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_barbara_strachey_journeys_of_frodo.txt",
+   "bytes": 105649,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_eip_earlyilkorin.txt",
+   "bytes": 78729,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_gpt_goldpat.txt",
+   "bytes": 85042,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_hpitn_1923_phon.txt",
+   "bytes": 68810,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_nba_ni_bitha_adunaye.txt",
+   "bytes": 67503,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_pee_parma_errata.txt",
+   "bytes": 17716,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_qq_quen_eng_doc.txt",
+   "bytes": 675104,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t3_eldamo_vte_vt_errata.txt",
+   "bytes": 11239,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_ellison_the_road_goes_ever_on_the_journey_motive_in_.txt",
+   "bytes": 33416,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_forodrim.txt",
+   "bytes": 30830,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe11.txt",
+   "bytes": 146593,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
+   "bytes": 625417,
+   "bound": 13,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe21.txt",
+   "bytes": 110568,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_j_r_r_tolkien_a_global_theory.txt",
+   "bytes": 243524,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
+   "bytes": 75518,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_giraudeau_sindarin_corpus_from_pe17.txt",
+   "bytes": 154102,
+   "bound": 7,
+   "cited": 0
+  },
+  {
+   "file": "t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt",
+   "bytes": 80321,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t3_lotr_1954_2004.txt",
+   "bytes": 982418,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_1.txt",
+   "bytes": 62282,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_10.txt",
+   "bytes": 81083,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_11.txt",
+   "bytes": 117067,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_12.txt",
+   "bytes": 113944,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_13.txt",
+   "bytes": 86864,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_14.txt",
+   "bytes": 89711,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_15.txt",
+   "bytes": 87856,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_16.txt",
+   "bytes": 107962,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_17.txt",
+   "bytes": 205063,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_18.txt",
+   "bytes": 145104,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_19.txt",
+   "bytes": 151650,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_2.txt",
+   "bytes": 65651,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_20.txt",
+   "bytes": 124770,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_21.txt",
+   "bytes": 177551,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_22.txt",
+   "bytes": 202894,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_23.txt",
+   "bytes": 207079,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_24.txt",
+   "bytes": 245661,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_25.txt",
+   "bytes": 266705,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_26.txt",
+   "bytes": 398393,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_27.txt",
+   "bytes": 318287,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_28.txt",
+   "bytes": 259970,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_29.txt",
+   "bytes": 264174,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_3.txt",
+   "bytes": 92831,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_30.txt",
+   "bytes": 249400,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_31.txt",
+   "bytes": 259285,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_32.txt",
+   "bytes": 154619,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+   "bytes": 2885000,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_34.txt",
+   "bytes": 218761,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_35.txt",
+   "bytes": 292659,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_36.txt",
+   "bytes": 299927,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_37.txt",
+   "bytes": 201476,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_38.txt",
+   "bytes": 253302,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_39.txt",
+   "bytes": 261368,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_4.txt",
+   "bytes": 104562,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_40.txt",
+   "bytes": 420918,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_41.txt",
+   "bytes": 377030,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_42.txt",
+   "bytes": 397666,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_43.txt",
+   "bytes": 402956,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_44.txt",
+   "bytes": 385861,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_45.txt",
+   "bytes": 242685,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_46.txt",
+   "bytes": 230197,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_47.txt",
+   "bytes": 277916,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_48.txt",
+   "bytes": 273672,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_49.txt",
+   "bytes": 279686,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_5.txt",
+   "bytes": 83358,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_50.txt",
+   "bytes": 282517,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_51.txt",
+   "bytes": 273612,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_52.txt",
+   "bytes": 278637,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_53.txt",
+   "bytes": 243480,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_54.txt",
+   "bytes": 308059,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_55.txt",
+   "bytes": 263839,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_56.txt",
+   "bytes": 256584,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_57.txt",
+   "bytes": 217031,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_58_updated.txt",
+   "bytes": 248681,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_59.txt",
+   "bytes": 434175,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_6.txt",
+   "bytes": 113962,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_60.txt",
+   "bytes": 259833,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_61_digital.txt",
+   "bytes": 269523,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_62.txt",
+   "bytes": 317653,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_63_galley_1.txt",
+   "bytes": 21026,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_63_galley_2.txt",
+   "bytes": 306813,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_64_corrected.txt",
+   "bytes": 400446,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_7.txt",
+   "bytes": 97910,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_8.txt",
+   "bytes": 117412,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mallorn_9.txt",
+   "bytes": 85123,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_mythlore_index.txt",
+   "bytes": 1764878,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
+   "bytes": 310577,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_parma_eldalamberon_vol_1_no_1.txt",
+   "bytes": 116633,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_parma_eldalamberon_vol_1_no_2.txt",
+   "bytes": 152301,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_parma_eldalamberon_vol_1_no_3.txt",
+   "bytes": 222436,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_parma_eldalamberon_vol_1_no_4.txt",
+   "bytes": 381628,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_parma_eldalamberon_vol_1_no_5.txt",
+   "bytes": 208797,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_patrick_curry_defending_middle_earth.txt",
+   "bytes": 391702,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_patrick_curry_ecology_in_middle_earth.txt",
+   "bytes": 19576,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_perilous_realms_marjorie_burns.txt",
+   "bytes": 535008,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
+   "bytes": 814737,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
+   "bytes": 311552,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_rumilian_numerals.txt",
+   "bytes": 53762,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_sarati_rumilo_quenyava.txt",
+   "bytes": 3355,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tengwar_numbers.txt",
+   "bytes": 2642,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_atlas_of_middle_earth.txt",
+   "bytes": 475179,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_complete_guide_to_middle_earth.txt",
+   "bytes": 1106872,
+   "bound": 1,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_complete_tolkien_companion.txt",
+   "bytes": 1430488,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_ring_goes_ever_on.txt",
+   "bytes": 3522475,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
+   "bytes": 1001141,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_science_of_middle_earth_larsen_review_journal_of.txt",
+   "bytes": 63114,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_artwork.txt",
+   "bytes": 497,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_heraldry.txt",
+   "bytes": 120251,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_s_legendarium.txt",
+   "bytes": 748005,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_studies_10.txt",
+   "bytes": 826616,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_studies_9.txt",
+   "bytes": 436841,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkien_the_medievalist_part.txt",
+   "bytes": 70354,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_tolkienian_linguistics_the_first_fifty_y.txt",
+   "bytes": 136866,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_verlyn_flieger_a_question_of_time.txt",
+   "bytes": 572193,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_vinyar_tengwar_index.txt",
+   "bytes": 243188,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_heraldry_tolkien_gateway.txt",
+   "bytes": 131593,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_letterschanges.txt",
+   "bytes": 64347,
+   "bound": 0,
+   "cited": 833
+  },
+  {
+   "file": "t4_lotr_roleplay.txt",
+   "bytes": 1296896,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
+   "bytes": 303666,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_sarati_alphabet.txt",
+   "bytes": 5267,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_sarati_wikipedia.txt",
+   "bytes": 8013,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
+   "bytes": 3635,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_the_art_of_the_lord_of_the_rings.txt",
+   "bytes": 229490,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
+   "bytes": 763,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
+   "bytes": 378367,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
+   "bytes": 151753,
+   "bound": 0,
+   "cited": 0
+  }
+ ]
+}

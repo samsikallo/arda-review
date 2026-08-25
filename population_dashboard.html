@@ -1,0 +1,402 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Peoples of Arda — demographics</title><!--ARDA:META--><meta name="description" content="The peoples of Arda: a demographic model with taxonomy of every speaking people, cited population estimates and lifespans compared."><meta property="og:title" content="The Peoples of Arda — demographics"><meta property="og:description" content="The peoples of Arda: a demographic model with taxonomy of every speaking people, cited population estimates and lifespans compared."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/population_dashboard.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/population_dashboard.html"><!--/ARDA:META-->
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--card:#fdfaf2;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),radial-gradient(ellipse at 85% 95%,rgba(120,90,40,.12),rgba(0,0,0,0) 55%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:12px 24px 10px;border-bottom:3px double #8a7444;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:21px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:11px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+#hdr a{color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444}
+.wrap{max-width:1220px;margin:0 auto;padding:16px 20px 50px}
+h2{font-variant:small-caps;font-weight:normal;letter-spacing:.08em;color:#5a4626;border-bottom:1px solid rgba(176,165,142,.55);padding-bottom:3px;margin-top:26px}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+.pcard{background:linear-gradient(#fdfaf2,#f8f2e2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;box-shadow:0 2px 8px rgba(60,40,10,.12)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.tile{background:linear-gradient(#fdfaf2,#f6efdc);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-align:center;box-shadow:0 2px 6px rgba(60,40,10,.10)}
+.tile .n{font-size:22px;color:#5a4626;font-variant:small-caps}
+.tile .l{font-size:11px;color:var(--mut);font-style:italic;line-height:1.35}
+.tile .c{font-size:9.5px;color:#9a8560}
+svg text.tx{font:11.5px Georgia,serif;fill:var(--ink)}
+svg text.txs{font:italic 9.5px Georgia,serif;fill:var(--mut)}
+.tnode{cursor:pointer}
+.tnode rect{fill:#fffdf6;stroke:var(--line);rx:7}
+.tnode.on rect{stroke:#b3441c;stroke-width:2.4}
+.tnode.dead rect{stroke-dasharray:4 3;fill:#efe8d6}
+#taxpanel{margin-top:10px}
+#taxpanel h3{font-variant:small-caps;font-weight:normal;margin:.1em 0 .2em;font-size:17px;color:#5a4626}
+#taxpanel .row{margin:.25em 0}
+#taxpanel .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-right:6px}
+.orn{text-align:center;color:#b0a58e;margin:.3em 0;font-size:12px;letter-spacing:.3em}
+/* chart engine theme (kept from the validated dashboard) */
+.viz-root{color-scheme:light;
+ --surface-1:#fcfcfb;--page:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;
+ --grid:#e1e0d9;--axis:#c3c2b7;--ring:rgba(11,11,11,0.10);
+ --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#4a3aa7;--s8:#e34948}
+@media (prefers-color-scheme: dark){:root:where(:not([data-theme="light"])) .viz-root{color-scheme:dark;
+ --surface-1:#1a1a19;--page:#0d0d0d;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;
+ --grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,0.10);
+ --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767}}
+:root[data-theme="dark"] .viz-root{color-scheme:dark;
+ --surface-1:#1a1a19;--page:#0d0d0d;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;
+ --grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,0.10);
+ --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767}
+
+.viz-root{background:var(--page);min-height:100vh;padding:18px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:1.25rem;margin:4px 0 2px}
+.sub{color:var(--ink2);font-size:.85rem;margin-bottom:12px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ring);border-radius:16px;
+ padding:4px 10px;font-size:.8rem;cursor:pointer;background:var(--surface-1);color:var(--ink2);user-select:none}
+.chip .sw{width:14px;height:4px;border-radius:2px;background:var(--c)}
+.chip.off{opacity:.38}
+.chip.minor .sw{background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)}
+.btn{border:1px solid var(--ring);background:var(--surface-1);color:var(--ink);border-radius:6px;
+ padding:5px 10px;font-size:.8rem;cursor:pointer}
+.btn[aria-pressed="true"]{outline:2px solid var(--s1);outline-offset:-1px}
+.panel{background:var(--surface-1);border:1px solid var(--ring);border-radius:8px;padding:10px}
+svg text{font-family:inherit}
+#tip{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--ring);
+ border-radius:6px;padding:8px 10px;font-size:.75rem;max-width:290px;display:none;z-index:9;color:var(--ink);
+ box-shadow:0 2px 10px rgba(0,0,0,.18)}
+#tip .v{font-size:.95rem;font-weight:600}
+#tip .conf{display:inline-block;border:1px solid var(--ring);border-radius:4px;padding:0 4px;margin-left:6px;color:var(--ink2)}
+#tbl{margin-top:12px;display:none;overflow-x:auto}
+table{border-collapse:collapse;font-size:.75rem;background:var(--surface-1)}
+th,td{border:1px solid var(--grid);padding:4px 7px;text-align:right;font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left}
+.note{color:var(--ink2);font-size:.75rem;margin-top:10px;line-height:1.5}
+
+.viz-root{padding:0;background:transparent;min-height:0}
+.viz-root .panel{border-radius:10px;box-shadow:0 2px 8px rgba(60,40,10,.12)}
+</style><link rel="stylesheet" href="arda.css"><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;&#39;;--edge-r:&#39;&#39;" data-edge-tr="peoples" data-edge-en="Peoples" data-edge-mode="Angerthas Daeron" data-edge-script="cirth" data-edge-src="" data-edge-conf="[NEO]" data-turn-prev="genealogy.html" data-turn-next="volume-iv.html"><div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> Peoples</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html" aria-current="page">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="population_dashboard.html"><div class="rh"><span>The Arda Archive · The Peoples of Arda</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Peoples of Arda</h2><p class="lede">The peoples of Arda: a demographic model with taxonomy of every speaking people, cited population estimates and lifespans compared.</p><p><span class="versal">T</span>he Peoples of Arda opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="population_dashboard.html"><div class="rh"><span>Peoples · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. A roll hall counts, and every count is derived rather than asserted.</p><div class="sub">Where this opening sits</div><p>Volume III of the Arda Archive, Peoples and Houses, under Peoples. who they were</p><p>It is opening <span class="mark">436</span> of <span class="mark">436</span> in this volume, the The Family Trees coming before it. It is the last opening of this volume.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch"></span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume III</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><span style="display:inline-flex;align-items:flex-end;filter:drop-shadow(0 0 6px rgba(201,162,39,.4))"><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="26" style="vertical-align:middle" x="0"><g > <path d="M 18.347813,29.448747 C 17.814475,29.896748 17.206475,30.355414 16.523813,30.824747 C 15.862477,31.29408 15.222477,31.64608 14.603813,31.880747 C 14.710478,31.39008 14.795811,30.952747 14.859813,30.568747 C 14.923811,30.163414 14.966477,29.747415 14.987813,29.320747 C 15.030477,28.872749 15.051811,28.39275 15.051813,27.880747 C 15.073144,27.347417 15.083811,26.718085 15.083813,25.992747 L 15.083813,22.344747 C 15.083811,21.704756 14.966477,21.15009 14.731813,20.680747 C 14.497145,20.211424 14.081145,19.859425 13.483813,19.624747 C 13.803812,19.347425 14.155812,19.048759 14.539813,18.728747 C 14.923811,18.40876 15.329144,18.12076 15.755813,17.864747 C 16.182476,17.587427 16.609143,17.352761 17.035813,17.160747 C 17.483808,16.947428 17.921141,16.808761 18.347813,16.744747 L 18.347813,29.448747" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="30" style="vertical-align:middle" x="0"><g > <path d="M 16.225063,18.736 C 16.13972,18.800011 16.033054,18.842678 15.905063,18.864 C 15.777054,18.885344 15.670387,18.874678 15.585063,18.832 C 15.521054,18.789345 15.499721,18.725345 15.521063,18.64 C 15.542387,18.533345 15.649054,18.394678 15.841063,18.224 C 16.865053,17.434679 17.921052,16.805347 19.009063,16.336 C 20.097049,15.845347 21.046382,15.600014 21.857063,15.6 C 22.305047,15.600014 22.74238,15.706681 23.169063,15.92 C 23.595713,16.133347 23.979712,16.453347 24.321063,16.88 C 24.662378,17.306679 24.929045,17.829346 25.121063,18.448 C 25.334378,19.066678 25.441044,19.79201 25.441063,20.624 C 25.441044,21.712008 25.217044,22.789341 24.769063,23.856 C 24.342379,24.922672 23.734379,26.064004 22.945063,27.28 C 22.177047,28.474668 21.238382,29.786667 20.129063,31.216 C 19.041051,32.645331 17.825052,34.266662 16.481063,36.08 C 15.862387,36.933326 15.361054,37.829326 14.977063,38.768 C 14.593055,39.72799 14.401055,40.762656 14.401063,41.872 C 14.401055,42.618654 14.582388,43.226653 14.945063,43.696 C 15.329054,44.165319 15.745054,44.549319 16.193063,44.848 C 16.726386,45.189318 17.334386,45.445318 18.017063,45.616 C 17.611719,46.021317 17.195719,46.373317 16.769063,46.672 C 16.406386,46.949316 15.990387,47.194649 15.521063,47.408 C 15.073054,47.621316 14.635722,47.727982 14.209063,47.728 C 14.081055,47.727982 13.899722,47.653316 13.665063,47.504 C 13.451723,47.375983 13.227723,47.151983 12.993063,46.832 C 12.75839,46.511983 12.555724,46.095984 12.385063,45.584 C 12.214391,45.093318 12.129057,44.474652 12.129063,43.728 C 12.129057,42.938654 12.214391,42.213321 12.385063,41.552 C 12.555724,40.911989 12.801057,40.282656 13.121063,39.664 C 13.441056,39.066658 13.835722,38.437325 14.305063,37.776 C 14.774388,37.135993 15.307721,36.421327 15.905063,35.632 L 18.081063,32.592 L 14.657063,27.024 L 11.137063,30.8 C 10.731726,31.226665 10.497059,31.642665 10.433063,32.048 C 10.390393,32.453331 10.411726,32.805331 10.497063,33.104 C 10.582392,33.466663 10.753059,33.807996 11.009063,34.128 L 7.4570629,36.304 C 7.3290622,35.813328 7.2970623,35.301328 7.3610629,34.768 C 7.4037288,34.319996 7.5317287,33.807996 7.7450629,33.232 C 7.9797283,32.677331 8.3743945,32.122665 8.9290629,31.568 L 14.209063,26.32 C 13.057057,24.464006 12.097057,22.938674 11.329063,21.744 C 10.561059,20.549343 9.942393,19.60001 9.4730629,18.896 C 9.0250605,18.192012 8.7050609,17.712012 8.5130629,17.456 C 8.3423946,17.178679 8.2570613,17.040013 8.2570629,17.04 C 8.4063945,16.912013 8.6623942,16.784013 9.0250629,16.656 C 9.3877268,16.50668 9.7823931,16.368014 10.209063,16.24 C 10.635726,16.090681 11.062392,15.962681 11.489063,15.856 C 11.937058,15.728014 12.321057,15.632014 12.641063,15.568 C 12.769057,16.18668 12.961057,16.837346 13.217063,17.52 C 13.494389,18.202678 13.910389,19.056011 14.465063,20.08 C 15.019721,21.104009 15.745054,22.373341 16.641063,23.888 C 17.558385,25.402671 18.710384,27.301336 20.097063,29.584 C 20.971715,28.240002 21.686381,27.00267 22.241063,25.872 C 22.817047,24.741339 23.105046,23.802673 23.105063,23.056 C 23.105046,22.352008 22.955713,21.690675 22.657063,21.072 C 22.358381,20.43201 21.974381,19.88801 21.505063,19.44 C 21.035715,18.970678 20.513049,18.608011 19.937063,18.352 C 19.382384,18.074679 18.849051,17.936012 18.337063,17.936 C 17.590385,17.936012 16.886386,18.202678 16.225063,18.736" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg></span><h1>The Peoples of Arda</h1>
+<span style="flex:1"></span>
+<nav id="ardanav" aria-label="Archive halls"></nav></div>
+<div class="wrap" role="main" id="main">
+
+<h2>The Canon in Numbers</h2>
+<div class="tiles">
+<div class="tile"><div class="n">144</div><div class="l">Elves awoke at Cuiviénen, in 72 male–female pairs</div><div class="c">NoME; HoME XI</div></div>
+<div class="tile"><div class="n">14 · 56 · 74</div><div class="l">the three kindreds — Minyar, Tatyar, Nelyar</div><div class="c">NoME Pt I</div></div>
+<div class="tile"><div class="n">15,000,000</div><div class="l">Númenor before the Downfall — Tolkien's own estimate</div><div class="c">NoME, Of the Land and Beasts</div></div>
+<div class="tile"><div class="n">≤ ⅓</div><div class="l">of all Dwarves are women; fewer than ⅓ of the men marry</div><div class="c">LotR App A III</div></div>
+<div class="tile"><div class="n">2,000</div><div class="l">grown men of Bëor's folk entered Beleriand</div><div class="c">HoME XII, Of Dwarves and Men</div></div>
+<div class="tile"><div class="n">~50</div><div class="l">Ents marched on Isengard — no Entings for ages of years</div><div class="c">LotR III.4</div></div>
+<div class="tile"><div class="n">3–7</div><div class="l">Balrogs, ever, at most</div><div class="c">HoME X, marginal note</div></div>
+<div class="tile"><div class="n">13</div><div class="l">children of Samwise and Rose — the corpus fertility record</div><div class="c">App B/C</div></div>
+</div>
+
+<h2>The Sundering of the Peoples — an interactive taxonomy</h2>
+<p class="cite">Every speaking people of Arda in one descent-and-division map. Click any node for its demographic record — lifespan, stature, fertility, sex-ratio, society, trajectory, citations. Dashed cards = peoples extinct, annihilated or terminally declining by the end of the Third Age. The orc-descent link is dashed: the corpus itself gives divergent accounts [C].</p>
+<div class="pcard" style="overflow-x:auto"><svg id="tax" viewBox="0 0 1660 640" style="min-width:1100px;width:100%"></svg></div>
+<div id="taxpanel" class="pcard" style="display:none"></div>
+
+<h2>Populations Across the Ages</h2>
+<p class="cite">The model's central estimates with uncertainty bands, on a log scale (Ents at 10² to Númenor at 1.5×10⁷). Era axis is segmented, not uniform. Toggle peoples; split by sex; open the table for every number with its citation. Line opacity encodes confidence.</p>
+<div class="viz-root"><div>
+<div class="controls" id="chips"></div>
+<div class="controls">
+ <button class="btn" id="sexbtn" aria-pressed="false">Split &#9794;/&#9792;</button>
+ <button class="btn" id="tblbtn" aria-pressed="false">Table view</button>
+ <button class="btn" id="thmbtn" aria-pressed="false">Chart: dark</button>
+ <span class="note">&#9794; solid &#183; &#9792; dashed &#183; Dwarves fixed 67/33 (canon) &#183; Orcs unsplit (no data)</span>
+</div>
+<div class="panel"><svg id="chart" width="100%" viewBox="0 0 1140 560" role="img"
+ aria-label="Population of the peoples of Arda across the Ages, log scale"></svg></div>
+<div id="tbl" class="panel"></div>
+</div></div>
+
+<h2>The Spans of Life</h2>
+<p class="cite">Canon lifespans compared — bar = the normal span; diamond = the recorded extreme. The Eldar's bar runs off the scale: within Arda they do not die of age at all.</p>
+<div class="pcard"><svg id="lifes" viewBox="0 0 1140 300" style="width:100%"></svg></div>
+
+<div class="pcard" style="margin-top:22px">
+<b>Reading notes.</b> <span class="note">Solid segments join attested or model anchor points; nothing is interpolated between eras.
+Númenor's line ends at the Downfall (S.A. 3319) — the island population was annihilated; survivors continue in the Dúnedain-realms line.
+Ents have had zero births since the Second Age. Easterlings and Haradrim appear in DEMOGRAPHY.md only as army-derived lower bounds (≥10⁶ collectively) and are not charted.
+Confidence: H = Tolkien's own figure; M = anchored inference; L = order-of-magnitude. Full method — six labeled estimators M1–M6 — in DEMOGRAPHY.md §2.
+<b>External information:</b> the kindred-counts 14/56/74 were cross-checked against external indices of NoME and confirmed against the corpus text; no external figure overrides the corpus anywhere.</span></div>
+<div class="orn" style="margin-top:18px">❦ ✦ ❦</div>
+</div>
+<div id="tip"></div>
+<script>
+// ===== taxonomy =====
+{
+const TAX=[
+// id,label,x,y,parent,dead,short
+["ainur","AINUR",60,20,null,0,"The Holy Ones — before Arda"],
+["valar","Valar — 14",30,90,"ainur",0,"7 kings & 7 queens; Melkor cast out"],
+["maiar","Maiar",150,90,"ainur",0,"uncounted; Melian, Sauron, Balrogs ≤7, Istari 5"],
+["quendi","QUENDI — the 144",420,20,null,0,"awoke at Cuiviénen in pairs"],
+["minyar","Minyar 14",250,90,"quendi",0,"→ all became Vanyar"],
+["tatyar","Tatyar 56",400,90,"quendi",0,"→ Noldor + Avari part"],
+["nelyar","Nelyar 74",550,90,"quendi",0,"→ Teleri + Avari part"],
+["avari","Avari (~⅓)",700,90,"quendi",0,"the Unwilling — never counted again"],
+["vanyar","Vanyar",250,170,"minyar",0,"golden; wholly in Aman"],
+["noldor","Noldor",400,170,"tatyar",0,"craft-masters; 9/10 into Exile"],
+["teleri","Teleri",550,170,"nelyar",0,"the great kindred, sundered thrice"],
+["falmari","Falmari (Aman)",450,250,"teleri",0,"sea-elves of Alqualondë"],
+["sindar","Sindar",590,250,"teleri",0,"Grey-elves of Beleriand"],
+["nandor","Nandor",730,250,"teleri",0,"left the March at Anduin"],
+["iathrim","Iathrim",520,330,"sindar",1,"Doriath — the Girdle; sacked c. 506"],
+["falathrim","Falathrim",630,330,"sindar",0,"Círdan's havens"],
+["laiquendi","Laiquendi",710,330,"nandor",1,"Green-elves of Ossiriand"],
+["silvan","Silvan",800,330,"nandor",0,"Greenwood & Lórien"],
+["atani","ATANI (MEN)",1000,20,null,0,"the Followers; mortal"],
+["edain","Edain",850,90,"atani",0,"Three Houses in Beleriand"],
+["beor","H. of Bëor",790,170,"edain",1,"dark-haired; ~2000 men entry; near-extinguished 455–472"],
+["haleth","H. of Haleth",880,170,"edain",1,"woodland folk; 'dwindled to a small people'"],
+["hador","H. of Hador",965,170,"edain",1,"tall, golden; most numerous; enslaved after Nirnaeth"],
+["numenor","Númenóreans",900,250,"edain",1,"thrice-lengthened lives; drowned S.A. 3319"],
+["kingsmen","King's Men",830,330,"numenor",1,"→ Black Númenóreans, Umbar"],
+["faithful","The Faithful",940,330,"numenor",0,"→ the Realms in Exile"],
+["gondor","Dúnedain of Gondor",900,410,"faithful",0,"'married late... children few'"],
+["arnor","Dúnedain of the North",1050,410,"faithful",0,"kingdom fell 1974 → Rangers, ~thousands"],
+["middlemen","Middle Men",1140,90,"atani",0,"ordinary human demography"],
+["northmen","Northmen",1100,170,"middlemen",0,"Rhovanion; Dale; Beornings"],
+["eotheod","Éothéod → Rohirrim",1170,250,"northmen",0,"7,000 riders rode south 2510"],
+["dunlend","Dunlendings",1200,170,"middlemen",0,"displaced hill-clans"],
+["darkmen","Men of Darkness",1300,90,"atani",0,"Easterlings · Haradrim · Variags — armies only, no census"],
+["druedain","Drúedain",1290,170,"atani",0,"'always few'; relict watchers"],
+["hobbits","Hobbits",1420,90,"atani",0,"offshoot of Men — Prologue"],
+["harfoots","Harfoots",1360,170,"hobbits",0,"'far the most numerous'"],
+["stoors","Stoors",1440,170,"hobbits",0,"riverine; Sméagol's folk"],
+["fallohides","Fallohides",1520,170,"hobbits",0,"fewest; the leader-families"],
+["shire","The Shire",1440,250,"hobbits",0,"founded T.A. 1601; ~150k by the War"],
+["khazad","KHAZÂD",120,250,null,0,"seven houses from seven Fathers"],
+["longbeards","Longbeards",40,330,"khazad",0,"Durin's Folk — Khazad-dûm, Erebor"],
+["firebeards","Firebeards & Broadbeams",165,330,"khazad",1,"Nogrod & Belegost — ruined with Beleriand"],
+["eastdwarves","Four Eastern Houses",305,330,"khazad",0,"Ironfists · Stiffbeards · Blacklocks · Stonefoots — names only"],
+["onodrim","ONODRIM",120,430,null,1,"Ents — Entwives lost; zero births since S.A."],
+["orcs","ORCS",420,430,null,0,"corrupted stock; boom-crash under each Dark Lord"],
+];
+const FACTS={
+ainur:{Life:"deathless",Fertility:"none (Melian unique — she bore Lúthien)",Society:"hierarchic powers",Trajectory:"constant / withdrawing",Source:"Silm, Valaquenta"},
+valar:{Count:"14 (7 kings, 7 queens) after Melkor's fall",Source:"Valaquenta"},
+maiar:{Count:"uncounted 'many'; Istari 5 (2 Blue east); Balrogs 'no more than 3 or at most 7'",Source:"Valaquenta; UT; HoME X note"},
+quendi:{Life:"immortal within Arda; adult at 50–100",Fertility:"≤4 children, born early in marriage; begetting spends being",Sex:"born 72♂+72♀ — exactly 1:1",Source:"HoME X Laws & Customs; NoME"},
+minyar:{Count:"14 of the 144; all took the March; golden-haired, lovers of poetry",Source:"NoME Pt I [C, verified]"},
+tatyar:{Count:"56 of the 144; half refused the March (Avari); the rest = Noldor — grey-eyed craft-masters, 'quarrelsome'",Source:"NoME Pt I"},
+nelyar:{Count:"74 of the 144 — the largest; singers (Lindar); split Avari / Teleri",Source:"NoME Pt I"},
+avari:{Count:"roughly one third of the Quendi stayed east",Trajectory:"The attached documents do not provide enough information to answer this.",Source:"NoME; HoME XI"},
+vanyar:{Life:"immortal",Society:"high sacral kingship (Ingwë, High King of all Eldar)",Trajectory:"stable in Aman; returned once — the War of Wrath",Source:"Silm"},
+noldor:{Life:"immortal",Fertility:"Fëanor's seven sons the recorded maximum",Trajectory:"Exile peak ~10⁵ → attrition → sailings West",Source:"Silm; NoME"},
+teleri:{Trajectory:"sundered into Falmari / Sindar / Nandor on the March",Source:"Silm 3-5"},
+falmari:{Society:"swan-ships of Alqualondë; first Kinslaying victims",Source:"Silm 5, 9"},
+sindar:{Life:"immortal",Society:"Thingol's kingship; the only Girdle-protected realm",Trajectory:"crushed F.A. 502–587; leadership diaspora into Silvan realms",Source:"Silm; HoME XI"},
+nandor:{Trajectory:"→ Green-elves of Ossiriand + Silvan of Greenwood/Lórien",Source:"Silm 3, 10"},
+iathrim:{Trajectory:"Doriath sacked twice (Dwarves 502; Fëanorians 506) — extinct as a polity",Source:"Silm 22"},
+falathrim:{Society:"Círdan's shipwrights; the last haven never fell",Trajectory:"→ Grey Havens, sailing all through the Third Age",Source:"Silm; App B"},
+laiquendi:{Trajectory:"broken at Amon Ereb (Denethor slain); 'ever dwindling'",Source:"Silm 10"},
+silvan:{Count:"most numerous Elves of the Third Age; Dagorlad cost 'barely a third came home'",Trajectory:"~10⁴ at the War of the Ring, then fading",Source:"UT; App B"},
+atani:{Life:"mortal — 'the Gift of Men'",Fertility:"agrarian-high save the Númenórean strain",Source:"Silm; Athrabeth"},
+edain:{Count:"entry ~25–35k total (Bëor 2,000 grown men [C]; Hador largest; Haladin least)",Source:"HoME XII; Silm 17"},
+beor:{Life:"~70–90 yrs",Trajectory:"Dorthonion lost 455; house near-extinguished by 472",Source:"Silm 18-20"},
+haleth:{Sex:"fighting-women attested early (Haleth's guard)",Trajectory:"'dwindled... by war to a small people'",Source:"Silm 17; HoME XI"},
+hador:{Life:"~70–90",Trajectory:"most numerous → enslaved in Hithlum after the Nirnaeth",Source:"Silm 20"},
+numenor:{Life:"350–420 yrs (commons); line of Elros ~400 (Elros 500)",Fertility:"late marriage (♂50–100, ♀30–75), 1–4 children",Count:"5–10k landed → 200–350k → 2M (S.A. 1000) → ~15M before the Downfall — all Tolkien's own figures",Trajectory:"annihilated S.A. 3319 save the Faithful and the colonies",Source:"NoME [C rails]"},
+kingsmen:{Trajectory:"→ Black Númenóreans of Umbar; the Mouth of Sauron their last notable",Source:"Akallabêth; LotR V.10"},
+faithful:{Count:"nine ships of Elendil [C]",Trajectory:"→ Arnor + Gondor over Middle-Men substrates",Source:"Akallabêth; App A"},
+gondor:{Life:"200+ early, waning toward ~100",Fertility:"'married late, and their children were few' — the corpus's stated cause of decline",Count:"peak order 2–4M; ~500k at the War [I-L]",Source:"App A I(iv); LotR IV.5"},
+arnor:{Count:"peak ~10⁵–10⁶ → after 1974: thousands; the Grey Company's 30 = all that could gather in haste [C]",Source:"App A; LotR V.2"},
+middlemen:{Life:"~70–80",Fertility:"agrarian-high",Source:"App F"},
+northmen:{Count:"Esgaroth lost ~¼ to Smaug [C fraction]; Dale reborn richer",Trajectory:"~40–100k at the War",Source:"Hobbit; App A/B"},
+eotheod:{Count:"Eorl rode with 7,000+ riders [C]; Full Muster '>12,000 Riders' [C] → people ~125k",Sex:"male cavalry culture; Éowyn the flagged exception",Source:"UT, Cirion & Eorl; n.36"},
+dunlend:{Count:"~20–60k [I-L]; thousands under Saruman",Source:"LotR III; App A"},
+darkmen:{Count:"armies only: Haradrim ≥18,000 at the Pelennor; Morannon hosts 'ten times and more' the West's 6,000. Populations: The attached documents do not provide enough information to answer this. Floor ≥10⁶ collectively.",Source:"LotR V; App A"},
+druedain:{Life:"shorter-lived than other Men (UT)",Count:"bands of 10²–10³ at every appearance",Trajectory:"relict, dwindling every age",Source:"UT, The Drúedain"},
+hobbits:{Life:"~100 (Bilbo's 131 the record); adult at 33",Fertility:"highest sustained in the corpus — 13 children attested",Source:"Prologue; App B/C"},
+harfoots:{Count:"'far the most numerous'",Source:"Prologue"},
+stoors:{Trajectory:"riverine; the Gladden remnant bred Sméagol's folk",Source:"Prologue; I.2"},
+fallohides:{Count:"'the least numerous'; Tooks & Brandybucks led from this strain",Source:"Prologue"},
+shire:{Count:"~100–250k at the War [I-L]; 19 dead at Bywater — the whole war-cost [C]",Source:"Prologue; VI.8"},
+khazad:{Life:"~250 yrs (Dwalin's 340 exceptional)",Sex:"women ≤⅓, seldom abroad; <⅓ of men marry; single lifelong marriages [C]",Trajectory:"'increases slowly' — every mansion-loss near-permanent",Source:"App A III"},
+longbeards:{Count:"Khazad-dûm 'greatest of the mansions' → Balrog 1980 → Erebor/Iron Hills ~15–40k at the War",Source:"App A III; UT"},
+firebeards:{Trajectory:"Nogrod & Belegost ruined at the Age's end; folk to Khazad-dûm [C]",Source:"App A III; Silm 22"},
+eastdwarves:{Count:"names and directions only — no numbers anywhere in the corpus",Source:"HoME XII, Of Dwarves and Men"},
+onodrim:{Count:"~50 marched on Isengard; total likely <200",Fertility:"zero since the Entwives' gardens were destroyed (S.A.)",Trajectory:"terminal",Source:"LotR III.4; VI.6"},
+orcs:{Fertility:"'multiplied after the manner of the Children' [C]; females never mentioned — flagged gap",Count:"war-derived only: ~3–6×10⁵ at Sauron's peak [I-L]",Trajectory:"boom under each Dark Lord, crash at each fall",Source:"HoME X; Silm; LotR V"},
+};
+const tax=document.getElementById("tax"),NS="http://www.w3.org/2000/svg";
+const TW=118,TH=46;
+const tById={};TAX.forEach(t=>tById[t[0]]=t);
+let tg=document.createElementNS(NS,"g");tax.appendChild(tg);
+TAX.forEach(t=>{const[id,lab,x,y,par]=t;
+if(par){const P=tById[par];
+const e=document.createElementNS(NS,"path");
+const x1=P[2]+TW/2,y1=P[3]+TH,x2=x+TW/2,y2=y,my=(y1+y2)/2;
+e.setAttribute("d",`M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`);
+e.setAttribute("fill","none");e.setAttribute("stroke","#9a8c72");e.setAttribute("stroke-width","1.4");
+tg.appendChild(e);}});
+// orc corrupted-stock dashed link
+{const e=document.createElementNS(NS,"path");
+e.setAttribute("d",`M${tById["quendi"][2]+TW/2},${tById["quendi"][3]+TH} C 470,300 400,380 ${tById["orcs"][2]+TW/2},${tById["orcs"][3]}`);
+e.setAttribute("fill","none");e.setAttribute("stroke","#8a6a6a");e.setAttribute("stroke-width","1.3");e.setAttribute("stroke-dasharray","3 5");
+tg.appendChild(e);
+const t=document.createElementNS(NS,"text");t.setAttribute("x",430);t.setAttribute("y",395);t.setAttribute("class","txs");
+t.textContent="'corrupted stock' — divergent accounts [C]";tg.appendChild(t);}
+TAX.forEach(t=>{const[id,lab,x,y,par,dead,short]=t;
+const n=document.createElementNS(NS,"g");n.setAttribute("class","tnode"+(dead?" dead":""));
+n.setAttribute("transform",`translate(${x},${y})`);
+const r=document.createElementNS(NS,"rect");r.setAttribute("width",TW);r.setAttribute("height",TH);r.setAttribute("rx",7);n.appendChild(r);
+const t1=document.createElementNS(NS,"text");t1.setAttribute("x",TW/2);t1.setAttribute("y",17);t1.setAttribute("text-anchor","middle");t1.setAttribute("class","tx");
+t1.textContent=lab;n.appendChild(t1);
+const t2=document.createElementNS(NS,"text");t2.setAttribute("x",TW/2);t2.setAttribute("y",31);t2.setAttribute("text-anchor","middle");t2.setAttribute("class","txs");
+let sh=short;if(sh.length>26)sh=sh.slice(0,25)+"…";t2.textContent=sh;n.appendChild(t2);
+n.addEventListener("click",()=>{document.querySelectorAll(".tnode").forEach(m=>m.classList.remove("on"));n.classList.add("on");
+const f=FACTS[id]||{};const pn=document.getElementById("taxpanel");pn.style.display="block";
+pn.innerHTML=`<h3>${lab}</h3><div class="cite">${short}</div><div class="orn">❦</div>`+
+Object.entries(f).map(([k,v])=>`<div class="row"><span class="k">${k}</span>${v}</div>`).join("")+
+`<div class="row" style="margin-top:.6em"><span class="k">See also</span><a href="genealogy.html" style="color:#7a4a12">the family trees</a> · <a href="arda_timeline.html" style="color:#7a4a12">the timeline</a> · full record in DEMOGRAPHY.md §1</div>`;
+pn.scrollIntoView({behavior:"smooth",block:"nearest"});});
+tg.appendChild(n);});
+}
+</script>
+<script>
+const DATA = {"meta":{"unit":"persons","yscale":"log","note":"Central estimates with ranges; from DEMOGRAPHY.md; corpus-only. Era axis is segmented, not to uniform scale.","male_share_default":0.5,"legend":{"H":"a figure Tolkien wrote","M":"inference anchored to something he wrote","L":"order-of-magnitude only"},"honesty":"Of the sixty-two points in this file, five are numbers Tolkien wrote, and they fall in two of the ten series. Five series — the Eldar of Aman, Hobbits, Middle Men, Dúnedain and Drúedain — have no attested population figure at all. The curves are reconstruction; the anchors are cited where they exist."},"eras":[{"id":"YT","label":"Years of the Trees","w":0.16},{"id":"FA","label":"First Age","w":0.2},{"id":"SA","label":"Second Age","w":0.32},{"id":"TA","label":"Third Age","w":0.32}],"events":[{"era":"YT","t":0.05,"label":"Awakening of the Elves"},{"era":"YT","t":0.55,"label":"Great March"},{"era":"FA","t":0.77,"label":"Bragollach 455"},{"era":"FA","t":0.8,"label":"Nirnaeth 472"},{"era":"FA","t":1.0,"label":"War of Wrath; Beleriand drowned"},{"era":"SA","t":0.49,"label":"Eregion destroyed 1697"},{"era":"SA","t":0.965,"label":"Downfall of Numenor 3319"},{"era":"SA","t":1.0,"label":"Last Alliance 3441"},{"era":"TA","t":0.54,"label":"Great Plague 1636"},{"era":"TA","t":0.927,"label":"Azanulbizar 2799"},{"era":"TA","t":0.999,"label":"War of the Ring 3019"}],"series":[{"id":"eldar_me","label":"Eldar of Middle-earth","slot":1,"minor":false,"points":[{"era":"YT","t":0.05,"v":144,"lo":144,"hi":288,"m":0.5,"conf":"H","meth":["M3"],"cite":"144 awoke in pairs - HoME XI / NoME","note":"Tolkien leaves it open: '144 (72 pairs), or 144 pairs?' — the upper bound reflects the second reading."},{"era":"YT","t":0.45,"v":3460,"lo":3460,"hi":3460,"m":0.5,"conf":"H","meth":["M3"],"cite":"NoME increase-tables at the Finding"},{"era":"YT","t":0.6,"v":30000,"lo":25000,"hi":35000,"m":0.5,"conf":"H","meth":["M3"],"cite":"~30,000 Eldar reach Beleriand - NoME March"},{"era":"YT","t":1.0,"v":140000,"lo":90000,"hi":200000,"m":0.5,"conf":"L","meth":["M3","M2"],"cite":"Trees-era growth + returning Exiles (9/10 of Noldor - Silm 9)"},{"era":"FA","t":0.5,"v":210000,"lo":160000,"hi":280000,"m":0.5,"conf":"M","meth":["M1","M2"],"cite":"Turgon fields 10,000 from one city - Silm 20"},{"era":"FA","t":0.77,"v":230000,"lo":180000,"hi":300000,"m":0.5,"conf":"M","meth":["M1"],"cite":"Beleriand peak before Bragollach"},{"era":"FA","t":0.85,"v":150000,"lo":110000,"hi":200000,"m":0.45,"conf":"M","meth":["M4","M6"],"cite":"Nirnaeth male war-dead; sieges spare women/children"},{"era":"FA","t":1.0,"v":45000,"lo":30000,"hi":60000,"m":0.46,"conf":"M","meth":["M4"],"cite":"survivors at Balar/Sirion after the falls"},{"era":"SA","t":0.29,"v":110000,"lo":80000,"hi":150000,"m":0.48,"conf":"L","meth":["M1"],"cite":"Lindon+Eregion+Silvan realms at peace"},{"era":"SA","t":0.5,"v":95000,"lo":70000,"hi":130000,"m":0.48,"conf":"L","meth":["M4"],"cite":"after Eregion's fall 1697"},{"era":"SA","t":1.0,"v":55000,"lo":40000,"hi":75000,"m":0.45,"conf":"M","meth":["M4"],"cite":"Dagorlad: Thranduil brought home barely a third - UT"},{"era":"TA","t":0.33,"v":50000,"lo":35000,"hi":65000,"m":0.47,"conf":"L","meth":["M1"],"cite":"slow drain; sailings west"},{"era":"TA","t":0.66,"v":40000,"lo":28000,"hi":55000,"m":0.47,"conf":"L","meth":["M1"],"cite":"dwindling - App A/B"},{"era":"TA","t":0.999,"v":28000,"lo":18000,"hi":50000,"m":0.47,"conf":"M","meth":["M1"],"cite":"Mirkwood+Lorien+Imladris+Havens musters 3019"}]},{"id":"dwarves","label":"Dwarves (western houses)","slot":2,"minor":false,"points":[{"era":"YT","t":0.8,"v":20000,"lo":10000,"hi":40000,"m":0.67,"conf":"L","meth":["M2"],"cite":"seven Fathers' houses founded; 2:1 male - App A"},{"era":"FA","t":0.6,"v":60000,"lo":35000,"hi":90000,"m":0.67,"conf":"L","meth":["M1"],"cite":"Nogrod+Belegost field armies - Silm 20"},{"era":"FA","t":1.0,"v":40000,"lo":25000,"hi":60000,"m":0.67,"conf":"L","meth":["M4"],"cite":"mansions ruined; folk to Khazad-dum"},{"era":"SA","t":0.29,"v":80000,"lo":50000,"hi":120000,"m":0.67,"conf":"L","meth":["M5"],"cite":"Khazad-dum 'greatest of the mansions' - UT"},{"era":"SA","t":1.0,"v":95000,"lo":60000,"hi":140000,"m":0.67,"conf":"L","meth":["M5"],"cite":"pre-TA peak under Durin's line"},{"era":"TA","t":0.33,"v":90000,"lo":55000,"hi":130000,"m":0.67,"conf":"L","meth":["M5"],"cite":"before the Balrog 1980"},{"era":"TA","t":0.66,"v":70000,"lo":45000,"hi":100000,"m":0.67,"conf":"L","meth":["M4"],"cite":"Moria lost; wandering days"},{"era":"TA","t":0.93,"v":35000,"lo":22000,"hi":55000,"m":0.67,"conf":"M","meth":["M4"],"cite":"App A: 'Barely half of their number, it is said, could still stand or had hope of healing' — that is the unwounded-and-curable fraction, NOT a survival rate; survivors were substantially more than half [corrected]"},{"era":"TA","t":0.999,"v":40000,"lo":25000,"hi":60000,"m":0.67,"conf":"M","meth":["M1"],"cite":"Erebor+Iron Hills+Ered Luin; Dain's 500 mailed veterans"}]},{"id":"eldar_aman","label":"Eldar of Aman","slot":3,"minor":false,"points":[{"era":"YT","t":0.7,"v":20000,"lo":15000,"hi":25000,"m":0.5,"conf":"M","meth":["M3"],"cite":"NoME — but this is the host that SET OUT ON THE MARCH ('Let 20,000 march'), not a population of Aman; the same table has 30,000 on reaching Beleriand [mis-cited, corrected]"},{"era":"YT","t":1.0,"v":90000,"lo":60000,"hi":150000,"m":0.5,"conf":"L","meth":["M3"],"cite":"Trees-era growth minus the Exile (9/10 of Noldor left)"},{"era":"FA","t":1.0,"v":130000,"lo":80000,"hi":200000,"m":0.5,"conf":"L","meth":["M3"],"cite":"peace-growth; War of Wrath host sent"},{"era":"SA","t":1.0,"v":160000,"lo":100000,"hi":250000,"m":0.5,"conf":"L","meth":["M3"],"cite":"receiving sailings"},{"era":"TA","t":0.999,"v":195000,"lo":120000,"hi":300000,"m":0.5,"conf":"L","meth":["M3"],"cite":"all curves flow here; no deaths"}]},{"id":"hobbits","label":"Hobbits","slot":4,"minor":false,"points":[{"era":"TA","t":0.33,"v":15000,"lo":8000,"hi":30000,"m":0.5,"conf":"L","meth":["M5"],"cite":"Anduin-vale kindreds; migrations - Prologue"},{"era":"TA","t":0.54,"v":40000,"lo":20000,"hi":70000,"m":0.5,"conf":"L","meth":["M5"],"cite":"Shire founded 1601; Plague 1636 checked growth"},{"era":"TA","t":0.66,"v":70000,"lo":40000,"hi":120000,"m":0.5,"conf":"L","meth":["M5"],"cite":"peaceful growth; Long Winter dip 2758"},{"era":"TA","t":0.999,"v":150000,"lo":100000,"hi":250000,"m":0.5,"conf":"M","meth":["M5","M1"],"cite":"18,000 sq mi (Prologue: 40 × 50 leagues = 120 × 150 miles) settled; Bywater musters - Prologue/VI.8"}]},{"id":"middlemen","label":"Rohirrim & Northmen","slot":5,"minor":false,"points":[{"era":"TA","t":0.33,"v":80000,"lo":50000,"hi":140000,"m":0.5,"conf":"L","meth":["M5"],"cite":"Northmen of Rhovanion under Gondor's shadow"},{"era":"TA","t":0.54,"v":70000,"lo":40000,"hi":110000,"m":0.5,"conf":"L","meth":["M4"],"cite":"Plague struck Rhovanion hardest - App A"},{"era":"TA","t":0.83,"v":75000,"lo":50000,"hi":110000,"m":0.5,"conf":"M","meth":["M1","M2"],"cite":"Eorl rides with 7,000+ riders 2510 - UT"},{"era":"TA","t":0.97,"v":150000,"lo":100000,"hi":220000,"m":0.5,"conf":"M","meth":["M1"],"cite":"Full Muster >12,000 Riders - UT n.36; Dale+Esgaroth rebuilt"},{"era":"TA","t":0.999,"v":205000,"lo":140000,"hi":300000,"m":0.49,"conf":"M","meth":["M1"],"cite":"Rohan ~125k + Dale/Esgaroth/Beornings ~80k"}],"note":"[I-L] No population figure for this people exists anywhere in the corpus; the curve is extrapolation from qualitative statements."},{"id":"dunedain","label":"Dunedain realms (Arnor+Gondor)","slot":6,"minor":false,"points":[{"era":"SA","t":0.55,"v":150000,"lo":80000,"hi":300000,"m":0.5,"conf":"L","meth":["M5"],"cite":"Numenorean colonists + havens (Pelargir 2350, Umbar)"},{"era":"SA","t":1.0,"v":500000,"lo":300000,"hi":800000,"m":0.5,"conf":"L","meth":["M2","M5"],"cite":"realms in exile over native Middle Men - Akallabeth/RoP"},{"era":"TA","t":0.33,"v":2500000,"lo":1500000,"hi":4000000,"m":0.5,"conf":"L","meth":["M5"],"cite":"Gondor at height under Hyarmendacil - App A"},{"era":"TA","t":0.54,"v":1400000,"lo":800000,"hi":2200000,"m":0.5,"conf":"L","meth":["M4"],"cite":"Plague 1636: Osgiliath depopulated - App A"},{"era":"TA","t":0.65,"v":900000,"lo":550000,"hi":1400000,"m":0.5,"conf":"L","meth":["M4"],"cite":"Wainriders; Arthedain falls 1974"},{"era":"TA","t":0.999,"v":552500,"lo":350000,"hi":800000,"m":0.48,"conf":"M","meth":["M1"],"cite":"tithe-levies imply ~30,000 ('less than three thousands full told', called 'a tithe of their strength') [corrected from 40–50k, which exceeded the cited source]"}]},{"id":"numenor","label":"Numenoreans (the island)","slot":7,"minor":false,"points":[{"era":"SA","t":0.012,"v":7500,"lo":5000,"hi":10000,"m":0.5,"conf":"M","meth":["M3"],"cite":"Elros' fleet 5,000-10,000 - NoME","note":"[downgraded] 'H' is defined as Tolkien's own figure; this is a midpoint or an extrapolation, not a number he wrote."},{"era":"SA","t":0.03,"v":275000,"lo":200000,"hi":350000,"m":0.5,"conf":"M","meth":["M3"],"cite":"50-year migration total - NoME","note":"[downgraded] 'H' is defined as Tolkien's own figure; this is a midpoint or an extrapolation, not a number he wrote."},{"era":"SA","t":0.29,"v":2000000,"lo":1800000,"hi":2400000,"m":0.5,"conf":"H","meth":["M3"],"cite":"'not much exceeded 2 million' at SA1000 - NoME"},{"era":"SA","t":0.9,"v":13000000,"lo":10000000,"hi":15000000,"m":0.5,"conf":"M","meth":["M3"],"cite":"'as many as 15 million' before the Downfall - NoME","note":"[downgraded] 'H' is defined as Tolkien's own figure; this is a midpoint or an extrapolation, not a number he wrote."},{"era":"SA","t":0.965,"v":15000000,"lo":12000000,"hi":15000000,"m":0.5,"conf":"H","meth":["M3"],"cite":"Downfall 3319: the island and all upon it destroyed"}]},{"id":"orcs","label":"Orcs","slot":8,"minor":false,"points":[{"era":"YT","t":0.9,"v":50000,"lo":20000,"hi":150000,"m":null,"conf":"L","meth":["M1"],"cite":"bred in Utumno/Angband - Silm 3; sex data absent"},{"era":"FA","t":0.77,"v":300000,"lo":150000,"hi":600000,"m":null,"conf":"L","meth":["M1"],"cite":"hosts 'countless' at Bragollach/Nirnaeth"},{"era":"FA","t":1.0,"v":20000,"lo":5000,"hi":60000,"m":null,"conf":"L","meth":["M4"],"cite":"War of Wrath near-annihilation"},{"era":"SA","t":0.5,"v":250000,"lo":120000,"hi":500000,"m":null,"conf":"L","meth":["M1"],"cite":"Sauron's Eriador war hosts 1695-1701"},{"era":"SA","t":1.0,"v":100000,"lo":50000,"hi":250000,"m":null,"conf":"L","meth":["M4"],"cite":"Last Alliance losses"},{"era":"TA","t":0.66,"v":200000,"lo":100000,"hi":400000,"m":null,"conf":"L","meth":["M1"],"cite":"Misty Mtns+Gundabad+Dol Guldur breeding - App A/B"},{"era":"TA","t":0.93,"v":180000,"lo":90000,"hi":350000,"m":null,"conf":"L","meth":["M4"],"cite":"Azanulbizar & Five Armies: 'three parts... perished'"},{"era":"TA","t":0.999,"v":450000,"lo":250000,"hi":700000,"m":null,"conf":"L","meth":["M1"],"cite":">=60k at Morannon alone + simultaneous fronts - V.10/App B"}]},{"id":"ents","label":"Ents","slot":0,"minor":true,"dash":"6 4","points":[{"era":"YT","t":0.5,"v":500,"lo":200,"hi":1000,"m":0.5,"conf":"L","meth":["M2"],"cite":"'never many of us' - III.4"},{"era":"SA","t":0.5,"v":300,"lo":150,"hi":600,"m":0.6,"conf":"L","meth":["M2"],"cite":"Entwives lost; no Entings since - III.4"},{"era":"TA","t":0.999,"v":100,"lo":60,"hi":250,"m":0.95,"conf":"M","meth":["M2"],"cite":"~50 march on Isengard - III.4/VI.6"}],"note":"[I-L] No population figure for this people exists anywhere in the corpus; the curve is extrapolation from qualitative statements."},{"id":"druedain","label":"Druedain","slot":0,"minor":true,"dash":"2 4","points":[{"era":"FA","t":0.6,"v":3000,"lo":1500,"hi":6000,"m":0.5,"conf":"L","meth":["M2"],"cite":"with the Haladin in Brethil - UT Druedain"},{"era":"SA","t":0.5,"v":2000,"lo":800,"hi":4000,"m":0.5,"conf":"L","meth":["M2"],"cite":"Druwaith Iaur remnant - UT"},{"era":"TA","t":0.999,"v":1500,"lo":600,"hi":3000,"m":0.5,"conf":"L","meth":["M2"],"cite":"Ghan-buri-Ghan's forest folk - V.5"}],"note":"[I-L] No population figure for this people exists anywhere in the corpus; the curve is extrapolation from qualitative statements."}]}
+;
+const svg = document.getElementById('chart'), NS='http://www.w3.org/2000/svg';
+const W=1140,H=560,ML=64,MR=118,MT=18,MB=64,PW=W-ML-MR,PH=H-MT-MB;
+const LOGMIN=2,LOGMAX=7.4;
+let sexSplit=false, hidden=new Set();
+const eraX0={};{let acc=0;for(const e of DATA.eras){eraX0[e.id]=acc;acc+=e.w;}}
+const X=(era,t)=>ML+(eraX0[era]+DATA.eras.find(e=>e.id===era).w*t)*PW;
+const Y=v=>MT+PH*(1-((Math.log10(Math.max(v,100)))-LOGMIN)/(LOGMAX-LOGMIN));
+const slotColor=s=>s.minor?'var(--muted)':`var(--s${s.slot})`;
+const confOp={H:1,M:0.85,L:0.55};
+function el(n,a,parent){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(parent||svg).appendChild(e);return e;}
+function draw(){
+ svg.innerHTML='';
+ el('rect',{x:0,y:0,width:W,height:H,fill:'var(--surface-1)'});
+ // era bands + labels
+ for(const e of DATA.eras){const x0=X(e.id,0),x1=X(e.id,1);
+  el('line',{x1:x0,y1:MT,x2:x0,y2:MT+PH,stroke:'var(--axis)','stroke-width':1});
+  const t=el('text',{x:(x0+x1)/2,y:H-30,'text-anchor':'middle','font-size':13,fill:'var(--ink2)'});t.textContent=e.label;}
+ el('line',{x1:W-MR,y1:MT,x2:W-MR,y2:MT+PH,stroke:'var(--axis)','stroke-width':1});
+ // log grid
+ for(let p=2;p<=7;p++){const y=Y(Math.pow(10,p));
+  el('line',{x1:ML,y1:y,x2:W-MR,y2:y,stroke:'var(--grid)','stroke-width':1});
+  const t=el('text',{x:ML-8,y:y+4,'text-anchor':'end','font-size':11,fill:'var(--muted)'});
+  t.textContent=p===2?'100':p===3?'1k':p===4?'10k':p===5?'100k':p===6?'1M':'10M';}
+ el('line',{x1:ML,y1:MT+PH,x2:W-MR,y2:MT+PH,stroke:'var(--axis)','stroke-width':1.5});
+ // events
+ for(const ev of DATA.events){const x=X(ev.era,ev.t);
+  el('line',{x1:x,y1:MT,x2:x,y2:MT+PH,stroke:'var(--grid)','stroke-width':1,'stroke-dasharray':'2 5'});
+  const t=el('text',{x:x-4,y:MT+10,'font-size':9,fill:'var(--muted)',transform:`rotate(-90 ${x-4} ${MT+10})`,'text-anchor':'end'});
+  t.textContent=ev.label;}
+ // series
+ const ends=[];
+ for(const s of DATA.series){
+  if(hidden.has(s.id))continue;
+  const col=slotColor(s), pts=s.points.map(p=>({...p,x:X(p.era,p.t)}));
+  const mk=(vals,dash,wd,op)=>{
+   let d='';vals.forEach((p,i)=>{d+=(i?'L':'M')+p.x.toFixed(1)+' '+Y(p.vv).toFixed(1)+' ';});
+   el('path',{d,fill:'none',stroke:col,'stroke-width':wd,'stroke-linejoin':'round','stroke-linecap':'round',
+    'stroke-dasharray':dash||(s.dash||'none'),opacity:op});};
+  if(sexSplit && !s.minor && s.points.every(p=>p.m!==null)){
+   mk(pts.map(p=>({...p,vv:p.v*p.m})),null,2,0.95);
+   mk(pts.map(p=>({...p,vv:p.v*(1-p.m)})),'5 4',2,0.95);
+  } else {
+   // range band
+   let d='';pts.forEach((p,i)=>{d+=(i?'L':'M')+p.x.toFixed(1)+' '+Y(p.hi).toFixed(1)+' ';});
+   for(let i=pts.length-1;i>=0;i--){d+='L'+pts[i].x.toFixed(1)+' '+Y(pts[i].lo).toFixed(1)+' ';}
+   el('path',{d:d+'Z',fill:col,opacity:0.07});
+   mk(pts.map(p=>({...p,vv:p.v})),null,2,1);
+  }
+  // markers + per-point hover
+  for(const p of pts){const op=confOp[p.conf];
+   el('circle',{cx:p.x,cy:Y(p.v),r:3.4,fill:col,stroke:'var(--surface-1)','stroke-width':1.5,opacity:op});
+   const hit=el('circle',{cx:p.x,cy:Y(p.v),r:11,fill:'transparent'});
+   hit.addEventListener('mousemove',ev2=>tip(ev2,s,p));
+   hit.addEventListener('mouseleave',()=>document.getElementById('tip').style.display='none');}
+  // DIRECT LABELS MUST NOT SIT ON EACH OTHER. Each was written at its line's last point,
+  // so any two series ending near the same population overprinted: "Rohirrim & Northmen"
+  // and "Hobbits" were one illegible smudge at the right edge, and Dunedain and Orcs
+  // nearly so. They are collected here and pushed apart after, which is the only moment
+  // at which their positions are all known.
+  const last=pts[pts.length-1];
+  ends.push({x:last.x+6,y:Y(last.v)+4,text:s.label.split(' (')[0]});
+ }
+ ends.sort((a,b)=>a.y-b.y);
+ const GAP=12.5;
+ for(let i=1;i<ends.length;i++)
+  if(ends[i].y-ends[i-1].y<GAP) ends[i].y=ends[i-1].y+GAP;
+ // and if the pushing ran the last one off the plot, walk the whole stack back up
+ const over=ends.length?ends[ends.length-1].y-(H-MB-2):0;
+ if(over>0) for(const e of ends) e.y-=over;
+ for(const e of ends){
+  const t=el('text',{x:e.x,y:e.y,'font-size':11,fill:'var(--ink2)'});
+  t.textContent=e.text;
+ }
+ buildTable();
+}
+function tip(ev,s,p){const tp=document.getElementById('tip');
+ tp.innerHTML=`<b>${s.label}</b> &mdash; ${DATA.eras.find(e=>e.id===p.era).label}<br>
+ <span class="v">${p.v.toLocaleString()}</span><span class="conf">${p.conf}</span><br>
+ range ${p.lo.toLocaleString()} &ndash; ${p.hi.toLocaleString()}<br>
+ ${p.m===null?'&#9794;/&#9792;: no data (flagged)':'&#9794; '+Math.round(p.m*100)+'% &middot; &#9792; '+Math.round((1-p.m)*100)+'%'}
+ &middot; methods ${p.meth.join(', ')}<br><i>${p.cite}</i>`;
+ tp.style.display='block';
+ tp.style.left=Math.min(ev.clientX+14,innerWidth-310)+'px';
+ tp.style.top=(ev.clientY+12)+'px';}
+function buildTable(){const div=document.getElementById('tbl');
+ let h='<table><tr><th>people</th><th>era</th><th>value</th><th>low</th><th>high</th><th>&#9794;%</th><th>conf</th><th>citation</th></tr>';
+ for(const s of DATA.series)for(const p of s.points)
+  h+=`<tr><td>${s.label}</td><td>${p.era}${p.t?(' '+p.t.toFixed(2)):''}</td><td>${p.v.toLocaleString()}</td><td>${p.lo.toLocaleString()}</td><td>${p.hi.toLocaleString()}</td><td>${p.m===null?'—':Math.round(p.m*100)}</td><td>${p.conf}</td><td style="text-align:left">${p.cite}</td></tr>`;
+ div.innerHTML=h+'</table>';}
+// chips
+const chips=document.getElementById('chips');
+for(const s of DATA.series){const c=document.createElement('span');
+ c.className='chip'+(s.minor?' minor':'');c.style.setProperty('--c',s.minor?'var(--muted)':`var(--s${s.slot})`);
+ c.innerHTML=`<span class="sw"></span>${s.label}`;
+ c.onclick=()=>{if(hidden.has(s.id))hidden.delete(s.id);else hidden.add(s.id);
+  c.classList.toggle('off');draw();};
+ chips.appendChild(c);}
+document.getElementById('sexbtn').onclick=function(){sexSplit=!sexSplit;this.setAttribute('aria-pressed',sexSplit);draw();};
+document.getElementById('tblbtn').onclick=function(){const d=document.getElementById('tbl');
+ const on=d.style.display!=='block';d.style.display=on?'block':'none';this.setAttribute('aria-pressed',on);};
+document.getElementById('thmbtn').onclick=function(){const r=document.documentElement;
+ const dark=r.getAttribute('data-theme')!=='dark';
+ /* one authority: nav.js owns the ground and the storage key. Setting data-theme here directly
+    persisted nothing, so the choice died on reload and the shared nav label went stale. */
+ if(window.ardaSetTheme)window.ardaSetTheme(dark); else r.setAttribute('data-theme',dark?'dark':'light');
+ this.setAttribute('aria-pressed',dark);};
+draw();
+
+// ===== lifespans =====
+{const svgL=document.getElementById('lifes');
+const LS=[["Eldar",Infinity,null,"immortal within Arda","s1","HoME X"],
+["Line of Elros",400,500,"Elros 500","s7","UT; NoME"],
+["Númenóreans (commons)",385,420,"350–420","s7","NoME"],
+["Dúnedain, late Third Age",155,210,"Aragorn 210","s6","App A"],
+["Dwarves",250,340,"Dwalin 340","s2","App A [I from dates]"],
+["Hobbits",100,131,"Bilbo 131","s4","Prologue; App C"],
+["Rohirrim & Northmen",78,null,"~70–80","s5","App A [I-H]"],
+["Drúedain",60,null,"'shorter than other Men' [C qualitative]","s8","UT"]];
+const Wl=1140,Hl=300,MLl=210,MRl=140,MTl=16,rowH=(Hl-60)/LS.length;
+const Xl=v=>MLl+Math.min(v,520)/520*(Wl-MLl-MRl);
+function eL(n,a){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);svgL.appendChild(e);return e;}
+eL('rect',{x:0,y:0,width:Wl,height:Hl,fill:'#fffdf6'});
+for(const v of[0,100,200,300,400,500]){const x=Xl(v);
+eL('line',{x1:x,y1:MTl,x2:x,y2:Hl-30,stroke:'#ddd3bb'});
+const t=eL('text',{x:x,y:Hl-12,'text-anchor':'middle','font-size':11,fill:'#8a7a5f'});t.textContent=v;}
+LS.forEach((r,i)=>{const y=MTl+10+i*rowH,col=({s1:'#2a78d6',s2:'#eb6834',s4:'#eda100',s5:'#e87ba4',s6:'#008300',s7:'#4a3aa7',s8:'#e34948'})[r[4]];
+const t=eL('text',{x:MLl-10,y:y+13,'text-anchor':'end','font-size':12.5,fill:'#3a3226'});t.textContent=r[0];
+const w=(r[1]===Infinity?Wl-MRl-MLl+40:Xl(r[1])-MLl);
+eL('rect',{x:MLl,y:y,width:w,height:16,rx:4,fill:col,opacity:r[1]===Infinity?0.75:0.9});
+if(r[1]===Infinity){const t2=eL('text',{x:Wl-MRl+48,y:y+13,'font-size':13,fill:'#6b5d49'});t2.textContent='∞';}
+if(r[2]){eL('path',{d:`M${Xl(r[2])},${y+2} l6,6 l-6,6 l-6,-6 Z`,fill:col,stroke:'#fffdf6','stroke-width':1.2});}
+const t3=eL('text',{x:(r[1]===Infinity?MLl+180:Xl(r[2]||r[1])+12),y:y+13,'font-size':10.5,fill:(r[1]===Infinity?'#f4ecd8':'#6b5d49')});
+t3.textContent=r[3]+'  ·  '+r[5];});
+}
+</script>
+<script>
+function goHash(){const m=location.hash.match(/tax=([^&]+)/);if(!m)return;
+const q=decodeURIComponent(m[1]).toLowerCase();
+const nodes=[...document.querySelectorAll('.tnode')];
+const n=nodes.find(x=>x.textContent.toLowerCase().includes(q));
+if(n){n.dispatchEvent(new Event('click'));n.scrollIntoView({block:'center',behavior:'smooth'});}}
+addEventListener('hashchange',goHash);setTimeout(goHash,120);</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

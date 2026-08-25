@@ -1,0 +1,39 @@
+{
+ "built_from": "map/gen_place_ids.py, derived from every tracked site/arda_*.json",
+ "compound": [
+  {
+   "as_referenced": "buckland_crickhollow",
+   "names": [
+    "buckland",
+    "crickhollow"
+   ],
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ],
+   "why": "this id names MORE THAN ONE defined place. It is not a correspondence and is deliberately not resolved: a map that picked one would be choosing which place the reference is, and it is both. The reference stays broken, visibly."
+  }
+ ],
+ "correspondences": [
+  {
+   "as_referenced": "fornost",
+   "basis": "short",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ],
+   "resolves_to": "fornost erain",
+   "why": "a complete word-prefix of exactly one defined place"
+  },
+  {
+   "as_referenced": "the_high_pass",
+   "basis": "article",
+   "referenced_from": [
+    "arda_realms:pol.[].setts.[].[]"
+   ],
+   "resolves_to": "high pass",
+   "why": "a leading article and separators; 'high pass' names it"
+  }
+ ],
+ "count": 2,
+ "not_resolved": [],
+ "note": "A third way one place is named twice, after the two SPELLINGS of arda_aliases.json and the two NUMBERING CONVENTIONS of arda_person_ids.json: a short name for a full one, a definite article, or one id naming two places. Every row is DERIVED and records its route. COMPOUND is stated and never resolved -- one id naming two records is not a correspondence, and choosing one of them would be choosing a winner, which the owner's ruling forbids."
+}

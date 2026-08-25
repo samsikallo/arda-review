@@ -1,0 +1,1585 @@
+{
+ "credit": {
+  "work": "Eldamo — An Elvish Lexicon",
+  "author": "Paul Strack",
+  "url": "https://eldamo.org/",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "statement": "CC BY 4.0 PERMITS REPRODUCTION WITH ATTRIBUTION, and this archive still files only the shape and the pointers. The constraint is not legal but editorial: copying 66 pages of Strack's prose would make this a mirror of him rather than a reading of him, and every sentence would have to stand marked [EXT] beside the archive's own cited work. What is filed is what he wrote, what it covers, and where to read it."
+ },
+ "sections": {
+  "general": "the general essays -- methodology, terminology, conceptual history, phonetics, fonts",
+  "intro-quenya": "Introductory Quenya, a lesson course",
+  "elvish-composition-archive": "the Elvish Composition Archive",
+  "elvish-essays": "Elvish Essays",
+  "content/references": "the reference index -- the bibliography behind the lexicon",
+  "content/languages": "the language index"
+ },
+ "n_pages": 68,
+ "n_words": 370862,
+ "missing": [],
+ "pages": {
+  "general": [
+   {
+    "file": "general/conceptual-history.html",
+    "url": "https://eldamo.org/general/conceptual-history.html",
+    "title": "Conceptual History",
+    "headings": [
+     "Conceptual History of Elvish",
+     "The Early Period",
+     "The Middle Period",
+     "The Late Period",
+     "Posthumous Publications",
+     "Three Aspects of Temporal Development in Elvish"
+    ],
+    "n_headings": 6,
+    "sources_cited": [
+     "LR",
+     "LT1",
+     "LotR",
+     "PE17",
+     "WJ"
+    ],
+    "words": 2830
+   },
+   {
+    "file": "general/elvish-fonts.html",
+    "url": "https://eldamo.org/general/elvish-fonts.html",
+    "title": "Elvish Fonts",
+    "headings": [
+     "Elvish Fonts",
+     "Tengwar Keyboard Mapping"
+    ],
+    "n_headings": 2,
+    "sources_cited": [
+     "LotR"
+    ],
+    "words": 883
+   },
+   {
+    "file": "general/getting-started.html",
+    "url": "https://eldamo.org/general/getting-started.html",
+    "title": "Getting Started",
+    "headings": [
+     "Getting Started With Elvish"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 895
+   },
+   {
+    "file": "general/motivations-and-methodology.html",
+    "url": "https://eldamo.org/general/motivations-and-methodology.html",
+    "title": "Motivations and Methodology",
+    "headings": [
+     "Motivations and Methodology",
+     "Organizational Scheme",
+     "Language Sections and Navigation",
+     "Neo-Eldarin in Eldamo",
+     "Eldamo’s Approach to Extending Elvish"
+    ],
+    "n_headings": 5,
+    "sources_cited": [
+     "LotR"
+    ],
+    "words": 2012
+   },
+   {
+    "file": "general/phonetic-descriptions.html",
+    "url": "https://eldamo.org/general/phonetic-descriptions.html",
+    "title": "Phonetic Descriptions",
+    "headings": [
+     "Phonetic Descriptions",
+     "Phonetic Terminology",
+     "Place of Articulation",
+     "Method of Articulation",
+     "Consonant Modification",
+     "Phonetic Symbols",
+     "Phonetic Sound Changes"
+    ],
+    "n_headings": 7,
+    "sources_cited": [
+     "PE12",
+     "PE16",
+     "PE18"
+    ],
+    "words": 3678
+   },
+   {
+    "file": "general/terminology-and-notations.html",
+    "url": "https://eldamo.org/general/terminology-and-notations.html",
+    "title": "Terminology and Notations",
+    "headings": [
+     "Terminology and Notations"
+    ],
+    "n_headings": 1,
+    "sources_cited": [
+     "LotR"
+    ],
+    "words": 681
+   },
+   {
+    "file": "general/version-history.html",
+    "url": "https://eldamo.org/general/version-history.html",
+    "title": "Version History",
+    "headings": [
+     "Version History",
+     "Version History",
+     "Breaking Changes in v0.6.1"
+    ],
+    "n_headings": 3,
+    "sources_cited": [
+     "Let",
+     "MC",
+     "PE12",
+     "PE13",
+     "PE14",
+     "PE15",
+     "PE16",
+     "PE17",
+     "PE18",
+     "PE19",
+     "PE21",
+     "PE22",
+     "PE23",
+     "VT27",
+     "VT28",
+     "VT40",
+     "VT50"
+    ],
+    "words": 2791
+   }
+  ],
+  "intro-quenya": [
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-01.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-01.html",
+    "title": "Eldamo Introductory Quenya - Chapter 1",
+    "headings": [
+     "Chapter 1 - Course Introduction, Quenya Crash Course",
+     "1.1 Course Introduction",
+     "1.1.1 History of Quenya",
+     "1.2 A Quenya Crash Course",
+     "1.2.1 Nouns (n.)",
+     "1.2.2 Verbs (v.)",
+     "Exercise 1.1",
+     "1.2.3 Pronouns (pron.)",
+     "Exercise 1.2",
+     "1.2.4 Adjectives (adj.) and Adverbs (adv.)",
+     "Exercise 1.3",
+     "1.2.5 Prepositions (prep.) and Noun Cases",
+     "Exercise 1.4",
+     "1.2.6 Conjunctions (conj.) and Subordinate Clauses",
+     "Exercise 1.5",
+     "1.3 Course Methodology and References",
+     "1.4 Guided Reading: Frodo’s Greeting",
+     "1.5 Chapter Summary",
+     "1.5.1 Chapter Vocabulary",
+     "1.5.2 Grammar Summary",
+     "Answer Key 1.1",
+     "Answer Key 1.2",
+     "Answer Key 1.3",
+     "Answer Key 1.4",
+     "Answer Key 1.5"
+    ],
+    "n_headings": 25,
+    "sources_cited": [
+     "LB",
+     "LR",
+     "LT1",
+     "LT2",
+     "Let",
+     "LotR",
+     "MC",
+     "MR",
+     "NM",
+     "PE11",
+     "PM",
+     "RGEO",
+     "RS",
+     "SD",
+     "SM",
+     "TI",
+     "UT",
+     "VT39",
+     "WJ",
+     "WR"
+    ],
+    "words": 13377
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-02.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-02.html",
+    "title": "Eldamo Introductory Quenya - Chapter 2",
+    "headings": [
+     "Chapter 2 - Vowel Pronunciation, Basic Verb Classes, “To Be” Verbs",
+     "2.1 Pronunciation: Vowels, Diphthongs and Stress",
+     "2.1.1 Vowels",
+     "2.1.2 Diphthongs",
+     "2.1.3 Stress",
+     "2.1.4 Vocabulary: Places",
+     "2.1.5 Pronunciation Summary",
+     "Exercise 2.1",
+     "2.2 Verb Classes",
+     "2.2.1 Major Verb Classes",
+     "2.2.2 The Aorist Tense",
+     "2.2.3 The Present Tense",
+     "2.2.4 Introduction to the Past Tense",
+     "2.2.5 Vocabulary: Travel",
+     "2.2.6 Section Summary",
+     "Exercise 2.2",
+     "2.3 “To Be” Verbs",
+     "2.3.1 The Verb ná-",
+     "2.3.2 The Verb ëa-",
+     "2.3.3 Vocabulary: People and Attributes",
+     "2.3.4 Section Summary",
+     "Exercise 2.3",
+     "2.4 Reading Vocabulary Entries",
+     "2.4.1 Elements of Word Entries",
+     "2.4.2 Word Stems"
+    ],
+    "n_headings": 42,
+    "sources_cited": [
+     "Ety",
+     "LR",
+     "Let",
+     "LotR",
+     "MR",
+     "NM",
+     "PE12",
+     "PE14",
+     "PE17",
+     "PE21",
+     "PE22",
+     "QL",
+     "UT",
+     "VT42",
+     "VT49",
+     "WJ"
+    ],
+    "words": 21867
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-03.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-03.html",
+    "title": "Eldamo Introductory Quenya - Chapter 3",
+    "headings": [
+     "Chapter 3 - Consonant Pronunciation, Pronouns, Commands and Wishes",
+     "3.1 Pronunciation: Consonants",
+     "3.1.1 Quenya Consonants",
+     "3.1.2 Classical Pronunciation",
+     "3.1.3 Vocabulary: Language",
+     "3.1.4 Section Summary",
+     "Exercise 3.1",
+     "3.2 Pronouns and Pronominal Suffixes",
+     "3.2.1 Quenya Pronouns",
+     "3.2.2 Subject Suffixes",
+     "3.2.3 Possessive Suffixes",
+     "3.2.4 How do we know this?",
+     "3.2.5 Vocabulary: Music",
+     "3.2.6 Pronoun Summary",
+     "Exercise 3.2",
+     "3.3 Culture Notes: Gender and Forms of Address",
+     "3.3.1 Elves and Gender",
+     "3.3.2 Means of Address",
+     "3.3.3 How do we know this?",
+     "3.3.4 Vocabulary: Politeness",
+     "Exercise 3.3",
+     "3.4 Future, Commands and Wishes",
+     "3.4.1 Future Tense",
+     "3.4.2 Commands and Requests",
+     "3.4.3 Wishes"
+    ],
+    "n_headings": 36,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "MR",
+     "NM",
+     "PE17",
+     "PE19",
+     "PE22",
+     "RGEO",
+     "VT43",
+     "VT49",
+     "WJ"
+    ],
+    "words": 13822
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-04.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-04.html",
+    "title": "Eldamo Introductory Quenya - Chapter 4",
+    "headings": [
+     "Chapter 4 - Tengwar Basics, Plurals, Past Tenses",
+     "4.1 Tengwar Basics",
+     "4.1.1 Simple Tengwar Consonants",
+     "4.1.2 Tengwar Vowel Tehta",
+     "4.1.3 Spelling Examples",
+     "4.1.4 Vocabulary: Tengwar Names I",
+     "4.1.5 How do we know this?",
+     "4.1.6 Simplified Tengwar Summary",
+     "Exercise 4.1",
+     "4.2 Plurals and Plural Agreement",
+     "4.2.1 Noun Plurals",
+     "4.2.2 Adjective Plurals",
+     "4.2.3 Verb Plurals",
+     "4.2.4 Vocabulary: Body and Colours",
+     "4.2.5 Section Summary",
+     "Exercise 4.2",
+     "4.3 Word Order and Direct Objects",
+     "4.3.1 Quenya Word Order",
+     "4.3.2 Direct Objects",
+     "4.3.3 How do we know this?",
+     "4.3.4 Vocabulary: Food and Drink",
+     "4.3.5 Section Summary",
+     "Exercise 4.3",
+     "4.4 Basic Past Tenses",
+     "4.4.1 Pasts of Basic Verbs"
+    ],
+    "n_headings": 44,
+    "sources_cited": [
+     "Ety",
+     "LR",
+     "Let",
+     "LotR",
+     "MC",
+     "MR",
+     "NM",
+     "PE16",
+     "PE17",
+     "PE18",
+     "PE19",
+     "PE21",
+     "PE22",
+     "PM",
+     "RGEO",
+     "UT",
+     "VT39",
+     "VT41",
+     "VT43",
+     "VT47"
+    ],
+    "words": 18042
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-05.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-05.html",
+    "title": "Eldamo Introductory Quenya - Chapter 5",
+    "headings": [
+     "Chapter 5 - Advanced Tengwar, Duals, Dative, Perfect Tense, Negation",
+     "5.1 Advanced Tengwar",
+     "5.1.1 Tengwar for Consonant Clusters",
+     "5.1.2 Tengwar Consonant Modifiers",
+     "5.1.3 Tengwar Punctuation",
+     "5.1.4 Vocabulary: Tengwar Names II",
+     "5.1.5 Tengwar Summary",
+     "Exercise 5.1",
+     "5.2 Duals",
+     "5.2.1 Dual Nouns and Verbs",
+     "5.2.2 Dual Pronouns",
+     "5.2.3 Culture Notes: Counting Body Parts",
+     "5.2.4 Vocabulary: Head and Senses",
+     "5.2.5 Section Summary",
+     "Exercise 5.2",
+     "5.3 Indirect Objects and the Dative",
+     "5.3.1 The Dative Case",
+     "5.3.2 Vocabulary: Plants",
+     "5.3.3 Section Summary",
+     "Exercise 5.3",
+     "5.4 Perfect Tense",
+     "5.4.1 The Perfect Tense",
+     "5.4.2 Vocabulary: Motion",
+     "5.4.3 Section Summary",
+     "Exercise 5.4"
+    ],
+    "n_headings": 42,
+    "sources_cited": [
+     "Ety",
+     "LR",
+     "Let",
+     "LotR",
+     "MC",
+     "MR",
+     "PE16",
+     "PE17",
+     "PE19",
+     "PE21",
+     "PE22",
+     "PE23",
+     "PM",
+     "Plotz",
+     "RGEO",
+     "VT42",
+     "VT43",
+     "VT44",
+     "VT47",
+     "VT49"
+    ],
+    "words": 16667
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-06.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-06.html",
+    "title": "Eldamo Introductory Quenya - Chapter 6",
+    "headings": [
+     "Chapter 6 - Vowel Shifts, Partitive Plural, Genitive and Possessive",
+     "6.1 Pronunciation: Quenya Vowel Shifts",
+     "6.1.1 Elision - Vowel Loss",
+     "6.1.2 Vowel Reduction in Compounds",
+     "6.1.3 Prosodic Lengthening",
+     "6.1.4 Vocabulary: Warfare",
+     "6.1.5 Section Summary",
+     "Exercise 6.1",
+     "6.2 Partitive Plurals",
+     "6.2.1 Partitive Plurals",
+     "6.2.2 Vocabulary: Animals",
+     "6.2.3 Section Summary",
+     "Exercise 6.2",
+     "6.3 Genitive and Possessive Cases",
+     "6.3.1 Genitive Case",
+     "6.3.2 Possessive Case",
+     "6.3.3 Genitive vs. Possessive",
+     "6.3.4 Vocabulary: Time",
+     "6.3.5 Section Summary",
+     "Exercise 6.3",
+     "6.4 Definite vs. Indefinite",
+     "6.4.1 The Quenya Definite Article",
+     "6.4.2 Definite and Indefinite Plurals",
+     "6.4.3 Definite Genitives and Possessives",
+     "6.4.4 Vocabulary: Quantity"
+    ],
+    "n_headings": 44,
+    "sources_cited": [
+     "Let",
+     "LotR",
+     "NM",
+     "PE13",
+     "PE14",
+     "PE17",
+     "PE21",
+     "PE22",
+     "PE23",
+     "PM",
+     "Plotz",
+     "RGEO",
+     "UT",
+     "VT13",
+     "VT42",
+     "VT43",
+     "VT47",
+     "VT48",
+     "VT49",
+     "WJ"
+    ],
+    "words": 15269
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-07.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-07.html",
+    "title": "Eldamo Introductory Quenya - Chapter 7",
+    "headings": [
+     "Chapter 7 - More Pronouns, Verbal Nouns, Adverbial Noun Cases",
+     "7.1 Emphatic and Other Pronouns",
+     "7.1.1 Emphatic Pronouns",
+     "7.1.2 Colloquial Possessives",
+     "7.1.3 Other Pronouns",
+     "7.1.4 Vocabulary: Life and Death",
+     "7.1.5 Section Summary",
+     "Exercise 7.1",
+     "7.2 Infinitives and Gerunds",
+     "7.2.1 Infinitives",
+     "7.2.2 Gerunds",
+     "7.2.3 How do we know this?",
+     "7.2.4 Vocabulary: Hunting",
+     "7.2.5 Section Summary",
+     "Exercise 7.2",
+     "7.3 Adverbial Noun Cases",
+     "7.3.1 Allative Case",
+     "7.3.2 Ablative Case",
+     "7.3.3 Locative Case",
+     "7.3.4 Assimilated Cases",
+     "7.3.5 Instrumental Case",
+     "7.3.6 How do we know this?",
+     "7.3.7 Vocabulary: Locations",
+     "7.3.8 Section Summary",
+     "Exercise 7.3"
+    ],
+    "n_headings": 36,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "MC",
+     "NM",
+     "PE17",
+     "PE21",
+     "PE22",
+     "PM",
+     "Plotz",
+     "RGEO",
+     "VT27",
+     "VT43",
+     "VT44",
+     "VT47",
+     "VT49"
+    ],
+    "words": 10357
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-08.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-08.html",
+    "title": "Eldamo Introductory Quenya - Chapter 8",
+    "headings": [
+     "Chapter 8 - More Verb Classes, Interrogatives",
+     "8.1 More Verb Classes",
+     "8.1.1 Sources for Verb Classes",
+     "8.1.2 A-verbs",
+     "8.1.3 Formative Verbs",
+     "8.1.4 Talat-stem Verbs",
+     "8.1.5 Causative Verbs",
+     "8.1.6 Derivative Verbs",
+     "8.1.7 Verb Tenses by Class",
+     "8.1.8 Neo-Quenya Recommendations",
+     "8.1.9 Vocabulary: Actions",
+     "Exercise 8.1",
+     "8.2 Interrogatives",
+     "8.2.1 Interrogative Pronouns",
+     "8.2.2 Forming Questions",
+     "8.2.3 How do we know this?",
+     "8.2.4 Vocabulary: Happy Emotions",
+     "8.2.5 Section Summary",
+     "Exercise 8.2",
+     "8.3 Culture Notes: Questions, Answers, and Gestures",
+     "8.3.1 Answering Questions",
+     "8.3.2 Elvish Gestures",
+     "8.3.3 Vocabulary: Unhappy Emotions",
+     "Exercise 8.3",
+     "8.4 Guided Reading: Namárië Prose"
+    ],
+    "n_headings": 31,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "MC",
+     "PE17",
+     "PE22",
+     "PE23",
+     "PM",
+     "RGEO",
+     "VT42",
+     "VT47",
+     "VT49",
+     "WJ"
+    ],
+    "words": 8950
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-09.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-09.html",
+    "title": "Eldamo Introductory Quenya - Chapter 9",
+    "headings": [
+     "Chapter 9 - Verbal Adjectives, Passive Voice, Adverbs, Comparison",
+     "9.1 Verbal Adjectives",
+     "9.1.1 Active Participles",
+     "9.1.2 Passive Participles",
+     "9.1.3 Advanced Topic: Other Participles",
+     "9.1.4 Other Verbal Adjectives",
+     "9.1.5 Vocabulary: Trade",
+     "9.1.6 Section Summary",
+     "Exercise 9.1",
+     "9.2 Impersonal Verbs and Passive Voice",
+     "9.2.1 Impersonal Verbs",
+     "9.2.2 Passive Voice",
+     "9.2.3 How do we know this?",
+     "9.2.4 Vocabulary: Craft",
+     "9.2.5 Section Summary",
+     "Exercise 9.2",
+     "9.3 Adverbs",
+     "9.3.1 Adverb Use",
+     "9.3.2 Vocabulary: Adverbs and Clothing",
+     "9.3.3 Section Summary",
+     "Exercise 9.3",
+     "9.4 Comparison and Intensives",
+     "9.4.1 Forming the Intensive",
+     "9.4.2 Making Comparisons",
+     "9.4.3 Neo Quenya Comparisons"
+    ],
+    "n_headings": 41,
+    "sources_cited": [
+     "Ety",
+     "LotR",
+     "MC",
+     "MR",
+     "NM",
+     "PE14",
+     "PE17",
+     "PE19",
+     "PE22",
+     "PE23",
+     "RGEO",
+     "UT",
+     "VT27",
+     "VT41",
+     "VT43",
+     "VT45",
+     "VT49"
+    ],
+    "words": 13068
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-10.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-10.html",
+    "title": "Eldamo Introductory Quenya - Chapter 10",
+    "headings": [
+     "Chapter 10 - Subordinate Clauses, Demonstratives, Reflexives, Verbal Modality",
+     "10.1 Relative Pronouns and Subordinate Clauses",
+     "10.1.1 Relative Pronouns",
+     "10.1.2 Forming Subordinate Clauses",
+     "10.1.3 Vocabulary: Health",
+     "10.1.4 Section Summary",
+     "Exercise 10.1",
+     "10.2 Demonstrative Pronouns",
+     "10.2.1 Demonstrative Bases",
+     "10.2.2 Inflected Demonstratives",
+     "10.2.3 Vocabulary: Dwelling",
+     "10.2.4 Section Summary",
+     "Exercise 10.2",
+     "10.3 Reflexive Pronouns",
+     "10.3.1 Independent Reflexives",
+     "10.3.2 Reflexive Subject Suffixes",
+     "10.3.3 Vocabulary: Shapes and Similarity",
+     "10.3.4 Section Summary",
+     "Exercise 10.3",
+     "10.4 Verbal Modality",
+     "10.4.1 Can, May, Might, Must",
+     "10.4.2 Vocabulary: Materials",
+     "10.4.3 Section Summary",
+     "Exercise 10.4",
+     "10.5 Guided Reading: Átaremma"
+    ],
+    "n_headings": 32,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "PE14",
+     "PE16",
+     "PE17",
+     "PE22",
+     "PE23",
+     "VT41",
+     "VT43",
+     "VT45",
+     "VT47",
+     "VT49"
+    ],
+    "words": 8035
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-11.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-11.html",
+    "title": "Eldamo Introductory Quenya - Chapter 11",
+    "headings": [
+     "Chapter 11 - Compound Tenses, Subjunctive, More Noun Classes",
+     "11.1 Compound Tenses",
+     "11.1.1 Tense vs. Aspect",
+     "11.1.2 Compound Pasts",
+     "11.1.3 Compound Futures",
+     "11.1.4 Vocabulary: Mind",
+     "11.1.5 Section Summary",
+     "11.2 Subjunctive",
+     "11.2.1 Adverbs of Uncertainty",
+     "11.2.2 Hypothetical Statements",
+     "11.2.3 Conditional Statements",
+     "11.2.4 Counterfactual Statements",
+     "11.2.5 Vocabulary: Supernatural",
+     "11.2.6 Section Summary",
+     "11.3 More Noun Classes",
+     "11.3.1 a-nouns and o-nouns",
+     "11.3.2 e-nouns",
+     "11.3.3 i-nouns and u-nouns",
+     "11.3.4 Semivocalic Nouns",
+     "11.3.5 Consonantal Nouns",
+     "11.3.6 Noun Stem Clusters",
+     "11.3.7 Vocalic Monosyllables",
+     "11.3.8 Vocabulary: Law and Society",
+     "11.4 Chapter Summary",
+     "11.4.1 Chapter Vocabulary"
+    ],
+    "n_headings": 26,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "PE14",
+     "PE17",
+     "PE19",
+     "PE21",
+     "PE22",
+     "Plotz",
+     "SD",
+     "UT",
+     "VT47",
+     "VT49",
+     "WJ"
+    ],
+    "words": 11507
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-12.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-12.html",
+    "title": "Eldamo Introductory Quenya - Chapter 12",
+    "headings": [
+     "Chapter 12 - Grammar Summary",
+     "12.1 Pronunciation Summary",
+     "12.2 Noun Summary",
+     "12.3 Noun Cases",
+     "12.4 Pronoun Summary",
+     "12.5 Verb Summary",
+     "12.6 Verbal Moods",
+     "12.7 Adjective and Adverb Summary",
+     "12.8 Syntax Summary",
+     "12.9 Tengwar Summary"
+    ],
+    "n_headings": 10,
+    "sources_cited": [
+     "PE17"
+    ],
+    "words": 7716
+   },
+   {
+    "file": "intro-quenya/eldamo-intro-quenya-15.html",
+    "url": "https://eldamo.org/intro-quenya/eldamo-intro-quenya-15.html",
+    "title": "Eldamo Introductory Quenya - Chapter 15",
+    "headings": [
+     "Chapter 15 - All Excercises",
+     "Chapter 1 Exercises",
+     "Exercise 1.1",
+     "Exercise 1.2",
+     "Exercise 1.3",
+     "Exercise 1.4",
+     "Exercise 1.5",
+     "Chapter 2 Exercises",
+     "Exercise 2.1",
+     "Exercise 2.2",
+     "Exercise 2.3",
+     "Exercise 2.4",
+     "Exercise 2.5",
+     "Chapter 3 Exercises",
+     "Exercise 3.1",
+     "Exercise 3.2",
+     "Exercise 3.3",
+     "Exercise 3.4",
+     "Chapter 4 Exercises",
+     "Exercise 4.1",
+     "Exercise 4.2",
+     "Exercise 4.3",
+     "Exercise 4.4",
+     "Exercise 4.5",
+     "Chapter 5 Exercises"
+    ],
+    "n_headings": 59,
+    "sources_cited": [
+     "PE23"
+    ],
+    "words": 5113
+   },
+   {
+    "file": "intro-quenya/index.html",
+    "url": "https://eldamo.org/intro-quenya/index.html",
+    "title": "Eldamo Introductory Quenya",
+    "headings": [
+     "Eldamo Introductory Quenya",
+     "Memrise Vocabulary Courses"
+    ],
+    "n_headings": 2,
+    "sources_cited": [],
+    "words": 257
+   }
+  ],
+  "elvish-composition-archive": [
+   {
+    "file": "elvish-composition-archive/index.html",
+    "url": "https://eldamo.org/elvish-composition-archive/index.html",
+    "title": "Elvish Composition Archive",
+    "headings": [
+     "Elvish Composition Archive",
+     "Compositions by Author",
+     "Almáriel",
+     "Arcaino",
+     "Chaered",
+     "Delle",
+     "Echuidor",
+     "Ellanto",
+     "Laiqua",
+     "Luinyelle",
+     "Rínor",
+     "Vyacheslav Stepanov",
+     "Submissions",
+     "Mirrors, Downloads and Licensing"
+    ],
+    "n_headings": 14,
+    "sources_cited": [],
+    "words": 915
+   },
+   {
+    "file": "elvish-composition-archive/arcaino/parmalaire.html",
+    "url": "https://eldamo.org/elvish-composition-archive/arcaino/parmalaire.html",
+    "title": "Parmalairë by Arcaino",
+    "headings": [
+     "Parmalairë"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 97
+   },
+   {
+    "file": "elvish-composition-archive/laiqua/i-corco-ar-i-ulma.html",
+    "url": "https://eldamo.org/elvish-composition-archive/laiqua/i-corco-ar-i-ulma.html",
+    "title": "I Corco ar i Ulma by Laiqua",
+    "headings": [
+     "I Corco ar i Ulma"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 300
+   },
+   {
+    "file": "elvish-composition-archive/laiqua/i-raurova-masse.html",
+    "url": "https://eldamo.org/elvish-composition-archive/laiqua/i-raurova-masse.html",
+    "title": "I Raurova Massë by Laiqua",
+    "headings": [
+     "I Raurova Massë (The Lion's Share)"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 405
+   },
+   {
+    "file": "elvish-composition-archive/chaered/a-pamba.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/a-pamba.html",
+    "title": "Á Pamba by Chaered",
+    "headings": [
+     "Á Pamba"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 220
+   },
+   {
+    "file": "elvish-composition-archive/chaered/aesops-fables.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/aesops-fables.html",
+    "title": "Aesops",
+    "headings": [
+     "Aesop's Fables",
+     "Aesop 002: The Frogs & the Ox",
+     "Aesop 003: Belling the Cat",
+     "Aesop 008: The Gnat & the Bull",
+     "Aesop 009: The Plane Tree",
+     "Aesop 013: The Two Goats",
+     "Aesop 014: The Wild Boar & the Fox",
+     "Aesop 020: The Fox & the Leopard",
+     "Aesop 022: The Wolf in Sheep's Clothing",
+     "Aesop 028: The Ant & the Dove",
+     "Aesop 034: The Young Crab & His Mother",
+     "Aesop 047: The Lion & the Ass",
+     "Aesop 052: The Ants & the Grasshopper",
+     "Aesop 058: The Cock & the Jewel",
+     "Aesop 064: The Wolf & the Sheep",
+     "Aesop 071: The Fox & the Lion",
+     "Aesop 077: The Dogs & the Fox",
+     "Aesop 091: The Goose & the Golden Egg",
+     "Aesop 094: The Farmer & the Snake",
+     "Aesop 095: The Sick Stag",
+     "Aesop 111: The Goatherd & the Goat"
+    ],
+    "n_headings": 21,
+    "sources_cited": [],
+    "words": 4357
+   },
+   {
+    "file": "elvish-composition-archive/chaered/aldun-linde.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/aldun-linde.html",
+    "title": "Aldun Linde by Chaered",
+    "headings": [
+     "Aldun Linde"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 233
+   },
+   {
+    "file": "elvish-composition-archive/chaered/boy-vs-orc.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/boy-vs-orc.html",
+    "title": "Boy vs. Orc by Chaered",
+    "headings": [
+     "Boy vs. Orc",
+     "Prolog",
+     "The Eyes",
+     "The Ears",
+     "The Nose",
+     "Epilog"
+    ],
+    "n_headings": 6,
+    "sources_cited": [],
+    "words": 2891
+   },
+   {
+    "file": "elvish-composition-archive/chaered/gloomy-march.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/gloomy-march.html",
+    "title": "Gloomy March by Chaered",
+    "headings": [
+     "Gloomy March"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 113
+   },
+   {
+    "file": "elvish-composition-archive/chaered/lord-ye.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/lord-ye.html",
+    "title": "Lord Ye loves dragons by Chaered",
+    "headings": [
+     "Lord Ye loves dragons"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 363
+   },
+   {
+    "file": "elvish-composition-archive/chaered/mana.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/mana.html",
+    "title": "Mana caruval by Chaered",
+    "headings": [
+     "Mana caruval"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 688
+   },
+   {
+    "file": "elvish-composition-archive/chaered/ninya-masta.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/ninya-masta.html",
+    "title": "Ninya Masta by Chaered",
+    "headings": [
+     "Ninya Masta",
+     "Verse 1",
+     "Chorus",
+     "Verse 2",
+     "Verse 3",
+     "Verses 4-12",
+     "Final verse"
+    ],
+    "n_headings": 7,
+    "sources_cited": [],
+    "words": 560
+   },
+   {
+    "file": "elvish-composition-archive/chaered/princess-and-the-pea.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/princess-and-the-pea.html",
+    "title": "The Princess and the Pea by Chaered",
+    "headings": [
+     "The Princess and the Pea"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 1155
+   },
+   {
+    "file": "elvish-composition-archive/chaered/quain.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/quain.html",
+    "title": "Duckfleet by Chaered",
+    "headings": [
+     "Duckfleet"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 143
+   },
+   {
+    "file": "elvish-composition-archive/chaered/rose.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/rose.html",
+    "title": "The Elf of the Rose by Chaered",
+    "headings": [
+     "The Elf of the Rose"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 5372
+   },
+   {
+    "file": "elvish-composition-archive/chaered/ruive.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/ruive.html",
+    "title": "Tere Ruive by Chaered",
+    "headings": [
+     "Tere Ruive",
+     "Part 1",
+     "Part 2",
+     "Part 3",
+     "Part 4",
+     "Part 5",
+     "Part 6",
+     "Part 7",
+     "Part 8",
+     "Part 9",
+     "Part 10",
+     "Part 11",
+     "Part 12",
+     "Part 13",
+     "Part 14",
+     "Part 15"
+    ],
+    "n_headings": 16,
+    "sources_cited": [
+     "PE23"
+    ],
+    "words": 5710
+   },
+   {
+    "file": "elvish-composition-archive/chaered/tengwa-abc.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/tengwa-abc.html",
+    "title": "Tengwar ABC by Chaered",
+    "headings": [
+     "Tengwar ABC"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 2274
+   },
+   {
+    "file": "elvish-composition-archive/chaered/ugly-duckling.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/ugly-duckling.html",
+    "title": "The Ugly Duckling by Chaered",
+    "headings": [
+     "The Ugly Duckling",
+     "Part 1",
+     "Part 2",
+     "Part 3"
+    ],
+    "n_headings": 4,
+    "sources_cited": [
+     "Let"
+    ],
+    "words": 6601
+   },
+   {
+    "file": "elvish-composition-archive/chaered/vanwa-vayan.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/vanwa-vayan.html",
+    "title": "Vanwa Váyan by Chaered",
+    "headings": [
+     "Vanwa Váyan"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 371
+   },
+   {
+    "file": "elvish-composition-archive/chaered/wizard-of-oz.html",
+    "url": "https://eldamo.org/elvish-composition-archive/chaered/wizard-of-oz.html",
+    "title": "The Wonderful Wizard of Oz by Chaered",
+    "headings": [
+     "The Wonderful Wizard of Oz",
+     "I. The Cyclone",
+     "II. The Council with the Munchkins",
+     "III. How Dorothy Saved the Scarecrow",
+     "IV. The Road Through the Forest",
+     "V. The Rescue of the Tin Woodman",
+     "VI. The Cowardly Lion",
+     "VII. The Journey to the Great Oz",
+     "VIII. The Deadly Poppy Field",
+     "IX. The Queen of the Field Mice",
+     "X. The Guardian of the Gate",
+     "XI. The Wonderful City of Oz",
+     "XII. The Search for the Wicked Witch",
+     "XIII. The Rescue",
+     "XIV. The Winged Monkeys",
+     "XV. The Discovery of Oz, the Terrible",
+     "XVI. The Magic Art of the Great Humbug",
+     "XVII. How the Balloon Was Launched",
+     "XVIII. Away to the South",
+     "XIX. Attacked by the Fighting Trees",
+     "XX. The Dainty China Country",
+     "XXI. The Lion Becomes the King of Beasts",
+     "XXII. The Country of the Quadlings",
+     "XXIII. Glinda The Good Witch Grants Dorothy’s Wish",
+     "XXIV. Home Again"
+    ],
+    "n_headings": 25,
+    "sources_cited": [
+     "Let"
+    ],
+    "words": 104017
+   },
+   {
+    "file": "elvish-composition-archive/echuidor/ring-verse-sindarin.html",
+    "url": "https://eldamo.org/elvish-composition-archive/echuidor/ring-verse-sindarin.html",
+    "title": "Ring Verse (Sindarin) by Echuidor",
+    "headings": [
+     "Ring Verse (Sindarin)"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 257
+   },
+   {
+    "file": "elvish-composition-archive/rinor/celebrinor.html",
+    "url": "https://eldamo.org/elvish-composition-archive/rinor/celebrinor.html",
+    "title": "Narn na Chelebrinor by Rínor",
+    "headings": [
+     "Narn na Chelebrinor"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 839
+   },
+   {
+    "file": "elvish-composition-archive/rinor/glorfinniel-ah-i-medli-neledh.html",
+    "url": "https://eldamo.org/elvish-composition-archive/rinor/glorfinniel-ah-i-medli-neledh.html",
+    "title": "lorfinniel ah i·Medli Neledh by Rínor",
+    "headings": [
+     "Glorfinniel ah i·Medli Neledh"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 911
+   },
+   {
+    "file": "elvish-composition-archive/rinor/lion-and-mouse.html",
+    "url": "https://eldamo.org/elvish-composition-archive/rinor/lion-and-mouse.html",
+    "title": "e·Raw ah e·Nigol by Rínor",
+    "headings": [
+     "e·Raw ah e·Nigol - The Lion & the Mouse"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 619
+   },
+   {
+    "file": "elvish-composition-archive/rinor/mablanthos.html",
+    "url": "https://eldamo.org/elvish-composition-archive/rinor/mablanthos.html",
+    "title": "Mablanthos by Rínor",
+    "headings": [
+     "Mablanthos - The Plane Tree"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 328
+   },
+   {
+    "file": "elvish-composition-archive/rinor/two-travelers-and-a-bear.html",
+    "url": "https://eldamo.org/elvish-composition-archive/rinor/two-travelers-and-a-bear.html",
+    "title": "Two Travelers and a Bear",
+    "headings": [
+     "Rendir dâd a Medli Ranyar atta ar Morco Two Travelers and a Bear"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 735
+   },
+   {
+    "file": "elvish-composition-archive/vyacheslav-stepanov/hymn-to-vinye-lambengolmor.html",
+    "url": "https://eldamo.org/elvish-composition-archive/vyacheslav-stepanov/hymn-to-vinye-lambengolmor.html",
+    "title": "Hymn to Vinyë Lambengolmor by Vyacheslav Stepanov",
+    "headings": [
+     "Hymn to Vinyë Lambengolmor"
+    ],
+    "n_headings": 1,
+    "sources_cited": [
+     "Let"
+    ],
+    "words": 249
+   },
+   {
+    "file": "elvish-composition-archive/vyacheslav-stepanov/i-naitie.html",
+    "url": "https://eldamo.org/elvish-composition-archive/vyacheslav-stepanov/i-naitie.html",
+    "title": "I Naitië by Vyacheslav Stepanov",
+    "headings": [
+     "I Naitië"
+    ],
+    "n_headings": 1,
+    "sources_cited": [
+     "MR",
+     "PE17"
+    ],
+    "words": 279
+   },
+   {
+    "file": "elvish-composition-archive/vyacheslav-stepanov/nalye-melda.html",
+    "url": "https://eldamo.org/elvish-composition-archive/vyacheslav-stepanov/nalye-melda.html",
+    "title": "Nalyë Melda by Vyacheslav Stepanov",
+    "headings": [
+     "Nalyë Melda"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 132
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/a-lirulin.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/a-lirulin.html",
+    "title": "A Lirulin by Luinyelle",
+    "headings": [
+     "A Lirulin"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 719
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/feanaron-pataka-vinya.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/feanaron-pataka-vinya.html",
+    "title": "Feanáron Pataka Vinya by Luinyelle",
+    "headings": [
+     "Feanáron Pataka Vinya (A New Consonant for Feanor)"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 584
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/i-elenwende.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/i-elenwende.html",
+    "title": "i Elenwende by Luinyelle",
+    "headings": [
+     "i Elenwende",
+     "Comment on the Names of the Characters:",
+     "Comment on Grammar:",
+     "i Elenwende",
+     "Neologisms",
+     "Time & Place Words",
+     "The Starmaiden"
+    ],
+    "n_headings": 7,
+    "sources_cited": [],
+    "words": 5461
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/i-korko.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/i-korko.html",
+    "title": "i Korko by Luinyelle",
+    "headings": [
+     "i Korko"
+    ],
+    "n_headings": 1,
+    "sources_cited": [
+     "Let"
+    ],
+    "words": 2608
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/sanwe-luite-sinyeo.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/sanwe-luite-sinyeo.html",
+    "title": "Sanwe Luite Þinyeo by Luinyelle",
+    "headings": [
+     "Sanwe Luite Þinyeo"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 224
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/tirion-ninquisseo.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/tirion-ninquisseo.html",
+    "title": "Tirion Ninquisseo by Luinyelle",
+    "headings": [
+     "Tirion Ninquisseo"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 477
+   },
+   {
+    "file": "elvish-composition-archive/luinyelle/vanima-na-valimar.html",
+    "url": "https://eldamo.org/elvish-composition-archive/luinyelle/vanima-na-valimar.html",
+    "title": "Vanima ná Valimar by Luinyelle",
+    "headings": [
+     "Vanima ná Valimar"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 397
+   },
+   {
+    "file": "elvish-composition-archive/ellanto/ceraib-serthir.html",
+    "url": "https://eldamo.org/elvish-composition-archive/ellanto/ceraib-serthir.html",
+    "title": "Ceraib Serthir by Ellanto",
+    "headings": [
+     "Ceraib Serthir†",
+     "Kasa Jizō"
+    ],
+    "n_headings": 2,
+    "sources_cited": [],
+    "words": 637
+   },
+   {
+    "file": "elvish-composition-archive/delle/nyare-pa-i-corco.html",
+    "url": "https://eldamo.org/elvish-composition-archive/delle/nyare-pa-i-corco.html",
+    "title": "Nyare Pá i Corco by Delle",
+    "headings": [
+     "Nyare Pá i Corco"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 285
+   },
+   {
+    "file": "elvish-composition-archive/almariel/i-carma-tecindova.html",
+    "url": "https://eldamo.org/elvish-composition-archive/almariel/i-carma-tecindova.html",
+    "title": "I Carma Tecindova by Chaered",
+    "headings": [
+     "I Carma Tecindova"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 178
+   },
+   {
+    "file": "elvish-composition-archive/almariel/soldier-poet-king.html",
+    "url": "https://eldamo.org/elvish-composition-archive/almariel/soldier-poet-king.html",
+    "title": "Soldier, Poet, King by Almáriel",
+    "headings": [
+     "Soldier, Poet, King"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 128
+   }
+  ],
+  "elvish-essays": [
+   {
+    "file": "elvish-essays/adjectival-mutations-in-sindarin.html",
+    "url": "https://eldamo.org/elvish-essays/adjectival-mutations-in-sindarin.html",
+    "title": "Adjectival Mutations in Sindarin",
+    "headings": [
+     "Adjectival Mutations in Sindarin",
+     "Introduction",
+     "Mutation of Juxtapositional Genitives",
+     "Adjective Mutation in the Lord of the Rings",
+     "Adjective Mutation in the Lord of the Rings Drafts",
+     "The King’s Letter",
+     "Adjective Mutations in The Silmarillion and Other Texts",
+     "Possible Explanations for Non-Mutation",
+     "Conclusion",
+     "Bibliography"
+    ],
+    "n_headings": 10,
+    "sources_cited": [
+     "LR",
+     "LotR",
+     "MR",
+     "PE11",
+     "PE13",
+     "PE17",
+     "PE19",
+     "PE22",
+     "PE23",
+     "PM",
+     "RC",
+     "RS",
+     "SD",
+     "TI",
+     "UT",
+     "VT42",
+     "VT44",
+     "WJ",
+     "WR"
+    ],
+    "words": 4515
+   },
+   {
+    "file": "elvish-essays/before-and-after-in-elvish.html",
+    "url": "https://eldamo.org/elvish-essays/before-and-after-in-elvish.html",
+    "title": "Before and After in Elvish",
+    "headings": [
+     "Before and After in Elvish",
+     "1.0 Early Elvish (1910s-1920s)",
+     "2.0 Middle Elvish (1930s-1940s)",
+     "3.0 Later Elvish (1950s-1970s)",
+     "4.0 Final Paradigms",
+     "5.0 Elvish Perception of Time",
+     "6.0 Summary of Developments"
+    ],
+    "n_headings": 7,
+    "sources_cited": [
+     "Ety",
+     "GL",
+     "LR",
+     "MC",
+     "MR",
+     "NM",
+     "PE13",
+     "PE14",
+     "PE15",
+     "PE16",
+     "PE17",
+     "PE21",
+     "PE22",
+     "PM",
+     "QL",
+     "VT43",
+     "VT44",
+     "VT47",
+     "VT48",
+     "VT49"
+    ],
+    "words": 2658
+   },
+   {
+    "file": "elvish-essays/index.html",
+    "url": "https://eldamo.org/elvish-essays/index.html",
+    "title": "Elvish Essays",
+    "headings": [
+     "Elvish Essays"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 105
+   },
+   {
+    "file": "elvish-essays/late-sindarin-articles-and-mutations.html",
+    "url": "https://eldamo.org/elvish-essays/late-sindarin-articles-and-mutations.html",
+    "title": "Sindarin Articles and Mutations from Parma Eldalamberon 23",
+    "headings": [
+     "Sindarin Articles and Mutations from Parma Eldalamberon #23",
+     "1.0 The Definite Article in CEA",
+     "2.0 Vocalic Mutations in CEA",
+     "2.1 Voiceless and Voice Stops",
+     "2.2 Voiceless Spirants and Sibilants",
+     "2.3 Liquids and Nasals",
+     "2.4 Voiceless Liquids",
+     "2.5 Voiceless Approximants",
+     "2.6 Velar Nasal ñ and Nasalized Stops",
+     "2.7 Labialized Velar Stop gw",
+     "3.0 Nasal Mutations in CEA",
+     "3.1 Voiceless Stops",
+     "3.2 Voiceless Spirants",
+     "3.3 Voiced Stops",
+     "3.4 Nasals",
+     "3.5 Liquids",
+     "3.6 Voiceless Sibilants and Voiceless Approximants",
+     "3.7 Voiceless Liquids",
+     "3.8 Labialized Velar Stop gw",
+     "4.0 Phonological Developments of Nasals Plus Voiceless Stops and Spirants",
+     "4.1 Medial Developments of Voiceless Nasals",
+     "4.2 Lack of Voiceless Nasals in Nasal Mutations Prior to CEA",
+     "4.3 Lack of Voiceless Nasals in Nasal Mutations in CEA",
+     "4.4 Other Late Evidence of a Missing Voiceless Nasal Stage",
+     "4.5 Conceptual Development of Voiceless Nasals as a Phonological Stage of Sindarin"
+    ],
+    "n_headings": 42,
+    "sources_cited": [
+     "GG",
+     "GL",
+     "LB",
+     "LR",
+     "LT1",
+     "LT2",
+     "Let",
+     "LotR",
+     "MR",
+     "NM",
+     "PE11",
+     "PE13",
+     "PE15",
+     "PE17",
+     "PE19",
+     "PE21",
+     "PE22",
+     "PE23",
+     "PM",
+     "RC"
+    ],
+    "words": 18775
+   },
+   {
+    "file": "elvish-essays/vocalization-of-spirants-in-Sindarin.html",
+    "url": "https://eldamo.org/elvish-essays/vocalization-of-spirants-in-Sindarin.html",
+    "title": "Vocalization of Spirants in Sindarin and Noldorin",
+    "headings": [
+     "Vocalization of Spirants in Sindarin and Noldorin",
+     "Previous Research",
+     "Notations Used",
+     "Sindarin and Noldorin Diphthongal Developments",
+     "First Wave Vocalizations in Old Sindarin/Noldorin",
+     "Second Wave Vocalizations in Sindarin/Noldorin",
+     "Post-Consonantal Vocalizations",
+     "Gnomish and Early Noldorin Development",
+     "General Conclusions",
+     "Works Cited"
+    ],
+    "n_headings": 10,
+    "sources_cited": [
+     "Ety",
+     "GL",
+     "PE13",
+     "PE14",
+     "PE15",
+     "PE17",
+     "PE18",
+     "PE19",
+     "PE22",
+     "PM",
+     "QL",
+     "UT",
+     "VT41",
+     "VT42",
+     "VT45",
+     "VT46",
+     "VT47",
+     "VT48",
+     "WJ"
+    ],
+    "words": 11552
+   }
+  ],
+  "content/references": [
+   {
+    "file": "content/references/index.html",
+    "url": "https://eldamo.org/content/references/index.html",
+    "title": "Reference Index",
+    "headings": [
+     "Reference Index",
+     "Primary Sources",
+     "Secondary Sources",
+     "Neologisms"
+    ],
+    "n_headings": 4,
+    "sources_cited": [
+     "CH",
+     "Ety",
+     "EtyAC",
+     "GG",
+     "GL",
+     "LB",
+     "LR",
+     "LT1",
+     "LT2",
+     "Let",
+     "LotR",
+     "MC",
+     "MR",
+     "NM",
+     "PE11",
+     "PE12",
+     "PE13",
+     "PE14",
+     "PE15",
+     "PE16"
+    ],
+    "words": 2259
+   }
+  ],
+  "content/languages": [
+   {
+    "file": "content/languages/index.html",
+    "url": "https://eldamo.org/content/languages/index.html",
+    "title": "Language Index",
+    "headings": [
+     "Language Index"
+    ],
+    "n_headings": 1,
+    "sources_cited": [],
+    "words": 349
+   }
+  ]
+ },
+ "note": "Eldamo's non-lexicon content, filed as shape and pointers at the owner's instruction of 11 August. The 35,900 WORDS are a separate ingestion, taken from eldamo-data.xml and merged into site/lex/. This is everything around them: essays, a Quenya course, the composition archive and the reference index."
+}

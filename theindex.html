@@ -1,0 +1,534 @@
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta name="robots" content="noindex,nofollow"><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Index — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Index — 9,416 names from the indexes of 16 volumes, each with the editor's own statement of what it is. Where two volumes gloss a name differently the archive keeps both and ranks neither."><meta property="og:title" content="The Index — the Arda Archive"><meta property="og:description" content="The Index — 9,416 names from the indexes of 16 volumes, each with the editor's own statement of what it is. Where two volumes gloss a name differently the archive keeps both and ranks neither."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/theindex.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/theindex.html"><!--/ARDA:META-->
+<link rel="stylesheet" href="arda.css">
+<style>
+/* ---- THE HOUSE GROUND. Stated here, as all 26 older halls state it, because arda.css can only
+   supply GROUND AND INK safely -- see the long note there. A hall that wants the house header
+   BAND (the flex row, its padding and its double rule) declares it, and this is that declaration,
+   copied from realms.html so the three newest halls sit level with their neighbours. */
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;
+ border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;
+ color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+.wrap{max-width:1280px;margin:0 auto;padding:16px 20px 60px}
+
+#ix .law{background:#fdf3df;border:1px solid #d0a53c;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:12.5px}
+/* THE FILTER BAR STICKS BELOW THE HEADER, NEVER AT top:0. It was `top:0` while `#hdr` is also
+   sticky at `top:0` (arda.css), so every scroll slid this bar up UNDERNEATH the menu and the two
+   fought over one line -- the "switches order and looks wrong" the owner reported. nav.js measures
+   the header and publishes --a-hdr-h; the fallback 0px only applies if nav.js failed to load, in
+   which case there is no menu to collide with anyway. z-index stays BELOW the header's 80. */
+#ix .bar{position:sticky;top:var(--a-hdr-h,0px);z-index:5;background:var(--a-parch,#efe6cd);
+  padding:.6rem 0 .5rem;border-bottom:1px solid rgba(122,74,18,.28)}
+#ix .row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:.35rem 0}
+#ix input[type=text]{padding:.45rem .7rem;border:1px solid rgba(122,74,18,.45);border-radius:3px;font-family:inherit;font-size:1.02rem;flex:1;min-width:min(280px,100%);background:transparent;color:inherit}
+#ix select,#ix .seg button,#ix #clear{padding:.35rem .55rem;border:1px solid rgba(122,74,18,.4);border-radius:3px;background:transparent;color:inherit;font-family:inherit;font-size:.88rem;cursor:pointer}
+#ix .seg{display:inline-flex}
+#ix .seg button{border-radius:0;margin-left:-1px}
+#ix .seg button:first-child{border-radius:3px 0 0 3px;margin-left:0}
+#ix .seg button:last-child{border-radius:0 3px 3px 0}
+#ix .seg button[aria-pressed=true]{background:rgba(201,162,39,.25);border-color:#c9a227;font-weight:600}
+#ix label.chk{font-size:.84rem;display:inline-flex;align-items:center;gap:.3rem}
+
+/* ---- THE A-Z BAR. GOV.UK's A-to-Z is the model: real anchors to real sections, so the browser's
+   own find and the back button keep working. A LETTER WITH NOTHING BEHIND IT IS A <span>, NOT A
+   DEAD LINK -- which letters those are is computed from the data at load, never typed here. */
+#ix .az{display:flex;flex-wrap:wrap;gap:1px;margin:.4rem 0 .1rem}
+#ix .az a,#ix .az span{font:600 12px/1 Georgia,serif;padding:.28rem .42rem;border-radius:3px;
+  text-decoration:none;color:var(--a-gold-dk,#7a5f14);min-width:1.1em;text-align:center}
+#ix .az a:hover{background:rgba(201,162,39,.28)}
+#ix .az a.on{background:var(--gold);color:#191512}
+#ix .az span{opacity:.28;cursor:default}
+#ix .az a.empty{opacity:.28;pointer-events:none}
+/* THE GUIDE LINE -- a dictionary's running head, which tells you whether your word is on this page
+   before you read a single entry. Wikipedia's article on guide words is the source; nothing on the
+   web does it and every printed index does. */
+#ix .guide{font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;opacity:.7;min-height:1.1em}
+#ix .cite{font-size:.8rem;opacity:.75}
+
+/* ---- A LETTER GROUP, AND ITS STICKY HEAD. Offset by the header AND the bar, both measured, so
+   three sticky things stack instead of colliding -- the fault this whole page was carrying. */
+#ix .lg{margin:0}
+#ix .lh{position:sticky;top:calc(var(--a-hdr-h,0px) + var(--ix-bar-h,0px));z-index:4;
+  margin:1.4rem 0 .2rem;padding:.15rem 0 .1rem;background:var(--a-parch,#efe6cd);
+  font:600 1.5rem/1.2 Georgia,serif;letter-spacing:.06em;
+  border-bottom:2px solid rgba(122,74,18,.35);color:var(--a-gold-dk,#7a5f14)}
+#ix .lh .lgn{font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;opacity:.62;
+  font-weight:400;margin-left:.6rem}
+
+/* ---- AN ENTRY. `content-visibility:auto` lets the browser skip layout and paint for anything
+   offscreen; web.dev measures ~7x on exactly this shape of page. `contain-intrinsic-size` MUST be
+   set with it -- without a placeholder height every skipped entry collapses to zero and the
+   scrollbar jumps under the reader's thumb. All 6,343 stay in the real DOM, so ctrl+F and every
+   #anchor keep working, which windowing would have taken away. */
+#ix .e{border-left:3px solid rgba(122,74,18,.5);padding:.5rem .8rem;margin:.85rem 0;
+  content-visibility:auto;contain-intrinsic-size:auto 96px;scroll-margin-top:calc(var(--a-hdr-h,0px) + var(--ix-bar-h,0px) + 2.2rem)}
+#ix .e.hit{border-left-color:var(--gold);background:rgba(201,162,39,.10)}
+#ix .e[hidden]{display:none}
+#ix .lg[hidden]{display:none}
+#ix .hw{font-weight:600;font-size:1.08rem}
+#ix .hw a.perma{text-decoration:none;opacity:0;margin-left:.35rem;font-size:.8rem;color:var(--a-gold-dk,#7a5f14)}
+#ix .e:hover .hw a.perma,#ix .hw a.perma:focus{opacity:.75}
+#ix .nidx{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;opacity:.72;margin-left:.5rem}
+/* HANGING INDENT, the way a printed index sets a subentry: the dash sits in the margin and every
+   wrapped line aligns under the first word, not under the dash. A flat list with a bullet glyph
+   reads as prose; this reads as an index. */
+#ix .sts{list-style:none;margin:.35rem 0 0;padding:0;max-width:78ch}
+#ix .sts>li{position:relative;padding-left:1.05rem;margin:.32rem 0}
+#ix .sts>li::before{content:"\2013";position:absolute;left:0;opacity:.55}
+#ix .st{font-size:.93rem;line-height:1.5}
+#ix .vols{font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;opacity:.72}
+#ix .pg{font-size:.8rem;opacity:.8}
+#ix .sug{cursor:pointer;border-bottom:1px dotted currentColor}
+#ix .sug:hover{background:rgba(201,162,39,.25)}
+#ix #clr2{cursor:pointer;border-bottom:1px dotted currentColor}
+#ix mark{background:rgba(201,162,39,.4);color:inherit}
+#ix .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:620px){
+ #ix .az{overflow-x:auto;flex-wrap:nowrap;scroll-snap-type:x proximity}
+ #ix .sts{max-width:none}
+}
+/* NO prefers-color-scheme BLOCK. THE ARCHIVE HAS ONE GROUND AND IT IS PARCHMENT -- 33 of 36 halls
+   ignore the OS preference outright, and the three that answered it were the three I built this
+   week. The result was not a dark hall; it was a hall whose CARDS went dark on a white ground while
+   every neighbouring hall stayed parchment, which is what the owner meant by "inverted colors, than
+   the other pages". A second ground is the same fault as a second quote matcher: one subject, two
+   answers, and no way for a reader to tell which is meant. If the archive ever offers a dark theme
+   it is offered to all 36 halls at once, from arda.css, and it is a decision, not a leak. */
+</style><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head><body><a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" data-turn-prev="quiz.html" data-turn-next="tours.html"><div class="plaque">The Arda Archive <i>·</i> Volume VII <i>·</i> The Index</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html" aria-current="page">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="theindex.html"><div class="rh"><span>The Arda Archive · The Index</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Index</h2><p class="lede">The Index — 9,416 names from the indexes of 16 volumes, each with the editor&#x27;s own statement of what it is. Where two volumes gloss a name differently the archive keeps both and ranks neither.</p><p><span class="versal">T</span>he Index opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="theindex.html"><div class="rh"><span>The Index · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. An index hall is read by looking; the filters above are the way in.</p><div class="sub">Where this opening sits</div><p>Volume VII of the Arda Archive, Index, Corpus and Reader&#x27;s Paths, under The Index. the apparatus of the archive</p><p>It is opening <span class="mark">31</span> of <span class="mark">32</span> in this volume, the The Trial coming before it. The reader who turns on from here reaches Reader&#x27;s Paths.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch">Reader&#x27;s Paths</span></section></div><div class="hall-slot" data-hall-slot="" data-hall-instrument="an index of 9,416 names, read by looking rather than by turning" style="max-height:calc(100vh - 210px);overflow:auto;overscroll-behavior:contain"></div><div class="clasp" role="presentation"></div><div class="folio">Volume VII</div></div><!--/ARDA:CODEX-BODY-->
+<div id="hdr"><span style="display:inline-flex;align-items:flex-end;filter:drop-shadow(0 0 6px rgba(201,162,39,.4))"><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="26" style="vertical-align:middle" x="0"><g > <path d="M 18.347813,29.448747 C 17.814475,29.896748 17.206475,30.355414 16.523813,30.824747 C 15.862477,31.29408 15.222477,31.64608 14.603813,31.880747 C 14.710478,31.39008 14.795811,30.952747 14.859813,30.568747 C 14.923811,30.163414 14.966477,29.747415 14.987813,29.320747 C 15.030477,28.872749 15.051811,28.39275 15.051813,27.880747 C 15.073144,27.347417 15.083811,26.718085 15.083813,25.992747 L 15.083813,22.344747 C 15.083811,21.704756 14.966477,21.15009 14.731813,20.680747 C 14.497145,20.211424 14.081145,19.859425 13.483813,19.624747 C 13.803812,19.347425 14.155812,19.048759 14.539813,18.728747 C 14.923811,18.40876 15.329144,18.12076 15.755813,17.864747 C 16.182476,17.587427 16.609143,17.352761 17.035813,17.160747 C 17.483808,16.947428 17.921141,16.808761 18.347813,16.744747 L 18.347813,29.448747" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="30" style="vertical-align:middle" x="0"><g > <path d="M 16.225063,18.736 C 16.13972,18.800011 16.033054,18.842678 15.905063,18.864 C 15.777054,18.885344 15.670387,18.874678 15.585063,18.832 C 15.521054,18.789345 15.499721,18.725345 15.521063,18.64 C 15.542387,18.533345 15.649054,18.394678 15.841063,18.224 C 16.865053,17.434679 17.921052,16.805347 19.009063,16.336 C 20.097049,15.845347 21.046382,15.600014 21.857063,15.6 C 22.305047,15.600014 22.74238,15.706681 23.169063,15.92 C 23.595713,16.133347 23.979712,16.453347 24.321063,16.88 C 24.662378,17.306679 24.929045,17.829346 25.121063,18.448 C 25.334378,19.066678 25.441044,19.79201 25.441063,20.624 C 25.441044,21.712008 25.217044,22.789341 24.769063,23.856 C 24.342379,24.922672 23.734379,26.064004 22.945063,27.28 C 22.177047,28.474668 21.238382,29.786667 20.129063,31.216 C 19.041051,32.645331 17.825052,34.266662 16.481063,36.08 C 15.862387,36.933326 15.361054,37.829326 14.977063,38.768 C 14.593055,39.72799 14.401055,40.762656 14.401063,41.872 C 14.401055,42.618654 14.582388,43.226653 14.945063,43.696 C 15.329054,44.165319 15.745054,44.549319 16.193063,44.848 C 16.726386,45.189318 17.334386,45.445318 18.017063,45.616 C 17.611719,46.021317 17.195719,46.373317 16.769063,46.672 C 16.406386,46.949316 15.990387,47.194649 15.521063,47.408 C 15.073054,47.621316 14.635722,47.727982 14.209063,47.728 C 14.081055,47.727982 13.899722,47.653316 13.665063,47.504 C 13.451723,47.375983 13.227723,47.151983 12.993063,46.832 C 12.75839,46.511983 12.555724,46.095984 12.385063,45.584 C 12.214391,45.093318 12.129057,44.474652 12.129063,43.728 C 12.129057,42.938654 12.214391,42.213321 12.385063,41.552 C 12.555724,40.911989 12.801057,40.282656 13.121063,39.664 C 13.441056,39.066658 13.835722,38.437325 14.305063,37.776 C 14.774388,37.135993 15.307721,36.421327 15.905063,35.632 L 18.081063,32.592 L 14.657063,27.024 L 11.137063,30.8 C 10.731726,31.226665 10.497059,31.642665 10.433063,32.048 C 10.390393,32.453331 10.411726,32.805331 10.497063,33.104 C 10.582392,33.466663 10.753059,33.807996 11.009063,34.128 L 7.4570629,36.304 C 7.3290622,35.813328 7.2970623,35.301328 7.3610629,34.768 C 7.4037288,34.319996 7.5317287,33.807996 7.7450629,33.232 C 7.9797283,32.677331 8.3743945,32.122665 8.9290629,31.568 L 14.209063,26.32 C 13.057057,24.464006 12.097057,22.938674 11.329063,21.744 C 10.561059,20.549343 9.942393,19.60001 9.4730629,18.896 C 9.0250605,18.192012 8.7050609,17.712012 8.5130629,17.456 C 8.3423946,17.178679 8.2570613,17.040013 8.2570629,17.04 C 8.4063945,16.912013 8.6623942,16.784013 9.0250629,16.656 C 9.3877268,16.50668 9.7823931,16.368014 10.209063,16.24 C 10.635726,16.090681 11.062392,15.962681 11.489063,15.856 C 11.937058,15.728014 12.321057,15.632014 12.641063,15.568 C 12.769057,16.18668 12.961057,16.837346 13.217063,17.52 C 13.494389,18.202678 13.910389,19.056011 14.465063,20.08 C 15.019721,21.104009 15.745054,22.373341 16.641063,23.888 C 17.558385,25.402671 18.710384,27.301336 20.097063,29.584 C 20.971715,28.240002 21.686381,27.00267 22.241063,25.872 C 22.817047,24.741339 23.105046,23.802673 23.105063,23.056 C 23.105046,22.352008 22.955713,21.690675 22.657063,21.072 C 22.358381,20.43201 21.974381,19.88801 21.505063,19.44 C 21.035715,18.970678 20.513049,18.608011 19.937063,18.352 C 19.382384,18.074679 18.849051,17.936012 18.337063,17.936 C 17.590385,17.936012 16.886386,18.202678 16.225063,18.736" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg></span><h1>The Index</h1><span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav><span class="sub">Every name the volumes themselves indexed, with the editor's own statement of what it is — and where two editors both wrote one, both are kept</span></div>
+<div class="wrap" role="main" id="main"><div id="ix">
+<div class="law"><b>9,416 names, drawn from the indexes 16 volumes wrote for themselves.</b>
+These are not page-references with a name attached — Christopher Tolkien's indexes carry, in his own
+words, <i>a short statement concerning each person and place</i>, so most entries here are a
+<b>definition written by the editor who knew the material best</b>, and for many names it is the only
+one that exists. Where several volumes describe the same name, <b>every statement is kept and
+attributed</b>: identical wordings once, a statement wholly contained in a fuller one folded into it,
+and genuine disagreements side by side. Nothing is paraphrased.
+<b>2,994 names appear in two or more of the indexes.</b>
+<br><span class="cite">Sorted letter by letter, ignoring spaces, hyphens and apostrophes; accents
+sort as their plain letters (<i>Éol</i> under E) and are kept as written. A name is filed under the
+first letter of the form the index itself printed — nothing is re-filed under a surname or a
+title.</span></div>
+
+<div class="bar">
+ <div class="row">
+  <input type="text" id="q" role="combobox" aria-expanded="false" aria-controls="out"
+   aria-autocomplete="list" aria-label="search the index"
+   placeholder="a name, or words from a description — Lúthien, Dol Amroth, march-warden…" autocomplete="off">
+  <button id="clear">clear</button>
+ </div>
+ <div class="row">
+  <span class="seg" role="group" aria-label="what to search">
+   <button id="mName" aria-pressed="true">names</button>
+   <button id="mAny" aria-pressed="false">names &amp; descriptions</button>
+  </span>
+  <span class="seg" role="group" aria-label="how to match">
+   <button id="mStarts" aria-pressed="false">starts with</button>
+   <button id="mHas" aria-pressed="true">contains</button>
+  </span>
+  <select id="vol" aria-label="which index"><option value="">every index</option></select>
+  <label class="chk"><input type="checkbox" id="only"> in 2+ indexes</label>
+  <label class="chk"><input type="checkbox" id="haspg"> has page references</label>
+ </div>
+ <nav class="az" id="az" aria-label="jump to a letter"></nav>
+ <div class="cite" id="count" role="status" aria-live="polite" aria-atomic="true"></div>
+ <div class="guide" id="guide" aria-hidden="true"></div>
+</div>
+
+<div id="out" role="region" aria-label="index entries">Loading the index…</div>
+<div class="cite" id="note" style="margin-top:1.4rem"></div>
+</div></div>
+<script src="nav.js"></script><script src="touch.js"></script>
+<script>
+(function(){
+ var D=null,IX=null,GROUPS=[],NODES=[],barEl=null;
+ var $=function(s){return document.querySelector(s)};
+ function fold(s){return s.normalize("NFKD").replace(/[̀-ͯ]/g,"").toLowerCase()}
+ // THE SORT KEY IS NOT THE NAME. Letter-by-letter filing -- the dictionary order a reader expects
+ // -- ignores spaces, hyphens and apostrophes, so `Aelin-uial` files as `aelinuial` and lands
+ // between `Aelin` and `Aeluin` rather than before every `Aelina...`. Accents fold for ORDER only;
+ // the displayed name keeps every mark Tolkien wrote.
+ function sortkey(s){return fold(s).replace(/[^a-z0-9]+/g,"")}
+ function esc(s){return String(s).replace(/[&<>"]/g,function(c){
+   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+ function hl(s,q){
+  if(!q) return esc(s);
+  var f=fold(s),i=f.indexOf(q);
+  if(i<0) return esc(s);
+  return esc(s.slice(0,i))+"<mark>"+esc(s.slice(i,i+q.length))+"</mark>"+esc(s.slice(i+q.length));
+ }
+ // A DEEP LINK MUST LAND ON THE ENTRY IT NAMES, AND THE FIRST VERSION OF THIS COULD NOT.
+ // Folding accents for the id is right -- a URL should not need a circumflex to be typed -- but it
+ // makes `Adunaic` and `Adûnaic` the same id, and the index holds BOTH as separate headwords
+ // because two editors spelled it two ways. Measured: 314 collisions across 6,343 names, every one
+ // an accent pair or a stray mark (`Alkorin` / `Alkorin =`). Duplicate ids are worse than missing
+ // ones: `#n-adunaic` silently lands on whichever the browser met first, so the reader is shown a
+ // different entry and told nothing. The suffix is assigned in the page's OWN sort order, which is
+ // deterministic, so a link keeps working across rebuilds as long as the two names both exist.
+ var _slugs={};
+ function slug(s){
+  var b="n-"+fold(s).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  if(!(b in _slugs)){_slugs[b]=1;return b}
+  return b+"-"+(++_slugs[b]);
+ }
+ var mode={any:false,starts:false};
+ function seg(a,b,key){
+  function set(v){mode[key]=v;$(a).setAttribute("aria-pressed",String(!v));
+   $(b).setAttribute("aria-pressed",String(v));
+   /* SEARCHING THE DESCRIPTIONS NEEDS THE DESCRIPTIONS. The default mode is "names", which the
+      manifest answers completely; this one does not, so it fetches every letter first and says
+      so while it does. A search that silently returned fewer results than it should would be
+      the worst outcome available here. */
+   if(key==="any"&&v&&LAZY){ loadAll().then(function(){
+     (MANIFEST.letters||[]).forEach(function(L){window.fillLetter&&window.fillLetter(L)});
+     apply(); }); return; }
+   apply();}
+  $(a).onclick=function(){set(false)};$(b).onclick=function(){set(true)};
+ }
+
+ // ---- BUILT ONCE, FILTERED BY HIDING. The page used to re-serialise its results on every
+ // keystroke and cap them at 200, so an index of 6,343 names showed 3% of itself and could not be
+ // browsed at all -- only interrogated. Now every entry is a real element with a real id from the
+ // first paint: ctrl+F finds them, #anchors reach them, and a filter sets `hidden` rather than
+ // rebuilding the document. Windowing would have been faster still and would have broken both.
+ function build(){
+  var groups={},order=[];
+  IX.forEach(function(e){
+   var k=e._k.charAt(0).toUpperCase();
+   if(!/^[A-Z]$/.test(k)) k="#";           // digits and anything unalphabetic file together
+   if(!groups[k]){groups[k]=[];order.push(k)}
+   groups[k].push(e);
+  });
+  order.sort(function(a,b){return a==="#"?-1:b==="#"?1:(a<b?-1:1)});
+  var html=order.map(function(L){
+   var rows=groups[L].map(function(e){
+    var parts=e.parts.map(function(p){
+     return '<li class="st">'+esc(p.text)
+       +' <span class="vols">('+esc(p.vols.join(" · "))+')</span></li>';
+    }).join("");
+    // A HEADWORD WITH NOTHING BEHIND IT SAYS SO. One entry -- Itaril, an early name for Idril --
+    // is listed by its index and given no statement and no page. Rendering it as a bare name with
+    // an empty list reads as a rendering fault; saying what happened is rule 1 applied to the
+    // archive's own apparatus rather than to Arda. The name is real: 50 corpus occurrences, 49
+    // citable, chiefly The Peoples of Middle-earth.
+    var pg="";
+    if(e._stub)
+      /* NOT the same as "no statement": this letter's descriptions have not been fetched yet.
+         Saying "the index gives no statement" here would publish a FALSE FINDING about the
+         archive's own apparatus, and that sentence below is a real one about one real entry. */
+      parts='<li class="st op">…</li>';
+    else if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
+      parts='<li class="st"><i>The index lists this name and gives no statement for it.</i></li>';
+    if(e.pages&&Object.keys(e.pages).length){
+     pg='<li class="pg">'+Object.keys(e.pages).map(function(v){
+       return esc(v)+' '+esc(e.pages[v]);}).join(' · ')+'</li>';
+    }
+    var id=slug(e.name);
+    return '<div class="e" id="'+id+'"><div class="hw"><span class="nm">'+esc(e.name)+'</span>'
+      +' <span class="nidx">('+e.n_indexes+(e.n_indexes===1?" index":" indexes")+')</span>'
+      +' <a class="perma" href="#'+id+'" aria-label="link to '+esc(e.name)+'">¶</a></div>'
+      +'<ul class="sts">'+parts+pg+'</ul></div>';
+   }).join("");
+   return '<section class="lg" id="L-'+(L==="#"?"num":L)+'" aria-labelledby="LH-'+(L==="#"?"num":L)+'">'
+     +'<h2 class="lh" id="LH-'+(L==="#"?"num":L)+'">'+(L==="#"?"0–9":L)
+     +'<span class="lgn">'+groups[L].length.toLocaleString()+' names</span></h2>'+rows+'</section>';
+  }).join("");
+  $("#out").innerHTML=html;
+  /* ── FILL, DO NOT REBUILD ────────────────────────────────────────────────────────────────
+     The comment above this function is explicit: built once, filtered by hiding, because
+     windowing broke ctrl+F and #anchors. A lazy loader that re-rendered would break the same
+     two things by another route. So a letter's glosses are spliced into the elements that are
+     already on the page, and every name is present from the first paint. */
+  window.fillLetter=function(L){
+    return loadLetter(L).then(function(){
+      var sec=document.getElementById("L-"+(L==="#"?"num":L));
+      if(!sec) return;
+      IX.forEach(function(e){
+        if(e._stub||e._filled) return;
+        var k=e._k.charAt(0).toUpperCase(); if(!/^[A-Z]$/.test(k)) k="#";
+        if(k!==L) return;
+        var el=document.getElementById(slug(e.name)); if(!el) return;
+        var ul=el.querySelector("ul.sts"); if(!ul) return;
+        var h=e.parts.map(function(p){
+          return '<li class="st">'+esc(p.text)+' <span class="vols">('+esc(p.vols.join(" · "))+')</span></li>';
+        }).join("");
+        if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
+          h='<li class="st"><i>The index lists this name and gives no statement for it.</i></li>';
+        if(e.pages&&Object.keys(e.pages).length)
+          h+='<li class="pg">'+Object.keys(e.pages).map(function(v){
+              return esc(v)+' '+esc(e.pages[v]);}).join(' · ')+'</li>';
+        ul.innerHTML=h; e._filled=true;
+      });
+    });
+  };
+  /* Fetch a letter when the reader reaches it. rootMargin gives it a screen of warning, so the
+     descriptions are usually there before the heading is. */
+  if(LAZY && window.IntersectionObserver){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(x){ if(x.isIntersecting){
+        var L=x.target.id.replace(/^L-/,""); if(L==="num") L="#";
+        window.fillLetter(L); io.unobserve(x.target);
+      }});
+    },{rootMargin:"600px 0px"});
+    order.forEach(function(L){
+      var sec=document.getElementById("L-"+(L==="#"?"num":L)); if(sec) io.observe(sec);
+    });
+  }
+  GROUPS=order.map(function(L){
+   var sec=document.getElementById("L-"+(L==="#"?"num":L));
+   return {L:L,sec:sec,entries:Array.prototype.slice.call(sec.querySelectorAll(".e"))};
+  });
+  NODES=[];
+  var i=0;
+  GROUPS.forEach(function(g){g.entries.forEach(function(el){NODES.push(el)})});
+  // the A-Z bar: a letter the index does not hold is not a link
+  var have={};order.forEach(function(L){have[L]=1});
+  var az=["#"].concat("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""));
+  $("#az").innerHTML=az.map(function(L){
+   var t=(L==="#"?"0–9":L);
+   return have[L]
+    ? '<a href="#L-'+(L==="#"?"num":L)+'" data-l="'+L+'">'+t+'</a>'
+    : '<span aria-hidden="true">'+t+'</span>';
+  }).join("");
+ }
+
+ // ---- THE FILTER. One pass, no re-render.
+ var lastQ="";
+ function apply(){
+  if(!D)return;
+  var q=fold($("#q").value.trim()), vol=$("#vol").value;
+  /* A VOLUME FILTER OVER UNFETCHED ENTRIES WOULD SILENTLY HIDE THEM. in_indexes is empty on
+     a stub, so every unloaded name would fail the test and the reader would be shown a
+     confident subset. Fetch the letters first, once, then filter for real. */
+  if(vol && LAZY && !ALLLOADED){ ALLLOADED=true;
+    loadAll().then(function(){(MANIFEST.letters||[]).forEach(function(L){
+      window.fillLetter&&window.fillLetter(L)}); apply();}); return; }
+  var only=$("#only").checked, haspg=$("#haspg").checked;
+  var shown=0,firstEl=null;
+  for(var i=0;i<IX.length;i++){
+   var e=IX[i],el=NODES[i],ok=true;
+   if(vol && e.in_indexes.indexOf(vol)<0) ok=false;
+   if(ok && only && e.n_indexes<2) ok=false;
+   if(ok && haspg && !(e.pages&&Object.keys(e.pages).length)) ok=false;
+   if(ok && q){
+    var hay=mode.any?e._all:e._n;
+    ok=mode.starts?hay.indexOf(q)===0:hay.indexOf(q)>=0;
+   }
+   if(ok){shown++;if(!firstEl)firstEl=el}
+   if(el.hidden===ok) el.hidden=!ok;
+   if(q!==lastQ){
+    var nm=el.querySelector(".nm");
+    if(nm) nm.innerHTML=hl(e.name,q);
+   }
+  }
+  lastQ=q;
+  var empty=0;
+  GROUPS.forEach(function(g){
+   var any=false;
+   for(var j=0;j<g.entries.length;j++){if(!g.entries[j].hidden){any=true;break}}
+   if(g.sec.hidden===any) g.sec.hidden=!any;
+   if(!any) empty++;
+  });
+  var filtered=(shown!==D.count);
+  $("#count").innerHTML=shown.toLocaleString()+(shown===1?" name":" names")
+    +(filtered?" of "+D.count.toLocaleString():"")+(filtered?" · <b id=\"clr2\">clear the filters</b>":"");
+  $("#q").setAttribute("aria-expanded",String(shown>0));
+  if(!shown) $("#out").insertAdjacentHTML("afterbegin",nothing(q));
+  else{var n=$("#out > .law");if(n)n.remove()}
+  $("#az").querySelectorAll("a").forEach(function(a){
+   var g=GROUPS.filter(function(x){return x.L===a.dataset.l})[0];
+   a.classList.toggle("empty",!!(g&&g.sec.hidden));
+  });
+  guide();
+ }
+
+ // ---- THE GUIDE LINE. A dictionary prints the first and last headword of the page at its top so
+ // the eye can skip a whole page. The web equivalent is the topmost and bottom-most entry actually
+ // on screen. Computed from the two ends of the viewport rather than by observing 6,343 elements,
+ // because an IntersectionObserver over every entry costs more than the scrolling it describes.
+ function atY(y){
+  var el=document.elementFromPoint(Math.min(innerWidth-8,40),y);
+  while(el&&el!==document.body){if(el.classList&&el.classList.contains("e"))return el;el=el.parentElement}
+  return null;
+ }
+ var raf=0;
+ function guide(){
+  if(raf)return; raf=requestAnimationFrame(function(){
+   raf=0;
+   var top=(barEl?barEl.getBoundingClientRect().bottom:0)+6;
+   var a=atY(top), b=atY(innerHeight-12);
+   var g=$("#guide");
+   if(!a&&!b){g.textContent="";return}
+   var an=a?a.querySelector(".nm").textContent:"", bn=b?b.querySelector(".nm").textContent:"";
+   g.textContent=(an&&bn&&an!==bn)?an+" — "+bn:(an||bn);
+   var cur=(a||b);
+   if(cur){
+    var sec=cur.closest(".lg");
+    if(sec){var L=sec.id.replace("L-","");
+     $("#az").querySelectorAll("a").forEach(function(x){
+      x.classList.toggle("on",x.getAttribute("href")==="#"+sec.id)});}
+   }
+  });
+ }
+
+ function nothing(q){
+  if(!q) return '<div class="law">Nothing matches these filters. <b id="clr2">Clear them</b> to see the whole index.</div>';
+  var near=[],seen={};
+  for(var L=Math.min(q.length,6); L>=3 && near.length<8; L--){
+   var frag=q.slice(0,L);
+   for(var i=0;i<IX.length && near.length<8;i++){
+    var e=IX[i];
+    if(e._n.indexOf(frag)===0 && !seen[e.name]){seen[e.name]=1;near.push(e.name)}
+   }
+  }
+  if(!near.length){
+   for(var j=0;j<IX.length && near.length<8;j++){
+    var x=IX[j];
+    if(q.length>=3 && x._n.indexOf(q.slice(0,3))>=0 && !seen[x.name]){seen[x.name]=1;near.push(x.name)}
+   }
+  }
+  if(!near.length) return '<div class="law">No headword contains <b>'+esc(q)+'</b>, and nothing in the index is near it. Try <i>names &amp; descriptions</i> — the word may be inside an editor\'s statement rather than in a name.</div>';
+  return '<div class="law">No headword matches <b>'+esc(q)+'</b>. The index does hold these, which are nearest: '
+    +near.map(function(n){return '<b class="sug">'+esc(n)+'</b>'}).join(" · ")
+    +'<br>Or search <i>names &amp; descriptions</i> — the word may be inside a statement rather than in a name.</div>';
+ }
+ document.addEventListener("click",function(ev){
+  var s=ev.target.closest?ev.target.closest(".sug"):null;
+  if(s){$("#q").value=s.textContent;apply();$("#q").focus();return}
+  if(ev.target&&ev.target.id==="clr2"){$("#clear").click()}
+ });
+
+ /* ── THE MANIFEST FIRST, THE GLOSSES PER LETTER ────────────────────────────────────────────
+    This fetched arda_index_merged.json -- 685,589 gzipped bytes -- and handed ALL of it to every
+    reader who wanted one letter. Measured 13 Aug, after Foster's merge took it past its ceiling:
+
+        whole file                      685,589 gzipped
+        manifest, names only             59,855   8.7% of it
+        median letter shard              10,068
+        a typical reader now fetches     69,923   NINETY PER CENT LESS
+
+    THE DEFAULT SEARCH IS "names", AND THE MANIFEST ANSWERS IT COMPLETELY. The other mode,
+    "names & descriptions", needs the glosses -- so it loads them, says so while it does, and is
+    exact once it has. NO CAPABILITY IS LOST; what changes is when the bytes arrive.
+
+    AND IT FALLS BACK. If the manifest is missing -- an older deployment, a half-finished
+    publish -- it loads the whole file exactly as before rather than showing an empty hall. A
+    reader must never pay for a migration they did not ask for.                                */
+ function idxBoot(){
+  return fetch('arda_index_manifest.json').then(function(r){
+    if(!r.ok) throw new Error('no manifest');
+    return r.json();
+  }).then(function(m){
+    MANIFEST=m;
+    return {entries:m.names.map(function(n){
+      /* EVERY FIELD apply() READS MUST EXIST ON A STUB. Omitting in_indexes cost three uncaught
+         TypeErrors in traverse_check -- `e.in_indexes.indexOf(vol)` on an unfetched entry --
+         and the guard caught it on the first walk. A partial object is a null in disguise. */
+      return {name:n[0], n_indexes:n[1], _letter:n[2], parts:[], pages:{},
+              in_indexes:[], n_statements:0, _stub:true};
+    }), volumes:m.volumes, count:m.count};
+  }).catch(function(e){
+    /* NO FALLBACK TO THE WHOLE FILE, AND THE REASON IS A MEASUREMENT.
+       The first version fell back to arda_index_merged.json if the manifest were missing. That
+       protected against nothing -- the page and the manifest ship in the SAME COMMIT, so there
+       is no window in which one exists without the other -- and it cost the truth of the
+       budget: the guard reads every fetch() literal on the page, so a fallback nobody takes
+       still counted 685,589 bytes against the hall, and theindex measured 793,345 when a
+       reader fetches about 70,000.
+       A DEAD BRANCH THAT MAKES A MEASUREMENT LIE IS WORSE THAN NO BRANCH. If the manifest
+       genuinely cannot be fetched the hall says so, which is what the archive does everywhere
+       else it cannot ask. */
+    document.getElementById("out").innerHTML=
+      '<p class="cite">The index manifest could not be loaded, so nothing was listed. '
+      +'<b>This is not a statement that the archive holds no names</b> — it is a failure to '
+      +'fetch <code>arda_index_manifest.json</code>.</p>';
+    throw e;
+  });
+ }
+ /* Fetch one letter's glosses and splice them into the stubs already on the page. */
+ function loadLetter(L){
+  if(!LAZY) return Promise.resolve();
+  if(LOADED[L]) return LOADED[L];
+  var f=(L==='#'||!/^[A-Z]$/i.test(L))?'_':L.toLowerCase();
+  LOADED[L]=fetch('idx/'+f+'.json').then(function(r){return r.ok?r.json():[];})
+   .then(function(rows){
+     var by={};rows.forEach(function(r){by[r.name]=r});
+     IX.forEach(function(e){
+       var r=by[e.name];
+       if(r){e.parts=r.parts||[];e.pages=r.pages||{};e.in_indexes=r.in_indexes;
+             e.n_statements=r.n_statements;e._stub=false;
+             e._all=fold(e.name+" "+e.parts.map(function(p){return p.text}).join(" "));}
+     });
+   }).catch(function(){LOADED[L]=null});
+  return LOADED[L];
+ }
+ /* "names & descriptions" needs every letter. Announce it rather than stalling silently. */
+ function loadAll(){
+  if(!LAZY) return Promise.resolve();
+  var g=$("#ix .guide"); if(g) g.textContent='fetching the descriptions…';
+  return Promise.all((MANIFEST.letters||[]).map(loadLetter)).then(function(){
+    if(g) g.textContent='';
+  });
+ }
+ var MANIFEST=null, LAZY=true, LOADED={}, ALLLOADED=false;
+ idxBoot().then(function(d){
+  D=d; IX=d.entries;
+  IX.forEach(function(e){
+   e._n=fold(e.name);
+   e._k=sortkey(e.name)||"#";
+   e._all=fold(e.name+" "+e.parts.map(function(p){return p.text}).join(" "));
+  });
+  // LETTER BY LETTER, and stated on the page so nobody has to guess which order it is in.
+  IX.sort(function(a,b){return a._k<b._k?-1:a._k>b._k?1:(a.name<b.name?-1:1)});
+  build();
+  barEl=document.querySelector("#ix .bar");
+  var putbar=function(){document.documentElement.style.setProperty("--ix-bar-h",
+    (barEl?barEl.offsetHeight:0)+"px")};
+  putbar(); addEventListener("resize",function(){putbar();guide()},{passive:true});
+  if(window.ResizeObserver)new ResizeObserver(putbar).observe(barEl);
+  addEventListener("scroll",guide,{passive:true});
+
+  var sel=$("#vol");
+  d.volumes.forEach(function(v){var o=document.createElement("option");o.value=v;o.textContent=v;sel.appendChild(o)});
+  // 150ms is the debounce the research settled on: long enough that a fast typist filters once
+  // rather than six times, short enough that it does not feel like lag.
+  var t=0;
+  $("#q").addEventListener("input",function(ev){
+   if(ev.isComposing)return;          // an IME is mid-word; filtering on it searches for nonsense
+   clearTimeout(t); t=setTimeout(apply,150);
+  });
+  sel.addEventListener("change",apply);
+  $("#only").addEventListener("change",apply);
+  $("#haspg").addEventListener("change",apply);
+  seg("#mName","#mAny","any"); seg("#mHas","#mStarts","starts");
+  $("#clear").onclick=function(){$("#q").value="";sel.value="";$("#only").checked=false;
+    $("#haspg").checked=false;apply();$("#q").focus()};
+  $("#note").textContent=d.note;
+  apply();
+  // A LINK TO AN ENTRY MUST LAND ON IT. The hash is honoured after the entries exist, which is why
+  // it is done here and not left to the browser -- at first paint #out held the word "Loading".
+  if(location.hash.length>1){
+   var tgt=document.getElementById(location.hash.slice(1));
+   // AND IT ASKS BEFORE IT MOVES. `prefers-reduced-motion` lives in arda.css and a stylesheet has
+  // no say over a script -- budget_check says exactly that, and it caught this page the moment the
+  // guide line started throttling on requestAnimationFrame. The rAF above is a THROTTLE and not
+  // motion, but the jump to an entry is real movement, so it is the one that consults the reader.
+  if(tgt){tgt.classList.add("hit");
+   tgt.scrollIntoView(matchMedia("(prefers-reduced-motion: reduce)").matches?{}:{block:"start"});}
+  }
+  document.addEventListener("keydown",function(ev){
+   if(ev.key==="/"&&document.activeElement!==$("#q")){ev.preventDefault();$("#q").focus()}
+   if(ev.key==="Escape"&&document.activeElement===$("#q")){$("#q").value="";apply()}
+  });
+ }).catch(function(e){
+  $("#out").innerHTML='<div class="law">The index could not be loaded ('+esc(e.message)+').</div>';
+ });
+})();
+</script>
+<script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

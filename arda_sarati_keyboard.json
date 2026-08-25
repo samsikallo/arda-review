@@ -1,0 +1,406 @@
+{
+ "what": "Which keystroke of Tirion Sarati draws which sarat, read from the designer's own keyboard chart.",
+ "source": "TirionSarati.rtf -- 'Tirion Sarati 2.0 Keyboard Layout', Mans Bjorkman",
+ "font": "fonts/TirionSarati.woff2, published 16 Aug 2026 on the owner's permission",
+ "settles": "KEY -> GLYPH. The archive can now SET Sarati text in an outline face.",
+ "refuses": {
+  "sound -> glyph": "the chart names keystrokes, not phonetic values. Bjorkman's value tables are in Amanye Tenceli and are GIFs carrying no text -- the same wall met four times, and this does not pretend to have passed it.",
+  "sound -> codepoint": "Tirion carries ZERO of the CSUR Sarati block U+E390-E3BF. It is a legacy 8-bit layout, so the CSUR question is untouched and stays refused."
+ },
+ "n_keys": 44,
+ "n_additional": 14,
+ "keys_without_a_sarat": [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "A",
+  "B",
+  "E",
+  "F",
+  "H",
+  "J",
+  "K",
+  "L",
+  "O",
+  "P",
+  "R",
+  "U",
+  "V",
+  "X",
+  "Y",
+  "y"
+ ],
+ "keys": [
+  {
+   "key": "`",
+   "codepoint": "U+0060",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "q",
+   "codepoint": "U+0071",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "w",
+   "codepoint": "U+0077",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "e",
+   "codepoint": "U+0065",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "r",
+   "codepoint": "U+0072",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "t",
+   "codepoint": "U+0074",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "u",
+   "codepoint": "U+0075",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "i",
+   "codepoint": "U+0069",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "o",
+   "codepoint": "U+006F",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "p",
+   "codepoint": "U+0070",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "a",
+   "codepoint": "U+0061",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "s",
+   "codepoint": "U+0073",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "d",
+   "codepoint": "U+0064",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "f",
+   "codepoint": "U+0066",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "g",
+   "codepoint": "U+0067",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "h",
+   "codepoint": "U+0068",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "j",
+   "codepoint": "U+006A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "k",
+   "codepoint": "U+006B",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "l",
+   "codepoint": "U+006C",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "'",
+   "codepoint": "U+0027",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "z",
+   "codepoint": "U+007A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "x",
+   "codepoint": "U+0078",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "c",
+   "codepoint": "U+0063",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "v",
+   "codepoint": "U+0076",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "b",
+   "codepoint": "U+0062",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "n",
+   "codepoint": "U+006E",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "m",
+   "codepoint": "U+006D",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": ".",
+   "codepoint": "U+002E",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "/",
+   "codepoint": "U+002F",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "~",
+   "codepoint": "U+007E",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "^",
+   "codepoint": "U+005E",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "*",
+   "codepoint": "U+002A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "+",
+   "codepoint": "U+002B",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "Q",
+   "codepoint": "U+0051",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "W",
+   "codepoint": "U+0057",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "T",
+   "codepoint": "U+0054",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "I",
+   "codepoint": "U+0049",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "S",
+   "codepoint": "U+0053",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "D",
+   "codepoint": "U+0044",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "G",
+   "codepoint": "U+0047",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "Z",
+   "codepoint": "U+005A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "C",
+   "codepoint": "U+0043",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "N",
+   "codepoint": "U+004E",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "M",
+   "codepoint": "U+004D",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout",
+   "conf": "[EXT]"
+  }
+ ],
+ "additional": [
+  {
+   "key": "§",
+   "alt_code": 167,
+   "codepoint": "U+00A7",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "",
+   "alt_code": 154,
+   "codepoint": "U+009A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "",
+   "alt_code": 138,
+   "codepoint": "U+008A",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "ð",
+   "alt_code": 240,
+   "codepoint": "U+00F0",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "Ð",
+   "alt_code": 208,
+   "codepoint": "U+00D0",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "ñ",
+   "alt_code": 241,
+   "codepoint": "U+00F1",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "Ñ",
+   "alt_code": 209,
+   "codepoint": "U+00D1",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "þ",
+   "alt_code": 254,
+   "codepoint": "U+00FE",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "Þ",
+   "alt_code": 222,
+   "codepoint": "U+00DE",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "ß",
+   "alt_code": 223,
+   "codepoint": "U+00DF",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "æ",
+   "alt_code": 230,
+   "codepoint": "U+00E6",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "è",
+   "alt_code": 232,
+   "codepoint": "U+00E8",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "ó",
+   "alt_code": 243,
+   "codepoint": "U+00F3",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  },
+  {
+   "key": "¨",
+   "alt_code": 168,
+   "codepoint": "U+00A8",
+   "cite": "Bjorkman, Tirion Sarati 2.0 Keyboard Layout, 'Additional Sarati'",
+   "conf": "[EXT]"
+  }
+ ]
+}

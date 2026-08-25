@@ -1,0 +1,94 @@
+{
+ "mode": "General Use",
+ "built_from": "map/gen_tengwar_mode_gu.py",
+ "reads": "~/.cache/arda_at (Amanyë Tenceli, mirrored) -- FACTS ONLY, no prose republished",
+ "encoding": "ConScript Unicode Registry tengwar, U+E000 onward",
+ "rule": "The General Use permits the vowel-sign over EITHER the preceding or the following tengwa -- though not both in one document. 8 attested specimens put it following, 4 preceding. THIS ARCHIVE OFFERS BOTH AND DEFAULTS TO NEITHER.",
+ "placement": {
+  "following": {
+   "rule": "the vowel-sign sits over the tengwa that FOLLOWS it -- the commoner practice, and the one the Writing Lab offered as though it were the only one",
+   "specimens": [
+    10,
+    11,
+    36,
+    37,
+    47,
+    56,
+    62,
+    84
+   ],
+   "cite": "Amanyë Tenceli, General Use, reading the Mellonath Daeron specimens: it assigns the following-tengwa placement to these eight. [EXT] -- Björkman's reading, and the SPECIMEN NUMBERS are the checkable part, not his sentence."
+  },
+  "preceding": {
+   "rule": "the vowel-sign sits over the tengwa that PRECEDES it, as in the classical Quenya mode",
+   "specimens": [
+    39,
+    58,
+    68,
+    70
+   ],
+   "cite": "Amanyë Tenceli, General Use: it assigns the preceding-tengwa placement to these four specimens. [EXT] -- Björkman's reading."
+  }
+ },
+ "rules": [
+  {
+   "what": "the mode's name and scope",
+   "says": "the mode is named 'the general use' in DTS 58, and is there stated to be 'applicable to both S[indarin] and Q[uenya]'",
+   "mark": "[C]",
+   "cite": "DTS 58, quoted in Amanyë Tenceli, General Use."
+  },
+  {
+   "what": "either placement, never both in one document",
+   "says": "the General Use permits the vowel-sign over EITHER the preceding or the following tengwa -- though not both in the same document",
+   "mark": "[EXT]",
+   "cite": "Amanyë Tenceli, General Use, citing Appendix E. 12 specimens counted: 8 following, 4 preceding."
+  },
+  {
+   "what": "the nasal bar",
+   "says": "a bar above a consonant marks that it is preceded by the nasal of the same series -- nt, mp, nk",
+   "mark": "[C]",
+   "cite": "Appendix E, The Tengwar, quoted in Amanyë Tenceli: 'a bar (or a sign like a Spanish tilde) placed above a consonant was often used to indicate that it was preceded by the nasal of the same series (as in nt, mp, or nk)'."
+  },
+  {
+   "what": "a doubled consonant",
+   "says": "the same bar on a nasal marks it as preceded by itself, in effect doubling it",
+   "mark": "[EXT]",
+   "cite": "Amanyë Tenceli, General Use -- Björkman's inference from the nasal bar, and marked as his rather than as Appendix E's."
+  },
+  {
+   "what": "labialisation",
+   "says": "a following w is written with a modified u-curl",
+   "mark": "[EXT]",
+   "cite": "Amanyë Tenceli, General Use: 'A following w ... is written with the \"modified u-curl\" alluded to in AppE.'"
+  },
+  {
+   "what": "a following s",
+   "says": "a following s is shown by a curl extending from the tengwa, commonly from its rightmost bow",
+   "mark": "[EXT]",
+   "cite": "Amanyë Tenceli, General Use."
+  },
+  {
+   "what": "vowels are ómatehtar",
+   "says": "vowels in the General Use are represented primarily by vowel-marks, not by full letters",
+   "mark": "[EXT]",
+   "cite": "Amanyë Tenceli, General Use, citing DTS 58."
+  }
+ ],
+ "unresolved": {
+  "the per-letter consonant assignments": "NOT ESTABLISHED. Amanyë Tenceli renders its General Use consonant chart as an IMAGE (teng_general_cons1.gif, empty alt text), and Appendix E's tengwar tables are image-held in the edition this archive holds -- 'general use' occurs ZERO times in the whole of The Lord of the Rings, searched through ardatext.fold(). The archive will not publish a letter-value it has not read. WHAT WOULD SETTLE IT: a reading of the Appendix E plate for the general use, or of DTS 58, recorded [I-H] as the Quenya mode's tehtar already are.",
+  "which placement a given text should use": "NOT DECIDABLE FROM THE MODE. It is a property of the document, not of the mode, and the sources give 8 specimens one way and 4 the other. A transcriber must ASK, and this dataset therefore offers it as a parameter rather than a default.",
+  "the older general use": "NAMED AND NOT DESCRIBED. Amanyë Tenceli reports a table 'Feänorian Alphabet. General or Phonetic form' in which the third series is velar and the fourth labiovelar -- a different mode of the same name, cited to R24 and to Arden R. Smith. The archive records that it exists and does not reconstruct it."
+ },
+ "shares_tehtar_with": "arda_tengwar_mode_q.json",
+ "inherited_from_quenya_mode": {
+  "letters": 31,
+  "tehtar": [
+   "a",
+   "e",
+   "i",
+   "o",
+   "u"
+  ]
+ },
+ "note": "A MODE OF RULES, not of letters. What the sources settle about the General Use is how it BEHAVES -- the placement choice, the nasal bar, the following-s curl, the labial u-curl. What they do not settle here is which tengwa writes which consonant, because that table is a picture in every source this archive holds. The refusal is named in `unresolved` rather than left as an absence."
+}

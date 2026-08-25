@@ -1,0 +1,3540 @@
+{
+ "what": "Which entity routes carry an illustration, and therefore -- under the owner's ruling of 19 August 2026 -- which earn a whole two-page spread in the codex rather than an entry in a register spread. He ruled that a spread is EARNED by having an illustration; his words are in DECISIONS.md, where nothing tries to verify them against the corpus.",
+ "reading": "This file is a BINDING and nothing else: entity id -> the plate file(s) that illustrate it. IT DOES NOT CARRY PROVENANCE. Hand, licence and subject live in arda_assets.json, which owns them, and are read from there. The first version of this file COPIED them in -- 370 KB, and a second place for a fact to go stale. A dataset every codex route fetches must carry only what those routes need.",
+ "expected_to_change": "He also ruled that empty space is FILLED with art that fits, so this register GROWS. Every plate found promotes a route from a register entry to a spread of its own. Nothing should cache its contents.",
+ "measured": {
+  "how": "python3 map/spread_rule.py, and per family with spread_rule.earns_spread over git ls-files person/*.html place/*.html realm/*.html in site/. Never a grep of page HTML: the binding is by entity id in this register and the pages carry no <img>, which is the false zero spread_rule.py records against itself.",
+  "person": "429 of 431 -- the two without a bust are aglahad and mahtan, whose prompts exist and whose renders were never produced",
+  "realm": "42 of 60 (19 Aug 2026). 31 were bound before this pass and 11 were added: alqualonde balar eregion fangorn khazaddum ladros lindon morgul shire tirion valinor. 18 remain dark and every one is dark because the archive holds no picture of its folk, its device or its ground -- angmar bombadil bree cardolan dolguldur dorthonion dorwinion druadan eotheod esgaroth himring lossoth nargothrond ossiriand reunited rhudaur thargelion utumno.",
+  "place": "39 of 91 (19 Aug 2026). 13 were lit before this pass -- and only 4 of those 13 were bound AS places; the other 9 are realm rows read by a place route because both families share this register's `of` key. 26 were added. 52 remain dark, and this is still the archive's largest illustration gap: it holds SIX architectural views of a place in total (art/pl_*.jpg).",
+  "note_on_collision": "`of` IS THE KEY AND IT IS SHARED ACROSS FAMILIES, so a row recorded fam=realm lights a place route of the same id and vice versa. Ten routes are lit that way today -- angband belegost brethil dale erebor fangorn gondolin isengard nogrod rivendell. That is ruling 2a working as written (an id is unique within its COLLECTION, and `plates` is one collection), but it means `fam` records WHICH FAMILY THE BINDING WAS MADE FOR and never which routes it lights. Anyone counting per family must count routes, not rows."
+ },
+ "unrecorded": "CORRECTED 19 Aug 2026, and the earlier note here was wrong in the direction that manufactures work. It read that heraldry/gondor.svg, heraldry/redeye.svg and heraldry/rohan.svg are published with no row in arda_assets.json so the archive cannot state whose they are. TRUE HALF: no heraldry file has a row in arda_assets.json -- all 38 published ones, not three. FALSE HALF: the archive states whose they are perfectly well, in site/arda_heraldry_assets.json, which carries author, licence, source, basis and sha1 for 121 devices; map/licence_check.py READS that second register and says in its own source why copying the rows across would be the WRONG fix -- two registers holding the same rows must be kept in step by hand, which is the homograph fault this archive retires keys for. So licence_check being green over them is correct and is not the silence the old note took it for. What remains true is its arithmetic: licence_check reports 815 published / 775 recorded / 1 unrecorded, and 815 minus 775 is forty; the difference and the debt are two different populations and nobody has established why. Filed, not fixed.",
+ "why_person": "a bust drawn to this archive's own portrait prompt, named by the entity id",
+ "plates": [
+  {
+   "of": "adalgrim",
+   "fam": "person",
+   "f": [
+    "portraits/adalgrim.jpg"
+   ]
+  },
+  {
+   "of": "adamanta",
+   "fam": "person",
+   "f": [
+    "portraits/adamanta.jpg"
+   ]
+  },
+  {
+   "of": "adrahil",
+   "fam": "person",
+   "f": [
+    "portraits/adrahil.jpg"
+   ]
+  },
+  {
+   "of": "aegnor",
+   "fam": "person",
+   "f": [
+    "portraits/aegnor.jpg"
+   ]
+  },
+  {
+   "of": "ailinel",
+   "fam": "person",
+   "f": [
+    "portraits/ailinel.jpg"
+   ]
+  },
+  {
+   "of": "aldamir",
+   "fam": "person",
+   "f": [
+    "portraits/aldamir.jpg"
+   ]
+  },
+  {
+   "of": "aldor",
+   "fam": "person",
+   "f": [
+    "portraits/aldor.jpg"
+   ]
+  },
+  {
+   "of": "almarian",
+   "fam": "person",
+   "f": [
+    "portraits/almarian.jpg"
+   ]
+  },
+  {
+   "of": "almiel",
+   "fam": "person",
+   "f": [
+    "portraits/almiel.jpg"
+   ]
+  },
+  {
+   "of": "amandil",
+   "fam": "person",
+   "f": [
+    "portraits/amandil.jpg"
+   ]
+  },
+  {
+   "of": "amarie",
+   "fam": "person",
+   "f": [
+    "portraits/amarie.jpg"
+   ]
+  },
+  {
+   "of": "amdir",
+   "fam": "person",
+   "f": [
+    "portraits/amdir.jpg"
+   ]
+  },
+  {
+   "of": "amlaith",
+   "fam": "person",
+   "f": [
+    "portraits/amlaith.jpg"
+   ]
+  },
+  {
+   "of": "amras",
+   "fam": "person",
+   "f": [
+    "portraits/amras.jpg"
+   ]
+  },
+  {
+   "of": "amrod",
+   "fam": "person",
+   "f": [
+    "portraits/amrod.jpg"
+   ]
+  },
+  {
+   "of": "amroth",
+   "fam": "person",
+   "f": [
+    "portraits/amroth.jpg"
+   ]
+  },
+  {
+   "of": "anaire",
+   "fam": "person",
+   "f": [
+    "portraits/anaire.jpg"
+   ]
+  },
+  {
+   "of": "anardil_g",
+   "fam": "person",
+   "f": [
+    "portraits/anardil_g.jpg"
+   ]
+  },
+  {
+   "of": "anarion_g",
+   "fam": "person",
+   "f": [
+    "portraits/anarion_g.jpg"
+   ]
+  },
+  {
+   "of": "andreth",
+   "fam": "person",
+   "f": [
+    "portraits/andreth.jpg"
+   ]
+  },
+  {
+   "of": "angamaite",
+   "fam": "person",
+   "f": [
+    "portraits/angamaite.jpg"
+   ]
+  },
+  {
+   "of": "angelimir",
+   "fam": "person",
+   "f": [
+    "portraits/angelimir.jpg"
+   ]
+  },
+  {
+   "of": "angrod",
+   "fam": "person",
+   "f": [
+    "portraits/angrod.jpg"
+   ]
+  },
+  {
+   "of": "annael_n",
+   "fam": "person",
+   "f": [
+    "portraits/annael_n.jpg"
+   ]
+  },
+  {
+   "of": "arador",
+   "fam": "person",
+   "f": [
+    "portraits/arador.jpg"
+   ]
+  },
+  {
+   "of": "aradunakhor",
+   "fam": "person",
+   "f": [
+    "portraits/aradunakhor.jpg"
+   ]
+  },
+  {
+   "of": "araglas",
+   "fam": "person",
+   "f": [
+    "portraits/araglas.jpg"
+   ]
+  },
+  {
+   "of": "aragorn",
+   "fam": "person",
+   "f": [
+    "portraits/aragorn.jpg"
+   ]
+  },
+  {
+   "of": "aragorn1",
+   "fam": "person",
+   "f": [
+    "portraits/aragorn1.jpg"
+   ]
+  },
+  {
+   "of": "aragost",
+   "fam": "person",
+   "f": [
+    "portraits/aragost.jpg"
+   ]
+  },
+  {
+   "of": "arahad1",
+   "fam": "person",
+   "f": [
+    "portraits/arahad1.jpg"
+   ]
+  },
+  {
+   "of": "arahad2",
+   "fam": "person",
+   "f": [
+    "portraits/arahad2.jpg"
+   ]
+  },
+  {
+   "of": "arahael",
+   "fam": "person",
+   "f": [
+    "portraits/arahael.jpg"
+   ]
+  },
+  {
+   "of": "aranarth",
+   "fam": "person",
+   "f": [
+    "portraits/aranarth.jpg"
+   ]
+  },
+  {
+   "of": "arantar",
+   "fam": "person",
+   "f": [
+    "portraits/arantar.jpg"
+   ]
+  },
+  {
+   "of": "aranuir",
+   "fam": "person",
+   "f": [
+    "portraits/aranuir.jpg"
+   ]
+  },
+  {
+   "of": "aranwe",
+   "fam": "person",
+   "f": [
+    "portraits/aranwe.jpg"
+   ]
+  },
+  {
+   "of": "araphant",
+   "fam": "person",
+   "f": [
+    "portraits/araphant.jpg"
+   ]
+  },
+  {
+   "of": "araphor",
+   "fam": "person",
+   "f": [
+    "portraits/araphor.jpg"
+   ]
+  },
+  {
+   "of": "arassuil",
+   "fam": "person",
+   "f": [
+    "portraits/arassuil.jpg"
+   ]
+  },
+  {
+   "of": "aratan",
+   "fam": "person",
+   "f": [
+    "portraits/aratan.jpg"
+   ]
+  },
+  {
+   "of": "arathorn",
+   "fam": "person",
+   "f": [
+    "portraits/arathorn.jpg"
+   ]
+  },
+  {
+   "of": "arathorn1",
+   "fam": "person",
+   "f": [
+    "portraits/arathorn1.jpg"
+   ]
+  },
+  {
+   "of": "araval",
+   "fam": "person",
+   "f": [
+    "portraits/araval.jpg"
+   ]
+  },
+  {
+   "of": "aravir",
+   "fam": "person",
+   "f": [
+    "portraits/aravir.jpg"
+   ]
+  },
+  {
+   "of": "aravorn",
+   "fam": "person",
+   "f": [
+    "portraits/aravorn.jpg"
+   ]
+  },
+  {
+   "of": "arciryas",
+   "fam": "person",
+   "f": [
+    "portraits/arciryas.jpg"
+   ]
+  },
+  {
+   "of": "aredhel",
+   "fam": "person",
+   "f": [
+    "portraits/aredhel.jpg"
+   ]
+  },
+  {
+   "of": "argeleb1",
+   "fam": "person",
+   "f": [
+    "portraits/argeleb1.jpg"
+   ]
+  },
+  {
+   "of": "argeleb2",
+   "fam": "person",
+   "f": [
+    "portraits/argeleb2.jpg"
+   ]
+  },
+  {
+   "of": "argimilzor",
+   "fam": "person",
+   "f": [
+    "portraits/argimilzor.jpg"
+   ]
+  },
+  {
+   "of": "argon",
+   "fam": "person",
+   "f": [
+    "portraits/argon.jpg"
+   ]
+  },
+  {
+   "of": "argonui",
+   "fam": "person",
+   "f": [
+    "portraits/argonui.jpg"
+   ]
+  },
+  {
+   "of": "arsakalthor",
+   "fam": "person",
+   "f": [
+    "portraits/arsakalthor.jpg"
+   ]
+  },
+  {
+   "of": "artamir",
+   "fam": "person",
+   "f": [
+    "portraits/artamir.jpg"
+   ]
+  },
+  {
+   "of": "arvedui",
+   "fam": "person",
+   "f": [
+    "portraits/arvedui.jpg"
+   ]
+  },
+  {
+   "of": "arvegil",
+   "fam": "person",
+   "f": [
+    "portraits/arvegil.jpg"
+   ]
+  },
+  {
+   "of": "arveleg1",
+   "fam": "person",
+   "f": [
+    "portraits/arveleg1.jpg"
+   ]
+  },
+  {
+   "of": "arveleg2",
+   "fam": "person",
+   "f": [
+    "portraits/arveleg2.jpg"
+   ]
+  },
+  {
+   "of": "arwen",
+   "fam": "person",
+   "f": [
+    "portraits/arwen.jpg"
+   ]
+  },
+  {
+   "of": "arzimrathon",
+   "fam": "person",
+   "f": [
+    "portraits/arzimrathon.jpg"
+   ]
+  },
+  {
+   "of": "atanatar1",
+   "fam": "person",
+   "f": [
+    "portraits/atanatar1.jpg"
+   ]
+  },
+  {
+   "of": "atanatar2",
+   "fam": "person",
+   "f": [
+    "portraits/atanatar2.jpg"
+   ]
+  },
+  {
+   "of": "aule",
+   "fam": "person",
+   "f": [
+    "portraits/aule.jpg"
+   ]
+  },
+  {
+   "of": "balbo",
+   "fam": "person",
+   "f": [
+    "portraits/balbo.jpg"
+   ]
+  },
+  {
+   "of": "baldor",
+   "fam": "person",
+   "f": [
+    "portraits/baldor.jpg"
+   ]
+  },
+  {
+   "of": "balin",
+   "fam": "person",
+   "f": [
+    "portraits/balin.jpg"
+   ]
+  },
+  {
+   "of": "baragund",
+   "fam": "person",
+   "f": [
+    "portraits/baragund.jpg"
+   ]
+  },
+  {
+   "of": "barahir",
+   "fam": "person",
+   "f": [
+    "portraits/barahir.jpg"
+   ]
+  },
+  {
+   "of": "barahir_f",
+   "fam": "person",
+   "f": [
+    "portraits/barahir_f.jpg"
+   ]
+  },
+  {
+   "of": "barahir_s",
+   "fam": "person",
+   "f": [
+    "portraits/barahir_s.jpg"
+   ]
+  },
+  {
+   "of": "baran",
+   "fam": "person",
+   "f": [
+    "portraits/baran.jpg"
+   ]
+  },
+  {
+   "of": "belecthor1",
+   "fam": "person",
+   "f": [
+    "portraits/belecthor1.jpg"
+   ]
+  },
+  {
+   "of": "belecthor2",
+   "fam": "person",
+   "f": [
+    "portraits/belecthor2.jpg"
+   ]
+  },
+  {
+   "of": "beleg_a",
+   "fam": "person",
+   "f": [
+    "portraits/beleg_a.jpg"
+   ]
+  },
+  {
+   "of": "belegorn",
+   "fam": "person",
+   "f": [
+    "portraits/belegorn.jpg"
+   ]
+  },
+  {
+   "of": "belegund",
+   "fam": "person",
+   "f": [
+    "portraits/belegund.jpg"
+   ]
+  },
+  {
+   "of": "bell",
+   "fam": "person",
+   "f": [
+    "portraits/bell.jpg"
+   ]
+  },
+  {
+   "of": "belladonna",
+   "fam": "person",
+   "f": [
+    "portraits/belladonna.jpg"
+   ]
+  },
+  {
+   "of": "beor",
+   "fam": "person",
+   "f": [
+    "portraits/beor.jpg"
+   ]
+  },
+  {
+   "of": "beregar",
+   "fam": "person",
+   "f": [
+    "portraits/beregar.jpg"
+   ]
+  },
+  {
+   "of": "beregond_s",
+   "fam": "person",
+   "f": [
+    "portraits/beregond_s.jpg"
+   ]
+  },
+  {
+   "of": "beren",
+   "fam": "person",
+   "f": [
+    "portraits/beren.jpg"
+   ]
+  },
+  {
+   "of": "beren_s",
+   "fam": "person",
+   "f": [
+    "portraits/beren_s.jpg"
+   ]
+  },
+  {
+   "of": "beril",
+   "fam": "person",
+   "f": [
+    "portraits/beril.jpg"
+   ]
+  },
+  {
+   "of": "beruthiel",
+   "fam": "person",
+   "f": [
+    "portraits/beruthiel.jpg"
+   ]
+  },
+  {
+   "of": "berylla",
+   "fam": "person",
+   "f": [
+    "portraits/berylla.jpg"
+   ]
+  },
+  {
+   "of": "bilbo",
+   "fam": "person",
+   "f": [
+    "portraits/bilbo.jpg"
+   ]
+  },
+  {
+   "of": "borin",
+   "fam": "person",
+   "f": [
+    "portraits/borin.jpg"
+   ]
+  },
+  {
+   "of": "boromir",
+   "fam": "person",
+   "f": [
+    "portraits/boromir.jpg"
+   ]
+  },
+  {
+   "of": "boromir_b",
+   "fam": "person",
+   "f": [
+    "portraits/boromir_b.jpg"
+   ]
+  },
+  {
+   "of": "boromir_s",
+   "fam": "person",
+   "f": [
+    "portraits/boromir_s.jpg"
+   ]
+  },
+  {
+   "of": "boron",
+   "fam": "person",
+   "f": [
+    "portraits/boron.jpg"
+   ]
+  },
+  {
+   "of": "brandir",
+   "fam": "person",
+   "f": [
+    "portraits/brandir.jpg"
+   ]
+  },
+  {
+   "of": "brego",
+   "fam": "person",
+   "f": [
+    "portraits/brego.jpg"
+   ]
+  },
+  {
+   "of": "bregolas",
+   "fam": "person",
+   "f": [
+    "portraits/bregolas.jpg"
+   ]
+  },
+  {
+   "of": "bregor",
+   "fam": "person",
+   "f": [
+    "portraits/bregor.jpg"
+   ]
+  },
+  {
+   "of": "brytta",
+   "fam": "person",
+   "f": [
+    "portraits/brytta.jpg"
+   ]
+  },
+  {
+   "of": "bungo",
+   "fam": "person",
+   "f": [
+    "portraits/bungo.jpg"
+   ]
+  },
+  {
+   "of": "calimehtar_c",
+   "fam": "person",
+   "f": [
+    "portraits/calimehtar_c.jpg"
+   ]
+  },
+  {
+   "of": "calimehtar_g",
+   "fam": "person",
+   "f": [
+    "portraits/calimehtar_g.jpg"
+   ]
+  },
+  {
+   "of": "calimmacil",
+   "fam": "person",
+   "f": [
+    "portraits/calimmacil.jpg"
+   ]
+  },
+  {
+   "of": "calmacil_g",
+   "fam": "person",
+   "f": [
+    "portraits/calmacil_g.jpg"
+   ]
+  },
+  {
+   "of": "camellia",
+   "fam": "person",
+   "f": [
+    "portraits/camellia.jpg"
+   ]
+  },
+  {
+   "of": "caranthir",
+   "fam": "person",
+   "f": [
+    "portraits/caranthir.jpg"
+   ]
+  },
+  {
+   "of": "castamir",
+   "fam": "person",
+   "f": [
+    "portraits/castamir.jpg"
+   ]
+  },
+  {
+   "of": "celeborn",
+   "fam": "person",
+   "f": [
+    "portraits/celeborn.jpg"
+   ]
+  },
+  {
+   "of": "celebrian",
+   "fam": "person",
+   "f": [
+    "portraits/celebrian.jpg"
+   ]
+  },
+  {
+   "of": "celebrimbor",
+   "fam": "person",
+   "f": [
+    "portraits/celebrimbor.jpg"
+   ]
+  },
+  {
+   "of": "celebrindor",
+   "fam": "person",
+   "f": [
+    "portraits/celebrindor.jpg"
+   ]
+  },
+  {
+   "of": "celegorm",
+   "fam": "person",
+   "f": [
+    "portraits/celegorm.jpg"
+   ]
+  },
+  {
+   "of": "celepharn",
+   "fam": "person",
+   "f": [
+    "portraits/celepharn.jpg"
+   ]
+  },
+  {
+   "of": "cemendur",
+   "fam": "person",
+   "f": [
+    "portraits/cemendur.jpg"
+   ]
+  },
+  {
+   "of": "cirdan",
+   "fam": "person",
+   "f": [
+    "portraits/cirdan.jpg"
+   ]
+  },
+  {
+   "of": "cirion",
+   "fam": "person",
+   "f": [
+    "portraits/cirion.jpg"
+   ]
+  },
+  {
+   "of": "ciryandil",
+   "fam": "person",
+   "f": [
+    "portraits/ciryandil.jpg"
+   ]
+  },
+  {
+   "of": "ciryon",
+   "fam": "person",
+   "f": [
+    "portraits/ciryon.jpg"
+   ]
+  },
+  {
+   "of": "curufin",
+   "fam": "person",
+   "f": [
+    "portraits/curufin.jpg"
+   ]
+  },
+  {
+   "of": "dain1",
+   "fam": "person",
+   "f": [
+    "portraits/dain1.jpg"
+   ]
+  },
+  {
+   "of": "dain2",
+   "fam": "person",
+   "f": [
+    "portraits/dain2.jpg"
+   ]
+  },
+  {
+   "of": "deagol",
+   "fam": "person",
+   "f": [
+    "portraits/deagol.jpg"
+   ]
+  },
+  {
+   "of": "denethor1",
+   "fam": "person",
+   "f": [
+    "portraits/denethor1.jpg"
+   ]
+  },
+  {
+   "of": "denethor2",
+   "fam": "person",
+   "f": [
+    "portraits/denethor2.jpg"
+   ]
+  },
+  {
+   "of": "deor",
+   "fam": "person",
+   "f": [
+    "portraits/deor.jpg"
+   ]
+  },
+  {
+   "of": "diamond",
+   "fam": "person",
+   "f": [
+    "portraits/diamond.jpg"
+   ]
+  },
+  {
+   "of": "dior",
+   "fam": "person",
+   "f": [
+    "portraits/dior.jpg"
+   ]
+  },
+  {
+   "of": "dior_s",
+   "fam": "person",
+   "f": [
+    "portraits/dior_s.jpg"
+   ]
+  },
+  {
+   "of": "dirhael",
+   "fam": "person",
+   "f": [
+    "portraits/dirhael.jpg"
+   ]
+  },
+  {
+   "of": "dis",
+   "fam": "person",
+   "f": [
+    "portraits/dis.jpg"
+   ]
+  },
+  {
+   "of": "drogo",
+   "fam": "person",
+   "f": [
+    "portraits/drogo.jpg"
+   ]
+  },
+  {
+   "of": "durin1",
+   "fam": "person",
+   "f": [
+    "portraits/durin1.jpg"
+   ]
+  },
+  {
+   "of": "durin6",
+   "fam": "person",
+   "f": [
+    "portraits/durin6.jpg"
+   ]
+  },
+  {
+   "of": "durin7",
+   "fam": "person",
+   "f": [
+    "portraits/durin7.jpg"
+   ]
+  },
+  {
+   "of": "dwalin",
+   "fam": "person",
+   "f": [
+    "portraits/dwalin.jpg"
+   ]
+  },
+  {
+   "of": "earendil",
+   "fam": "person",
+   "f": [
+    "portraits/earendil.jpg"
+   ]
+  },
+  {
+   "of": "earendil_g",
+   "fam": "person",
+   "f": [
+    "portraits/earendil_g.jpg"
+   ]
+  },
+  {
+   "of": "earendur_a",
+   "fam": "person",
+   "f": [
+    "portraits/earendur_a.jpg"
+   ]
+  },
+  {
+   "of": "earendur_l",
+   "fam": "person",
+   "f": [
+    "portraits/earendur_l.jpg"
+   ]
+  },
+  {
+   "of": "earnil1",
+   "fam": "person",
+   "f": [
+    "portraits/earnil1.jpg"
+   ]
+  },
+  {
+   "of": "earnil2",
+   "fam": "person",
+   "f": [
+    "portraits/earnil2.jpg"
+   ]
+  },
+  {
+   "of": "earnur",
+   "fam": "person",
+   "f": [
+    "portraits/earnur.jpg"
+   ]
+  },
+  {
+   "of": "earwen",
+   "fam": "person",
+   "f": [
+    "portraits/earwen.jpg"
+   ]
+  },
+  {
+   "of": "ecthelion1",
+   "fam": "person",
+   "f": [
+    "portraits/ecthelion1.jpg"
+   ]
+  },
+  {
+   "of": "ecthelion2",
+   "fam": "person",
+   "f": [
+    "portraits/ecthelion2.jpg"
+   ]
+  },
+  {
+   "of": "egalmoth",
+   "fam": "person",
+   "f": [
+    "portraits/egalmoth.jpg"
+   ]
+  },
+  {
+   "of": "eglantine",
+   "fam": "person",
+   "f": [
+    "portraits/eglantine.jpg"
+   ]
+  },
+  {
+   "of": "elanor",
+   "fam": "person",
+   "f": [
+    "portraits/elanor.jpg"
+   ]
+  },
+  {
+   "of": "elatan",
+   "fam": "person",
+   "f": [
+    "portraits/elatan.jpg"
+   ]
+  },
+  {
+   "of": "elboron",
+   "fam": "person",
+   "f": [
+    "portraits/elboron.jpg"
+   ]
+  },
+  {
+   "of": "eldacar_a",
+   "fam": "person",
+   "f": [
+    "portraits/eldacar_a.jpg"
+   ]
+  },
+  {
+   "of": "eldacar_g",
+   "fam": "person",
+   "f": [
+    "portraits/eldacar_g.jpg"
+   ]
+  },
+  {
+   "of": "eldarion",
+   "fam": "person",
+   "f": [
+    "portraits/eldarion.jpg"
+   ]
+  },
+  {
+   "of": "elendil",
+   "fam": "person",
+   "f": [
+    "portraits/elendil.jpg"
+   ]
+  },
+  {
+   "of": "elendur_a",
+   "fam": "person",
+   "f": [
+    "portraits/elendur_a.jpg"
+   ]
+  },
+  {
+   "of": "elendur_i",
+   "fam": "person",
+   "f": [
+    "portraits/elendur_i.jpg"
+   ]
+  },
+  {
+   "of": "elenwe",
+   "fam": "person",
+   "f": [
+    "portraits/elenwe.jpg"
+   ]
+  },
+  {
+   "of": "elfhild",
+   "fam": "person",
+   "f": [
+    "portraits/elfhild.jpg"
+   ]
+  },
+  {
+   "of": "elfstan",
+   "fam": "person",
+   "f": [
+    "portraits/elfstan.jpg"
+   ]
+  },
+  {
+   "of": "elfwine",
+   "fam": "person",
+   "f": [
+    "portraits/elfwine.jpg"
+   ]
+  },
+  {
+   "of": "elladan",
+   "fam": "person",
+   "f": [
+    "portraits/elladan.jpg"
+   ]
+  },
+  {
+   "of": "elmo",
+   "fam": "person",
+   "f": [
+    "portraits/elmo.jpg"
+   ]
+  },
+  {
+   "of": "elrohir",
+   "fam": "person",
+   "f": [
+    "portraits/elrohir.jpg"
+   ]
+  },
+  {
+   "of": "elrond",
+   "fam": "person",
+   "f": [
+    "portraits/elrond.jpg"
+   ]
+  },
+  {
+   "of": "elros",
+   "fam": "person",
+   "f": [
+    "portraits/elros.jpg"
+   ]
+  },
+  {
+   "of": "elured",
+   "fam": "person",
+   "f": [
+    "portraits/elured.jpg"
+   ]
+  },
+  {
+   "of": "elurin",
+   "fam": "person",
+   "f": [
+    "portraits/elurin.jpg"
+   ]
+  },
+  {
+   "of": "elwe",
+   "fam": "person",
+   "f": [
+    "portraits/elwe.jpg"
+   ]
+  },
+  {
+   "of": "elwing",
+   "fam": "person",
+   "f": [
+    "portraits/elwing.jpg"
+   ]
+  },
+  {
+   "of": "emeldir",
+   "fam": "person",
+   "f": [
+    "portraits/emeldir.jpg"
+   ]
+  },
+  {
+   "of": "eol",
+   "fam": "person",
+   "f": [
+    "portraits/eol.jpg"
+   ]
+  },
+  {
+   "of": "eomer",
+   "fam": "person",
+   "f": [
+    "portraits/eomer.jpg"
+   ]
+  },
+  {
+   "of": "eomund",
+   "fam": "person",
+   "f": [
+    "portraits/eomund.jpg"
+   ]
+  },
+  {
+   "of": "eorl",
+   "fam": "person",
+   "f": [
+    "portraits/eorl.jpg"
+   ]
+  },
+  {
+   "of": "eowyn",
+   "fam": "person",
+   "f": [
+    "portraits/eowyn.jpg"
+   ]
+  },
+  {
+   "of": "eradan",
+   "fam": "person",
+   "f": [
+    "portraits/eradan.jpg"
+   ]
+  },
+  {
+   "of": "erendis",
+   "fam": "person",
+   "f": [
+    "portraits/erendis.jpg"
+   ]
+  },
+  {
+   "of": "esmeralda",
+   "fam": "person",
+   "f": [
+    "portraits/esmeralda.jpg"
+   ]
+  },
+  {
+   "of": "este",
+   "fam": "person",
+   "f": [
+    "portraits/este.jpg"
+   ]
+  },
+  {
+   "of": "estella",
+   "fam": "person",
+   "f": [
+    "portraits/estella.jpg"
+   ]
+  },
+  {
+   "of": "falastur",
+   "fam": "person",
+   "f": [
+    "portraits/falastur.jpg"
+   ]
+  },
+  {
+   "of": "faramir",
+   "fam": "person",
+   "f": [
+    "portraits/faramir.jpg"
+   ]
+  },
+  {
+   "of": "faramir_o",
+   "fam": "person",
+   "f": [
+    "portraits/faramir_o.jpg"
+   ]
+  },
+  {
+   "of": "faramir_t",
+   "fam": "person",
+   "f": [
+    "portraits/faramir_t.jpg"
+   ]
+  },
+  {
+   "of": "farin",
+   "fam": "person",
+   "f": [
+    "portraits/farin.jpg"
+   ]
+  },
+  {
+   "of": "fastred",
+   "fam": "person",
+   "f": [
+    "portraits/fastred.jpg"
+   ]
+  },
+  {
+   "of": "fastred_r",
+   "fam": "person",
+   "f": [
+    "portraits/fastred_r.jpg"
+   ]
+  },
+  {
+   "of": "feanor",
+   "fam": "person",
+   "f": [
+    "portraits/feanor.jpg"
+   ]
+  },
+  {
+   "of": "fengel",
+   "fam": "person",
+   "f": [
+    "portraits/fengel.jpg"
+   ]
+  },
+  {
+   "of": "fili",
+   "fam": "person",
+   "f": [
+    "portraits/fili.jpg"
+   ]
+  },
+  {
+   "of": "finarfin",
+   "fam": "person",
+   "f": [
+    "portraits/finarfin.jpg"
+   ]
+  },
+  {
+   "of": "findis",
+   "fam": "person",
+   "f": [
+    "portraits/findis.jpg"
+   ]
+  },
+  {
+   "of": "finduilas_a",
+   "fam": "person",
+   "f": [
+    "portraits/finduilas_a.jpg"
+   ]
+  },
+  {
+   "of": "finduilas_n",
+   "fam": "person",
+   "f": [
+    "portraits/finduilas_n.jpg"
+   ]
+  },
+  {
+   "of": "fingolfin",
+   "fam": "person",
+   "f": [
+    "portraits/fingolfin.jpg"
+   ]
+  },
+  {
+   "of": "fingon",
+   "fam": "person",
+   "f": [
+    "portraits/fingon.jpg"
+   ]
+  },
+  {
+   "of": "finrod",
+   "fam": "person",
+   "f": [
+    "portraits/finrod.jpg"
+   ]
+  },
+  {
+   "of": "finwe",
+   "fam": "person",
+   "f": [
+    "portraits/finwe.jpg"
+   ]
+  },
+  {
+   "of": "firiel",
+   "fam": "person",
+   "f": [
+    "portraits/firiel.jpg"
+   ]
+  },
+  {
+   "of": "folca",
+   "fam": "person",
+   "f": [
+    "portraits/folca.jpg"
+   ]
+  },
+  {
+   "of": "folcred",
+   "fam": "person",
+   "f": [
+    "portraits/folcred.jpg"
+   ]
+  },
+  {
+   "of": "folcwine",
+   "fam": "person",
+   "f": [
+    "portraits/folcwine.jpg"
+   ]
+  },
+  {
+   "of": "fosco",
+   "fam": "person",
+   "f": [
+    "portraits/fosco.jpg"
+   ]
+  },
+  {
+   "of": "fram",
+   "fam": "person",
+   "f": [
+    "portraits/fram.jpg"
+   ]
+  },
+  {
+   "of": "frea",
+   "fam": "person",
+   "f": [
+    "portraits/frea.jpg"
+   ]
+  },
+  {
+   "of": "frealaf",
+   "fam": "person",
+   "f": [
+    "portraits/frealaf.jpg"
+   ]
+  },
+  {
+   "of": "freawine",
+   "fam": "person",
+   "f": [
+    "portraits/freawine.jpg"
+   ]
+  },
+  {
+   "of": "fredegar",
+   "fam": "person",
+   "f": [
+    "portraits/fredegar.jpg"
+   ]
+  },
+  {
+   "of": "frerin",
+   "fam": "person",
+   "f": [
+    "portraits/frerin.jpg"
+   ]
+  },
+  {
+   "of": "frodo",
+   "fam": "person",
+   "f": [
+    "portraits/frodo.jpg"
+   ]
+  },
+  {
+   "of": "frodog",
+   "fam": "person",
+   "f": [
+    "portraits/frodog.jpg"
+   ]
+  },
+  {
+   "of": "fror",
+   "fam": "person",
+   "f": [
+    "portraits/fror.jpg"
+   ]
+  },
+  {
+   "of": "frumgar",
+   "fam": "person",
+   "f": [
+    "portraits/frumgar.jpg"
+   ]
+  },
+  {
+   "of": "fundin",
+   "fam": "person",
+   "f": [
+    "portraits/fundin.jpg"
+   ]
+  },
+  {
+   "of": "galadhon",
+   "fam": "person",
+   "f": [
+    "portraits/galadhon.jpg"
+   ]
+  },
+  {
+   "of": "galador",
+   "fam": "person",
+   "f": [
+    "portraits/galador.jpg"
+   ]
+  },
+  {
+   "of": "galadriel",
+   "fam": "person",
+   "f": [
+    "portraits/galadriel.jpg"
+   ]
+  },
+  {
+   "of": "galathil",
+   "fam": "person",
+   "f": [
+    "portraits/galathil.jpg"
+   ]
+  },
+  {
+   "of": "galdor",
+   "fam": "person",
+   "f": [
+    "portraits/galdor.jpg"
+   ]
+  },
+  {
+   "of": "gelmir_n",
+   "fam": "person",
+   "f": [
+    "portraits/gelmir_n.jpg"
+   ]
+  },
+  {
+   "of": "gerontius",
+   "fam": "person",
+   "f": [
+    "portraits/gerontius.jpg"
+   ]
+  },
+  {
+   "of": "gildor",
+   "fam": "person",
+   "f": [
+    "portraits/gildor.jpg"
+   ]
+  },
+  {
+   "of": "gilgalad",
+   "fam": "person",
+   "f": [
+    "portraits/gilgalad.jpg"
+   ]
+  },
+  {
+   "of": "gilraen",
+   "fam": "person",
+   "f": [
+    "portraits/gilraen.jpg"
+   ]
+  },
+  {
+   "of": "gimilkhad",
+   "fam": "person",
+   "f": [
+    "portraits/gimilkhad.jpg"
+   ]
+  },
+  {
+   "of": "gimli",
+   "fam": "person",
+   "f": [
+    "portraits/gimli.jpg"
+   ]
+  },
+  {
+   "of": "gloin_d",
+   "fam": "person",
+   "f": [
+    "portraits/gloin_d.jpg"
+   ]
+  },
+  {
+   "of": "gloin_k",
+   "fam": "person",
+   "f": [
+    "portraits/gloin_k.jpg"
+   ]
+  },
+  {
+   "of": "gloredhel",
+   "fam": "person",
+   "f": [
+    "portraits/gloredhel.jpg"
+   ]
+  },
+  {
+   "of": "goldilocks",
+   "fam": "person",
+   "f": [
+    "portraits/goldilocks.jpg"
+   ]
+  },
+  {
+   "of": "goldwine",
+   "fam": "person",
+   "f": [
+    "portraits/goldwine.jpg"
+   ]
+  },
+  {
+   "of": "gorbadoc",
+   "fam": "person",
+   "f": [
+    "portraits/gorbadoc.jpg"
+   ]
+  },
+  {
+   "of": "gram",
+   "fam": "person",
+   "f": [
+    "portraits/gram.jpg"
+   ]
+  },
+  {
+   "of": "groin_d",
+   "fam": "person",
+   "f": [
+    "portraits/groin_d.jpg"
+   ]
+  },
+  {
+   "of": "gror",
+   "fam": "person",
+   "f": [
+    "portraits/gror.jpg"
+   ]
+  },
+  {
+   "of": "guilin",
+   "fam": "person",
+   "f": [
+    "portraits/guilin.jpg"
+   ]
+  },
+  {
+   "of": "gundor",
+   "fam": "person",
+   "f": [
+    "portraits/gundor.jpg"
+   ]
+  },
+  {
+   "of": "gwindor",
+   "fam": "person",
+   "f": [
+    "portraits/gwindor.jpg"
+   ]
+  },
+  {
+   "of": "hador",
+   "fam": "person",
+   "f": [
+    "portraits/hador.jpg"
+   ]
+  },
+  {
+   "of": "hador_s",
+   "fam": "person",
+   "f": [
+    "portraits/hador_s.jpg"
+   ]
+  },
+  {
+   "of": "halbarad",
+   "fam": "person",
+   "f": [
+    "portraits/halbarad.jpg"
+   ]
+  },
+  {
+   "of": "haldad",
+   "fam": "person",
+   "f": [
+    "portraits/haldad.jpg"
+   ]
+  },
+  {
+   "of": "haldan",
+   "fam": "person",
+   "f": [
+    "portraits/haldan.jpg"
+   ]
+  },
+  {
+   "of": "haldar",
+   "fam": "person",
+   "f": [
+    "portraits/haldar.jpg"
+   ]
+  },
+  {
+   "of": "haldir",
+   "fam": "person",
+   "f": [
+    "portraits/haldir.jpg"
+   ]
+  },
+  {
+   "of": "haleth",
+   "fam": "person",
+   "f": [
+    "portraits/haleth.jpg"
+   ]
+  },
+  {
+   "of": "haleth_r",
+   "fam": "person",
+   "f": [
+    "portraits/haleth_r.jpg"
+   ]
+  },
+  {
+   "of": "hallacar",
+   "fam": "person",
+   "f": [
+    "portraits/hallacar.jpg"
+   ]
+  },
+  {
+   "of": "hallas",
+   "fam": "person",
+   "f": [
+    "portraits/hallas.jpg"
+   ]
+  },
+  {
+   "of": "hallatan",
+   "fam": "person",
+   "f": [
+    "portraits/hallatan.jpg"
+   ]
+  },
+  {
+   "of": "halmir",
+   "fam": "person",
+   "f": [
+    "portraits/halmir.jpg"
+   ]
+  },
+  {
+   "of": "hama_r",
+   "fam": "person",
+   "f": [
+    "portraits/hama_r.jpg"
+   ]
+  },
+  {
+   "of": "hamfast",
+   "fam": "person",
+   "f": [
+    "portraits/hamfast.jpg"
+   ]
+  },
+  {
+   "of": "handir",
+   "fam": "person",
+   "f": [
+    "portraits/handir.jpg"
+   ]
+  },
+  {
+   "of": "hareth",
+   "fam": "person",
+   "f": [
+    "portraits/hareth.jpg"
+   ]
+  },
+  {
+   "of": "hathol",
+   "fam": "person",
+   "f": [
+    "portraits/hathol.jpg"
+   ]
+  },
+  {
+   "of": "helm",
+   "fam": "person",
+   "f": [
+    "portraits/helm.jpg"
+   ]
+  },
+  {
+   "of": "herion",
+   "fam": "person",
+   "f": [
+    "portraits/herion.jpg"
+   ]
+  },
+  {
+   "of": "herucalmo",
+   "fam": "person",
+   "f": [
+    "portraits/herucalmo.jpg"
+   ]
+  },
+  {
+   "of": "hild",
+   "fam": "person",
+   "f": [
+    "portraits/hild.jpg"
+   ]
+  },
+  {
+   "of": "hildigrim",
+   "fam": "person",
+   "f": [
+    "portraits/hildigrim.jpg"
+   ]
+  },
+  {
+   "of": "hiril",
+   "fam": "person",
+   "f": [
+    "portraits/hiril.jpg"
+   ]
+  },
+  {
+   "of": "holfast",
+   "fam": "person",
+   "f": [
+    "portraits/holfast.jpg"
+   ]
+  },
+  {
+   "of": "hundar",
+   "fam": "person",
+   "f": [
+    "portraits/hundar.jpg"
+   ]
+  },
+  {
+   "of": "huor",
+   "fam": "person",
+   "f": [
+    "portraits/huor.jpg"
+   ]
+  },
+  {
+   "of": "hurin",
+   "fam": "person",
+   "f": [
+    "portraits/hurin.jpg"
+   ]
+  },
+  {
+   "of": "hurin1",
+   "fam": "person",
+   "f": [
+    "portraits/hurin1.jpg"
+   ]
+  },
+  {
+   "of": "hurin2",
+   "fam": "person",
+   "f": [
+    "portraits/hurin2.jpg"
+   ]
+  },
+  {
+   "of": "hurin_e",
+   "fam": "person",
+   "f": [
+    "portraits/hurin_e.jpg"
+   ]
+  },
+  {
+   "of": "hyarmendacil1",
+   "fam": "person",
+   "f": [
+    "portraits/hyarmendacil1.jpg"
+   ]
+  },
+  {
+   "of": "hyarmendacil2",
+   "fam": "person",
+   "f": [
+    "portraits/hyarmendacil2.jpg"
+   ]
+  },
+  {
+   "of": "idril",
+   "fam": "person",
+   "f": [
+    "portraits/idril.jpg"
+   ]
+  },
+  {
+   "of": "imrahil",
+   "fam": "person",
+   "f": [
+    "portraits/imrahil.jpg"
+   ]
+  },
+  {
+   "of": "imrazor",
+   "fam": "person",
+   "f": [
+    "portraits/imrazor.jpg"
+   ]
+  },
+  {
+   "of": "indis",
+   "fam": "person",
+   "f": [
+    "portraits/indis.jpg"
+   ]
+  },
+  {
+   "of": "inzilbeth",
+   "fam": "person",
+   "f": [
+    "portraits/inzilbeth.jpg"
+   ]
+  },
+  {
+   "of": "irime",
+   "fam": "person",
+   "f": [
+    "portraits/irime.jpg"
+   ]
+  },
+  {
+   "of": "irmo",
+   "fam": "person",
+   "f": [
+    "portraits/irmo.jpg"
+   ]
+  },
+  {
+   "of": "isildur",
+   "fam": "person",
+   "f": [
+    "portraits/isildur.jpg"
+   ]
+  },
+  {
+   "of": "isilme",
+   "fam": "person",
+   "f": [
+    "portraits/isilme.jpg"
+   ]
+  },
+  {
+   "of": "isilmo",
+   "fam": "person",
+   "f": [
+    "portraits/isilmo.jpg"
+   ]
+  },
+  {
+   "of": "ivorwen",
+   "fam": "person",
+   "f": [
+    "portraits/ivorwen.jpg"
+   ]
+  },
+  {
+   "of": "kili",
+   "fam": "person",
+   "f": [
+    "portraits/kili.jpg"
+   ]
+  },
+  {
+   "of": "lalaith",
+   "fam": "person",
+   "f": [
+    "portraits/lalaith.jpg"
+   ]
+  },
+  {
+   "of": "largo",
+   "fam": "person",
+   "f": [
+    "portraits/largo.jpg"
+   ]
+  },
+  {
+   "of": "laura",
+   "fam": "person",
+   "f": [
+    "portraits/laura.jpg"
+   ]
+  },
+  {
+   "of": "legolas",
+   "fam": "person",
+   "f": [
+    "portraits/legolas.jpg"
+   ]
+  },
+  {
+   "of": "leod",
+   "fam": "person",
+   "f": [
+    "portraits/leod.jpg"
+   ]
+  },
+  {
+   "of": "lily_c",
+   "fam": "person",
+   "f": [
+    "portraits/lily_c.jpg"
+   ]
+  },
+  {
+   "of": "lindorie",
+   "fam": "person",
+   "f": [
+    "portraits/lindorie.jpg"
+   ]
+  },
+  {
+   "of": "lobelia",
+   "fam": "person",
+   "f": [
+    "portraits/lobelia.jpg"
+   ]
+  },
+  {
+   "of": "longo",
+   "fam": "person",
+   "f": [
+    "portraits/longo.jpg"
+   ]
+  },
+  {
+   "of": "lothiriel",
+   "fam": "person",
+   "f": [
+    "portraits/lothiriel.jpg"
+   ]
+  },
+  {
+   "of": "lotho",
+   "fam": "person",
+   "f": [
+    "portraits/lotho.jpg"
+   ]
+  },
+  {
+   "of": "luthien",
+   "fam": "person",
+   "f": [
+    "portraits/luthien.jpg"
+   ]
+  },
+  {
+   "of": "maedhros",
+   "fam": "person",
+   "f": [
+    "portraits/maedhros.jpg"
+   ]
+  },
+  {
+   "of": "maeglin",
+   "fam": "person",
+   "f": [
+    "portraits/maeglin.jpg"
+   ]
+  },
+  {
+   "of": "maglor",
+   "fam": "person",
+   "f": [
+    "portraits/maglor.jpg"
+   ]
+  },
+  {
+   "of": "magor",
+   "fam": "person",
+   "f": [
+    "portraits/magor.jpg"
+   ]
+  },
+  {
+   "of": "malach",
+   "fam": "person",
+   "f": [
+    "portraits/malach.jpg"
+   ]
+  },
+  {
+   "of": "mallor",
+   "fam": "person",
+   "f": [
+    "portraits/mallor.jpg"
+   ]
+  },
+  {
+   "of": "malvegil",
+   "fam": "person",
+   "f": [
+    "portraits/malvegil.jpg"
+   ]
+  },
+  {
+   "of": "manwe",
+   "fam": "person",
+   "f": [
+    "portraits/manwe.jpg"
+   ]
+  },
+  {
+   "of": "marach",
+   "fam": "person",
+   "f": [
+    "portraits/marach.jpg"
+   ]
+  },
+  {
+   "of": "mardil",
+   "fam": "person",
+   "f": [
+    "portraits/mardil.jpg"
+   ]
+  },
+  {
+   "of": "marigold",
+   "fam": "person",
+   "f": [
+    "portraits/marigold.jpg"
+   ]
+  },
+  {
+   "of": "melian",
+   "fam": "person",
+   "f": [
+    "portraits/melian.jpg"
+   ]
+  },
+  {
+   "of": "melkor",
+   "fam": "person",
+   "f": [
+    "portraits/melkor.jpg"
+   ]
+  },
+  {
+   "of": "meneldil",
+   "fam": "person",
+   "f": [
+    "portraits/meneldil.jpg"
+   ]
+  },
+  {
+   "of": "merry",
+   "fam": "person",
+   "f": [
+    "portraits/merry.jpg"
+   ]
+  },
+  {
+   "of": "minardil",
+   "fam": "person",
+   "f": [
+    "portraits/minardil.jpg"
+   ]
+  },
+  {
+   "of": "minastan",
+   "fam": "person",
+   "f": [
+    "portraits/minastan.jpg"
+   ]
+  },
+  {
+   "of": "minohtar",
+   "fam": "person",
+   "f": [
+    "portraits/minohtar.jpg"
+   ]
+  },
+  {
+   "of": "mirabella",
+   "fam": "person",
+   "f": [
+    "portraits/mirabella.jpg"
+   ]
+  },
+  {
+   "of": "miriel",
+   "fam": "person",
+   "f": [
+    "portraits/miriel.jpg"
+   ]
+  },
+  {
+   "of": "miriel_n",
+   "fam": "person",
+   "f": [
+    "portraits/miriel_n.jpg"
+   ]
+  },
+  {
+   "of": "mithrellas",
+   "fam": "person",
+   "f": [
+    "portraits/mithrellas.jpg"
+   ]
+  },
+  {
+   "of": "morwen",
+   "fam": "person",
+   "f": [
+    "portraits/morwen.jpg"
+   ]
+  },
+  {
+   "of": "morwen_l",
+   "fam": "person",
+   "f": [
+    "portraits/morwen_l.jpg"
+   ]
+  },
+  {
+   "of": "mungo",
+   "fam": "person",
+   "f": [
+    "portraits/mungo.jpg"
+   ]
+  },
+  {
+   "of": "nain1",
+   "fam": "person",
+   "f": [
+    "portraits/nain1.jpg"
+   ]
+  },
+  {
+   "of": "nain2",
+   "fam": "person",
+   "f": [
+    "portraits/nain2.jpg"
+   ]
+  },
+  {
+   "of": "nain_d",
+   "fam": "person",
+   "f": [
+    "portraits/nain_d.jpg"
+   ]
+  },
+  {
+   "of": "namo",
+   "fam": "person",
+   "f": [
+    "portraits/namo.jpg"
+   ]
+  },
+  {
+   "of": "narmacil1",
+   "fam": "person",
+   "f": [
+    "portraits/narmacil1.jpg"
+   ]
+  },
+  {
+   "of": "narmacil2",
+   "fam": "person",
+   "f": [
+    "portraits/narmacil2.jpg"
+   ]
+  },
+  {
+   "of": "nerdanel",
+   "fam": "person",
+   "f": [
+    "portraits/nerdanel.jpg"
+   ]
+  },
+  {
+   "of": "nessa",
+   "fam": "person",
+   "f": [
+    "portraits/nessa.jpg"
+   ]
+  },
+  {
+   "of": "nienna",
+   "fam": "person",
+   "f": [
+    "portraits/nienna.jpg"
+   ]
+  },
+  {
+   "of": "nienor",
+   "fam": "person",
+   "f": [
+    "portraits/nienor.jpg"
+   ]
+  },
+  {
+   "of": "nimloth_e",
+   "fam": "person",
+   "f": [
+    "portraits/nimloth_e.jpg"
+   ]
+  },
+  {
+   "of": "nimrodel",
+   "fam": "person",
+   "f": [
+    "portraits/nimrodel.jpg"
+   ]
+  },
+  {
+   "of": "numendil",
+   "fam": "person",
+   "f": [
+    "portraits/numendil.jpg"
+   ]
+  },
+  {
+   "of": "nuneth",
+   "fam": "person",
+   "f": [
+    "portraits/nuneth.jpg"
+   ]
+  },
+  {
+   "of": "odovacar",
+   "fam": "person",
+   "f": [
+    "portraits/odovacar.jpg"
+   ]
+  },
+  {
+   "of": "oin_d",
+   "fam": "person",
+   "f": [
+    "portraits/oin_d.jpg"
+   ]
+  },
+  {
+   "of": "oin_k",
+   "fam": "person",
+   "f": [
+    "portraits/oin_k.jpg"
+   ]
+  },
+  {
+   "of": "olwe",
+   "fam": "person",
+   "f": [
+    "portraits/olwe.jpg"
+   ]
+  },
+  {
+   "of": "ondoher",
+   "fam": "person",
+   "f": [
+    "portraits/ondoher.jpg"
+   ]
+  },
+  {
+   "of": "ornendil",
+   "fam": "person",
+   "f": [
+    "portraits/ornendil.jpg"
+   ]
+  },
+  {
+   "of": "orodreth",
+   "fam": "person",
+   "f": [
+    "portraits/orodreth.jpg"
+   ]
+  },
+  {
+   "of": "orodreth_s",
+   "fam": "person",
+   "f": [
+    "portraits/orodreth_s.jpg"
+   ]
+  },
+  {
+   "of": "orome",
+   "fam": "person",
+   "f": [
+    "portraits/orome.jpg"
+   ]
+  },
+  {
+   "of": "oropher",
+   "fam": "person",
+   "f": [
+    "portraits/oropher.jpg"
+   ]
+  },
+  {
+   "of": "osse",
+   "fam": "person",
+   "f": [
+    "portraits/osse.jpg"
+   ]
+  },
+  {
+   "of": "ostoher",
+   "fam": "person",
+   "f": [
+    "portraits/ostoher.jpg"
+   ]
+  },
+  {
+   "of": "otho",
+   "fam": "person",
+   "f": [
+    "portraits/otho.jpg"
+   ]
+  },
+  {
+   "of": "paladin",
+   "fam": "person",
+   "f": [
+    "portraits/paladin.jpg"
+   ]
+  },
+  {
+   "of": "pelendur",
+   "fam": "person",
+   "f": [
+    "portraits/pelendur.jpg"
+   ]
+  },
+  {
+   "of": "pharazon",
+   "fam": "person",
+   "f": [
+    "portraits/pharazon.jpg"
+   ]
+  },
+  {
+   "of": "pippin",
+   "fam": "person",
+   "f": [
+    "portraits/pippin.jpg"
+   ]
+  },
+  {
+   "of": "primula",
+   "fam": "person",
+   "f": [
+    "portraits/primula.jpg"
+   ]
+  },
+  {
+   "of": "rian",
+   "fam": "person",
+   "f": [
+    "portraits/rian.jpg"
+   ]
+  },
+  {
+   "of": "romendacil1",
+   "fam": "person",
+   "f": [
+    "portraits/romendacil1.jpg"
+   ]
+  },
+  {
+   "of": "romendacil2",
+   "fam": "person",
+   "f": [
+    "portraits/romendacil2.jpg"
+   ]
+  },
+  {
+   "of": "rorimac",
+   "fam": "person",
+   "f": [
+    "portraits/rorimac.jpg"
+   ]
+  },
+  {
+   "of": "rosamunda",
+   "fam": "person",
+   "f": [
+    "portraits/rosamunda.jpg"
+   ]
+  },
+  {
+   "of": "rosie",
+   "fam": "person",
+   "f": [
+    "portraits/rosie.jpg"
+   ]
+  },
+  {
+   "of": "sam",
+   "fam": "person",
+   "f": [
+    "portraits/sam.jpg"
+   ]
+  },
+  {
+   "of": "sangahyando",
+   "fam": "person",
+   "f": [
+    "portraits/sangahyando.jpg"
+   ]
+  },
+  {
+   "of": "saradoc",
+   "fam": "person",
+   "f": [
+    "portraits/saradoc.jpg"
+   ]
+  },
+  {
+   "of": "silmarien",
+   "fam": "person",
+   "f": [
+    "portraits/silmarien.jpg"
+   ]
+  },
+  {
+   "of": "siriondil2",
+   "fam": "person",
+   "f": [
+    "portraits/siriondil2.jpg"
+   ]
+  },
+  {
+   "of": "siriondil_g",
+   "fam": "person",
+   "f": [
+    "portraits/siriondil_g.jpg"
+   ]
+  },
+  {
+   "of": "smeagol",
+   "fam": "person",
+   "f": [
+    "portraits/smeagol.jpg"
+   ]
+  },
+  {
+   "of": "smeagrandma",
+   "fam": "person",
+   "f": [
+    "portraits/smeagrandma.jpg"
+   ]
+  },
+  {
+   "of": "tanta",
+   "fam": "person",
+   "f": [
+    "portraits/tanta.jpg"
+   ]
+  },
+  {
+   "of": "taralcarin",
+   "fam": "person",
+   "f": [
+    "portraits/taralcarin.jpg"
+   ]
+  },
+  {
+   "of": "taraldarion",
+   "fam": "person",
+   "f": [
+    "portraits/taraldarion.jpg"
+   ]
+  },
+  {
+   "of": "taramandil",
+   "fam": "person",
+   "f": [
+    "portraits/taramandil.jpg"
+   ]
+  },
+  {
+   "of": "taranarion",
+   "fam": "person",
+   "f": [
+    "portraits/taranarion.jpg"
+   ]
+  },
+  {
+   "of": "tarancalime",
+   "fam": "person",
+   "f": [
+    "portraits/tarancalime.jpg"
+   ]
+  },
+  {
+   "of": "tarancalimon",
+   "fam": "person",
+   "f": [
+    "portraits/tarancalimon.jpg"
+   ]
+  },
+  {
+   "of": "tarardamin",
+   "fam": "person",
+   "f": [
+    "portraits/tarardamin.jpg"
+   ]
+  },
+  {
+   "of": "taratanamir",
+   "fam": "person",
+   "f": [
+    "portraits/taratanamir.jpg"
+   ]
+  },
+  {
+   "of": "tarcalmacil2",
+   "fam": "person",
+   "f": [
+    "portraits/tarcalmacil2.jpg"
+   ]
+  },
+  {
+   "of": "tarcil",
+   "fam": "person",
+   "f": [
+    "portraits/tarcil.jpg"
+   ]
+  },
+  {
+   "of": "tarciryan",
+   "fam": "person",
+   "f": [
+    "portraits/tarciryan.jpg"
+   ]
+  },
+  {
+   "of": "tarciryatan",
+   "fam": "person",
+   "f": [
+    "portraits/tarciryatan.jpg"
+   ]
+  },
+  {
+   "of": "tarelendil",
+   "fam": "person",
+   "f": [
+    "portraits/tarelendil.jpg"
+   ]
+  },
+  {
+   "of": "tarmeneldur",
+   "fam": "person",
+   "f": [
+    "portraits/tarmeneldur.jpg"
+   ]
+  },
+  {
+   "of": "tarminastir",
+   "fam": "person",
+   "f": [
+    "portraits/tarminastir.jpg"
+   ]
+  },
+  {
+   "of": "tarondor_a",
+   "fam": "person",
+   "f": [
+    "portraits/tarondor_a.jpg"
+   ]
+  },
+  {
+   "of": "tarondor_g",
+   "fam": "person",
+   "f": [
+    "portraits/tarondor_g.jpg"
+   ]
+  },
+  {
+   "of": "tarpalantir",
+   "fam": "person",
+   "f": [
+    "portraits/tarpalantir.jpg"
+   ]
+  },
+  {
+   "of": "tarsurion",
+   "fam": "person",
+   "f": [
+    "portraits/tarsurion.jpg"
+   ]
+  },
+  {
+   "of": "tartelemmaite",
+   "fam": "person",
+   "f": [
+    "portraits/tartelemmaite.jpg"
+   ]
+  },
+  {
+   "of": "tartelperien",
+   "fam": "person",
+   "f": [
+    "portraits/tartelperien.jpg"
+   ]
+  },
+  {
+   "of": "tarvanimelde",
+   "fam": "person",
+   "f": [
+    "portraits/tarvanimelde.jpg"
+   ]
+  },
+  {
+   "of": "telemnar",
+   "fam": "person",
+   "f": [
+    "portraits/telemnar.jpg"
+   ]
+  },
+  {
+   "of": "telumehtar",
+   "fam": "person",
+   "f": [
+    "portraits/telumehtar.jpg"
+   ]
+  },
+  {
+   "of": "thengel",
+   "fam": "person",
+   "f": [
+    "portraits/thengel.jpg"
+   ]
+  },
+  {
+   "of": "theoden",
+   "fam": "person",
+   "f": [
+    "portraits/theoden.jpg"
+   ]
+  },
+  {
+   "of": "theodred",
+   "fam": "person",
+   "f": [
+    "portraits/theodred.jpg"
+   ]
+  },
+  {
+   "of": "theodwyn",
+   "fam": "person",
+   "f": [
+    "portraits/theodwyn.jpg"
+   ]
+  },
+  {
+   "of": "thorin",
+   "fam": "person",
+   "f": [
+    "portraits/thorin.jpg"
+   ]
+  },
+  {
+   "of": "thorin1",
+   "fam": "person",
+   "f": [
+    "portraits/thorin1.jpg"
+   ]
+  },
+  {
+   "of": "thorin3",
+   "fam": "person",
+   "f": [
+    "portraits/thorin3.jpg"
+   ]
+  },
+  {
+   "of": "thorondir",
+   "fam": "person",
+   "f": [
+    "portraits/thorondir.jpg"
+   ]
+  },
+  {
+   "of": "thrain1",
+   "fam": "person",
+   "f": [
+    "portraits/thrain1.jpg"
+   ]
+  },
+  {
+   "of": "thrain2",
+   "fam": "person",
+   "f": [
+    "portraits/thrain2.jpg"
+   ]
+  },
+  {
+   "of": "thranduil",
+   "fam": "person",
+   "f": [
+    "portraits/thranduil.jpg"
+   ]
+  },
+  {
+   "of": "thror",
+   "fam": "person",
+   "f": [
+    "portraits/thror.jpg"
+   ]
+  },
+  {
+   "of": "tolman_c",
+   "fam": "person",
+   "f": [
+    "portraits/tolman_c.jpg"
+   ]
+  },
+  {
+   "of": "tomcotton_y",
+   "fam": "person",
+   "f": [
+    "portraits/tomcotton_y.jpg"
+   ]
+  },
+  {
+   "of": "tulkas",
+   "fam": "person",
+   "f": [
+    "portraits/tulkas.jpg"
+   ]
+  },
+  {
+   "of": "tuor",
+   "fam": "person",
+   "f": [
+    "portraits/tuor.jpg"
+   ]
+  },
+  {
+   "of": "turambar_g",
+   "fam": "person",
+   "f": [
+    "portraits/turambar_g.jpg"
+   ]
+  },
+  {
+   "of": "turgon",
+   "fam": "person",
+   "f": [
+    "portraits/turgon.jpg"
+   ]
+  },
+  {
+   "of": "turgon_s",
+   "fam": "person",
+   "f": [
+    "portraits/turgon_s.jpg"
+   ]
+  },
+  {
+   "of": "turin",
+   "fam": "person",
+   "f": [
+    "portraits/turin.jpg"
+   ]
+  },
+  {
+   "of": "turin1",
+   "fam": "person",
+   "f": [
+    "portraits/turin1.jpg"
+   ]
+  },
+  {
+   "of": "turin2",
+   "fam": "person",
+   "f": [
+    "portraits/turin2.jpg"
+   ]
+  },
+  {
+   "of": "uinen",
+   "fam": "person",
+   "f": [
+    "portraits/uinen.jpg"
+   ]
+  },
+  {
+   "of": "ulmo",
+   "fam": "person",
+   "f": [
+    "portraits/ulmo.jpg"
+   ]
+  },
+  {
+   "of": "vaire",
+   "fam": "person",
+   "f": [
+    "portraits/vaire.jpg"
+   ]
+  },
+  {
+   "of": "valacar",
+   "fam": "person",
+   "f": [
+    "portraits/valacar.jpg"
+   ]
+  },
+  {
+   "of": "valandil_a",
+   "fam": "person",
+   "f": [
+    "portraits/valandil_a.jpg"
+   ]
+  },
+  {
+   "of": "valandil_k",
+   "fam": "person",
+   "f": [
+    "portraits/valandil_k.jpg"
+   ]
+  },
+  {
+   "of": "valandur",
+   "fam": "person",
+   "f": [
+    "portraits/valandur.jpg"
+   ]
+  },
+  {
+   "of": "vana",
+   "fam": "person",
+   "f": [
+    "portraits/vana.jpg"
+   ]
+  },
+  {
+   "of": "varda",
+   "fam": "person",
+   "f": [
+    "portraits/varda.jpg"
+   ]
+  },
+  {
+   "of": "vardamir",
+   "fam": "person",
+   "f": [
+    "portraits/vardamir.jpg"
+   ]
+  },
+  {
+   "of": "veantur",
+   "fam": "person",
+   "f": [
+    "portraits/veantur.jpg"
+   ]
+  },
+  {
+   "of": "vidugavia",
+   "fam": "person",
+   "f": [
+    "portraits/vidugavia.jpg"
+   ]
+  },
+  {
+   "of": "vidumavi",
+   "fam": "person",
+   "f": [
+    "portraits/vidumavi.jpg"
+   ]
+  },
+  {
+   "of": "vorondil",
+   "fam": "person",
+   "f": [
+    "portraits/vorondil.jpg"
+   ]
+  },
+  {
+   "of": "voronwe",
+   "fam": "person",
+   "f": [
+    "portraits/voronwe.jpg"
+   ]
+  },
+  {
+   "of": "walda",
+   "fam": "person",
+   "f": [
+    "portraits/walda.jpg"
+   ]
+  },
+  {
+   "of": "yavanna",
+   "fam": "person",
+   "f": [
+    "portraits/yavanna.jpg"
+   ]
+  },
+  {
+   "of": "amon_rudh",
+   "fam": "place",
+   "f": [
+    "art/bot_aeglos.jpg",
+    "art/bot_seregon.jpg"
+   ]
+  },
+  {
+   "of": "barad_dur",
+   "fam": "place",
+   "f": [
+    "art/pl_baraddur.jpg"
+   ]
+  },
+  {
+   "of": "brithombar",
+   "fam": "place",
+   "f": [
+    "art/kit_falas.jpg"
+   ]
+  },
+  {
+   "of": "caras_galadhon",
+   "fam": "place",
+   "f": [
+    "art/bot_mallorn.jpg",
+    "art/kit_galadhrim.jpg"
+   ]
+  },
+  {
+   "of": "cirith_ungol",
+   "fam": "place",
+   "f": [
+    "art/zoo_shelob.jpg"
+   ]
+  },
+  {
+   "of": "dol_amroth",
+   "fam": "place",
+   "f": [
+    "heraldry/swan.svg",
+    "art/kit_swan.jpg"
+   ]
+  },
+  {
+   "of": "edoras",
+   "fam": "place",
+   "f": [
+    "art/kit_meduseld.jpg",
+    "art/bot_simbelmyne.jpg"
+   ]
+  },
+  {
+   "of": "eglarest",
+   "fam": "place",
+   "f": [
+    "art/kit_falas.jpg"
+   ]
+  },
+  {
+   "of": "ered_gorgoroth",
+   "fam": "place",
+   "f": [
+    "art/zoo_shelob.jpg"
+   ]
+  },
+  {
+   "of": "ettenmoors",
+   "fam": "place",
+   "f": [
+    "art/zoo_troll.jpg"
+   ]
+  },
+  {
+   "of": "gladden_fields",
+   "fam": "place",
+   "f": [
+    "art/it_onering.jpg"
+   ]
+  },
+  {
+   "of": "ice_bay_of_forochel",
+   "fam": "place",
+   "f": [
+    "art/it_palantir.jpg"
+   ]
+  },
+  {
+   "of": "isle_of_balar",
+   "fam": "place",
+   "f": [
+    "art/kit_falas.jpg"
+   ]
+  },
+  {
+   "of": "menegroth",
+   "fam": "place",
+   "f": [
+    "art/pl_menegroth.jpg"
+   ]
+  },
+  {
+   "of": "minas_morgul",
+   "fam": "place",
+   "f": [
+    "heraldry/morgul.svg"
+   ]
+  },
+  {
+   "of": "minas_tirith",
+   "fam": "place",
+   "f": [
+    "art/pl_minastirith.jpg"
+   ]
+  },
+  {
+   "of": "nan_elmoth",
+   "fam": "place",
+   "f": [
+    "art/it_anglachel.jpg"
+   ]
+  },
+  {
+   "of": "osgiliath",
+   "fam": "place",
+   "f": [
+    "art/it_palantir.jpg"
+   ]
+  },
+  {
+   "of": "ost_in_edhil",
+   "fam": "place",
+   "f": [
+    "art/it_threerings.jpg",
+    "art/it_sevennine.jpg"
+   ]
+  },
+  {
+   "of": "sea_of_rhun",
+   "fam": "place",
+   "f": [
+    "art/zoo_kine_araw.jpg",
+    "art/kit_wainrider.jpg"
+   ]
+  },
+  {
+   "of": "the_argonath",
+   "fam": "place",
+   "f": [
+    "art/pl_argonath.jpg"
+   ]
+  },
+  {
+   "of": "the_carrock",
+   "fam": "place",
+   "f": [
+    "art/kit_beorning.jpg",
+    "art/zoo_eagles.jpg"
+   ]
+  },
+  {
+   "of": "the_elvenking_s_halls",
+   "fam": "place",
+   "f": [
+    "art/kit_silvan.jpg"
+   ]
+  },
+  {
+   "of": "the_iron_hills",
+   "fam": "place",
+   "f": [
+    "art/kit_ironhills.jpg"
+   ]
+  },
+  {
+   "of": "tol_sirion",
+   "fam": "place",
+   "f": [
+    "art/zoo_werewolf.jpg"
+   ]
+  },
+  {
+   "of": "tower_hills",
+   "fam": "place",
+   "f": [
+    "art/it_palantir.jpg"
+   ]
+  },
+  {
+   "of": "trollshaws",
+   "fam": "place",
+   "f": [
+    "art/zoo_troll.jpg"
+   ]
+  },
+  {
+   "of": "weathertop",
+   "fam": "place",
+   "f": [
+    "art/it_palantir.jpg"
+   ]
+  },
+  {
+   "of": "withered_heath",
+   "fam": "place",
+   "f": [
+    "art/zoo_colddrake.jpg"
+   ]
+  },
+  {
+   "of": "alqualonde",
+   "fam": "realm",
+   "f": [
+    "art/zoo_swans.jpg"
+   ]
+  },
+  {
+   "of": "angband",
+   "fam": "realm",
+   "f": [
+    "art/kit_orc_angband.jpg"
+   ]
+  },
+  {
+   "of": "arnor",
+   "fam": "realm",
+   "f": [
+    "art/kit_arnor.jpg"
+   ]
+  },
+  {
+   "of": "arthedain",
+   "fam": "realm",
+   "f": [
+    "art/kit_arnor.jpg"
+   ]
+  },
+  {
+   "of": "balar",
+   "fam": "realm",
+   "f": [
+    "art/kit_falas.jpg"
+   ]
+  },
+  {
+   "of": "belegost",
+   "fam": "realm",
+   "f": [
+    "art/kit_belegost.jpg"
+   ]
+  },
+  {
+   "of": "beornings",
+   "fam": "realm",
+   "f": [
+    "art/kit_beorning.jpg"
+   ]
+  },
+  {
+   "of": "brethil",
+   "fam": "realm",
+   "f": [
+    "art/kit_haleth.jpg"
+   ]
+  },
+  {
+   "of": "dale",
+   "fam": "realm",
+   "f": [
+    "art/kit_dale.jpg"
+   ]
+  },
+  {
+   "of": "doriath",
+   "fam": "realm",
+   "f": [
+    "art/kit_doriath.jpg"
+   ]
+  },
+  {
+   "of": "dorlomin",
+   "fam": "realm",
+   "f": [
+    "art/kit_hador.jpg"
+   ]
+  },
+  {
+   "of": "dunland",
+   "fam": "realm",
+   "f": [
+    "art/kit_dunland.jpg"
+   ]
+  },
+  {
+   "of": "easterlingsfa",
+   "fam": "realm",
+   "f": [
+    "art/kit_ulfang.jpg"
+   ]
+  },
+  {
+   "of": "erebor",
+   "fam": "realm",
+   "f": [
+    "art/kit_erebor.jpg",
+    "art/pl_erebor.jpg"
+   ]
+  },
+  {
+   "of": "eregion",
+   "fam": "realm",
+   "f": [
+    "art/it_threerings.jpg",
+    "art/it_sevennine.jpg"
+   ]
+  },
+  {
+   "of": "falas",
+   "fam": "realm",
+   "f": [
+    "art/kit_falas.jpg"
+   ]
+  },
+  {
+   "of": "fangorn",
+   "fam": "realm",
+   "f": [
+    "art/cr_ent.jpg",
+    "art/zoo_ent.jpg",
+    "art/zoo_huorn.jpg"
+   ]
+  },
+  {
+   "of": "gondolin",
+   "fam": "realm",
+   "f": [
+    "art/kit_fountain.jpg",
+    "art/kit_gondolin.jpg",
+    "art/pl_gondolin.jpg"
+   ]
+  },
+  {
+   "of": "gondor",
+   "fam": "realm",
+   "f": [
+    "art/kit_gondor.jpg",
+    "art/kit_gondor_line.jpg"
+   ]
+  },
+  {
+   "of": "greenwood",
+   "fam": "realm",
+   "f": [
+    "art/kit_greenwood.jpg",
+    "art/kit_silvan.jpg"
+   ]
+  },
+  {
+   "of": "harad",
+   "fam": "realm",
+   "f": [
+    "art/kit_harad.jpg",
+    "art/kit_mumak.jpg"
+   ]
+  },
+  {
+   "of": "hithlum",
+   "fam": "realm",
+   "f": [
+    "art/kit_noldor_hithlum.jpg"
+   ]
+  },
+  {
+   "of": "ironhills",
+   "fam": "realm",
+   "f": [
+    "art/kit_ironhills.jpg"
+   ]
+  },
+  {
+   "of": "isengard",
+   "fam": "realm",
+   "f": [
+    "art/kit_uruk.jpg"
+   ]
+  },
+  {
+   "of": "khand",
+   "fam": "realm",
+   "f": [
+    "art/kit_variag.jpg"
+   ]
+  },
+  {
+   "of": "khazaddum",
+   "fam": "realm",
+   "f": [
+    "heraldry/illustrated/durin.png"
+   ]
+  },
+  {
+   "of": "ladros",
+   "fam": "realm",
+   "f": [
+    "art/kit_beor.jpg"
+   ]
+  },
+  {
+   "of": "lindon",
+   "fam": "realm",
+   "f": [
+    "art/kit_lastalliance.jpg"
+   ]
+  },
+  {
+   "of": "lorien",
+   "fam": "realm",
+   "f": [
+    "art/kit_galadhrim.jpg"
+   ]
+  },
+  {
+   "of": "mistyorcs",
+   "fam": "realm",
+   "f": [
+    "art/kit_moria.jpg"
+   ]
+  },
+  {
+   "of": "mordor",
+   "fam": "realm",
+   "f": [
+    "art/kit_mordor.jpg",
+    "art/kit_olog.jpg"
+   ]
+  },
+  {
+   "of": "morgul",
+   "fam": "realm",
+   "f": [
+    "heraldry/morgul.svg"
+   ]
+  },
+  {
+   "of": "nogrod",
+   "fam": "realm",
+   "f": [
+    "art/kit_nogrod.jpg"
+   ]
+  },
+  {
+   "of": "numenor",
+   "fam": "realm",
+   "f": [
+    "art/kit_numenor.jpg",
+    "art/kit_numenor_marine.jpg"
+   ]
+  },
+  {
+   "of": "rhun",
+   "fam": "realm",
+   "f": [
+    "art/kit_easterling.jpg",
+    "art/kit_wainrider.jpg"
+   ]
+  },
+  {
+   "of": "rivendell",
+   "fam": "realm",
+   "f": [
+    "art/kit_rivendell.jpg"
+   ]
+  },
+  {
+   "of": "rohan",
+   "fam": "realm",
+   "f": [
+    "art/kit_meduseld.jpg",
+    "art/kit_rohan.jpg"
+   ]
+  },
+  {
+   "of": "shire",
+   "fam": "realm",
+   "f": [
+    "art/bot_pipeweed.jpg"
+   ]
+  },
+  {
+   "of": "tirion",
+   "fam": "realm",
+   "f": [
+    "art/bot_galathilion.jpg"
+   ]
+  },
+  {
+   "of": "umbar",
+   "fam": "realm",
+   "f": [
+    "art/kit_corsair.jpg"
+   ]
+  },
+  {
+   "of": "valinor",
+   "fam": "realm",
+   "f": [
+    "valinor.svg",
+    "art/bot_telperion.jpg",
+    "art/bot_laurelin.jpg"
+   ]
+  },
+  {
+   "of": "woodmen",
+   "fam": "realm",
+   "f": [
+    "art/kit_woodmen.jpg"
+   ]
+  }
+ ],
+ "why_realm": "A realm in this archive is a PEOPLE as much as a ground, which is why a plate of a realm's own soldier illustrates it. Every realm binding here is DERIVED rather than remembered: the plate's own prompt in arda_soldier_prompts / arda_bestiary_prompts / arda_herbarium_prompts / arda_artifact_prompts names the realm, or arda_realms' own `race`, `aka` or `phases` field names the folk, tree or device the plate depicts. Where neither dataset makes the join, nothing is bound -- a plate chosen because it felt apt is a claim about what a thing LOOKED like, made without evidence.",
+ "why_place": "A place binding is made only where THIS ARCHIVE'S OWN gazetteer note, or the plate's own prompt, names the thing depicted as belonging to that place -- Shelob's tunnel and the Stairs of Cirith Ungol, Sauron's werewolf-keep at Tol Sirion, the chief palantir stood under its Dome of Stars at Osgiliath. A creature, plant, artefact or soldier bound this way is NOT a view of the place and must be captioned with its own subject from arda_assets, never as a picture of the route. THE ARCHIVE STILL HOLDS ONLY SIX ARCHITECTURAL VIEWS of any place -- art/pl_*.jpg -- and that is the real gap; it is closed by rendering arda_place_prompts, whose population is ten hand-typed rows against 168 MAN_MADE places (map/gen_place_prompts.py --candidates), and not by binding harder."
+}

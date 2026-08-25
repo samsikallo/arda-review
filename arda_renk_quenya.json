@@ -1,0 +1,1804 @@
+{
+ "what": "Quenya vocabulary mined from Thorsten Renk's course, tier 3.",
+ "source": "corpus/t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
+ "scope": "ONLY the VOCABULARY tables. Renk's GRAMMAR is his reconstruction -- a teaching grammar systematises what Tolkien left unfinished, and where it fills a gap it is Renk's rule and not Tolkien's. The word lists are where he reports attested forms with glosses.",
+ "conf": "[EXT]",
+ "conf_note": "[EXT] on every row -- it rests on Renk's reading.",
+ "n_entries": 252,
+ "words": [
+  {
+   "form": "alda",
+   "lang": "Quenya",
+   "gloss": "tree",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "meldo",
+   "lang": "Quenya",
+   "gloss": "friend",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ar",
+   "lang": "Quenya",
+   "gloss": "and",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mer-",
+   "lang": "Quenya",
+   "gloss": "to wish, to desire",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "aran",
+   "lang": "Quenya",
+   "gloss": "king",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ata",
+   "lang": "Quenya",
+   "gloss": "again",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cen-",
+   "lang": "Quenya",
+   "gloss": "to see",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hauta-",
+   "lang": "Quenya",
+   "gloss": "to stop",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nu",
+   "lang": "Quenya",
+   "gloss": "under, beneath",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hilya-",
+   "lang": "Quenya",
+   "gloss": "to follow",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ora-",
+   "lang": "Quenya",
+   "gloss": "to urge, to impel",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pol-",
+   "lang": "Quenya",
+   "gloss": "can, to be able to",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "quet-",
+   "lang": "Quenya",
+   "gloss": "to speak",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lanta-",
+   "lang": "Quenya",
+   "gloss": "to fall",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ranco",
+   "lang": "Quenya",
+   "gloss": "arm",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "pl.: ranqui",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "lelya-",
+   "lang": "Quenya",
+   "gloss": "to go, to travel",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tir-",
+   "lang": "Quenya",
+   "gloss": "to watch",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tul-",
+   "lang": "Quenya",
+   "gloss": "to come",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "na",
+   "lang": "Quenya",
+   "gloss": "to, towards",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ando",
+   "lang": "Quenya",
+   "gloss": "gate",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nan",
+   "lang": "Quenya",
+   "gloss": "but, however",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "Anar",
+   "lang": "Quenya",
+   "gloss": "sun",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nat",
+   "lang": "Quenya",
+   "gloss": "thing",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "anda",
+   "lang": "Quenya",
+   "gloss": "long",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "Noldoiva",
+   "lang": "Quenya",
+   "gloss": "belonging to the Noldor",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "calima",
+   "lang": "Quenya",
+   "gloss": "bright",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "norno",
+   "lang": "Quenya",
+   "gloss": "oak",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "casar",
+   "lang": "Quenya",
+   "gloss": "dwarf",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "elda",
+   "lang": "Quenya",
+   "gloss": "elf",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "orco",
+   "lang": "Quenya",
+   "gloss": "orc",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hen",
+   "lang": "Quenya",
+   "gloss": "eye",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "hend-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "oron",
+   "lang": "Quenya",
+   "gloss": "mountain",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "oront-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "osto",
+   "lang": "Quenya",
+   "gloss": "fortress, town",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ilya",
+   "lang": "Quenya",
+   "gloss": "all",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "laica",
+   "lang": "Quenya",
+   "gloss": "green",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ranya-",
+   "lang": "Quenya",
+   "gloss": "to wander",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rimba",
+   "lang": "Quenya",
+   "gloss": "much",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "linta",
+   "lang": "Quenya",
+   "gloss": "swift",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ringa",
+   "lang": "Quenya",
+   "gloss": "cold",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "linyenwa",
+   "lang": "Quenya",
+   "gloss": "old",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "sil-",
+   "lang": "Quenya",
+   "gloss": "to shine",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "maica",
+   "lang": "Quenya",
+   "gloss": "sharp",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "maita",
+   "lang": "Quenya",
+   "gloss": "hungry",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "telco",
+   "lang": "Quenya",
+   "gloss": "leg",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "Pl. telqui",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "melin",
+   "lang": "Quenya",
+   "gloss": "dear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "metta",
+   "lang": "Quenya",
+   "gloss": "end",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tulca",
+   "lang": "Quenya",
+   "gloss": "strong",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vanya",
+   "lang": "Quenya",
+   "gloss": "beautiful",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "wil-",
+   "lang": "Quenya",
+   "gloss": "to fly",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "alcar",
+   "lang": "Quenya",
+   "gloss": "splendour, glory",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mindon",
+   "lang": "Quenya",
+   "gloss": "tower",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "alta",
+   "lang": "Quenya",
+   "gloss": "tall, high",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "anga",
+   "lang": "Quenya",
+   "gloss": "iron",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "calma",
+   "lang": "Quenya",
+   "gloss": "lamp",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ohtar",
+   "lang": "Quenya",
+   "gloss": "warrior",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cirya",
+   "lang": "Quenya",
+   "gloss": "ship",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ondo",
+   "lang": "Quenya",
+   "gloss": "stone",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "coa",
+   "lang": "Quenya",
+   "gloss": "house",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "quenta",
+   "lang": "Quenya",
+   "gloss": "tale",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ramba",
+   "lang": "Quenya",
+   "gloss": "wall",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "elen",
+   "lang": "Quenya",
+   "gloss": "star",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "taura",
+   "lang": "Quenya",
+   "gloss": "mighty",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "faina-",
+   "lang": "Quenya",
+   "gloss": "to emit light",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "heru",
+   "lang": "Quenya",
+   "gloss": "lord",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "toa",
+   "lang": "Quenya",
+   "gloss": "wood",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "indis",
+   "lang": "Quenya",
+   "gloss": "wife",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "varya-",
+   "lang": "Quenya",
+   "gloss": "to protect",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vinya",
+   "lang": "Quenya",
+   "gloss": "new",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "macil",
+   "lang": "Quenya",
+   "gloss": "sword",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cap-",
+   "lang": "Quenya",
+   "gloss": "to jump",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "car-",
+   "lang": "Quenya",
+   "gloss": "to do",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cotumo",
+   "lang": "Quenya",
+   "gloss": "enemy",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "farya-",
+   "lang": "Quenya",
+   "gloss": "to suffice",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lasta-",
+   "lang": "Quenya",
+   "gloss": "to hear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mahta-",
+   "lang": "Quenya",
+   "gloss": "to fight",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mapa-",
+   "lang": "Quenya",
+   "gloss": "to seize",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nyar-",
+   "lang": "Quenya",
+   "gloss": "to tell",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "senda",
+   "lang": "Quenya",
+   "gloss": "at peace",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tec-",
+   "lang": "Quenya",
+   "gloss": "to write",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tielyanna",
+   "lang": "Quenya",
+   "gloss": "upon your path",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "yulma",
+   "lang": "Quenya",
+   "gloss": "cup",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mel-",
+   "lang": "Quenya",
+   "gloss": "to love",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "arda",
+   "lang": "Quenya",
+   "gloss": "realm, region",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nauco",
+   "lang": "Quenya",
+   "gloss": "dwarf",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "caita-",
+   "lang": "Quenya",
+   "gloss": "to lie (on ground)",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cala",
+   "lang": "Quenya",
+   "gloss": "light",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ohta",
+   "lang": "Quenya",
+   "gloss": "war",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "callo",
+   "lang": "Quenya",
+   "gloss": "hero",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "olor",
+   "lang": "Quenya",
+   "gloss": "dream",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "palla",
+   "lang": "Quenya",
+   "gloss": "wide",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pusta-",
+   "lang": "Quenya",
+   "gloss": "to stop",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "saila",
+   "lang": "Quenya",
+   "gloss": "wise",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "harya-",
+   "lang": "Quenya",
+   "gloss": "to have, to possess",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hir-",
+   "lang": "Quenya",
+   "gloss": "to find",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "sinta",
+   "lang": "Quenya",
+   "gloss": "short",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "th-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "tanca",
+   "lang": "Quenya",
+   "gloss": "firm, fixed, sure",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ista-",
+   "lang": "Quenya",
+   "gloss": "to know",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tur-",
+   "lang": "Quenya",
+   "gloss": "to wield, to control, to govern",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "linda-",
+   "lang": "Quenya",
+   "gloss": "to sing",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mar-",
+   "lang": "Quenya",
+   "gloss": "to abide, to be settled",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vanwa",
+   "lang": "Quenya",
+   "gloss": "gone, past",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "alarca",
+   "lang": "Quenya",
+   "gloss": "swift, rushing",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "alasaila",
+   "lang": "Quenya",
+   "gloss": "unwise",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "en-",
+   "lang": "Quenya",
+   "gloss": "prefix re-, again",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "quen",
+   "lang": "Quenya",
+   "gloss": "someone",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "fir-",
+   "lang": "Quenya",
+   "gloss": "to die",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "Formen",
+   "lang": "Quenya",
+   "gloss": "North",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hilyala",
+   "lang": "Quenya",
+   "gloss": "following",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "talan",
+   "lang": "Quenya",
+   "gloss": "floor",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "talam-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "Hyarmen",
+   "lang": "Quenya",
+   "gloss": "South",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tinco",
+   "lang": "Quenya",
+   "gloss": "metal",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "Isil",
+   "lang": "Quenya",
+   "gloss": "the moon",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "toron",
+   "lang": "Quenya",
+   "gloss": "brother",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "torn-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "lamma",
+   "lang": "Quenya",
+   "gloss": "sound",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "yondo",
+   "lang": "Quenya",
+   "gloss": "son",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ambo",
+   "lang": "Quenya",
+   "gloss": "hill",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "horta-",
+   "lang": "Quenya",
+   "gloss": "to let fly, to send flying",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "anta-",
+   "lang": "Quenya",
+   "gloss": "to give",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mac-",
+   "lang": "Quenya",
+   "gloss": "to slay",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "atan",
+   "lang": "Quenya",
+   "gloss": "man, human",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "muina",
+   "lang": "Quenya",
+   "gloss": "hidden, secret",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "atta",
+   "lang": "Quenya",
+   "gloss": "two",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nuhta-",
+   "lang": "Quenya",
+   "gloss": "to stunt, to stop short",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "auta-",
+   "lang": "Quenya",
+   "gloss": "to go away, to leave",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cainen",
+   "lang": "Quenya",
+   "gloss": "ten",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "palan",
+   "lang": "Quenya",
+   "gloss": "far, wide",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "foina",
+   "lang": "Quenya",
+   "gloss": "hidden",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pilin",
+   "lang": "Quenya",
+   "gloss": "arrow",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "pilind-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "sir-",
+   "lang": "Quenya",
+   "gloss": "flow",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "harma",
+   "lang": "Quenya",
+   "gloss": "trasure",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "verya",
+   "lang": "Quenya",
+   "gloss": "bold",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "estel",
+   "lang": "Quenya",
+   "gloss": "hope",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "har-",
+   "lang": "Quenya",
+   "gloss": "to sit",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "massa",
+   "lang": "Quenya",
+   "gloss": "bread",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mat-",
+   "lang": "Quenya",
+   "gloss": "eat",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "parma",
+   "lang": "Quenya",
+   "gloss": "book",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "usta-",
+   "lang": "Quenya",
+   "gloss": "to burn (something)",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "apsen-",
+   "lang": "Quenya",
+   "gloss": "to forgive",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "arinya",
+   "lang": "Quenya",
+   "gloss": "early",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cuiva-",
+   "lang": "Quenya",
+   "gloss": "to awaken",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "roita-",
+   "lang": "Quenya",
+   "gloss": "to hunt, to pursue",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ruc-",
+   "lang": "Quenya",
+   "gloss": "to fear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tulya",
+   "lang": "Quenya",
+   "gloss": "to lead into",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "voronwa",
+   "lang": "Quenya",
+   "gloss": "enduring, long-lasting",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "anwa",
+   "lang": "Quenya",
+   "gloss": "real, actual, true",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "malda",
+   "lang": "Quenya",
+   "gloss": "more",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cilya",
+   "lang": "Quenya",
+   "gloss": "gorge, cleft, pass",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "minya",
+   "lang": "Quenya",
+   "gloss": "first",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "eala",
+   "lang": "Quenya",
+   "gloss": "spirit",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "halda",
+   "lang": "Quenya",
+   "gloss": "veiled, hidden",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "oronta",
+   "lang": "Quenya",
+   "gloss": "steep",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "harnaina",
+   "lang": "Quenya",
+   "gloss": "wounded",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hlar-",
+   "lang": "Quenya",
+   "gloss": "to hear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "quetta",
+   "lang": "Quenya",
+   "gloss": "word",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lenca",
+   "lang": "Quenya",
+   "gloss": "slow",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "umbar",
+   "lang": "Quenya",
+   "gloss": "doom",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "umbart-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "alya",
+   "lang": "Quenya",
+   "gloss": "rich, blessed",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "apa",
+   "lang": "Quenya",
+   "gloss": "behind, in the rear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "et",
+   "lang": "Quenya",
+   "gloss": "out of",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "firin",
+   "lang": "Quenya",
+   "gloss": "dead",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hosta-",
+   "lang": "Quenya",
+   "gloss": "to gather",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lumbo",
+   "lang": "Quenya",
+   "gloss": "cloud",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "men",
+   "lang": "Quenya",
+   "gloss": "way; place, spot",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "or",
+   "lang": "Quenya",
+   "gloss": "above",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pitya",
+   "lang": "Quenya",
+   "gloss": "small",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rondo",
+   "lang": "Quenya",
+   "gloss": "cave",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tyelca",
+   "lang": "Quenya",
+   "gloss": "swift, agile, hasty",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "valarauco",
+   "lang": "Quenya",
+   "gloss": "balrog",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "aica",
+   "lang": "Quenya",
+   "gloss": "sharp",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "asto",
+   "lang": "Quenya",
+   "gloss": "dust",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "fum-",
+   "lang": "Quenya",
+   "gloss": "sleep",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lala-",
+   "lang": "Quenya",
+   "gloss": "laugh",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "sarna",
+   "lang": "Quenya",
+   "gloss": "stony",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "telta-",
+   "lang": "Quenya",
+   "gloss": "to overshadow, to screen",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ango",
+   "lang": "Quenya",
+   "gloss": "snake",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "U-stem",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "enwina",
+   "lang": "Quenya",
+   "gloss": "old",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mando",
+   "lang": "Quenya",
+   "gloss": "custody, prison",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mindo",
+   "lang": "Quenya",
+   "gloss": "tower",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rusco",
+   "lang": "Quenya",
+   "gloss": "fox",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "U-stem",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "tarma",
+   "lang": "Quenya",
+   "gloss": "pillar",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tumna",
+   "lang": "Quenya",
+   "gloss": "deep, hidden",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "urco",
+   "lang": "Quenya",
+   "gloss": "bogey, orc",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "U-stem",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "vilya",
+   "lang": "Quenya",
+   "gloss": "sky",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hesta-",
+   "lang": "Quenya",
+   "gloss": "wither",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "laman",
+   "lang": "Quenya",
+   "gloss": "animal",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "lamn-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "tarna",
+   "lang": "Quenya",
+   "gloss": "pass",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nelet",
+   "lang": "Quenya",
+   "gloss": "tooth",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tin-",
+   "lang": "Quenya",
+   "gloss": "glint",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tuc-",
+   "lang": "Quenya",
+   "gloss": "to draw",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "olva",
+   "lang": "Quenya",
+   "gloss": "plant",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tuv-",
+   "lang": "Quenya",
+   "gloss": "to find",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "orta",
+   "lang": "Quenya",
+   "gloss": "to raise, to rise",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "cenima",
+   "lang": "Quenya",
+   "gloss": "visible",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "palu-",
+   "lang": "Quenya",
+   "gloss": "to open wide",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "papa-",
+   "lang": "Quenya",
+   "gloss": "to tremble",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pata-",
+   "lang": "Quenya",
+   "gloss": "to tap",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hlapu-",
+   "lang": "Quenya",
+   "gloss": "to fly, to stream in wind",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rer-",
+   "lang": "Quenya",
+   "gloss": "to sow",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rilma",
+   "lang": "Quenya",
+   "gloss": "glittering light",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hwinia-",
+   "lang": "Quenya",
+   "gloss": "to whirl",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ser-",
+   "lang": "Quenya",
+   "gloss": "to rest",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hyar-",
+   "lang": "Quenya",
+   "gloss": "to cleave",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "serta-",
+   "lang": "Quenya",
+   "gloss": "to bind",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lav-",
+   "lang": "Quenya",
+   "gloss": "to lick",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tinta-",
+   "lang": "Quenya",
+   "gloss": "to kindle",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mauya-",
+   "lang": "Quenya",
+   "gloss": "to be necessary, to impel",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tiuya-",
+   "lang": "Quenya",
+   "gloss": "to swell, to grow fat",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mirilya-",
+   "lang": "Quenya",
+   "gloss": "to glitter",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "mitya",
+   "lang": "Quenya",
+   "gloss": "inner",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nicu-",
+   "lang": "Quenya",
+   "gloss": "to be cold",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tyav-",
+   "lang": "Quenya",
+   "gloss": "to taste",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nir-",
+   "lang": "Quenya",
+   "gloss": "to press, to thrust, to force",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ulya-",
+   "lang": "Quenya",
+   "gloss": "to pour",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "nurru-",
+   "lang": "Quenya",
+   "gloss": "to murmur",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "yerya-",
+   "lang": "Quenya",
+   "gloss": "to wear, to age",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "onta-",
+   "lang": "Quenya",
+   "gloss": "to create, to beget",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "falasta-",
+   "lang": "Quenya",
+   "gloss": "to foam",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "falma",
+   "lang": "Quenya",
+   "gloss": "wave",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tyar-",
+   "lang": "Quenya",
+   "gloss": "to cause",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "horma",
+   "lang": "Quenya",
+   "gloss": "horde, host",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "intya",
+   "lang": "Quenya",
+   "gloss": "idea",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "valto",
+   "lang": "Quenya",
+   "gloss": "good fortune",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lamya",
+   "lang": "Quenya",
+   "gloss": "sound, ring",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "yal-",
+   "lang": "Quenya",
+   "gloss": "to call, to summon",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "aiquen",
+   "lang": "Quenya",
+   "gloss": "if anyone",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lauca",
+   "lang": "Quenya",
+   "gloss": "warm",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lerta-",
+   "lang": "Quenya",
+   "gloss": "to be free to",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "loa",
+   "lang": "Quenya",
+   "gloss": "year",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lusta",
+   "lang": "Quenya",
+   "gloss": "empty",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "pahta",
+   "lang": "Quenya",
+   "gloss": "closed",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "us-",
+   "lang": "Quenya",
+   "gloss": "escape",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vanda",
+   "lang": "Quenya",
+   "gloss": "oath",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vista",
+   "lang": "Quenya",
+   "gloss": "air (as substance)",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hanya-",
+   "lang": "Quenya",
+   "gloss": "to understand",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ohtacar-",
+   "lang": "Quenya",
+   "gloss": "to make war",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "aira",
+   "lang": "Quenya",
+   "gloss": "holy",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "lir-",
+   "lang": "Quenya",
+   "gloss": "to sing",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "alma",
+   "lang": "Quenya",
+   "gloss": "good fortune, wealth",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "aqua",
+   "lang": "Quenya",
+   "gloss": "fully, completely",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "axa",
+   "lang": "Quenya",
+   "gloss": "narrow path, ravine",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "rauco",
+   "lang": "Quenya",
+   "gloss": "demon",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "col-",
+   "lang": "Quenya",
+   "gloss": "to carry, to bear, to wear",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "saura",
+   "lang": "Quenya",
+   "gloss": "foul, evil smelling",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "th-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "furin",
+   "lang": "Quenya",
+   "gloss": "hidden, secret",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "selma",
+   "lang": "Quenya",
+   "gloss": "fixed idea, will",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)",
+   "stem": "th-",
+   "stem_note": "the source prints this stem beside the headword; every inflection is built on it, so dropping it would lose the form the grammar actually uses"
+  },
+  {
+   "form": "halya-",
+   "lang": "Quenya",
+   "gloss": "to veil, to conceal",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tana-",
+   "lang": "Quenya",
+   "gloss": "to show, to indicate",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "hehta-",
+   "lang": "Quenya",
+   "gloss": "to abandon, to forsake",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "vesta-",
+   "lang": "Quenya",
+   "gloss": "to marry",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "ambar",
+   "lang": "Quenya",
+   "gloss": "world",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "tennoio",
+   "lang": "Quenya",
+   "gloss": "forever",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  },
+  {
+   "form": "yando",
+   "lang": "Quenya",
+   "gloss": "also",
+   "conf": "[EXT]",
+   "cite": "Renk, Quetin i lambë eldaiva, a Quenya course, v1.10 (2004)"
+  }
+ ]
+}

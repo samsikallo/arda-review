@@ -1,0 +1,398 @@
+{
+ "halls": {
+  "ainur.html": {
+   "book_h": 625,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 58,
+   "leaves_seen": [
+    58,
+    null
+   ],
+   "matter_px": 561,
+   "openings": 29,
+   "openings_seen": [
+    29,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Ainur",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 561,
+   "win": 900
+  },
+  "annals.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/annals.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "arda_timeline.html": {
+   "book_h": 648,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 2262,
+   "leaves": 2,
+   "leaves_seen": [
+    2,
+    null
+   ],
+   "matter_px": 0,
+   "openings": 1,
+   "openings_seen": [
+    1,
+    null
+   ],
+   "paginated": false,
+   "rubric": "The Chronology of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": false,
+   "spread_h": 584,
+   "win": 900
+  },
+  "armies_dashboard.html": {
+   "book_h": 595,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1115,
+   "leaves": 58,
+   "leaves_seen": [
+    58,
+    null
+   ],
+   "matter_px": 531,
+   "openings": 29,
+   "openings_seen": [
+    29,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Armies of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 531,
+   "win": 900
+  },
+  "artifacts.html": {
+   "err": "Page.evaluate: Target crashed "
+  },
+  "baynes.html": {
+   "book_h": 625,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 30,
+   "leaves_seen": [
+    30,
+    null
+   ],
+   "matter_px": 561,
+   "openings": 15,
+   "openings_seen": [
+    15,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Marked Sheet",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 561,
+   "win": 900
+  },
+  "canon.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/canon.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "character.html": {
+   "book_h": 658,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 16,
+   "leaves_seen": [
+    16,
+    null
+   ],
+   "matter_px": 594,
+   "openings": 8,
+   "openings_seen": [
+    8,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Record",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 594,
+   "win": 900
+  },
+  "corpus.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/corpus.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "cosmology.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/cosmology.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "gallery.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/gallery.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "gazetteer.html": {
+   "book_h": 687,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 6,
+   "leaves_seen": [
+    6,
+    null
+   ],
+   "matter_px": 623,
+   "openings": 3,
+   "openings_seen": [
+    3,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Gazetteer of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 623,
+   "win": 900
+  },
+  "genealogy.html": {
+   "book_h": 560,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1677,
+   "leaves": 2,
+   "leaves_seen": [
+    2,
+    null
+   ],
+   "matter_px": 0,
+   "openings": 1,
+   "openings_seen": [
+    1,
+    null
+   ],
+   "paginated": false,
+   "rubric": "The Family Trees of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": false,
+   "spread_h": 496,
+   "win": 900
+  },
+  "gondolin.html": {
+   "book_h": 655,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 22,
+   "leaves_seen": [
+    22,
+    null
+   ],
+   "matter_px": 591,
+   "openings": 11,
+   "openings_seen": [
+    11,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Twelve Houses of Gondolin",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 591,
+   "win": 900
+  },
+  "heraldry.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/heraldry.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "index.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/index.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "languages.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/languages.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "living.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/living.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "names.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/names.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "oaths.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/oaths.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "place.html": {
+   "book_h": 658,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 16,
+   "leaves_seen": [
+    16,
+    null
+   ],
+   "matter_px": 594,
+   "openings": 8,
+   "openings_seen": [
+    8,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Place Record",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 594,
+   "win": 900
+  },
+  "poems.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/poems.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "population_dashboard.html": {
+   "book_h": 646,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 14,
+   "leaves_seen": [
+    14,
+    null
+   ],
+   "matter_px": 582,
+   "openings": 7,
+   "openings_seen": [
+    7,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Peoples of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 582,
+   "win": 900
+  },
+  "quiz.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/quiz.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "realms.html": {
+   "book_h": 614,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1093,
+   "leaves": 82,
+   "leaves_seen": [
+    82,
+    null
+   ],
+   "matter_px": 550,
+   "openings": 41,
+   "openings_seen": [
+    41,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Realms of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 550,
+   "win": 900
+  },
+  "reckoning.html": {
+   "book_h": 601,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1010,
+   "leaves": 20,
+   "leaves_seen": [
+    20,
+    null
+   ],
+   "matter_px": 537,
+   "openings": 10,
+   "openings_seen": [
+    10,
+    null
+   ],
+   "paginated": true,
+   "rubric": "The Reckonings of Arda",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 537,
+   "win": 900
+  },
+  "sheets.html": {
+   "book_h": 627,
+   "built_catch": 2,
+   "built_leaves": 2,
+   "built_quire": 2,
+   "clip": 0,
+   "deterministic": false,
+   "doc_scroll": 1005,
+   "leaves": 2,
+   "leaves_seen": [
+    2,
+    null
+   ],
+   "matter_px": 0,
+   "openings": 1,
+   "openings_seen": [
+    1,
+    null
+   ],
+   "paginated": false,
+   "rubric": "The Drawn Sheets",
+   "rubric_on_screen": true,
+   "slot_filled": true,
+   "spread_h": 563,
+   "win": 900
+  },
+  "silences.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/silences.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "theindex.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/theindex.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "tours.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/tours.html\", waiting until \"domcontentloaded\"\n"
+  },
+  "writing.html": {
+   "err": "Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:36121/writing.html\", waiting until \"domcontentloaded\"\n"
+  }
+ },
+ "height": 900,
+ "measured_at_width": 1440
+}

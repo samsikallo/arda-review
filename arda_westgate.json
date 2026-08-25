@@ -1,0 +1,75 @@
+{
+ "specimen": "the West-gate of Moria (the Doors of Durin)",
+ "asset": {
+  "file": "West_gate_of_Moria.webp",
+  "hand": "J.R.R. Tolkien",
+  "what": "the Doors of Durin, the West-gate of Moria, as Tolkien drew them",
+  "licence": "not licensed to this archive",
+  "published": false,
+  "why_not": "the artwork ruling: the archive publishes its own measurement of a plate and not the plate. Supplied by the owner 11 August 2026 for measurement."
+ },
+ "bands": [
+  {
+   "band": "arch inscription",
+   "rows": [
+    40,
+    430
+   ],
+   "ink_pct": 14.47,
+   "ink_px": 54292,
+   "what": "the tengwar inscription running round the arch, in the mode of Beleriand"
+  },
+  {
+   "band": "device field",
+   "rows": [
+    430,
+    1300
+   ],
+   "ink_pct": 10.32,
+   "ink_px": 86367,
+   "what": "the crown and seven stars of Durin, the hammer and anvil, the star of Feanor, the two trees and the pillars"
+  },
+  {
+   "band": "Tolkien's caption",
+   "rows": [
+    1300,
+    1544
+   ],
+   "ink_pct": 25.15,
+   "ink_px": 59040,
+   "what": "Tolkien's own hand-lettered English caption naming the mode and romanising the text"
+  }
+ ],
+ "attested": [
+  {
+   "text": "Ennyn Durin Aran Moria",
+   "where": "the corpus",
+   "verified": "ardatext.fold",
+   "conf": "C",
+   "cite": "LotR II.4"
+  },
+  {
+   "text": "mode of Beleriand",
+   "where": "Appendix E and Tolkien's caption on this plate",
+   "verified": "ardatext.fold",
+   "conf": "C",
+   "cite": "LotR App E II"
+  }
+ ],
+ "refused": [
+  {
+   "what": "the Mode of Beleriand's letter values",
+   "why": "binding the arch's tengwar to Sindarin phonemes needs each glyph segmented and ordered along a curved baseline, then aligned against the romanisation. That is an instrument, not a reading, and it does not exist yet.",
+   "what_would_answer": "connected-component segmentation of the arch band, ordered along the arch's fitted curve, aligned against the attested Sindarin. The alignment is SELF-CHECKING: a wrong segmentation gives a length mismatch against a text the corpus already holds.",
+   "why_it_is_now_possible": "the plate exists in the workshop. Before 11 August it did not, and the refusal rested on having no material at all."
+  }
+ ],
+ "plate_px": [
+  962,
+  1544
+ ],
+ "ink_threshold": 140,
+ "ink_pct": 13.8,
+ "ruling": "The owner ruled 11 August 2026 -- 'yes, measure the West-gate inscription -- my request rules' -- and supplied the plate when the archive turned out to hold none. This publishes the MEASUREMENT. The plate itself is not republished, under the artwork ruling as amended 1 August.",
+ "note": "Tolkien's own caption on this plate names the mode of Beleriand and gives the Sindarin in Latin letters, which makes it a bilingual key -- the only one the archive has for a mode Appendix E describes and never tabulates. The letter values are NOT derived here; `refused` says what would derive them."
+}

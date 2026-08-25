@@ -1,0 +1,218 @@
+{
+  "what": "The codex's ornament set: twenty original SVG assets drawn in the Insular idiom, for the leaf furniture of The Arda Archive's codex.",
+  "made": "19 August 2026",
+  "authorship": "ORIGINAL, EVERY ONE. Nothing here is traced, sampled, auto-vectorised, recoloured or reconstructed from any manuscript, plate, photograph or third-party asset. The geometry is computed from the published construction rules of the idiom -- J. Romilly Allen's classification (1903-04) and George Bain's centreline method (1951) -- and every asset carries the rule that produced it in the `construction` field below. The hand is the archive's own.",
+  "why_not_from_the_harvest": "uploads/ornament/ holds 754 harvested manuscript fragments and NONE OF THEM IS INSULAR. Measured 19 Aug against that store's own MANIFEST.json: 7 rows of 754 mention interlace at all, and every one is Gothic (Walters W.179 and W.196, Bruges c.1460-1470), Ottonian (Getty Ms. 16, late 10th century), or Victorian engraving (Meyer, 'A Handbook of Ornament', 1892). 544 of the 754 are RESIDUE carrying `what: null`, which ruling 3 forbids publishing at all, and 148 are Gallica rows freed for NON-COMMERCIAL reuse only. So the harvest could not have supplied this vocabulary, and it did not: it was not opened while these were drawn.",
+  "licence": "The archive's own work, published by the archive. No third-party rights subsist in any file here.",
+  "theme": {
+    "mechanism": "Each file is MONOCHROME and paints in `currentColor`, with `color=\"#3d3430\"` as a PRESENTATION ATTRIBUTE on the root <svg>. That attribute has lower specificity than any CSS rule, so an inline copy inherits `color:var(--rubric)` (or --lapis, --azure, --gold, --ink) from the leaf while a standalone copy still renders in ink.",
+    "as_a_mask": "The intended use is CSS `mask-image` with the element's own `background` supplying the colour. One file then serves every hue the codex has, and no asset can drift out of step with the palette.",
+    "palette": "Measured, not chosen: --vellum #faf2cb  --ink #3d3430  --rubric #bf3637  --lapis #28418c  --azure #2a5c6b  --gold #a47741. No new hue is introduced by any asset.",
+    "degradation": "Every asset is decoration. With the whole directory absent the leaf still reads: nothing here carries information, no asset is the only thing marking a state, and none is referenced from any element that a reader must operate."
+  },
+  "lore": {
+    "rule": "Where a motif can be tied to something the corpus actually describes, the tie is CITED in the row. Where it cannot, the row says so in the same words every time -- 'decoration in the Insular idiom; claims nothing'. No lore justification is asserted that the archive cannot cite.",
+    "what_the_corpus_supports": "Interlace in Middle-earth is textual in TWO places and only two, and both put it around something rather than standing alone: 'an arch of interlacing letters in an Elvish character' (LotR II.4, the Doors of Durin) and 'branching runes and strange devices intertwined beneath their feet' (LotR III.6, the floor of Meduseld). A third passage gives entwined carving: 'peered among the branches entwined with many flowers' (Silm., Of the Sindar, Menegroth). So the archive puts interlace where Tolkien puts it -- round letters, and among branches and beasts -- and does not claim he described a free-standing abstract knot-field, because he did not.",
+    "what_the_corpus_does_not_support": "Nothing in the legendarium describes Celtic-style abstract ribbon knotwork as ornament in its own right; nothing describes the illumination of any book in Middle-earth, the Red Book of Westmarch and the Book of Mazarbul included -- the Book of Mazarbul is described entirely in terms of damage. Those are silences and they are recorded as silences."
+  },
+  "assets": [
+    {
+      "file": "border-plait-h.svg",
+      "what": "A repeating horizontal band of four-cord ribbon plait, 96x20 units, tileable on its x axis.",
+      "tradition": "Insular ribbon interlace. The PLAIT is the base state of the whole family: two sets of 45-degree strands reflecting off the band edges and weaving over-and-under at every crossing.",
+      "construction": "Strands are triangle waves of amplitude h and period 2h; a strand of family A meets one of family B where tri(x-p) = tri(q-x), which solves to x = (p+q)/2 + k*h. Over-and-under is the checkerboard colouring of that crossing lattice, so no strand ever passes over twice running. Four cords, because six of Allen's eight elementary knots derive from a four-cord plait and only two from a three-cord one.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "border-knot-h.svg",
+      "what": "A repeating horizontal band of true knotwork, 96x20 units, tileable on its x axis. The heaviest border in the set.",
+      "tradition": "Insular ribbon interlace, past the plait.",
+      "construction": "The same band with BREAK-LINES, which is the whole of Bain's method: a break is a line the strand may not cross, so it turns back instead of running on, and a repeating plait closes into a chain of knots. One closed lobe per 24-unit period, passing under itself at the mid-point.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "border-plait-v.svg",
+      "what": "The plait band turned through 90 degrees, 20x96 units, tileable on its y axis, for the outer margin.",
+      "tradition": "Insular ribbon interlace.",
+      "construction": "Generated horizontally by the same routine and rotated as a whole. An Insular border does not change its knot when it turns a page; it changes its direction.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "border-step-h.svg",
+      "what": "A repeating horizontal band of interlocking stepped blocks, 96x20 units, tileable on its x axis. The lightest of the three borders.",
+      "tradition": "Allen's STEP PATTERNS -- the rectilinear family, cousin to interlace rather than a kind of it.",
+      "construction": "Two-step blocks rising from the base, with an inverted set offset half a period, so the ground between two rising blocks is itself a falling block. That figure-ground reversal is the idiom's own habit. NOTE ON WHAT THIS IS NOT: an orthogonal fret is GREEK. Allen's diagnostic for the Insular version is that the whole key-pattern grid is rotated through 45 degrees; the stepped diagonal here is that rotation made legible at 18 pixels. An earlier version of this asset drew the orthogonal form, read as a battlement, and was replaced.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "rule-twist.svg",
+      "what": "A two-cord twist, 64x10 units, tileable on its x axis. A heading rule and a divider.",
+      "tradition": "Insular ribbon interlace at its thinnest.",
+      "construction": "Two counter-running cords crossing once a half-period, the under one broken at each meeting. Drawn as STROKED CENTRELINES and not as an outlined ribbon: at ten pixels tall an outlined 2.6-unit ribbon leaves 0.65px of visible line each side and reads as a smudge. The rule of the set is outline the wide bands, stroke the thin ones.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "corner-knot.svg",
+      "what": "A corner panel, 38x38 units: two closed loops interlocked through four crossings.",
+      "tradition": "SOLOMON'S KNOT -- the simplest true knot, one of the eight J. Romilly Allen reduced the whole Insular corpus to (1903), and older than Insular work by centuries in Roman floor mosaic, which is one of the three streams the idiom is made from.",
+      "construction": "Two rounded rectangles, one wide and one tall, sharing four crossings. The alternation is DERIVED rather than chosen: walking loop A's boundary its four crossings must read over-under-over-under, which fixes A under at two of them, and walking loop B independently gives the complementary pair -- the two assignments agree, which is the check. WHY IT IS A PANEL AND NOT A CONTINUOUS CORNER: two attempts at a corner where the ribbons swap tracks were drawn and both were looked at at 3x and rejected -- the crossing kept landing inside the fillet arcs, and pushing the tracks far enough apart to clear them left the corner of the tile empty. Lindisfarne's carpet pages put a separate panel at each corner and let the bands run up to it, which is what this does.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "boss-triskele.svg",
+      "what": "A round boss, 30x30 units: three trumpet-spirals about a centre at 120 degrees, inside a plain ring.",
+      "tradition": "Celtic, by descent -- 'Ultimate La Tene' spiral work, and the one element in the Insular vocabulary whose ancestry nobody disputes. A metalwork BOSS is a raised dome; on a flat page it becomes a roundel, because Insular illumination has no relief tradition to imitate.",
+      "construction": "Three Archimedean spirals with their coil pitch held above ~5 units, each flaring back toward the centre through a trumpet -- the expansion that lets one spiral hand off into the next. The negative shapes left between them are the PELTA and the LENTOID, which the idiom reads as shapes in their own right.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "boss-spiral.svg",
+      "what": "A small paired-spiral mark, 22x22 units. A corner mark or a minor terminal.",
+      "tradition": "Celtic trumpet-spiral, reduced to a pair.",
+      "construction": "Two counter-turning spirals sharing a throat, at 0.78-0.82 turns each. Coil pitch is a legibility budget and it is the reason for the low turn count: at 1.15 turns between radius 0.4 and 5.6 the coils sit 4.5 units apart, which at a 20px render is under 2px of gap and reads as a grey disc. An earlier version did exactly that and was replaced.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "versal-frame-1.svg",
+      "what": "The heavy initial, 58x58 units: a knotted band on all four sides, a plain inner rule, and a roundel boss at each corner. The letter is dropped into the centre by the page.",
+      "tradition": "The Insular incipit weight, and the panel-with-corner-bosses of Lindisfarne's carpet-page frames.",
+      "construction": "One knot band generated once and placed four times by rotation, so the four sides cannot drift apart. THE LETTER IS NEVER BAKED IN: Lindisfarne's initial is a frame the letter inhabits, and ours is a frame the codex's own hand inhabits, so the archive keeps one typeface and twenty-six letters rather than twenty-six pictures of letters it would then have to account for.",
+      "hand": "the archive, original",
+      "lore": "The corpus does not describe an illuminated letter anywhere in Middle-earth. What it DOES describe is interlace arranged around lettering -- 'an arch of interlacing letters in an Elvish character', LotR II.4 -- which is why interlace round a letter is the one place in this set where the idiom and the legendarium meet without a stretch. The frame itself claims nothing."
+    },
+    {
+      "file": "versal-frame-2.svg",
+      "what": "The medium initial, 44x44 units: a plain double panel with a trumpet-spiral turning at each corner.",
+      "tradition": "Insular minor-initial panel with La Tene spiral terminals.",
+      "construction": "Two concentric rules and four spirals at 0.72 turns, mirrored in both axes.",
+      "hand": "the archive, original",
+      "lore": "see versal-frame-1; the frame claims nothing"
+    },
+    {
+      "file": "versal-frame-3.svg",
+      "what": "The light initial, 34x34 units: a field of red-lead dots outlining an empty letter slot, and nothing else. The most authentic of the three.",
+      "tradition": "EADFRITH'S DOT-OUTLINING, the Lindisfarne signature -- letterforms surrounded by a stipple of red lead (minium). 10,600 dots are counted on the Luke incipit alone, f.139r; replication at about thirty dots a minute puts that one page's stippling at six hours of continuous work. Modern conservation microscopy finds craquelure in the dots themselves, so they were raised mounds of pigment rather than flat specks.",
+      "construction": "Thirty-two dots at even spacing round a square slot. THIS IS A TECHNIQUE AND NOT AN ICON, which is exactly why the archive can take it: a way of making a mark carries no meaning across from another world, where a cross or an evangelist symbol would. Note also that Eadfrith's dotting NEVER appears on the carpet pages -- it belongs to the lightest ornament, not the heaviest -- which is why it is here and not on versal-frame-1.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "initial-spray.svg",
+      "what": "A spray, 60x22 units, trailing off an initial toward the text.",
+      "tradition": "DIMINUENDO -- the Insular device by which a giant opening initial steps DOWN through letters of decreasing size until it merges with the running hand. Present from the Cathach of St Columba, c.600, the earliest substantially complete Insular illuminated manuscript.",
+      "construction": "A lentoid body between two counter-turning trumpet-spirals. A leaf cannot afford a whole incipit page; it can afford the mark that says the initial has not simply stopped.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "filler-knot.svg",
+      "what": "A line-filler, 48x12 units: a short chain of knots for the heaviest case, a line that falls well short of its measure.",
+      "tradition": "Insular knotwork at filler scale.",
+      "construction": "The knot band at a 22-unit period, stroked rather than outlined for the same reason as rule-twist.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "filler-step.svg",
+      "what": "A line-filler, 48x12 units: interlocking steps, the middle weight.",
+      "tradition": "Allen's step patterns.",
+      "construction": "The step band at a 2.8-unit module.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "filler-dots.svg",
+      "what": "A line-filler, 46x12 units: eight dots in a row, the lightest weight. The smallest thing in the set.",
+      "tradition": "Red-lead dotting, used as a filler rather than as an outline.",
+      "construction": "Eight dots at even pitch. Three fillers exist at three densities so the choice can be proportionate to how short the line actually is -- which is the point of ruling C10's ORDER.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "tailpiece-star.svg",
+      "what": "A tailpiece, 56x28 units: a twelve-rayed star between two trumpet-spirals, closing a section.",
+      "tradition": "The star is the legendarium's; the trumpets flanking it are Insular.",
+      "construction": "Twelve rays, and THE COUNT IS THE POINT. The text gives a star and does not number it -- 'More clearly than all else there shone forth in the middle of the door a single star with many rays' (LotR II.4, the Doors of Durin, which Gandalf names as the Star of the House of Feanor). THE EIGHT-RAYED FORM IS NOT IN THE TEXT: it comes from Tolkien's own heraldic drawings, published posthumously in Hammond & Scull and in Parma Eldalamberon 17, and this archive does not republish his artwork. Twelve answers the words and is deliberately not his device.",
+      "hand": "the archive, original",
+      "lore": "CITED. 'a single star with many rays', LotR II.4. The archive's own site/arda_westgate.json records that plate's device field in its own words: 'the crown and seven stars of Durin, the hammer and anvil, the star of Feanor, the two trees and the pillars'."
+    },
+    {
+      "file": "tailpiece-spiral.svg",
+      "what": "A tailpiece, 48x20 units: two trumpet-spirals with a lens between them.",
+      "tradition": "La Tene trumpet-spiral and the LENTOID.",
+      "construction": "The lens is the shape LEFT OVER where two trumpets pack together, and the Insular habit is to read that leftover as a positive shape in its own right. Figure and ground trade places; the reversal is the idiom.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing"
+    },
+    {
+      "file": "tailpiece-seven.svg",
+      "what": "A tailpiece, 56x20 units: seven stars set in a hooked line.",
+      "tradition": "None. This is the legendarium's own device, drawn plainly.",
+      "construction": "Seven discs on a bent line. CITED TWICE, and the two citations agree on the count and the shape while disagreeing on the name, which is exactly the kind of thing this archive exists to show. Varda 'set the crown of seven mighty stars to swing, Valacirca, the Sickle of the Valar and sign of doom' (Silm., Of the Coming of the Elves); and Gimli at Mirrormere, of the same seven, 'There lies the Crown of Durin till he wakes' (LotR II.6). Elves call it a Sickle, Dwarves a Crown. The archive draws the hooked form both names describe and DOES NOT assert which constellation of our own sky it is.",
+      "hand": "the archive, original",
+      "lore": "CITED. Silm., Of the Coming of the Elves and the Captivity of Melkor; LotR II.6."
+    },
+    {
+      "file": "device-trees-moons.svg",
+      "what": "A device, 86x56 units: two trees standing on a ground line, each bearing crescent moons on its boughs.",
+      "tradition": "None. THE ONLY ASSET HERE DRAWN FROM A DESCRIPTION RATHER THAN FROM A TRADITION.",
+      "construction": "What is drawn is the SENTENCE and nothing the sentence does not say: 'Beneath these again were two trees, each bearing crescent moons' (LotR II.4, the Doors of Durin). TWO trees, not one -- Legolas's 'the Tree of the High Elves' names the kind and not the number. Tolkien drew that door himself; the archive does not republish his drawing and did not look at it to make this. An earlier version rendered the moons at 5.8 pixels, where a crescent is a blob; the device grew rather than the moon shrinking to fit it.",
+      "hand": "the archive, original",
+      "lore": "CITED. LotR II.4, quoted above."
+    },
+    {
+      "file": "terminal-beast.svg",
+      "what": "A zoomorphic terminal, 44x22 units: a ribbon running in from the left and ending in a beast's head that grips it.",
+      "tradition": "GERMANIC, by descent -- Salin's Style II, the Migration-period animal art of Sutton Hoo, Taplow and the Staffordshire Hoard: ribbon-bodied, snake-headed, deliberately non-naturalistic, gripping with its jaws to resolve a strand-end. The popular account has this backwards and the archive should not repeat it: THE SPIRALS ARE CELTIC AND THE BEASTS ARE GERMANIC.",
+      "construction": "A tapering ribbon body, a skull, an upper jaw hooked forward and curled back, a lower jaw closing on it, an eye, and a lappet curling off the crown. DRAWN SO THAT NOBODY CAN NAME IT. The harvest register's own rule is that ornament 'does NOT illustrate an entity'; a beast a reader could identify would be a claim about what lives in Middle-earth, and this archive does not make claims it cannot cite.",
+      "hand": "the archive, original",
+      "lore": "decoration in the Insular idiom; claims nothing. Entwined beasts ARE textual -- 'Carven figures of beasts and birds there ran upon the walls, or climbed upon the pillars, or peered among the branches entwined with many flowers' (Silm., Of the Sindar, of Menegroth) -- but that passage describes Doriath and not this ornament, and the archive is not binding one to the other."
+    }
+  ],
+  "refused": [
+    {
+      "what": "The cross-carpet page, and every explicitly Christian form with it -- the cross, the Chi-Rho monogram, the triquetra read as a Trinity knot, the evangelist symbols, haloes.",
+      "why": "Lindisfarne's five carpet pages (ff. 2v, 26v, 94v, 138v, 210v) are CROSS-carpet pages: the structure IS a cross reserved against the interlace field. Tolkien's own position is that the religious element of his work is 'absorbed into the story and the symbolism' and deliberately not on its surface (Letter 142). Putting a cross on the leaf would put on the surface the one thing he took off it. The vocabulary of the carpet page is taken; its iconography is not."
+    },
+    {
+      "what": "A carpet page itself -- a whole leaf of ornament.",
+      "why": "Ruling C10 orders a thin leaf: pull in more archive FIRST, then art, then a declared silence, then let the book be thinner. A carpet page is the single most efficient way to hide a declared silence, and the ruling's own words are that 'a gap that is filled with ornament is a gap that has been hidden'. So the archive takes the carpet page's VOCABULARY and refuses its SCALE. Nothing in this set is larger than 96 units on its long side."
+    },
+    {
+      "what": "Gold leaf, burnish and any metallic treatment.",
+      "why": "Two reasons and they agree. Raman analysis of the Lindisfarne Gospels (Brown & Clark, J. Raman Spectrosc., 2004) finds gold 'in only a couple of small details'; Insular illuminators had a saturated mineral palette and did not build on metal leaf, unlike later Carolingian and Gothic work. And a faked burnish would fight the flat measured vellum the codex already has. `--gold` is used here as a LINE colour only."
+    },
+    {
+      "what": "Lapis lazuli / ultramarine as the blue.",
+      "why": "Roosen-Runge and Werner (1960) believed they had identified lazurite on the St Mark and St Luke portraits. Brown & Clark's 2004 Raman re-analysis overturned it: the blue throughout Lindisfarne is INDIGO, identified by its diagnostic bands. There is no lapis in the manuscript. The codex's own `--lapis` token is a name for a measured colour and is not a claim about a pigment; this manifest says so once so that nobody later writes it into a caption."
+    },
+    {
+      "what": "The 754 harvested fragments in uploads/ornament/, as source material.",
+      "why": "Three independent reasons, any one sufficient. (1) The harvest holds no Insular material at all -- 7 rows of 754 mention interlace and all are Gothic, Ottonian or Victorian. (2) 544 of the 754 carry `what: null` and ruling 3 forbids publishing an asset whose depiction nobody has written down. (3) 148 are Gallica rows freed for non-commercial reuse only. The store remains useful for what it is -- Gothic initials, Victorian engraved birds and trees -- and it is not what this set is made of."
+    },
+    {
+      "what": "The eight-rayed Star of Feanor, and the individual heraldic devices of Finwe, Fingolfin, Earendil, Idril and Elwe.",
+      "why": "All of them are Tolkien's OWN ARTWORK -- his heraldic drawings and notes, published posthumously in Hammond & Scull's 'J.R.R. Tolkien: Artist and Illustrator' and in Parma Eldalamberon 17, and used on the 1977 Silmarillion's back cover. The archive does not republish his artwork (the ruling of 29 July 2026). The narrative text says only 'a single star with many rays', so the archive draws many rays and a count that is not his."
+    },
+    {
+      "what": "Any claim that the archive's ornament shows what a book in Middle-earth looked like.",
+      "why": "The corpus is silent. The Red Book of Westmarch, the Thain's Book and Findegil's copy are given an elaborate transmission history and NO physical description; the Book of Mazarbul is described entirely in terms of damage -- slashed, stabbed, partly burned, blood-stained, its leaves cracking -- and its ornament is never mentioned. That silence is a finding and it is recorded here rather than filled."
+    },
+    {
+      "what": "Byzantine visual motifs for Gondor, on the strength of Letter 131.",
+      "why": "Letter 131 calls Gondor 'a kind of proud, venerable, but increasingly impotent Byzantium'. Read in context that is a comparison about the ARC OF DECLINE of a civilisation, not about its architecture or its ornament. Letter 211's 'best pictured in (say) Egyptian terms' IS visual and names what it means -- 'the love of, and power to construct, the gigantic and massive', and 'their great interest in ancestry and in tombs'. The archive treats the first as political and the second as visual, and does not launder one into the other."
+    },
+    {
+      "what": "A bird-and-sun motif for Gondor.",
+      "why": "Searched for and not found. The bird element in Gondor's crown is textual -- 'the wings at either side were wrought of pearl and silver in the likeness of the wings of a sea-bird, for it was the emblem of kings who came over the Sea' (LotR VI.5) -- and it is tied to seafaring, not to the sun. No passage pairs a bird with a sun disc. It would be a generic Egyptian association riding on Letter 211, which is invention."
+    }
+  ]
+}

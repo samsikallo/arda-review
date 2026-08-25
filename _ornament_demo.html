@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-codex-object="on"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Insular ornament — proof sheet</title>
+<!-- A PROOF SHEET, NOT A ROUTE. Basename begins with `_` so map/licence_check.py's asset walk
+     skips it and nav.js never binds it. It exists to be screenshotted and looked at. -->
+<style>
+:root{
+  --vellum:#faf2cb; --vellum-2:#f6ecc0; --vellum-3:#f1e4b3; --vellum-edge:#d9c48b;
+  --ink:#3d3430; --ink-soft:#5c534c; --rubric:#bf3637; --lapis:#28418c;
+  --azure:#2a5c6b; --gold:#a47741; --rule:#cbb684; --rule-soft:#e3d3a6;
+  --ground:#1a1410; --ink-deep:#0e0c0a; --silver:#c9a44c; --silver-lo:#9a7434;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);font:15px/1.6 'EB Garamond',Georgia,serif;color:var(--ink);padding:26px}
+.sheet{max-width:1180px;margin:0 auto;padding:34px 40px 46px;
+  background:radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+    linear-gradient(178deg,var(--vellum) 0%,var(--vellum-2) 58%,var(--vellum-3) 100%);
+  box-shadow:0 26px 48px rgba(0,0,0,.6)}
+h1{font:600 22px Cinzel,Georgia,serif;color:var(--rubric);margin:0 0 4px;letter-spacing:.02em}
+h2{font:600 13px Cinzel,Georgia,serif;color:var(--azure);margin:30px 0 8px;letter-spacing:.06em;
+  text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:4px}
+.cap{font:italic 11.5px 'EB Garamond',Georgia,serif;color:var(--ink-soft);margin:2px 0 10px}
+.row{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start;margin-bottom:12px}
+.cell{text-align:center}
+.cell b{display:block;font:600 9.5px Cinzel,Georgia,serif;color:var(--azure);letter-spacing:.04em;margin-top:5px}
+/* ── THE MASK MECHANISM UNDER TEST ─────────────────────────────────────────────────────────
+   Every ornament is one monochrome file. The colour is the ELEMENT'S background painted through
+   the file as a mask, so `--rubric`, `--lapis`, `--azure` and `--gold` all come out of one asset. */
+.o{display:block;background:var(--ink);
+   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+   -webkit-mask-position:center;mask-position:center;
+   -webkit-mask-size:contain;mask-size:contain}
+.rub{background:var(--rubric)} .lap{background:var(--lapis)}
+.azu{background:var(--azure)}  .gol{background:var(--gold)}
+.band{width:520px;height:20px}
+.bandk{width:520px;height:18px}
+.tile{-webkit-mask-repeat:repeat-x;mask-repeat:repeat-x;-webkit-mask-size:auto 100%;mask-size:auto 100%;
+  -webkit-mask-position:left center;mask-position:left center}
+.sq{width:36px;height:36px} .b30{width:30px;height:30px} .b20{width:22px;height:22px}
+.v56{width:58px;height:58px} .v44{width:44px;height:44px} .v32{width:34px;height:34px}
+.f48{width:48px;height:12px} .f44{width:46px;height:12px}
+.t52{width:56px;height:28px} .t46{width:48px;height:20px} .t54{width:54px;height:18px}
+.spray{width:60px;height:22px} .beast{width:42px;height:22px}
+.vert{width:20px;height:160px;-webkit-mask-repeat:repeat-y;mask-repeat:repeat-y;
+  -webkit-mask-size:100% auto;mask-size:100% auto}
+/* real-size reading test: a leaf of running text with the ornament actually doing its job */
+.leaf{position:relative;margin-top:14px;padding:26px 34px 30px;background:rgba(255,252,244,.5);
+  border:1px solid var(--rule);max-width:640px}
+.leaf p{margin:0 0 var(--l,0);text-align:justify;hyphens:auto;font-size:14px;line-height:18px}
+.leaf p+p{margin-top:18px}
+.vs{float:left;width:44px;height:44px;margin:2px 10px 0 0;position:relative}
+.vs .o{position:absolute;inset:0}
+.vs span{position:absolute;inset:0;display:grid;place-items:center;
+  font:700 22px/1 Cinzel,Georgia,serif;color:var(--lapis)}
+.rubric{display:flex;align-items:center;gap:10px;justify-content:center;margin:4px 0 14px;
+  color:var(--rubric);font:700 17px/1.2 Cinzel,Georgia,serif}
+.rubric .o{flex:0 0 auto;width:62px;height:10px}
+/* the prototype's own rubric flanks, copied so the integration test has the layout the paste-ready
+   block expects. ornament.css supplies only the PICTURE; the flex sizing is the proto's. */
+.rubric::before,.rubric::after{content:"";flex:1;height:7px;max-width:96px;
+  background:radial-gradient(circle at 12% 50%,var(--rule) 1.4px,transparent 1.6px),
+    linear-gradient(var(--rule),var(--rule)) center/100% 1px no-repeat}
+.inline{display:inline-block;vertical-align:-2px;margin-left:6px}
+.dark{background:#221b16;padding:22px 26px;margin-top:18px}
+.dark .cap{color:#b9ab96}
+</style>
+<link rel="stylesheet" href="_ornament.css"><link rel="stylesheet" href="arda.css"></head><body><a class="a-skip" href="#main">skip to content</a>
+<div class="sheet">
+<h1>Insular ornament for the codex — proof sheet</h1>
+<div class="cap">Every asset on the codex vellum at the size it will actually ship. One monochrome file
+per ornament; the colour is the leaf's, painted through the file as a CSS mask.</div>
+
+<h2>Borders — ribbon interlace</h2>
+<div class="cap">The plait is the base state: two families of 45° strands reflecting off the band edges,
+crossing over-and-under on a checkerboard. The knot is the same band with break-lines, which is
+the whole of Bain's method. The key band is Allen's rectilinear family, set on the diagonal.</div>
+<div class="row"><div class="cell">
+  <div class="o band tile rub" style="-webkit-mask-image:url(ornament/border-plait-h.svg);mask-image:url(ornament/border-plait-h.svg)"></div><b>border-plait-h · rubric</b></div></div>
+<div class="row"><div class="cell">
+  <div class="o band tile lap" style="-webkit-mask-image:url(ornament/border-knot-h.svg);mask-image:url(ornament/border-knot-h.svg)"></div><b>border-knot-h · lapis</b></div></div>
+<div class="row"><div class="cell">
+  <div class="o bandk tile gol" style="-webkit-mask-image:url(ornament/border-step-h.svg);mask-image:url(ornament/border-step-h.svg)"></div><b>border-step-h · gold</b></div></div>
+<div class="row"><div class="cell">
+  <div class="o band tile azu" style="-webkit-mask-image:url(ornament/rule-twist.svg);mask-image:url(ornament/rule-twist.svg);height:10px"></div><b>rule-twist · azure</b></div></div>
+
+<h2>Corners, bosses, vertical</h2>
+<div class="row">
+  <div class="cell"><div class="o sq rub" style="-webkit-mask-image:url(ornament/corner-knot.svg);mask-image:url(ornament/corner-knot.svg)"></div><b>corner-knot</b></div>
+  <div class="cell"><div class="o sq rub" style="-webkit-mask-image:url(ornament/corner-knot.svg);mask-image:url(ornament/corner-knot.svg);transform:scaleX(-1)"></div><b>corner ×−1</b></div>
+  <div class="cell"><div class="o b30 lap" style="-webkit-mask-image:url(ornament/boss-triskele.svg);mask-image:url(ornament/boss-triskele.svg)"></div><b>boss-triskele</b></div>
+  <div class="cell"><div class="o b20 gol" style="-webkit-mask-image:url(ornament/boss-spiral.svg);mask-image:url(ornament/boss-spiral.svg)"></div><b>boss-spiral</b></div>
+  <div class="cell"><div class="o vert azu" style="-webkit-mask-image:url(ornament/border-plait-v.svg);mask-image:url(ornament/border-plait-v.svg)"></div><b>border-plait-v</b></div>
+</div>
+
+<h2>Initials — three weights, letter dropped in</h2>
+<div class="cap">The letter is never baked into the asset. The frame is ornament; the letter is the
+codex's own hand, so the archive keeps one typeface and twenty-six letters rather than twenty-six
+pictures of letters.</div>
+<div class="row">
+  <div class="cell"><div style="position:relative;width:58px;height:58px">
+    <div class="o v56 rub" style="position:absolute;inset:0;-webkit-mask-image:url(ornament/versal-frame-1.svg);mask-image:url(ornament/versal-frame-1.svg)"></div>
+    <span style="position:absolute;inset:0;display:grid;place-items:center;font:700 26px/1 Cinzel,Georgia,serif;color:var(--lapis)">A</span>
+  </div><b>versal-frame-1</b></div>
+  <div class="cell"><div style="position:relative;width:44px;height:44px">
+    <div class="o v44 lap" style="position:absolute;inset:0;-webkit-mask-image:url(ornament/versal-frame-2.svg);mask-image:url(ornament/versal-frame-2.svg)"></div>
+    <span style="position:absolute;inset:0;display:grid;place-items:center;font:700 22px/1 Cinzel,Georgia,serif;color:var(--rubric)">E</span>
+  </div><b>versal-frame-2</b></div>
+  <div class="cell"><div style="position:relative;width:34px;height:34px">
+    <div class="o v32 azu" style="position:absolute;inset:0;-webkit-mask-image:url(ornament/versal-frame-3.svg);mask-image:url(ornament/versal-frame-3.svg)"></div>
+    <span style="position:absolute;inset:0;display:grid;place-items:center;font:700 19px/1 Cinzel,Georgia,serif;color:var(--ink)">M</span>
+  </div><b>versal-frame-3</b></div>
+  <div class="cell"><div class="o spray rub" style="-webkit-mask-image:url(ornament/initial-spray.svg);mask-image:url(ornament/initial-spray.svg)"></div><b>initial-spray</b></div>
+</div>
+
+<h2>Line-fillers</h2>
+<div class="row">
+  <div class="cell"><div class="o f48 rub" style="-webkit-mask-image:url(ornament/filler-knot.svg);mask-image:url(ornament/filler-knot.svg)"></div><b>filler-knot</b></div>
+  <div class="cell"><div class="o f48 lap" style="-webkit-mask-image:url(ornament/filler-step.svg);mask-image:url(ornament/filler-step.svg)"></div><b>filler-step</b></div>
+  <div class="cell"><div class="o f44 rub" style="-webkit-mask-image:url(ornament/filler-dots.svg);mask-image:url(ornament/filler-dots.svg)"></div><b>filler-dots</b></div>
+  <div class="cell"><div class="o beast gol" style="-webkit-mask-image:url(ornament/terminal-beast.svg);mask-image:url(ornament/terminal-beast.svg)"></div><b>terminal-beast</b></div>
+</div>
+
+<h2>Tailpieces</h2>
+<div class="row">
+  <div class="cell"><div class="o t52 rub" style="-webkit-mask-image:url(ornament/tailpiece-star.svg);mask-image:url(ornament/tailpiece-star.svg)"></div><b>tailpiece-star</b></div>
+  <div class="cell"><div class="o t46 azu" style="-webkit-mask-image:url(ornament/tailpiece-spiral.svg);mask-image:url(ornament/tailpiece-spiral.svg)"></div><b>tailpiece-spiral</b></div>
+  <div class="cell"><div class="o gol" style="width:56px;height:20px;-webkit-mask-image:url(ornament/tailpiece-seven.svg);mask-image:url(ornament/tailpiece-seven.svg)"></div><b>tailpiece-seven</b></div>
+  <div class="cell"><div class="o lap" style="width:86px;height:56px;-webkit-mask-image:url(ornament/device-trees-moons.svg);mask-image:url(ornament/device-trees-moons.svg)"></div><b>device-trees-moons</b></div>
+</div>
+
+
+<h2>At 3× — the small pieces, judged at the size they were drawn</h2>
+<div class="cap">Everything above ships at reading size. This row exists because a spiral that is
+correct at 3× and mush at 1× is not finished, and only looking says which it is.</div>
+<div class="row" style="gap:34px">
+  <div class="cell"><div class="o rub" style="width:108px;height:108px;-webkit-mask-image:url(ornament/corner-knot.svg);mask-image:url(ornament/corner-knot.svg)"></div><b>corner-knot</b></div>
+  <div class="cell"><div class="o lap" style="width:90px;height:90px;-webkit-mask-image:url(ornament/boss-triskele.svg);mask-image:url(ornament/boss-triskele.svg)"></div><b>boss-triskele</b></div>
+  <div class="cell"><div class="o gol" style="width:66px;height:66px;-webkit-mask-image:url(ornament/boss-spiral.svg);mask-image:url(ornament/boss-spiral.svg)"></div><b>boss-spiral</b></div>
+  <div class="cell"><div class="o azu" style="width:132px;height:66px;-webkit-mask-image:url(ornament/terminal-beast.svg);mask-image:url(ornament/terminal-beast.svg)"></div><b>terminal-beast</b></div>
+  <div class="cell"><div class="o rub" style="width:144px;height:60px;-webkit-mask-image:url(ornament/tailpiece-spiral.svg);mask-image:url(ornament/tailpiece-spiral.svg)"></div><b>tailpiece-spiral</b></div>
+</div>
+<div class="row" style="gap:34px">
+  <div class="cell"><div class="o rub" style="width:180px;height:66px;-webkit-mask-image:url(ornament/initial-spray.svg);mask-image:url(ornament/initial-spray.svg)"></div><b>initial-spray</b></div>
+  <div class="cell"><div class="o gol" style="width:168px;height:60px;-webkit-mask-image:url(ornament/tailpiece-seven.svg);mask-image:url(ornament/tailpiece-seven.svg)"></div><b>tailpiece-seven</b></div>
+  <div class="cell"><div class="o lap" style="width:192px;height:30px;-webkit-mask-image:url(ornament/rule-twist.svg);mask-image:url(ornament/rule-twist.svg)"></div><b>rule-twist</b></div>
+  <div class="cell"><div class="o azu" style="width:132px;height:36px;-webkit-mask-image:url(ornament/filler-knot.svg);mask-image:url(ornament/filler-knot.svg)"></div><b>filler-knot</b></div>
+  <div class="cell"><div class="o lap" style="width:172px;height:112px;-webkit-mask-image:url(ornament/device-trees-moons.svg);mask-image:url(ornament/device-trees-moons.svg)"></div><b>device-trees-moons</b></div>
+</div>
+
+<h2>On the leaf, at reading size</h2>
+<div class="leaf">
+  <div class="rubric">
+    <div class="o rub" style="-webkit-mask-image:url(ornament/rule-twist.svg);mask-image:url(ornament/rule-twist.svg);-webkit-mask-repeat:repeat-x;mask-repeat:repeat-x"></div>
+    OF THE AINUR
+    <div class="o rub" style="-webkit-mask-image:url(ornament/rule-twist.svg);mask-image:url(ornament/rule-twist.svg);-webkit-mask-repeat:repeat-x;mask-repeat:repeat-x"></div>
+  </div>
+  <div class="vs">
+    <div class="o lap" style="-webkit-mask-image:url(ornament/versal-frame-2.svg);mask-image:url(ornament/versal-frame-2.svg)"></div>
+    <span>T</span>
+  </div>
+  <p>here was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy
+  Ones, that were the offspring of his thought, and they were with him before aught else was made.
+  And he spoke to them, propounding to them themes of music; and they sang before him, and he was
+  glad. But for a long while they sang only each alone, or but few together, while the rest
+  hearkened.<span class="o inline rub" style="width:44px;height:11px;-webkit-mask-image:url(ornament/filler-dots.svg);mask-image:url(ornament/filler-dots.svg)"></span></p>
+  <p>Then Ilúvatar said to them: ‘Of the theme that I have declared to you, I will now that ye
+  make in harmony together a Great Music.’<span class="o inline lap" style="width:48px;height:12px;-webkit-mask-image:url(ornament/filler-knot.svg);mask-image:url(ornament/filler-knot.svg)"></span></p>
+  <div style="text-align:center;margin-top:16px">
+    <div class="o rub" style="display:inline-block;width:52px;height:26px;-webkit-mask-image:url(ornament/tailpiece-star.svg);mask-image:url(ornament/tailpiece-star.svg)"></div>
+  </div>
+</div>
+
+
+<h2>Integration — the paste-ready CSS driving the prototype's own class vocabulary</h2>
+<div class="cap">This section carries NO styles of its own for the ornament. It sets
+<code>data-codex-object="on"</code> on the root and loads the ready-to-paste block verbatim; every
+mark below is that file acting on the proto's classes — <code>.rubric .versal .illum .catch .folio
+.fill .tail</code>. The two right-hand panels are the refusals: a declared silence and a struck
+record must show no ornament at all.</div>
+<div class="book" style="position:relative;background:#3a2410;padding:26px 22px 30px;border-radius:8px">
+  <div class="folio">iv / xii</div>
+  <div class="spread" style="display:flex;gap:0;position:relative">
+    <div class="leaf l orn-frame" style="position:relative;flex:1;min-width:0;padding:26px 30px 44px;background:linear-gradient(178deg,var(--vellum),var(--vellum-3))">
+      <div class="illum" style="position:absolute;left:7px;top:26px;bottom:26px;width:15px"></div>
+      <div class="rubric">OF THE AINUR</div>
+      <div class="tb" style="margin-left:44px">
+        <p><span class="versal orn-v1" style="float:left;font:700 3.0em/0.92 Cinzel,Georgia,serif;color:var(--lapis)">T</span>here was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur,
+        the Holy Ones, that were the offspring of his thought, and they were with him before aught
+        else was made.<span class="fill"></span></p>
+        <div class="orn-rule orn-b2"></div>
+        <p>And he spoke to them, propounding to them themes of music; and they sang before him, and
+        he was glad.<span class="fill orn-f2"></span></p>
+        <p>But for a long while they sang only each alone, or but few together.<span class="fill orn-f1"></span></p>
+        <div class="tail orn-t-star"></div>
+      </div>
+      <div class="catch" style="position:absolute;right:26px;bottom:8px;font:italic 11px 'EB Garamond',Georgia,serif;color:var(--ink-soft)">Then Ilúvatar</div>
+    </div>
+    <div class="gutter" style="position:absolute;left:50%;top:0;bottom:0;width:26px;transform:translateX(-50%);background:linear-gradient(90deg,rgba(30,20,8,0),rgba(40,28,12,.4) 26%,#241a0c 50%,rgba(40,28,12,.4) 74%,rgba(30,20,8,0));z-index:3"></div>
+    <div class="leaf r" style="position:relative;flex:1;min-width:0;padding:26px 30px 44px;background:linear-gradient(178deg,var(--vellum),var(--vellum-3))">
+      <div class="illum" style="position:absolute;right:7px;top:26px;bottom:26px;width:15px"></div>
+      <div class="rubric">TWO REFUSALS</div>
+      <div class="tb" style="margin-right:44px">
+        <div class="card silence" style="border:1px dashed var(--rule);padding:12px 14px;margin-bottom:14px">
+          <p style="margin:0 0 6px"><span class="versal orn-v2" style="float:left;font:700 2.1em/0.92 Cinzel,Georgia,serif;color:var(--rubric)">N</span>othing is recorded of his house.<span class="fill"></span></p>
+          <div class="orn-rule"></div><div class="tail"></div>
+          <p style="margin:8px 0 0;font-size:12px;color:var(--ink-soft)"><i>A declared silence. The markup above asks for a versal frame,
+          a filler, a rule and a tailpiece; C10 refuses all four and the block enforces it.</i></p>
+        </div>
+        <div class="card struck" style="border:1px solid var(--rule);padding:12px 14px">
+          <p style="margin:0 0 6px;text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:var(--rubric)">The superseded reading, cancelled by the scribe's own hand.<span class="fill orn-f1"></span></p>
+          <div class="orn-rule orn-b1"></div><div class="tail orn-t-seven"></div>
+          <p style="margin:8px 0 0;font-size:12px;color:var(--ink-soft)"><i>A struck record. Ornamenting a retraction dresses it up; nothing shows.</i></p>
+        </div>
+        <div class="tail orn-t-trees" style="margin-top:16px"></div>
+      </div>
+      <div class="catch" style="position:absolute;right:26px;bottom:8px;font:italic 11px 'EB Garamond',Georgia,serif;color:var(--ink-soft)">and the Void</div>
+    </div>
+  </div>
+</div>
+
+<h2>Standalone rendering (no CSS mask — the file's own <code>color</code> attribute)</h2>
+<div class="cap">Degradation test: if the mask mechanism is unavailable the file still renders, in ink.</div>
+<div class="row">
+  <img src="ornament/border-plait-h.svg" width="192" height="40" alt="">
+  <img src="ornament/border-knot-h.svg" width="192" height="40" alt="">
+  <img src="ornament/boss-triskele.svg" width="60" height="60" alt="">
+  <img src="ornament/versal-frame-1.svg" width="56" height="56" alt="">
+  <img src="ornament/tailpiece-star.svg" width="78" height="39" alt="">
+  <img src="ornament/terminal-beast.svg" width="57" height="30" alt="">
+</div>
+</div>
+<script src="nav.js"></script><script src="glossary.js" defer></script></body></html>

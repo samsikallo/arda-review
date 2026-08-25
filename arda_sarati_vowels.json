@@ -1,0 +1,144 @@
+{
+ "what": "Sarati vowel MARKS, cropped from the owner's chart and paired with the label the chart prints beside each.",
+ "source": "uploads/scripts/Sarati_vowels.png",
+ "refuses": {
+  "sound → codepoint": "these are pictures of marks, exactly as the consonant plates are pictures of letters. Which CSUR codepoint holds a mark is still unknown and still refused.",
+  "placement": "the chart shows marks above and below; WHERE a mark goes is the usage rule already in arda_sarati.json (R15/R17), not a property of the crop."
+ },
+ "vowels": [
+  {
+   "value": "i",
+   "row": 0,
+   "col": 1,
+   "box": [
+    80,
+    15,
+    153,
+    96
+   ],
+   "cell": "sarati_vowel_i.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    10,
+    53
+   ]
+  },
+  {
+   "value": "e",
+   "row": 0,
+   "col": 3,
+   "box": [
+    227,
+    15,
+    297,
+    96
+   ],
+   "cell": "sarati_vowel_e.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    12,
+    57
+   ]
+  },
+  {
+   "value": "ə",
+   "row": 0,
+   "col": 5,
+   "box": [
+    372,
+    15,
+    439,
+    96
+   ],
+   "cell": "sarati_vowel_schwa.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    13,
+    56
+   ]
+  },
+  {
+   "value": "æ",
+   "row": 1,
+   "col": 1,
+   "box": [
+    80,
+    100,
+    153,
+    181
+   ],
+   "cell": "sarati_vowel_ae.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    13,
+    54
+   ]
+  },
+  {
+   "value": "a",
+   "row": 1,
+   "col": 3,
+   "box": [
+    227,
+    100,
+    297,
+    181
+   ],
+   "cell": "sarati_vowel_a.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    13,
+    54
+   ]
+  },
+  {
+   "value": "o",
+   "row": 1,
+   "col": 5,
+   "box": [
+    372,
+    100,
+    439,
+    181
+   ],
+   "cell": "sarati_vowel_o.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    17,
+    70
+   ]
+  },
+  {
+   "value": "u",
+   "row": 1,
+   "col": 7,
+   "box": [
+    514,
+    100,
+    581,
+    181
+   ],
+   "cell": "sarati_vowel_u.png",
+   "mark": "the sign printed beside this vowel in the chart",
+   "conf": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "px": [
+    16,
+    57
+   ]
+  }
+ ],
+ "n_vowels": 7
+}

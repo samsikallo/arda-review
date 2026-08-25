@@ -1,0 +1,1193 @@
+{
+"count": 44,
+"markers": {
+"C": "wholly read in the corpus; `cite` names the passage",
+"C/?": "PART of this fragment is read in the corpus (`cite` says which part); the rest is not yet checked",
+"I-L": "inferred, low confidence: nothing in the corpus states it, and nothing contradicts it",
+"C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
+},
+"marker_counts": {
+"C": 80,
+"C/?": 35,
+"I-L": 35,
+"C?": 6
+},
+"prompts": [
+{
+"id": "kit_noldor_hithlum",
+"subject": "a First Age Noldorin heavy warrior of Hithlum, host of Fingolfin",
+"caption": "Noldor of Hithlum",
+"prompt": "Subject: a First Age Noldorin heavy warrior of Hithlum, host of Fingolfin. Lore: tall grey-eyed Elf in a long hauberk, a white helm, a blue shield set with crystals after Fingolfin's, a long sword and a spear; banners of blue and silver; cold northern war-gear, proud bearing. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Noldor of Hithlum\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall grey-eyed Elf in a long hauberk, a white helm",
+"conf": "C",
+"cite": "WJ §155 'Fingolfin ... took his white helm'; Silm 'Fingon put on his white helm'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the high helm and red-plumed helms are Feanor's and his sons'"
+},
+{
+"t": "a blue shield set with crystals after Fingolfin's",
+"conf": "C",
+"cite": "Silm 'his blue shield was set with crystals'. NOT IN THE CORPUS: 'oval shield', zero hits in 49 volumes; the one Noldorin shield given a shape is Turgon's, 'long and tapering'"
+},
+{
+"t": "a long sword and a spear",
+"conf": "C/?",
+"cite": "the SWORD only, and the HOST is not this one: Silm — 'the Noldor… were strong and swift, and deadly in anger, and their swords were long and terrible', on the grey fields of MITHRIM, which lies in Hithlum. But that is Dagor-nuin-Giliath and the host is FEANOR'S, before Fingolfin came over the Ice. The spear is not in the passage"
+},
+{
+"t": "banners of blue and silver, cold northern war-gear, proud bearing",
+"conf": "C",
+"cite": "WJ, Grey Annals §54 'Then Fingolfin unfurled his blue and silver banners'; §233 'his banners blue and silver were trodden into dust'"
+}
+]
+},
+{
+"id": "kit_gondolin",
+"subject": "a warrior of the House of the King of Gondolin",
+"caption": "House of the King",
+"prompt": "Subject: a warrior of the House of the King of Gondolin. Lore: Noldorin elf-guard in white and gold and red, mail overlaid with a white surcoat, a long bright sword; sun-and-moon and scarlet-heart motifs of Turgon's house; regal, ceremonial armour. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"House of the King\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Noldorin elf-guard in white and gold and red",
+"conf": "C",
+"cite": "FoG — 'their colours were white and gold and red'. IN THE CORPUS BUT OF ANOTHER SUBJECT: 'all these wore wings as it were of swans or gulls upon their helms' is the HOUSE OF THE WING, Tuor's, one sentence later — no winged helm belongs to the King's house"
+},
+{
+"t": "mail overlaid with a white surcoat",
+"conf": "C/?",
+"cite": "the WHITE only, and it is a COLOUR OF THE HOUSE rather than a garment: BoLT II 'their colours were white and gold and red'. 'white surcoat' is absent from all 49 volumes, and so is any surcoat for Gondolin"
+},
+{
+"t": "a long bright sword",
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondolin. The nearest are of ANOTHER HOST: Silm 'their swords were long and terrible', of the Noldor at Mithrim, and the Lay's 'out their bright swords' in an orc-fight. Nothing describes a sword of the Gondothlim"
+},
+{
+"t": "sun-and-moon and scarlet-heart motifs of Turgon's house, regal, ceremonial armour",
+"conf": "C/?",
+"cite": "THE THREE EMBLEMS ARE EXACT: BoLT II — 'Mighty was the array of the house of the king and their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart'; HoME XII index, 'Scarlet Heart, The — Emblem of the King's House in Gondolin'. 'Regal, ceremonial armour' is the archive's: the corpus calls the array mighty and says nothing about ceremony"
+}
+]
+},
+{
+"id": "kit_fountain",
+"subject": "a warrior of the House of the Fountain of Gondolin",
+"caption": "House of the Fountain",
+"prompt": "Subject: a warrior of the House of the Fountain of Gondolin. Lore: elf in silver mail, a shining silver helm crowned with a spike of steel pointed with a diamond, a shield bearing a thousand studs of crystal, pale bright long swords; cold shining silver livery of Ecthelion's house; going into battle to the music of flutes. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"House of the Fountain\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "elf in silver mail",
+"conf": "C",
+"cite": "BoLT2/FoG 'silver and diamonds were their delight'; 'the crystal and silver of their array'. The corpus sets these in helm-spike and shield, never in mail"
+},
+{
+"t": "a shining silver helm crowned with a spike of steel pointed with a diamond",
+"conf": "C",
+"cite": "FoG/UT: Ecthelion 'upon his shining helm was set a spike of steel pointed with a diamond'; he drove it into Gothmog's breast"
+},
+{
+"t": "a shield bearing a thousand studs of crystal",
+"conf": "C",
+"cite": "FoG/UT: his shield 'shimmered as if it were bedewed with drops of rain, that were indeed a thousand studs of crystal'"
+},
+{
+"t": "pale bright long swords",
+"conf": "C",
+"cite": "BoLT2/FoG 'swords very long and bright and pale did they wield, and they went into battle to the music of flutes'"
+},
+{
+"t": "cold shining silver livery of Ecthelion's house",
+"conf": "C",
+"cite": "IN THE CORPUS BUT OF ANOTHER SUBJECT: 'their colours were white and gold and red' is the House of the KING one paragraph earlier. No colour but silver is given the Fountain, and NO emblem at all, though eight of the eleven houses have one"
+},
+{
+"t": "going into battle to the music of flutes",
+"conf": "C",
+"cite": "BoLT2/FoG 'they went into battle to the music of flutes'"
+}
+]
+},
+{
+"id": "kit_doriath",
+"subject": "a march-warden of Doriath",
+"caption": "March-warden of Doriath",
+"prompt": "Subject: a march-warden of Doriath. Lore: Sindarin grey-elf ranger garbed in grey and green and brown, soft hooded cloak, a great bow of black yew and a quiver, an axe; mail beneath a weather-stained cloak, unmatched woodcraft, no gay jewel nor golden trinket. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"March-warden of Doriath\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Sindarin grey-elf ranger garbed in grey and green and brown, soft hooded cloak",
+"conf": "C",
+"cite": "Lay of the Children of Hurin: Beleg's scouts 'all garbed in grey and green and brown, the archers arrowfleet'"
+},
+{
+"t": "a great bow of black yew and a quiver, an axe",
+"conf": "C",
+"cite": "Silm 'Belthronding his great bow, that was made of black yew-wood'; the Lay, 'of black yew wrought'"
+},
+{
+"t": "mail beneath a weather-stained cloak, unmatched woodcraft",
+"conf": "C",
+"cite": "Narn: Turin among Thingol's march-wardens wore mail under his cloak, and came to Menegroth for 'the repair of his arms'. The corpus nowhere says the wardens went unarmoured"
+},
+{
+"t": "no gay jewel nor golden trinket",
+"conf": "C",
+"cite": "the Lay, of Beleg: 'gay jewel or golden trinket his garb knew not'. NOT IN THE CORPUS: 'silver clasp' / 'clasp of silver', zero hits in 49 volumes"
+}
+]
+},
+{
+"id": "kit_falas",
+"subject": "a Falathrim mariner-warrior of the Havens",
+"caption": "Mariner of the Falas",
+"prompt": "Subject: a Falathrim mariner-warrior of the Havens. Lore: Sindarin elf of Círdan's folk, the Falathrim; the first mariners in Middle-earth, who harried the enemy with swift landings from the sea; mariner's practical gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Mariner of the Falas\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Sindarin elf of Círdan's folk, the Falathrim",
+"conf": "C",
+"cite": "Silm 'the Falathrim, the Elves of the Falas ... Cirdan the Shipwright was their lord'. IN THE CORPUS BUT OF ANOTHER SUBJECT: 'sea-grey' is an eye-colour, Voronwe the Noldo's and Dol Amroth's, never theirs"
+},
+{
+"t": "the first mariners in Middle-earth",
+"conf": "C",
+"cite": "Silm 'the first mariners in Middle-earth and the first makers of ships'; 'mariners passed up and down the coast and harried the enemy with swift landings'"
+},
+{
+"t": "who harried the enemy with swift landings from the sea, mariner's practical gear",
+"conf": "I-L",
+"cite": "THE GOVERNING FINDING: the corpus records what the Falathrim DID and never what they wore or bore. NOT IN THE CORPUS: 'scaled mail', 'sea-grey cloak', gull and wave motifs. Gull-wings on helms are Tuor's House of the Wing; the wave is in the people's NAME (Falmari 'wave-folk')"
+}
+]
+},
+{
+"id": "kit_hador",
+"subject": "a warrior of the House of Hador",
+"caption": "House of Hador",
+"prompt": "Subject: a warrior of the House of Hador. Lore: tall golden-haired mortal Man of the Edain in a mail-shirt, a plain steel helm, a long sword and round shield, a woollen cloak; sturdy First Age northern warrior. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"House of Hador\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall golden-haired mortal Man of the Edain in a mail-shirt",
+"conf": "C/?",
+"cite": "the COLOURING AND STATURE only: PoME 'tall people, with flaxen or golden hair and blue-grey eyes'; Silm 17 'of great strength and stature ... Yellow-haired they were for the most part'"
+},
+{
+"t": "a plain steel helm",
+"conf": "I-L",
+"cite": "NOT IN THE CORPUS: 'plain steel helm' / 'helm of steel', zero hits. The one helm this House has is the opposite of plain - the Dragon-helm, 'grey steel adorned with gold ... wrought by Telchar', a single heirloom"
+},
+{
+"t": "a long sword and round shield, a woollen cloak",
+"conf": "I-L",
+"cite": "a shield is attested bare (Hurin 'cast aside his shield'); NOT LOCATED for shape. IN THE CORPUS BUT OF ANOTHER SUBJECT: 'their great round shields were red as flame' is Gondolin's Seventh Gate archers"
+},
+{
+"t": "sturdy First Age northern warrior",
+"conf": "C",
+"cite": "Silm 18 'the people of Hador, being hardy to endure cold and long wandering, feared not at times to go far into the north'"
+}
+]
+},
+{
+"id": "kit_beor",
+"subject": "a bowman of the House of Bëor",
+"caption": "House of Beor",
+"prompt": "Subject: a bowman of the House of Bëor. Lore: dark-haired mortal Man of the Edain in hardened leather and a short mail-shirt, a hood, a bow and quiver, a sword; broad and heavy in build, highland warrior of Ladros. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"House of Beor\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "dark-haired mortal Man of the Edain in hardened leather and a short mail-shirt, a hood",
+"conf": "C/?",
+"cite": "the COLOURING only: Silm 17 'The Men of that house were dark or brown of hair, with grey eyes'"
+},
+{
+"t": "a bow and quiver, a sword",
+"conf": "C",
+"cite": "UT, the King's heirlooms: 'the Bow of Bregor of the House of Beor'. NOT LOCATED: 'hunting-bow' is the Shire-hobbits', and no arrow-quiver is given any Man of the First Age"
+},
+{
+"t": "broad and heavy in build",
+"conf": "C",
+"cite": "PoME, of the Folk of Beor: 'Men as tall as the Folk of Hador were rare among them, and most were broader and more heavy in build'. This replaced 'lean', which that sentence contradicts"
+},
+{
+"t": "highland warrior of Ladros",
+"conf": "C",
+"cite": "Silm glossary: 'Ladros The lands to the northeast of Dorthonion that were granted by the Noldorin kings to the Men of the House of Bëor'; Dorthonion 'the great forested highlands'"
+}
+]
+},
+{
+"id": "kit_haleth",
+"subject": "a woodland fighter of the People of Haleth",
+"caption": "People of Haleth",
+"prompt": "Subject: a woodland fighter of the People of Haleth. Lore: stocky mortal Man of Brethil in rough leather and furs, a whetted axe, a small round wooden shield; forest guerrilla, plain unadorned gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"People of Haleth\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "stocky mortal Man of Brethil in rough leather and furs, a whetted axe",
+"conf": "C/?",
+"cite": "the AXE only: Silm 20 'Halmir, lord of the People of Haleth, gathered his men, and they whetted their axes'; WJ §212 the same. NOT IN THE CORPUS: 'single-bladed', zero hits in 49 volumes. CAUTION: the axes brought INTO Brethil at Silm 18 are Beleg's SINDAR, not the Haladin's"
+},
+{
+"t": "a small round wooden shield, forest guerrilla, plain unadorned gear",
+"conf": "I-L",
+"cite": "NOT IN THE CORPUS: no shield of any kind is given the People of Haleth; 'wooden shield' occurs once, in Farmer Giles of Ham"
+}
+]
+},
+{
+"id": "kit_belegost",
+"subject": "a masked dwarf dragon-slayer of Belegost",
+"caption": "Dwarf of Belegost",
+"prompt": "Subject: a masked dwarf dragon-slayer of Belegost. Lore: broad Dwarf in heavy dwarf-mail to the knee, a great mask hideous to look upon covering the face, a great war-axe; dark harness, First Age craftsmanship. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Dwarf of Belegost\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "broad Dwarf in heavy dwarf-mail to the knee",
+"conf": "C/?",
+"cite": "the MAIL IS THIS PEOPLE'S OWN INVENTION and the LENGTH IS ANOTHER AGE'S: Silm 10 — 'in the making of mail of linked rings, which was first contrived by the smiths of Belegost, their work had no rival'. TO THE KNEE is Hobbit XVII, of DAIN'S IRON HILLS folk — Third Age Dwarves of Durin's line, not First Age Belegost — and HEAVY is the archive's"
+},
+{
+"t": "a great mask hideous to look upon covering the face, a great war-axe, dark harness, First Age craftsmanship",
+"conf": "C",
+"cite": "Silm 20 — 'it was their custom moreover to wear great masks in battle hideous to look upon'. WHY THEY WORE THEM, from the same sentence: 'the Naugrim withstood fire more hardily than either Elves or Men … and those stood them in good stead against the dragons'"
+}
+]
+},
+{
+"id": "kit_nogrod",
+"subject": "a smith-warrior of Nogrod",
+"caption": "Smith of Nogrod",
+"prompt": "Subject: a smith-warrior of Nogrod. Lore: Dwarf in fine dwarf-forged mail and an iron helm, a broad-bladed sword and a hammer at the belt, mail of linked rings, no plate; master-smith's war-panoply. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Smith of Nogrod\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Dwarf in fine dwarf-forged mail and an iron helm",
+"conf": "C",
+"cite": "BoLT2 Nauglafring, of Naugladur LORD OF NOGROD: 'by reason of the skill and magic of his dwarfen mail'; Lay of Leithian 'his hauberk grey of dwarvish craft in Nogrod made'"
+},
+{
+"t": "a broad-bladed sword and a hammer at the belt",
+"conf": "I-L",
+"cite": "a sword is attested for a Nogrod lord; NOT LOCATED for 'broad-bladed', which in the corpus is Gimli's AXE and the Uruk-hai's swords. Axes are 'the chief weapons of the Naugrim'"
+},
+{
+"t": "mail of linked rings, no plate, master-smith's war-panoply",
+"conf": "C",
+"cite": "Silm 10 'mail of linked rings, which was first contrived by the smiths of Belegost'. NOT IN THE CORPUS: 'knotwork' = 0 occurrences in 49 volumes, and NO Dwarf anywhere wears plate"
+}
+]
+},
+{
+"id": "kit_orc_angband",
+"subject": "an armoured orc-soldier of the host of Angband, First Age",
+"caption": "Orc of Angband",
+"prompt": "Subject: an armoured orc-soldier of the host of Angband, First Age. Lore: a crook-legged broad-shouldered orc with sallow, swart hide and a snarling fanged face, in the ragged raiment of Angband; a crooked scimitar in his hand, a poisoned spear, and a bow of horn; scarred, grimy and ill-made, Morgoth's bred foot-soldier. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Orc of Angband\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "a crook-legged broad-shouldered orc with sallow",
+"conf": "I-L",
+"cite": "IN THE CORPUS BUT OF ANOTHER SUBJECT: 'crook-legged' is Grishnakh of MORDOR, Third Age; its only First Age use is Beren's insult to Naugladur, a DWARF"
+},
+{
+"t": "swart hide and a snarling fanged face",
+"conf": "I-L",
+"cite": "NOT LOCATED FOR ORCS, and the three hits are three different wrong subjects: 'Indrafangs' is a DWARF-name, the Longbeards of Belegost; 'a fanged peak' is THANGORODRIM; 'white fangs' are GOLLUM'S. Letters #210 gives the orc face as 'squat, broad, flat-nosed, sallow-skinned' and says nothing of fangs"
+},
+{
+"t": "in the ragged raiment of Angband",
+"conf": "C",
+"cite": "Lay of Leithian 'each him clad in Angband's raiment foul and sad'. NOT IN THE CORPUS: 'cuirass' 0 hits, 'boiled leather' 0 hits, 'kilt' 0 hits in any narrative, 'spiked helm' 0 hits. IN THE CORPUS BUT OF ANOTHER SUBJECT: the one spiked helm is ECTHELION'S, a Gondolin Elf-lord; overlapping plates are the HARADRIM's"
+},
+{
+"t": "a crooked scimitar in his hand, a poisoned spear",
+"conf": "C",
+"cite": "Lay of Leithian 'Throng on throng of Orcs with reddened scimitars'; FoG 'the grimmest of the Orcs with scimitars and spears'; the Lay of the Children of Hurin, 'the sickle scimitars ... in Angband smithied'"
+},
+{
+"t": "and a bow of horn, scarred, grimy and ill-made, Morgoth's bred foot-soldier",
+"conf": "C",
+"cite": "Lay of Leithian, stripped from Angband orcs by name: 'The poisoned spears, the bows of horn, the crooked swords their foes had borne'"
+}
+]
+},
+{
+"id": "kit_ulfang",
+"subject": "an Easterling swordsman of Ulfang's people, First Age",
+"caption": "Easterling of Ulfang",
+"prompt": "Subject: an Easterling swordsman of Ulfang's people, First Age. Lore: swarthy dark mortal Man in lamellar of lacquered scales, a conical helm with a veil, a curved sword; treacherous eastern mercenary of the First Age. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Easterling of Ulfang\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "swarthy dark mortal Man in lamellar of lacquered scales",
+"conf": "C/?",
+"cite": "the COLOURING only: Silm 18 'their skins were swart or sallow, and their hair was dark as were their eyes' - the same sentence also gives 'short and broad', which this kit omits"
+},
+{
+"t": "a conical helm with a veil, a curved sword",
+"conf": "I-L",
+"cite": "NOT IN THE CORPUS: 'conical helm' zero hits; no helm of any kind is given the Easterlings anywhere"
+},
+{
+"t": "treacherous eastern mercenary of the First Age",
+"conf": "C",
+"cite": "Silm 18 'they followed Caranthir and swore allegiance to him, and proved faithless'; Silm 20 'the treachery of Men ... They reaped not the reward that Morgoth promised them'"
+}
+]
+},
+{
+"id": "kit_numenor",
+"subject": "a King's Archer of Númenor",
+"caption": "Archer of Numenor",
+"prompt": "Subject: a King's Archer of Númenor. Lore: tall Númenórean Man in a long mail-coat and a sea-crested steel helm, a great hollow-steel bow and a long arrow, a straight sword; silver star of Númenor, high sea-kingdom war-gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Archer of Numenor\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall Númenórean Man in a long mail-coat and a sea-crested steel helm",
+"conf": "C/?",
+"cite": "the STATURE only, and the CREST IS WORSE THAN UNATTESTED: Silm gives 'the Numenoreans were strong and tall'. 'sea-crested' is absent from all 49 volumes, and the ONE Numenorean war-helm the corpus describes is PLAIN — LotR App. A, 'The crown of Gondor was derived from the form of a Numenorean war-helm. In the beginning it was indeed a plain helm'. The mail-coat is not located either"
+},
+{
+"t": "a great hollow-steel bow and a long arrow, a straight sword",
+"conf": "C",
+"cite": "UT — 'the King's Archers used bows made of hollow steel, with black-feathered arrows a full ell long from point to notch'"
+},
+{
+"t": "silver star of Númenor, high sea-kingdom war-gear",
+"conf": "I-L",
+"cite": "NOT LOCATED as war-gear: the corpus's silver stars are ELBERETH'S on a sail in Peoples of Middle-earth, and the Star of Elendil is a JEWEL on a fillet rather than a device on armour. No badge of Numenor is described on any soldier"
+}
+]
+},
+{
+"id": "kit_numenor_marine",
+"subject": "a marine-soldier of Númenor",
+"caption": "Marine of Numenor",
+"prompt": "Subject: a marine-soldier of Númenor. Lore: tall Númenórean in scaled mail and a tabard, a tall shield, a spear and short sword, a plain steel war-helm; disciplined expeditionary soldier of the Sea-kings. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Marine of Numenor\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall Númenórean in scaled mail and a tabard, a tall shield",
+"conf": "C/?",
+"cite": "the STATURE only: Silm 'the Numenoreans were strong and tall'; NoME 'their full-grown men were often seven feet tall'. NOT IN THE CORPUS: 'tabard' zero hits, 'scaled mail' zero hits; Numenorean body-armour is named once and never described"
+},
+{
+"t": "a spear and short sword",
+"conf": "C",
+"cite": "UT 'axes and spears and bows they had'; 'their swords and spears far outreached the weapons of their enemies'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the short sword is Isildur's own, what he KEEPS when he strips off his armour"
+},
+{
+"t": "a plain steel war-helm",
+"conf": "C",
+"cite": "LotR App. A: the Numenorean war-helm 'was indeed a plain helm'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the sea-bird wings are THIRD AGE Gondor, added under Atanatar Alcarin"
+},
+{
+"t": "disciplined expeditionary soldier of the Sea-kings",
+"conf": "C",
+"cite": "Akallabeth 'the sceptre of the sea-kings'; UT, Tar-Minastir 'sent a great fleet to the aid of Gil-galad'. NOT LOCATED: 'disciplined' - no statement of Numenorean drill or standing corps"
+}
+]
+},
+{
+"id": "kit_lastalliance",
+"subject": "an elven soldier of the Last Alliance",
+"caption": "Elf of the Last Alliance",
+"prompt": "Subject: an elven soldier of the Last Alliance. Lore: Noldorin elf-warrior of Gil-galad's host in bright layered mail and a tall helm, a long spear and a great oval shield, a straight sword; silver-and-blue livery, set-piece battle armour of the Second Age. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Elf of the Last Alliance\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Noldorin elf-warrior of Gil-galad's host in bright layered mail and a tall helm",
+"conf": "C/?",
+"cite": "the SUBJECT only: LotR II.2 'I was the herald of Gil-galad and marched with his host'; 'I was at the Battle of Dagorlad'. THE HOST'S ARMS ARE NEVER DESCRIBED - Elrond gives one detail, 'the splendour of their banners'"
+},
+{
+"t": "a long spear and a great oval shield, a straight sword, silver-and-blue livery",
+"conf": "I-L",
+"cite": "NOT IN THE CORPUS: 'oval shield' zero hits in 49 volumes. IN THE CORPUS BUT OF ANOTHER SUBJECT: the shield of the Alliance is Gil-galad's own, 'overlaid with silver and set with a device of white stars'"
+},
+{
+"t": "set-piece battle armour of the Second Age",
+"conf": "I-L",
+"cite": "the era and the pitched battle are canon (Dagorlad, the seven-year siege); NOT LOCATED: nothing describes the Alliance's armour"
+}
+]
+},
+{
+"id": "kit_greenwood",
+"subject": "a Silvan spearman of Oropher's Greenwood",
+"caption": "Spearman of Greenwood",
+"prompt": "Subject: a Silvan spearman of Oropher's Greenwood. Lore: wood-elf in green and brown leather with little mail, a long spear and a wooden shield, a hood; lightly-armed forest soldier of the Second Age. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Spearman of Greenwood\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "wood-elf in green and brown leather with little mail",
+"conf": "C/?",
+"cite": "the COLOURS only: NoME, Tolkien on Legolas: 'clad in the green and brown of the silvan elves over whom his father ruled'; Hobbit VIII, of the folk at large, 'all dressed in green and brown'"
+},
+{
+"t": "a long spear and a wooden shield, a hood",
+"conf": "C/?",
+"cite": "the SPEAR only: Hobbit VIII 'out leaped wood-elves with their bows and spears'; XVII 'a thousand of their spearmen leapt down and charged'"
+},
+{
+"t": "lightly-armed forest soldier of the Second Age",
+"conf": "C",
+"cite": "UT, App. B: Oropher 'assembled a great army of his now numerous people ... The Silvan Elves were hardy and valiant, but ill-equipped'; he 'was slain in the first assault upon Mordor'"
+}
+]
+},
+{
+"id": "kit_blacknumenor",
+"subject": "a Black Númenórean warrior",
+"caption": "Black Numenorean",
+"prompt": "Subject: a Black Númenórean warrior. Lore: tall corrupted Númenórean Man in dark blackened mail and a cruel helm, a long sword; sable and dull-crimson livery of the Enemy's men of the South. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Black Numenorean\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall corrupted Númenórean Man in dark blackened mail and a cruel helm, a long sword",
+"conf": "C/?",
+"cite": "the SUBJECT only: LotR V.10 'he was a renegade, who came of the race of those that are named the Black Numenoreans'; App. A 'corrupted by Sauron'"
+},
+{
+"t": "sable and dull-crimson livery of the Enemy's men of the South",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus gives them no livery, device or colours. The nearby liveries are the Haradrim's black serpent on scarlet and Mordor's Red Eye banner"
+}
+]
+},
+{
+"id": "kit_gondor",
+"subject": "a Guard of the Citadel of Minas Tirith",
+"caption": "Guard of the Citadel",
+"prompt": "Subject: a Guard of the Citadel of Minas Tirith. Lore: a Guard of the gate ROBED IN BLACK — the corpus robes them, it does not mail them. The helm is “of strange shape, high-crowned, with long cheek-guards close-fitting to the face, and above the cheek-guards were set the white wings of SEA-BIRDS”, and it “gleamed with a flame of silver, for they were indeed wrought of MITHRIL, heirlooms from the glory of old days” — not silver-steel, and the wings sit above the cheek-guards rather than sweeping from the crown. Upon the black surcoat, embroidered in white, “a tree blossoming like snow beneath a silver crown and many-pointed stars”. A long sword; the dress-armour of the Tower Guard. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Guard of the Citadel\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "a Guard of the gate ROBED IN BLACK — the corpus robes them",
+"conf": "C",
+"cite": "LotR V.1 — 'The Guards of the gate were robed in black', verbatim. CORRECTING MY OWN NOTE OF AN HOUR EARLIER: I wrote that this phrase occurs ONCE and is Borlas in The New Shadow. It occurs TWICE — `ardatext.verify_any` returns the FIRST FILE that matches and HoME XII sorts before LotR, so I read an existence test as a census"
+},
+{
+"t": "it does not mail them. The helm is “of strange shape, high-crowned",
+"conf": "C",
+"cite": "LotR V.1 — the paragraph robes them and describes helms and surcoats; no mail is mentioned for the Guards of the gate anywhere in it"
+},
+{
+"t": "with long cheek-guards close-fitting to the face",
+"conf": "C",
+"cite": "LotR V.1 — 'their helms were of strange shape, high-crowned, with long cheek-guards close-fitting to the face'"
+},
+{
+"t": "and above the cheek-guards were set the white wings of SEA-BIRDS”",
+"conf": "C",
+"cite": "LotR V.1 — 'and above the cheek-guards were set the white wings of sea-birds'"
+},
+{
+"t": "and it “gleamed with a flame of silver",
+"conf": "C",
+"cite": "LotR V.1 — 'but the helms gleamed with a flame of silver'"
+},
+{
+"t": "for they were indeed wrought of MITHRIL",
+"conf": "C",
+"cite": "LotR V.1 — 'for they were indeed wrought of mithril, heirlooms from the glory of old days'"
+},
+{
+"t": "heirlooms from the glory of old days” — not silver-steel",
+"conf": "C",
+"cite": "Hobbit XIII (1966) — 'It was of silver-steel, which the elves call mithril'; LotR V.1 the Guards' helms 'were indeed wrought of mithril'"
+},
+{
+"t": "and the wings sit above the cheek-guards rather than sweeping from the crown. Upon the black surcoat, embroidered in white",
+"conf": "C/?",
+"cite": "the POSITION is canon — LotR V.1 'ABOVE THE CHEEK-GUARDS were set the white wings'. 'Rather than sweeping from the crown' is the archive correcting a common depiction, and Tolkien says nothing about a crown-mounted wing either way"
+},
+{
+"t": "“a tree blossoming like snow beneath a silver crown and many-pointed stars”. A long sword",
+"conf": "C",
+"cite": "LotR V.1 — 'Upon the black surcoats were embroidered in white a tree blossoming like snow beneath a silver crown and many-pointed stars'"
+},
+{
+"t": "the dress-armour of the Tower Guard",
+"conf": "C/?",
+"cite": "the LIVERY is canon — LotR V.1 'This was the livery of the heirs of Elendil, and none wore it now in all Gondor, save the Guards of the Citadel'. 'Dress-armour' is the archive's word: the corpus never says this gear was ceremonial rather than fighting kit"
+}
+]
+},
+{
+"id": "kit_gondor_line",
+"subject": "a soldier of the line of Gondor",
+"caption": "Soldier of Gondor",
+"prompt": "Subject: a soldier of the line of Gondor. Lore: Gondorian foot-soldier in a mail hauberk and a plain conical helm, a plain undevised surcoat — black-and-silver was the livery of the heirs of Elendil and NONE WORE IT IN ALL GONDOR save the Guards of the Citadel, a spear, a long shield and a short sword; practical Third Age infantry. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Soldier of Gondor\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Gondorian foot-soldier in a mail hauberk and a plain conical helm",
+"conf": "I-L",
+"cite": "NOT LOCATED: 'conical helm' is absent from all 49 volumes, and the corpus's one 'mail hauberk' is a DWARF's, in a tier-3 companion. Gondor's ordinary soldiery is never described head to foot the way its Citadel Guard is"
+},
+{
+"t": "a plain undevised surcoat — black-and-silver was the livery of the heirs of Elendil and NONE WORE IT IN ALL GONDOR save the Guards of the Citadel, a spear",
+"conf": "C",
+"cite": "LotR V.1 — 'This was the livery of the heirs of Elendil, and none wore it now in all Gondor, save the Guards of the Citadel'"
+},
+{
+"t": "a long shield and a short sword",
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondor's line, AND BOTH PHRASES EXIST OF OTHER SUBJECTS — which is why the search had to be read rather than counted: 'long shields' are the IRON GUARDS of Numenor in UT, and the 'short sword' is MERRY's in Return of the Shadow"
+},
+{
+"t": "practical Third Age infantry",
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING. The corpus describes Gondor's companies by WHERE THEY CAME FROM and how many, never by their kit — the one full description in Minas Tirith is the Guards of the Citadel, which is this kit's opposite"
+}
+]
+},
+{
+"id": "kit_ithilien",
+"subject": "a Ranger of Ithilien",
+"caption": "Ranger of Ithilien",
+"prompt": "Subject: a Ranger of Ithilien. Lore: Gondorian ranger in green and brown, a hood and a green mask, a mottled cloak, a great bow, a short sword; woodland ambush-gear of Faramir's men, no shining metal. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Ranger of Ithilien\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Gondorian ranger in green and brown",
+"conf": "C",
+"cite": "LotR IV.4 — 'clad in green and brown of varied hues… Green gauntlets covered their hands, and their faces were hooded and masked with green'"
+},
+{
+"t": "a hood and a green mask, a mottled cloak, a great bow, a short sword",
+"conf": "C",
+"cite": "LotR IV.4 — 'clad in green and brown of varied hues… Green gauntlets covered their hands, and their faces were hooded and masked with green'"
+},
+{
+"t": "woodland ambush-gear of Faramir's men, no shining metal",
+"conf": "C/?",
+"cite": "the AMBUSH AND THE GREEN are exact and the METAL IS NOT: LotR IV.4, in the same sentence as the Southron who falls — 'swarthy men in red running down the slope some way off with GREEN-CLAD WARRIORS leaping after them, hewing them down as they fled'. NOT LOCATED: nothing says Faramir's Rangers avoided bright metal; it is an inference FROM the concealment rather than a statement"
+}
+]
+},
+{
+"id": "kit_swan",
+"subject": "a Swan-knight of Dol Amroth",
+"caption": "Swan-knight of Dol Amroth",
+"prompt": "Subject: a Swan-knight of Dol Amroth. Lore: tall Gondorian knight in bright mail and plate, a helm crowned with swan-wings, a blue surcoat bearing the silver Swan-ship, a lance and long sword; the sea-princes' heavy cavalry. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Swan-knight of Dol Amroth\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "tall Gondorian knight in bright mail and plate",
+"conf": "C/?",
+"cite": "the HARNESS only: LotR V.1 — 'a company of knights in full harness riding grey horses'. PLATE is the archive's: no plate armour is described for Dol Amroth or for anyone in Gondor"
+},
+{
+"t": "a helm crowned with swan-wings",
+"conf": "I-L",
+"cite": "NOT LOCATED for Dol Amroth: no helm or crest is described for the Swan-knights anywhere; the corpus gives them a banner, LotR V.1 'knights of Dol Amroth with their Prince and his blue banner at their head'. Swan-wings ON A HELM do occur, but they are TUOR's in Gondolin (HoME II, The Fall of Gondolin; HoME XII index 'swanwings on helm and shield') -- First Age Gondolindrim, not Third Age Gondorian, and not evidence for this kit"
+},
+{
+"t": "a blue surcoat bearing the silver Swan-ship",
+"conf": "C/?",
+"cite": "the DEVICE AND THE BLUE ARE CANON AND THEY ARE ON A BANNER, NOT A GARMENT: LotR V.1 — 'gilded banners bearing his token of the Ship and the Silver Swan', and V.6 — 'the swan-knights of Dol Amroth with their Prince and his blue banner at their head'. 'blue surcoat' is absent from all 49 volumes, and the banners the corpus does colour are GILDED"
+},
+{
+"t": "a lance and long sword",
+"conf": "I-L",
+"cite": "NOT LOCATED: 'with lances' and 'a lance in his hand' are absent from all 49 volumes, and the only 'lances of' is a Christian crusading poem in the Collected Poems. No weapon at all is named for the Swan-knights"
+},
+{
+"t": "the sea-princes' heavy cavalry",
+"conf": "C/?",
+"cite": "the CAVALRY only: LotR V.1 — 'a company of knights in full harness RIDING GREY HORSES'. 'Heavy' and 'sea-princes' are the archive's framing; the corpus gives Imrahil the title Prince of Dol Amroth and no statement about the weight of his horse"
+}
+]
+},
+{
+"id": "kit_ranger",
+"subject": "a Ranger of the North (Dúnadan)",
+"caption": "Ranger of the North",
+"prompt": "Subject: a Ranger of the North (Dúnadan). Lore: weathered Dúnadan of Arnor's remnant in worn grey-green travelling-gear, a dull mail-shirt under a road-stained cloak, a hood, a long sword and bow, a star-brooch; grim wandering warrior. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Ranger of the North\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "weathered Dúnadan of Arnor's remnant in worn grey-green travelling-gear",
+"conf": "C/?",
+"cite": "the GREY only: HoME VIII — 'They were clad in dark grey', and 'there was nothing fine or splendid in their array' for the wornness. GREEN is the archive's: no green is given the Rangers of the North anywhere, and the corpus's green-and-brown is the LAIQUENDI and Faramir's men"
+},
+{
+"t": "a dull mail-shirt under a road-stained cloak, a hood",
+"conf": "C/?",
+"cite": "the CLOAK AND HOOD are canon and the MAIL IS NOT: HoME VIII — 'Hoods were over their helms' and 'each cloak was pinned on the left shoulder by a silver brooch shaped like a rayed star'. The passage gives them HELMS and names no mail; a dull mail-shirt is inferred"
+},
+{
+"t": "a long sword and bow, a star-brooch, grim wandering warrior",
+"conf": "C",
+"cite": "LotR V.2 — 'each cloak was pinned upon the left shoulder by a brooch of silver shaped like a rayed star'; 'no gleam of stone or gold… in all their gear'"
+}
+]
+},
+{
+"id": "kit_arnor",
+"subject": "a soldier of Arnor / Arthedain",
+"caption": "Soldier of Arthedain",
+"prompt": "Subject: a soldier of Arnor / Arthedain. Lore: Dúnadan of the North-kingdom in Númenórean armour that turned Orc-arrows, no livery and no device, a spear and shield; the fading North-realm's soldiery. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Soldier of Arthedain\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Dúnadan of the North-kingdom in Númenórean armour that turned Orc-arrows",
+"conf": "C",
+"cite": "UT, Gladden Fields: 'The arrows had been unavailing against the Numenorean armour.' NOT IN THE CORPUS: 'star-crested' 0 hits. IN THE CORPUS BUT OF ANOTHER SUBJECT: the star-set helm is GONDOR'S CITADEL GUARD"
+},
+{
+"t": "no livery and no device",
+"conf": "C",
+"cite": "NOT IN THE CORPUS: 'tabard' 0 hits in all 49 volumes. IN THE CORPUS BUT OF ANOTHER SUBJECT: the Tree-and-Stars on sable is Gondor's royal banner, and its livery 'none wore now in all Gondor, save the Guards of the Citadel'"
+},
+{
+"t": "a spear and shield",
+"conf": "C",
+"cite": "UT, Gladden Fields: 'Isildur commanded a thangail to be drawn up, a shield-wall of two serried ranks'; 'their swords and spears far outreached the weapons of their enemies'"
+},
+{
+"t": "the fading North-realm's soldiery",
+"conf": "C",
+"cite": "LotR App. A 'strife between the kingdoms, which hastened the waning of the Dunedain'"
+}
+]
+},
+{
+"id": "kit_rohan",
+"subject": "a Rider of the Mark of Rohan",
+"caption": "Rider of the Mark",
+"prompt": "Subject: a Rider of the Mark of Rohan. Lore: horse-lord Man in a burnished mail-shirt and a LIGHT helm — the white horsetail crest is Eomer's personal mark, not the eored's kit, a green cloak, a round painted shield, an ash spear and a long sword; Norse-flavoured horse-motif war-gear of Rohan. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Rider of the Mark\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "horse-lord Man in a burnished mail-shirt and a LIGHT helm — the white horsetail crest is Eomer's personal mark",
+"conf": "C",
+"cite": "LotR III.2 — 'their burnished shirts of mail hung down upon their knees'; 'their light helms'"
+},
+{
+"t": "not the eored's kit, a green cloak",
+"conf": "I-L",
+"cite": "NOT LOCATED: no cloak of any colour is described for the Riders. The corpus's green cloaks are the HOBBITS' in Return of the Shadow — 'in their dark [?green] cloaks they were quite invisible' — and the Lorien cloaks are grey. Nothing contradicts a green cloak; nothing states one"
+},
+{
+"t": "a round painted shield",
+"conf": "C/?",
+"cite": "the PAINTING only: LotR III.2 — 'painted shields were slung at their backs'. ROUND is the archive's: no shape is given for a Rohirric shield anywhere, and the corpus's one 'small round shield' is an ORC's, at Treason of Isengard"
+},
+{
+"t": "an ash spear and a long sword",
+"conf": "C",
+"cite": "LotR III.2 — 'In their hands were tall spears of ash … long swords were at their belts', of the eored that rides up on Aragorn, Legolas and Gimli"
+},
+{
+"t": "Norse-flavoured horse-motif war-gear of Rohan",
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING AND NOT A CORPUS CLAIM: 'Norse' is a comparison to our world, which Tolkien's text does not make about the Rohirrim's gear. The horse-motif is inferred from the Mark's name and its banner, not from any described ornament"
+}
+]
+},
+{
+"id": "kit_meduseld",
+"subject": "a Royal Guard of Meduseld",
+"caption": "Guard of Meduseld",
+"prompt": "Subject: a Royal Guard of Meduseld. Lore: Rohirric house-guard in a long corslet burnished bright, a green shield blazoned with the Sun, a long spear and sword; ceremonial guard of Théoden's hall. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Guard of Meduseld\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Rohirric house-guard in a long corslet burnished bright",
+"conf": "C",
+"cite": "LotR III.6, the Meduseld stair guards: 'their long corslets were burnished bright'. NOT IN THE CORPUS: 'gilded helm' — the gilded helm is BALDOR'S, entombed in the Paths of the Dead, not a serving door-guard"
+},
+{
+"t": "a green shield blazoned with the Sun",
+"conf": "C",
+"cite": "LotR III.6 'the sun was blazoned upon their green shields'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the white horse is Rohan's BANNER and Merry's and Gimli's shield-device — the same borrowing kit_rohan had, in mirror"
+},
+{
+"t": "a long spear and sword",
+"conf": "C",
+"cite": "LotR III.6 'barred the way with spears'; 'with drawn swords laid upon their knees ... they turned the hilts of their swords towards the travellers in token of peace'"
+},
+{
+"t": "ceremonial guard of Théoden's hall",
+"conf": "C",
+"cite": "LotR III.6 'I am the Doorward of Theoden ... Here I must bid you lay aside your weapons before you enter'"
+}
+]
+},
+{
+"id": "kit_galadhrim",
+"subject": "a Warden of Lothlórien (Galadhrim)",
+"caption": "Warden of Lothlorien",
+"prompt": "Subject: a Warden of Lothlórien (Galadhrim). Lore: Silvan-Sindarin elf in a grey cloak over soft grey mail, a leaf-brooch, a great Lórien bow — the corpus names no blade for the Galadhrim; the long white knife is Legolas's; woodland concealment-gear, golden-wood motifs. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Warden of Lothlorien\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Silvan-Sindarin elf in a grey cloak over soft grey mail, a leaf-brooch",
+"conf": "C",
+"cite": "LotR II.8 — the grey cloaks and 'a brooch like a green leaf veined with silver'"
+},
+{
+"t": "a great Lórien bow — the corpus names no blade for the Galadhrim",
+"conf": "C",
+"cite": "LotR II.8 — the great bow of the Galadhrim"
+},
+{
+"t": "the long white knife is Legolas's, woodland concealment-gear, golden-wood motifs",
+"conf": "C",
+"cite": "LotR II.3 — 'Legolas had a bow and a quiver, and at his belt a long white knife'"
+}
+]
+},
+{
+"id": "kit_silvan",
+"subject": "a Silvan Archer of Mirkwood",
+"caption": "Archer of Mirkwood",
+"prompt": "Subject: a Silvan Archer of Mirkwood. Lore: wood-elf of Thranduil's realm clad in green and brown, a spear and a bow, a hood; forest king's soldier, green-and-brown woodland gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Archer of Mirkwood\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "wood-elf of Thranduil's realm clad in green and brown",
+"conf": "C",
+"cite": "LotR II.2, Legolas BEFORE Lorien: 'a strange Elf clad in green and brown ... a messenger from his father, Thranduil'; Hobbit VIII 'all dressed in green and brown'. NOT LOCATED: 'russet' is never clothing, and no elf anywhere wears leather"
+},
+{
+"t": "a spear and a bow, a hood, forest king's soldier, green-and-brown woodland gear",
+"conf": "C",
+"cite": "Hobbit VIII 'Out leaped Wood-elves with their bows and spears'; XVII 'a thousand of their spearmen leapt down and charged'"
+}
+]
+},
+{
+"id": "kit_rivendell",
+"subject": "a guard of Imladris",
+"caption": "Guard of Imladris",
+"prompt": "Subject: a guard of Imladris. Lore: Noldorin-Sindarin elf-warrior of Elrond's refuge, founded on the Noldorin survivors of Eregion, no arms and no device are recorded; graceful house-guard of Elrond. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Guard of Imladris\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Noldorin-Sindarin elf-warrior of Elrond's refuge",
+"conf": "C",
+"cite": "UT, Concerning Galadriel and Celeborn: 'he established a refuge and stronghold at Imladris'; 'many fled to swell Elrond's host to the northward'"
+},
+{
+"t": "founded on the Noldorin survivors of Eregion",
+"conf": "C/?",
+"cite": "THE FOUNDING IS EXACT AND THE PEOPLE ARE THE ARCHIVE'S READING: UT — 'Elrond was able to extricate himself, but he was forced away northwards, and it was at that time [in the year 1697, according to the Tale of Years] that he established a refuge and stronghold at Imladris', and 'many fled to swell Elrond's host to the northward'. BUT the corpus's ONE explicit statement about where Eregion's survivors went names LORIEN — NoME, 'Lorien, where many of the survivors of Eregion had taken refuge'"
+},
+{
+"t": "no arms and no device are recorded",
+"conf": "C",
+"cite": "THE GOVERNING FINDING: 'guards of Rivendell', 'soldiers of Rivendell', 'warriors of Imladris' — ALL ZERO in 49 volumes. IN THE CORPUS BUT OF ANOTHER SUBJECT: the one silver banner is ELROND'S SONS' at Aragorn's wedding-riding, and no charge is described upon it"
+},
+{
+"t": "graceful house-guard of Elrond",
+"conf": "I-L",
+"cite": "the household is canon ('all the household of Rivendell') but is never a guard; Imladris fielded a force under Glorfindel at Fornost and the corpus never describes its arms"
+}
+]
+},
+{
+"id": "kit_erebor",
+"subject": "an axe-lord of Erebor",
+"caption": "Axe-lord of Erebor",
+"prompt": "Subject: an axe-lord of Erebor. Lore: Dwarf-warrior in a coat of gold-plated rings, a helm, a silver-hafted axe, a shield; rich Longbeard war-panoply. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Axe-lord of Erebor\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Dwarf-warrior in a coat of gold-plated rings, a helm, a silver-hafted axe, a shield, rich Longbeard war-panoply",
+"conf": "C",
+"cite": "Hobbit XIII 'Royal indeed did Thorin look, clad in a coat of gold-plated rings'. NOT LOCATED: 'to the knee' is DAIN'S IRON HILLS folk, the very sentence kit_ironhills was repaired from"
+}
+]
+},
+{
+"id": "kit_ironhills",
+"subject": "a mattock-warrior of the Iron Hills",
+"caption": "Warrior of the Iron Hills",
+"prompt": "Subject: a mattock-warrior of the Iron Hills. Lore: stout Dwarf in a hauberk of steel mail hanging to the knee, legs covered in hose of a FINE AND FLEXIBLE METAL MESH, an iron cap, iron-shod feet, beard forked and plaited into the belt, a heavy two-handed mattock, a short broad sword and a round shield slung at the back; Dáin's grim iron-clad heavy infantry. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Warrior of the Iron Hills\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "stout Dwarf in a hauberk of steel mail hanging to the knee",
+"conf": "C",
+"cite": "Hobbit XVII — 'Each one of his folk was clad in a hauberk of steel mail that hung to his knees'"
+},
+{
+"t": "legs covered in hose of a FINE AND FLEXIBLE METAL MESH, an iron cap, iron-shod feet",
+"conf": "C",
+"cite": "Hobbit XVII — 'hose of a fine and flexible metal mesh, the secret of whose making was possessed by Dain's people'"
+},
+{
+"t": "beard forked and plaited into the belt",
+"conf": "C",
+"cite": "Hobbit XVII — 'Their beards were forked and plaited and thrust into their belts'"
+},
+{
+"t": "a heavy two-handed mattock",
+"conf": "C",
+"cite": "Hobbit XVII — 'In battle they wielded heavy two-handed mattocks'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the mattock hit a raw matcher offers first is BoLT II's Gondolindrim, 'axes two-headed like mattocks' — a different people in a different Age"
+},
+{
+"t": "a short broad sword and a round shield slung at the back",
+"conf": "C",
+"cite": "Hobbit XVII — 'each of them had also a short broad sword at his side and a roundshield slung at his back'"
+},
+{
+"t": "Dáin's grim iron-clad heavy infantry",
+"conf": "C/?",
+"cite": "the GRIM AND THE IRON only: Hobbit XVII — 'Their caps were of iron and they were shod with iron, and their faces were grim'. 'Heavy infantry' is the archive's own framing and no corpus phrase carries it"
+}
+]
+},
+{
+"id": "kit_dale",
+"subject": "a great-bowman of Dale",
+"caption": "Bowman of Dale",
+"prompt": "Subject: a great-bowman of Dale. Lore: mortal Man of the Long Lake in a mail-shirt and a fur-trimmed cap, a very great longbow and a quiver of arrows — Bard's black arrow is a single named heirloom, not Dale's issue kit, a short sword; northern archer of Bard's people. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Bowman of Dale\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "mortal Man of the Long Lake in a mail-shirt and a fur-trimmed cap",
+"conf": "I-L",
+"cite": "NOT LOCATED: 'fur-trimmed' is absent from all 49 volumes, and no garment at all is described for the men of Dale or Esgaroth"
+},
+{
+"t": "a very great longbow and a quiver of arrows — Bard's black arrow is a single named heirloom",
+"conf": "C",
+"cite": "Hobbit XIV — Bard's bow; the black arrow is 'I have saved you to the last… I had you from my father', a single heirloom"
+},
+{
+"t": "not Dale's issue kit, a short sword",
+"conf": "C",
+"cite": "THE POINT IS THE NEGATIVE AND IT IS CANON: Hobbit XIV — the black arrow is 'I have saved you to the last… I had you from my father', a single inherited shaft. It is Bard's heirloom and not the equipment of a Dale soldier"
+},
+{
+"t": "northern archer of Bard's people",
+"conf": "C/?",
+"cite": "BARD is canon and HIS PEOPLE AS ARCHERS is not: Hobbit XIV gives Bard the Bowman and his black arrow, and Return of the Shadow 'Brand son of Bain son of Bard'. The spearmen-and-bowmen muster the corpus does describe is DAIN'S, in The History of The Hobbit — a different people, found by reading the line rather than the hit"
+}
+]
+},
+{
+"id": "kit_beorning",
+"subject": "a Beorning axe-warden",
+"caption": "Beorning Axe-warden",
+"prompt": "Subject: a Beorning axe-warden. Lore: big burly mortal Man in furs and a short mail-shirt, bare-armed, a great single axe; wild strong woodsman-warrior of the upper Anduin. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Beorning Axe-warden\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "big burly mortal Man in furs and a short mail-shirt, bare-armed",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Beornings often and never describes their arms or dress"
+},
+{
+"t": "a great single axe",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Beornings often and never describes their arms or dress"
+},
+{
+"t": "wild strong woodsman-warrior of the upper Anduin",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Beornings often and never describes their arms or dress"
+}
+]
+},
+{
+"id": "kit_woodmen",
+"subject": "a Woodman of Mirkwood",
+"caption": "Woodman of Mirkwood",
+"prompt": "Subject: a Woodman of Mirkwood. Lore: lean mortal Man in green and brown leather and furs, a hunting-bow and a hand-axe, a hood; forest-folk fighter, plain woodcraft gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Woodman of Mirkwood\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "lean mortal Man in green and brown leather and furs",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Woodmen and never describes their arms or dress"
+},
+{
+"t": "a hunting-bow and a hand-axe, a hood, forest-folk fighter, plain woodcraft gear",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Woodmen and never describes their arms or dress"
+}
+]
+},
+{
+"id": "kit_dunland",
+"subject": "a Dunlending hillman",
+"caption": "Dunlending Hillman",
+"prompt": "Subject: a Dunlending hillman. Lore: wild swarthy mortal Man in rough hides and a shaggy cloak, a crude iron sword and a small round shield; swarthy and dark-haired, of the wild hillmen and herd-folk — the corpus describes NO Dunlending war-gear beyond this, and face-paint in Tolkien is Haradrim; fierce clan-warrior of the hill-country. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Dunlending Hillman\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "wild swarthy mortal Man in rough hides and a shaggy cloak",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "a crude iron sword and a small round shield, swarthy and dark-haired",
+"conf": "C/?",
+"cite": "the COLOURING only: LotR App. F — 'because they were swarthy and dark-haired'; III.7 'the wild hillmen and herd-folk of Dunland'"
+},
+{
+"t": "of the wild hillmen and herd-folk — the corpus describes NO Dunlending war-gear beyond this",
+"conf": "C",
+"cite": "THE SILENCE HOLDS, AND IT IS NOW A SEARCHED ONE: 'Dunlendings', 'Dunlending', 'hillmen of Dunland' and 'wild hillmen' return language, genealogy and history across the corpus and NO garment, mail, helm, shield or weapon. The nearest is War of the Ring 'the hill-men were hewn down, or fled leaving their ram upon the ground' — a siege engine, not a kit"
+},
+{
+"t": "and face-paint in Tolkien is Haradrim",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "fierce clan-warrior of the hill-country",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+}
+]
+},
+{
+"id": "kit_harad",
+"subject": "a Serpent-warrior of Harad",
+"caption": "Serpent-warrior of Harad",
+"prompt": "Subject: a Serpent-warrior of Harad. Lore: dark Southron Man in scarlet and gold robes over scale-armour, a turbaned helm, a long spear and a curved sword, the black serpent on scarlet; exotic desert war-gear. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Serpent-warrior of Harad\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "dark Southron Man in scarlet and gold robes over scale-armour, a turbaned helm",
+"conf": "I-L",
+"cite": "NOT LOCATED: no turban is described for the Haradrim anywhere in the corpus"
+},
+{
+"t": "a long spear and a curved sword",
+"conf": "C/?",
+"cite": "the SWORD only, and not its shape: LotR IV.4 — 'His brown hand still clutched the hilt of a broken sword'. CURVED and the SPEAR are the archive's; the corpus gives Harad footmen at V.6 without naming a weapon, and the scimitars it does name are ORCS'"
+},
+{
+"t": "the black serpent on scarlet, exotic desert war-gear",
+"conf": "C",
+"cite": "LotR V.6 — 'displaying his standard, black serpent upon scarlet'; IV.4 'corslet of overlapping brazen plates'"
+}
+]
+},
+{
+"id": "kit_mumak",
+"subject": "a mûmak-crew warrior of the Haradrim",
+"caption": "Mumak-crew of Harad",
+"prompt": "Subject: a mûmak-crew warrior of the Haradrim. Lore: Southron soldier in light scaled armour and flowing red-and-gold cloth, a long war-spear and a short bow, harness for riding a war-mûmak's tower; hot-country rig. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Mumak-crew of Harad\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Southron soldier in light scaled armour and flowing red-and-gold cloth",
+"conf": "C/?",
+"cite": "THE CLOTH AND THE SCALES ARE EXACT AND 'LIGHT' IS NOT: LotR IV.4 — 'His scarlet robes… his corslet of overlapping brazen plates', with 'a golden collar' and 'black plaits of hair braided with gold' for the red-and-gold. The corpus's word is BRAZEN — bronze — and it says nothing about the weight"
+},
+{
+"t": "a long war-spear and a short bow",
+"conf": "I-L",
+"cite": "NOT LOCATED: the IV.4 ambush gives the Southron a SWORD and nothing else, and the arrows in that air are the RANGERS' — 'green arrow-feathers sticking from his neck'. No bow or spear is given a Haradrim anywhere"
+},
+{
+"t": "harness for riding a war-mûmak's tower, hot-country rig",
+"conf": "C",
+"cite": "LotR V.6 — 'the huge backs of the mumakil with war-towers upon them'"
+}
+]
+},
+{
+"id": "kit_easterling",
+"subject": "an axeman of Rhûn",
+"caption": "Axeman of Rhun",
+"prompt": "Subject: an axeman of Rhûn. Lore: bearded Easterling Man in lamellar of lacquered iron scales and a full-face iron helm with a red plume, a broad axe and a rectangular shield; disciplined eastern heavy infantry. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Axeman of Rhun\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "bearded Easterling Man in lamellar of lacquered iron scales and a full-face iron helm with a red plume",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus gives the Easterlings no armour, helm or shield beyond their axes"
+},
+{
+"t": "a broad axe and a rectangular shield",
+"conf": "C/?",
+"cite": "the AXE only: LotR V.6 'Easterlings with axes'. The rectangular shield in this same fragment is NOT LOCATED."
+},
+{
+"t": "disciplined eastern heavy infantry",
+"conf": "I-L",
+"cite": "NOT LOCATED, ON THIS KIT'S OWN GOVERNING FINDING one line below: the corpus gives the Easterlings no armour, helm or shield beyond their axes, so neither 'heavy' nor 'disciplined' has a witness. LotR V.6 gives 'Easterlings with axes' and nothing about their order"
+}
+]
+},
+{
+"id": "kit_wainrider",
+"subject": "a Wainrider war-lord",
+"caption": "Wainrider War-lord",
+"prompt": "Subject: a Wainrider war-lord. Lore: Easterling chieftain in bronze-scaled armour and a helm, a long lance and a curved sword, driving-gauntlets; charioteer-lord of the eastern confederacies. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Wainrider War-lord\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Easterling chieftain in bronze-scaled armour and a helm",
+"conf": "I-L",
+"cite": "NOT LOCATED: 'bronze-scaled' is absent from all 49 volumes. HoME XII says only that these Men were 'better armed' and gives no armour, and this file's own Easterling kits already record that the corpus gives their people no armour, helm or shield beyond their axes"
+},
+{
+"t": "a long lance and a curved sword, driving-gauntlets",
+"conf": "I-L",
+"cite": "NOT LOCATED: 'driving-gauntlets' and a Wainrider lance are absent from all 49 volumes, and the curved swords the corpus does name are ORCS' — kit_ulfang's finding, one kit away"
+},
+{
+"t": "charioteer-lord of the eastern confederacies",
+"conf": "C",
+"cite": "BOTH HALVES, IN THE RIGHT SUBJECT: LotR App. A — 'The Wainriders were a people, OR A CONFEDERACY OF MANY PEOPLES, that came from the East'; HoME XII — 'Men out of the East appeared of a new sort, stronger, better armed, journeying in huge wains, and FIGHTING IN CHARIOTS'"
+}
+]
+},
+{
+"id": "kit_variag",
+"subject": "a Variag of Khand",
+"caption": "Variag of Khand",
+"prompt": "Subject: a Variag of Khand. Lore: fierce Man of Khand in heavy layered leather and mail with fur trim, a curved heavy blade and a spiked shield, a fanged helm; brutal south-eastern mercenary. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Variag of Khand\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "fierce Man of Khand in heavy layered leather and mail with fur trim",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Variags twice ('Variags of Khand'; 'troll-men and Variags and orcs') and describes nothing about them"
+},
+{
+"t": "a curved heavy blade and a spiked shield, a fanged helm, brutal south-eastern mercenary",
+"conf": "I-L",
+"cite": "NOT LOCATED: the corpus names the Variags twice ('Variags of Khand'; 'troll-men and Variags and orcs') and describes nothing about them"
+}
+]
+},
+{
+"id": "kit_corsair",
+"subject": "a Corsair of Umbar",
+"caption": "Corsair of Umbar",
+"prompt": "Subject: a Corsair of Umbar. Lore: Black-Númenórean-led sea-raider of Umbar, no weapon and no headgear are recorded; coastal pirate of the great dromund-fleets. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Corsair of Umbar\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "Black-Númenórean-led sea-raider of Umbar",
+"conf": "C",
+"cite": "LotR V.6 'dromunds, and ships of great draught with many oars ... The Corsairs of Umbar!'. NOT IN THE CORPUS: 'scaled mail', 'bandana', 'boarding-axe' — and 'red sash' is a FALSE POSITIVE of the matcher, matching across 'kindreds as had'"
+},
+{
+"t": "no weapon and no headgear are recorded",
+"conf": "C",
+"cite": "NOT IN THE CORPUS: 'cutlass' occurs once, as an Etymologies gloss. IN THE CORPUS BUT OF ANOTHER SUBJECT: scimitars are the Southrons' at the Pelennor, and the scarlet-and-brazen-scale image is a HARADRIM in Ithilien"
+},
+{
+"t": "coastal pirate of the great dromund-fleets",
+"conf": "C",
+"cite": "LotR V.9 'the main fleet of Umbar, fifty great ships and smaller vessels beyond count'; App. A 'the insolence of the Corsairs, who raided his coasts even as far as the Anfalas'. NOTE: the Corsair lordship was founded by CASTAMIR'S SONS, rebels of Gondor T.A. 1448 — Umbar was Black Numenorean in the SECOND Age"
+}
+]
+},
+{
+"id": "kit_mordor",
+"subject": "an orc-soldier of Mordor (the Red Eye)",
+"caption": "Soldier of the Red Eye",
+"prompt": "Subject: an orc-soldier of Mordor (the Red Eye). Lore: hulking orc in blackened plate-scraps and boiled leather bearing the red Eye, a broad scimitar and a spear, an iron cap; Sauron's disciplined foot-soldier. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Soldier of the Red Eye\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "hulking orc in blackened plate-scraps and boiled leather bearing the red Eye",
+"conf": "C/?",
+"cite": "the RED EYE only: LotR IV.10 / VI.1 'a red eye painted on their shields'; 'a black cap with iron rim… the Evil Eye was painted in red'. The blackened plate-scraps and boiled leather in this same fragment are NOT LOCATED."
+},
+{
+"t": "a broad scimitar and a spear, an iron cap, Sauron's disciplined foot-soldier",
+"conf": "C/?",
+"cite": "THE KIT IS CANON AND THE ADJECTIVES ARE OURS. Treason of Isengard, an orc stripping his gear: 'black scale-like mail… the small round shield at his back. The black iron cap' — so the IRON CAP is exact. BoLT II, 'the grimmest of the Orcs with scimitars and spears'. BROAD and 'disciplined' are the archive's; and the scimitar witness is a FIRST AGE host, not Mordor's"
+}
+]
+},
+{
+"id": "kit_uruk",
+"subject": "an Uruk-hai pikeman of Isengard",
+"caption": "Uruk-hai of Isengard",
+"prompt": "Subject: an Uruk-hai pikeman of Isengard. Lore: big black-skinned Uruk in a heavy iron breastplate and an iron helm bearing an S-RUNE wrought of white metal, a SHORT BROAD-BLADED sword and a bow of yew in length and shape like the bows of Men, and a SHIELD bearing a small white hand in the centre of a black field; Saruman's manufactured shock-infantry. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Uruk-hai of Isengard\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "big black-skinned Uruk in a heavy iron breastplate and an iron helm bearing an S-RUNE wrought of white metal",
+"conf": "C/?",
+"cite": "the HELM AND ITS RUNE only: LotR III.1 'on the front of their iron helms was set an S-rune, wrought of some white metal'. The heavy iron breastplate in this same fragment is NOT LOCATED."
+},
+{
+"t": "a SHORT BROAD-BLADED sword and a bow of yew in length and shape like the bows of Men",
+"conf": "C",
+"cite": "LotR III.1 — 'bows of yew, in length and shape like the bows of Men'"
+},
+{
+"t": "and a SHIELD bearing a small white hand in the centre of a black field, Saruman's manufactured shock-infantry",
+"conf": "C",
+"cite": "LotR III.1 — 'Upon their shields they bore a strange device: a small white hand in the centre of a black field'"
+}
+]
+},
+{
+"id": "kit_moria",
+"subject": "a goblin of the Misty Mountains",
+"caption": "Goblin of Moria",
+"prompt": "Subject: a goblin of the Misty Mountains. Lore: small swart goblin in ragged iron and leather, a black knife with a long jagged blade, and a bow; cave-dwelling Misty-Mountains orc. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Goblin of Moria\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "small swart goblin in ragged iron and leather",
+"conf": "C/?",
+"cite": "the SIZE AND COLOURING only: LotR III.3 'many smaller goblins ... the ones from the North'; II.5, the MORIA chieftain's 'broad flat face was swart'. CONTRADICTED: 'grey goblin' = 0 hits; orc skin is swart, sallow or black. The iron-and-leather gear in this same fragment is attested for MORDOR orcs ('a black cap with iron rim, and iron hoops covered with leather'), not for Moria, which the corpus never equips"
+},
+{
+"t": "a black knife with a long jagged blade, and a bow, cave-dwelling Misty-Mountains orc",
+"conf": "C",
+"cite": "LotR III.3, of a Misty-Mountains orc: 'He had a black knife with a LONG jagged blade in his hand' — which contradicts 'short' twice over in the same scene"
+}
+]
+},
+{
+"id": "kit_olog",
+"subject": "an Olog-hai troll of Sauron's breeding",
+"caption": "Olog-hai of Gorgoroth",
+"prompt": "Subject: an Olog-hai troll of Sauron's breeding. Lore: a great war-troll far surpassing the largest of Orc-kind in size and power, strong, agile, fierce and cunning, harder than stone, enduring the Sun so long as his master's will holds; a heavy hammer in his knotted hands and a huge black round buckler; the corpus gives the Olog-hai NO surface at all, so leave the skin unclaimed. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Olog-hai of Gorgoroth\".",
+"neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
+"traits": [
+{
+"t": "a great war-troll far surpassing the largest of Orc-kind in size and power, strong, agile, fierce and cunning, harder than stone",
+"conf": "C",
+"cite": "LotR App. F — the Olog-hai 'far surpassed in size and power' the largest of Orc-kind; 'a fell race, strong, agile, fierce and cunning, but harder than stone'; they 'could endure the Sun, so long as the will of Sauron held sway over them'. THE HORNY SCALES ARE NOT THEIRS: that is 'a great company of hill-trolls out of Gorgoroth' at V.10, and LotR's own index lists Hill-trolls and Olog-hai as SEPARATE sub-entries under Trolls. Conceded to the Fixer, who was right"
+},
+{
+"t": "enduring the Sun so long as his master's will holds",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "a heavy hammer in his knotted hands and a huge black round buckler",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "the corpus gives the Olog-hai NO surface at all",
+"conf": "C/?",
+"cite": "TOO STRONG AS WRITTEN, and this file already held what qualifies it. LotR App. F gives the Olog-hai 'a fell race, strong, agile, fierce and cunning, but harder than stone' — a HARDNESS, quoted in this very kit's other citation. What the corpus withholds is COLOUR and TEXTURE, and 'no surface at all' overstates that. THE SEARCH: 'black troll' and 'troll-skin' are absent from all 49 volumes; the other 'harder than stone' is Sam's Troll Song, another subject"
+},
+{
+"t": "so leave the skin unclaimed",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+}
+]
+}
+]
+}
